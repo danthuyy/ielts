@@ -5,6 +5,10 @@ import { shuffle } from '../utils.js';
 import { TTS } from '../tts.js';
 import { LESSONS } from '../../data/lessons.js';
 import * as Keys from '../keys.js';
+import * as Gestures from '../gestures.js';
+import { VoicePicker } from '../components/voice-picker.js';
+
+let detachVoicePicker = null;
 
 export async function render(container, params = {}) {
   let words = [];
@@ -53,6 +57,7 @@ export async function render(container, params = {}) {
             ${reverseMode ? 'VI → EN' : 'EN → VI'}
           </button>
 
+          ${VoicePicker.render()}
           <span style="font-size: 14px; color: var(--text-secondary);">${currentIndex + 1}/${words.length}</span>
         </div>
         
@@ -76,7 +81,7 @@ export async function render(container, params = {}) {
             `).join('')}
           </div>
 
-          ${Keys.hintBar([
+          ${Gestures.isTouchDevice() ? '' : Keys.hintBar([
             [['A', 'B', 'C', 'D'], 'chọn đáp án'],
             [['1', '4'], 'hoặc số'],
             [['S'], 'đọc từ'],
@@ -150,6 +155,9 @@ export async function render(container, params = {}) {
       's': () => TTS.speak(currentWord.word),
       'Escape': () => Router.navigate('lesson-detail', { lessonId: params.lessonId })
     });
+
+    if (detachVoicePicker) detachVoicePicker();
+    detachVoicePicker = VoicePicker.attach(container);
   };
 
   const showResults = () => {
@@ -176,4 +184,5 @@ export async function render(container, params = {}) {
 
 export function cleanup() {
   Keys.unbind();
+  if (detachVoicePicker) { detachVoicePicker(); detachVoicePicker = null; }
 }

@@ -4,6 +4,11 @@ import { SRS } from '../srs.js';
 import { TTS } from '../tts.js';
 import { LESSONS } from '../../data/lessons.js';
 import * as Keys from '../keys.js';
+import * as Gestures from '../gestures.js';
+import { VoicePicker } from '../components/voice-picker.js';
+
+let detachGestures = null;
+let detachVoicePicker = null;
 
 export async function render(container, params = {}) {
   let words = [];
@@ -28,6 +33,7 @@ export async function render(container, params = {}) {
     }
 
     const currentWord = words[currentIndex];
+    const touch = Gestures.isTouchDevice();
     hasChecked = false;
     
     // Create hint: first letter + underscores
@@ -40,6 +46,7 @@ export async function render(container, params = {}) {
           <div style="flex: 1; height: 6px; background: var(--surface); border-radius: 3px; overflow: hidden;">
             <div style="height: 100%; background: var(--primary); width: ${(currentIndex / words.length) * 100}%;"></div>
           </div>
+          ${VoicePicker.render()}
           <span style="font-size: 14px; color: var(--text-secondary);">${currentIndex + 1}/${words.length}</span>
         </div>
 
@@ -60,11 +67,13 @@ export async function render(container, params = {}) {
             Kiểm tra
           </button>
 
-          ${Keys.hintBar([
-            [['Enter'], 'kiểm tra / tiếp tục'],
-            [['S'], 'đọc từ'],
-            [['Esc'], 'thoát']
-          ])}
+          ${touch
+            ? Gestures.gestureHint([['👆↑', 'vuốt lên: đọc từ']])
+            : Keys.hintBar([
+                [['Enter'], 'kiểm tra / tiếp tục'],
+                [['S'], 'đọc từ'],
+                [['Esc'], 'thoát']
+              ])}
         </div>
       </div>
     `;
@@ -126,7 +135,16 @@ export async function render(container, params = {}) {
       'Enter': checkAnswer,
       's': () => { if (hasChecked) TTS.speak(currentWord.word); },
       'Escape': () => Router.navigate('lesson-detail', { lessonId: params.lessonId })
+
     }, { allowWhileTyping: ['Enter', 'Escape'] });
+
+    if (detachVoicePicker) detachVoicePicker();
+    detachVoicePicker = VoicePicker.attach(container);
+
+    if (detachGestures) detachGestures();
+    detachGestures = Gestures.onSwipe(container.querySelector('.screen-quiz-type'), {
+      up: () => { if (hasChecked) TTS.speak(currentWord.word); }
+    });
   };
 
   const showResults = () => {
@@ -153,4 +171,6 @@ export async function render(container, params = {}) {
 
 export function cleanup() {
   Keys.unbind();
+  if (detachGestures) { detachGestures(); detachGestures = null; }
+  if (detachVoicePicker) { detachVoicePicker(); detachVoicePicker = null; }
 }

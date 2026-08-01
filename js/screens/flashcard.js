@@ -5,6 +5,11 @@ import { TTS } from '../tts.js';
 import { FlashCard } from '../components/card.js';
 import { LESSONS } from '../../data/lessons.js';
 import * as Keys from '../keys.js';
+import * as Gestures from '../gestures.js';
+import { VoicePicker } from '../components/voice-picker.js';
+
+let detachGestures = null;
+let detachVoicePicker = null;
 
 export async function render(container, params = {}) {
   let wordsToStudy = [];
@@ -31,6 +36,7 @@ export async function render(container, params = {}) {
     }
 
     const currentWord = wordsToStudy[currentIndex];
+    const touch = Gestures.isTouchDevice();
     const progress = await Store.getWordProgress(currentWord.id) || { status: 'new', repetitions: 0, easeFactor: 2.5, interval: 0, bookmarked: false };
     
     if (Store.getSetting('autoSpeak', true)) {
@@ -44,6 +50,7 @@ export async function render(container, params = {}) {
           <div style="flex: 1; height: 6px; background: var(--surface); border-radius: 3px; overflow: hidden;">
             <div style="height: 100%; background: var(--primary); width: ${(currentIndex / wordsToStudy.length) * 100}%;"></div>
           </div>
+          ${VoicePicker.render()}
           <span style="font-size: 14px; color: var(--text-secondary);">${currentIndex + 1}/${wordsToStudy.length}</span>
         </div>
 
@@ -57,14 +64,23 @@ export async function render(container, params = {}) {
           <button class="srs-btn" data-quality="4" style="background: var(--success); color: white; border: none; padding: 12px 4px; border-radius: 8px; font-size: 14px; cursor: pointer;">Tốt<br><small style="opacity:0.8">3</small></button>
           <button class="srs-btn" data-quality="5" style="background: var(--info); color: white; border: none; padding: 12px 4px; border-radius: 8px; font-size: 14px; cursor: pointer;">Dễ<br><small style="opacity:0.8">4</small></button>
         </div>
-        <div id="flip-hint" style="text-align: center; padding: 16px 20px 4px; color: var(--text-secondary);">Chạm vào thẻ hoặc bấm <kbd style="background:var(--surface);border-radius:4px;padding:2px 6px;font-size:12px;font-family:inherit;">Space</kbd> để xem mặt sau</div>
+        <div id="flip-hint" style="text-align: center; padding: 16px 20px 4px; color: var(--text-secondary);">
+          ${touch ? 'Chạm vào thẻ để xem mặt sau' : 'Chạm vào thẻ hoặc bấm <kbd style="background:var(--surface);border-radius:4px;padding:2px 6px;font-size:12px;font-family:inherit;">Space</kbd> để xem mặt sau'}
+        </div>
         <div style="background: var(--card); padding-bottom: 12px;">
-          ${Keys.hintBar([
-            [['Space'], 'lật thẻ'],
-            [['1'], 'Lặp lại'], [['2'], 'Khó'], [['3'], 'Tốt'], [['4'], 'Dễ'],
-            [['←', '→'], 'chuyển từ'],
-            [['S'], 'đọc'], [['B'], 'lưu'], [['Esc'], 'thoát']
-          ])}
+          ${touch
+            ? Gestures.gestureHint([
+                ['👆', 'chạm: lật thẻ'],
+                ['👈', 'vuốt trái: từ sau'],
+                ['👉', 'vuốt phải: từ trước'],
+                ['👆↑', 'vuốt lên: đọc lại']
+              ])
+            : Keys.hintBar([
+                [['Space'], 'lật thẻ'],
+                [['1'], 'Lặp lại'], [['2'], 'Khó'], [['3'], 'Tốt'], [['4'], 'Dễ'],
+                [['←', '→'], 'chuyển từ'],
+                [['S'], 'đọc'], [['B'], 'lưu'], [['Esc'], 'thoát']
+              ])}
         </div>
       </div>
     `;
@@ -162,6 +178,16 @@ export async function render(container, params = {}) {
       'b': toggleBookmark,
       'Escape': () => Router.navigate(params.lessonId ? 'lesson-detail' : 'home', { lessonId: params.lessonId })
     });
+
+    if (detachVoicePicker) detachVoicePicker();
+    detachVoicePicker = VoicePicker.attach(container);
+
+    if (detachGestures) detachGestures();
+    detachGestures = Gestures.onSwipe(container.querySelector('.screen-flashcard'), {
+      left: goNext,
+      right: goPrev,
+      up: () => TTS.speak(currentWord.word)
+    });
   };
 
   const showResults = () => {
@@ -186,4 +212,6 @@ export async function render(container, params = {}) {
 
 export function cleanup() {
   Keys.unbind();
+  if (detachGestures) { detachGestures(); detachGestures = null; }
+  if (detachVoicePicker) { detachVoicePicker(); detachVoicePicker = null; }
 }
