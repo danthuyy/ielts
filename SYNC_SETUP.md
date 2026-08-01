@@ -1,5 +1,8 @@
 # Bật đồng bộ giữa các thiết bị
 
+> **Đã cấu hình xong** (project `nwbgobapbyuavwljygec`). Tài liệu này giữ lại để
+> dựng lại từ đầu nếu cần đổi project.
+
 Mất khoảng 5 phút, làm một lần duy nhất. Sau đó mọi máy mở app là tự đồng bộ,
 không cần đăng nhập, không cần nhập mã.
 
@@ -43,10 +46,14 @@ cho khớp.
 
 ## 3. Lấy khoá và điền vào app
 
-Vào **Project Settings → API**, copy hai giá trị:
+Vào **Project Settings → API Keys**, copy hai giá trị:
 
 - **Project URL** → điền vào `url`
-- **anon public** key → điền vào `anonKey`
+- key **publishable** (`sb_publishable_...`, tên cũ là "anon public") → điền vào
+  `anonKey`
+
+Không dùng key **secret** / **service_role** — key đó bỏ qua toàn bộ RLS, để lộ
+trong web công khai là mất sạch quyền kiểm soát database.
 
 Mở [js/config.js](js/config.js) và điền:
 
