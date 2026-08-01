@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>IELTS Vocab Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== SPLASH / HOME ===== -->
+    <div id="screen-home" class="screen active">
+        <div class="home-bg"></div>
+        <div class="home-content">
+            <div class="logo-icon">📚</div>
+            <h1 class="logo-text">IELTS<span>Vocab</span></h1>
+            <p class="tagline">Học từ vựng thông minh · Nâng band dễ dàng</p>
+            <div id="lesson-list" class="lesson-list"></div>
+        </div>
+    </div>
+
+    <!-- ===== LESSON MENU ===== -->
+    <div id="screen-lesson" class="screen">
+        <div class="top-bar">
+            <button class="btn-back" onclick="showScreen('home')">← Về</button>
+            <h2 id="lesson-title" class="top-title"></h2>
+            <div class="word-count" id="word-count"></div>
+        </div>
+        <div class="mode-grid">
+            <button class="mode-card" onclick="startMode('flashcard')">
+                <div class="mode-icon">🃏</div>
+                <div class="mode-name">Flashcard</div>
+                <div class="mode-desc">Lật thẻ học từ</div>
+            </button>
+            <button class="mode-card" onclick="startMode('quiz')">
+                <div class="mode-icon">⌨️</div>
+                <div class="mode-name">Điền từ</div>
+                <div class="mode-desc">Gõ từ tiếng Anh</div>
+            </button>
+            <button class="mode-card" onclick="startMode('listen')">
+                <div class="mode-icon">🎧</div>
+                <div class="mode-name">Nghe & Viết</div>
+                <div class="mode-desc">Nghe phát âm, gõ lại</div>
+            </button>
+            <button class="mode-card" onclick="startMode('match')">
+                <div class="mode-icon">🔗</div>
+                <div class="mode-name">Nối từ</div>
+                <div class="mode-desc">Nối Anh - Việt</div>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== FLASHCARD MODE ===== -->
+    <div id="screen-flashcard" class="screen">
+        <div class="top-bar">
+            <button class="btn-back" onclick="showScreen('lesson')">← Về</button>
+            <div class="progress-bar"><div class="progress-fill" id="fc-progress"></div></div>
+            <span class="progress-text" id="fc-count"></span>
+        </div>
+        <div class="card-container">
+            <div class="flashcard" id="flashcard" onclick="flipCard()">
+                <div class="fc-front" id="fc-front"></div>
+                <div class="fc-back" id="fc-back"></div>
+            </div>
+        </div>
+        <div class="fc-controls">
+            <button class="btn-fc btn-again" onclick="nextCard(false)">✗ Chưa nhớ</button>
+            <button class="btn-speak" onclick="speakCurrent()">🔊</button>
+            <button class="btn-fc btn-good" onclick="nextCard(true)">✓ Nhớ rồi</button>
+        </div>
+    </div>
+
+    <!-- ===== QUIZ (TYPE) MODE ===== -->
+    <div id="screen-quiz" class="screen">
+        <div class="top-bar">
+            <button class="btn-back" onclick="showScreen('lesson')">← Về</button>
+            <div class="progress-bar"><div class="progress-fill" id="quiz-progress"></div></div>
+            <span class="progress-text" id="quiz-count"></span>
+        </div>
+        <div class="quiz-container">
+            <div class="quiz-prompt">
+                <div class="quiz-vi" id="quiz-vi"></div>
+                <div class="quiz-pos" id="quiz-pos"></div>
+                <div class="quiz-hint" id="quiz-hint"></div>
+            </div>
+            <div class="quiz-input-wrap">
+                <input type="text" id="quiz-input" class="quiz-input" placeholder="Gõ từ tiếng Anh..." autocomplete="off" autocapitalize="none" spellcheck="false">
+                <button class="btn-check" id="btn-check" onclick="checkQuiz()">Kiểm tra</button>
+            </div>
+            <div class="quiz-feedback" id="quiz-feedback"></div>
+        </div>
+    </div>
+
+    <!-- ===== LISTEN MODE ===== -->
+    <div id="screen-listen" class="screen">
+        <div class="top-bar">
+            <button class="btn-back" onclick="showScreen('lesson')">← Về</button>
+            <div class="progress-bar"><div class="progress-fill" id="listen-progress"></div></div>
+            <span class="progress-text" id="listen-count"></span>
+        </div>
+        <div class="quiz-container">
+            <div class="quiz-prompt">
+                <button class="btn-listen-big" onclick="speakCurrent()">🔊<br><span>Nhấn để nghe</span></button>
+            </div>
+            <div class="quiz-input-wrap">
+                <input type="text" id="listen-input" class="quiz-input" placeholder="Gõ từ bạn nghe được..." autocomplete="off" autocapitalize="none" spellcheck="false">
+                <button class="btn-check" onclick="checkListen()">Kiểm tra</button>
+            </div>
+            <div class="quiz-feedback" id="listen-feedback"></div>
+        </div>
+    </div>
+
+    <!-- ===== MATCH MODE ===== -->
+    <div id="screen-match" class="screen">
+        <div class="top-bar">
+            <button class="btn-back" onclick="showScreen('lesson')">← Về</button>
+            <div class="match-score">⏱️ <span id="match-timer">0</span>s · ✓ <span id="match-pairs">0</span>/<span id="match-total">0</span></div>
+        </div>
+        <div class="match-container" id="match-container"></div>
+    </div>
+
+    <!-- ===== RESULTS ===== -->
+    <div id="screen-results" class="screen">
+        <div class="results-content">
+            <div class="results-emoji" id="results-emoji">🎉</div>
+            <h2 class="results-title" id="results-title">Hoàn thành!</h2>
+            <div class="results-score" id="results-score"></div>
+            <div class="results-details" id="results-details"></div>
+            <div class="results-actions">
+                <button class="btn-primary" onclick="showScreen('lesson')">Chọn chế độ khác</button>
+                <button class="btn-secondary" onclick="restartMode()">Học lại</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
