@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ielts-vocab-v3';
+const CACHE_NAME = 'ielts-vocab-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -41,8 +41,17 @@ self.addEventListener('fetch', event => {
   const sameOrigin = new URL(req.url).origin === self.location.origin;
 
   if (sameOrigin) {
+    // 'no-cache' forces a conditional request, so the browser's own HTTP
+    // cache (GitHub Pages sends max-age=600) can never mask a new deploy.
+    const fresh = new Request(req.url, {
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: req.headers,
+      mode: req.mode === 'navigate' ? 'same-origin' : req.mode,
+      redirect: 'follow'
+    });
     event.respondWith(
-      fetch(req)
+      fetch(fresh)
         .then(response => {
           if (response && response.status === 200) {
             const copy = response.clone();
