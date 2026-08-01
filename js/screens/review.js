@@ -1,12 +1,13 @@
 import { Router } from '../router.js';
 import { Store } from '../store.js';
 import { BottomNav } from '../components/bottom-nav.js';
+import { LESSONS } from '../../data/lessons.js';
 import * as FlashcardScreen from './flashcard.js';
 
 export async function render(container) {
-  const dueWordsData = await Store.getWordsForReview();
+  const dueProgressList = await Store.getWordsForReview();
 
-  if (!dueWordsData || dueWordsData.length === 0) {
+  if (!dueProgressList || dueProgressList.length === 0) {
     container.innerHTML = `
       <div class="screen-review" style="display: flex; flex-direction: column; height: 100%; background: var(--bg);">
         <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center;">
@@ -31,9 +32,21 @@ export async function render(container) {
     return;
   }
 
-  // Delegate to flashcard screen but with review mode
-  // Pass the words to the flashcard screen
-  await FlashcardScreen.render(container, { words: dueWordsData.map(d => d.word) });
+  // Map progress entries to full word objects from LESSONS data
+  const fullWordsToReview = [];
+  for (const prog of dueProgressList) {
+    const lesson = LESSONS.find(l => l.id === prog.lessonId);
+    if (lesson && lesson.words[prog.wordIndex]) {
+      fullWordsToReview.push({
+        ...lesson.words[prog.wordIndex],
+        id: prog.id,
+        lessonId: prog.lessonId,
+        wordIndex: prog.wordIndex
+      });
+    }
+  }
+
+  await FlashcardScreen.render(container, { words: fullWordsToReview });
 }
 
 export function cleanup() {

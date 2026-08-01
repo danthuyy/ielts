@@ -65,46 +65,44 @@ export async function render(container, params = {}) {
     });
 
     const fcContainer = container.querySelector('#flashcard-container');
-    if (typeof FlashCard === 'function') {
-      fcContainer.innerHTML = FlashCard({
-        front: `
-          <div style="text-align: center;">
-            <div style="font-size: 32px; font-weight: bold; margin-bottom: 8px;">${currentWord.word}</div>
-            <div style="font-size: 16px; color: var(--text-secondary);">${currentWord.pos}</div>
-          </div>
-        `,
-        back: `
-          <div style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="font-size: 24px; font-weight: bold; margin-bottom: 4px;">${currentWord.word}</div>
-              <div style="font-size: 14px; color: var(--primary); margin-bottom: 12px;">${currentWord.ipa || ''}</div>
-              <div style="font-size: 18px; margin-bottom: 16px; color: var(--text-primary);">${currentWord.vi}</div>
-              ${currentWord.collocation ? `<div style="font-size: 14px; color: var(--warning); margin-bottom: 8px;">${currentWord.collocation}</div>` : ''}
-              ${currentWord.example ? `<div style="font-size: 14px; color: var(--text-secondary); font-style: italic;">"${currentWord.example}"</div>` : ''}
-            </div>
-            <button id="btn-speak-card" style="background: var(--surface); border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 24px; align-self: center; cursor: pointer; color: var(--text-primary);">🔊</button>
-          </div>
-        `
-      });
+    let isFlipped = false;
+    let isBookmarked = progress.bookmarked || false;
 
-      let flipped = false;
-      fcContainer.addEventListener('click', (e) => {
-        if(e.target.closest('#btn-speak-card')) {
-          TTS.speak(currentWord.word);
-          e.stopPropagation();
-          return;
-        }
-        flipped = !flipped;
-        const inner = fcContainer.querySelector('.card-inner');
-        if (inner) {
-          inner.style.transform = flipped ? 'rotateY(180deg)' : 'rotateY(0)';
-          if (flipped) {
+    const renderCardUI = () => {
+      fcContainer.innerHTML = FlashCard.render(currentWord, isFlipped, isBookmarked);
+      
+      const cardElem = fcContainer.querySelector('#flashcard');
+      if (cardElem) {
+        cardElem.addEventListener('click', (e) => {
+          if (e.target.closest('#speak-btn')) {
+            e.stopPropagation();
+            TTS.speak(currentWord.word);
+            return;
+          }
+
+          if (e.target.closest('.bookmark-btn')) {
+            e.stopPropagation();
+            Store.toggleBookmark(currentWord.id).then(newBookmarked => {
+              isBookmarked = newBookmarked;
+              renderCardUI();
+            });
+            return;
+          }
+
+          isFlipped = !isFlipped;
+          cardElem.classList.toggle('flipped', isFlipped);
+          if (isFlipped) {
             container.querySelector('#action-buttons').style.display = 'grid';
             container.querySelector('#flip-hint').style.display = 'none';
+          } else {
+            container.querySelector('#action-buttons').style.display = 'none';
+            container.querySelector('#flip-hint').style.display = 'block';
           }
-        }
-      });
-    }
+        });
+      }
+    };
+
+    renderCardUI();
 
     container.querySelectorAll('.srs-btn').forEach(btn => {
       btn.addEventListener('click', async (e) => {
