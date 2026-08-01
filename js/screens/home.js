@@ -1,99 +1,194 @@
 import { Router } from '../router.js';
 import { Store } from '../store.js';
 import { BottomNav } from '../components/bottom-nav.js';
-import { formatDate } from '../utils.js';
+import { LESSONS } from '../../data/lessons.js';
+import { CATEGORIES, categoryOf } from '../../data/categories.js';
+
+const WEEKDAYS = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
+
+function greeting() {
+  const h = new Date().getHours();
+  if (h < 11) return 'Chào buổi sáng';
+  if (h < 14) return 'Chào buổi trưa';
+  if (h < 18) return 'Chào buổi chiều';
+  return 'Chào buổi tối';
+}
+
+function todayLabel() {
+  const d = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  return `${WEEKDAYS[d.getDay()]}, ${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${d.getFullYear()}`;
+}
+
+// Seven columns ending today, so the chart never collapses on a quiet week.
+function lastSevenDays(activity) {
+  const byDate = new Map(activity.map(a => [a.date, a]));
+  const out = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - i);
+    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    out.push({
+      key,
+      label: WEEKDAYS[d.getDay()],
+      isToday: i === 0,
+      studied: byDate.get(key)?.wordsStudied || 0
+    });
+  }
+  return out;
+}
 
 export async function render(container) {
-  const stats = await Store.getOverallStats();
-  const streak = await Store.getStreak();
-  const dueCount = await Store.getDueCount();
-  const weekly = await Store.getWeeklyActivity();
+  const [stats, streak, dueCount, activity] = await Promise.all([
+    Store.getOverallStats(),
+    Store.getStreak(),
+    Store.getDueCount(),
+    Store.getWeeklyActivity()
+  ]);
 
-  // Create chart bars
-  let maxStudied = Math.max(...weekly.map(d => d.wordsStudied || 0), 1);
-  const barsHtml = weekly.map(day => {
-    const height = Math.max(10, Math.min(100, ((day.wordsStudied || 0) / maxStudied) * 100));
+  const lessonStats = await Promise.all(
+    LESSONS.map(async l => ({ lesson: l, stats: await Store.getLessonStats(l.id) }))
+  );
+
+  const dailyGoal = Store.getSetting('dailyGoal', 10);
+  const days = lastSevenDays(activity);
+  const studiedToday = days[days.length - 1].studied;
+  const goalPercent = dailyGoal > 0 ? Math.min(100, Math.round((studiedToday / dailyGoal) * 100)) : 0;
+
+  const peak = Math.max(...days.map(d => d.studied), dailyGoal, 1);
+  const chartHtml = days.map(d => `
+    <div class="chart-col${d.isToday ? ' today' : ''}" title="${d.key}: ${d.studied} từ">
+      <div class="chart-bar"><div class="chart-fill" style="height: ${d.studied === 0 ? 3 : Math.max(8, Math.round((d.studied / peak) * 100))}%"></div></div>
+      <div class="chart-day">${d.label}</div>
+    </div>
+  `).join('');
+
+  const topicsHtml = lessonStats.map(({ lesson, stats: s }) => {
+    const cat = categoryOf(lesson);
+    const total = lesson.words.length;
+    const done = s.mastered || 0;
+    const percent = total > 0 ? Math.round((done / total) * 100) : 0;
     return `
-      <div class="bar-wrapper" style="display:flex; flex-direction:column; align-items:center; gap:4px;">
-        <div class="bar" style="width:24px; height:100px; background:var(--surface); border-radius:4px; display:flex; align-items:flex-end;">
-          <div class="bar-fill" style="width:100%; height:${height}%; background:var(--primary); border-radius:4px;"></div>
-        </div>
-        <span style="font-size:10px; color:var(--text-secondary);">${new Date(day.date).getDate()}</span>
-      </div>
+      <button class="topic" data-lesson="${lesson.id}">
+        <span class="topic-icon">${cat.icon}</span>
+        <span class="topic-name">${lesson.title}</span>
+        <span class="topic-meta">${cat.label} · ${total} từ · thuộc ${done}</span>
+        <span class="topic-bar"><span style="width: ${percent}%"></span></span>
+      </button>
     `;
   }).join('');
 
+  const dueEmpty = dueCount === 0;
+
   container.innerHTML = `
-    <div class="screen-home" style="padding-bottom: 80px; padding: 20px; overflow-y: auto; height: 100%; box-sizing: border-box;">
-      <header style="margin-bottom: 24px;">
-        <h1 style="font-size: 24px; margin: 0 0 8px 0;">Chào bạn! 👋</h1>
-        <p style="color: var(--text-secondary); margin: 0;">${formatDate(new Date())}</p>
-      </header>
+    <div class="app-page">
+      <div class="page-inner">
 
-      <div class="streak-card" style="background: var(--card); border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
-        <div style="font-size: 32px;">🔥</div>
-        <div>
-          <h3 style="margin: 0; font-size: 18px; color: var(--text-primary);">Chuỗi học tập</h3>
-          <p style="margin: 4px 0 0 0; color: var(--text-secondary);">${streak} ngày liên tục</p>
+        <header class="home-head">
+          <h1 class="home-title">${greeting()}! 👋</h1>
+          <span class="home-date">${todayLabel()}</span>
+        </header>
+
+        <div class="home-grid">
+          <div class="home-col">
+
+            <section class="card due-card${dueEmpty ? ' is-empty' : ''}">
+              <div>
+                <div class="due-count">${dueEmpty ? 'Không có từ cần ôn' : `${dueCount} từ cần ôn`}</div>
+                <div class="due-sub">${dueEmpty ? 'Học từ mới để lấp đầy lịch ôn tập.' : 'Ôn đúng hạn là cách nhớ lâu nhất.'}</div>
+              </div>
+              <button class="due-btn" id="btn-primary">${dueEmpty ? 'Học từ mới' : 'Ôn tập ngay'}</button>
+            </section>
+
+            <section>
+              <h2 class="section-label">Chủ đề</h2>
+              ${topicsHtml
+                ? `<div class="topic-grid">${topicsHtml}</div>`
+                : `<div class="empty">Chưa có bài học nào.</div>`}
+            </section>
+
+            <section>
+              <h2 class="section-label">Luyện nhanh</h2>
+              <div class="quick-row">
+                <button class="quick" data-mode="flashcard">🃏 Flashcard</button>
+                <button class="quick" data-mode="quiz-type">⌨️ Điền từ</button>
+                <button class="quick" data-mode="quiz-listen">🎧 Nghe viết</button>
+                <button class="quick" data-mode="quiz-choice">📝 Trắc nghiệm</button>
+              </div>
+            </section>
+
+          </div>
+
+          <div class="home-col">
+
+            <section class="card">
+              <div class="streak-row">
+                <span class="streak-flame">${streak > 0 ? '🔥' : '🌱'}</span>
+                <div style="flex: 1;">
+                  <div class="streak-num">${streak} ngày</div>
+                  <div class="streak-cap">chuỗi học liên tục</div>
+                </div>
+              </div>
+              <div style="margin-top: var(--sp-4);">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-dim); margin-bottom: var(--sp-2);">
+                  <span>Mục tiêu hôm nay</span>
+                  <span>${studiedToday}/${dailyGoal} từ</span>
+                </div>
+                <span class="topic-bar"><span style="width: ${goalPercent}%"></span></span>
+              </div>
+            </section>
+
+            <section class="stat-row">
+              <div class="stat">
+                <div class="stat-num">${stats.total}</div>
+                <div class="stat-cap">Tổng từ</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" style="color: var(--yellow);">${stats.learning}</div>
+                <div class="stat-cap">Đang học</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" style="color: var(--green);">${stats.mastered}</div>
+                <div class="stat-cap">Đã thuộc</div>
+              </div>
+            </section>
+
+            <section class="card">
+              <h2 class="section-label">Hoạt động 7 ngày</h2>
+              <div class="chart">${chartHtml}</div>
+            </section>
+
+          </div>
         </div>
+
       </div>
-
-      <div class="stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px;">
-        <div style="background: var(--card); padding: 16px 12px; border-radius: 12px; text-align: center;">
-          <div style="font-size: 20px; font-weight: bold; color: var(--text-primary); margin-bottom: 4px;">${stats.total}</div>
-          <div style="font-size: 12px; color: var(--text-secondary);">Tổng từ</div>
-        </div>
-        <div style="background: var(--card); padding: 16px 12px; border-radius: 12px; text-align: center;">
-          <div style="font-size: 20px; font-weight: bold; color: var(--warning); margin-bottom: 4px;">${stats.learning}</div>
-          <div style="font-size: 12px; color: var(--text-secondary);">Đang học</div>
-        </div>
-        <div style="background: var(--card); padding: 16px 12px; border-radius: 12px; text-align: center;">
-          <div style="font-size: 20px; font-weight: bold; color: var(--success); margin-bottom: 4px;">${stats.mastered}</div>
-          <div style="font-size: 12px; color: var(--text-secondary);">Đã thuộc</div>
-        </div>
-      </div>
-
-      <div class="due-section" style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 16px; padding: 20px; margin-bottom: 24px; color: white;">
-        <h3 style="margin: 0 0 8px 0;">Cần ôn hôm nay: ${dueCount} từ</h3>
-        <p style="margin: 0 0 16px 0; opacity: 0.9; font-size: 14px;">Ôn tập đúng hạn giúp nhớ lâu hơn!</p>
-        <button id="btn-review" style="background: white; color: var(--primary-dark); border: none; padding: 12px 20px; border-radius: 8px; font-weight: bold; width: 100%; cursor: pointer;">
-          Ôn tập ngay →
-        </button>
-      </div>
-
-      <button id="btn-learn-new" style="background: var(--card); color: var(--text-primary); border: 1px solid var(--primary); padding: 16px; border-radius: 12px; font-weight: bold; width: 100%; cursor: pointer; margin-bottom: 24px;">
-        📖 Học bài mới
-      </button>
-
-      <div class="chart-section">
-        <h3 style="margin: 0 0 16px 0; font-size: 16px;">Hoạt động 7 ngày qua</h3>
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; height: 120px;">
-          ${barsHtml}
-        </div>
-      </div>
-
       <div id="nav-container"></div>
     </div>
   `;
 
-  // Render bottom nav assuming it returns HTML string
-  const navContainer = container.querySelector('#nav-container');
-  if (BottomNav && typeof BottomNav.render === 'function') {
-    navContainer.innerHTML = BottomNav.render('home');
-  }
+  container.querySelector('#nav-container').innerHTML = BottomNav.render('home');
+  BottomNav.updateBadge(dueCount);
 
-  // Event listeners
-  container.querySelector('#btn-review').addEventListener('click', () => {
-    Router.navigate('review');
+  container.querySelector('#btn-primary').addEventListener('click', () => {
+    Router.navigate(dueEmpty ? 'lessons' : 'review');
   });
 
-  container.querySelector('#btn-learn-new').addEventListener('click', () => {
-    Router.navigate('lessons');
+  container.querySelectorAll('.topic').forEach(btn => {
+    btn.addEventListener('click', () => {
+      Router.navigate('lesson-detail', { lessonId: btn.dataset.lesson });
+    });
   });
 
-  // Setup bottom nav listeners if needed, usually handled globally or inside BottomNav
+  // Quick-practice jumps straight into the first lesson, so home really is
+  // "open, pick, study" rather than three taps of navigation.
+  const firstLesson = LESSONS[0];
+  container.querySelectorAll('.quick').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (!firstLesson) return Router.navigate('lessons');
+      Router.navigate(btn.dataset.mode, { lessonId: firstLesson.id });
+    });
+  });
 }
 
-export function cleanup() {
-  // Cleanup if needed
-}
+export function cleanup() {}

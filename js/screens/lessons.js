@@ -3,6 +3,7 @@ import { Store } from '../store.js';
 import { LESSONS } from '../../data/lessons.js';
 import { TTS } from '../tts.js';
 import { BottomNav } from '../components/bottom-nav.js';
+import { groupByCategory } from '../../data/categories.js';
 
 export async function render(container, params = {}) {
   if (params.lessonId) {
@@ -13,69 +14,120 @@ export async function render(container, params = {}) {
 }
 
 async function renderLessonList(container) {
-  let html = `
-    <div class="screen-lessons" style="padding: 20px; padding-bottom: 80px; height: 100%; box-sizing: border-box; overflow-y: auto;">
-      <h1 style="margin: 0 0 16px 0; font-size: 24px;">Thư viện bài học</h1>
-      <div style="position: relative; margin-bottom: 20px;">
-        <input type="text" id="lesson-search" placeholder="Tìm kiếm bài học..." style="width: 100%; padding: 12px 16px 12px 40px; border-radius: 12px; border: 1px solid var(--surface); background: var(--card); color: var(--text-primary); box-sizing: border-box; font-size: 16px;">
-        <span style="position: absolute; left: 14px; top: 12px; color: var(--text-secondary);">🔍</span>
-      </div>
-      <div id="lesson-list-container" style="display: flex; flex-direction: column; gap: 16px;">
-        <!-- Lessons go here -->
+  container.innerHTML = `
+    <div class="app-page">
+      <div class="page-inner">
+        <header class="home-head">
+          <h1 class="home-title">Thư viện bài học</h1>
+          <span class="home-date" id="lesson-count"></span>
+        </header>
+
+        <div style="position: relative; margin-bottom: var(--sp-4);">
+          <input type="text" id="lesson-search" placeholder="Tìm bài học hoặc chủ đề..."
+            style="width: 100%; padding: 12px 16px 12px 40px; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--card); color: var(--text); box-sizing: border-box; font-size: 15px;">
+          <span style="position: absolute; left: 14px; top: 12px; color: var(--text-dim);">🔍</span>
+        </div>
+
+        <div id="cat-filter" class="chip-row" style="margin-bottom: var(--sp-6);"></div>
+        <div id="lesson-groups"></div>
       </div>
       <div id="nav-container"></div>
     </div>
   `;
-  container.innerHTML = html;
 
-  if (BottomNav && typeof BottomNav.render === 'function') {
-    container.querySelector('#nav-container').innerHTML = BottomNav.render('lessons');
-  }
+  container.querySelector('#nav-container').innerHTML = BottomNav.render('lessons');
+  BottomNav.updateBadge(await Store.getDueCount());
 
-  const listContainer = container.querySelector('#lesson-list-container');
+  const groupsEl = container.querySelector('#lesson-groups');
+  const filterEl = container.querySelector('#cat-filter');
   const searchInput = container.querySelector('#lesson-search');
+  const countEl = container.querySelector('#lesson-count');
 
-  async function renderList(query = '') {
-    listContainer.innerHTML = '';
-    for (const lesson of LESSONS) {
-      if (query && !lesson.title.toLowerCase().includes(query.toLowerCase())) {
-        continue;
-      }
-      const stats = await Store.getLessonStats(lesson.id);
-      const total = lesson.words.length;
-      const progress = total > 0 ? Math.round(((stats.mastered || 0) / total) * 100) : 0;
-      
-      const card = document.createElement('div');
-      card.style.cssText = `background: var(--card); border-radius: 16px; padding: 16px; cursor: pointer;`;
-      card.innerHTML = `
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
-          <h3 style="margin: 0; font-size: 18px; color: var(--text-primary);">${lesson.title}</h3>
-          <span style="background: var(--surface); color: var(--text-secondary); padding: 4px 8px; border-radius: 8px; font-size: 12px;">${total} từ</span>
-        </div>
-        <div style="display: flex; gap: 8px; margin-bottom: 16px;">
-          ${(lesson.tags || []).map(tag => `<span style="background: var(--primary-light); color: var(--primary-dark); padding: 2px 8px; border-radius: 12px; font-size: 12px;">${tag}</span>`).join('')}
-        </div>
-        <div>
-          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; color: var(--text-secondary);">
-            <span>Tiến độ</span>
-            <span>${progress}%</span>
-          </div>
-          <div style="width: 100%; height: 6px; background: var(--surface); border-radius: 3px; overflow: hidden;">
-            <div style="width: ${progress}%; height: 100%; background: var(--success); border-radius: 3px;"></div>
-          </div>
-        </div>
-      `;
-      card.addEventListener('click', () => {
-        Router.navigate('lesson-detail', { lessonId: lesson.id });
+  let activeCategory = 'all';
+  let query = '';
+
+  const allCategories = groupByCategory(LESSONS);
+
+  const paintFilters = () => {
+    const chips = [{ key: 'all', icon: '📚', label: 'Tất cả', count: LESSONS.length }]
+      .concat(allCategories.map(c => ({ key: c.key, icon: c.icon, label: c.label, count: c.lessons.length })));
+    filterEl.innerHTML = chips.map(c => `
+      <button class="quick" data-cat="${c.key}"
+        style="${c.key === activeCategory ? 'border-color: var(--primary); background: var(--card-hover);' : ''}">
+        ${c.icon} ${c.label} <span style="color: var(--text-muted);">${c.count}</span>
+      </button>
+    `).join('');
+    filterEl.querySelectorAll('[data-cat]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.cat;
+        paintFilters();
+        paintGroups();
       });
-      listContainer.appendChild(card);
-    }
-  }
+    });
+  };
 
-  await renderList();
+  const paintGroups = async () => {
+    const q = query.trim().toLowerCase();
+    const groups = groupByCategory(LESSONS)
+      .filter(g => activeCategory === 'all' || g.key === activeCategory)
+      .map(g => ({
+        ...g,
+        lessons: g.lessons.filter(l =>
+          !q ||
+          l.title.toLowerCase().includes(q) ||
+          (l.description || '').toLowerCase().includes(q) ||
+          (l.tags || []).some(t => t.toLowerCase().includes(q)) ||
+          g.label.toLowerCase().includes(q))
+      }))
+      .filter(g => g.lessons.length > 0);
+
+    const shown = groups.reduce((n, g) => n + g.lessons.length, 0);
+    countEl.textContent = `${shown} bài · ${groups.length} chủ đề`;
+
+    if (groups.length === 0) {
+      groupsEl.innerHTML = `<div class="empty">Không tìm thấy bài học nào khớp với "${q}".</div>`;
+      return;
+    }
+
+    const statsById = new Map();
+    await Promise.all(groups.flatMap(g => g.lessons).map(async l => {
+      statsById.set(l.id, await Store.getLessonStats(l.id));
+    }));
+
+    groupsEl.innerHTML = groups.map(g => `
+      <section style="margin-bottom: var(--sp-6);">
+        <h2 class="section-label">${g.icon} ${g.label}</h2>
+        <div class="topic-grid">
+          ${g.lessons.map(l => {
+            const s = statsById.get(l.id) || {};
+            const total = l.words.length;
+            const percent = total > 0 ? Math.round(((s.mastered || 0) / total) * 100) : 0;
+            return `
+              <button class="topic" data-lesson="${l.id}">
+                <span class="topic-name">${l.title}</span>
+                <span class="topic-meta">${l.description || ''}</span>
+                <span class="topic-meta">${total} từ · thuộc ${s.mastered || 0} · đang học ${s.learning || 0}</span>
+                <span class="topic-bar"><span style="width: ${percent}%"></span></span>
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </section>
+    `).join('');
+
+    groupsEl.querySelectorAll('[data-lesson]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        Router.navigate('lesson-detail', { lessonId: btn.dataset.lesson });
+      });
+    });
+  };
+
+  paintFilters();
+  await paintGroups();
 
   searchInput.addEventListener('input', (e) => {
-    renderList(e.target.value);
+    query = e.target.value;
+    paintGroups();
   });
 }
 

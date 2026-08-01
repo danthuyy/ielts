@@ -20,13 +20,13 @@ export async function render(container) {
   }
 
   container.innerHTML = `
-    <div class="screen-bookmarks" style="display: flex; flex-direction: column; height: 100%; background: var(--bg);">
+    <div class="screen-bookmarks app-page"><div class="page-inner">
       <div style="padding: 16px; display: flex; align-items: center; gap: 16px; background: var(--card); border-bottom: 1px solid var(--surface);">
         <button id="btn-back" style="background: none; border: none; font-size: 24px; color: var(--text-primary); cursor: pointer;">←</button>
         <h2 style="margin: 0; font-size: 18px; flex: 1;">Từ đã lưu (${fullBookmarkedWords.length})</h2>
       </div>
 
-      <div style="flex: 1; overflow-y: auto; padding: 20px; box-sizing: border-box;">
+      <div>
         ${fullBookmarkedWords.length > 0 ? `
           <button id="btn-study-bookmarks" style="width: 100%; padding: 16px; margin-bottom: 24px; background: var(--primary); color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 16px; cursor: pointer;">
             Ôn tập từ đã lưu
@@ -55,7 +55,7 @@ export async function render(container) {
           </div>
         `}
       </div>
-    </div>
+    </div></div>
   `;
 
   container.querySelector('#btn-back').addEventListener('click', () => {
@@ -64,7 +64,8 @@ export async function render(container) {
 
   if (fullBookmarkedWords.length > 0) {
     container.querySelector('#btn-study-bookmarks').addEventListener('click', () => {
-      Router.navigate('flashcard', { words: fullBookmarkedWords });
+      Router.setPayload({ words: fullBookmarkedWords });
+      Router.navigate('flashcard');
     });
 
     container.querySelectorAll('.bookmark-item').forEach(item => {

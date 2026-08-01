@@ -15,8 +15,13 @@ export async function render(container, params = {}) {
   let wordsToStudy = [];
   let currentIndex = 0;
   
-  if (params.words) {
+  // A word list cannot fit in the URL. Review calls render() directly with one;
+  // bookmarks navigates by hash and hands it over through the router.
+  const payload = Router.takePayload();
+  if (Array.isArray(params.words)) {
     wordsToStudy = params.words;
+  } else if (payload && Array.isArray(payload.words)) {
+    wordsToStudy = payload.words;
   } else if (params.lessonId) {
     const lesson = LESSONS.find(l => l.id === params.lessonId);
     if (lesson) {

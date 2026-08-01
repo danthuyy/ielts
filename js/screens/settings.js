@@ -31,7 +31,7 @@ export async function render(container) {
   const speechRate = Store.getSetting('speechRate', 1.0);
 
   container.innerHTML = `
-    <div class="screen-settings" style="padding: 20px; padding-bottom: 80px; height: 100%; box-sizing: border-box; overflow-y: auto; background: var(--bg);">
+    <div class="screen-settings app-page"><div class="page-inner">
       <h1 style="margin: 0 0 24px 0; font-size: 24px;">Cài đặt</h1>
 
       <div style="background: var(--card); border-radius: 16px; padding: 0 16px; margin-bottom: 24px;">
@@ -102,7 +102,7 @@ export async function render(container) {
         <p style="margin: 4px 0;">Made with ❤️ for IELTS learners</p>
       </div>
 
-      <div id="nav-container"></div>
+      </div><div id="nav-container"></div>
     </div>
   `;
 

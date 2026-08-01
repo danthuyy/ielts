@@ -60,14 +60,7 @@
     border-right: 1px solid var(--border);
     background: var(--bg);
   }
-  .bottom-nav {
-    max-width: 600px;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 1px solid var(--border);
-    border-right: 1px solid var(--border);
-  }
+  /* .bottom-nav desktop layout now lives in layout.css (sidebar). */
   .top-bar {
     max-width: 600px;
     margin: 0 auto;

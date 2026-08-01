@@ -9,7 +9,7 @@ export async function render(container) {
 
   if (!dueProgressList || dueProgressList.length === 0) {
     container.innerHTML = `
-      <div class="screen-review" style="display: flex; flex-direction: column; height: 100%; background: var(--bg);">
+      <div class="screen-review app-page"><div class="page-inner">
         <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center;">
           <div style="font-size: 80px; margin-bottom: 24px;">🎉</div>
           <h2 style="margin: 0 0 16px 0; color: var(--text-primary);">Tuyệt vời!</h2>
@@ -18,7 +18,7 @@ export async function render(container) {
             Thư viện bài học
           </button>
         </div>
-        <div id="nav-container"></div>
+        </div><div id="nav-container"></div>
       </div>
     `;
 

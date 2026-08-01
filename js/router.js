@@ -1,7 +1,20 @@
 export const Router = {
   routes: {},
   currentScreen: null,
-  
+  // One-shot payload for data too big for the hash (e.g. an ad-hoc word list).
+  // The receiving screen calls takePayload() and it is gone.
+  _payload: null,
+
+  setPayload(data) {
+    this._payload = data;
+  },
+
+  takePayload() {
+    const data = this._payload;
+    this._payload = null;
+    return data;
+  },
+
   register(name, screen) {
     this.routes[name] = screen;
   },

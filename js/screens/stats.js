@@ -11,7 +11,7 @@ export async function render(container) {
   const newPct = Math.round(((stats.newCount || 0) / total) * 100);
 
   container.innerHTML = `
-    <div class="screen-stats" style="padding: 20px; padding-bottom: 80px; height: 100%; box-sizing: border-box; overflow-y: auto;">
+    <div class="screen-stats app-page"><div class="page-inner">
       <h1 style="margin: 0 0 24px 0; font-size: 24px;">Thống kê học tập</h1>
 
       <div style="background: var(--card); border-radius: 16px; padding: 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-around;">
@@ -49,7 +49,7 @@ export async function render(container) {
         `).join('') : '<div style="color: var(--text-secondary); text-align: center; padding: 20px;">Chưa có dữ liệu kiểm tra.</div>'}
       </div>
 
-      <div id="nav-container"></div>
+      </div><div id="nav-container"></div>
     </div>
   `;
 
