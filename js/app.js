@@ -17,8 +17,17 @@ import * as BookmarksScreen from './screens/bookmarks.js';
 import * as SettingsScreen from './screens/settings.js';
 
 async function init() {
-  await Store.init();
-  TTS.init();
+  try {
+    await Store.init();
+  } catch (e) {
+    console.error('Store init error:', e);
+  }
+
+  try {
+    TTS.init();
+  } catch (e) {
+    console.error('TTS init error:', e);
+  }
   
   // Register screens
   Router.register('home', HomeScreen);

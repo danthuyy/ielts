@@ -1,20 +1,44 @@
+import { LESSONS } from '../data/lessons.js';
+
 export const Store = {
   db: null,
   
   async init() {
-    this.db = new window.Dexie('IELTSVocabDB');
-    this.db.version(1).stores({
-      wordProgress: '&id, lessonId, status, nextReview, bookmarked',
-      testHistory: '++id, date, lessonId, mode',
-      dailyActivity: '&date'
-    });
+    try {
+      const DexieClass = window.Dexie;
+      if (!DexieClass) {
+        console.warn('Dexie not available globally');
+        return;
+      }
+      this.db = new DexieClass('IELTSVocabDB');
+      this.db.version(1).stores({
+        wordProgress: '&id, lessonId, status, nextReview, bookmarked',
+        testHistory: '++id, date, lessonId, mode',
+        dailyActivity: '&date'
+      });
+      await this.db.open();
+
+      // Populate initial progress records for all words across all lessons if empty
+      const count = await this.db.wordProgress.count();
+      if (count === 0) {
+        for (const lesson of LESSONS) {
+          for (let i = 0; i < lesson.words.length; i++) {
+            await this.initWordProgress(lesson.id, i, lesson.words[i].word);
+          }
+        }
+      }
+    } catch (err) {
+      console.error('Failed to initialize IndexedDB store:', err);
+    }
   },
   
   async getWordProgress(id) {
+    if (!this.db) return null;
     return await this.db.wordProgress.get(id);
   },
   
   async getAllProgress(lessonId = null) {
+    if (!this.db) return [];
     if (lessonId) {
       return await this.db.wordProgress.where('lessonId').equals(lessonId).toArray();
     }
@@ -22,6 +46,7 @@ export const Store = {
   },
   
   async updateWordProgress(id, data) {
+    if (!this.db) return;
     const existing = await this.getWordProgress(id);
     if (existing) {
         await this.db.wordProgress.update(id, data);
@@ -31,6 +56,7 @@ export const Store = {
   },
   
   async initWordProgress(lessonId, wordIndex, word) {
+    if (!this.db) return null;
     const id = `${lessonId}_${wordIndex}`;
     const existing = await this.getWordProgress(id);
     if (!existing) {
@@ -54,6 +80,7 @@ export const Store = {
   },
   
   async getWordsForReview() {
+    if (!this.db) return [];
     const today = this.getTodayStr();
     return await this.db.wordProgress
       .where('nextReview')
@@ -63,13 +90,15 @@ export const Store = {
   },
   
   async getDueCount() {
+    if (!this.db) return 0;
     const words = await this.getWordsForReview();
     return words.length;
   },
   
   async getOverallStats() {
+    if (!this.db) return { total: LESSONS.reduce((acc, l) => acc + l.words.length, 0), newCount: 0, learning: 0, mastered: 0 };
     const words = await this.getAllProgress();
-    const total = words.length;
+    const total = words.length || LESSONS.reduce((acc, l) => acc + l.words.length, 0);
     const newCount = words.filter(w => w.status === 'new').length;
     const learning = words.filter(w => w.status === 'learning').length;
     const mastered = words.filter(w => w.status === 'mastered').length;
@@ -77,6 +106,7 @@ export const Store = {
   },
   
   async getLessonStats(lessonId) {
+    if (!this.db) return { total: 0, newCount: 0, learning: 0, mastered: 0 };
     const words = await this.getAllProgress(lessonId);
     const total = words.length;
     const newCount = words.filter(w => w.status === 'new').length;
@@ -86,6 +116,7 @@ export const Store = {
   },
   
   async toggleBookmark(id) {
+    if (!this.db) return false;
     const word = await this.getWordProgress(id);
     if (word) {
       word.bookmarked = !word.bookmarked;
@@ -96,10 +127,12 @@ export const Store = {
   },
   
   async getBookmarkedWords() {
+    if (!this.db) return [];
     return await this.db.wordProgress.where('bookmarked').equals(true).toArray();
   },
   
   async saveTestResult(result) {
+    if (!this.db) return;
     return await this.db.testHistory.add({
       date: new Date().toISOString(),
       lessonId: result.lessonId,
@@ -112,6 +145,7 @@ export const Store = {
   },
   
   async getTestHistory(lessonId = null) {
+    if (!this.db) return [];
     if (lessonId) {
       return await this.db.testHistory.where('lessonId').equals(lessonId).toArray();
     }
@@ -119,6 +153,7 @@ export const Store = {
   },
   
   async recordActivity(wordsStudied, wordsCorrect, mode) {
+    if (!this.db) return;
     const today = this.getTodayStr();
     const activity = await this.db.dailyActivity.get(today) || {
       date: today,
@@ -138,6 +173,7 @@ export const Store = {
   },
   
   async getStreak() {
+    if (!this.db) return 0;
     let streak = 0;
     const activities = await this.db.dailyActivity.orderBy('date').reverse().toArray();
     if (activities.length === 0) return 0;
@@ -173,6 +209,7 @@ export const Store = {
   },
   
   async getWeeklyActivity() {
+    if (!this.db) return [];
     const today = new Date();
     today.setHours(0,0,0,0);
     const lastWeek = new Date(today);
@@ -185,6 +222,7 @@ export const Store = {
   },
   
   async getMonthlyActivity() {
+    if (!this.db) return [];
     const today = new Date();
     today.setHours(0,0,0,0);
     const lastMonth = new Date(today);
