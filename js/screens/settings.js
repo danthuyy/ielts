@@ -1,6 +1,27 @@
 import { Router } from '../router.js';
 import { Store } from '../store.js';
 import { BottomNav } from '../components/bottom-nav.js';
+import { Sync } from '../sync.js';
+import { isSyncConfigured } from '../config.js';
+
+let unsubscribeStatus = null;
+
+const STATUS_TEXT = {
+  idle: ['Chờ đồng bộ', 'var(--text-secondary)'],
+  syncing: ['Đang đồng bộ...', 'var(--warning)'],
+  ok: ['Đã đồng bộ', 'var(--success)'],
+  offline: ['Không có mạng', 'var(--warning)'],
+  error: ['Lỗi đồng bộ', 'var(--error)'],
+  disabled: ['Chưa bật đồng bộ', 'var(--text-secondary)']
+};
+
+function formatStamp(iso) {
+  if (!iso) return 'chưa lần nào';
+  const d = new Date(iso);
+  if (isNaN(d)) return 'chưa lần nào';
+  const pad = n => String(n).padStart(2, '0');
+  return `${pad(d.getHours())}:${pad(d.getMinutes())} ngày ${pad(d.getDate())}/${pad(d.getMonth() + 1)}`;
+}
 
 export async function render(container) {
   const goal = Store.getSetting('dailyGoal', 10);
@@ -46,6 +67,20 @@ export async function render(container) {
           </div>
         </div>
 
+      </div>
+
+      <div style="background: var(--card); border-radius: 16px; padding: 16px; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 20px;">☁️</span>
+            <span style="font-size: 16px; color: var(--text-primary);">Đồng bộ</span>
+          </div>
+          <span id="sync-status" style="font-size: 14px; font-weight: 600;"></span>
+        </div>
+        <p id="sync-detail" style="margin: 0 0 12px 44px; font-size: 13px; color: var(--text-secondary);"></p>
+        <button id="btn-sync-now" style="width: 100%; padding: 12px; border-radius: 10px; background: var(--surface); color: var(--text-primary); border: none; font-size: 15px; cursor: pointer;">
+          Đồng bộ ngay
+        </button>
       </div>
 
       <button id="btn-reset" style="width: 100%; padding: 16px; border-radius: 12px; background: var(--card); color: var(--error); border: 1px solid var(--error); font-size: 16px; font-weight: bold; cursor: pointer; margin-bottom: 24px;">
@@ -98,12 +133,49 @@ export async function render(container) {
     });
   });
 
-  container.querySelector('#btn-reset').addEventListener('click', () => {
-    if (confirm('Bạn có chắc chắn muốn xóa tất cả tiến trình học tập? Hành động này không thể hoàn tác.')) {
-      localStorage.clear();
-      window.location.reload();
+  const statusEl = container.querySelector('#sync-status');
+  const detailEl = container.querySelector('#sync-detail');
+  const syncBtn = container.querySelector('#btn-sync-now');
+
+  function paintStatus(status, message) {
+    const [label, color] = STATUS_TEXT[status] || STATUS_TEXT.idle;
+    statusEl.textContent = label;
+    statusEl.style.color = color;
+    if (!isSyncConfigured()) {
+      detailEl.textContent = 'Điền Supabase URL và anon key trong js/config.js để bật.';
+    } else if (status === 'error') {
+      detailEl.textContent = message;
+    } else {
+      detailEl.textContent = `Lần cuối: ${formatStamp(Sync.lastSyncedAt())}`;
     }
+  }
+
+  paintStatus(Sync.status, Sync.message);
+  unsubscribeStatus = Sync.onStatus(paintStatus);
+
+  syncBtn.disabled = !isSyncConfigured();
+  syncBtn.style.opacity = isSyncConfigured() ? '1' : '0.5';
+  syncBtn.addEventListener('click', () => Sync.reconcile());
+
+  container.querySelector('#btn-reset').addEventListener('click', async () => {
+    if (!confirm('Bạn có chắc chắn muốn xóa tất cả tiến trình học tập? Hành động này không thể hoàn tác và sẽ xóa trên mọi thiết bị.')) {
+      return;
+    }
+    // Wipe IndexedDB too — clearing localStorage alone left every word's
+    // progress behind.
+    await Store.importAll({ settings: {}, wordProgress: [], testHistory: [], dailyActivity: [] });
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith('ielts_')) localStorage.removeItem(key);
+    }
+    await Sync.clearRemote();
+    window.location.reload();
   });
 }
 
-export function cleanup() {}
+export function cleanup() {
+  if (unsubscribeStatus) {
+    unsubscribeStatus();
+    unsubscribeStatus = null;
+  }
+}

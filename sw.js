@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ielts-vocab-v4';
+const CACHE_NAME = 'ielts-vocab-v5';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -38,7 +38,14 @@ self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET') return;
 
-  const sameOrigin = new URL(req.url).origin === self.location.origin;
+  const url = new URL(req.url);
+  const sameOrigin = url.origin === self.location.origin;
+
+  // Only these third parties are static enough to cache. Anything else —
+  // notably the sync API — must go straight to the network, or a stale
+  // cached response would silently roll progress back.
+  const CACHEABLE_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'cdn.jsdelivr.net'];
+  if (!sameOrigin && !CACHEABLE_HOSTS.includes(url.hostname)) return;
 
   if (sameOrigin) {
     // 'no-cache' forces a conditional request, so the browser's own HTTP

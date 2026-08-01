@@ -1,8 +1,60 @@
 import { LESSONS } from '../data/lessons.js';
 
+const SETTING_PREFIX = 'ielts_setting_';
+
 export const Store = {
   db: null,
-  
+  // Sync hooks into this so any local write schedules an upload.
+  onChange: null,
+
+  notifyChange() {
+    if (typeof this.onChange === 'function') this.onChange();
+  },
+
+  // Whole-account snapshot, used by sync and by manual backup.
+  async exportAll() {
+    const settings = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith(SETTING_PREFIX)) {
+        settings[key.slice(SETTING_PREFIX.length)] = localStorage.getItem(key);
+      }
+    }
+    if (!this.db) return { version: 1, settings, wordProgress: [], testHistory: [], dailyActivity: [] };
+    const [wordProgress, testHistory, dailyActivity] = await Promise.all([
+      this.db.wordProgress.toArray(),
+      this.db.testHistory.toArray(),
+      this.db.dailyActivity.toArray()
+    ]);
+    return { version: 1, settings, wordProgress, testHistory, dailyActivity };
+  },
+
+  // Replaces local state wholesale — callers decide which side wins first.
+  async importAll(data) {
+    if (!data || typeof data !== 'object') return false;
+    if (data.settings && typeof data.settings === 'object') {
+      for (const [key, value] of Object.entries(data.settings)) {
+        localStorage.setItem(SETTING_PREFIX + key, value);
+      }
+    }
+    if (!this.db) return false;
+    await this.db.transaction('rw', this.db.wordProgress, this.db.testHistory, this.db.dailyActivity, async () => {
+      if (Array.isArray(data.wordProgress)) {
+        await this.db.wordProgress.clear();
+        await this.db.wordProgress.bulkPut(data.wordProgress);
+      }
+      if (Array.isArray(data.testHistory)) {
+        await this.db.testHistory.clear();
+        await this.db.testHistory.bulkPut(data.testHistory);
+      }
+      if (Array.isArray(data.dailyActivity)) {
+        await this.db.dailyActivity.clear();
+        await this.db.dailyActivity.bulkPut(data.dailyActivity);
+      }
+    });
+    return true;
+  },
+
   async init() {
     try {
       const DexieClass = window.Dexie;
@@ -53,6 +105,7 @@ export const Store = {
     } else {
         await this.db.wordProgress.put({ ...data, id });
     }
+    this.notifyChange();
   },
   
   async initWordProgress(lessonId, wordIndex, word) {
@@ -75,6 +128,7 @@ export const Store = {
         bookmarked: false,
         lastReviewed: null
       });
+      this.notifyChange();
     }
     return await this.getWordProgress(id);
   },
@@ -134,6 +188,7 @@ export const Store = {
   
   async saveTestResult(result) {
     if (!this.db) return;
+    this.notifyChange();
     return await this.db.testHistory.add({
       date: new Date().toISOString(),
       lessonId: result.lessonId,
@@ -171,6 +226,7 @@ export const Store = {
     }
     
     await this.db.dailyActivity.put(activity);
+    this.notifyChange();
   },
   
   async getStreak() {
@@ -236,12 +292,18 @@ export const Store = {
   },
   
   getSetting(key, defaultValue) {
-    const val = localStorage.getItem(`ielts_setting_${key}`);
-    return val !== null ? JSON.parse(val) : defaultValue;
+    const val = localStorage.getItem(SETTING_PREFIX + key);
+    if (val === null) return defaultValue;
+    try {
+      return JSON.parse(val);
+    } catch {
+      return defaultValue;
+    }
   },
   
   setSetting(key, value) {
-    localStorage.setItem(`ielts_setting_${key}`, JSON.stringify(value));
+    localStorage.setItem(SETTING_PREFIX + key, JSON.stringify(value));
+    this.notifyChange();
   },
   
   getTodayStr() {

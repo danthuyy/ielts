@@ -1,6 +1,7 @@
 import { Router } from './router.js';
 import { Store } from './store.js';
 import { TTS } from './tts.js';
+import { Sync } from './sync.js';
 
 // Screen imports
 import * as HomeScreen from './screens/home.js';
@@ -44,6 +45,20 @@ async function init() {
   Router.register('bookmarks', BookmarksScreen);
   Router.register('settings', SettingsScreen);
   
+  // Pull remote progress before the first screen paints, so opening the app
+  // on any device shows the up-to-date state without a manual refresh.
+  try {
+    await Sync.start();
+  } catch (e) {
+    console.error('Sync start error:', e);
+  }
+
+  // A pull that lands later (tab regained focus, network came back) must
+  // repaint whatever screen is showing.
+  window.addEventListener('sync:pulled', () => {
+    Router.handleHashChange().catch(err => console.error('Re-render error:', err));
+  });
+
   try {
     await Router.init();
   } catch (e) {
