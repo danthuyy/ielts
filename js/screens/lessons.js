@@ -150,23 +150,23 @@ async function renderLessonDetail(container, lessonId) {
         <h3 style="margin: 0 0 16px 0; font-size: 16px;">Danh sách từ (${lesson.words.length})</h3>
         <div style="display: flex; flex-direction: column; gap: 12px;">
           ${lesson.words.map((w, index) => {
-            const pid = \`\${lessonId}_\${index}\`;
+            const pid = `${lessonId}_${index}`;
             const prog = progressData.find(p => p.id === pid);
-            return \`
-              <div class="word-item" data-word="\${w.word}" style="background: var(--card); padding: 16px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+            return `
+              <div class="word-item" data-word="${w.word}" style="background: var(--card); padding: 16px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
                 <div>
                   <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-                    <strong style="font-size: 16px; color: var(--text-primary);">\${w.word}</strong>
-                    <span style="font-size: 12px; color: var(--text-secondary);">\${w.pos}</span>
+                    <strong style="font-size: 16px; color: var(--text-primary);">${w.word}</strong>
+                    <span style="font-size: 12px; color: var(--text-secondary);">${w.pos}</span>
                   </div>
-                  <div style="font-size: 14px; color: var(--text-secondary);">\${w.vi}</div>
+                  <div style="font-size: 14px; color: var(--text-secondary);">${w.vi}</div>
                 </div>
                 <div style="display: flex; align-items: center; gap: 12px;">
-                  \${getStatusBadge(prog)}
-                  <span class="bookmark-icon" style="font-size: 18px; color: \${isBookmarked(prog) ? 'var(--warning)' : 'var(--surface)'};">★</span>
+                  ${getStatusBadge(prog)}
+                  <span class="bookmark-icon" style="font-size: 18px; color: ${isBookmarked(prog) ? 'var(--warning)' : 'var(--surface)'};">★</span>
                 </div>
               </div>
-            \`;
+            `;
           }).join('')}
         </div>
       </div>

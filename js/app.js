@@ -44,8 +44,25 @@ async function init() {
   Router.register('bookmarks', BookmarksScreen);
   Router.register('settings', SettingsScreen);
   
-  Router.init();
+  try {
+    await Router.init();
+  } catch (e) {
+    // Never leave the user on a silent blank screen.
+    console.error('Router init error:', e);
+    const app = document.getElementById('app');
+    if (app && !app.innerHTML.trim()) {
+      app.innerHTML = `<div style="padding:24px;color:var(--text-primary);font-family:inherit;">
+        <h2 style="margin:0 0 8px 0;">Có lỗi khi tải ứng dụng</h2>
+        <p style="color:var(--text-secondary);margin:0 0 16px 0;">${e.message}</p>
+        <button onclick="location.reload()" style="padding:12px 20px;border-radius:8px;border:none;background:var(--primary);color:#fff;cursor:pointer;">Tải lại</button>
+      </div>`;
+    }
+  }
 }
 
-// Start app
-window.addEventListener('DOMContentLoaded', init);
+// Start app. Module scripts are deferred, but guard in case DOM is already ready.
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}

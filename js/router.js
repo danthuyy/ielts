@@ -7,8 +7,10 @@ export const Router = {
   },
   
   navigate(name, params = {}) {
-    const hashParams = Object.values(params).length > 0 ? '/' + Object.values(params).join('/') : '';
-    window.location.hash = name + hashParams;
+    const values = Object.values(params)
+      .filter(v => v !== undefined && v !== null && v !== '')
+      .map(v => encodeURIComponent(v));
+    window.location.hash = name + (values.length > 0 ? '/' + values.join('/') : '');
   },
   
   async init() {
@@ -20,7 +22,9 @@ export const Router = {
     const hash = window.location.hash.slice(1) || 'home';
     const parts = hash.split('/');
     const name = parts[0];
-    const params = parts.slice(1);
+    // Screens read named params (e.g. params.lessonId), so map the first
+    // positional segment onto lessonId — the only route param in use.
+    const params = parts[1] ? { lessonId: decodeURIComponent(parts[1]) } : {};
     
     if (this.currentScreen && this.routes[this.currentScreen]?.cleanup) {
       this.routes[this.currentScreen].cleanup();

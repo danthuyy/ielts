@@ -128,7 +128,8 @@ export const Store = {
   
   async getBookmarkedWords() {
     if (!this.db) return [];
-    return await this.db.wordProgress.where('bookmarked').equals(true).toArray();
+    // IndexedDB cannot index booleans, so filter instead of using where().
+    return await this.db.wordProgress.filter(w => w.bookmarked === true).toArray();
   },
   
   async saveTestResult(result) {

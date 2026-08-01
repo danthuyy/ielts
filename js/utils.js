@@ -16,17 +16,30 @@ export function getToday() {
   return `${year}-${month}-${day}`;
 }
 
-export function formatDate(dateStr) {
-  if (!dateStr) return '';
-  const parts = dateStr.split('T')[0].split('-');
-  if (parts.length !== 3) return dateStr;
+// Accepts a 'YYYY-MM-DD' / ISO string or a Date object.
+function dateParts(value) {
+  if (!value) return null;
+  if (value instanceof Date) {
+    if (isNaN(value)) return null;
+    return [
+      String(value.getFullYear()),
+      String(value.getMonth() + 1).padStart(2, '0'),
+      String(value.getDate()).padStart(2, '0')
+    ];
+  }
+  const parts = String(value).split('T')[0].split('-');
+  return parts.length === 3 ? parts : null;
+}
+
+export function formatDate(value) {
+  const parts = dateParts(value);
+  if (!parts) return value ? String(value) : '';
   return `${parts[2]}/${parts[1]}/${parts[0]}`;
 }
 
-export function formatDateShort(dateStr) {
-  if (!dateStr) return '';
-  const parts = dateStr.split('T')[0].split('-');
-  if (parts.length !== 3) return dateStr;
+export function formatDateShort(value) {
+  const parts = dateParts(value);
+  if (!parts) return value ? String(value) : '';
   return `${parts[2]}/${parts[1]}`;
 }
 
