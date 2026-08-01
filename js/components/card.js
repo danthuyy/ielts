@@ -9,7 +9,8 @@ export const FlashCard = {
         .flashcard-container {
           perspective: 1000px;
           width: 100%;
-          height: 400px;
+          height: 100%;      /* was a fixed 400px inside a 350px box, so the
+                                card spilled over the hint text below it */
           margin: 0 auto;
         }
         .flashcard {

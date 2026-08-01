@@ -3,6 +3,7 @@ import { Store } from '../store.js';
 import { SRS } from '../srs.js';
 import { TTS } from '../tts.js';
 import { LESSONS } from '../../data/lessons.js';
+import * as Keys from '../keys.js';
 
 export async function render(container, params = {}) {
   let words = [];
@@ -58,6 +59,12 @@ export async function render(container, params = {}) {
           <button id="btn-action" style="width: 100%; max-width: 400px; padding: 16px; border-radius: 12px; border: none; background: var(--primary); color: white; font-size: 18px; font-weight: bold; cursor: pointer;">
             Kiểm tra
           </button>
+
+          ${Keys.hintBar([
+            [['Enter'], 'kiểm tra / tiếp tục'],
+            [['S'], 'đọc từ'],
+            [['Esc'], 'thoát']
+          ])}
         </div>
       </div>
     `;
@@ -112,12 +119,18 @@ export async function render(container, params = {}) {
     };
 
     btnAction.addEventListener('click', checkAnswer);
-    input.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') checkAnswer();
-    });
+
+    // Bound globally, not on the input: once an answer is checked the input is
+    // disabled and loses focus, so an input-scoped Enter could never advance.
+    Keys.bind({
+      'Enter': checkAnswer,
+      's': () => { if (hasChecked) TTS.speak(currentWord.word); },
+      'Escape': () => Router.navigate('lesson-detail', { lessonId: params.lessonId })
+    }, { allowWhileTyping: ['Enter', 'Escape'] });
   };
 
   const showResults = () => {
+    Keys.bind({ 'Enter': () => Router.navigate('lesson-detail', { lessonId: params.lessonId }) });
     container.innerHTML = `
       <div class="screen-results" style="display: flex; flex-direction: column; height: 100%; background: var(--bg); align-items: center; justify-content: center; padding: 20px;">
         <div style="font-size: 64px; margin-bottom: 24px;">${correctCount === words.length ? '🏆' : '👏'}</div>
@@ -138,4 +151,6 @@ export async function render(container, params = {}) {
   renderQuestion();
 }
 
-export function cleanup() {}
+export function cleanup() {
+  Keys.unbind();
+}

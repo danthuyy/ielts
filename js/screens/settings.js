@@ -2,9 +2,11 @@ import { Router } from '../router.js';
 import { Store } from '../store.js';
 import { BottomNav } from '../components/bottom-nav.js';
 import { Sync } from '../sync.js';
+import { TTS } from '../tts.js';
 import { isSyncConfigured } from '../config.js';
 
 let unsubscribeStatus = null;
+let detachVoices = null;
 
 const STATUS_TEXT = {
   idle: ['Chờ đồng bộ', 'var(--text-secondary)'],
@@ -56,6 +58,14 @@ export async function render(container) {
             <input type="checkbox" id="auto-speak-toggle" ${autoSpeak ? 'checked' : ''} style="opacity: 0; width: 0; height: 0;">
             <span class="slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: ${autoSpeak ? 'var(--primary)' : 'var(--surface)'}; transition: .4s; border-radius: 24px;"></span>
           </label>
+        </div>
+
+        <div style="padding: 16px 0; border-bottom: 1px solid var(--surface);">
+          <div style="margin-bottom: 12px; font-size: 16px; color: var(--text-primary);">Giọng đọc</div>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <select id="voice-select" style="flex: 1; padding: 12px; border-radius: 8px; background: var(--surface); color: var(--text-primary); border: none; font-size: 15px; cursor: pointer;"></select>
+            <button id="btn-test-voice" style="padding: 12px 16px; border-radius: 8px; background: var(--surface); color: var(--primary); border: none; font-size: 15px; cursor: pointer; white-space: nowrap;">🔊 Nghe thử</button>
+          </div>
         </div>
 
         <div style="padding: 16px 0;">
@@ -118,11 +128,43 @@ export async function render(container) {
     Store.setSetting('autoSpeak', isChecked);
   });
 
+  const voiceSelect = container.querySelector('#voice-select');
+  const paintVoices = () => {
+    const voices = TTS.listVoices();
+    if (voices.length === 0) {
+      voiceSelect.innerHTML = '<option>Máy chưa có giọng tiếng Anh</option>';
+      voiceSelect.disabled = true;
+      return;
+    }
+    const current = TTS.currentVoiceName();
+    voiceSelect.innerHTML = voices
+      .map(v => `<option value="${v.name}"${v.name === current ? ' selected' : ''}>${v.name} — ${v.lang}</option>`)
+      .join('');
+  };
+  paintVoices();
+  // The voice list arrives asynchronously on first load.
+  if (window.speechSynthesis) {
+    window.speechSynthesis.addEventListener('voiceschanged', paintVoices);
+    detachVoices = () => window.speechSynthesis.removeEventListener('voiceschanged', paintVoices);
+  }
+
+  voiceSelect.addEventListener('change', (e) => {
+    TTS.setVoice(e.target.value);
+    Store.setSetting('voiceName', e.target.value);
+    TTS.speak('happiness');
+  });
+
+  container.querySelector('#btn-test-voice').addEventListener('click', () => {
+    TTS.speak('Happiness stems from meaningful relationships.');
+  });
+
   container.querySelectorAll('.rate-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const val = parseFloat(btn.dataset.val);
       Store.setSetting('speechRate', val);
-      
+      TTS.setRate(val);          // the buttons used to change nothing
+      TTS.speak('happiness');
+
       // Update UI
       container.querySelectorAll('.rate-btn').forEach(b => {
         b.style.background = 'var(--surface)';
@@ -177,5 +219,9 @@ export function cleanup() {
   if (unsubscribeStatus) {
     unsubscribeStatus();
     unsubscribeStatus = null;
+  }
+  if (detachVoices) {
+    detachVoices();
+    detachVoices = null;
   }
 }

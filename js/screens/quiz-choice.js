@@ -4,6 +4,7 @@ import { SRS } from '../srs.js';
 import { shuffle } from '../utils.js';
 import { TTS } from '../tts.js';
 import { LESSONS } from '../../data/lessons.js';
+import * as Keys from '../keys.js';
 
 export async function render(container, params = {}) {
   let words = [];
@@ -74,6 +75,13 @@ export async function render(container, params = {}) {
               </button>
             `).join('')}
           </div>
+
+          ${Keys.hintBar([
+            [['A', 'B', 'C', 'D'], 'chọn đáp án'],
+            [['1', '4'], 'hoặc số'],
+            [['S'], 'đọc từ'],
+            [['Esc'], 'thoát']
+          ])}
         </div>
       </div>
     `;
@@ -92,7 +100,8 @@ export async function render(container, params = {}) {
     });
 
     let answered = false;
-    container.querySelectorAll('.choice-btn').forEach(btn => {
+    const choiceButtons = [...container.querySelectorAll('.choice-btn')];
+    choiceButtons.forEach(btn => {
       btn.addEventListener('click', async () => {
         if (answered) return;
         answered = true;
@@ -131,9 +140,20 @@ export async function render(container, params = {}) {
         }, 1500);
       });
     });
+
+    // Options are labelled A–D on screen, so accept those as well as digits.
+    Keys.bind({
+      '1': () => choiceButtons[0]?.click(), 'a': () => choiceButtons[0]?.click(),
+      '2': () => choiceButtons[1]?.click(), 'b': () => choiceButtons[1]?.click(),
+      '3': () => choiceButtons[2]?.click(), 'c': () => choiceButtons[2]?.click(),
+      '4': () => choiceButtons[3]?.click(), 'd': () => choiceButtons[3]?.click(),
+      's': () => TTS.speak(currentWord.word),
+      'Escape': () => Router.navigate('lesson-detail', { lessonId: params.lessonId })
+    });
   };
 
   const showResults = () => {
+    Keys.bind({ 'Enter': () => Router.navigate('lesson-detail', { lessonId: params.lessonId }) });
     container.innerHTML = `
       <div class="screen-results" style="display: flex; flex-direction: column; height: 100%; background: var(--bg); align-items: center; justify-content: center; padding: 20px;">
         <div style="font-size: 64px; margin-bottom: 24px;">${correctCount === words.length ? '🏆' : '👍'}</div>
@@ -154,4 +174,6 @@ export async function render(container, params = {}) {
   renderQuestion();
 }
 
-export function cleanup() {}
+export function cleanup() {
+  Keys.unbind();
+}

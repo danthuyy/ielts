@@ -16,6 +16,15 @@ html, body {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Screens are written as `height: 100%`, which resolves to auto unless the
+   container itself is sized — without this every screen fell short of the
+   viewport and left dead space at the bottom. */
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 6px;

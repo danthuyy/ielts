@@ -3,6 +3,7 @@ import { Store } from '../store.js';
 import { SRS } from '../srs.js';
 import { TTS } from '../tts.js';
 import { LESSONS } from '../../data/lessons.js';
+import * as Keys from '../keys.js';
 
 export async function render(container, params = {}) {
   let words = [];
@@ -55,6 +56,12 @@ export async function render(container, params = {}) {
           <button id="btn-action" style="width: 100%; max-width: 400px; padding: 16px; border-radius: 12px; border: none; background: var(--primary); color: white; font-size: 18px; font-weight: bold; cursor: pointer;">
             Kiểm tra
           </button>
+
+          ${Keys.hintBar([
+            [['Enter'], 'kiểm tra / tiếp tục'],
+            [['↑'], 'nghe lại'],
+            [['Esc'], 'thoát']
+          ])}
         </div>
       </div>
     `;
@@ -118,12 +125,25 @@ export async function render(container, params = {}) {
     };
 
     btnAction.addEventListener('click', checkAnswer);
+
+    // Global, not input-scoped: the input is disabled after checking, so an
+    // input-bound Enter could not advance to the next word.
+    // ArrowUp rather than a letter: the caret sits in the answer box the whole
+    // time, so a letter key would be typed instead of replaying the audio.
+    Keys.bind({
+      'Enter': checkAnswer,
+      'ArrowUp': playAudio,
+      'r': playAudio,
+      'Escape': () => Router.navigate('lesson-detail', { lessonId: params.lessonId })
+    }, { allowWhileTyping: ['Enter', 'ArrowUp', 'Escape'] });
+
     input.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') checkAnswer();
     });
   };
 
   const showResults = () => {
+    Keys.bind({ 'Enter': () => Router.navigate('lesson-detail', { lessonId: params.lessonId }) });
     container.innerHTML = `
       <div class="screen-results" style="display: flex; flex-direction: column; height: 100%; background: var(--bg); align-items: center; justify-content: center; padding: 20px;">
         <div style="font-size: 64px; margin-bottom: 24px;">${correctCount === words.length ? '🏆' : '👏'}</div>
@@ -144,4 +164,6 @@ export async function render(container, params = {}) {
   renderQuestion();
 }
 
-export function cleanup() {}
+export function cleanup() {
+  Keys.unbind();
+}
