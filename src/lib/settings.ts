@@ -4,10 +4,15 @@
  * sync payload stays compatible.
  */
 
+import { HINT_STYLES, type HintStyle } from './hints';
+
 export const SETTING_PREFIX = 'ielts_setting_';
 
 export const THEME_CHOICES = ['system', 'light', 'dark'] as const;
 export type ThemeChoice = (typeof THEME_CHOICES)[number];
+
+// Re-exported so screens can import every setting-shaped thing from one place.
+export { HINT_STYLES, HINT_STYLE_LABEL, type HintStyle } from './hints';
 
 export interface Settings {
   dailyGoal: number;
@@ -21,6 +26,10 @@ export interface Settings {
   remindDaily: boolean;
   /** Local time of day for that reminder, "HH:MM". */
   remindAt: string;
+  /** How the typing quizzes reveal a hint. */
+  hintStyle: HintStyle;
+  /** Shuffle the word order at the start of each study session. */
+  shuffleWords: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -32,6 +41,8 @@ export const DEFAULT_SETTINGS: Settings = {
   examDate: '',
   remindDaily: false,
   remindAt: '20:00',
+  hintStyle: 'progressive',
+  shuffleWords: true,
 };
 
 type Listener = (settings: Settings) => void;
@@ -57,7 +68,15 @@ export function getSettings(): Settings {
     examDate: readRaw('examDate'),
     remindDaily: readRaw('remindDaily'),
     remindAt: readRaw('remindAt'),
+    hintStyle: readHintStyle(),
+    shuffleWords: readRaw('shuffleWords'),
   };
+}
+
+/** Guarded like the theme: an unknown value would break the hint button. */
+function readHintStyle(): HintStyle {
+  const value = readRaw('hintStyle');
+  return HINT_STYLES.includes(value) ? value : DEFAULT_SETTINGS.hintStyle;
 }
 
 /** Guarded separately: an unknown string here would break the theme switch. */

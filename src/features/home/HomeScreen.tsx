@@ -7,6 +7,7 @@ import { routes, STUDY_MODES } from '@/app/routes';
 import { useSettings } from '@/hooks/useSettings';
 import { LoadingScreen } from '@/components/ScreenState';
 import {
+  countNewWords,
   countStudiedToday,
   countUnmastered,
   getActivitySince,
@@ -69,15 +70,25 @@ export function HomeScreen() {
       countUnmastered(),
       countStudiedToday(),
     ]);
+    const newCount = await countNewWords();
     const lessonStats = await Promise.all(
       LESSONS.map(async (lesson) => ({ lesson, stats: await getLessonStats(lesson.id) })),
     );
-    return { stats, streak, dueCount: due.length, activity, lessonStats, unmastered, doneToday };
+    return {
+      stats,
+      streak,
+      dueCount: due.length,
+      activity,
+      lessonStats,
+      unmastered,
+      doneToday,
+      newCount,
+    };
   }, []);
 
   if (!data) return <LoadingScreen />;
 
-  const { stats, streak, dueCount, activity, lessonStats, unmastered, doneToday } = data;
+  const { stats, streak, dueCount, activity, lessonStats, unmastered, doneToday, newCount } = data;
   const cram = settings.examDate ? buildCramPlan(settings.examDate, unmastered, doneToday) : null;
   const days = lastSevenDays(activity);
   const studiedToday = days[days.length - 1]?.studied ?? 0;
@@ -129,16 +140,32 @@ export function HomeScreen() {
               </p>
               <p className="due-card__sub">
                 {nothingDue
-                  ? 'Học từ mới để lấp đầy lịch ôn tập.'
+                  ? newCount > 0
+                    ? `Còn ${newCount} từ chưa gặp bao giờ.`
+                    : 'Bạn đã gặp qua mọi từ hiện có.'
                   : 'Ôn đúng hạn là cách nhớ lâu nhất.'}
               </p>
             </div>
-            <button
-              className="btn"
-              onClick={() => navigate(nothingDue ? routes.lessons() : routes.review())}
-            >
-              {nothingDue ? 'Học từ mới' : 'Ôn tập ngay'}
-            </button>
+            <div className="due-card__actions">
+              {!nothingDue && (
+                <button className="btn" onClick={() => navigate(routes.review())}>
+                  Ôn tập ngay
+                </button>
+              )}
+              {newCount > 0 && (
+                <button
+                  className={nothingDue ? 'btn' : 'btn btn--ghost-on-accent'}
+                  onClick={() => navigate(routes.newWords())}
+                >
+                  Học {Math.min(settings.dailyGoal, newCount)} từ mới
+                </button>
+              )}
+              {nothingDue && newCount === 0 && (
+                <button className="btn" onClick={() => navigate(routes.lessons())}>
+                  Thư viện bài học
+                </button>
+              )}
+            </div>
           </section>
 
           <section className="section">

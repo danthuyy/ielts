@@ -16,7 +16,13 @@ import {
 } from '@/lib/backup';
 import { isSyncConfigured } from '@/lib/config';
 import { importProgress } from '@/lib/progress';
-import { clearSettings, type ThemeChoice } from '@/lib/settings';
+import {
+  clearSettings,
+  HINT_STYLE_LABEL,
+  HINT_STYLES,
+  type HintStyle,
+  type ThemeChoice,
+} from '@/lib/settings';
 import { pushWipe, reconcile, type SyncStatus } from '@/lib/sync';
 import { setTheme } from '@/lib/theme';
 import { describeCountdown, daysUntil, minimumExamDate } from '@/lib/exam';
@@ -218,6 +224,43 @@ export function SettingsScreen() {
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="setting-row">
+          <label className="setting-row__title" htmlFor="shuffle-words">
+            Đảo thứ tự mỗi phiên học
+          </label>
+          <span className="switch">
+            <input
+              id="shuffle-words"
+              type="checkbox"
+              checked={settings.shuffleWords}
+              onChange={(event) => update('shuffleWords', event.target.checked)}
+            />
+            <span className="switch__track" />
+          </span>
+        </div>
+
+        <div className="setting-row setting-row--stacked">
+          <label className="field__label" htmlFor="hint-style">
+            Kiểu gợi ý khi điền từ
+          </label>
+          <select
+            className="input"
+            id="hint-style"
+            value={settings.hintStyle}
+            onChange={(event) => update('hintStyle', event.target.value as HintStyle)}
+          >
+            {HINT_STYLES.map((style) => (
+              <option key={style} value={style}>
+                {HINT_STYLE_LABEL[style]}
+              </option>
+            ))}
+          </select>
+          <p className="sync-detail" style={{ margin: 0 }}>
+            Bấm <kbd>Tab</kbd> hoặc nút Gợi ý khi đang làm bài. Dùng gợi ý thì từ đó được xếp lịch
+            ôn như câu trả lời &quot;Khó&quot;, vì nhớ có trợ giúp không giống nhớ thật.
+          </p>
         </div>
 
         <div className="setting-row setting-row--stacked">

@@ -797,3 +797,21 @@
   font-size: var(--text-xs);
   color: var(--text-muted);
 }
+
+.due-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+/* A second action on the violet card: readable without competing with the
+   primary white button beside it. */
+.btn--ghost-on-accent {
+  background: rgb(255 255 255 / 18%);
+  color: var(--primary-contrast);
+  border: 1px solid rgb(255 255 255 / 45%);
+}
+
+.btn--ghost-on-accent:hover {
+  background: rgb(255 255 255 / 28%);
+}

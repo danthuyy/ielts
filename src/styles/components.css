@@ -1242,3 +1242,112 @@ a.word-row__main:hover .word-row__word {
   color: var(--primary);
   text-decoration: underline;
 }
+
+/* ---- Session progress ---- */
+
+.session-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+}
+
+.session-progress__retry {
+  color: var(--text-muted);
+}
+
+.session-progress__badge {
+  padding: 2px var(--sp-3);
+  border-radius: var(--radius-full);
+  background: var(--warning-soft);
+  color: var(--warning);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+/* ---- Hints ---- */
+
+.hint-panel {
+  width: 100%;
+  max-width: 26rem;
+  margin: var(--sp-3) auto 0;
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.hint-panel__masked {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--primary);
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.hint-panel__line {
+  margin-top: var(--sp-1);
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+}
+
+.answer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+  width: 100%;
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+.answer-actions .btn--lg {
+  flex: 1;
+  min-width: 10rem;
+}
+
+.feedback__retry {
+  margin-top: var(--sp-2);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+/* ---- Touch targets ----
+   Measured on a 375px viewport, several controls came in under 44px — the
+   flashcard bookmark star was 18px wide. Pointer-coarse only: on a mouse these
+   would just be needlessly large. WCAG 2.5.5. */
+
+@media (pointer: coarse) {
+  .flashcard__bookmark,
+  .icon-btn,
+  .youglish--icon,
+  .word-row__star {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .youglish--full,
+  .chip,
+  .btn,
+  .segmented button {
+    min-height: 44px;
+  }
+
+  .voice-picker,
+  select.input,
+  .study-header select {
+    min-height: 44px;
+  }
+
+  /* A 16px slider thumb is hard to grab; widen the track's hit area. */
+  .range {
+    min-height: 44px;
+  }
+}

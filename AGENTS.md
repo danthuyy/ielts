@@ -198,6 +198,22 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 - Commit theo Conventional Commits: `feat:`, `fix:`, `docs:`, `content:`,
   `chore:`, `ci:`, `test:`, `style:`.
 
+## Vòng học trong các chế độ quiz
+
+Điều quan trọng nhất về hành vi: **từ trả lời sai không được biến mất**.
+
+- `src/hooks/useRetryQueue.ts` giữ hàng đợi. Trả lời sai thì từ đó được chèn lại
+  vài vị trí sau, phiên chỉ kết thúc khi mọi từ đã đúng ít nhất một lần.
+- Riêng chế độ điền từ và nghe viết còn giữ người học **ở lại chính từ đó** cho
+  tới khi đúng, hoặc tới khi họ bấm "Bỏ qua". Sai không lộ đáp án.
+- `markMissed()` ghi nhận một lần sai mà không đẩy hàng đợi — dùng cho vòng lặp
+  ở trên. Điểm cuối phiên tính theo **lần thử đầu tiên**, không phải kết quả
+  cuối, nếu không thì ai cũng được điểm tuyệt đối.
+- Gợi ý chỉ xuất hiện **sau khi đã thử ít nhất một lần**. Gợi ý sẵn từ đầu biến
+  việc nhớ lại thành việc chép. Dùng gợi ý thì từ đó xếp lịch như câu "Khó".
+
+Nếu thêm chế độ luyện mới, dùng lại `useRetryQueue` thay vì tự đi qua mảng.
+
 ## Viết test
 
 Test **không được giả định nội dung có hình dạng cụ thể**. Đừng viết

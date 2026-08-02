@@ -14,6 +14,7 @@ import { QuizChoiceScreen } from '@/features/quiz/QuizChoiceScreen';
 import { TestScreen } from '@/features/test/TestScreen';
 import { ReviewScreen } from '@/features/review/ReviewScreen';
 import { WeakWordsScreen } from '@/features/review/WeakWordsScreen';
+import { NewWordsScreen } from '@/features/review/NewWordsScreen';
 import { StatsScreen } from '@/features/stats/StatsScreen';
 import { BookmarksScreen } from '@/features/bookmarks/BookmarksScreen';
 import { SettingsScreen } from '@/features/settings/SettingsScreen';
@@ -49,6 +50,7 @@ export const router = createHashRouter([
     children: [
       { path: 'review', element: <ReviewScreen /> },
       { path: 'weak', element: <WeakWordsScreen /> },
+      { path: 'new', element: <NewWordsScreen /> },
       { path: 'study/flashcard/:lessonId', element: <FlashcardScreen /> },
       { path: 'study/type/:lessonId', element: <QuizTypeScreen /> },
       { path: 'study/listen/:lessonId', element: <QuizListenScreen /> },
@@ -68,6 +70,7 @@ export const routes = {
   lesson: (lessonId: string) => `/lessons/${encodeURIComponent(lessonId)}`,
   review: () => '/review',
   weak: () => '/weak',
+  newWords: () => '/new',
   stats: () => '/stats',
   bookmarks: () => '/bookmarks',
   word: (wordId: string) => `/word/${encodeURIComponent(wordId)}`,

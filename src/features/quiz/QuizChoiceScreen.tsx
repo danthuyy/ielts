@@ -6,7 +6,10 @@ import { routes } from '@/app/routes';
 import { StudyHeader } from '@/components/StudyHeader';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
+import { SessionProgress } from '@/components/SessionProgress';
 import { useKeyboard } from '@/hooks/useKeyboard';
+import { useRetryQueue } from '@/hooks/useRetryQueue';
+import { useSessionWords } from '@/hooks/useSessionWords';
 import { useSettings } from '@/hooks/useSettings';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
@@ -31,15 +34,17 @@ export function QuizChoiceScreen() {
 
   const words = useMemo(() => (lesson ? studyWordsOf(lesson) : []), [lesson]);
 
-  const [index, setIndex] = useState(0);
+  const getId = useCallback((entry: StudyWord) => entry.id, []);
+  const ordered = useSessionWords(words);
+  const queue = useRetryQueue(ordered, getId);
+
   const [reverse, setReverse] = useState(false);
   const [picked, setPicked] = useState<string | null>(null);
-  const [score, setScore] = useState(0);
 
   const answeringRef = useRef(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
-  const word = words[index];
+  const word = queue.current;
   const options = useMemo(() => (word ? buildOptions(word) : []), [word]);
 
   const autoSpeakRef = useRef(settings.autoSpeak);
@@ -63,7 +68,6 @@ export function QuizChoiceScreen() {
       setPicked(option.word);
 
       const correct = option.word === word.word;
-      if (correct) setScore((value) => value + 1);
 
       const next = processAnswer(await getSrsState(word.id), correct ? QUALITY.good : 2);
       await recordAnswer(word, next, correct);
@@ -75,10 +79,12 @@ export function QuizChoiceScreen() {
       timerRef.current = setTimeout(() => {
         setPicked(null);
         answeringRef.current = false;
-        setIndex((i) => i + 1);
+        // Wrong answers go back into the queue instead of vanishing after a
+        // 1.5-second glimpse of the right one.
+        queue.answer(correct);
       }, REVEAL_MS);
     },
-    [word, reverse],
+    [word, reverse, queue],
   );
 
   const pick = useCallback(
@@ -109,9 +115,14 @@ export function QuizChoiceScreen() {
   if (!word) {
     return (
       <ResultScreen
-        emoji={score === words.length ? '🏆' : '👍'}
+        emoji={queue.firstTry === queue.total ? '🏆' : '👍'}
         title="Kết quả"
-        score={{ correct: score, total: words.length }}
+        score={{ correct: queue.firstTry, total: queue.total }}
+        message={
+          queue.firstTry === queue.total
+            ? 'Đúng hết ngay lần đầu.'
+            : `Bạn đã trả lời đúng cả ${queue.total} từ. ${queue.total - queue.firstTry} từ cần thử lại.`
+        }
         continueTo={backTo}
       />
     );
@@ -126,7 +137,7 @@ export function QuizChoiceScreen() {
 
   return (
     <div className="study">
-      <StudyHeader index={index} total={words.length} backTo={backTo}>
+      <StudyHeader index={queue.learned} total={queue.total} backTo={backTo}>
         <button
           className="chip"
           onClick={() => {
@@ -141,6 +152,8 @@ export function QuizChoiceScreen() {
       </StudyHeader>
 
       <div className="study__body">
+        <SessionProgress queue={queue} />
+
         <div className="prompt">
           <p className="prompt__main prompt__main--lg">{reverse ? word.vi : word.word}</p>
           {!reverse && <p className="prompt__sub">{word.ipa}</p>}

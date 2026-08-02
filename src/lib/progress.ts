@@ -2,7 +2,7 @@ import { db, type DailyActivity, type TestResult, type WordProgress } from './db
 import { INITIAL_SRS, type SrsState } from './srs';
 import { addDays, toDateKey, todayKey } from './utils';
 import { isLegacyKey, parseLegacyKey, wordKey } from './ids';
-import { getLesson, LESSONS, TOTAL_WORD_COUNT } from '@/content/lessons';
+import { ALL_STUDY_WORDS, getLesson, LESSONS, TOTAL_WORD_COUNT } from '@/content/lessons';
 import type { StudyWord } from '@/content/schema';
 
 /**
@@ -278,6 +278,40 @@ export async function getUpcomingReviews(days = 14): Promise<UpcomingDay[]> {
   }
 
   return [...counts.entries()].map(([date, count]) => ({ date, count }));
+}
+
+/**
+ * The next `limit` words the learner has never answered.
+ *
+ * Review deliberately excludes new words, so before this there was no way to
+ * meet one except by opening a whole lesson and walking past everything already
+ * mastered. The daily goal and the exam countdown were both doing arithmetic
+ * with no route to act on it.
+ *
+ * Ordered by lesson, then by the order the author wrote them, so a lesson gets
+ * finished before the next one starts rather than sampling at random.
+ */
+export async function getNewWords(limit: number): Promise<WordProgress[]> {
+  const records = await getAllProgress();
+  const untouched = new Map(
+    records
+      .filter((record) => record.status === 'new' && record.totalCount === 0)
+      .map((r) => [r.id, r]),
+  );
+
+  const ordered: WordProgress[] = [];
+  for (const word of ALL_STUDY_WORDS) {
+    const record = untouched.get(word.id);
+    if (record) ordered.push(record);
+    if (ordered.length >= limit) break;
+  }
+  return ordered;
+}
+
+/** How many words have never been answered at all. */
+export async function countNewWords(): Promise<number> {
+  const records = await getAllProgress();
+  return records.filter((record) => record.status === 'new' && record.totalCount === 0).length;
 }
 
 /** Words not yet mastered — the backlog an exam countdown has to clear. */
