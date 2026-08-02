@@ -45,6 +45,24 @@ Ghi lại vì nếu không biết lý do thì rất dễ "sửa" thành sai:
 - **`.env.local` bắt buộc khi dev.** Không có nó thì `npm run dev` ghi thẳng vào
   hàng Supabase của bản production. Chuyện này đã xảy ra một lần rồi.
 
+## Nếu site trắng hoặc thiếu favicon/sticker
+
+Triệu chứng: mở https://danthuyy.github.io/ielts/ ra trang trắng, `favicon.ico`
+404, còn `package.json` lại trả về 200. Nghĩa là Pages đang phục vụ **repo thô**
+chứ không phải thư mục `dist`.
+
+Nguyên nhân là **Settings → Pages → Source** bị đặt về _"Deploy from a branch"_.
+Chỗ này bẫy ở đúng một điểm: khi Source là branch, `actions/deploy-pages` vẫn
+tạo được bản ghi deployment và workflow vẫn **xanh**, nhưng GitHub không dùng nó
+để phục vụ. Nhìn CI thì tưởng mọi thứ ổn.
+
+Cách nhận biết trong một câu: nếu danh sách Actions còn workflow
+`dynamic/pages/pages-build-deployment` chạy mỗi lần push, thì Source vẫn là
+branch. Đặt đúng thành `GitHub Actions` là nó biến mất hẳn, và ô chọn Branch
+trong trang Settings cũng biến mất.
+
+Đổi Source **không** tự deploy lại — phải push thêm một commit.
+
 ## Muốn làm tiếp thì đây là thứ đáng nhất
 
 1. Đổ nội dung thật vào (không phải việc code)
