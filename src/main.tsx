@@ -8,6 +8,7 @@ import './styles/components.css';
 import './styles/screens.css';
 
 import { router } from './app/routes';
+import { redirectLegacyHash } from './app/legacyHash';
 import { initProgress } from './lib/progress';
 import { startSync } from './lib/sync';
 
@@ -32,6 +33,10 @@ function renderFatal(message: string): void {
 }
 
 async function bootstrap(): Promise<void> {
+  // Before anything reads the URL: a v1 bookmark must land on the right screen,
+  // not on the home fallback.
+  redirectLegacyHash();
+
   // The database must be ready before the first screen queries it; sync is
   // best-effort and must never block the app from opening.
   await initProgress();
