@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { routes } from '@/app/routes';
@@ -6,10 +6,19 @@ import { ConfirmDialog } from '@/components/ConfirmDialog';
 import { VoicePicker } from '@/components/VoicePicker';
 import { useSettings } from '@/hooks/useSettings';
 import { useSyncState } from '@/hooks/useSyncState';
+import {
+  BackupError,
+  downloadBackup,
+  parseBackup,
+  restoreBackup,
+  summarise,
+  type BackupFile,
+} from '@/lib/backup';
 import { isSyncConfigured } from '@/lib/config';
 import { importProgress } from '@/lib/progress';
-import { clearSettings } from '@/lib/settings';
+import { clearSettings, type ThemeChoice } from '@/lib/settings';
 import { pushWipe, reconcile, type SyncStatus } from '@/lib/sync';
+import { setTheme } from '@/lib/theme';
 import { speak } from '@/lib/tts';
 
 const APP_VERSION = '2.0.0';
@@ -29,6 +38,12 @@ const RATES = [
   { value: 1.0, label: 'Thường' },
 ];
 
+const THEMES: { value: ThemeChoice; label: string }[] = [
+  { value: 'system', label: 'Theo máy' },
+  { value: 'light', label: 'Sáng' },
+  { value: 'dark', label: 'Tối' },
+];
+
 function formatStamp(iso: string | null): string {
   if (!iso) return 'chưa lần nào';
   const date = new Date(iso);
@@ -44,8 +59,57 @@ export function SettingsScreen() {
   const { settings, update } = useSettings();
   const sync = useSyncState();
   const [confirmingReset, setConfirmingReset] = useState(false);
+  const fileInput = useRef<HTMLInputElement>(null);
+  const [backupNote, setBackupNote] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null);
+  const [pendingRestore, setPendingRestore] = useState<BackupFile | null>(null);
 
   const syncEnabled = isSyncConfigured();
+
+  const handleExport = async () => {
+    try {
+      const name = await downloadBackup();
+      setBackupNote({ tone: 'ok', text: `Đã tải xuống ${name}` });
+    } catch (err) {
+      setBackupNote({
+        tone: 'error',
+        text: err instanceof Error ? err.message : 'Không tạo được file sao lưu.',
+      });
+    }
+  };
+
+  // Parse and show what is in the file first — restoring replaces everything,
+  // so the learner must see what they are about to overwrite with.
+  const handleFilePicked = async (file: File | undefined) => {
+    if (!file) return;
+    try {
+      setPendingRestore(parseBackup(await file.text()));
+      setBackupNote(null);
+    } catch (err) {
+      setPendingRestore(null);
+      setBackupNote({
+        tone: 'error',
+        text: err instanceof BackupError ? err.message : 'Không đọc được file.',
+      });
+    } finally {
+      // Let the same file be picked again after a failed attempt.
+      if (fileInput.current) fileInput.current.value = '';
+    }
+  };
+
+  const handleRestore = async () => {
+    if (!pendingRestore) return;
+    const backup = pendingRestore;
+    setPendingRestore(null);
+    try {
+      await restoreBackup(backup);
+      window.location.reload();
+    } catch (err) {
+      setBackupNote({
+        tone: 'error',
+        text: err instanceof Error ? err.message : 'Khôi phục thất bại.',
+      });
+    }
+  };
 
   const handleReset = async () => {
     setConfirmingReset(false);
@@ -119,6 +183,24 @@ export function SettingsScreen() {
         </div>
 
         <div className="setting-row setting-row--stacked">
+          <span className="field__label">Giao diện</span>
+          <div className="segmented" role="group" aria-label="Giao diện">
+            {THEMES.map((theme) => (
+              <button
+                key={theme.value}
+                aria-pressed={settings.theme === theme.value}
+                onClick={() => {
+                  update('theme', theme.value);
+                  setTheme(theme.value);
+                }}
+              >
+                {theme.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="setting-row setting-row--stacked">
           <span className="field__label">Tốc độ đọc</span>
           <div className="segmented" role="group" aria-label="Tốc độ đọc">
             {RATES.map((rate) => (
@@ -164,6 +246,42 @@ export function SettingsScreen() {
         </button>
       </section>
 
+      <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
+        <span className="setting-row__title">
+          <span aria-hidden="true">💾</span> Sao lưu
+        </span>
+        <p className="sync-detail">
+          Đồng bộ đám mây ghi đè theo thiết bị lưu sau cùng, nên một lần ghi sai là mất lịch sử ở
+          mọi máy. File sao lưu là bản duy nhất không bị ghi đè từ xa.
+        </p>
+
+        <div className="backup-actions">
+          <button className="btn btn--secondary" onClick={() => void handleExport()}>
+            Tải file sao lưu
+          </button>
+          <button className="btn btn--secondary" onClick={() => fileInput.current?.click()}>
+            Khôi phục từ file
+          </button>
+        </div>
+
+        <input
+          ref={fileInput}
+          type="file"
+          accept="application/json,.json"
+          hidden
+          onChange={(event) => void handleFilePicked(event.target.files?.[0])}
+        />
+
+        {backupNote && (
+          <p
+            className={`backup-note backup-note--${backupNote.tone}`}
+            role={backupNote.tone === 'error' ? 'alert' : 'status'}
+          >
+            {backupNote.text}
+          </p>
+        )}
+      </section>
+
       <button
         className="btn btn--danger btn--lg btn--block"
         style={{ marginBottom: 'var(--sp-6)' }}
@@ -186,6 +304,25 @@ export function SettingsScreen() {
         confirmLabel="Xoá tất cả"
         onConfirm={() => void handleReset()}
         onCancel={() => setConfirmingReset(false)}
+      />
+
+      <ConfirmDialog
+        open={pendingRestore !== null}
+        destructive
+        title="Khôi phục từ file sao lưu?"
+        description={
+          pendingRestore
+            ? (() => {
+                const info = summarise(pendingRestore);
+                return `File chứa ${info.words} từ đã học, ${info.tests} bài kiểm tra, ${info.days} ngày hoạt động${
+                  info.exportedAt ? `, tạo lúc ${formatStamp(info.exportedAt)}` : ''
+                }. Toàn bộ tiến độ hiện tại trên máy sẽ bị thay thế.`;
+              })()
+            : ''
+        }
+        confirmLabel="Khôi phục"
+        onConfirm={() => void handleRestore()}
+        onCancel={() => setPendingRestore(null)}
       />
     </div>
   );

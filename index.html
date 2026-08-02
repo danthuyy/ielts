@@ -19,6 +19,25 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script>
+      // Runs before the stylesheet paints, so a light-theme user never sees a
+      // flash of the dark palette. main.tsx re-applies this properly on boot;
+      // this copy only has to be fast and never throw.
+      (function () {
+        try {
+          var raw = localStorage.getItem('ielts_setting_theme');
+          var choice = raw ? JSON.parse(raw) : 'system';
+          if (choice !== 'light' && choice !== 'dark') {
+            choice = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          }
+          document.documentElement.dataset.theme = choice;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', choice === 'light' ? '#f6f5fb' : '#0a0a1a');
+        } catch (err) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

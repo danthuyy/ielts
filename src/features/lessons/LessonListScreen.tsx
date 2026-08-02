@@ -2,14 +2,16 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 
-import { LESSONS } from '@/content/lessons';
+import { ALL_STUDY_WORDS, getLesson, LESSONS } from '@/content/lessons';
 import { groupByCategory } from '@/content/categories';
 import { routes } from '@/app/routes';
 import { getAllProgress } from '@/lib/progress';
 import { percent } from '@/lib/utils';
+import { speak } from '@/lib/tts';
 import type { Lesson } from '@/content/schema';
 
 const ALL = 'all';
+const WORD_HITS_LIMIT = 30;
 
 function matches(lesson: Lesson, categoryLabel: string, query: string): boolean {
   if (!query) return true;
@@ -50,6 +52,20 @@ export function LessonListScreen() {
 
   const shownCount = visibleGroups.reduce((sum, group) => sum + group.lessons.length, 0);
 
+  // Searching the word list too: with more than a handful of lessons, "which
+  // lesson was 'undermine' in?" is the question people actually have, and
+  // matching only titles and tags cannot answer it.
+  const wordHits = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    if (needle.length < 2) return [];
+    return ALL_STUDY_WORDS.filter(
+      (word) =>
+        word.word.toLowerCase().includes(needle) ||
+        word.vi.toLowerCase().includes(needle) ||
+        word.collocation.toLowerCase().includes(needle),
+    ).slice(0, WORD_HITS_LIMIT);
+  }, [query]);
+
   return (
     <div className="page">
       <header className="page-head">
@@ -68,8 +84,8 @@ export function LessonListScreen() {
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Tìm bài học hoặc chủ đề..."
-          aria-label="Tìm bài học"
+          placeholder="Tìm bài học, chủ đề hoặc từ vựng..."
+          aria-label="Tìm bài học hoặc từ vựng"
         />
       </div>
 
@@ -100,8 +116,43 @@ export function LessonListScreen() {
         ))}
       </div>
 
+      {wordHits.length > 0 && (
+        <section className="section" style={{ marginBottom: 'var(--sp-6)' }}>
+          <h2 className="section__label">Từ vựng khớp ({wordHits.length})</h2>
+          <ul className="word-list">
+            {wordHits.map((word) => {
+              const lesson = getLesson(word.lessonId);
+              return (
+                <li className="hit-row" key={word.id}>
+                  <button
+                    className="hit-row__speak"
+                    onClick={() => speak(word.word)}
+                    aria-label={`Phát âm ${word.word}`}
+                  >
+                    🔊
+                  </button>
+                  <div className="hit-row__main">
+                    <span className="hit-row__word">
+                      {word.word} <span className="hit-row__pos">{word.pos}</span>
+                    </span>
+                    <span className="hit-row__vi">{word.vi}</span>
+                  </div>
+                  {lesson && (
+                    <Link className="hit-row__lesson" to={routes.lesson(lesson.id)}>
+                      {lesson.title}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
       {visibleGroups.length === 0 ? (
-        <p className="empty">Không tìm thấy bài học nào khớp với “{query}”.</p>
+        wordHits.length > 0 ? null : (
+          <p className="empty">Không tìm thấy bài học hay từ nào khớp với “{query}”.</p>
+        )
       ) : (
         visibleGroups.map((group) => (
           <section className="section" key={group.key} style={{ marginBottom: 'var(--sp-6)' }}>

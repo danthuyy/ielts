@@ -10,6 +10,11 @@ Bản chạy thử: https://danthuyy.github.io/ielts/
 - **4 chế độ quiz** — điền từ, nghe viết, nối từ, trắc nghiệm.
 - **Bài kiểm tra tổng hợp** — trộn từ của nhiều bài học để kiểm tra lại.
 - **Thống kê** — theo dõi số từ đã học, chuỗi ngày học, tiến độ từng bài.
+- **Luyện từ hay sai** — gom những từ có độ chính xác thấp nhất thành một phiên riêng, không phải chờ tới lịch ôn.
+- **Thống kê chi tiết** — heatmap hoạt động 26 tuần, lịch ôn 14 ngày tới, và bảng xếp hạng từ yếu.
+- **Tìm kiếm từ vựng** — tìm theo từ tiếng Anh, nghĩa tiếng Việt hoặc collocation trên mọi bài học.
+- **Giao diện sáng/tối** — theo hệ điều hành hoặc tự chọn; mọi màu đều đạt WCAG AA ở cả hai chế độ.
+- **Sao lưu ra file** — xuất và khôi phục toàn bộ tiến độ; bản duy nhất không bị đồng bộ ghi đè.
 - **Từ đã lưu** — đánh dấu từ khó để ôn riêng.
 - **Text-to-speech** — phát âm từ và ví dụ, chọn được giọng đọc.
 - **Đồng bộ đa thiết bị** — tùy chọn, qua Supabase; không bật thì mọi thứ vẫn nằm trên máy.

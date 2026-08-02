@@ -192,6 +192,70 @@ export async function getDueProgress(on: string = todayKey()): Promise<WordProgr
   return due.filter((record) => record.status !== 'new');
 }
 
+export interface WeakWord {
+  record: WordProgress;
+  accuracy: number;
+  attempts: number;
+}
+
+/**
+ * The words this learner actually keeps getting wrong, worst first.
+ *
+ * Accuracy alone is a poor ranking: a word answered once and missed reads as
+ * 0%, which is noise rather than a weakness. `minAttempts` filters that out.
+ * Ties break on ease factor — SM-2 pushes it down every time a word lapses, so
+ * a lower factor means the word has failed repeatedly, not just recently.
+ */
+export async function getWeakWords(limit = 20, minAttempts = 2): Promise<WeakWord[]> {
+  const records = await getAllProgress();
+
+  return records
+    .filter((record) => record.totalCount >= minAttempts && record.status !== 'new')
+    .map((record) => ({
+      record,
+      attempts: record.totalCount,
+      accuracy: record.correctCount / record.totalCount,
+    }))
+    .filter((entry) => entry.accuracy < 1)
+    .sort(
+      (a, b) =>
+        a.accuracy - b.accuracy ||
+        a.record.easeFactor - b.record.easeFactor ||
+        b.attempts - a.attempts,
+    )
+    .slice(0, limit);
+}
+
+export interface UpcomingDay {
+  date: string;
+  count: number;
+}
+
+/**
+ * How many words fall due on each of the next `days` days.
+ *
+ * Anything already overdue is folded into today — that is where the learner
+ * will actually meet it, and showing it under a past date would be misleading.
+ */
+export async function getUpcomingReviews(days = 14): Promise<UpcomingDay[]> {
+  const records = await getAllProgress();
+  const today = todayKey();
+
+  const counts = new Map<string, number>();
+  for (let i = 0; i < days; i += 1) {
+    counts.set(toDateKey(addDays(new Date(), i)), 0);
+  }
+
+  for (const record of records) {
+    if (record.status === 'new') continue;
+    const bucket = record.nextReview <= today ? today : record.nextReview;
+    const current = counts.get(bucket);
+    if (current !== undefined) counts.set(bucket, current + 1);
+  }
+
+  return [...counts.entries()].map(([date, count]) => ({ date, count }));
+}
+
 export interface StatusCounts {
   total: number;
   newCount: number;

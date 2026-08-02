@@ -11,6 +11,7 @@ import { router } from './app/routes';
 import { redirectLegacyHash } from './app/legacyHash';
 import { initProgress } from './lib/progress';
 import { startSync } from './lib/sync';
+import { initTheme } from './lib/theme';
 
 const container = document.getElementById('root');
 if (!container) throw new Error('Không tìm thấy #root');
@@ -36,6 +37,10 @@ async function bootstrap(): Promise<void> {
   // Before anything reads the URL: a v1 bookmark must land on the right screen,
   // not on the home fallback.
   redirectLegacyHash();
+
+  // Takes over from the inline script in index.html and keeps 'system' live
+  // when the OS flips theme with the app already open.
+  initTheme();
 
   // The database must be ready before the first screen queries it; sync is
   // best-effort and must never block the app from opening.

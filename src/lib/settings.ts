@@ -6,11 +6,15 @@
 
 export const SETTING_PREFIX = 'ielts_setting_';
 
+export const THEME_CHOICES = ['system', 'light', 'dark'] as const;
+export type ThemeChoice = (typeof THEME_CHOICES)[number];
+
 export interface Settings {
   dailyGoal: number;
   autoSpeak: boolean;
   speechRate: number;
   voiceName: string | null;
+  theme: ThemeChoice;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -18,6 +22,7 @@ export const DEFAULT_SETTINGS: Settings = {
   autoSpeak: true,
   speechRate: 0.85,
   voiceName: null,
+  theme: 'system',
 };
 
 type Listener = (settings: Settings) => void;
@@ -39,7 +44,14 @@ export function getSettings(): Settings {
     autoSpeak: readRaw('autoSpeak'),
     speechRate: readRaw('speechRate'),
     voiceName: readRaw('voiceName'),
+    theme: readTheme(),
   };
+}
+
+/** Guarded separately: an unknown string here would break the theme switch. */
+function readTheme(): ThemeChoice {
+  const value = readRaw('theme');
+  return THEME_CHOICES.includes(value) ? value : DEFAULT_SETTINGS.theme;
 }
 
 export function getSetting<K extends keyof Settings>(key: K): Settings[K] {

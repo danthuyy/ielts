@@ -9,7 +9,7 @@ import { ResultScreen } from '@/components/ResultScreen';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { getSrsState, recordActivity, recordAnswer, saveTestResult } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
-import { speakSlow } from '@/lib/tts';
+import { speak, speakSlow } from '@/lib/tts';
 import { formatClock, isAnswerCorrect, percent, shuffle } from '@/lib/utils';
 import type { StudyWord } from '@/content/schema';
 
@@ -53,6 +53,9 @@ export function TestScreen() {
   const [answer, setAnswer] = useState('');
   const [score, setScore] = useState(0);
   const [outcome, setOutcome] = useState<{ correct: number; duration: number } | null>(null);
+  // Kept so the result screen can show what to restudy — a score with no
+  // list of misses tells the learner nothing actionable.
+  const [missed, setMissed] = useState<StudyWord[]>([]);
 
   const startedAtRef = useRef(0);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -84,6 +87,7 @@ export function TestScreen() {
 
       const nextScore = score + (correct ? 1 : 0);
       setScore(nextScore);
+      if (!correct) setMissed((list) => [...list, question.word]);
 
       // A test used to leave no trace on the schedule; it now feeds the SRS
       // like every other mode.
@@ -154,7 +158,31 @@ export function TestScreen() {
         score={{ correct, total: questions.length }}
         continueTo={backTo}
         continueLabel="Kết thúc"
-      />
+      >
+        {missed.length > 0 && (
+          <section className="result__misses">
+            <h2 className="section__label">Cần xem lại ({missed.length})</h2>
+            <ul className="word-list">
+              {missed.map((word) => (
+                <li className="miss-row" key={word.id}>
+                  <button
+                    className="hit-row__speak"
+                    onClick={() => speak(word.word)}
+                    aria-label={`Phát âm ${word.word}`}
+                  >
+                    🔊
+                  </button>
+                  <div className="miss-row__main">
+                    <span className="miss-row__word">{word.word}</span>
+                    <span className="miss-row__ipa">{word.ipa}</span>
+                    <span className="miss-row__vi">{word.vi}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </ResultScreen>
     );
   }
 

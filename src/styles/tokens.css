@@ -20,6 +20,13 @@
   --primary-dark: #6d28d9;
   --primary-contrast: #ffffff;
   --primary-soft: rgb(139 92 246 / 15%);
+  /* --primary cannot do both jobs on a dark background: light enough to read
+     as accent text (4.63:1 on --bg) leaves white text on it at only 4.23:1.
+     Solid fills that carry text use this darker violet instead — 5.70:1. */
+  --primary-fill: #7c3aed;
+  /* Hover must read as lighter without dropping white text below AA:
+     --primary-light (#a78bfa) would take it to 3.0:1. This is 4.69:1. */
+  --primary-fill-hover: #8055f0;
 
   /* ---- Semantic ---- */
   --success: #34d399;
@@ -30,6 +37,16 @@
   --warning-soft: rgb(251 191 36 / 15%);
   --info: #60a5fa;
   --info-soft: rgb(96 165 250 / 15%);
+
+  /* Text drawn on top of a solid semantic fill. The dark theme's fills are
+     light colours, so this is near-black; the light theme darkens the fills
+     and flips it to white. Anything sitting on --success/--danger/--warning
+     must use this, never a literal. */
+  --on-accent: #0a0a1a;
+
+  /* The nav bar is translucent over scrolling content, so it needs its own
+     surface rather than a token that also paints opaque cards. */
+  --nav-bg: rgb(10 10 26 / 85%);
 
   /* ---- Text ---- */
   --text: #e2e8f0;
@@ -92,6 +109,60 @@
 
   /* ---- Focus ---- */
   --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--primary-light);
+}
+
+/**
+ * Light theme.
+ *
+ * Not an inversion of the dark palette: the elevation ladder runs the other way
+ * (page background is tinted, cards climb toward white), and every foreground
+ * colour is darkened until it clears WCAG AA as text on a light surface — the
+ * dark theme's violet, amber and green are all far too light for that.
+ *
+ * `data-theme` is always written as a concrete value by src/lib/theme.ts, so
+ * this block never has to be duplicated for a prefers-color-scheme query.
+ */
+:root[data-theme='light'] {
+  /* ---- Surfaces ---- */
+  --bg: #f6f5fb; /* violet-tinted off-white, not #fff — cuts glare */
+  --surface: #fbfaff;
+  --surface-raised: #ffffff; /* cards nearest white = highest elevation */
+  --surface-hover: #f1eefb;
+  --border: rgb(109 40 217 / 18%);
+  --border-strong: rgb(109 40 217 / 40%);
+
+  /* ---- Brand ---- */
+  --primary: #6d28d9; /* 7.10:1 as text on white; white on it, same ratio */
+  --primary-light: #7c3aed; /* 5.70:1 */
+  --primary-dark: #4c1d95; /* 10.95:1 */
+  --primary-contrast: #ffffff;
+  --primary-soft: rgb(109 40 217 / 10%);
+  --primary-fill: #6d28d9; /* already dark enough here — same as --primary */
+  --primary-fill-hover: #7c3aed; /* lighter, still 5.70:1 with white */ /* 10%, not 15% — a wash needs less on white */
+
+  /* ---- Semantic ---- */
+  --success: #047857; /* 5.48:1 */
+  --success-soft: rgb(4 120 87 / 10%);
+  --danger: #dc2626; /* 4.83:1 */
+  --danger-soft: rgb(220 38 38 / 9%);
+  --warning: #a16207; /* 4.92:1 — amber is unreadable as text, so this is dark gold */
+  --warning-soft: rgb(217 119 6 / 14%); /* tint keeps the brighter amber to stay recognisable */
+  --info: #1d4ed8; /* 6.70:1 */
+  --info-soft: rgb(29 78 216 / 9%);
+
+  --on-accent: #ffffff; /* fills are dark here, so white is the readable side */
+  --nav-bg: rgb(251 250 255 / 85%);
+
+  /* ---- Text ---- */
+  --text: #1a1a2e; /* 17.06:1 on white */
+  --text-dim: #4b5563; /* 7.56:1 */
+  --text-muted: #656e7b; /* 5.16:1 on white, 4.76:1 on --bg — the tinted bg is the tighter case */
+
+  /* ---- Elevation ---- */
+  /* Black shadows read as dirt on light surfaces; tint them violet and drop the alpha. */
+  --shadow-sm: 0 1px 2px rgb(76 29 149 / 8%);
+  --shadow-md: 0 4px 6px -1px rgb(76 29 149 / 10%), 0 2px 4px -1px rgb(76 29 149 / 6%);
+  --shadow-lg: 0 10px 15px -3px rgb(76 29 149 / 12%), 0 4px 6px -2px rgb(76 29 149 / 7%);
 }
 
 @media (prefers-reduced-motion: reduce) {

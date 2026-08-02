@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useKeyboard } from '@/hooks/useKeyboard';
 
@@ -9,6 +10,8 @@ interface Props {
   message?: string;
   continueTo: string;
   continueLabel?: string;
+  /** Extra content between the summary and the continue button. */
+  children?: ReactNode;
 }
 
 /** The shared "you finished" screen for every study mode. */
@@ -20,6 +23,7 @@ export function ResultScreen({
   message,
   continueTo,
   continueLabel = 'Hoàn thành',
+  children,
 }: Props) {
   const navigate = useNavigate();
   const finish = () => navigate(continueTo);
@@ -51,6 +55,8 @@ export function ResultScreen({
           ))}
         </div>
       )}
+
+      {children}
 
       <button className="btn btn--primary btn--lg" onClick={finish} autoFocus>
         {continueLabel}
