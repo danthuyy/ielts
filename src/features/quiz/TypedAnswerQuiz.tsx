@@ -21,7 +21,7 @@ import { processAnswer, QUALITY } from '@/lib/srs';
 import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { resultLine, resultSticker } from '@/lib/stickers';
 import { speak, speakSlow } from '@/lib/tts';
-import { isAnswerCorrect, maskWord } from '@/lib/utils';
+import { isAnswerCorrect } from '@/lib/utils';
 
 type Variant = 'type' | 'listen';
 
@@ -242,10 +242,13 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
             </p>
           </div>
         ) : (
+          // The collocation deliberately does not appear here. It almost always
+          // contains the answer ("a vast fortune" for "vast"), so showing it up
+          // front hands over the word before a single keystroke. It is rung 3 of
+          // the ladder instead, with the word blanked out.
           <div className="prompt">
             <p className="prompt__main">{word.vi}</p>
             <p className="prompt__sub">{word.pos}</p>
-            {word.collocation && <p className="prompt__collocation">{word.collocation}</p>}
           </div>
         )}
 
@@ -260,11 +263,10 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
           disabled={turnOver}
           value={answer}
           onChange={(event) => setAnswer(event.target.value)}
-          placeholder={
-            variant === 'listen'
-              ? 'Gõ từ bạn nghe được...'
-              : `${maskWord(word.word)} (${word.word.length} chữ cái)`
-          }
+          // The placeholder used to show the first letter and the letter count.
+          // Those are rung 1 of the ladder, and giving them away for free meant
+          // every word started two hints in.
+          placeholder={variant === 'listen' ? 'Gõ từ bạn nghe được...' : 'Gõ từ tiếng Anh...'}
           aria-label="Câu trả lời của bạn"
         />
 
@@ -279,7 +281,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
             <>
               {settings.showStickers && (
                 <span className="feedback__sticker">
-                  <Sticker name="correct" size="sm" replayKey={word.id} />
+                  <Sticker name="correct" size="md" replayKey={word.id} />
                 </span>
               )}
               <p className="feedback__headline">✅ Chính xác!</p>
@@ -292,7 +294,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
                 <span className="feedback__sticker">
                   <Sticker
                     name="wrong"
-                    size="sm"
+                    size="md"
                     replayKey={attempts}
                     className="sticker--wobble"
                   />

@@ -5,7 +5,6 @@ import {
   formatClock,
   formatDateVi,
   isAnswerCorrect,
-  maskWord,
   percent,
   shuffle,
   toDateKey,
@@ -67,16 +66,6 @@ describe('formatClock', () => {
     [600, '10:00'],
   ])('formats %i seconds as %s', (seconds, expected) => {
     expect(formatClock(seconds)).toBe(expected);
-  });
-});
-
-describe('maskWord', () => {
-  it('keeps the first letter and hides the rest', () => {
-    expect(maskWord('vast')).toBe('v _ _ _');
-  });
-
-  it('leaves a single-letter word alone', () => {
-    expect(maskWord('a')).toBe('a');
   });
 });
 

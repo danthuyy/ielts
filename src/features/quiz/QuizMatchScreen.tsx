@@ -3,10 +3,14 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 
 import { getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { ProgressBar } from '@/components/ProgressBar';
 import { ResultScreen } from '@/components/ResultScreen';
 import { useKeyboard } from '@/hooks/useKeyboard';
+import { useSettings } from '@/hooks/useSettings';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
+import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { processAnswer, QUALITY } from '@/lib/srs';
+import { resultLine, resultSticker } from '@/lib/stickers';
 import { formatClock, shuffle } from '@/lib/utils';
 import type { StudyWord } from '@/content/schema';
 
@@ -30,10 +34,19 @@ export function QuizMatchScreen() {
     return { pairs, left: shuffle(pairs), right: shuffle(pairs) };
   }, [lesson]);
 
+  const { settings } = useSettings();
+
+  useEffect(() => {
+    setSfxEnabled(settings.soundEffects);
+  }, [settings.soundEffects]);
+
   const [selectedEn, setSelectedEn] = useState<string | null>(null);
   const [selectedVi, setSelectedVi] = useState<string | null>(null);
   const [wrong, setWrong] = useState<[string, string] | null>(null);
   const [matched, setMatched] = useState<string[]>([]);
+  // Wrong pairings are not otherwise recorded here, but they decide which
+  // sticker closes the round.
+  const [misses, setMisses] = useState(0);
   const [elapsed, setElapsed] = useState(0);
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
 
@@ -70,6 +83,7 @@ export function QuizMatchScreen() {
       if (!word) return;
 
       const correct = enId === viId;
+      playSfx(correct ? 'correct' : 'wrong');
       const next = processAnswer(await getSrsState(word.id), correct ? QUALITY.good : 2);
       await recordAnswer(word, next, correct);
 
@@ -89,6 +103,7 @@ export function QuizMatchScreen() {
         return;
       }
 
+      setMisses((count) => count + 1);
       setWrong([enId, viId]);
       defer(() => {
         setWrong(null);
@@ -128,14 +143,21 @@ export function QuizMatchScreen() {
   }
 
   if (done) {
+    // Attempts, not pairs: a round cleared on the third guess every time is not
+    // the same performance as one cleared straight through.
+    const attempts = round.pairs.length + misses;
     return (
       <ResultScreen
+        sticker={settings.showStickers ? resultSticker(round.pairs.length, attempts) : undefined}
         emoji="🎮"
         title="Hoàn thành!"
         details={[
           { label: 'Thời gian', value: formatClock(finishedAt ?? elapsed) },
-          { label: 'Số cặp', value: String(round.pairs.length) },
+          { label: 'Ghép sai', value: String(misses) },
         ]}
+        score={{ correct: round.pairs.length, total: attempts }}
+        message={resultLine(round.pairs.length, attempts)}
+        sound={misses <= 2 ? 'perfect' : 'poor'}
         continueTo={backTo}
         continueLabel="Tiếp tục"
       />
@@ -160,9 +182,16 @@ export function QuizMatchScreen() {
         <button className="icon-btn" onClick={() => navigate(backTo)} aria-label="Quay lại">
           ←
         </button>
-        <strong style={{ flex: 1, textAlign: 'center', fontVariantNumeric: 'tabular-nums' }}>
-          {formatClock(elapsed)}
-        </strong>
+        <ProgressBar
+          value={matched.length}
+          max={round.pairs.length}
+          label="Số cặp đã ghép"
+          accuracy={
+            matched.length + misses > 0 ? matched.length / (matched.length + misses) : undefined
+          }
+          pulseOnGrow
+        />
+        <strong style={{ fontVariantNumeric: 'tabular-nums' }}>{formatClock(elapsed)}</strong>
         <span className="study-header__count">
           {matched.length}/{round.pairs.length}
         </span>

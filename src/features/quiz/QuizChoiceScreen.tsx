@@ -166,7 +166,7 @@ export function QuizChoiceScreen() {
           <span className="feedback__sticker">
             <Sticker
               name={picked === word.word ? 'correct' : 'wrong'}
-              size="sm"
+              size="md"
               replayKey={`${word.id}-${picked}`}
               className={picked === word.word ? '' : 'sticker--wobble'}
             />

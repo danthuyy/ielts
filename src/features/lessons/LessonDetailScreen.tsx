@@ -7,6 +7,9 @@ import { routes, STUDY_MODES } from '@/app/routes';
 import { getLessonProgress } from '@/lib/progress';
 import { speak } from '@/lib/tts';
 import { YouglishLink } from '@/components/YouglishLink';
+import { WordAccuracy } from '@/components/WordAccuracy';
+import { isWeak } from '@/lib/accuracy';
+import type { WordProgress } from '@/lib/db';
 import type { WordStatus } from '@/lib/srs';
 
 const STATUS_LABEL: Record<WordStatus, string> = {
@@ -15,13 +18,16 @@ const STATUS_LABEL: Record<WordStatus, string> = {
   mastered: 'Thuộc',
 };
 
-type Filter = 'all' | WordStatus;
+type Filter = 'all' | WordStatus | 'weak';
 
 const FILTERS: { key: Filter; label: string }[] = [
   { key: 'all', label: 'Tất cả' },
   { key: 'new', label: 'Mới' },
   { key: 'learning', label: 'Đang học' },
   { key: 'mastered', label: 'Thuộc' },
+  // Cuts across the other three: a word can be scheduled as "Thuộc" and still
+  // be one that keeps getting missed.
+  { key: 'weak', label: 'Hay sai' },
 ];
 
 export function LessonDetailScreen() {
@@ -33,7 +39,7 @@ export function LessonDetailScreen() {
   const [query, setQuery] = useState('');
 
   const progressById = useLiveQuery(async () => {
-    if (!lesson) return new Map<string, { status: WordStatus; bookmarked: number }>();
+    if (!lesson) return new Map<string, WordProgress>();
     const records = await getLessonProgress(lesson.id);
     return new Map(records.map((record) => [record.id, record]));
   }, [lesson?.id]);
@@ -41,15 +47,18 @@ export function LessonDetailScreen() {
   if (!lesson) return <Navigate to={routes.lessons()} replace />;
 
   const words = studyWordsOf(lesson);
-  const counts = { new: 0, learning: 0, mastered: 0 };
+  const counts = { new: 0, learning: 0, mastered: 0, weak: 0 };
   for (const word of words) {
-    counts[progressById?.get(word.id)?.status ?? 'new'] += 1;
+    const record = progressById?.get(word.id);
+    counts[record?.status ?? 'new'] += 1;
+    if (isWeak(record)) counts.weak += 1;
   }
 
   const needle = query.trim().toLowerCase();
   const visible = words.filter((word) => {
-    const status = progressById?.get(word.id)?.status ?? 'new';
-    if (filter !== 'all' && status !== filter) return false;
+    const record = progressById?.get(word.id);
+    const status = record?.status ?? 'new';
+    if (filter === 'weak' ? !isWeak(record) : filter !== 'all' && status !== filter) return false;
     if (!needle) return true;
     return (
       word.word.toLowerCase().includes(needle) ||
@@ -172,6 +181,7 @@ export function LessonDetailScreen() {
                     <span className="word-row__vi">{word.vi}</span>
                   </Link>
                   <span className="word-row__side">
+                    <WordAccuracy record={record} />
                     <span className={`badge badge--${status}`}>{STATUS_LABEL[status]}</span>
                     {record?.bookmarked ? (
                       <span className="word-row__star word-row__star--on" aria-label="Đã lưu">

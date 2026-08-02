@@ -40,12 +40,6 @@ export function formatClock(totalSeconds: number): string {
   return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
 
-/** "vast" -> "v _ _ _", used as the typing-quiz hint. */
-export function maskWord(word: string): string {
-  if (word.length <= 1) return word;
-  return word[0] + ' _'.repeat(word.length - 1);
-}
-
 export function isAnswerCorrect(given: string, expected: string): boolean {
   return given.trim().toLowerCase() === expected.trim().toLowerCase();
 }
