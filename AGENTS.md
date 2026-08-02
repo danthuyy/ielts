@@ -209,8 +209,15 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 - `markMissed()` ghi nhận một lần sai mà không đẩy hàng đợi — dùng cho vòng lặp
   ở trên. Điểm cuối phiên tính theo **lần thử đầu tiên**, không phải kết quả
   cuối, nếu không thì ai cũng được điểm tuyệt đối.
-- Gợi ý chỉ xuất hiện **sau khi đã thử ít nhất một lần**. Gợi ý sẵn từ đầu biến
-  việc nhớ lại thành việc chép. Dùng gợi ý thì từ đó xếp lịch như câu "Khó".
+- Sai thì **không lộ đáp án**. `src/lib/diff.ts` so khớp từng ký tự giữa câu trả
+  lời và đáp án rồi đánh dấu: đúng, sai, thừa, thiếu. Chữ thiếu hiện dấu `·`
+  chứ không hiện chữ thật — nếu không thì sai vài lần là có nguyên đáp án.
+- Gợi ý chỉ xuất hiện **sau khi đã thử ít nhất một lần**, và **leo dần**:
+  lần sai thứ 2 mới cho hình dạng + số ký tự, thứ 3 mới cho chữ đầu, rồi mới mở
+  thêm chữ. Xem `effectiveLevel` trong `src/lib/hints.ts`. Rung đầu tiên cố ý
+  **không lộ chữ cái nào** — đưa luôn một phần ba từ thì không phải gợi ý, mà là
+  trả lời hộ theo từng đợt.
+- Dùng gợi ý thì từ đó xếp lịch như câu "Khó".
 
 Nếu thêm chế độ luyện mới, dùng lại `useRetryQueue` thay vì tự đi qua mảng.
 

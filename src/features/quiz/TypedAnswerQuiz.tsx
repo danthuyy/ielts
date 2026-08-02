@@ -11,7 +11,9 @@ import { useRetryQueue } from '@/hooks/useRetryQueue';
 import { useSessionWords } from '@/hooks/useSessionWords';
 import { useSwipe } from '@/hooks/useSwipe';
 import { useSettings } from '@/hooks/useSettings';
-import { buildHint, maxLevel } from '@/lib/hints';
+import { AnswerDiff } from '@/components/AnswerDiff';
+import { compareAnswer, isNearMiss, type Segment } from '@/lib/diff';
+import { buildHint, effectiveLevel, maxLevel } from '@/lib/hints';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
 import { speak, speakSlow } from '@/lib/tts';
@@ -41,8 +43,14 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
   // 'wrong' keeps the learner on the same word; only 'correct' and 'revealed'
   // end the turn.
   const [result, setResult] = useState<'correct' | 'wrong' | 'revealed' | null>(null);
-  const [hintLevel, setHintLevel] = useState(0);
+  // How many times the learner has asked. The level actually shown also climbs
+  // with repeated misses — see effectiveLevel.
+  const [hintRequests, setHintRequests] = useState(0);
   const [attempts, setAttempts] = useState(0);
+  /** The last wrong attempt, marked against the answer. */
+  const [lastAttempt, setLastAttempt] = useState<{ segments: Segment[]; near: boolean } | null>(
+    null,
+  );
 
   const inputRef = useRef<HTMLInputElement>(null);
   const screenRef = useRef<HTMLDivElement>(null);
@@ -53,9 +61,10 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
   // answered or explicitly skipped.
   const turnOver = result === 'correct' || result === 'revealed';
   const hintStyle = settings.hintStyle;
+  const hintLevel = effectiveLevel(attempts, hintRequests);
   const hint = useMemo(
-    () => (word ? buildHint(word, hintStyle, hintLevel) : null),
-    [word, hintStyle, hintLevel],
+    () => (word && attempts > 0 ? buildHint(word, hintStyle, hintLevel) : null),
+    [word, hintStyle, hintLevel, attempts],
   );
 
   const play = useCallback(() => {
@@ -73,8 +82,9 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
     (correct: boolean) => {
       setAnswer('');
       setResult(null);
-      setHintLevel(0);
+      setHintRequests(0);
       setAttempts(0);
+      setLastAttempt(null);
       checkingRef.current = false;
       queue.answer(correct);
     },
@@ -108,13 +118,18 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
       setResult('correct');
       // Getting there after a miss or a hint is not the same as recalling it
       // cleanly, and the schedule should say so.
-      await settle(true, attempts === 0 && hintLevel === 0);
+      await settle(true, attempts === 0 && hintRequests === 0);
       if (variant === 'type' && settings.autoSpeak) speak(word.word);
       return;
     }
 
-    // Wrong: stay on this word. The answer is not revealed, and the hint
-    // button only appears now.
+    // Wrong: stay on this word. The answer is not revealed — instead the
+    // attempt itself is marked, so a spelling slip reads as a spelling slip
+    // rather than as not knowing the word.
+    setLastAttempt({
+      segments: compareAnswer(answer, word.word),
+      near: isNearMiss(answer, word.word),
+    });
     setAttempts((value) => value + 1);
     queue.markMissed();
     setResult('wrong');
@@ -128,7 +143,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
     advance,
     variant,
     settings.autoSpeak,
-    hintLevel,
+    hintRequests,
     result,
     attempts,
     settle,
@@ -148,9 +163,9 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
     // Deliberately unavailable until the learner has actually tried: a hint
     // offered up front turns recall into copying.
     if (turnOver || attempts === 0 || hintStyle === 'off') return;
-    setHintLevel((level) => Math.min(level + 1, maxLevel(hintStyle)));
+    setHintRequests(() => Math.min(hintLevel + 1, maxLevel(hintStyle)));
     inputRef.current?.focus();
-  }, [turnOver, attempts, hintStyle]);
+  }, [turnOver, attempts, hintStyle, hintLevel]);
 
   useKeyboard(
     {
@@ -243,6 +258,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
         {hint && !turnOver && (
           <div className="hint-panel" role="status" aria-live="polite">
             {hint.masked && <p className="hint-panel__masked">{hint.masked}</p>}
+            {hint.length !== null && <p className="hint-panel__length">{hint.length} ký tự</p>}
             {hint.lines.map((line) => (
               <p className="hint-panel__line" key={line}>
                 {line}
@@ -262,13 +278,18 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
               {variant === 'listen' && <p className="feedback__meta">{word.vi}</p>}
             </>
           )}
-          {result === 'wrong' && (
+          {result === 'wrong' && lastAttempt && (
             <>
-              <p className="feedback__headline">❌ Chưa đúng, thử lại</p>
+              <p className="feedback__headline">
+                {lastAttempt.near ? '✏️ Gần đúng — sai chính tả' : '❌ Chưa đúng, thử lại'}
+              </p>
+              <AnswerDiff segments={lastAttempt.segments} />
               <p className="feedback__retry">
-                {attempts === 1
-                  ? 'Bấm Gợi ý nếu cần, hoặc Bỏ qua để xem đáp án.'
-                  : `Đã thử ${attempts} lần.`}
+                {lastAttempt.near
+                  ? 'Chữ tô đỏ là chỗ sai, dấu · là chữ còn thiếu.'
+                  : attempts === 1
+                    ? 'Bấm Gợi ý nếu cần, hoặc Bỏ qua để xem đáp án.'
+                    : `Đã thử ${attempts} lần.`}
               </p>
             </>
           )}

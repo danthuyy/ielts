@@ -1351,3 +1351,52 @@ a.word-row__main:hover .word-row__word {
     min-height: 44px;
   }
 }
+
+/* ---- Character-level answer feedback ---- */
+
+.answer-diff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  margin-bottom: var(--sp-2);
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.answer-diff__char {
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+.answer-diff__char--ok {
+  color: var(--success);
+}
+
+/* The character that is actually wrong, called out rather than the whole word. */
+.answer-diff__char--wrong {
+  background: var(--danger-soft);
+  color: var(--danger);
+  text-decoration: underline wavy;
+  text-underline-offset: 3px;
+}
+
+.answer-diff__char--extra {
+  color: var(--danger);
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+/* A slot for something left out — never the letter itself. */
+.answer-diff__char--missing {
+  color: var(--warning);
+  background: var(--warning-soft);
+}
+
+.hint-panel__length {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-top: var(--sp-1);
+}

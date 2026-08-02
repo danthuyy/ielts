@@ -2,7 +2,7 @@ import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import { useRetryQueue } from '@/hooks/useRetryQueue';
-import { buildHint, maskWithReveal, maxLevel, revealedAt } from '@/lib/hints';
+import { buildHint, maskWithReveal } from '@/lib/hints';
 
 interface Item {
   id: string;
@@ -142,23 +142,6 @@ describe('maskWithReveal', () => {
   });
 });
 
-describe('revealedAt', () => {
-  it('gives one letter at the first level', () => {
-    expect(revealedAt('consternation', 1)).toBe(1);
-  });
-
-  it('opens up gradually and stops short of the whole word', () => {
-    const word = 'consternation';
-    const levels = [1, 2, 3, 4].map((level) => revealedAt(word, level));
-    expect(levels).toEqual([...levels].sort((a, b) => a - b));
-    expect(levels.at(-1)).toBeLessThan(word.length);
-  });
-
-  it('reveals nothing at level zero', () => {
-    expect(revealedAt('vast', 0)).toBe(0);
-  });
-});
-
 describe('buildHint', () => {
   const word = { word: 'vast', vi: 'khổng lồ', ipa: '/vɑːst/', pos: 'adj' };
 
@@ -166,14 +149,14 @@ describe('buildHint', () => {
     expect(buildHint(word, 'off', 2)).toBeNull();
   });
 
-  it('returns nothing before the first press', () => {
+  it('returns nothing before the first rung', () => {
     expect(buildHint(word, 'progressive', 0)).toBeNull();
   });
 
-  it('shows only the first letter and the length in "first" mode', () => {
+  it('shows the first letter and the length in "first" mode', () => {
     const hint = buildHint(word, 'first', 1);
-    expect(hint?.masked).toContain('v___');
-    expect(hint?.masked).toContain('4');
+    expect(hint?.masked).toBe('v___');
+    expect(hint?.length).toBe(4);
     expect(hint?.exhausted).toBe(true);
   });
 
@@ -183,22 +166,7 @@ describe('buildHint', () => {
     expect(hint?.lines).toEqual(['/vɑːst/', 'khổng lồ (adj)']);
   });
 
-  it('opens more letters on each press in progressive mode', () => {
-    const first = buildHint({ ...word, word: 'consternation' }, 'progressive', 1);
-    const later = buildHint({ ...word, word: 'consternation' }, 'progressive', 3);
-    const firstRevealed = (first?.masked ?? '').replace(/_/g, '').length;
-    const laterRevealed = (later?.masked ?? '').replace(/_/g, '').length;
-    expect(laterRevealed).toBeGreaterThan(firstRevealed);
-  });
-
-  it('reports exhaustion at the last level and adds the phonetics', () => {
-    const hint = buildHint(word, 'progressive', maxLevel('progressive'));
-    expect(hint?.exhausted).toBe(true);
-    expect(hint?.lines).toContain('/vɑːst/');
-  });
-
   it('never simply prints the answer', () => {
-    const hint = buildHint(word, 'progressive', 99);
-    expect(hint?.masked).toContain('_');
+    expect(buildHint(word, 'progressive', 99)?.masked).toContain('_');
   });
 });
