@@ -73,6 +73,7 @@ Mở địa chỉ mà Vite in ra (mặc định http://localhost:5173).
 | `npm run typecheck`                                   | `tsc --noEmit`                                   |
 | `npm run validate:content`                            | Kiểm tra mọi file trong `content/lessons`        |
 | `npm run lesson:new -- --id <slug> --title "<title>"` | Tạo khung file JSON cho bài học mới              |
+| `npm run lesson:import`                               | Chuyển file markdown từ vựng thành bài học JSON  |
 
 ## Cấu trúc thư mục
 

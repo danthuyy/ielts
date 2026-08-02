@@ -259,241 +259,93 @@ def create_deck(vocab_list, deck_name, output_file):
 
 
 # ============================================================
-# DỮ LIỆU: Từ vựng bài "Hello Happiness"
+# NGUỒN DỮ LIỆU: content/lessons/*.json
 # ============================================================
-HELLO_HAPPINESS_VOCAB = [
-    {
-        "word": "vast",
-        "pos": "adjective",
-        "ipa": "/vɑːst/",
-        "vietnamese": "Khổng lồ, vô cùng lớn",
-        "example": "If they won a vast fortune, they would be back to their previous level of happiness.",
-        "collocation": "a vast fortune / vast majority / vast amount",
-        "topic": "Hello Happiness - Money & Wealth"
-    },
-    {
-        "word": "material wealth",
-        "pos": "noun phrase",
-        "ipa": "/məˈtɪə.ri.əl welθ/",
-        "vietnamese": "Sự giàu có về vật chất",
-        "example": "Individuals may increase their material wealth during the course of their lifetime.",
-        "collocation": "increase material wealth / accumulate wealth",
-        "topic": "Hello Happiness - Money & Wealth"
-    },
-    {
-        "word": "well-being",
-        "pos": "noun",
-        "ipa": "/ˈwel.biː.ɪŋ/",
-        "vietnamese": "Sức khỏe & hạnh phúc (thể chất + tinh thần)",
-        "example": "This has no bearing on their well-being.",
-        "collocation": "physical / psychological / subjective well-being",
-        "topic": "Hello Happiness - Health & Life"
-    },
-    {
-        "word": "adequate",
-        "pos": "adjective",
-        "ipa": "/ˈæd.ə.kwət/",
-        "vietnamese": "Đầy đủ, đáp ứng nhu cầu cơ bản",
-        "example": "Once the basic criteria of adequate shelter and nutrition are satisfied.",
-        "collocation": "adequate shelter / nutrition / resources",
-        "topic": "Hello Happiness - Health & Life"
-    },
-    {
-        "word": "nutrition",
-        "pos": "noun",
-        "ipa": "/njuːˈtrɪʃ.ən/",
-        "vietnamese": "Dinh dưỡng",
-        "example": "The basic criteria of adequate shelter and nutrition are satisfied.",
-        "collocation": "adequate nutrition / good nutrition / poor nutrition",
-        "topic": "Hello Happiness - Health & Life"
-    },
-    {
-        "word": "obsession",
-        "pos": "noun",
-        "ipa": "/əbˈseʃ.ən/",
-        "vietnamese": "Sự ám ảnh, nỗi đam mê quá mức",
-        "example": "So why the obsession with getting rich?",
-        "collocation": "obsession with sth / have an obsession",
-        "topic": "Hello Happiness - Psychology"
-    },
-    {
-        "word": "aspiration",
-        "pos": "noun",
-        "ipa": "/ˌæs.pɪˈreɪ.ʃən/",
-        "vietnamese": "Khát vọng, hoài bão",
-        "example": "Causing us much consternation, but fuelling us with new aspirations.",
-        "collocation": "career aspirations / personal aspirations",
-        "topic": "Hello Happiness - Psychology"
-    },
-    {
-        "word": "consternation",
-        "pos": "noun",
-        "ipa": "/ˌkɒn.stəˈneɪ.ʃən/",
-        "vietnamese": "Sự kinh ngạc lo lắng, sự bàng hoàng",
-        "example": "Causing us much consternation, but fuelling us with new aspirations.",
-        "collocation": "cause / express consternation",
-        "topic": "Hello Happiness - Psychology"
-    },
-    {
-        "word": "sizeable",
-        "pos": "adjective",
-        "ipa": "/ˈsaɪ.zə.bəl/",
-        "vietnamese": "Đáng kể, khá lớn",
-        "example": "A sizeable majority would say winning the lottery.",
-        "collocation": "a sizeable majority / a sizeable amount",
-        "topic": "Hello Happiness - Society"
-    },
-    {
-        "word": "correlate",
-        "pos": "verb",
-        "ipa": "/ˈkɒr.ə.leɪt/",
-        "vietnamese": "Có mối tương quan, liên hệ với nhau",
-        "example": "Social interaction correlates strongly with subjective well-being.",
-        "collocation": "correlate strongly / highly with sth",
-        "topic": "Hello Happiness - Society"
-    },
-    {
-        "word": "autonomy",
-        "pos": "noun",
-        "ipa": "/ɔːˈtɒn.ə.mi/",
-        "vietnamese": "Sự tự chủ, quyền tự quyết",
-        "example": "Autonomy over how, where, and at what pace work is done.",
-        "collocation": "personal autonomy / professional autonomy",
-        "topic": "Hello Happiness - Work & Society"
-    },
-    {
-        "word": "subservient",
-        "pos": "adjective",
-        "ipa": "/səbˈsɜː.vi.ənt/",
-        "vietnamese": "Phục tùng, khúm núm, phụ thuộc",
-        "example": "People who are in control of the work they do, rather than subservient to their bosses.",
-        "collocation": "subservient to sb / a subservient role",
-        "topic": "Hello Happiness - Work & Society"
-    },
-    {
-        "word": "benchmark",
-        "pos": "noun",
-        "ipa": "/ˈbentʃ.mɑːk/",
-        "vietnamese": "Tiêu chuẩn, điểm chuẩn để đo lường",
-        "example": "The degree of social connections is the best benchmark of their happiness.",
-        "collocation": "set a benchmark / use as a benchmark",
-        "topic": "Hello Happiness - Society"
-    },
-    {
-        "word": "depression",
-        "pos": "noun",
-        "ipa": "/dɪˈpreʃ.ən/",
-        "vietnamese": "Trầm cảm, sự suy sụp tinh thần",
-        "example": "Loneliness can lead to depression.",
-        "collocation": "suffer from depression / lead to depression",
-        "topic": "Hello Happiness - Health & Life"
-    },
-    {
-        "word": "resilient",
-        "pos": "adjective",
-        "ipa": "/rɪˈzɪl.i.ənt/",
-        "vietnamese": "Kiên cường, nhanh phục hồi sau khó khăn",
-        "example": "Happy people are also more psychologically resilient.",
-        "collocation": "emotionally / psychologically resilient",
-        "topic": "Hello Happiness - Psychology"
-    },
-    {
-        "word": "assertive",
-        "pos": "adjective",
-        "ipa": "/əˈsɜː.tɪv/",
-        "vietnamese": "Quả quyết, tự tin bày tỏ quan điểm",
-        "example": "Happy people are more psychologically resilient, assertive and open to experience.",
-        "collocation": "be more assertive / an assertive person",
-        "topic": "Hello Happiness - Psychology"
-    },
-    {
-        "word": "enhance",
-        "pos": "verb",
-        "ipa": "/ɪnˈhɑːns/",
-        "vietnamese": "Cải thiện, nâng cao, tăng cường",
-        "example": "Having a family enhances well-being.",
-        "collocation": "enhance performance / enhance well-being",
-        "topic": "Hello Happiness - Useful Verbs"
-    },
-    {
-        "word": "undermine",
-        "pos": "verb",
-        "ipa": "/ˌʌn.dəˈmaɪn/",
-        "vietnamese": "Làm suy yếu, phá hoại ngầm",
-        "example": "Worrying simply undermines our ability to enjoy life in the present.",
-        "collocation": "undermine confidence / undermine authority",
-        "topic": "Hello Happiness - Useful Verbs"
-    },
-    {
-        "word": "sustain",
-        "pos": "verb",
-        "ipa": "/səˈsteɪn/",
-        "vietnamese": "Duy trì, kéo dài, giữ vững",
-        "example": "Engage in a loving relationship with another adult, and work hard to sustain it.",
-        "collocation": "sustain a relationship / sustain growth",
-        "topic": "Hello Happiness - Useful Verbs"
-    },
-    {
-        "word": "dwell on",
-        "pos": "phrasal verb",
-        "ipa": "/dwel ɒn/",
-        "vietnamese": "Suy nghĩ mãi về (điều tiêu cực), cứ day dứt",
-        "example": "Just as important is not to dwell on the past.",
-        "collocation": "dwell on the past / dwell on mistakes",
-        "topic": "Hello Happiness - Useful Verbs"
-    },
-    {
-        "word": "cohabitational",
-        "pos": "adjective",
-        "ipa": "/ˌkəʊ.hæb.ɪˈteɪ.ʃən.əl/",
-        "vietnamese": "Thuộc về việc sống chung (không kết hôn)",
-        "example": "Couples in a cohabitational relationship.",
-        "collocation": "cohabitational relationship",
-        "topic": "Hello Happiness - Society"
-    },
-    {
-        "word": "laid off",
-        "pos": "phrasal verb (passive)",
-        "ipa": "/leɪd ɒf/",
-        "vietnamese": "Bị sa thải (do công ty cắt giảm)",
-        "example": "The absence of troubles such as accidents, being laid off or conflicts.",
-        "collocation": "get / be laid off",
-        "topic": "Hello Happiness - Work & Society"
-    },
-    {
-        "word": "life expectancy",
-        "pos": "noun phrase",
-        "ipa": "/laɪf ɪkˈspek.tən.si/",
-        "vietnamese": "Tuổi thọ trung bình",
-        "example": "Their life expectancy has been falling steadily.",
-        "collocation": "average life expectancy / increase life expectancy",
-        "topic": "Hello Happiness - Health & Life"
-    },
-    {
-        "word": "favourable",
-        "pos": "adjective",
-        "ipa": "/ˈfeɪ.vər.ə.bəl/",
-        "vietnamese": "Thuận lợi, tích cực, có lợi",
-        "example": "Happiness is clearly correlated with the presence of favourable events.",
-        "collocation": "favourable conditions / favourable outcome",
-        "topic": "Hello Happiness - General"
-    },
-    {
-        "word": "stem from",
-        "pos": "phrasal verb",
-        "ipa": "/stem frɒm/",
-        "vietnamese": "Bắt nguồn từ, xuất phát từ",
-        "example": "It stems, apparently, from our cave dwelling days.",
-        "collocation": "stem from a problem / stem from a need",
-        "topic": "Hello Happiness - Useful Verbs"
-    },
-]
+#
+# Từ vựng trước đây được chép cứng vào file này, tách rời khỏi nội dung mà ứng
+# dụng web dùng — sửa một bên là hai bên lệch nhau. Giờ deck được sinh thẳng từ
+# content/lessons, nên chỉ còn một nguồn sự thật duy nhất.
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+LESSONS_DIR = ROOT / 'content' / 'lessons'
+
+# Schema của app dùng dạng viết tắt; Anki hiển thị dạng đầy đủ dễ đọc hơn.
+POS_LABEL = {
+    'n': 'noun',
+    'v': 'verb',
+    'adj': 'adjective',
+    'adv': 'adverb',
+    'phrasal v': 'phrasal verb',
+    'phr': 'phrase',
+    'idiom': 'idiom',
+}
+
+
+def expand_pos(pos):
+    """'adj' -> 'adjective', 'v/n' -> 'verb / noun'."""
+    return ' / '.join(POS_LABEL.get(part.strip(), part.strip()) for part in pos.split('/'))
+
+
+def load_lessons(lesson_ids=None):
+    """Đọc content/lessons/*.json, trả về list (lesson_id, title, vocab_list)."""
+    if not LESSONS_DIR.is_dir():
+        raise SystemExit(f'Không tìm thấy {LESSONS_DIR}')
+
+    out = []
+    for path in sorted(LESSONS_DIR.glob('*.json')):
+        lesson = json.loads(path.read_text(encoding='utf8'))
+        if lesson_ids and lesson['id'] not in lesson_ids:
+            continue
+        vocab = [
+            {
+                'word': w['word'],
+                'pos': expand_pos(w.get('pos', '')),
+                'ipa': w.get('ipa', ''),
+                'vietnamese': w.get('vi', ''),
+                # Ghi chú đi kèm ví dụ để không mất thông tin khi sang Anki.
+                'example': ' — '.join(x for x in (w.get('example', ''), w.get('note', '')) if x),
+                'collocation': w.get('collocation', ''),
+                'topic': lesson['title'],
+            }
+            for w in lesson['words']
+        ]
+        out.append((lesson['id'], lesson['title'], vocab))
+
+    if not out:
+        raise SystemExit('Không có bài học nào khớp.')
+    return out
 
 
 if __name__ == '__main__':
-    output = '/Users/danthuy/ielts/IELTS_Hello_Happiness.apkg'
-    create_deck(
-        HELLO_HAPPINESS_VOCAB,
-        'IELTS :: Hello Happiness',
-        output
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='Sinh file Anki .apkg từ content/lessons/*.json'
     )
+    parser.add_argument(
+        '--lesson', action='append', metavar='ID',
+        help='Chỉ lấy bài học có id này (lặp lại được). Mặc định: tất cả.'
+    )
+    parser.add_argument(
+        '--out', default=str(ROOT / 'tools' / 'anki'), metavar='DIR',
+        help='Thư mục xuất file .apkg (mặc định: tools/anki)'
+    )
+    parser.add_argument(
+        '--combined', action='store_true',
+        help='Gộp mọi bài học vào một deck thay vì mỗi bài một file.'
+    )
+    args = parser.parse_args()
+
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    lessons = load_lessons(set(args.lesson) if args.lesson else None)
+
+    if args.combined:
+        vocab = [w for _, _, words in lessons for w in words]
+        create_deck(vocab, 'IELTS :: Vocabulary', str(out_dir / 'IELTS_Vocabulary.apkg'))
+    else:
+        for lesson_id, title, vocab in lessons:
+            create_deck(vocab, f'IELTS :: {title}', str(out_dir / f'{lesson_id}.apkg'))

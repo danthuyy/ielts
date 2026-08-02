@@ -139,7 +139,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
           <div className="prompt">
             <p className="prompt__main">{word.vi}</p>
             <p className="prompt__sub">{word.pos}</p>
-            <p className="prompt__collocation">{word.collocation}</p>
+            {word.collocation && <p className="prompt__collocation">{word.collocation}</p>}
           </div>
         )}
 

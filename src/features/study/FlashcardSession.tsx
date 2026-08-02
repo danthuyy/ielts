@@ -187,14 +187,26 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
             <p className="flashcard__word">{word.word}</p>
             <p className="flashcard__ipa">{word.ipa}</p>
             <p className="flashcard__vi">{word.vi}</p>
-            <div className="flashcard__box">
-              <p className="flashcard__box-title">Collocation</p>
-              <p className="flashcard__collocation">{word.collocation}</p>
-            </div>
-            <div className="flashcard__box">
-              <p className="flashcard__box-title">Example</p>
-              <p className="flashcard__example">{word.example}</p>
-            </div>
+            {/* Not every word has a natural collocation or an example worth
+                quoting; an empty labelled box reads as missing data. */}
+            {word.collocation && (
+              <div className="flashcard__box">
+                <p className="flashcard__box-title">Collocation</p>
+                <p className="flashcard__collocation">{word.collocation}</p>
+              </div>
+            )}
+            {word.example && (
+              <div className="flashcard__box">
+                <p className="flashcard__box-title">Example</p>
+                <p className="flashcard__example">{word.example}</p>
+              </div>
+            )}
+            {word.note && (
+              <div className="flashcard__box flashcard__box--note">
+                <p className="flashcard__box-title">Lưu ý</p>
+                <p className="flashcard__note">{word.note}</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

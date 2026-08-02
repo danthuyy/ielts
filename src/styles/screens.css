@@ -684,3 +684,14 @@
   font-size: var(--text-sm);
   color: var(--text-muted);
 }
+
+/* A usage tip reads as advice, not as source material — set it apart. */
+.flashcard__box--note {
+  border-left: 3px solid var(--warning);
+}
+
+.flashcard__note {
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+  line-height: 1.5;
+}

@@ -4,7 +4,42 @@ Phần lớn đóng góp cho repo này là **thêm bài học mới**. Bạn kh�
 
 ## Thêm bài học mới
 
-### 1. Tạo khung file bằng CLI
+Có hai đường. Nếu bạn đã soạn sẵn danh sách từ dạng markdown (cách làm thường
+gặp khi rút từ vựng từ một bài đọc), dùng **cách A** — nhanh hơn nhiều. Nếu bắt
+đầu từ con số không, dùng **cách B**.
+
+### Cách A — import từ file markdown
+
+```bash
+npm run lesson:import -- --from notes/happiness.md --id hello_happiness --title "Hello Happiness" --tags happiness,society
+```
+
+Markdown cần theo dạng dưới đây. Tiêu đề `##` và đoạn văn xuôi được bỏ qua, nên
+bạn dán nguyên file ghi chú vào cũng được:
+
+```markdown
+## 1. Từ vựng về Tiền bạc
+
+- **Vast (adj) /vɑːst/**: Khổng lồ, vô vàn.
+  - _Collocation_: A vast fortune.
+  - _Ví dụ_: If they won a vast fortune, they would be back to normal.
+  - _Lưu ý_: Rất ăn điểm trong Writing Task 2.
+- **Nutrition (n) /njuːˈtrɪʃ.ən/**: Dinh dưỡng.
+```
+
+Chỉ dòng đầu (`**Từ (loại) /ipa/**: nghĩa`) là bắt buộc; ba mục con đều tuỳ chọn.
+Nhãn mục con chấp nhận cả `_Collocation_`, `_Ví dụ_` / `_Vi du_` / `_Example_`,
+`_Lưu ý_` / `_Luu y_` / `_Note_`.
+
+Thêm `--dry-run` để xem kết quả trước khi ghi file, `--force` để ghi đè bài đã có.
+
+Lệnh này **báo cáo mọi dòng nó không hiểu** thay vì bỏ qua im lặng — một từ bị
+mất khi import còn tệ hơn là lệnh chạy lỗi. Nó cũng liệt kê từ nào còn thiếu ví
+dụ hay collocation để bạn bổ sung sau.
+
+### Cách B — tạo khung rồi điền tay
+
+#### 1. Tạo khung file bằng CLI
 
 ```bash
 npm run lesson:new -- --id hello_happiness --title "Hello Happiness"
@@ -12,7 +47,7 @@ npm run lesson:new -- --id hello_happiness --title "Hello Happiness"
 
 Lệnh này tạo `content/lessons/hello_happiness.json` với sẵn khung nội dung.
 
-### 2. Sửa file JSON
+#### 2. Sửa file JSON
 
 Mở `content/lessons/hello_happiness.json` và điền nội dung:
 
@@ -36,13 +71,13 @@ Mở `content/lessons/hello_happiness.json` và điền nội dung:
 }
 ```
 
-### 3. Kiểm tra nội dung
+#### 3. Kiểm tra nội dung
 
 ```bash
 npm run validate:content
 ```
 
-### 4. Xem thử trong ứng dụng
+#### 4. Xem thử trong ứng dụng
 
 ```bash
 npm run dev
@@ -50,7 +85,7 @@ npm run dev
 
 Bài học mới xuất hiện ngay trong danh sách — nó được tự động phát hiện từ thư mục, không có file index nào phải đăng ký.
 
-### 5. Commit và push
+#### 5. Commit và push
 
 ```bash
 git add content/lessons/hello_happiness.json
@@ -81,14 +116,18 @@ File nằm ở `content/lessons/<id>.json`.
 
 ### Cấp từ vựng (`words[]`)
 
-| Trường        | Kiểu   | Bắt buộc | Mô tả                                                                    |
-| ------------- | ------ | -------- | ------------------------------------------------------------------------ |
-| `word`        | string | Có       | Từ tiếng Anh. **Phải là duy nhất trong cùng một bài học.**               |
-| `pos`         | string | Có       | Từ loại. Một trong: `n`, `v`, `adj`, `adv`, `phrasal v`, `phr`, `idiom`. |
-| `ipa`         | string | Có       | Phiên âm IPA, đặt trong hai dấu `/`.                                     |
-| `vi`          | string | Có       | Nghĩa tiếng Việt.                                                        |
-| `example`     | string | Có       | Câu ví dụ tiếng Anh chứa từ đó.                                          |
-| `collocation` | string | Có       | Các cụm đi kèm, ngăn cách bằng `·`.                                      |
+| Trường        | Kiểu   | Bắt buộc | Mô tả                                                                                                                                     |
+| ------------- | ------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `word`        | string | Có       | Từ tiếng Anh. **Phải là duy nhất trong cùng một bài học.**                                                                                |
+| `pos`         | string | Có       | Từ loại. Một trong: `n`, `v`, `adj`, `adv`, `phrasal v`, `phr`, `idiom`. Ghép hai loại bằng `/` nếu từ đó thật sự là cả hai, ví dụ `v/n`. |
+| `ipa`         | string | Có       | Phiên âm IPA, đặt trong hai dấu `/`.                                                                                                      |
+| `vi`          | string | Có       | Nghĩa tiếng Việt.                                                                                                                         |
+| `example`     | string | Không    | Câu ví dụ tiếng Anh chứa từ đó. Bỏ trống thì ứng dụng ẩn hẳn ô này.                                                                       |
+| `collocation` | string | Không    | Các cụm đi kèm, ngăn cách bằng `·`. Bỏ trống thì ẩn ô.                                                                                    |
+| `note`        | string | Không    | Mẹo dùng từ: khi nào nên dùng, sắc thái, lỗi hay gặp. Hiện ở mặt sau thẻ.                                                                 |
+
+`example`, `collocation` và `note` để trống được. Không phải từ nào cũng có
+collocation tự nhiên, và ép tác giả bịa ra chỉ làm hỏng nội dung.
 
 ## Quy tắc đặt `id`
 

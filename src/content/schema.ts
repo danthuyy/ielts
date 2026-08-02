@@ -8,6 +8,16 @@ import { z } from 'zod';
 
 export const PARTS_OF_SPEECH = ['n', 'v', 'adj', 'adv', 'phrasal v', 'phr', 'idiom'] as const;
 
+/**
+ * A single part of speech, or two joined with "/" for words that genuinely are
+ * both — "v/n" is common in IELTS word lists and forcing the author to pick one
+ * loses information the learner needs.
+ */
+const posPattern = (() => {
+  const atom = PARTS_OF_SPEECH.map((value) => value.replace(/ /g, '\\s')).join('|');
+  return new RegExp(`^(${atom})(/(${atom}))?$`);
+})();
+
 /** Lesson ids become part of every learner's saved progress key — keep them stable. */
 const lessonIdSchema = z
   .string()
@@ -16,15 +26,21 @@ const lessonIdSchema = z
 export const wordSchema = z.object({
   /** The English headword. Unique within a lesson; used to derive the progress key. */
   word: z.string().min(1).trim(),
-  pos: z.enum(PARTS_OF_SPEECH),
+  pos: z.string().regex(posPattern, `pos phải là một trong: ${PARTS_OF_SPEECH.join(', ')}`),
   /** IPA including the surrounding slashes, e.g. "/vɑːst/". */
   ipa: z.string().min(1),
   /** Vietnamese meaning. */
   vi: z.string().min(1),
-  /** A full sentence showing the word in use. */
-  example: z.string().min(1),
+  /**
+   * Optional. Plenty of words have no natural collocation and no example worth
+   * quoting; requiring them only pushes authors into inventing filler, and the
+   * UI hides whichever field is empty.
+   */
+  example: z.string().default(''),
   /** Common collocations, separated by " · ". */
-  collocation: z.string().min(1),
+  collocation: z.string().default(''),
+  /** A usage tip — when to reach for the word, register, common mistakes. */
+  note: z.string().default(''),
 });
 
 export const lessonSchema = z
