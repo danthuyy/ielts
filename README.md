@@ -18,7 +18,7 @@ Bản chạy thử: https://danthuyy.github.io/ielts/
 - **Trang chi tiết từ** — lịch ôn, độ chính xác và hệ số dễ của riêng từng từ.
 - **Học đến khi thuộc** — làm sai thì từ đó ở lại cho tới khi bạn trả lời đúng, hoặc tự bấm bỏ qua; bỏ qua thì nó quay lại ở cuối phiên.
 - **Chấm từng chữ cái** — gõ sai chính tả thì tô đỏ đúng chữ sai, chữ thiếu hiện dấu `·`, không lộ đáp án. Gõ gần đúng được báo là "gần đúng" chứ không phải "sai".
-- **Gợi ý leo dần** — chỉ hiện sau khi đã thử; lần đầu chỉ cho số ký tự, sai thêm mới mở chữ.
+- **Gợi ý chống học vẹt** — chỉ hiện sau khi đã thử, và đi từ nghĩa tới ngữ cảnh rồi mới tới chữ cái: số ký tự → nghĩa → collocation và câu ví dụ **có chỗ trống thay cho từ cần tìm** → phiên âm → mở dần chữ cái. Buộc bạn nhớ từ theo nghĩa chứ không phải theo mặt chữ.
 - **Đảo thứ tự mỗi phiên** — tránh học thuộc vị trí thay vì học từ.
 - **Học từ mới** — phiên riêng lấy đúng số từ theo mục tiêu hàng ngày.
 - **Luyện từ hay sai** — gom những từ có độ chính xác thấp nhất thành một phiên riêng, không phải chờ tới lịch ôn.

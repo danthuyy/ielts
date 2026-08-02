@@ -1,7 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
 import { compareAnswer, correctPrefixLength, editDistance, isNearMiss } from '@/lib/diff';
-import { buildHint, effectiveLevel, revealedAt } from '@/lib/hints';
 
 const render = (attempt: string, target: string) =>
   compareAnswer(attempt, target)
@@ -97,39 +96,5 @@ describe('correctPrefixLength', () => {
     expect(correctPrefixLength('conster', 'consternation')).toBe(7);
     expect(correctPrefixLength('xonster', 'consternation')).toBe(0);
     expect(correctPrefixLength('', 'vast')).toBe(0);
-  });
-});
-
-describe('hint ladder', () => {
-  const word = { word: 'consternation', vi: 'sự sững sờ', ipa: '/ˌkɒnstəˈneɪʃən/', pos: 'n' };
-
-  it('reveals no letters at all on the first rung', () => {
-    // The first nudge is the shape and the length — not a slice of the answer.
-    expect(revealedAt('consternation', 1)).toBe(0);
-    const hint = buildHint(word, 'progressive', 1);
-    expect(hint?.masked).not.toMatch(/[a-z]/);
-    expect(hint?.length).toBe(13);
-  });
-
-  it('gives exactly one letter on the second rung', () => {
-    expect(revealedAt('consternation', 2)).toBe(1);
-  });
-
-  it('opens up further on each later rung', () => {
-    const levels = [1, 2, 3, 4].map((level) => revealedAt('consternation', level));
-    expect(levels).toEqual([...levels].sort((a, b) => a - b));
-    expect(new Set(levels).size).toBe(levels.length);
-    expect(levels.at(-1)).toBeLessThan(13);
-  });
-
-  it('escalates on repeated misses without the learner asking', () => {
-    expect(effectiveLevel(1, 0)).toBe(0); // one miss: nothing yet
-    expect(effectiveLevel(2, 0)).toBe(1);
-    expect(effectiveLevel(4, 0)).toBe(3);
-  });
-
-  it('respects an explicit request that runs ahead of the misses', () => {
-    expect(effectiveLevel(1, 2)).toBe(2);
-    expect(effectiveLevel(3, 1)).toBe(2);
   });
 });

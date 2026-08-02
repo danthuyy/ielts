@@ -212,11 +212,25 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 - Sai thì **không lộ đáp án**. `src/lib/diff.ts` so khớp từng ký tự giữa câu trả
   lời và đáp án rồi đánh dấu: đúng, sai, thừa, thiếu. Chữ thiếu hiện dấu `·`
   chứ không hiện chữ thật — nếu không thì sai vài lần là có nguyên đáp án.
-- Gợi ý chỉ xuất hiện **sau khi đã thử ít nhất một lần**, và **leo dần**:
-  lần sai thứ 2 mới cho hình dạng + số ký tự, thứ 3 mới cho chữ đầu, rồi mới mở
-  thêm chữ. Xem `effectiveLevel` trong `src/lib/hints.ts`. Rung đầu tiên cố ý
-  **không lộ chữ cái nào** — đưa luôn một phần ba từ thì không phải gợi ý, mà là
-  trả lời hộ theo từng đợt.
+- Gợi ý chỉ xuất hiện **sau khi đã thử ít nhất một lần**, và đi theo thang
+  **nghĩa và ngữ cảnh trước, chữ cái sau** (`buildLadder` trong
+  `src/lib/hints.ts`):
+
+  1. Dạng từ: số ký tự + từ loại, **không lộ chữ cái nào**
+  2. Nghĩa tiếng Việt — chỉ ở chế độ nghe viết, vì chế độ điền từ đã hiện sẵn
+  3. Cụm hay đi kèm, **đã che chính từ đó**
+  4. Câu ví dụ, **đã che chính từ đó**
+  5. Lưu ý (nếu nội dung có)
+  6. Phiên âm — chỉ ở chế độ điền từ, vì nghe viết đã nghe rồi
+  7. Chữ cái, mở dần, và không bao giờ mở hết
+
+  Thứ tự này là cố ý. Mở chữ cái trước là dạy nhớ mặt chữ; đưa câu ví dụ có chỗ
+  trống là buộc người học truy xuất từ theo nghĩa — đúng như lúc đi thi. Nếu
+  thêm nấc mới, giữ nguyên nguyên tắc đó.
+
+- `src/lib/redact.ts` che từ khoá khỏi chính ví dụ và collocation của nó, bắt cả
+  dạng biến thể (correlate/correlates/correlating) và gạch nối viết thành khoảng
+  trắng. Nấc nào không có dữ liệu thì bị bỏ qua chứ không hiện rỗng.
 - Dùng gợi ý thì từ đó xếp lịch như câu "Khó".
 
 Nếu thêm chế độ luyện mới, dùng lại `useRetryQueue` thay vì tự đi qua mảng.

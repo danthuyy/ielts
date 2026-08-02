@@ -13,7 +13,8 @@ import { useSwipe } from '@/hooks/useSwipe';
 import { useSettings } from '@/hooks/useSettings';
 import { AnswerDiff } from '@/components/AnswerDiff';
 import { compareAnswer, isNearMiss, type Segment } from '@/lib/diff';
-import { buildHint, effectiveLevel, maxLevel } from '@/lib/hints';
+import { HintLadder } from '@/components/HintLadder';
+import { buildHint, effectiveLevel } from '@/lib/hints';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
 import { speak, speakSlow } from '@/lib/tts';
@@ -63,8 +64,8 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
   const hintStyle = settings.hintStyle;
   const hintLevel = effectiveLevel(attempts, hintRequests);
   const hint = useMemo(
-    () => (word && attempts > 0 ? buildHint(word, hintStyle, hintLevel) : null),
-    [word, hintStyle, hintLevel, attempts],
+    () => (word && attempts > 0 ? buildHint(word, variant, hintStyle, hintLevel) : null),
+    [word, variant, hintStyle, hintLevel, attempts],
   );
 
   const play = useCallback(() => {
@@ -163,7 +164,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
     // Deliberately unavailable until the learner has actually tried: a hint
     // offered up front turns recall into copying.
     if (turnOver || attempts === 0 || hintStyle === 'off') return;
-    setHintRequests(() => Math.min(hintLevel + 1, maxLevel(hintStyle)));
+    setHintRequests(hintLevel + 1);
     inputRef.current?.focus();
   }, [turnOver, attempts, hintStyle, hintLevel]);
 
@@ -255,17 +256,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
           aria-label="Câu trả lời của bạn"
         />
 
-        {hint && !turnOver && (
-          <div className="hint-panel" role="status" aria-live="polite">
-            {hint.masked && <p className="hint-panel__masked">{hint.masked}</p>}
-            {hint.length !== null && <p className="hint-panel__length">{hint.length} ký tự</p>}
-            {hint.lines.map((line) => (
-              <p className="hint-panel__line" key={line}>
-                {line}
-              </p>
-            ))}
-          </div>
-        )}
+        {hint && !turnOver && <HintLadder hint={hint} />}
 
         <div
           className={`feedback${result ? ` feedback--${result}` : ''}`}

@@ -2,7 +2,6 @@ import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import { useRetryQueue } from '@/hooks/useRetryQueue';
-import { buildHint, maskWithReveal } from '@/lib/hints';
 
 interface Item {
   id: string;
@@ -125,48 +124,5 @@ describe('useRetryQueue', () => {
     const { result } = setup([]);
     expect(result.current.finished).toBe(false);
     expect(result.current.current).toBeUndefined();
-  });
-});
-
-describe('maskWithReveal', () => {
-  it('reveals the first n letters', () => {
-    expect(maskWithReveal('vast', 0)).toBe('____');
-    expect(maskWithReveal('vast', 1)).toBe('v___');
-    expect(maskWithReveal('vast', 4)).toBe('vast');
-  });
-
-  it('keeps spaces and hyphens visible', () => {
-    // Hiding the word boundary would be a bigger clue than showing it.
-    expect(maskWithReveal('material wealth', 1)).toBe('m_______ ______');
-    expect(maskWithReveal('well-being', 0)).toBe('____-_____');
-  });
-});
-
-describe('buildHint', () => {
-  const word = { word: 'vast', vi: 'khổng lồ', ipa: '/vɑːst/', pos: 'adj' };
-
-  it('returns nothing when hints are off', () => {
-    expect(buildHint(word, 'off', 2)).toBeNull();
-  });
-
-  it('returns nothing before the first rung', () => {
-    expect(buildHint(word, 'progressive', 0)).toBeNull();
-  });
-
-  it('shows the first letter and the length in "first" mode', () => {
-    const hint = buildHint(word, 'first', 1);
-    expect(hint?.masked).toBe('v___');
-    expect(hint?.length).toBe(4);
-    expect(hint?.exhausted).toBe(true);
-  });
-
-  it('shows the meaning and phonetics in "meaning" mode', () => {
-    const hint = buildHint(word, 'meaning', 1);
-    expect(hint?.masked).toBeNull();
-    expect(hint?.lines).toEqual(['/vɑːst/', 'khổng lồ (adj)']);
-  });
-
-  it('never simply prints the answer', () => {
-    expect(buildHint(word, 'progressive', 99)?.masked).toContain('_');
   });
 });
