@@ -67,6 +67,13 @@ export function buildLadder(
   word: HintWord,
   variant: 'type' | 'listen',
   style: HintStyle,
+  /**
+   * How many leading characters the learner has already typed correctly at some
+   * point in this turn. Letter hints start above it: offering "a_______" to
+   * someone who has already written "autom..." is not a hint, it is a step
+   * backwards, and it makes the button look broken.
+   */
+  known = 0,
 ): HintRung[] {
   if (style === 'off') return [];
 
@@ -78,10 +85,14 @@ export function buildLadder(
   }
 
   if (style === 'first') {
+    const revealed = Math.max(1, known + 1);
+    // Nothing left to give: they already have everything but the last letter,
+    // and that last letter is the answer.
+    if (revealed > lettersIn(word.word) - 1) return [];
     return [
       {
         kind: 'shape',
-        masked: maskWithReveal(word.word, 1),
+        masked: maskWithReveal(word.word, revealed),
         length: word.word.length,
         pos: word.pos,
       },
@@ -115,14 +126,16 @@ export function buildLadder(
   // listening quiz they have already heard it.
   if (variant === 'type') rungs.push({ kind: 'ipa', text: word.ipa });
 
-  // Letters last, and never all of them.
+  // Letters last, and never all of them. Each step has to beat what the learner
+  // has already shown they know, or the rung tells them nothing.
   const letters = lettersIn(word.word);
   const steps = [1, Math.max(2, Math.ceil(letters / 3)), Math.max(3, Math.ceil((letters * 2) / 3))];
-  let previous = 0;
+  let previous = known;
   for (const step of steps) {
-    if (step <= previous || step > letters - 1) continue;
-    rungs.push({ kind: 'letters', masked: maskWithReveal(word.word, step) });
-    previous = step;
+    const reveal = Math.max(step, known + 1);
+    if (reveal <= previous || reveal > letters - 1) continue;
+    rungs.push({ kind: 'letters', masked: maskWithReveal(word.word, reveal) });
+    previous = reveal;
   }
 
   return rungs;
@@ -142,9 +155,10 @@ export function buildHint(
   variant: 'type' | 'listen',
   style: HintStyle,
   level: number,
+  known = 0,
 ): Hint | null {
   if (level <= 0) return null;
-  const ladder = buildLadder(word, variant, style);
+  const ladder = buildLadder(word, variant, style, known);
   if (ladder.length === 0) return null;
 
   const shown = Math.min(level, ladder.length);

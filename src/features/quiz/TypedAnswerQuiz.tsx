@@ -12,7 +12,7 @@ import { useSessionWords } from '@/hooks/useSessionWords';
 import { useSwipe } from '@/hooks/useSwipe';
 import { useSettings } from '@/hooks/useSettings';
 import { AnswerDiff } from '@/components/AnswerDiff';
-import { compareAnswer, isNearMiss, type Segment } from '@/lib/diff';
+import { compareAnswer, correctPrefixLength, isNearMiss, type Segment } from '@/lib/diff';
 import { HintLadder } from '@/components/HintLadder';
 import { Sticker } from '@/components/Sticker';
 import { buildHint, effectiveLevel } from '@/lib/hints';
@@ -55,6 +55,12 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
   const [lastAttempt, setLastAttempt] = useState<{ segments: Segment[]; near: boolean } | null>(
     null,
   );
+  /**
+   * The longest correct opening the learner has managed this turn. Letter hints
+   * are measured against it, so the ladder never offers back something they
+   * have already typed.
+   */
+  const [known, setKnown] = useState(0);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const screenRef = useRef<HTMLDivElement>(null);
@@ -67,8 +73,8 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
   const hintStyle = settings.hintStyle;
   const hintLevel = effectiveLevel(attempts, hintRequests);
   const hint = useMemo(
-    () => (word && attempts > 0 ? buildHint(word, variant, hintStyle, hintLevel) : null),
-    [word, variant, hintStyle, hintLevel, attempts],
+    () => (word && attempts > 0 ? buildHint(word, variant, hintStyle, hintLevel, known) : null),
+    [word, variant, hintStyle, hintLevel, attempts, known],
   );
 
   useEffect(() => {
@@ -93,6 +99,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
       setHintRequests(0);
       setAttempts(0);
       setLastAttempt(null);
+      setKnown(0);
       checkingRef.current = false;
       queue.answer(correct);
     },
@@ -140,6 +147,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
       near: isNearMiss(answer, word.word),
     });
     setAttempts((value) => value + 1);
+    setKnown((value) => Math.max(value, correctPrefixLength(answer, word.word)));
     playSfx('wrong');
     queue.markMissed();
     setResult('wrong');

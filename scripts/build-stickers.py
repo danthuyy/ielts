@@ -43,6 +43,16 @@ FAVICON_SOURCE = "07-duyet"
 FAVICON_BOX = (135, 60, 365, 290)
 FAVICON_SIZES = (16, 32, 48)
 
+# Matches `background_color` in the manifest, so the icon and the splash screen
+# it sits on are the same colour.
+APP_BG = (10, 10, 26, 255)
+# Share of the canvas the drawing occupies. The maskable copy is deliberately
+# smaller: the platform crops a maskable icon to whatever shape it likes — a
+# circle on most Android launchers — and only the middle 80% is guaranteed to
+# survive. At 0.92 the word "duyệt!" along the bottom is the first thing cut.
+ICON_FILL = 0.92
+MASKABLE_FILL = 0.66
+
 SIZE = 192
 PALETTE = 128
 # Padding kept around the drawing after cropping, as a share of the crop. The
@@ -187,6 +197,23 @@ def build_favicon() -> None:
     print(f"favicon.ico  {ico.stat().st_size:6} B")
 
 
+def build_app_icons(sticker: Image.Image) -> None:
+    """Writes the PWA icons: the sticker centred on the app's own background."""
+    for name, size, fill in (
+        ("icon-192", 192, ICON_FILL),
+        ("icon-512", 512, ICON_FILL),
+        ("icon-maskable-512", 512, MASKABLE_FILL),
+    ):
+        canvas = Image.new("RGBA", (size, size), APP_BG)
+        inner = round(size * fill)
+        art = sticker.resize((inner, inner), Image.LANCZOS)
+        offset = (size - inner) // 2
+        canvas.alpha_composite(art, (offset, offset))
+        out = ICONS / f"{name}.png"
+        canvas.quantize(colors=PALETTE, method=Image.FASTOCTREE).save(out, optimize=True)
+        print(f"{name:18} {out.stat().st_size // 1024:4} kB")
+
+
 def main() -> int:
     if not SOURCE.is_dir():
         sys.exit(f"Không thấy thư mục ảnh gốc: {SOURCE}")
@@ -211,6 +238,10 @@ def main() -> int:
         print(f"{role:9} <- {stem:20} {out.stat().st_size // 1024:4} kB  đặc {share}%")
 
     build_favicon()
+    # Built at full resolution rather than from the 192px web copy, so the 512px
+    # icon is not an upscale.
+    icon_art = trim(cut_out(Image.open(SOURCE / f"{FAVICON_SOURCE}.png")))
+    build_app_icons(icon_art)
     return 0
 
 

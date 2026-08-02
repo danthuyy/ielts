@@ -34,7 +34,17 @@ export default defineConfig(({ command }) => ({
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          // A separate file, not the same one listed twice. A maskable icon is
+          // cropped to whatever shape the platform wants — a circle on most
+          // Android launchers — and only the middle 80% is guaranteed to
+          // survive. The "any" icon fills its canvas, so used as a mask it lost
+          // the word along the bottom.
+          {
+            src: 'icons/icon-maskable-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
         ],
       },
       workbox: {

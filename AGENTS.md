@@ -227,6 +227,12 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
   6. Phiên âm — chỉ ở chế độ điền từ, vì nghe viết đã nghe rồi
   7. Chữ cái, mở dần, và không bao giờ mở hết
 
+  Nấc chữ cái còn phải **hơn phần người học đã gõ đúng**. `buildLadder` nhận
+  tham số `known` — số ký tự đầu dài nhất họ từng gõ đúng trong lượt đó — và bỏ
+  mọi nấc không vượt qua nó. Gõ `automtetee` cho `autonomy` rồi nhận gợi ý
+  `a_______` là gợi ý lùi, nhìn như nút bị hỏng. Nếu `known` chỉ còn cách đáp án
+  một chữ thì không còn nấc chữ cái nào cả — mở nốt là đưa đáp án.
+
   Thứ tự này là cố ý. Mở chữ cái trước là dạy nhớ mặt chữ; đưa câu ví dụ có chỗ
   trống là buộc người học truy xuất từ theo nghĩa — đúng như lúc đi thi. Nếu
   thêm nấc mới, giữ nguyên nguyên tắc đó.

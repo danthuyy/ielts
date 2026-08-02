@@ -177,3 +177,43 @@ describe('maskWithReveal', () => {
     expect(maskWithReveal('well-being', 0)).toBe('____-_____');
   });
 });
+
+describe('letter hints against what the learner already typed', () => {
+  const LONG = { ...WORD, word: 'autonomy', vi: 'Sự tự chủ', ipa: '/ɔːˈtɒnəmi/', pos: 'n' };
+
+  const letters = (known: number) =>
+    buildLadder(LONG, 'type', 'progressive', known)
+      .filter((rung) => rung.kind === 'letters')
+      .map((rung) => (rung.kind === 'letters' ? rung.masked : ''));
+
+  it('opens from the first letter when nothing has been typed', () => {
+    expect(letters(0)[0]).toBe('a_______');
+  });
+
+  it('never offers back a prefix the learner has already written', () => {
+    // "automtetee" shares "auto" with "autonomy", so a hint of "a_______"
+    // would be less than they had already worked out for themselves.
+    for (const masked of letters(4)) {
+      expect(masked.replace(/_/g, '').length).toBeGreaterThan(4);
+    }
+  });
+
+  it('keeps the rungs climbing rather than repeating one reveal', () => {
+    const revealed = letters(4).map((masked) => masked.replace(/_/g, '').length);
+    expect(revealed).toEqual([...revealed].sort((a, b) => a - b));
+    expect(new Set(revealed).size).toBe(revealed.length);
+  });
+
+  it('runs out rather than spelling the answer', () => {
+    // One letter short of the whole word: the only thing left to reveal is the
+    // answer itself, so there is nothing honest to offer.
+    expect(letters(7)).toEqual([]);
+  });
+
+  it('applies to the first-letter style too', () => {
+    const ladder = buildLadder(LONG, 'type', 'first', 4);
+    expect(ladder[0]?.kind).toBe('shape');
+    const masked = ladder[0]?.kind === 'shape' ? ladder[0].masked : '';
+    expect(masked.replace(/_/g, '').length).toBeGreaterThan(4);
+  });
+});
