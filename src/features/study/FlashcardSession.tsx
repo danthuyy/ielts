@@ -21,6 +21,7 @@ import {
 import type { WordProgress } from '@/lib/db';
 import { processAnswer, QUALITY, type Quality } from '@/lib/srs';
 import { speak } from '@/lib/tts';
+import { YouglishLink } from '@/components/YouglishLink';
 
 interface Props {
   words: readonly StudyWord[];
@@ -226,6 +227,9 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
             <p className="flashcard__word">{word.word}</p>
             <p className="flashcard__ipa">{word.ipa}</p>
             <p className="flashcard__vi">{word.vi}</p>
+            <div className="flashcard__links">
+              <YouglishLink word={word.word} variant="full" />
+            </div>
             {/* Not every word has a natural collocation or an example worth
                 quoting; an empty labelled box reads as missing data. */}
             {word.collocation && (

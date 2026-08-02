@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 // @ts-expect-error — plain JS CLI module, no type declarations by design.
-import { parseVocabularyMarkdown } from '../scripts/import-lesson.mjs';
+import { normaliseHeadword, parseVocabularyMarkdown } from '../scripts/import-lesson.mjs';
 
 interface ParsedWord {
   word: string;
@@ -34,7 +34,8 @@ describe('parseVocabularyMarkdown', () => {
 
     expect(words).toHaveLength(1);
     expect(words[0]).toEqual({
-      word: 'Vast',
+      // Lowercased: the capital was bullet-list styling, not part of the word.
+      word: 'vast',
       pos: 'adj',
       ipa: '/vɑːst/',
       vi: 'Khổng lồ, vô vàn',
@@ -84,7 +85,7 @@ describe('parseVocabularyMarkdown', () => {
         '- **Adequate (adj) /ˈæd.ə.kwət/**: Đầy đủ.',
       ].join('\n'),
     );
-    expect(words.map((word) => word.word)).toEqual(['Vast', 'Adequate']);
+    expect(words.map((word) => word.word)).toEqual(['vast', 'adequate']);
     expect(words[1]?.example).toBe('');
   });
 
@@ -121,5 +122,32 @@ describe('parseVocabularyMarkdown', () => {
       '- **Vast (adj) /vɑːst/**: Khổng lồ.\r\n  - _Ví dụ_: A vast fortune.\r\n',
     );
     expect(words[0]?.example).toBe('A vast fortune.');
+  });
+});
+
+describe('normaliseHeadword', () => {
+  const normalise = normaliseHeadword as (raw: string) => string;
+
+  it('drops the capital that bullet-list styling added', () => {
+    expect(normalise('Ubiquitous')).toBe('ubiquitous');
+    expect(normalise('Material wealth')).toBe('material wealth');
+  });
+
+  it('leaves an already-lowercase word alone', () => {
+    expect(normalise('vast')).toBe('vast');
+  });
+
+  it('keeps acronyms', () => {
+    expect(normalise('NASA')).toBe('NASA');
+    expect(normalise('GDP')).toBe('GDP');
+  });
+
+  it('keeps deliberate internal capitals', () => {
+    expect(normalise('iPhone')).toBe('iPhone');
+    expect(normalise('McDonald')).toBe('McDonald');
+  });
+
+  it('trims surrounding whitespace', () => {
+    expect(normalise('  Obsolete  ')).toBe('obsolete');
   });
 });

@@ -8,6 +8,7 @@ import { routes } from '@/app/routes';
 import { getAllProgress } from '@/lib/progress';
 import { percent } from '@/lib/utils';
 import { speak } from '@/lib/tts';
+import { YouglishLink } from '@/components/YouglishLink';
 import type { Lesson } from '@/content/schema';
 
 const ALL = 'all';
@@ -137,11 +138,14 @@ export function LessonListScreen() {
                     </span>
                     <span className="hit-row__vi">{word.vi}</span>
                   </Link>
-                  {lesson && (
-                    <Link className="hit-row__lesson" to={routes.lesson(lesson.id)}>
-                      {lesson.title}
-                    </Link>
-                  )}
+                  <div className="hit-row__aside">
+                    <YouglishLink word={word.word} />
+                    {lesson && (
+                      <Link className="hit-row__lesson" to={routes.lesson(lesson.id)}>
+                        {lesson.title}
+                      </Link>
+                    )}
+                  </div>
                 </li>
               );
             })}

@@ -50,11 +50,16 @@ describe('ensureProgressRecords', () => {
 
 describe('migrateLegacyKeys', () => {
   it('rewrites positional keys to content-derived ones, keeping the history', async () => {
+    // Derived from the content rather than hard-coded: a fixed index breaks the
+    // moment someone adds a lesson with fewer words, and adding lessons is the
+    // main thing this repo exists for. The last index still exercises the
+    // positional mapping, which index 0 could pass by accident.
     const lesson = LESSONS[0]!;
-    const word = lesson.words[3]!;
+    const index = lesson.words.length - 1;
+    const word = lesson.words[index]!;
 
     await db.wordProgress.put({
-      id: `${lesson.id}_3`,
+      id: `${lesson.id}_${index}`,
       lessonId: lesson.id,
       word: word.word,
       ...INITIAL_SRS,
@@ -70,7 +75,7 @@ describe('migrateLegacyKeys', () => {
     const migrated = await migrateLegacyKeys();
     expect(migrated).toBe(1);
 
-    expect(await db.wordProgress.get(`${lesson.id}_3`)).toBeUndefined();
+    expect(await db.wordProgress.get(`${lesson.id}_${index}`)).toBeUndefined();
     const record = await db.wordProgress.get(
       `${lesson.id}:${word.word.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
     );

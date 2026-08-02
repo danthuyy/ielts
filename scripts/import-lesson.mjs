@@ -85,6 +85,26 @@ function usage(message) {
   process.exit(1);
 }
 
+/**
+ * Lowercases a headword unless it is clearly an acronym or a proper noun —
+ * "NASA" and "Sydney" should keep their capitals, "Ubiquitous" should not.
+ */
+export function normaliseHeadword(raw) {
+  const word = raw.trim();
+  const words = word.split(/\s+/);
+  const looksDeliberate = words.some(
+    (part) =>
+      // All caps and longer than one letter: an acronym.
+      (part.length > 1 && part === part.toUpperCase() && /[A-Z]/.test(part)) ||
+      // Internal capital: "iPhone", "McDonald".
+      /[a-z][A-Z]/.test(part),
+  );
+  if (looksDeliberate) return word;
+
+  // A capital only on the first word is just bullet-list styling.
+  return word.charAt(0).toLowerCase() + word.slice(1);
+}
+
 /** Trailing full stops read as sentence punctuation, not part of the gloss. */
 function tidyGloss(text) {
   return text.replace(/\s*\.\s*$/, '').trim();
@@ -106,7 +126,10 @@ export function parseVocabularyMarkdown(markdown) {
       flush();
       const [, word, pos, ipa, vi] = head;
       current = {
-        word: word.trim(),
+        // Word lists capitalise the headword because it starts a bullet, but
+        // the app shows it at display size next to existing lowercase entries.
+        // Progress keys are slugified either way, so this only affects display.
+        word: normaliseHeadword(word),
         pos: pos.trim().toLowerCase(),
         ipa: ipa.trim(),
         vi: tidyGloss(vi),

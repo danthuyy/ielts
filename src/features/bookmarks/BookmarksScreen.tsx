@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 
 import { getStudyWord } from '@/content/lessons';
@@ -8,6 +8,7 @@ import { EmptyState, LoadingScreen } from '@/components/ScreenState';
 import { FlashcardSession } from '@/features/study/FlashcardSession';
 import { getBookmarked, toggleBookmark } from '@/lib/progress';
 import { speak } from '@/lib/tts';
+import { YouglishLink } from '@/components/YouglishLink';
 import type { StudyWord } from '@/content/schema';
 
 export function BookmarksScreen() {
@@ -77,13 +78,13 @@ export function BookmarksScreen() {
       <ul className="word-list">
         {words.map((word) => (
           <li className="word-row" key={word.id}>
-            <span>
+            <Link className="word-row__main" to={routes.word(word.id)}>
               <span className="word-row__head">
                 <span className="word-row__word">{word.word}</span>
                 <span className="word-row__pos">{word.pos}</span>
               </span>
               <span className="word-row__vi">{word.vi}</span>
-            </span>
+            </Link>
             <span className="word-row__side">
               <button
                 className="icon-btn"
@@ -92,6 +93,7 @@ export function BookmarksScreen() {
               >
                 🔊
               </button>
+              <YouglishLink word={word.word} />
               <button
                 className="icon-btn word-row__star--on"
                 onClick={() => void toggleBookmark(word.id)}

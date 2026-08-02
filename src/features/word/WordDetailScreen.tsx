@@ -7,6 +7,7 @@ import { getLesson, getStudyWord } from '@/content/lessons';
 import { getProgress, toggleBookmark } from '@/lib/progress';
 import { formatDateVi, percent } from '@/lib/utils';
 import { speak } from '@/lib/tts';
+import { YouglishLink } from '@/components/YouglishLink';
 
 const STATUS_LABEL = {
   new: 'Mới',
@@ -72,14 +73,17 @@ export function WordDetailScreen() {
             </p>
             <p className="word-detail__vi">{word.vi}</p>
           </div>
-          <button
-            type="button"
-            className="flashcard__speak"
-            aria-label={`Phát âm ${word.word}`}
-            onClick={() => speak(word.word)}
-          >
-            🔊
-          </button>
+          <div className="word-detail__actions">
+            <button
+              type="button"
+              className="flashcard__speak"
+              aria-label={`Phát âm ${word.word}`}
+              onClick={() => speak(word.word)}
+            >
+              🔊
+            </button>
+            <YouglishLink word={word.word} variant="full" />
+          </div>
         </div>
 
         {word.collocation && (

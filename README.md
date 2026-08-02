@@ -4,6 +4,8 @@
 
 Bản chạy thử: https://danthuyy.github.io/ielts/
 
+> Dùng AI để thêm bài học? Hướng dẫn dành riêng cho agent nằm ở [AGENTS.md](AGENTS.md).
+
 ## Tính năng
 
 - **Flashcard SRS** — lặp lại ngắt quãng theo thuật toán SM-2, tự động xếp lịch ôn từng từ.
@@ -20,6 +22,7 @@ Bản chạy thử: https://danthuyy.github.io/ielts/
 - **Giao diện sáng/tối** — theo hệ điều hành hoặc tự chọn; mọi màu đều đạt WCAG AA ở cả hai chế độ.
 - **Sao lưu ra file** — xuất và khôi phục toàn bộ tiến độ; bản duy nhất không bị đồng bộ ghi đè.
 - **Từ đã lưu** — đánh dấu từ khó để ôn riêng.
+- **Nghe người bản xứ** — mỗi từ có nút mở YouGlish, nghe từ đó trong hàng loạt video thật.
 - **Text-to-speech** — phát âm từ và ví dụ, chọn được giọng đọc.
 - **Đồng bộ đa thiết bị** — tùy chọn, qua Supabase; không bật thì mọi thứ vẫn nằm trên máy.
 - **Hoạt động offline** — PWA, cài được vào màn hình chính và dùng khi không có mạng.
