@@ -1,0 +1,103 @@
+/**
+ * Design tokens.
+ *
+ * Everything visual resolves to a token — no component hard-codes a hex value,
+ * a pixel radius or a duration. Changing the palette here changes the whole app.
+ */
+
+:root {
+  /* ---- Surfaces ---- */
+  --bg: #0a0a1a;
+  --surface: #13132b;
+  --surface-raised: #1c1c3a;
+  --surface-hover: #252550;
+  --border: rgb(139 92 246 / 20%);
+  --border-strong: rgb(139 92 246 / 45%);
+
+  /* ---- Brand ---- */
+  --primary: #8b5cf6;
+  --primary-light: #a78bfa;
+  --primary-dark: #6d28d9;
+  --primary-contrast: #ffffff;
+  --primary-soft: rgb(139 92 246 / 15%);
+
+  /* ---- Semantic ---- */
+  --success: #34d399;
+  --success-soft: rgb(52 211 153 / 15%);
+  --danger: #f87171;
+  --danger-soft: rgb(248 113 113 / 15%);
+  --warning: #fbbf24;
+  --warning-soft: rgb(251 191 36 / 15%);
+  --info: #60a5fa;
+  --info-soft: rgb(96 165 250 / 15%);
+
+  /* ---- Text ---- */
+  --text: #e2e8f0;
+  --text-dim: #94a3b8;
+  --text-muted: #64748b;
+
+  /* ---- Spacing scale (4px base) ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+
+  /* ---- Type scale ---- */
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+
+  --font-sans:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* ---- Radius ---- */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-full: 9999px;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 40%), 0 2px 4px -1px rgb(0 0 0 / 20%);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 50%), 0 4px 6px -2px rgb(0 0 0 / 30%);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 600ms;
+
+  /* ---- Layers ---- */
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-toast: 2000;
+
+  /* ---- Layout ---- */
+  --sidebar-width: 15rem;
+  --content-max: 70rem;
+  --nav-height: 4.25rem;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* ---- Focus ---- */
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--primary-light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 1ms;
+    --duration-normal: 1ms;
+    --duration-slow: 1ms;
+  }
+}
