@@ -232,117 +232,130 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
       <div className="study__body">
         <SessionProgress queue={queue} />
 
-        {variant === 'listen' ? (
-          <div style={{ textAlign: 'center' }}>
-            <button className="listen-btn" onClick={play} aria-label="Nghe lại">
-              🔊
-            </button>
-            <p className="prompt__sub" style={{ marginTop: 'var(--sp-3)' }}>
-              Nhấn để nghe lại
-            </p>
-          </div>
-        ) : (
-          // The collocation deliberately does not appear here. It almost always
-          // contains the answer ("a vast fortune" for "vast"), so showing it up
-          // front hands over the word before a single keystroke. It is rung 3 of
-          // the ladder instead, with the word blanked out.
-          <div className="prompt">
-            <p className="prompt__main">{word.vi}</p>
-            <p className="prompt__sub">{word.pos}</p>
-          </div>
-        )}
+        {/* Two columns once there is room for them. The ladder can reach seven
+            rungs, and stacked above the buttons it pushed them off the screen
+            exactly when they were needed. On a phone it drops below instead, so
+            the input and the buttons never move as hints accumulate. */}
+        <div className="study__cols">
+          <div className="study__main">
+            {variant === 'listen' ? (
+              <div style={{ textAlign: 'center' }}>
+                <button className="listen-btn" onClick={play} aria-label="Nghe lại">
+                  🔊
+                </button>
+                <p className="prompt__sub" style={{ marginTop: 'var(--sp-3)' }}>
+                  Nhấn để nghe lại
+                </p>
+              </div>
+            ) : (
+              // The collocation deliberately does not appear here. It almost
+              // always contains the answer ("a vast fortune" for "vast"), so
+              // showing it up front hands over the word before a single
+              // keystroke. It is rung 3 of the ladder instead, with the word
+              // blanked out.
+              <div className="prompt">
+                <p className="prompt__main">{word.vi}</p>
+                <p className="prompt__sub">{word.pos}</p>
+              </div>
+            )}
 
-        <input
-          ref={inputRef}
-          className={`input input--answer${result ? ` input--${result}` : ''}`}
-          type="text"
-          autoComplete="off"
-          autoCapitalize="off"
-          autoCorrect="off"
-          spellCheck={false}
-          disabled={turnOver}
-          value={answer}
-          onChange={(event) => setAnswer(event.target.value)}
-          // The placeholder used to show the first letter and the letter count.
-          // Those are rung 1 of the ladder, and giving them away for free meant
-          // every word started two hints in.
-          placeholder={variant === 'listen' ? 'Gõ từ bạn nghe được...' : 'Gõ từ tiếng Anh...'}
-          aria-label="Câu trả lời của bạn"
-        />
+            <input
+              ref={inputRef}
+              className={`input input--answer${result ? ` input--${result}` : ''}`}
+              type="text"
+              autoComplete="off"
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
+              disabled={turnOver}
+              value={answer}
+              onChange={(event) => setAnswer(event.target.value)}
+              // The placeholder used to show the first letter and the letter
+              // count. Those are rung 1 of the ladder, and giving them away for
+              // free meant every word started two hints in.
+              placeholder={variant === 'listen' ? 'Gõ từ bạn nghe được...' : 'Gõ từ tiếng Anh...'}
+              aria-label="Câu trả lời của bạn"
+            />
 
-        {hint && !turnOver && <HintLadder hint={hint} />}
-
-        <div
-          className={`feedback${result ? ` feedback--${result}` : ''}`}
-          role="status"
-          aria-live="polite"
-        >
-          {result === 'correct' && (
-            <>
-              {settings.showStickers && (
-                <span className="feedback__sticker">
-                  <Sticker name="correct" size="md" replayKey={word.id} />
-                </span>
-              )}
-              <p className="feedback__headline">✅ Chính xác!</p>
-              {variant === 'listen' && <p className="feedback__meta">{word.vi}</p>}
-            </>
-          )}
-          {result === 'wrong' && lastAttempt && (
-            <>
-              {settings.showStickers && !lastAttempt.near && (
-                <span className="feedback__sticker">
-                  <Sticker
-                    name="wrong"
-                    size="md"
-                    replayKey={attempts}
-                    className="sticker--wobble"
-                  />
-                </span>
-              )}
-              <p className="feedback__headline">
-                {lastAttempt.near ? '✏️ Gần đúng — sai chính tả' : '❌ Chưa đúng, thử lại'}
-              </p>
-              <AnswerDiff segments={lastAttempt.segments} />
-              <p className="feedback__retry">
-                {lastAttempt.near
-                  ? 'Chữ tô đỏ là chỗ sai, dấu · là chữ còn thiếu.'
-                  : attempts === 1
-                    ? 'Bấm Gợi ý nếu cần, hoặc Bỏ qua để xem đáp án.'
-                    : `Đã thử ${attempts} lần.`}
-              </p>
-            </>
-          )}
-          {result === 'revealed' && (
-            <>
-              <p className="feedback__headline">Đáp án</p>
-              <p className="feedback__answer">{word.word}</p>
-              <p className="feedback__meta">{word.ipa}</p>
-              <p className="feedback__meta">{word.vi}</p>
-              <p className="feedback__retry">Từ này sẽ quay lại ở cuối phiên.</p>
-            </>
-          )}
-        </div>
-
-        <div className="answer-actions">
-          {/* Both only appear once an attempt has been made. */}
-          {!turnOver && attempts > 0 && hintStyle !== 'off' && (
-            <button
-              className="btn btn--secondary"
-              onClick={showHint}
-              disabled={hint?.exhausted ?? false}
+            <div
+              className={`feedback${result ? ` feedback--${result}` : ''}`}
+              role="status"
+              aria-live="polite"
             >
-              💡 {hintLevel === 0 ? 'Gợi ý' : hint?.exhausted ? 'Hết gợi ý' : 'Gợi ý thêm'}
-            </button>
+              {result === 'correct' && (
+                <>
+                  {settings.showStickers && (
+                    <span className="feedback__sticker">
+                      <Sticker name="correct" size="md" replayKey={word.id} />
+                    </span>
+                  )}
+                  <p className="feedback__headline">✅ Chính xác!</p>
+                  {variant === 'listen' && <p className="feedback__meta">{word.vi}</p>}
+                </>
+              )}
+              {result === 'wrong' && lastAttempt && (
+                <>
+                  {settings.showStickers && !lastAttempt.near && (
+                    <span className="feedback__sticker">
+                      <Sticker
+                        name="wrong"
+                        size="md"
+                        replayKey={attempts}
+                        className="sticker--wobble"
+                      />
+                    </span>
+                  )}
+                  <p className="feedback__headline">
+                    {lastAttempt.near ? '✏️ Gần đúng — sai chính tả' : '❌ Chưa đúng, thử lại'}
+                  </p>
+                  <AnswerDiff segments={lastAttempt.segments} />
+                  <p className="feedback__retry">
+                    {lastAttempt.near
+                      ? 'Chữ tô đỏ là chỗ sai, dấu · là chữ còn thiếu.'
+                      : attempts === 1
+                        ? 'Bấm Gợi ý nếu cần, hoặc Bỏ qua để xem đáp án.'
+                        : `Đã thử ${attempts} lần.`}
+                  </p>
+                </>
+              )}
+              {result === 'revealed' && (
+                <>
+                  <p className="feedback__headline">Đáp án</p>
+                  <p className="feedback__answer">{word.word}</p>
+                  <p className="feedback__meta">{word.ipa}</p>
+                  <p className="feedback__meta">{word.vi}</p>
+                  <p className="feedback__retry">Từ này sẽ quay lại ở cuối phiên.</p>
+                </>
+              )}
+            </div>
+
+            <div className="answer-actions">
+              {/* Both only appear once an attempt has been made. */}
+              {!turnOver && attempts > 0 && hintStyle !== 'off' && (
+                <button
+                  className="btn btn--secondary"
+                  onClick={showHint}
+                  disabled={hint?.exhausted ?? false}
+                >
+                  💡 {hintLevel === 0 ? 'Gợi ý' : hint?.exhausted ? 'Hết gợi ý' : 'Gợi ý thêm'}
+                </button>
+              )}
+              {!turnOver && attempts > 0 && (
+                <button className="btn btn--secondary" onClick={() => void reveal()}>
+                  Bỏ qua
+                </button>
+              )}
+              <button className="btn btn--primary btn--lg" onClick={() => void check()}>
+                {turnOver ? 'Tiếp tục →' : 'Kiểm tra'}
+              </button>
+            </div>
+          </div>
+
+          {hint && !turnOver && (
+            <aside className="study__aside">
+              <HintLadder hint={hint} />
+            </aside>
           )}
-          {!turnOver && attempts > 0 && (
-            <button className="btn btn--secondary" onClick={() => void reveal()}>
-              Bỏ qua
-            </button>
-          )}
-          <button className="btn btn--primary btn--lg" onClick={() => void check()}>
-            {turnOver ? 'Tiếp tục →' : 'Kiểm tra'}
-          </button>
         </div>
 
         <HintBar

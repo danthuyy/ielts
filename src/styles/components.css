@@ -40,7 +40,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* `safe` so that when the content is taller than the screen it aligns to the
+     start instead of centring and pushing the top out of reach — centred
+     overflow cannot be scrolled back to. */
+  justify-content: safe center;
   gap: var(--sp-5);
   padding: var(--sp-6) var(--sp-5);
 }
@@ -48,6 +51,38 @@
 .study__body > * {
   width: 100%;
   max-width: 26rem;
+  /* Without this a tall child — the feedback block once it holds a sticker and
+     a marked-up attempt — gets squashed to its min-height and its contents spill
+     over the buttons underneath. The body scrolls; the children keep their
+     size. */
+  flex-shrink: 0;
+}
+
+/* The prompt column and the hint panel. One column on a phone, two side by side
+   once there is room, so a ladder seven rungs tall never pushes the input and
+   the buttons off the screen. */
+.study__cols {
+  display: grid;
+  gap: var(--sp-5);
+  align-items: start;
+}
+
+.study__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  min-width: 0;
+}
+
+.study__aside {
+  min-width: 0;
+}
+
+@media (min-width: 56.25rem) {
+  .study__body > .study__cols {
+    max-width: 52rem;
+    grid-template-columns: minmax(0, 26rem) minmax(0, 24rem);
+  }
 }
 
 .study__footer {
