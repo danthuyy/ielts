@@ -33,6 +33,15 @@ except ImportError:  # pragma: no cover - operational script
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "output" / "stickers-zalo-be"
 TARGET = ROOT / "public" / "stickers"
+ICONS = ROOT / "public" / "icons"
+
+# The favicon is cut from the sticker's face rather than scaled down whole. At
+# 16px the full drawing — body, thumb, the word "duyệt!" — collapses into a
+# smudge; the face alone still reads as a face. Box measured on the 512px
+# original, chosen to hold the hair, both eyes and the smile.
+FAVICON_SOURCE = "07-duyet"
+FAVICON_BOX = (135, 60, 365, 290)
+FAVICON_SIZES = (16, 32, 48)
 
 SIZE = 192
 PALETTE = 128
@@ -137,10 +146,52 @@ def trim(image: Image.Image) -> Image.Image:
     return square
 
 
+def build_favicon() -> None:
+    """Writes the face-cropped favicon PNGs and the .ico that bundles them."""
+    path = SOURCE / f"{FAVICON_SOURCE}.png"
+    if not path.is_file():
+        sys.exit(f"Thiếu ảnh gốc cho favicon: {path}")
+
+    face = Image.open(path).convert("RGBA").crop(FAVICON_BOX)
+    frames: list[bytes] = []
+    for size in FAVICON_SIZES:
+        resized = face.resize((size, size), Image.LANCZOS)
+        out = ICONS / f"favicon-{size}.png"
+        resized.save(out, optimize=True)
+        frames.append(out.read_bytes())
+        print(f"favicon-{size:<3} {out.stat().st_size:6} B")
+
+    # Written by hand rather than through Pillow's ICO writer: that one stores
+    # uncompressed bitmaps, which costs several times as much for the same
+    # pixels. An ICO entry is allowed to hold a PNG verbatim.
+    header = b"\x00\x00\x01\x00" + len(frames).to_bytes(2, "little")
+    offset = 6 + 16 * len(frames)
+    directory = b""
+    for size, frame in zip(FAVICON_SIZES, frames):
+        directory += bytes(
+            [
+                size if size < 256 else 0,  # 0 means 256 in the ICO format
+                size if size < 256 else 0,
+                0,  # palette size: 0 for truecolour
+                0,  # reserved
+            ]
+        )
+        directory += (1).to_bytes(2, "little")  # colour planes
+        directory += (32).to_bytes(2, "little")  # bits per pixel
+        directory += len(frame).to_bytes(4, "little")
+        directory += offset.to_bytes(4, "little")
+        offset += len(frame)
+
+    ico = ROOT / "public" / "favicon.ico"
+    ico.write_bytes(header + directory + b"".join(frames))
+    print(f"favicon.ico  {ico.stat().st_size:6} B")
+
+
 def main() -> int:
     if not SOURCE.is_dir():
         sys.exit(f"Không thấy thư mục ảnh gốc: {SOURCE}")
     TARGET.mkdir(parents=True, exist_ok=True)
+    ICONS.mkdir(parents=True, exist_ok=True)
 
     for role, stem in ROLES.items():
         path = SOURCE / f"{stem}.png"
@@ -159,6 +210,7 @@ def main() -> int:
         share = round(100 * opaque / (SIZE * SIZE))
         print(f"{role:9} <- {stem:20} {out.stat().st_size // 1024:4} kB  đặc {share}%")
 
+    build_favicon()
     return 0
 
 

@@ -79,9 +79,24 @@
 }
 
 @media (min-width: 56.25rem) {
+  /* Three tracks, with the prompt in the middle one and an empty track
+     mirroring the hint panel on the left. That keeps the question in the centre
+     of the screen whether or not a hint is open — laying the two columns out as
+     a centred pair instead would shunt the prompt sideways the moment the
+     learner asked for help. */
   .study__body > .study__cols {
-    max-width: 52rem;
-    grid-template-columns: minmax(0, 26rem) minmax(0, 24rem);
+    max-width: none;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 26rem) minmax(0, 1fr);
+    column-gap: clamp(2rem, 4vw, 4rem);
+  }
+
+  .study__main {
+    grid-column: 2;
+  }
+
+  .study__aside {
+    grid-column: 3;
+    max-width: 24rem;
   }
 }
 
