@@ -102,8 +102,23 @@ export function LessonDetailScreen() {
 
       <section className="section" style={{ marginBottom: 'var(--sp-6)' }}>
         <h2 className="section__label">Chế độ luyện</h2>
+        {/* Given its own row above the grid rather than being one tile among
+            six. It is the only mode that carries a word all the way to learned,
+            so it should be the obvious thing to press. */}
+        <Link className="mode-hero" to={routes.study('mix', lesson.id)}>
+          <span className="mode-hero__icon" aria-hidden="true">
+            🎯
+          </span>
+          <span className="mode-hero__text">
+            <strong>Học mix</strong>
+            <span>Trộn nhiều dạng, khó dần, lặp tới khi thuộc hết</span>
+          </span>
+          <span className="mode-hero__go" aria-hidden="true">
+            →
+          </span>
+        </Link>
         <div className="mode-grid">
-          {STUDY_MODES.map((mode) => (
+          {STUDY_MODES.filter((mode) => mode.mode !== 'mix').map((mode) => (
             <Link className="mode-tile" key={mode.mode} to={routes.study(mode.mode, lesson.id)}>
               <span className="mode-tile__icon" aria-hidden="true">
                 {mode.icon}

@@ -201,6 +201,42 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 - Commit theo Conventional Commits: `feat:`, `fix:`, `docs:`, `content:`,
   `chore:`, `ci:`, `test:`, `style:`.
 
+## Học mix — chế độ mặc định
+
+`src/features/study/MixSessionScreen.tsx`, lõi ở `src/lib/mastery.ts` và
+`src/hooks/useMasteryQueue.ts`.
+
+Khác mọi chế độ còn lại ở chỗ **dạng câu hỏi thuộc về từng từ, không thuộc về
+phiên học**. Mỗi từ mang một bậc 0–5; đúng thì lên, sai thì tụt một bậc (không
+về 0 — về 0 là trừng phạt và làm phiên dài vô tận). Phiên chỉ kết thúc khi mọi
+từ leo hết thang.
+
+| Bậc | Dạng                | Luyện                       |
+| --- | ------------------- | --------------------------- |
+| 0   | Trắc nghiệm EN → VI | nhận mặt                    |
+| 1   | Trắc nghiệm VI → EN | nhớ dạng tiếng Anh          |
+| 2   | Nghe rồi chọn nghĩa | nhận ra khi nghe            |
+| 3   | Ghép chữ cái        | nhớ mặt chữ mà chưa phải gõ |
+| 4   | Điền từ             | tự sản xuất + chính tả      |
+| 5   | Nghe viết           | không còn gợi ý thị giác    |
+
+Những chỗ đừng "sửa" nếu chưa biết lý do:
+
+- **Khoảng gặp lại giãn dần theo bậc** (`gapFor`). Gặp lại ngay chỉ đo trí nhớ
+  tạm; phải nhớ lại khó thì mới thành trí nhớ thật.
+- **Chỉ học 6 từ một lúc** (`BATCH`), thả từ mới khi có từ tốt nghiệp. Chạy cả
+  25 từ cùng lúc là 150 câu và mỗi từ cách nhau quá xa để lặp lại có tác dụng.
+- **Bậc khởi đầu suy từ trạng thái SRS** (`startingLevel`). Bắt người học chọn
+  trắc nghiệm cho từ đã thuộc là cách nhanh nhất để họ bỏ chế độ này.
+- **Ghi SRS đúng một lần cho mỗi từ, lúc tốt nghiệp** (`sessionQuality`). Chế độ
+  này hỏi mỗi từ 6–15 lần; ghi từng câu thì một phiên đủ dìm hoặc phong thánh
+  cho một từ.
+- **Điểm cuối phiên đếm theo _từ_ thuộc ngay, không theo câu sai.** Số câu sai
+  có thể lớn hơn số từ, trừ ra là ra số âm.
+- **Máy không có giọng đọc thì hai bậc nghe chuyển sang bản đọc được**
+  (`canSpeak`). Nếu không, phiên không bao giờ kết thúc được — mà "học cho hết"
+  chính là điểm của chế độ này.
+
 ## Vòng học trong các chế độ quiz
 
 Điều quan trọng nhất về hành vi: **từ trả lời sai không được biến mất**.

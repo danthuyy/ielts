@@ -207,19 +207,35 @@ export function HomeScreen() {
 
           <section className="section">
             <h2 className="section__label">Luyện nhanh</h2>
+            {LESSONS[0] && (
+              <Link className="mode-hero" to={routes.study('mix', LESSONS[0].id)}>
+                <span className="mode-hero__icon" aria-hidden="true">
+                  🎯
+                </span>
+                <span className="mode-hero__text">
+                  <strong>Học mix</strong>
+                  <span>Trộn nhiều dạng, khó dần, lặp tới khi thuộc hết</span>
+                </span>
+                <span className="mode-hero__go" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+            )}
             <div className="mode-grid">
-              {STUDY_MODES.filter((mode) => mode.mode !== 'match').map((mode) => (
-                <Link
-                  className="mode-tile"
-                  key={mode.mode}
-                  to={LESSONS[0] ? routes.study(mode.mode, LESSONS[0].id) : routes.lessons()}
-                >
-                  <span className="mode-tile__icon" aria-hidden="true">
-                    {mode.icon}
-                  </span>
-                  <span>{mode.label}</span>
-                </Link>
-              ))}
+              {STUDY_MODES.filter((mode) => mode.mode !== 'match' && mode.mode !== 'mix').map(
+                (mode) => (
+                  <Link
+                    className="mode-tile"
+                    key={mode.mode}
+                    to={LESSONS[0] ? routes.study(mode.mode, LESSONS[0].id) : routes.lessons()}
+                  >
+                    <span className="mode-tile__icon" aria-hidden="true">
+                      {mode.icon}
+                    </span>
+                    <span>{mode.label}</span>
+                  </Link>
+                ),
+              )}
             </div>
           </section>
         </div>

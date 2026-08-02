@@ -80,6 +80,17 @@ function synth(): SpeechSynthesis | null {
     : null;
 }
 
+/**
+ * Whether this device can actually say anything.
+ *
+ * Matters for mixed practice, where two rungs are listening exercises: on a
+ * device with no voices installed they would be unanswerable, and a mode that
+ * only ends when every word is learned would never end at all.
+ */
+export function canSpeak(): boolean {
+  return synth() !== null && listVoices().length > 0;
+}
+
 /** Every English voice worth offering, best first. */
 export function listVoices(): SpeechSynthesisVoice[] {
   const engine = synth();

@@ -7,6 +7,7 @@ import { HomeScreen } from '@/features/home/HomeScreen';
 import { LessonListScreen } from '@/features/lessons/LessonListScreen';
 import { LessonDetailScreen } from '@/features/lessons/LessonDetailScreen';
 import { FlashcardScreen } from '@/features/study/FlashcardScreen';
+import { MixSessionScreen } from '@/features/study/MixSessionScreen';
 import { QuizTypeScreen } from '@/features/quiz/QuizTypeScreen';
 import { QuizListenScreen } from '@/features/quiz/QuizListenScreen';
 import { QuizMatchScreen } from '@/features/quiz/QuizMatchScreen';
@@ -51,6 +52,7 @@ export const router = createHashRouter([
       { path: 'review', element: <ReviewScreen /> },
       { path: 'weak', element: <WeakWordsScreen /> },
       { path: 'new', element: <NewWordsScreen /> },
+      { path: 'study/mix/:lessonId', element: <MixSessionScreen /> },
       { path: 'study/flashcard/:lessonId', element: <FlashcardScreen /> },
       { path: 'study/type/:lessonId', element: <QuizTypeScreen /> },
       { path: 'study/listen/:lessonId', element: <QuizListenScreen /> },
@@ -79,12 +81,21 @@ export const routes = {
   test: (lessonId?: string) => (lessonId ? `/test/${encodeURIComponent(lessonId)}` : '/test'),
 } as const;
 
-export type StudyMode = 'flashcard' | 'type' | 'listen' | 'match' | 'choice';
+export type StudyMode = 'mix' | 'flashcard' | 'type' | 'listen' | 'match' | 'choice';
 
+/**
+ * First entry wins: it is the default everywhere a single "just study this"
+ * link is offered. Mixed practice leads because it is the only mode that keeps
+ * going until every word is actually learned — the others each drill one skill
+ * and stop after one pass.
+ */
 export const STUDY_MODES: { mode: StudyMode; icon: string; label: string }[] = [
+  { mode: 'mix', icon: '🎯', label: 'Học mix' },
   { mode: 'flashcard', icon: '🃏', label: 'Flashcard' },
   { mode: 'type', icon: '⌨️', label: 'Điền từ' },
   { mode: 'listen', icon: '🎧', label: 'Nghe viết' },
   { mode: 'match', icon: '🔗', label: 'Nối từ' },
   { mode: 'choice', icon: '📝', label: 'Trắc nghiệm' },
 ];
+
+export const DEFAULT_STUDY_MODE: StudyMode = 'mix';

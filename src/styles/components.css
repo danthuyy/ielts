@@ -1697,3 +1697,154 @@ a.word-row__main:hover .word-row__word {
     content: none;
   }
 }
+
+/* ---- Word bank (the "ghép chữ" rung) ---- */
+
+.wordbank {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+/* Holds its height whether or not anything is placed, so the tray below does
+   not jump every time a piece moves. */
+.wordbank__answer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp-2);
+  min-height: 4rem;
+  padding: var(--sp-3);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+.wordbank__empty {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.wordbank__tray {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+}
+
+.wordbank__tile {
+  min-width: 3rem;
+  min-height: 2.75rem;
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-bottom-width: 3px;
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-family: var(--font-mono, monospace);
+  font-size: var(--text-lg);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.wordbank__tile:hover:not(:disabled) {
+  background: var(--surface-hover);
+}
+
+/* A used tile keeps its slot but reads as spent rather than as unavailable —
+   `disabled` alone looks like the puzzle has broken. */
+.wordbank__tile:disabled {
+  cursor: default;
+  opacity: 0.28;
+}
+
+.wordbank__tile--placed {
+  background: var(--surface-hover);
+  border-color: var(--primary);
+  opacity: 1;
+}
+
+.wordbank__tile--placed:disabled {
+  opacity: 0.6;
+}
+
+/* ---- Mixed practice ---- */
+
+.rung-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* One segment per rung, widths proportional to how many words sit there. The
+   whole block slides right over a session, which a single "8/25" cannot show. */
+.ladder {
+  display: flex;
+  flex: 1;
+  gap: 2px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--surface-hover);
+  overflow: hidden;
+}
+
+.ladder__seg {
+  background: var(--primary);
+  transition:
+    width var(--duration-normal) var(--ease-out),
+    opacity var(--duration-normal) var(--ease-out);
+}
+
+.ladder__seg--done {
+  background: var(--success);
+}
+
+/* ---- The lead study mode ---- */
+
+.mode-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--primary-fill);
+  border-radius: var(--radius-lg);
+  color: var(--primary-contrast);
+  text-decoration: none;
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.mode-hero:hover {
+  background: var(--primary-fill-hover);
+}
+
+.mode-hero__icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.mode-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.mode-hero__text strong {
+  font-size: var(--text-md);
+}
+
+.mode-hero__text span {
+  font-size: var(--text-sm);
+  /* On the filled block, not on the page background — the muted token would
+     drop below contrast here. */
+  opacity: 0.85;
+}
+
+.mode-hero__go {
+  margin-left: auto;
+  font-size: var(--text-lg);
+}
