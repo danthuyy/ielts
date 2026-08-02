@@ -231,6 +231,14 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
   trống là buộc người học truy xuất từ theo nghĩa — đúng như lúc đi thi. Nếu
   thêm nấc mới, giữ nguyên nguyên tắc đó.
 
+- **Câu hỏi chỉ được hiện nghĩa và từ loại.** Không collocation, không câu ví
+  dụ, không chữ cái đầu, không số ký tự — kể cả trong placeholder của ô nhập.
+  Từng có lúc màn điền từ in collocation ngay trên ô nhập, mà collocation gần
+  như luôn chứa chính từ đó (`a vast fortune` cho `vast`), cộng thêm placeholder
+  `v _ _ _ (4 chữ cái)`: mỗi từ bắt đầu với hai nấc gợi ý đã mở sẵn, trong khi
+  cả thang được dựng để chỉ mở sau khi sai. Những thứ đó là **nấc của thang**,
+  không phải một phần của câu hỏi. Muốn thêm ngữ cảnh vào câu hỏi thì thêm nấc,
+  đừng in thẳng ra màn hình.
 - `src/lib/redact.ts` che từ khoá khỏi chính ví dụ và collocation của nó, bắt cả
   dạng biến thể (correlate/correlates/correlating) và gạch nối viết thành khoảng
   trắng. Nấc nào không có dữ liệu thì bị bỏ qua chứ không hiện rỗng.
@@ -240,11 +248,18 @@ Nếu thêm chế độ luyện mới, dùng lại `useRetryQueue` thay vì tự
 
 ## Sticker và âm thanh
 
-- Bộ sticker gốc nằm ở `output/stickers-zalo-be/` (512px). Bản dùng cho web đã
-  hạ xuống 192px ở `public/stickers/`, đặt tên theo **vai trò** chứ không theo
-  nội dung: `correct`, `wrong`, `perfect`, `sorry`, `cry`, `wow`, `love`,
-  `remind`, `morning`, `night`. Đổi sticker cho một tình huống thì thay file,
-  không sửa code.
+- Bộ sticker gốc nằm ở `output/stickers-zalo-be/` (512px). Bản dùng cho web ở
+  `public/stickers/` **do `python scripts/build-stickers.py` sinh ra** — đừng
+  sửa tay, sửa xong chạy lại là mất. Script cần Pillow (`pip install pillow`).
+- Tên file đặt theo **vai trò** chứ không theo nội dung: `correct`, `wrong`,
+  `perfect`, `sorry`, `cry`, `wow`, `love`, `remind`, `morning`, `night`. Đổi
+  sticker cho một tình huống thì đổi ánh xạ `ROLES` trong script rồi chạy lại,
+  không sửa code ứng dụng.
+- Ảnh gốc là miếng cắt từ contact sheet nên **không có kênh alpha**, nền kem đặc.
+  Script tách nền bằng flood-fill từ biên chứ không key màu toàn ảnh: viền trắng
+  của nhân vật chỉ cách màu nền khoảng 23 đơn vị, key toàn ảnh sẽ ăn mất viền.
+  Ngưỡng `SOLID`/`FRINGE` chừa đúng một pixel răng cưa mềm — nới rộng ra là có
+  quầng kem quanh nhân vật trên theme tối.
 - Luôn lấy đường dẫn qua `stickerUrl()` — nó ghép `import.meta.env.BASE_URL`,
   vì production chạy dưới `/ielts/` và đường dẫn tuyệt đối sẽ 404.
 - `alt` của sticker là nội dung phản hồi thật, không phải trang trí, nên phải

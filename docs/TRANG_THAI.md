@@ -42,6 +42,11 @@ Ghi lại vì nếu không biết lý do thì rất dễ "sửa" thành sai:
   Gộp lại là rớt chuẩn WCAG ở một trong hai theme.
 - **Âm thanh tổng hợp bằng Web Audio, không dùng file mp3.** Không có asset để
   cache, không vướng bản quyền.
+- **Câu hỏi ở màn học chỉ hiện nghĩa và từ loại.** Collocation, câu ví dụ, chữ
+  cái đầu, số ký tự đều là nấc của thang gợi ý, mở sau khi sai. In thẳng ra là
+  đưa luôn đáp án — chuyện này đã xảy ra một lần và không test nào bắt được.
+- **`public/stickers/` là sản phẩm sinh ra**, không phải file gốc. Sửa bằng
+  `python scripts/build-stickers.py`.
 - **`.env.local` bắt buộc khi dev.** Không có nó thì `npm run dev` ghi thẳng vào
   hàng Supabase của bản production. Chuyện này đã xảy ra một lần rồi.
 
