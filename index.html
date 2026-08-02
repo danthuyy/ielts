@@ -2,10 +2,10 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"
-    />
+    <!-- No user-scalable=no: blocking pinch-zoom is a real accessibility
+         failure for anyone relying on magnification, and it bought nothing
+         here beyond suppressing a double-tap zoom. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>IELTS Vocab Trainer</title>
     <meta name="description" content="Ứng dụng học từ vựng IELTS, hoạt động cả khi offline" />
     <meta name="theme-color" content="#0a0a1a" />
@@ -15,10 +15,22 @@
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Loaded without blocking first paint: the stylesheet is fetched as
+         print media, then promoted once it arrives. The fallback stack in
+         --font-sans carries the first frame, which also happens to be what
+         offline users get. -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <script>
       // Runs before the stylesheet paints, so a light-theme user never sees a
       // flash of the dark palette. main.tsx re-applies this properly on boot;

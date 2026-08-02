@@ -78,17 +78,28 @@ jobs:
       - run: npm ci
 
       - name: Test with coverage
-        run: npm run test -- --coverage --coverage.reporter=text-summary --coverage.reporter=lcov
+        run: npm run test -- --coverage --coverage.reporter=json-summary --coverage.reporter=lcov
 
+      # Reads the report the test run already wrote, rather than running the
+      # whole suite a second time just to print a number.
       - name: Coverage summary
-        if: matrix.node == '22'
+        if: always() && matrix.node == '22'
         run: |
           {
-            echo "## Độ phủ test (Node ${{ matrix.node }})"
-            echo '```'
-            npx vitest run --coverage --coverage.reporter=text-summary 2>/dev/null \
-              | sed -n '/Coverage report/,/^$/p' || echo "(không đọc được tóm tắt)"
-            echo '```'
+            echo "## Độ phủ test"
+            if [ -f coverage/coverage-summary.json ]; then
+              node -e '
+                const { total } = require("./coverage/coverage-summary.json");
+                console.log("| Loại | Đã phủ | Tổng | % |");
+                console.log("| --- | ---: | ---: | ---: |");
+                for (const key of ["statements", "branches", "functions", "lines"]) {
+                  const m = total[key];
+                  console.log(`| ${key} | ${m.covered} | ${m.total} | ${m.pct}% |`);
+                }
+              '
+            else
+              echo "Không tạo được báo cáo độ phủ."
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload coverage

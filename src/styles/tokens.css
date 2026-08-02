@@ -15,7 +15,11 @@
   --border-strong: rgb(139 92 246 / 45%);
 
   /* ---- Brand ---- */
-  --primary: #8b5cf6;
+  /* Used as accent text on every surface, so it has to clear 4.5:1 against
+     the lightest of them (--surface-hover). #8b5cf6 only managed 3.40:1
+     there — Lighthouse caught it on the active nav item. Solid fills use
+     --primary-fill, so lightening this costs nothing. */
+  --primary: #a78bfa;
   --primary-light: #a78bfa;
   --primary-dark: #6d28d9;
   --primary-contrast: #ffffff;
@@ -51,7 +55,9 @@
   /* ---- Text ---- */
   --text: #e2e8f0;
   --text-dim: #94a3b8;
-  --text-muted: #64748b;
+  /* 3.02:1 on --surface-hover before this; it labels the nav, section
+     headings and chart axes, all of which are small text. */
+  --text-muted: #8593a6;
 
   /* ---- Spacing scale (4px base) ---- */
   --sp-1: 0.25rem;

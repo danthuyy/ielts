@@ -35,6 +35,8 @@ jobs:
       - name: Run Lighthouse CI
         run: |
           npm install --no-save @lhci/cli
+          # Keep going so the summary step can report the scores even on a
+          # miss; the explicit failure comes at the end.
           npx lhci autorun || echo "LHCI_FAILED=1" >> "$GITHUB_ENV"
 
       - name: Summarise
