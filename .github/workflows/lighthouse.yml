@@ -1,0 +1,66 @@
+name: Lighthouse
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Performance and accessibility budget
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # Built with the default base so Lighthouse can serve dist/ at the root;
+      # the deploy workflow does its own build with /ielts/.
+      - name: Build for audit
+        run: npx vite build --base=/
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install --no-save @lhci/cli
+          npx lhci autorun || echo "LHCI_FAILED=1" >> "$GITHUB_ENV"
+
+      - name: Summarise
+        if: always()
+        run: |
+          {
+            echo "## Lighthouse"
+            if [ -d .lighthouseci ]; then
+              node -e '
+                const fs = require("fs");
+                const files = fs.readdirSync(".lighthouseci").filter(f => f.startsWith("lhr-") && f.endsWith(".json"));
+                if (!files.length) { console.log("Không có báo cáo."); process.exit(0); }
+                const r = JSON.parse(fs.readFileSync(".lighthouseci/" + files[0], "utf8"));
+                console.log("| Hạng mục | Điểm |");
+                console.log("| --- | ---: |");
+                for (const [key, c] of Object.entries(r.categories)) {
+                  console.log(`| ${c.title} | ${Math.round(c.score * 100)} |`);
+                }
+              '
+            else
+              echo "Lighthouse không tạo được báo cáo."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail if budgets were missed
+        if: env.LHCI_FAILED == '1'
+        run: |
+          echo "Lighthouse không đạt ngân sách đã đặt trong lighthouserc.json"
+          exit 1

@@ -1,0 +1,80 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Phiên bản, ví dụ v2.1.0'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Build and publish release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # A release must not ship something that does not pass its own checks.
+      - name: Verify
+        run: |
+          npm run validate:content
+          npm run typecheck
+          npm run lint
+          npm run test
+
+      - name: Build
+        run: npm run build
+
+      - name: Package the built site
+        run: |
+          TAG="${{ github.event.inputs.version || github.ref_name }}"
+          zip -qr "ielts-vocab-${TAG}.zip" dist
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+
+      - name: Content summary
+        run: |
+          {
+            echo "## Nội dung trong bản phát hành"
+            echo
+            echo "| Bài học | Số từ |"
+            echo "| --- | ---: |"
+            node -e '
+              const fs = require("fs");
+              let total = 0;
+              for (const f of fs.readdirSync("content/lessons").filter((n) => n.endsWith(".json")).sort()) {
+                const lesson = JSON.parse(fs.readFileSync("content/lessons/" + f, "utf8"));
+                total += lesson.words.length;
+                console.log(`| ${lesson.title} | ${lesson.words.length} |`);
+              }
+              console.log(`| **Tổng** | **${total}** |`);
+            '
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG }}
+          name: ${{ env.TAG }}
+          generate_release_notes: true
+          files: ielts-vocab-${{ env.TAG }}.zip
+          body: |
+            Bản web đang chạy: https://danthuyy.github.io/ielts/
+
+            File `.zip` đính kèm là thư mục `dist` đã build sẵn, dùng khi muốn
+            tự host ở nơi khác. Người dùng thường không cần tải nó.

@@ -14,8 +14,11 @@ import {
   getSrsState,
   recordAnswer,
   recordActivity,
+  restoreProgress,
+  revertActivity,
   toggleBookmark,
 } from '@/lib/progress';
+import type { WordProgress } from '@/lib/db';
 import { processAnswer, QUALITY, type Quality } from '@/lib/srs';
 import { speak } from '@/lib/tts';
 
@@ -78,17 +81,44 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
     [goTo, words.length],
   );
 
+  // Only the most recent grade can be undone. Keeping a deeper stack would let
+  // the learner rewind past cards whose scheduling later grades already
+  // depended on, which cannot be unwound coherently.
+  const [undoable, setUndoable] = useState<{
+    before: WordProgress;
+    index: number;
+    wasCorrect: boolean;
+  } | null>(null);
+
   const grade = useCallback(
     async (quality: Quality) => {
       if (!word || !flipped || gradingRef.current) return;
       gradingRef.current = true;
+
+      // Captured before the write: SM-2 mutates the ease factor and repetition
+      // count, and neither can be derived back from the new values.
+      const before = await getProgress(word.id);
+      const wasCorrect = quality >= 3;
+
       const next = processAnswer(await getSrsState(word.id), quality);
-      await recordAnswer(word, next, quality >= 3);
-      await recordActivity(1, quality >= 3 ? 1 : 0, 'flashcard');
+      await recordAnswer(word, next, wasCorrect);
+      await recordActivity(1, wasCorrect ? 1 : 0, 'flashcard');
+
+      setUndoable(before ? { before, index, wasCorrect } : null);
       goTo((i) => i + 1);
     },
-    [word, flipped, goTo],
+    [word, flipped, goTo, index],
   );
+
+  const undo = useCallback(async () => {
+    if (!undoable) return;
+    setUndoable(null);
+    await restoreProgress(undoable.before);
+    await revertActivity(1, undoable.wasCorrect ? 1 : 0);
+    setFlipped(true);
+    gradingRef.current = false;
+    setIndex(undoable.index);
+  }, [undoable]);
 
   const handleBookmark = useCallback(() => {
     if (word) void toggleBookmark(word.id);
@@ -108,6 +138,7 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
     '4': () => void grade(QUALITY.easy),
     s: () => word && speak(word.word),
     b: handleBookmark,
+    z: () => void undo(),
     Escape: () => navigate(backTo),
   });
 
@@ -137,7 +168,15 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
         message={finishedMessage ?? `Bạn đã học ${words.length} từ.`}
         continueTo={backTo}
         continueLabel="Xong"
-      />
+      >
+        {/* Mis-tapping the last card lands here, which is exactly where undo is
+            hardest to find otherwise. */}
+        {undoable && (
+          <button type="button" className="btn btn--secondary" onClick={() => void undo()}>
+            ↩ Hoàn tác lần chấm cuối
+          </button>
+        )}
+      </ResultScreen>
     );
   }
 
@@ -236,6 +275,14 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
         </p>
       )}
 
+      {undoable && (
+        <div className="undo-bar">
+          <button type="button" className="btn btn--secondary btn--sm" onClick={() => void undo()}>
+            ↩ Hoàn tác &quot;{words[undoable.index]?.word}&quot;
+          </button>
+        </div>
+      )}
+
       <div className="study__footer">
         <HintBar
           keys={[
@@ -247,6 +294,7 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
             [['←', '→'], 'chuyển từ'],
             [['S'], 'đọc'],
             [['B'], 'lưu'],
+            [['Z'], 'hoàn tác'],
           ]}
           gestures={[
             ['👆', 'chạm: lật thẻ'],

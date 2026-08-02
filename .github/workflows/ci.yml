@@ -10,9 +10,16 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+# Least privilege by default; jobs opt into more where they need it.
+permissions:
+  contents: read
+
 jobs:
-  verify:
-    name: Typecheck, lint, test, build
+  # Content is the thing contributors actually change, so it gets its own job:
+  # a malformed lesson fails in seconds instead of behind a full install and
+  # build, and the failure is unambiguous in the checks list.
+  content:
+    name: Lesson content
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -27,7 +34,20 @@ jobs:
       - run: npm ci
 
       - name: Validate lesson content
-        run: npm run validate:content
+        run: npm run validate:content | tee -a "$GITHUB_STEP_SUMMARY"
+
+  quality:
+    name: Typecheck, lint, format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
 
       - name: Typecheck
         run: npm run typecheck
@@ -38,8 +58,85 @@ jobs:
       - name: Check formatting
         run: npm run format:check
 
-      - name: Test
-        run: npm run test
+  test:
+    name: Test on Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 22 is the floor the scripts need; 24 catches breakage before it ships
+        # in a runner image update.
+        node: ['22', '24']
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test with coverage
+        run: npm run test -- --coverage --coverage.reporter=text-summary --coverage.reporter=lcov
+
+      - name: Coverage summary
+        if: matrix.node == '22'
+        run: |
+          {
+            echo "## Độ phủ test (Node ${{ matrix.node }})"
+            echo '```'
+            npx vitest run --coverage --coverage.reporter=text-summary 2>/dev/null \
+              | sed -n '/Coverage report/,/^$/p' || echo "(không đọc được tóm tắt)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload coverage
+        if: matrix.node == '22'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage/
+          retention-days: 14
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
 
       - name: Build
         run: npx vite build
+
+      # Bundle size is the one regression a static PWA feels immediately on a
+      # phone, and nothing else in the pipeline would notice it.
+      - name: Report bundle size
+        run: |
+          {
+            echo "## Kích thước bundle"
+            echo
+            echo "| File | Gốc | Gzip |"
+            echo "| --- | ---: | ---: |"
+            for f in dist/assets/*.js dist/assets/*.css; do
+              [ -f "$f" ] || continue
+              raw=$(du -h "$f" | cut -f1)
+              gz=$(gzip -c "$f" | wc -c | awk '{printf "%.1f kB", $1/1024}')
+              echo "| \`$(basename "$f")\` | $raw | $gz |"
+            done
+            echo
+            echo "**Tổng dist:** $(du -sh dist | cut -f1)"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7

@@ -10,6 +10,10 @@ Bản chạy thử: https://danthuyy.github.io/ielts/
 - **4 chế độ quiz** — điền từ, nghe viết, nối từ, trắc nghiệm.
 - **Bài kiểm tra tổng hợp** — trộn từ của nhiều bài học để kiểm tra lại.
 - **Thống kê** — theo dõi số từ đã học, chuỗi ngày học, tiến độ từng bài.
+- **Đếm ngược ngày thi** — đặt ngày thi, trang chủ tính số từ cần học mỗi ngày để kịp.
+- **Nhắc học hàng ngày** — thông báo trình duyệt vào giờ bạn chọn.
+- **Hoàn tác chấm điểm** — bấm nhầm mức không làm hỏng lịch ôn của từ đó.
+- **Trang chi tiết từ** — lịch ôn, độ chính xác và hệ số dễ của riêng từng từ.
 - **Luyện từ hay sai** — gom những từ có độ chính xác thấp nhất thành một phiên riêng, không phải chờ tới lịch ôn.
 - **Thống kê chi tiết** — heatmap hoạt động 26 tuần, lịch ôn 14 ngày tới, và bảng xếp hạng từ yếu.
 - **Tìm kiếm từ vựng** — tìm theo từ tiếng Anh, nghĩa tiếng Việt hoặc collocation trên mọi bài học.

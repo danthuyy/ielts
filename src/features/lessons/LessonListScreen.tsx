@@ -131,12 +131,12 @@ export function LessonListScreen() {
                   >
                     🔊
                   </button>
-                  <div className="hit-row__main">
+                  <Link className="hit-row__main" to={routes.word(word.id)}>
                     <span className="hit-row__word">
                       {word.word} <span className="hit-row__pos">{word.pos}</span>
                     </span>
                     <span className="hit-row__vi">{word.vi}</span>
-                  </div>
+                  </Link>
                   {lesson && (
                     <Link className="hit-row__lesson" to={routes.lesson(lesson.id)}>
                       {lesson.title}

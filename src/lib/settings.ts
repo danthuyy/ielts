@@ -15,6 +15,12 @@ export interface Settings {
   speechRate: number;
   voiceName: string | null;
   theme: ThemeChoice;
+  /** ISO date of the exam, or '' when no date is set. */
+  examDate: string;
+  /** Show a browser notification when review is due. */
+  remindDaily: boolean;
+  /** Local time of day for that reminder, "HH:MM". */
+  remindAt: string;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -23,6 +29,9 @@ export const DEFAULT_SETTINGS: Settings = {
   speechRate: 0.85,
   voiceName: null,
   theme: 'system',
+  examDate: '',
+  remindDaily: false,
+  remindAt: '20:00',
 };
 
 type Listener = (settings: Settings) => void;
@@ -45,6 +54,9 @@ export function getSettings(): Settings {
     speechRate: readRaw('speechRate'),
     voiceName: readRaw('voiceName'),
     theme: readTheme(),
+    examDate: readRaw('examDate'),
+    remindDaily: readRaw('remindDaily'),
+    remindAt: readRaw('remindAt'),
   };
 }
 

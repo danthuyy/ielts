@@ -1,0 +1,40 @@
+version: 2
+
+updates:
+  # npm — grouped so a routine week is one PR to review, not fifteen.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '07:00'
+      timezone: Asia/Ho_Chi_Minh
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: 'chore(deps)'
+      prefix-development: 'chore(deps-dev)'
+    groups:
+      react:
+        patterns: ['react', 'react-dom', 'react-router*', '@types/react*']
+      build-tooling:
+        patterns: ['vite', '@vitejs/*', 'vite-plugin-*', 'typescript', 'rolldown*']
+      testing:
+        patterns: ['vitest', '@vitest/*', '@testing-library/*', 'jsdom', 'fake-indexeddb']
+      linting:
+        patterns:
+          ['eslint', '@eslint/*', 'eslint-plugin-*', 'typescript-eslint', 'prettier', 'globals']
+    ignore:
+      # Majors change APIs; take those deliberately, not on a Monday morning.
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+
+  # The workflows pin action majors, so this keeps them from silently rotting.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: 'ci(deps)'
+    groups:
+      actions:
+        patterns: ['*']

@@ -7,12 +7,15 @@ import { routes, STUDY_MODES } from '@/app/routes';
 import { useSettings } from '@/hooks/useSettings';
 import { LoadingScreen } from '@/components/ScreenState';
 import {
+  countStudiedToday,
+  countUnmastered,
   getActivitySince,
   getDueProgress,
   getLessonStats,
   getOverallStats,
   getStreak,
 } from '@/lib/progress';
+import { buildCramPlan, describeCountdown } from '@/lib/exam';
 import { addDays, percent, toDateKey } from '@/lib/utils';
 
 const WEEKDAYS = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'] as const;
@@ -58,21 +61,24 @@ export function HomeScreen() {
   const { settings } = useSettings();
 
   const data = useLiveQuery(async () => {
-    const [stats, streak, due, activity] = await Promise.all([
+    const [stats, streak, due, activity, unmastered, doneToday] = await Promise.all([
       getOverallStats(),
       getStreak(),
       getDueProgress(),
       getActivitySince(7),
+      countUnmastered(),
+      countStudiedToday(),
     ]);
     const lessonStats = await Promise.all(
       LESSONS.map(async (lesson) => ({ lesson, stats: await getLessonStats(lesson.id) })),
     );
-    return { stats, streak, dueCount: due.length, activity, lessonStats };
+    return { stats, streak, dueCount: due.length, activity, lessonStats, unmastered, doneToday };
   }, []);
 
   if (!data) return <LoadingScreen />;
 
-  const { stats, streak, dueCount, activity, lessonStats } = data;
+  const { stats, streak, dueCount, activity, lessonStats, unmastered, doneToday } = data;
+  const cram = settings.examDate ? buildCramPlan(settings.examDate, unmastered, doneToday) : null;
   const days = lastSevenDays(activity);
   const studiedToday = days[days.length - 1]?.studied ?? 0;
   const goalPercent = percent(studiedToday, settings.dailyGoal);
@@ -89,6 +95,33 @@ export function HomeScreen() {
 
       <div className="home-grid">
         <div className="home-col">
+          {cram && cram.status !== 'passed' && (
+            <section className="card cram-card">
+              <div className="cram-card__head">
+                <span className="cram-card__label">Kỳ thi</span>
+                <span className="cram-card__countdown">{describeCountdown(cram.daysLeft)}</span>
+              </div>
+              <p className="cram-card__target">
+                {cram.remaining === 0
+                  ? 'Bạn đã thuộc hết số từ hiện có.'
+                  : `Cần ${cram.perDay} từ/ngày để kịp ${cram.remaining} từ còn lại`}
+              </p>
+              {cram.remaining > 0 && (
+                <>
+                  <span className="progress progress--thin">
+                    <span
+                      className="progress__fill"
+                      style={{ width: `${percent(cram.doneToday, cram.perDay)}%` }}
+                    />
+                  </span>
+                  <p className="cram-card__today">
+                    Hôm nay: {cram.doneToday}/{cram.perDay} từ
+                  </p>
+                </>
+              )}
+            </section>
+          )}
+
           <section className={`card due-card${nothingDue ? ' due-card--empty' : ''}`}>
             <div>
               <p className="due-card__count">

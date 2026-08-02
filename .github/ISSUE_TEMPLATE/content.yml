@@ -1,0 +1,39 @@
+name: Sửa nội dung từ vựng
+description: Sai nghĩa, sai phiên âm, ví dụ chưa chuẩn
+labels: [content]
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Bài học
+      description: Tên file trong content/lessons, không cần đuôi .json
+      placeholder: hello_happiness
+    validations:
+      required: true
+
+  - type: input
+    id: word
+    attributes:
+      label: Từ
+      placeholder: vast
+    validations:
+      required: true
+
+  - type: dropdown
+    id: field
+    attributes:
+      label: Trường nào sai
+      options: [vi, ipa, pos, example, collocation, note]
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: Nội dung hiện tại và nội dung đúng
+      placeholder: |
+        Hiện tại: ...
+        Nên là: ...
+        Nguồn: Cambridge Dictionary / Oxford / ...
+    validations:
+      required: true

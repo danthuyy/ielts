@@ -1,0 +1,58 @@
+name: Báo lỗi
+description: Có gì đó chạy sai trong ứng dụng
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Chuyện gì xảy ra
+      description: Mô tả lỗi, và điều bạn mong đợi lẽ ra phải xảy ra.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Các bước tái hiện
+      placeholder: |
+        1. Mở màn hình ...
+        2. Bấm ...
+        3. Thấy ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: screen
+    attributes:
+      label: Màn hình nào
+      options:
+        - Trang chủ
+        - Thư viện bài học
+        - Flashcard
+        - Điền từ / Nghe viết
+        - Nối từ
+        - Trắc nghiệm
+        - Bài kiểm tra
+        - Ôn tập / Luyện từ hay sai
+        - Thống kê
+        - Chi tiết từ
+        - Cài đặt
+        - Không rõ
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Thiết bị và trình duyệt
+      placeholder: iPhone 14, Safari 18 — hoặc Windows 11, Chrome 140
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Đã thử chưa
+      options:
+        - label: Tải lại trang mà lỗi vẫn còn
+        - label: Đã xem console của trình duyệt và dán lỗi (nếu có) vào phần mô tả

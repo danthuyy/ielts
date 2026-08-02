@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Hỏi cách dùng ứng dụng
+    url: https://github.com/danthuyy/ielts/blob/main/docs/HUONG_DAN_HOC.md
+    about: Hướng dẫn học, phím tắt, lịch ôn và câu hỏi thường gặp.
+  - name: Cách thêm bài học mới
+    url: https://github.com/danthuyy/ielts/blob/main/CONTRIBUTING.md
+    about: Quy trình soạn nội dung và đặc tả file JSON.

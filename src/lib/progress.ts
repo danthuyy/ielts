@@ -174,6 +174,30 @@ export async function recordAnswer(
   emitChange();
 }
 
+/**
+ * Puts a record back exactly as it was. Used by undo: a mis-tap on "Dễ" pushes
+ * a word months into the future, and re-grading it cannot restore the ease
+ * factor and repetition count SM-2 has already changed.
+ */
+export async function restoreProgress(record: WordProgress): Promise<void> {
+  await db.wordProgress.put(record);
+  emitChange();
+}
+
+/** Reverses a recordActivity call. Counters floor at zero. */
+export async function revertActivity(wordsStudied: number, wordsCorrect: number): Promise<void> {
+  const date = todayKey();
+  const existing = await db.dailyActivity.get(date);
+  if (!existing) return;
+
+  await db.dailyActivity.put({
+    ...existing,
+    wordsStudied: Math.max(0, existing.wordsStudied - wordsStudied),
+    wordsCorrect: Math.max(0, existing.wordsCorrect - wordsCorrect),
+  });
+  emitChange();
+}
+
 export async function toggleBookmark(id: string): Promise<boolean> {
   const record = await getProgress(id);
   if (!record) return false;
@@ -254,6 +278,18 @@ export async function getUpcomingReviews(days = 14): Promise<UpcomingDay[]> {
   }
 
   return [...counts.entries()].map(([date, count]) => ({ date, count }));
+}
+
+/** Words not yet mastered — the backlog an exam countdown has to clear. */
+export async function countUnmastered(): Promise<number> {
+  const records = await getAllProgress();
+  return records.filter((record) => record.status !== 'mastered').length;
+}
+
+/** How many distinct words were answered today, for the cram target. */
+export async function countStudiedToday(): Promise<number> {
+  const activity = await db.dailyActivity.get(todayKey());
+  return activity?.wordsStudied ?? 0;
 }
 
 export interface StatusCounts {

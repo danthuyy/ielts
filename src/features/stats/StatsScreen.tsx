@@ -132,12 +132,12 @@ export function StatsScreen() {
           <ul className="word-list">
             {weak.map(({ record, accuracy, attempts }) => (
               <li className="weak-row" key={record.id}>
-                <div className="weak-row__main">
+                <Link className="weak-row__main" to={routes.word(record.id)}>
                   <strong className="weak-row__word">{record.word}</strong>
                   <span className="weak-row__meta">
                     đúng {record.correctCount}/{attempts} lần
                   </span>
-                </div>
+                </Link>
                 <div className="weak-row__gauge" aria-hidden="true">
                   <span
                     className="weak-row__fill"

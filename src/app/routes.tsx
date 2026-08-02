@@ -17,6 +17,7 @@ import { WeakWordsScreen } from '@/features/review/WeakWordsScreen';
 import { StatsScreen } from '@/features/stats/StatsScreen';
 import { BookmarksScreen } from '@/features/bookmarks/BookmarksScreen';
 import { SettingsScreen } from '@/features/settings/SettingsScreen';
+import { WordDetailScreen } from '@/features/word/WordDetailScreen';
 
 /**
  * Hash routing: GitHub Pages serves static files only, so a path-based route
@@ -35,6 +36,7 @@ export const router = createHashRouter([
       { path: 'lessons/:lessonId', element: <LessonDetailScreen /> },
       { path: 'stats', element: <StatsScreen /> },
       { path: 'bookmarks', element: <BookmarksScreen /> },
+      { path: 'word/:wordId', element: <WordDetailScreen /> },
       { path: 'settings', element: <SettingsScreen /> },
     ],
   },
@@ -68,6 +70,7 @@ export const routes = {
   weak: () => '/weak',
   stats: () => '/stats',
   bookmarks: () => '/bookmarks',
+  word: (wordId: string) => `/word/${encodeURIComponent(wordId)}`,
   settings: () => '/settings',
   study: (mode: StudyMode, lessonId: string) => `/study/${mode}/${encodeURIComponent(lessonId)}`,
   test: (lessonId?: string) => (lessonId ? `/test/${encodeURIComponent(lessonId)}` : '/test'),

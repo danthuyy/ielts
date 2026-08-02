@@ -1,0 +1,11 @@
+# Mặc định: chủ repo review mọi thứ.
+*                       @danthuyy
+
+# Nội dung từ vựng — sai một chữ là người học thuộc sai.
+/content/               @danthuyy
+
+# Những chỗ đụng vào là ảnh hưởng tiến độ đã lưu của người dùng.
+/src/lib/ids.ts         @danthuyy
+/src/lib/progress.ts    @danthuyy
+/src/lib/sync.ts        @danthuyy
+/src/content/schema.ts  @danthuyy

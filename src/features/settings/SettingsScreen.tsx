@@ -19,6 +19,8 @@ import { importProgress } from '@/lib/progress';
 import { clearSettings, type ThemeChoice } from '@/lib/settings';
 import { pushWipe, reconcile, type SyncStatus } from '@/lib/sync';
 import { setTheme } from '@/lib/theme';
+import { describeCountdown, daysUntil, minimumExamDate } from '@/lib/exam';
+import { notificationSupport, requestPermission, sendTestNotification } from '@/lib/reminder';
 import { speak } from '@/lib/tts';
 
 const APP_VERSION = '2.0.0';
@@ -62,6 +64,24 @@ export function SettingsScreen() {
   const fileInput = useRef<HTMLInputElement>(null);
   const [backupNote, setBackupNote] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null);
   const [pendingRestore, setPendingRestore] = useState<BackupFile | null>(null);
+  const [notifyState, setNotifyState] = useState(notificationSupport());
+
+  // Browsers only grant permission from a user gesture, so this must hang off
+  // the toggle rather than run when the screen mounts.
+  const handleRemindToggle = async (enabled: boolean) => {
+    if (!enabled) {
+      update('remindDaily', false);
+      return;
+    }
+    const state = await requestPermission();
+    setNotifyState(state);
+    if (state !== 'granted') {
+      update('remindDaily', false);
+      return;
+    }
+    update('remindDaily', true);
+    sendTestNotification();
+  };
 
   const syncEnabled = isSyncConfigured();
 
@@ -244,6 +264,79 @@ export function SettingsScreen() {
         >
           Đồng bộ ngay
         </button>
+      </section>
+
+      <section className="card settings-group" style={{ marginBottom: 'var(--sp-5)' }}>
+        <div className="setting-row setting-row--stacked">
+          <label className="field__label" htmlFor="exam-date">
+            <span aria-hidden="true">📅</span> Ngày thi
+          </label>
+          <p className="sync-detail" style={{ margin: 0 }}>
+            Đặt ngày thi để trang chủ hiện đếm ngược và số từ cần học mỗi ngày.
+          </p>
+          <div className="exam-row">
+            <input
+              className="input"
+              id="exam-date"
+              type="date"
+              min={minimumExamDate()}
+              value={settings.examDate}
+              onChange={(event) => update('examDate', event.target.value)}
+            />
+            {settings.examDate && (
+              <button className="btn btn--secondary" onClick={() => update('examDate', '')}>
+                Xoá
+              </button>
+            )}
+          </div>
+          {settings.examDate && (
+            <p className="cram-card__today">{describeCountdown(daysUntil(settings.examDate))}</p>
+          )}
+        </div>
+
+        <div className="setting-row">
+          <label className="setting-row__title" htmlFor="remind-daily">
+            <span aria-hidden="true">🔔</span> Nhắc học hàng ngày
+          </label>
+          <span className="switch">
+            <input
+              id="remind-daily"
+              type="checkbox"
+              checked={settings.remindDaily}
+              disabled={notifyState === 'unsupported' || notifyState === 'denied'}
+              onChange={(event) => void handleRemindToggle(event.target.checked)}
+            />
+            <span className="switch__track" />
+          </span>
+        </div>
+
+        {notifyState === 'unsupported' && (
+          <p className="sync-detail">Trình duyệt này không hỗ trợ thông báo.</p>
+        )}
+        {notifyState === 'denied' && (
+          <p className="sync-detail">
+            Bạn đã chặn thông báo cho trang này. Mở cài đặt trang trong trình duyệt để bật lại.
+          </p>
+        )}
+
+        {settings.remindDaily && notifyState === 'granted' && (
+          <div className="setting-row setting-row--stacked">
+            <label className="field__label" htmlFor="remind-at">
+              Nhắc lúc
+            </label>
+            <input
+              className="input"
+              id="remind-at"
+              type="time"
+              value={settings.remindAt}
+              onChange={(event) => update('remindAt', event.target.value)}
+            />
+            <p className="sync-detail" style={{ margin: 0 }}>
+              Nhắc nhở chỉ chạy khi ứng dụng đang mở trong một tab hoặc đã cài lên màn hình chính.
+              Trang tĩnh không có máy chủ nên không gửi được thông báo đẩy khi app đã đóng.
+            </p>
+          </div>
+        )}
       </section>
 
       <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>

@@ -12,6 +12,7 @@ import { redirectLegacyHash } from './app/legacyHash';
 import { initProgress } from './lib/progress';
 import { startSync } from './lib/sync';
 import { initTheme } from './lib/theme';
+import { startReminders } from './lib/reminder';
 
 const container = document.getElementById('root');
 if (!container) throw new Error('Không tìm thấy #root');
@@ -53,6 +54,10 @@ async function bootstrap(): Promise<void> {
   );
 
   void startSync().catch((err) => console.error('Sync không khởi động được:', err));
+
+  // Best-effort: the timer only fires while a tab is open, and does nothing
+  // until the learner turns reminders on and grants permission.
+  startReminders();
 }
 
 bootstrap().catch((err: unknown) => {
