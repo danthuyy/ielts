@@ -16,6 +16,9 @@ Bản chạy thử: https://danthuyy.github.io/ielts/
 - **Nhắc học hàng ngày** — thông báo trình duyệt vào giờ bạn chọn.
 - **Hoàn tác chấm điểm** — bấm nhầm mức không làm hỏng lịch ôn của từ đó.
 - **Trang chi tiết từ** — lịch ôn, độ chính xác và hệ số dễ của riêng từng từ.
+- **Sticker phản hồi** — bộ sticker riêng phản ứng theo từng tình huống: đúng, sai, xong bài đúng hết, hay sai nhiều. Tắt được trong Cài đặt.
+- **Âm thanh đúng/sai** — tiếng ngắn, tổng hợp trực tiếp trong trình duyệt nên không tải file nào.
+- **Thanh tiến độ đổi màu** theo tỉ lệ trả lời đúng của phiên đang học.
 - **Học đến khi thuộc** — làm sai thì từ đó ở lại cho tới khi bạn trả lời đúng, hoặc tự bấm bỏ qua; bỏ qua thì nó quay lại ở cuối phiên.
 - **Chấm từng chữ cái** — gõ sai chính tả thì tô đỏ đúng chữ sai, chữ thiếu hiện dấu `·`, không lộ đáp án. Gõ gần đúng được báo là "gần đúng" chứ không phải "sai".
 - **Gợi ý chống học vẹt** — chỉ hiện sau khi đã thử, và đi từ nghĩa tới ngữ cảnh rồi mới tới chữ cái: số ký tự → nghĩa → collocation và câu ví dụ **có chỗ trống thay cho từ cần tìm** → phiên âm → mở dần chữ cái. Buộc bạn nhớ từ theo nghĩa chứ không phải theo mặt chữ.

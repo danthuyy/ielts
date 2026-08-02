@@ -8,10 +8,19 @@ interface Props {
   total: number;
   backTo: string;
   showVoicePicker?: boolean;
+  /** Share of answers right so far, 0-1; colours the bar. */
+  accuracy?: number;
   children?: React.ReactNode;
 }
 
-export function StudyHeader({ index, total, backTo, showVoicePicker = true, children }: Props) {
+export function StudyHeader({
+  index,
+  total,
+  backTo,
+  showVoicePicker = true,
+  accuracy,
+  children,
+}: Props) {
   const navigate = useNavigate();
 
   return (
@@ -19,7 +28,13 @@ export function StudyHeader({ index, total, backTo, showVoicePicker = true, chil
       <button className="icon-btn" onClick={() => navigate(backTo)} aria-label="Quay lại">
         ←
       </button>
-      <ProgressBar value={index} max={total} label="Tiến độ bài luyện" />
+      <ProgressBar
+        value={index}
+        max={total}
+        label="Tiến độ bài luyện"
+        {...(accuracy === undefined ? {} : { accuracy })}
+        pulseOnGrow
+      />
       {children}
       {showVoicePicker && <VoicePicker />}
       <span className="study-header__count">

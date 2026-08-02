@@ -30,6 +30,10 @@ export interface Settings {
   hintStyle: HintStyle;
   /** Shuffle the word order at the start of each study session. */
   shuffleWords: boolean;
+  /** Short synthesised tones on right and wrong answers. */
+  soundEffects: boolean;
+  /** Reaction stickers during and after a session. */
+  showStickers: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -43,6 +47,8 @@ export const DEFAULT_SETTINGS: Settings = {
   remindAt: '20:00',
   hintStyle: 'progressive',
   shuffleWords: true,
+  soundEffects: true,
+  showStickers: true,
 };
 
 type Listener = (settings: Settings) => void;
@@ -70,6 +76,8 @@ export function getSettings(): Settings {
     remindAt: readRaw('remindAt'),
     hintStyle: readHintStyle(),
     shuffleWords: readRaw('shuffleWords'),
+    soundEffects: readRaw('soundEffects'),
+    showStickers: readRaw('showStickers'),
   };
 }
 

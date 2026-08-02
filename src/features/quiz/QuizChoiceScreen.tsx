@@ -7,12 +7,15 @@ import { StudyHeader } from '@/components/StudyHeader';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
 import { SessionProgress } from '@/components/SessionProgress';
+import { Sticker } from '@/components/Sticker';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useRetryQueue } from '@/hooks/useRetryQueue';
 import { useSessionWords } from '@/hooks/useSessionWords';
 import { useSettings } from '@/hooks/useSettings';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
+import { playSfx, setSfxEnabled } from '@/lib/sfx';
+import { resultLine, resultSticker } from '@/lib/stickers';
 import { speak } from '@/lib/tts';
 import { shuffle } from '@/lib/utils';
 import type { StudyWord } from '@/content/schema';
@@ -68,6 +71,8 @@ export function QuizChoiceScreen() {
       setPicked(option.word);
 
       const correct = option.word === word.word;
+      setSfxEnabled(settings.soundEffects);
+      playSfx(correct ? 'correct' : 'wrong');
 
       const next = processAnswer(await getSrsState(word.id), correct ? QUALITY.good : 2);
       await recordAnswer(word, next, correct);
@@ -84,7 +89,7 @@ export function QuizChoiceScreen() {
         queue.answer(correct);
       }, REVEAL_MS);
     },
-    [word, reverse, queue],
+    [word, reverse, queue, settings.soundEffects],
   );
 
   const pick = useCallback(
@@ -115,14 +120,12 @@ export function QuizChoiceScreen() {
   if (!word) {
     return (
       <ResultScreen
+        sticker={settings.showStickers ? resultSticker(queue.firstTry, queue.total) : undefined}
         emoji={queue.firstTry === queue.total ? '🏆' : '👍'}
         title="Kết quả"
         score={{ correct: queue.firstTry, total: queue.total }}
-        message={
-          queue.firstTry === queue.total
-            ? 'Đúng hết ngay lần đầu.'
-            : `Bạn đã trả lời đúng cả ${queue.total} từ. ${queue.total - queue.firstTry} từ cần thử lại.`
-        }
+        message={resultLine(queue.firstTry, queue.total)}
+        sound={queue.firstTry / Math.max(1, queue.total) >= 0.7 ? 'perfect' : 'poor'}
         continueTo={backTo}
       />
     );
@@ -137,7 +140,12 @@ export function QuizChoiceScreen() {
 
   return (
     <div className="study">
-      <StudyHeader index={queue.learned} total={queue.total} backTo={backTo}>
+      <StudyHeader
+        index={queue.learned}
+        total={queue.total}
+        backTo={backTo}
+        accuracy={queue.learned > 0 ? queue.firstTry / queue.learned : undefined}
+      >
         <button
           className="chip"
           onClick={() => {
@@ -153,6 +161,17 @@ export function QuizChoiceScreen() {
 
       <div className="study__body">
         <SessionProgress queue={queue} />
+
+        {settings.showStickers && picked !== null && (
+          <span className="feedback__sticker">
+            <Sticker
+              name={picked === word.word ? 'correct' : 'wrong'}
+              size="sm"
+              replayKey={`${word.id}-${picked}`}
+              className={picked === word.word ? '' : 'sticker--wobble'}
+            />
+          </span>
+        )}
 
         <div className="prompt">
           <p className="prompt__main prompt__main--lg">{reverse ? word.vi : word.word}</p>

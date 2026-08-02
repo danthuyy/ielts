@@ -11,6 +11,3 @@ coverage/
 
 # Lighthouse CI reports
 .lighthouseci/
-
-# Sản phẩm của công cụ khác, không thuộc repo này
-output/

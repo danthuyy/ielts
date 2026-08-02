@@ -1,5 +1,8 @@
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Sticker } from './Sticker';
+import { playSfx, type Sfx } from '@/lib/sfx';
+import type { StickerName } from '@/lib/stickers';
 import { useKeyboard } from '@/hooks/useKeyboard';
 
 interface Props {
@@ -8,6 +11,10 @@ interface Props {
   score?: { correct: number; total: number };
   details?: { label: string; value: string }[];
   message?: string;
+  /** Shown instead of the emoji when the learner has stickers turned on. */
+  sticker?: StickerName;
+  /** Played once when the screen appears. */
+  sound?: Sfx;
   continueTo: string;
   continueLabel?: string;
   /** Extra content between the summary and the continue button. */
@@ -17,6 +24,8 @@ interface Props {
 /** The shared "you finished" screen for every study mode. */
 export function ResultScreen({
   emoji,
+  sticker,
+  sound,
   title,
   score,
   details,
@@ -28,13 +37,22 @@ export function ResultScreen({
   const navigate = useNavigate();
   const finish = () => navigate(continueTo);
 
+  // Once per arrival, not on every render.
+  useEffect(() => {
+    if (sound) playSfx(sound);
+  }, [sound]);
+
   useKeyboard({ Enter: finish, Escape: finish });
 
   return (
     <div className="result">
-      <div className="result__emoji" aria-hidden="true">
-        {emoji}
-      </div>
+      {sticker ? (
+        <Sticker name={sticker} size="lg" />
+      ) : (
+        <div className="result__emoji" aria-hidden="true">
+          {emoji}
+        </div>
+      )}
       <h1>{title}</h1>
 
       {score && (

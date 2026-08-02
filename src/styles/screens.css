@@ -815,3 +815,14 @@
 .btn--ghost-on-accent:hover {
   background: rgb(255 255 255 / 28%);
 }
+
+.page-head--greeting {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.page-head--greeting > div {
+  display: flex;
+  flex-direction: column;
+}

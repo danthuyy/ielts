@@ -25,6 +25,7 @@ import {
 } from '@/lib/settings';
 import { pushWipe, reconcile, type SyncStatus } from '@/lib/sync';
 import { setTheme } from '@/lib/theme';
+import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { describeCountdown, daysUntil, minimumExamDate } from '@/lib/exam';
 import { notificationSupport, requestPermission, sendTestNotification } from '@/lib/reminder';
 import { speak } from '@/lib/tts';
@@ -224,6 +225,40 @@ export function SettingsScreen() {
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="setting-row">
+          <label className="setting-row__title" htmlFor="sound-effects">
+            <span aria-hidden="true">🔔</span> Âm thanh đúng/sai
+          </label>
+          <span className="switch">
+            <input
+              id="sound-effects"
+              type="checkbox"
+              checked={settings.soundEffects}
+              onChange={(event) => {
+                update('soundEffects', event.target.checked);
+                setSfxEnabled(event.target.checked);
+                if (event.target.checked) playSfx('correct');
+              }}
+            />
+            <span className="switch__track" />
+          </span>
+        </div>
+
+        <div className="setting-row">
+          <label className="setting-row__title" htmlFor="show-stickers">
+            <span aria-hidden="true">🎉</span> Sticker phản hồi
+          </label>
+          <span className="switch">
+            <input
+              id="show-stickers"
+              type="checkbox"
+              checked={settings.showStickers}
+              onChange={(event) => update('showStickers', event.target.checked)}
+            />
+            <span className="switch__track" />
+          </span>
         </div>
 
         <div className="setting-row">

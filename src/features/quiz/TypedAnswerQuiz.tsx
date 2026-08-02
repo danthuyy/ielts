@@ -14,9 +14,12 @@ import { useSettings } from '@/hooks/useSettings';
 import { AnswerDiff } from '@/components/AnswerDiff';
 import { compareAnswer, isNearMiss, type Segment } from '@/lib/diff';
 import { HintLadder } from '@/components/HintLadder';
+import { Sticker } from '@/components/Sticker';
 import { buildHint, effectiveLevel } from '@/lib/hints';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
+import { playSfx, setSfxEnabled } from '@/lib/sfx';
+import { resultLine, resultSticker } from '@/lib/stickers';
 import { speak, speakSlow } from '@/lib/tts';
 import { isAnswerCorrect, maskWord } from '@/lib/utils';
 
@@ -68,6 +71,10 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
     [word, variant, hintStyle, hintLevel, attempts],
   );
 
+  useEffect(() => {
+    setSfxEnabled(settings.soundEffects);
+  }, [settings.soundEffects]);
+
   const play = useCallback(() => {
     if (word) speakSlow(word.word);
   }, [word]);
@@ -117,6 +124,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
 
     if (correct) {
       setResult('correct');
+      playSfx('correct');
       // Getting there after a miss or a hint is not the same as recalling it
       // cleanly, and the schedule should say so.
       await settle(true, attempts === 0 && hintRequests === 0);
@@ -132,6 +140,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
       near: isNearMiss(answer, word.word),
     });
     setAttempts((value) => value + 1);
+    playSfx('wrong');
     queue.markMissed();
     setResult('wrong');
     setAnswer('');
@@ -156,6 +165,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
     if (!word || turnOver) return;
     checkingRef.current = true;
     setResult('revealed');
+    playSfx('wrong');
     await settle(false, false);
     if (settings.autoSpeak) speak(word.word);
   }, [word, turnOver, settle, settings.autoSpeak]);
@@ -197,17 +207,14 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
   }
 
   if (!word) {
-    const perfect = queue.firstTry === queue.total;
     return (
       <ResultScreen
-        emoji={perfect ? '🏆' : '👏'}
+        sticker={settings.showStickers ? resultSticker(queue.firstTry, queue.total) : undefined}
+        emoji={queue.firstTry === queue.total ? '🏆' : '👏'}
         title="Kết quả"
         score={{ correct: queue.firstTry, total: queue.total }}
-        message={
-          perfect
-            ? 'Đúng hết ngay lần đầu.'
-            : `Bạn đã trả lời đúng cả ${queue.total} từ. ${queue.total - queue.firstTry} từ cần thử lại.`
-        }
+        message={resultLine(queue.firstTry, queue.total)}
+        sound={queue.firstTry / Math.max(1, queue.total) >= 0.7 ? 'perfect' : 'poor'}
         continueTo={backTo}
       />
     );
@@ -215,7 +222,12 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
 
   return (
     <div className="study" ref={screenRef}>
-      <StudyHeader index={queue.learned} total={queue.total} backTo={backTo} />
+      <StudyHeader
+        index={queue.learned}
+        total={queue.total}
+        backTo={backTo}
+        accuracy={queue.learned > 0 ? queue.firstTry / queue.learned : undefined}
+      />
 
       <div className="study__body">
         <SessionProgress queue={queue} />
@@ -265,12 +277,27 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
         >
           {result === 'correct' && (
             <>
+              {settings.showStickers && (
+                <span className="feedback__sticker">
+                  <Sticker name="correct" size="sm" replayKey={word.id} />
+                </span>
+              )}
               <p className="feedback__headline">✅ Chính xác!</p>
               {variant === 'listen' && <p className="feedback__meta">{word.vi}</p>}
             </>
           )}
           {result === 'wrong' && lastAttempt && (
             <>
+              {settings.showStickers && !lastAttempt.near && (
+                <span className="feedback__sticker">
+                  <Sticker
+                    name="wrong"
+                    size="sm"
+                    replayKey={attempts}
+                    className="sticker--wobble"
+                  />
+                </span>
+              )}
               <p className="feedback__headline">
                 {lastAttempt.near ? '✏️ Gần đúng — sai chính tả' : '❌ Chưa đúng, thử lại'}
               </p>

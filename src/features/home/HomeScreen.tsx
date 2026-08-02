@@ -6,6 +6,7 @@ import { categoryOf } from '@/content/categories';
 import { routes, STUDY_MODES } from '@/app/routes';
 import { useSettings } from '@/hooks/useSettings';
 import { LoadingScreen } from '@/components/ScreenState';
+import { Sticker } from '@/components/Sticker';
 import {
   countNewWords,
   countStudiedToday,
@@ -99,9 +100,14 @@ export function HomeScreen() {
 
   return (
     <div className="page">
-      <header className="page-head">
-        <h1>{greeting(now.getHours())}! 👋</h1>
-        <span className="page-head__meta">{todayLabel(now)}</span>
+      <header className="page-head page-head--greeting">
+        {settings.showStickers && (
+          <Sticker name={now.getHours() < 18 ? 'morning' : 'night'} size="sm" />
+        )}
+        <div>
+          <h1>{greeting(now.getHours())}!</h1>
+          <span className="page-head__meta">{todayLabel(now)}</span>
+        </div>
       </header>
 
       <div className="home-grid">

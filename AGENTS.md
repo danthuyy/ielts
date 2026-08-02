@@ -235,6 +235,22 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 
 Nếu thêm chế độ luyện mới, dùng lại `useRetryQueue` thay vì tự đi qua mảng.
 
+## Sticker và âm thanh
+
+- Bộ sticker gốc nằm ở `output/stickers-zalo-be/` (512px). Bản dùng cho web đã
+  hạ xuống 192px ở `public/stickers/`, đặt tên theo **vai trò** chứ không theo
+  nội dung: `correct`, `wrong`, `perfect`, `sorry`, `cry`, `wow`, `love`,
+  `remind`, `morning`, `night`. Đổi sticker cho một tình huống thì thay file,
+  không sửa code.
+- Luôn lấy đường dẫn qua `stickerUrl()` — nó ghép `import.meta.env.BASE_URL`,
+  vì production chạy dưới `/ielts/` và đường dẫn tuyệt đối sẽ 404.
+- `alt` của sticker là nội dung phản hồi thật, không phải trang trí, nên phải
+  mô tả đúng.
+- Âm thanh **tổng hợp bằng Web Audio** trong `src/lib/sfx.ts`, không dùng file
+  mp3: không có asset để cache, không vướng bản quyền, vài trăm byte thay vì
+  vài trăm kB. Giữ tiếng ngắn và nhẹ — nó phát sau _mỗi_ câu trả lời.
+- Cả hai đều tắt được trong Cài đặt, và tôn trọng `prefers-reduced-motion`.
+
 ## Viết test
 
 Test **không được giả định nội dung có hình dạng cụ thể**. Đừng viết

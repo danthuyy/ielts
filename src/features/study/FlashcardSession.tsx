@@ -20,6 +20,7 @@ import {
 } from '@/lib/progress';
 import type { WordProgress } from '@/lib/db';
 import { processAnswer, QUALITY, type Quality } from '@/lib/srs';
+import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { speak } from '@/lib/tts';
 import { YouglishLink } from '@/components/YouglishLink';
 
@@ -101,6 +102,8 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
       const before = await getProgress(word.id);
       const wasCorrect = quality >= 3;
 
+      playSfx(wasCorrect ? 'correct' : 'wrong');
+
       const next = processAnswer(await getSrsState(word.id), quality);
       await recordAnswer(word, next, wasCorrect);
       await recordActivity(1, wasCorrect ? 1 : 0, 'flashcard');
@@ -124,6 +127,12 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
   const handleBookmark = useCallback(() => {
     if (word) void toggleBookmark(word.id);
   }, [word]);
+
+  // Kept in step with the setting here rather than inside grade(), which would
+  // otherwise have to re-create itself every time any setting changed.
+  useEffect(() => {
+    setSfxEnabled(settings.soundEffects);
+  }, [settings.soundEffects]);
 
   const flip = useCallback(() => setFlipped((value) => !value), []);
 
@@ -164,6 +173,8 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
   if (!word) {
     return (
       <ResultScreen
+        sticker={settings.showStickers ? 'love' : undefined}
+        sound="perfect"
         emoji="🎉"
         title="Hoàn thành xuất sắc!"
         message={finishedMessage ?? `Bạn đã học ${words.length} từ.`}

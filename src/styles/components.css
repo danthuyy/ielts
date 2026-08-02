@@ -1443,3 +1443,117 @@ a.word-row__main:hover .word-row__word {
   color: var(--warning);
   background: var(--warning-soft);
 }
+
+/* ---- Stickers ---- */
+
+.sticker {
+  display: block;
+  object-fit: contain;
+  /* Pops in with a slight overshoot so it reads as a reaction, not a load. */
+  animation: sticker-pop var(--duration-normal) var(--ease-out) both;
+}
+
+.sticker--sm {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.sticker--md {
+  width: 6rem;
+  height: 6rem;
+}
+.sticker--lg {
+  width: 9rem;
+  height: 9rem;
+}
+
+@keyframes sticker-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(-8deg);
+  }
+  60% {
+    transform: scale(1.08) rotate(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* A wrong answer gets a wobble rather than a bounce — same attention, less
+   celebration. */
+.sticker--wobble {
+  animation: sticker-wobble var(--duration-normal) var(--ease-out) both;
+}
+
+@keyframes sticker-wobble {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  40% {
+    transform: scale(1.04) rotate(-5deg);
+  }
+  70% {
+    transform: rotate(4deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+.feedback__sticker {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--sp-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker,
+  .sticker--wobble {
+    animation: none;
+  }
+}
+
+/* ---- Progress bar reactions ---- */
+
+.progress--reactive .progress__fill {
+  transition:
+    width var(--duration-normal) var(--ease-out),
+    background-color var(--duration-normal) var(--ease-out);
+}
+
+/* The bar earns its colour: red while most answers are missed, green once the
+   session is going well. A single flat colour says nothing. */
+.progress--poor .progress__fill {
+  background: var(--danger);
+}
+.progress--mixed .progress__fill {
+  background: var(--warning);
+}
+.progress--good .progress__fill {
+  background: var(--success);
+}
+
+.progress--pulse .progress__fill {
+  animation: progress-pulse var(--duration-slow) var(--ease-out);
+}
+
+@keyframes progress-pulse {
+  0% {
+    filter: brightness(1);
+  }
+  35% {
+    filter: brightness(1.7);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress--pulse .progress__fill {
+    animation: none;
+  }
+}
