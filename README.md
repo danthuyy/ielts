@@ -5,6 +5,7 @@
 Bản chạy thử: https://danthuyy.github.io/ielts/
 
 > Dùng AI để thêm bài học? Hướng dẫn dành riêng cho agent nằm ở [AGENTS.md](AGENTS.md).
+> Trạng thái dự án và nợ kỹ thuật: [docs/TRANG_THAI.md](docs/TRANG_THAI.md).
 
 ## Tính năng
 

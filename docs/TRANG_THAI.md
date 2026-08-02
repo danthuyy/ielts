@@ -1,0 +1,52 @@
+# Trạng thái dự án
+
+Cập nhật: 02/08/2026. Ghi lại để người (hoặc AI) quay lại sau này biết đang ở
+đâu mà không phải đọc lại toàn bộ lịch sử git.
+
+## Đang ở đâu
+
+Ứng dụng đã hoàn chỉnh về mặt tính năng và hạ tầng. Site chạy tại
+https://danthuyy.github.io/ielts/, deploy tự động khi push lên `main`.
+
+- 221 test, TypeScript strict, ESLint sạch
+- Lighthouse **100** cả bốn hạng mục, tổng trang 416 kB (ngân sách 600 kB)
+- 4 workflow: CI, CodeQL, Lighthouse, Deploy
+
+## Giới hạn thật hiện nay
+
+**Nội dung: mới 1 bài học, 25 từ.** Toàn bộ hạ tầng soạn nội dung đã xong — đây
+là việc còn lại có giá trị lớn nhất, và nó không phải việc lập trình. Xem
+[CONTRIBUTING.md](../CONTRIBUTING.md) để thêm bài.
+
+## Nợ kỹ thuật đã biết
+
+| Việc                                   | Vì sao chưa làm                                                                                                                                |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Component chưa có test (coverage ~20%) | Lớp `src/lib` phủ tốt. Cố ý **không** đặt ngưỡng coverage, vì ngưỡng chỉ đẻ ra test rỗng. Muốn nâng thật thì viết test render cho các màn học. |
+| Font Inter tải từ Google Fonts         | Offline sẽ rơi về font hệ thống. Muốn offline đúng nghĩa thì phải self-host file woff2.                                                        |
+| `output/` nặng ~8 MB trong repo        | Đây là bộ sticker gốc 512px. Giữ lại để không mất; bản dùng cho web đã hạ 192px trong `public/stickers`.                                       |
+
+## Những quyết định dễ bị hiểu nhầm
+
+Ghi lại vì nếu không biết lý do thì rất dễ "sửa" thành sai:
+
+- **Khoá tiến độ sinh từ nội dung** (`hello_happiness:vast`) chứ không theo vị
+  trí. Đây là lý do có thể chèn thêm từ vào bài cũ mà không hỏng dữ liệu người
+  học. Đổi `id` bài hoặc đổi tên `word` là xoá tiến độ trên mọi thiết bị.
+- **Điểm cuối phiên tính theo lần thử đầu tiên**, không phải kết quả cuối. Vì
+  phải trả lời đúng mới được đi tiếp, nếu tính kết quả cuối thì ai cũng 100%.
+- **Gợi ý đi từ nghĩa và ngữ cảnh trước, chữ cái sau.** Mở chữ cái trước là dạy
+  nhớ mặt chữ — đúng cái học vẹt mà ứng dụng muốn tránh.
+- **`--primary` và `--primary-fill` là hai token khác nhau.** Một màu không thể
+  vừa đủ sáng để làm chữ trên nền tối, vừa đủ tối để chữ trắng đọc được trên nó.
+  Gộp lại là rớt chuẩn WCAG ở một trong hai theme.
+- **Âm thanh tổng hợp bằng Web Audio, không dùng file mp3.** Không có asset để
+  cache, không vướng bản quyền.
+- **`.env.local` bắt buộc khi dev.** Không có nó thì `npm run dev` ghi thẳng vào
+  hàng Supabase của bản production. Chuyện này đã xảy ra một lần rồi.
+
+## Muốn làm tiếp thì đây là thứ đáng nhất
+
+1. Đổ nội dung thật vào (không phải việc code)
+2. Test render cho các màn học — hiện bấm sai một nút chấm điểm không có gì bắt
+3. Self-host font để offline đúng nghĩa

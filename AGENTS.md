@@ -3,6 +3,9 @@
 Tài liệu này dành cho trợ lý AI làm việc trên repo. Đọc hết trước khi sửa bất cứ
 thứ gì. Con người thì đọc [README.md](README.md) và [CONTRIBUTING.md](CONTRIBUTING.md).
 
+> Đang ở đâu, còn gì phải làm, và vì sao vài quyết định trông lạ:
+> [docs/TRANG_THAI.md](docs/TRANG_THAI.md). Đọc nó trước khi đề xuất thay đổi lớn.
+
 ## Repo này là gì
 
 Ứng dụng web học từ vựng IELTS cho người Việt. Site tĩnh 100%, không có backend,
