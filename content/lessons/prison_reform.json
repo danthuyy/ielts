@@ -1,0 +1,234 @@
+{
+  "id": "prison_reform",
+  "title": "Reform Of The Prison System In The UK",
+  "description": "Bài đọc về cải cách hệ thống nhà tù tại Vương quốc Anh",
+  "date": "2026-08-03",
+  "tags": ["crime", "society", "education"],
+  "words": [
+    {
+      "word": "recidivism",
+      "pos": "n",
+      "ipa": "/rɪˈsɪd.ɪ.vɪ.zəm/",
+      "vi": "Sự tái phạm",
+      "example": "The UK's large prison population is fuelled by a high level of recidivism.",
+      "collocation": "high level of recidivism · reduce recidivism · rate of recidivism",
+      "note": "Từ học thuật quan trọng trong chủ đề Crime. Thường đi với 'rate' hoặc 'level'."
+    },
+    {
+      "word": "relapse",
+      "pos": "v",
+      "ipa": "/rɪˈlæps/",
+      "vi": "Tái phạm, sa ngã lại",
+      "example": "The UK's large prison population is fuelled by a high level of recidivism - when criminals repeatedly relapse into crime.",
+      "collocation": "relapse into crime · relapse into old habits · risk of relapse",
+      "note": "Cũng dùng trong y tế: 'relapse into illness' (bệnh tái phát)."
+    },
+    {
+      "word": "rehabilitation",
+      "pos": "n",
+      "ipa": "/ˌriː.həˌbɪl.ɪˈteɪ.ʃən/",
+      "vi": "Sự phục hồi, sự cải tạo",
+      "example": "This project for a model prison tackles issues of architecture, management and funding in an enlightened attempt to achieve lasting rehabilitation.",
+      "collocation": "lasting rehabilitation · promote rehabilitation · rehabilitation programme",
+      "note": "Từ trọng tâm của bài. Đối lập với 'punishment' (trừng phạt)."
+    },
+    {
+      "word": "penal",
+      "pos": "adj",
+      "ipa": "/ˈpiː.nəl/",
+      "vi": "Thuộc hình phạt, hình sự",
+      "example": "The penal system is one of the most direct manifestations of the power of the state.",
+      "collocation": "penal system · penal reform · penal code",
+      "note": ""
+    },
+    {
+      "word": "manifestation",
+      "pos": "n",
+      "ipa": "/ˌmæn.ɪ.fesˈteɪ.ʃən/",
+      "vi": "Sự biểu hiện, sự thể hiện",
+      "example": "The penal system is one of the most direct manifestations of the power of the state.",
+      "collocation": "direct manifestation · physical manifestation · manifestation of",
+      "note": ""
+    },
+    {
+      "word": "psyche",
+      "pos": "n",
+      "ipa": "/ˈsaɪ.ki/",
+      "vi": "Tâm lý, tâm hồn",
+      "example": "The penal system is often also a revealing reflection of the national psyche.",
+      "collocation": "national psyche · human psyche · collective psyche",
+      "note": "Đọc là /ˈsaɪ.ki/, không đọc theo chữ. Gốc Hy Lạp."
+    },
+    {
+      "word": "lamentable",
+      "pos": "adj",
+      "ipa": "/ˈlæm.ən.tə.bəl/",
+      "vi": "Đáng tiếc, đáng than phiền",
+      "example": "Surprisingly, for a prosperous, progressive Western democracy, the UK has a lamentable penal record.",
+      "collocation": "lamentable record · lamentable failure · lamentable state",
+      "note": ""
+    },
+    {
+      "word": "prosperous",
+      "pos": "adj",
+      "ipa": "/ˈprɒs.pər.əs/",
+      "vi": "Thịnh vượng, phồn vinh",
+      "example": "Surprisingly, for a prosperous, progressive Western democracy, the UK has a lamentable penal record.",
+      "collocation": "prosperous country · prosperous economy · increasingly prosperous",
+      "note": ""
+    },
+    {
+      "word": "incarcerate",
+      "pos": "v",
+      "ipa": "/ɪnˈkɑː.sər.eɪt/",
+      "vi": "Giam cầm, bỏ tù",
+      "example": "The average cost of keeping an individual prisoner incarcerated for a year is £27,000.",
+      "collocation": "be incarcerated · incarcerate criminals · mass incarceration",
+      "note": "Trang trọng hơn 'imprison'. Danh từ: incarceration."
+    },
+    {
+      "word": "expenditure",
+      "pos": "n",
+      "ipa": "/ɪkˈspen.dɪ.tʃər/",
+      "vi": "Chi tiêu, khoản chi",
+      "example": "The average cost is ten times the average expenditure on a secondary school pupil in the state sector.",
+      "collocation": "average expenditure · public expenditure · expenditure on",
+      "note": "Trang trọng hơn 'spending'. Hay gặp trong IELTS Writing Task 1."
+    },
+    {
+      "word": "overcrowding",
+      "pos": "n",
+      "ipa": "/ˌəʊ.vəˈkraʊ.dɪŋ/",
+      "vi": "Sự quá tải, quá đông đúc",
+      "example": "Overcrowding is endemic, hampering opportunities for education and rehabilitation.",
+      "collocation": "prison overcrowding · tackle overcrowding · serious overcrowding",
+      "note": ""
+    },
+    {
+      "word": "endemic",
+      "pos": "adj",
+      "ipa": "/enˈdem.ɪk/",
+      "vi": "Phổ biến, lan tràn (trong một khu vực)",
+      "example": "Overcrowding is endemic, hampering opportunities for education and rehabilitation and lowering staff and prisoner morale.",
+      "collocation": "endemic corruption · endemic problem · endemic to",
+      "note": "Cũng dùng trong y tế chỉ bệnh đặc hữu của một vùng."
+    },
+    {
+      "word": "hamper",
+      "pos": "v",
+      "ipa": "/ˈhæm.pər/",
+      "vi": "Cản trở, gây khó khăn",
+      "example": "Overcrowding is endemic, hampering opportunities for education and rehabilitation.",
+      "collocation": "hamper efforts · hamper progress · seriously hamper",
+      "note": "Đồng nghĩa: hinder, impede."
+    },
+    {
+      "word": "morale",
+      "pos": "n",
+      "ipa": "/məˈrɑːl/",
+      "vi": "Tinh thần, nhuệ khí",
+      "example": "Overcrowding is lowering staff and prisoner morale.",
+      "collocation": "low morale · boost morale · staff morale",
+      "note": "Khác 'moral' (đạo đức). Nhấn âm hai: /məˈrɑːl/."
+    },
+    {
+      "word": "illiterate",
+      "pos": "adj",
+      "ipa": "/ɪˈlɪt.ər.ət/",
+      "vi": "Mù chữ, không biết đọc biết viết",
+      "example": "At least 60 per cent of whom are functionally illiterate and innumerate.",
+      "collocation": "functionally illiterate · computer illiterate · illiterate population",
+      "note": "Trái nghĩa: literate. 'Functionally illiterate' = biết chữ nhưng không đủ để dùng trong đời thường."
+    },
+    {
+      "word": "innumerate",
+      "pos": "adj",
+      "ipa": "/ɪˈnjuː.mər.ət/",
+      "vi": "Không biết tính toán",
+      "example": "At least 60 per cent of whom are functionally illiterate and innumerate.",
+      "collocation": "functionally innumerate · largely innumerate",
+      "note": "Trái nghĩa: numerate. Cấu tạo tương tự 'illiterate'."
+    },
+    {
+      "word": "discernible",
+      "pos": "adj",
+      "ipa": "/dɪˈsɜː.nə.bəl/",
+      "vi": "Có thể nhận ra, nhận biết được",
+      "example": "Prison architecture has a clearly discernible effect on behaviour, operational efficiency, interaction and morale.",
+      "collocation": "clearly discernible · no discernible difference · discernible effect",
+      "note": ""
+    },
+    {
+      "word": "blueprint",
+      "pos": "n",
+      "ipa": "/ˈbluː.prɪnt/",
+      "vi": "Bản thiết kế, kế hoạch chi tiết",
+      "example": "The model is not intended as a blueprint but rather a series of principles.",
+      "collocation": "a blueprint for · provide a blueprint · detailed blueprint",
+      "note": "Nghĩa gốc: bản vẽ kỹ thuật. Nghĩa bóng: kế hoạch tổng thể."
+    },
+    {
+      "word": "inmate",
+      "pos": "n",
+      "ipa": "/ˈɪn.meɪt/",
+      "vi": "Tù nhân, người bị giam giữ",
+      "example": "The system groups together prisoners in small communities or 'houses' of between 30 and 40 inmates.",
+      "collocation": "prison inmate · fellow inmate · inmate population",
+      "note": "Cũng dùng cho người trong bệnh viện tâm thần."
+    },
+    {
+      "word": "conducive",
+      "pos": "adj",
+      "ipa": "/kənˈdjuː.sɪv/",
+      "vi": "Thuận lợi, có lợi cho",
+      "example": "Individual cells are replanned to make them less like domestic lavatories and more conducive to learning.",
+      "collocation": "conducive to learning · conducive to growth · conducive environment",
+      "note": "Luôn đi với 'to': conducive to + N/V-ing."
+    },
+    {
+      "word": "mitigate",
+      "pos": "v",
+      "ipa": "/ˈmɪt.ɪ.ɡeɪt/",
+      "vi": "Giảm nhẹ, làm dịu",
+      "example": "Each cell is paired with a neighbouring 'buddy' cell linked by sliding doors to mitigate the risk of self-harm.",
+      "collocation": "mitigate the risk · mitigate the impact · mitigate against",
+      "note": "Từ hay gặp trong IELTS Writing Task 2 khi bàn về giải pháp."
+    },
+    {
+      "word": "autonomous",
+      "pos": "adj",
+      "ipa": "/ɔːˈtɒn.ə.məs/",
+      "vi": "Tự trị, tự chủ",
+      "example": "Houses are semi-autonomous, not just dormitories, with communal, as opposed to centralised, facilities.",
+      "collocation": "semi-autonomous · autonomous region · fully autonomous",
+      "note": "Danh từ: autonomy."
+    },
+    {
+      "word": "conformity",
+      "pos": "n",
+      "ipa": "/kənˈfɔː.mə.ti/",
+      "vi": "Sự tuân thủ, sự phù hợp",
+      "example": "The prisoners are judged not by their degree of conformity, but by the scope of their activities and achievements.",
+      "collocation": "in conformity with · degree of conformity · social conformity",
+      "note": ""
+    },
+    {
+      "word": "accountability",
+      "pos": "n",
+      "ipa": "/əˌkaʊn.təˈbɪl.ə.ti/",
+      "vi": "Trách nhiệm giải trình",
+      "example": "The proposed group size of 30-40 has the potential for social accountability.",
+      "collocation": "social accountability · public accountability · accountability for",
+      "note": "Tính từ: accountable."
+    },
+    {
+      "word": "humane",
+      "pos": "adj",
+      "ipa": "/hjuːˈmeɪn/",
+      "vi": "Nhân đạo, nhân văn",
+      "example": "We have got to accept that prison must be a humane and constructive place.",
+      "collocation": "humane treatment · humane conditions · humane society",
+      "note": "Khác 'human' (con người). Trái nghĩa: inhumane."
+    }
+  ]
+}
