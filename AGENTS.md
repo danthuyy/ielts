@@ -201,6 +201,22 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 - Commit theo Conventional Commits: `feat:`, `fix:`, `docs:`, `content:`,
   `chore:`, `ci:`, `test:`, `style:`.
 
+## Service worker và chuyện "đẩy lên rồi mà web vẫn cũ"
+
+Đăng ký service worker nằm ở `src/components/UpdateBanner.tsx`, **không** dùng
+đoạn tự chèn của vite-plugin-pwa (`injectRegister: null`). Lý do: đoạn tự chèn
+đăng ký đúng một lần lúc `load` rồi thôi, mà trình duyệt chỉ tự kiểm tra service
+worker khi có **điều hướng thật** — app này định tuyến bằng hash nên không bao
+giờ điều hướng. Một tab để mở phục vụ bản cũ nhiều ngày liền.
+
+- `registerType: 'prompt'`, không phải `autoUpdate`. Tự reload giữa lúc đang làm
+  dở một câu là mất phiên học.
+- Component tự gọi `registration.update()` mỗi 30 phút, mỗi lần tab được nhìn
+  lại, và mỗi lần có mạng trở lại.
+- `__BUILD_ID__` (define trong `vite.config.ts`) là mã commit, hiện ở **Cài đặt
+  → Phiên bản**. Đừng bỏ — không có nó thì không cách nào biết đang chạy bản nào
+  ngoài việc mò tìm thay đổi nhìn thấy được.
+
 ## Học mix — chế độ mặc định
 
 `src/features/study/MixSessionScreen.tsx`, lõi ở `src/lib/mastery.ts` và
