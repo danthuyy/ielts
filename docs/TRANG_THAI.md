@@ -73,6 +73,18 @@ mất phiên học.
 Muốn biết mình đang chạy bản nào: **Cài đặt → Phiên bản → Bản dựng** hiện đúng
 mã commit, kèm nút "Kiểm tra bản mới" để hỏi ngay.
 
+Hai chỗ bẫy đã vấp khi kiểm chứng, đừng gỡ:
+
+- **Nút "Tải lại" phải reload vô điều kiện.** Trang chưa từng tải bên dưới một
+  service worker thì không bị nó điều khiển; bản mới lúc đó kích hoạt luôn, nên
+  không có worker nào chờ để gửi `SKIP_WAITING` và cũng không có sự kiện
+  `controllerchange` để đợi — nút gọi đúng API mà chẳng có gì xảy ra. `clientsClaim`
+  thu hẹp khoảng đó lại nhưng không xoá được nó.
+- **GitHub Pages đặt `max-age=600` cho `index.html`.** Deploy xong mà mở lại
+  ngay trong vòng 10 phút thì trình duyệt vẫn có thể lấy HTML cũ từ cache HTTP,
+  trước cả khi service worker kịp xen vào. Đây là 10 phút, không phải mấy ngày —
+  đừng nhầm nó với triệu chứng ở trên.
+
 ## Nếu site trắng hoặc thiếu favicon/sticker
 
 Triệu chứng: mở https://danthuyy.github.io/ielts/ ra trang trắng, `favicon.ico`
