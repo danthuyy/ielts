@@ -79,6 +79,14 @@ export default defineConfig(({ command }) => ({
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,woff2}'],
         cleanupOutdatedCaches: true,
+        // Takes control on the very first visit instead of waiting for the next
+        // page load. Without it the first session runs uncontrolled, and an
+        // update during that session activates immediately with nothing left
+        // waiting — the state where "Tải lại" had nothing to act on. Safe under
+        // `registerType: 'prompt'`: skipWaiting still only happens on the
+        // message the button sends, so a later update never swaps the app out
+        // from under a session in progress.
+        clientsClaim: true,
         // Progress lives in Supabase; a cached response would show stale data
         // after studying on another device.
         runtimeCaching: [

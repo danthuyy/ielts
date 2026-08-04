@@ -45,8 +45,20 @@ export function UpdateBanner() {
     };
   }, [registration]);
 
-  // `true` tells the waiting worker to take over and reloads the page onto it.
-  const reload = useCallback(() => void applyRef.current?.(true), []);
+  const reload = useCallback(() => {
+    const done = () => window.location.reload();
+
+    // Let a waiting worker take over first, so the reload lands on the new
+    // build instead of being served the old one out of the old worker's cache.
+    navigator.serviceWorker.addEventListener('controllerchange', done, { once: true });
+    void applyRef.current?.(false);
+
+    // ...but reload anyway if that never happens. Until a page has been loaded
+    // once *under* a service worker it is uncontrolled, and then an update
+    // activates straight away with nothing left waiting — no message to send,
+    // no controllerchange, and a button that looks broken.
+    setTimeout(done, 1500);
+  }, []);
 
   if (!waiting) return null;
 
