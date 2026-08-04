@@ -21,6 +21,15 @@ export interface HintWord {
 }
 
 export type HintRung =
+  /**
+   * The word, spoken. Plays as soon as it is handed over, and can be replayed.
+   *
+   * First on the ladder because hearing a word is how it gets remembered as a
+   * word rather than as a row of letters — the learner who hears "autonomy" is
+   * being asked to spell something they now recognise, which is a far more
+   * useful exercise than guessing at it from a masked outline.
+   */
+  | { kind: 'audio'; word: string }
   /** Word shape and part of speech — narrows the field, reveals no letters. */
   | { kind: 'shape'; masked: string; length: number; pos: string }
   /** Vietnamese meaning. */
@@ -32,7 +41,24 @@ export type HintRung =
   /** A usage tip from the content. */
   | { kind: 'note'; text: string }
   | { kind: 'ipa'; text: string }
-  | { kind: 'letters'; masked: string };
+  | { kind: 'letters'; masked: string }
+  /**
+   * Real speakers using the word, on YouGlish. Last, and deliberately so: it
+   * leaves the app, so it is what is left once everything in the app has been
+   * offered.
+   */
+  | { kind: 'youglish'; word: string };
+
+/**
+ * The spoken rung, unless the quiz just played the word anyway.
+ *
+ * A listening quiz opens by reading the word out and offers a replay key, so
+ * handing it over again as a hint would spend a rung on something the learner
+ * already has.
+ */
+function audioRung(word: HintWord, variant: 'type' | 'listen'): HintRung[] {
+  return variant === 'listen' ? [] : [{ kind: 'audio', word: word.word }];
+}
 
 /** Counts only maskable characters — spaces and hyphens are never hidden. */
 function lettersIn(word: string): number {
@@ -79,8 +105,10 @@ export function buildLadder(
 
   if (style === 'meaning') {
     return [
+      ...audioRung(word, variant),
       { kind: 'meaning', text: `${word.vi} (${word.pos})` },
       { kind: 'ipa', text: word.ipa },
+      { kind: 'youglish', word: word.word },
     ];
   }
 
@@ -100,6 +128,7 @@ export function buildLadder(
   }
 
   const rungs: HintRung[] = [
+    ...audioRung(word, variant),
     {
       kind: 'shape',
       masked: maskWithReveal(word.word, 0),
@@ -137,6 +166,10 @@ export function buildLadder(
     rungs.push({ kind: 'letters', masked: maskWithReveal(word.word, reveal) });
     previous = reveal;
   }
+
+  // Last, because it leaves the app: everything the app itself can offer comes
+  // first.
+  rungs.push({ kind: 'youglish', word: word.word });
 
   return rungs;
 }

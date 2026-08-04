@@ -30,7 +30,7 @@ import { getLessonProgress, getSrsState, recordActivity, recordAnswer } from '@/
 import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { processAnswer } from '@/lib/srs';
 import { resultLine, resultSticker } from '@/lib/stickers';
-import { canSpeak, speakSlow } from '@/lib/tts';
+import { canSpeak, speak, speakSlow } from '@/lib/tts';
 import { buildTiles, isAssembled } from '@/lib/wordbank';
 import { isAnswerCorrect, shuffle } from '@/lib/utils';
 import type { StudyWord } from '@/content/schema';
@@ -172,8 +172,13 @@ function MixSession({ words, statuses, backTo, onRetry }: SessionProps) {
         segments: !correct && typingRung ? compareAnswer(given, word.word) : null,
       });
       if (!correct) setMisses((count) => count + 1);
+
+      // Every word the learner meets gets said out loud, right vs wrong alike.
+      // A word met a dozen times in a session and never heard is a dozen
+      // chances to memorise a spelling without ever learning the word.
+      if (settings.autoSpeak && !speakingRung) speak(word.word);
     },
-    [word, typingRung],
+    [word, typingRung, settings.autoSpeak, speakingRung],
   );
 
   const advance = useCallback(async () => {

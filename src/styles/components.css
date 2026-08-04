@@ -1907,3 +1907,17 @@ a.word-row__main:hover .word-row__word {
 .result__actions .btn {
   flex: 1 1 9rem;
 }
+
+/* The spoken and YouGlish rungs carry controls rather than text. */
+.hint-rung__speak {
+  min-height: 2.5rem;
+  padding: var(--sp-2) var(--sp-4);
+  font-size: var(--text-sm);
+}
+
+.hint-rung__youglish {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2);
+}

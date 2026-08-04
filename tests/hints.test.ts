@@ -77,21 +77,39 @@ describe('inflectionPattern', () => {
 });
 
 describe('buildLadder', () => {
-  it('gives context before letters, so spelling is not what gets rehearsed', () => {
+  it('gives sound and context before letters, so spelling is not what gets rehearsed', () => {
     const order = kinds(WORD, 'type');
     const firstLetters = order.indexOf('letters');
-    expect(order[0]).toBe('shape');
+    expect(order[0]).toBe('audio');
     expect(order.indexOf('collocation')).toBeLessThan(firstLetters);
     expect(order.indexOf('example')).toBeLessThan(firstLetters);
     expect(firstLetters).toBeGreaterThan(2);
   });
 
-  it('reveals no letters on the first rung', () => {
+  it('opens by saying the word, which is the one hint that teaches it as a word', () => {
     const first = buildLadder(WORD, 'type', 'progressive')[0];
-    expect(first?.kind).toBe('shape');
-    if (first?.kind === 'shape') {
-      expect(first.masked).not.toMatch(/[a-z]/);
-      expect(first.length).toBe(4);
+    expect(first?.kind).toBe('audio');
+    if (first?.kind === 'audio') expect(first.word).toBe('vast');
+  });
+
+  it('does not spend a rung replaying what the listening quiz already played', () => {
+    expect(kinds(WORD, 'listen')).not.toContain('audio');
+  });
+
+  it('reveals no letters on the rung that describes the shape', () => {
+    const shape = buildLadder(WORD, 'type', 'progressive').find((rung) => rung.kind === 'shape');
+    expect(shape?.kind).toBe('shape');
+    if (shape?.kind === 'shape') {
+      expect(shape.masked).not.toMatch(/[a-z]/);
+      expect(shape.length).toBe(4);
+    }
+  });
+
+  it('leaves the app only once everything in it has been offered', () => {
+    for (const variant of ['type', 'listen'] as const) {
+      const order = kinds(WORD, variant);
+      expect(order.at(-1)).toBe('youglish');
+      expect(order.filter((kind) => kind === 'youglish')).toHaveLength(1);
     }
   });
 

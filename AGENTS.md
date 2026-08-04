@@ -271,13 +271,16 @@ Những chỗ đừng "sửa" nếu chưa biết lý do:
   **nghĩa và ngữ cảnh trước, chữ cái sau** (`buildLadder` trong
   `src/lib/hints.ts`):
 
-  1. Dạng từ: số ký tự + từ loại, **không lộ chữ cái nào**
-  2. Nghĩa tiếng Việt — chỉ ở chế độ nghe viết, vì chế độ điền từ đã hiện sẵn
-  3. Cụm hay đi kèm, **đã che chính từ đó**
-  4. Câu ví dụ, **đã che chính từ đó**
-  5. Lưu ý (nếu nội dung có)
-  6. Phiên âm — chỉ ở chế độ điền từ, vì nghe viết đã nghe rồi
-  7. Chữ cái, mở dần, và không bao giờ mở hết
+  1. **Nghe từ** — phát ngay khi mở nấc, có nút Nghe lại. Chỉ ở chế độ điền từ;
+     nghe viết đã đọc sẵn rồi nên nấc này sẽ phí
+  2. Dạng từ: số ký tự + từ loại, **không lộ chữ cái nào**
+  3. Nghĩa tiếng Việt — chỉ ở chế độ nghe viết, vì chế độ điền từ đã hiện sẵn
+  4. Cụm hay đi kèm, **đã che chính từ đó**
+  5. Câu ví dụ, **đã che chính từ đó**
+  6. Lưu ý (nếu nội dung có)
+  7. Phiên âm — chỉ ở chế độ điền từ, vì nghe viết đã nghe rồi
+  8. Chữ cái, mở dần, và không bao giờ mở hết
+  9. **Video thật (YouGlish)** — cuối cùng, vì nó đưa người học rời khỏi app
 
   Nấc chữ cái còn phải **hơn phần người học đã gõ đúng**. `buildLadder` nhận
   tham số `known` — số ký tự đầu dài nhất họ từng gõ đúng trong lượt đó — và bỏ
@@ -288,6 +291,11 @@ Những chỗ đừng "sửa" nếu chưa biết lý do:
   Thứ tự này là cố ý. Mở chữ cái trước là dạy nhớ mặt chữ; đưa câu ví dụ có chỗ
   trống là buộc người học truy xuất từ theo nghĩa — đúng như lúc đi thi. Nếu
   thêm nấc mới, giữ nguyên nguyên tắc đó.
+
+  Nấc nghe đứng đầu chứ không nằm cùng nhóm chữ cái, và điều đó không mâu thuẫn:
+  nghe được từ rồi thì việc còn lại là đánh vần một thứ mình đã nhận ra, khác hẳn
+  với đoán mò từ một dãy gạch dưới. Nó dạy từ như một **từ** chứ không phải một
+  dãy ký tự.
 
 - **Câu hỏi chỉ được hiện nghĩa và từ loại.** Không collocation, không câu ví
   dụ, không chữ cái đầu, không số ký tự — kể cả trong placeholder của ô nhập.
