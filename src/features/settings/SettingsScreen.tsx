@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { routes } from '@/app/routes';
@@ -68,6 +68,29 @@ export function SettingsScreen() {
   const { settings, update } = useSettings();
   const sync = useSyncState();
   const [confirmingReset, setConfirmingReset] = useState(false);
+  const [updateNote, setUpdateNote] = useState('');
+
+  /**
+   * Asks the service worker to look for a new build now.
+   *
+   * The browser only re-checks on navigation, and this app routes on the hash,
+   * so a tab left open can serve an old build indefinitely. UpdateBanner polls
+   * in the background; this is the "no, check right now" button.
+   */
+  const checkNow = useCallback(async () => {
+    setUpdateNote('Đang kiểm tra...');
+    const registration = await navigator.serviceWorker?.getRegistration();
+    if (!registration) {
+      setUpdateNote('Không có service worker — bản đang chạy luôn là mới nhất.');
+      return;
+    }
+    await registration.update();
+    setUpdateNote(
+      registration.waiting
+        ? 'Đã có bản mới, bấm "Tải lại" ở thông báo phía dưới.'
+        : 'Đang dùng bản mới nhất.',
+    );
+  }, []);
   const fileInput = useRef<HTMLInputElement>(null);
   const [backupNote, setBackupNote] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null);
   const [pendingRestore, setPendingRestore] = useState<BackupFile | null>(null);
@@ -460,6 +483,22 @@ export function SettingsScreen() {
       >
         Xoá tất cả tiến trình
       </button>
+
+      <section className="section" style={{ marginBottom: 'var(--sp-6)' }}>
+        <h2 className="section__label">Phiên bản</h2>
+        <div className="setting-row">
+          {/* The commit, not the app version: the version number does not change
+              every deploy, so it cannot answer "am I looking at the build I just
+              pushed". */}
+          <span className="setting-row__title">
+            Bản dựng <code className="build-id">{__BUILD_ID__}</code>
+          </span>
+          <button className="btn btn--secondary" onClick={() => void checkNow()}>
+            Kiểm tra bản mới
+          </button>
+        </div>
+        {updateNote && <p className="hint-text">{updateNote}</p>}
+      </section>
 
       <p className="app-meta">
         IELTS Vocab Trainer v{APP_VERSION}

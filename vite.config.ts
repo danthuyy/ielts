@@ -1,4 +1,5 @@
 /// <reference types="vitest/config" />
+import { execSync } from 'node:child_process';
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -8,8 +9,28 @@ import { VitePWA } from 'vite-plugin-pwa';
 // assets must be requested from /ielts/. Dev serves from the root.
 const GITHUB_PAGES_BASE = '/ielts/';
 
+/**
+ * The commit this build came from, shown in Settings.
+ *
+ * Without it there is no way to answer "is the thing I just pushed actually
+ * what I am looking at" other than hunting for a visible change, which is
+ * exactly the question a service worker makes hard.
+ */
+function buildId(): string {
+  const fromCi = process.env.GITHUB_SHA;
+  if (fromCi) return fromCi.slice(0, 7);
+  try {
+    return execSync('git rev-parse --short HEAD', { encoding: 'utf8' }).trim();
+  } catch {
+    return 'dev';
+  }
+}
+
 export default defineConfig(({ command }) => ({
   base: command === 'build' ? GITHUB_PAGES_BASE : '/',
+  define: {
+    __BUILD_ID__: JSON.stringify(buildId()),
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -18,7 +39,15 @@ export default defineConfig(({ command }) => ({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // Prompted, not automatic: an auto-reload that lands mid-question throws
+      // away the session. The banner in UpdateBanner.tsx lets the learner
+      // finish first.
+      registerType: 'prompt',
+      // Registered from the app instead, so it can also keep checking for a new
+      // version. The injected snippet registers once on load and never looks
+      // again — and with hash routing the browser never navigates, so a tab
+      // left open could serve the old build for days.
+      injectRegister: null,
       includeAssets: ['icons/icon-192.png', 'icons/icon-512.png'],
       manifest: {
         name: 'IELTS Vocab Trainer',

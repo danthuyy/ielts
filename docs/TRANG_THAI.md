@@ -50,6 +50,29 @@ Ghi lại vì nếu không biết lý do thì rất dễ "sửa" thành sai:
 - **`.env.local` bắt buộc khi dev.** Không có nó thì `npm run dev` ghi thẳng vào
   hàng Supabase của bản production. Chuyện này đã xảy ra một lần rồi.
 
+## Nếu đẩy code lên mà mở web vẫn thấy bản cũ
+
+Không phải cache của GitHub — HTTP header chỉ `max-age=600`, tức 10 phút. Thủ
+phạm là **service worker**.
+
+Bản cũ đăng ký service worker đúng một lần lúc trang tải xong rồi thôi:
+
+```js
+navigator.serviceWorker.register('/ielts/sw.js', { scope: '/ielts/' });
+```
+
+Trình duyệt chỉ tự kiểm tra service worker khi có **điều hướng thật**. App này
+định tuyến bằng hash nên bấm quanh app không hề điều hướng — một tab để mở có
+thể phục vụ bản cũ nhiều ngày liền, đúng như triệu chứng.
+
+Giờ `src/components/UpdateBanner.tsx` tự đăng ký và **chủ động hỏi lại**: mỗi 30
+phút, mỗi lần quay lại tab, và mỗi lần có mạng trở lại. Có bản mới thì hiện dải
+thông báo kèm nút Tải lại — không tự reload, vì reload giữa lúc đang làm bài là
+mất phiên học.
+
+Muốn biết mình đang chạy bản nào: **Cài đặt → Phiên bản → Bản dựng** hiện đúng
+mã commit, kèm nút "Kiểm tra bản mới" để hỏi ngay.
+
 ## Nếu site trắng hoặc thiếu favicon/sticker
 
 Triệu chứng: mở https://danthuyy.github.io/ielts/ ra trang trắng, `favicon.ico`

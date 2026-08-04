@@ -7,6 +7,7 @@ import './styles/base.css';
 import './styles/components.css';
 import './styles/screens.css';
 
+import { UpdateBanner } from './components/UpdateBanner';
 import { router } from './app/routes';
 import { redirectLegacyHash } from './app/legacyHash';
 import { initProgress } from './lib/progress';
@@ -49,6 +50,9 @@ async function bootstrap(): Promise<void> {
 
   root.render(
     <StrictMode>
+      {/* Outside the router: a new build should be announced on a study screen
+          too, not only on the tabbed ones. */}
+      <UpdateBanner />
       <RouterProvider router={router} />
     </StrictMode>,
   );
