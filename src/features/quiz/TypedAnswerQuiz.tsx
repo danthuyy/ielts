@@ -29,13 +29,15 @@ interface Props {
   variant: Variant;
   words: readonly StudyWord[];
   backTo: string;
+  /** Starts the same session again from the result screen. */
+  onRetry?: () => void;
 }
 
 /**
  * "Điền từ" and "Nghe viết" differ only in what the prompt shows — the meaning
  * or the audio. Everything else is identical, so they share one implementation.
  */
-export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
+export function TypedAnswerQuiz({ variant, words, backTo, onRetry }: Props) {
   const navigate = useNavigate();
   const { settings } = useSettings();
 
@@ -224,6 +226,7 @@ export function TypedAnswerQuiz({ variant, words, backTo }: Props) {
         message={resultLine(queue.firstTry, queue.total)}
         sound={queue.firstTry / Math.max(1, queue.total) >= 0.7 ? 'perfect' : 'poor'}
         continueTo={backTo}
+        {...(onRetry ? { onRetry } : {})}
       />
     );
   }

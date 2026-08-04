@@ -3,6 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 
 import { ALL_STUDY_WORDS, getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { StudyHeader } from '@/components/StudyHeader';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
@@ -30,6 +31,10 @@ function buildOptions(target: StudyWord): StudyWord[] {
 }
 
 export function QuizChoiceScreen() {
+  return <Restartable>{(restart) => <ChoiceSession onRetry={restart} />}</Restartable>;
+}
+
+function ChoiceSession({ onRetry }: { onRetry: () => void }) {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigate = useNavigate();
   const { settings } = useSettings();
@@ -127,6 +132,7 @@ export function QuizChoiceScreen() {
         message={resultLine(queue.firstTry, queue.total)}
         sound={queue.firstTry / Math.max(1, queue.total) >= 0.7 ? 'perfect' : 'poor'}
         continueTo={backTo}
+        onRetry={onRetry}
       />
     );
   }

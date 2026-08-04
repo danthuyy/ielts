@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import { ALL_STUDY_WORDS, getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { HintBar } from '@/components/HintBar';
 import { ProgressBar } from '@/components/ProgressBar';
 import { ResultScreen } from '@/components/ResultScreen';
@@ -53,6 +54,10 @@ function buildQuestions(pool: readonly StudyWord[]): Question[] {
 }
 
 export function TestScreen() {
+  return <Restartable>{(restart) => <TestSession onRetry={restart} />}</Restartable>;
+}
+
+function TestSession({ onRetry }: { onRetry: () => void }) {
   const { lessonId } = useParams<{ lessonId?: string }>();
   const navigate = useNavigate();
   const lesson = getLesson(lessonId);
@@ -191,6 +196,8 @@ export function TestScreen() {
         sound={scorePercent >= 70 ? 'perfect' : 'poor'}
         continueTo={backTo}
         continueLabel="Kết thúc"
+        onRetry={onRetry}
+        retryLabel="Làm lại"
       >
         {attempts.length > 0 && (
           <section className="result__review">

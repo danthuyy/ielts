@@ -17,6 +17,15 @@ interface Props {
   sound?: Sfx;
   continueTo: string;
   continueLabel?: string;
+  /**
+   * Starts the same session over without leaving the screen.
+   *
+   * A poor score is exactly the moment someone wants another go, and sending
+   * them back to the lesson page to find the button again is enough friction to
+   * end the study session instead.
+   */
+  onRetry?: () => void;
+  retryLabel?: string;
   /** Extra content between the summary and the continue button. */
   children?: ReactNode;
 }
@@ -32,6 +41,8 @@ export function ResultScreen({
   message,
   continueTo,
   continueLabel = 'Hoàn thành',
+  onRetry,
+  retryLabel = 'Học lại',
   children,
 }: Props) {
   const navigate = useNavigate();
@@ -42,7 +53,8 @@ export function ResultScreen({
     if (sound) playSfx(sound);
   }, [sound]);
 
-  useKeyboard({ Enter: finish, Escape: finish });
+  // Enter follows the focused button, which is the retry when there is one.
+  useKeyboard({ Enter: onRetry ?? finish, Escape: finish });
 
   return (
     <div className="result">
@@ -76,9 +88,22 @@ export function ResultScreen({
 
       {children}
 
-      <button className="btn btn--primary btn--lg" onClick={finish} autoFocus>
-        {continueLabel}
-      </button>
+      <div className="result__actions">
+        {onRetry && (
+          <button className="btn btn--primary btn--lg" onClick={onRetry} autoFocus>
+            🔁 {retryLabel}
+          </button>
+        )}
+        {/* Leaving is the secondary action when a retry is on offer: after a
+            rough score, going again is the more likely intent. */}
+        <button
+          className={`btn btn--lg ${onRetry ? 'btn--secondary' : 'btn--primary'}`}
+          onClick={finish}
+          autoFocus={!onRetry}
+        >
+          {continueLabel}
+        </button>
+      </div>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 
 import { getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { ProgressBar } from '@/components/ProgressBar';
 import { ResultScreen } from '@/components/ResultScreen';
 import { useKeyboard } from '@/hooks/useKeyboard';
@@ -21,6 +22,10 @@ const WRONG_DELAY_MS = 500;
 type Side = 'en' | 'vi';
 
 export function QuizMatchScreen() {
+  return <Restartable>{(restart) => <MatchSession onRetry={restart} />}</Restartable>;
+}
+
+function MatchSession({ onRetry }: { onRetry: () => void }) {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigate = useNavigate();
   const lesson = getLesson(lessonId);
@@ -160,6 +165,7 @@ export function QuizMatchScreen() {
         sound={misses <= 2 ? 'perfect' : 'poor'}
         continueTo={backTo}
         continueLabel="Tiếp tục"
+        onRetry={onRetry}
       />
     );
   }

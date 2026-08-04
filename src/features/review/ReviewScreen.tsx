@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { getStudyWord } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { EmptyState, LoadingScreen } from '@/components/ScreenState';
 import { FlashcardSession } from '@/features/study/FlashcardSession';
 import { useSessionWords } from '@/hooks/useSessionWords';
@@ -57,11 +58,16 @@ export function ReviewScreen() {
   }
 
   return (
-    <FlashcardSession
-      words={words}
-      backTo={routes.home()}
-      finishedMessage={`Bạn đã ôn xong ${queue.length} từ đến hạn.`}
-    />
+    <Restartable>
+      {(restart) => (
+        <FlashcardSession
+          words={words}
+          backTo={routes.home()}
+          finishedMessage={`Bạn đã ôn xong ${queue.length} từ đến hạn.`}
+          onRetry={restart}
+        />
+      )}
+    </Restartable>
   );
 }
 

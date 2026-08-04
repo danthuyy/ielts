@@ -2,6 +2,7 @@ import { Navigate, useParams } from 'react-router-dom';
 
 import { getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { TypedAnswerQuiz } from './TypedAnswerQuiz';
 
 export function QuizTypeScreen() {
@@ -11,10 +12,15 @@ export function QuizTypeScreen() {
   if (!lesson) return <Navigate to={routes.lessons()} replace />;
 
   return (
-    <TypedAnswerQuiz
-      variant="type"
-      words={studyWordsOf(lesson)}
-      backTo={routes.lesson(lesson.id)}
-    />
+    <Restartable>
+      {(restart) => (
+        <TypedAnswerQuiz
+          variant="type"
+          words={studyWordsOf(lesson)}
+          backTo={routes.lesson(lesson.id)}
+          onRetry={restart}
+        />
+      )}
+    </Restartable>
   );
 }

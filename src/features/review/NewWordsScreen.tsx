@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { EmptyState, LoadingScreen } from '@/components/ScreenState';
 import { getStudyWord } from '@/content/lessons';
 import { FlashcardSession } from '@/features/study/FlashcardSession';
@@ -54,10 +55,15 @@ export function NewWordsScreen() {
   }
 
   return (
-    <FlashcardSession
-      words={queue}
-      backTo={routes.home()}
-      finishedMessage={`Bạn đã học ${queue.length} từ mới. Chúng sẽ quay lại theo lịch ôn.`}
-    />
+    <Restartable>
+      {(restart) => (
+        <FlashcardSession
+          words={queue}
+          backTo={routes.home()}
+          finishedMessage={`Bạn đã học ${queue.length} từ mới. Chúng sẽ quay lại theo lịch ôn.`}
+          onRetry={restart}
+        />
+      )}
+    </Restartable>
   );
 }

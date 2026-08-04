@@ -4,6 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 
 import { ALL_STUDY_WORDS, getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { AnswerDiff } from '@/components/AnswerDiff';
 import { HintBar } from '@/components/HintBar';
 import { LoadingScreen } from '@/components/ScreenState';
@@ -53,12 +54,16 @@ export function MixSessionScreen() {
   // Keyed on the lesson so switching lessons starts a genuinely new session
   // rather than reusing the queue with different words.
   return (
-    <MixSession
-      key={lesson.id}
-      words={studyWordsOf(lesson)}
-      statuses={statuses}
-      backTo={routes.lesson(lesson.id)}
-    />
+    <Restartable key={lesson.id}>
+      {(restart) => (
+        <MixSession
+          words={studyWordsOf(lesson)}
+          statuses={statuses}
+          backTo={routes.lesson(lesson.id)}
+          onRetry={restart}
+        />
+      )}
+    </Restartable>
   );
 }
 
@@ -66,9 +71,10 @@ interface SessionProps {
   words: readonly StudyWord[];
   statuses: Map<string, WordStatus>;
   backTo: string;
+  onRetry: () => void;
 }
 
-function MixSession({ words, statuses, backTo }: SessionProps) {
+function MixSession({ words, statuses, backTo, onRetry }: SessionProps) {
   const navigate = useNavigate();
   const { settings } = useSettings();
 
@@ -245,6 +251,7 @@ function MixSession({ words, statuses, backTo }: SessionProps) {
         sound={clean * 2 >= queue.total ? 'perfect' : 'poor'}
         continueTo={backTo}
         continueLabel="Xong"
+        onRetry={onRetry}
       />
     );
   }

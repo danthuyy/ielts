@@ -2,6 +2,7 @@ import { Navigate, useParams } from 'react-router-dom';
 
 import { getLesson, studyWordsOf } from '@/content/lessons';
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { useSessionWords } from '@/hooks/useSessionWords';
 import { FlashcardSession } from './FlashcardSession';
 
@@ -14,7 +15,13 @@ export function FlashcardScreen() {
 
   if (!lesson) return <Navigate to={routes.lessons()} replace />;
 
-  return <FlashcardSession words={words} backTo={routes.lesson(lesson.id)} />;
+  return (
+    <Restartable>
+      {(restart) => (
+        <FlashcardSession words={words} backTo={routes.lesson(lesson.id)} onRetry={restart} />
+      )}
+    </Restartable>
+  );
 }
 
 const EMPTY: never[] = [];

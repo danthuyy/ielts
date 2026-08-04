@@ -29,6 +29,8 @@ interface Props {
   backTo: string;
   /** Shown on the results screen; review sessions say something different. */
   finishedMessage?: string;
+  /** Starts the same session again from the result screen. */
+  onRetry?: () => void;
 }
 
 const GRADES: { quality: Quality; label: string; hint: string; modifier: string }[] = [
@@ -38,7 +40,7 @@ const GRADES: { quality: Quality; label: string; hint: string; modifier: string 
   { quality: QUALITY.easy, label: 'Dễ', hint: '4', modifier: 'easy' },
 ];
 
-export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
+export function FlashcardSession({ words, backTo, finishedMessage, onRetry }: Props) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const navigate = useNavigate();
@@ -180,6 +182,7 @@ export function FlashcardSession({ words, backTo, finishedMessage }: Props) {
         message={finishedMessage ?? `Bạn đã học ${words.length} từ.`}
         continueTo={backTo}
         continueLabel="Xong"
+        {...(onRetry ? { onRetry } : {})}
       >
         {/* Mis-tapping the last card lands here, which is exactly where undo is
             hardest to find otherwise. */}

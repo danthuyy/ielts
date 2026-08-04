@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { routes } from '@/app/routes';
+import { Restartable } from '@/components/Restartable';
 import { EmptyState, LoadingScreen } from '@/components/ScreenState';
 import { getStudyWord } from '@/content/lessons';
 import { FlashcardSession } from '@/features/study/FlashcardSession';
@@ -61,10 +62,15 @@ export function WeakWordsScreen() {
   }
 
   return (
-    <FlashcardSession
-      words={queue}
-      backTo={routes.stats()}
-      finishedMessage={`Bạn đã luyện lại ${queue.length} từ hay sai.`}
-    />
+    <Restartable>
+      {(restart) => (
+        <FlashcardSession
+          words={queue}
+          backTo={routes.stats()}
+          finishedMessage={`Bạn đã luyện lại ${queue.length} từ hay sai.`}
+          onRetry={restart}
+        />
+      )}
+    </Restartable>
   );
 }

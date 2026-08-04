@@ -1892,3 +1892,18 @@ a.word-row__main:hover .word-row__word {
   font-size: var(--text-sm);
   color: var(--text-dim);
 }
+
+/* Buttons at the foot of a result screen. Wraps rather than shrinks: two
+   full-size targets side by side do not fit a narrow phone. */
+.result__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3);
+  width: 100%;
+  max-width: 22rem;
+}
+
+.result__actions .btn {
+  flex: 1 1 9rem;
+}
