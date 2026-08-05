@@ -1,0 +1,234 @@
+{
+  "id": "learning_to_walk",
+  "title": "Learning To Walk",
+  "description": "Bài đọc về tác hại của bề mặt phẳng đối với sức khoẻ và các giải pháp",
+  "date": "2026-08-05",
+  "tags": ["health", "society", "environment"],
+  "words": [
+    {
+      "word": "dweller",
+      "pos": "n",
+      "ipa": "/ˈdwel.ər/",
+      "vi": "Cư dân, người sống ở",
+      "example": "These days the feet of a typical city dweller rarely encounter terrain any more uneven than a crack in the pavement.",
+      "collocation": "city dweller · urban dweller · cave dweller",
+      "note": ""
+    },
+    {
+      "word": "encounter",
+      "pos": "v",
+      "ipa": "/ɪnˈkaʊn.tər/",
+      "vi": "Gặp phải, chạm trán",
+      "example": "These days the feet of a typical city dweller rarely encounter terrain any more uneven than a crack in the pavement.",
+      "collocation": "encounter problems · encounter difficulties · encounter resistance",
+      "note": "Cũng dùng như danh từ: 'a chance encounter' (cuộc gặp tình cờ)."
+    },
+    {
+      "word": "terrain",
+      "pos": "n",
+      "ipa": "/təˈreɪn/",
+      "vi": "Địa hình",
+      "example": "Factory workers were asked to try standing on a variable terrain floor.",
+      "collocation": "rough terrain · uneven terrain · difficult terrain",
+      "note": ""
+    },
+    {
+      "word": "chronic",
+      "pos": "adj",
+      "ipa": "/ˈkrɒn.ɪk/",
+      "vi": "Mãn tính, kinh niên",
+      "example": "By flattening our urban environment we have put ourselves at risk of a surprising number of chronic illnesses and disabilities.",
+      "collocation": "chronic illness · chronic pain · chronic disease",
+      "note": "Trái nghĩa: acute (cấp tính). Rất hay gặp trong chủ đề Health."
+    },
+    {
+      "word": "detrimental",
+      "pos": "adj",
+      "ipa": "/ˌdet.rɪˈmen.təl/",
+      "vi": "Có hại, bất lợi",
+      "example": "Research into the idea that flat floors could be detrimental to our health was pioneered back in the late 1960s.",
+      "collocation": "detrimental to health · detrimental effect · detrimental impact",
+      "note": "Trang trọng hơn 'harmful'. Luôn đi với 'to': detrimental to + N."
+    },
+    {
+      "word": "pioneer",
+      "pos": "v",
+      "ipa": "/ˌpaɪ.əˈnɪər/",
+      "vi": "Tiên phong, đi đầu",
+      "example": "Research into the idea that flat floors could be detrimental to our health was pioneered back in the late 1960s.",
+      "collocation": "pioneer research · pioneer a technique · pioneer the use of",
+      "note": "Cũng dùng như danh từ: 'a pioneer in the field' (người tiên phong trong lĩnh vực)."
+    },
+    {
+      "word": "epidemic",
+      "pos": "n",
+      "ipa": "/ˌep.ɪˈdem.ɪk/",
+      "vi": "Dịch bệnh, sự lan tràn",
+      "example": "Brantingham and Beekman were concerned with the growing epidemic of high blood pressure.",
+      "collocation": "growing epidemic · obesity epidemic · epidemic of",
+      "note": "Nghĩa bóng: sự lan tràn (không chỉ bệnh). So sánh: pandemic (đại dịch toàn cầu)."
+    },
+    {
+      "word": "uniformity",
+      "pos": "n",
+      "ipa": "/ˌjuː.nɪˈfɔː.mə.ti/",
+      "vi": "Sự đồng đều, đồng nhất",
+      "example": "They reckoned the problems might be linked to the uniformity of the surfaces that we tend to stand and walk on.",
+      "collocation": "lack of uniformity · uniformity of · achieve uniformity",
+      "note": "Tính từ: uniform."
+    },
+    {
+      "word": "conducive",
+      "pos": "adj",
+      "ipa": "/kənˈdjuː.sɪv/",
+      "vi": "Thuận lợi, có lợi cho",
+      "example": "These surfaces are likely to be far more conducive to chronic stress syndromes than natural surfaces.",
+      "collocation": "conducive to learning · conducive to growth · conducive environment",
+      "note": "Luôn đi với 'to': conducive to + N/V-ing."
+    },
+    {
+      "word": "syndrome",
+      "pos": "n",
+      "ipa": "/ˈsɪn.drəʊm/",
+      "vi": "Hội chứng",
+      "example": "These surfaces are likely to be far more conducive to chronic stress syndromes than natural surfaces.",
+      "collocation": "chronic syndrome · stress syndrome · syndrome of",
+      "note": ""
+    },
+    {
+      "word": "flexibility",
+      "pos": "n",
+      "ipa": "/ˌflek.sɪˈbɪl.ə.ti/",
+      "vi": "Sự linh hoạt, mềm dẻo",
+      "example": "Modern lifestyles waste all this potential flexibility.",
+      "collocation": "greater flexibility · lack of flexibility · offer flexibility",
+      "note": "Tính từ: flexible. Hay dùng trong cả nghĩa đen (cơ thể) và nghĩa bóng (tư duy)."
+    },
+    {
+      "word": "rectify",
+      "pos": "v",
+      "ipa": "/ˈrek.tɪ.faɪ/",
+      "vi": "Sửa chữa, khắc phục",
+      "example": "Brantingham and Beekman became convinced that the damage could be rectified by making people wobble.",
+      "collocation": "rectify the situation · rectify a mistake · rectify a problem",
+      "note": "Trang trọng hơn 'fix' hoặc 'correct'."
+    },
+    {
+      "word": "deviate",
+      "pos": "v",
+      "ipa": "/ˈdiː.vi.eɪt/",
+      "vi": "Lệch, sai lệch",
+      "example": "This modest irregularity allowed the soles of the volunteers' feet to deviate slightly from the horizontal.",
+      "collocation": "deviate from the norm · deviate from the plan · deviate significantly",
+      "note": "Danh từ: deviation."
+    },
+    {
+      "word": "modest",
+      "pos": "adj",
+      "ipa": "/ˈmɒd.ɪst/",
+      "vi": "Khiêm tốn, nhỏ",
+      "example": "This modest irregularity allowed the soles of the volunteers' feet to deviate slightly from the horizontal.",
+      "collocation": "modest improvement · modest income · modest amount",
+      "note": "Trong ngữ cảnh học thuật thường mang nghĩa 'nhỏ, không đáng kể'."
+    },
+    {
+      "word": "intervention",
+      "pos": "n",
+      "ipa": "/ˌɪn.təˈven.ʃən/",
+      "vi": "Sự can thiệp",
+      "example": "This simple intervention made a huge difference, within a few weeks.",
+      "collocation": "government intervention · medical intervention · early intervention",
+      "note": "Động từ: intervene. Rất hay gặp trong IELTS Writing Task 2."
+    },
+    {
+      "word": "activate",
+      "pos": "v",
+      "ipa": "/ˈæk.tɪ.veɪt/",
+      "vi": "Kích hoạt",
+      "example": "Even if people were wobbling slightly, it activated a host of muscles in their legs.",
+      "collocation": "activate muscles · activate a system · activate a response",
+      "note": ""
+    },
+    {
+      "word": "circulation",
+      "pos": "n",
+      "ipa": "/ˌsɜː.kjəˈleɪ.ʃən/",
+      "vi": "Sự tuần hoàn, sự lưu thông",
+      "example": "The muscle action prevented the pooling of blood, reducing the stress on the heart and circulation.",
+      "collocation": "blood circulation · poor circulation · improve circulation",
+      "note": "Cũng dùng cho báo chí: 'newspaper circulation' (số phát hành)."
+    },
+    {
+      "word": "replicate",
+      "pos": "v",
+      "ipa": "/ˈrep.lɪ.keɪt/",
+      "vi": "Tái tạo, mô phỏng lại",
+      "example": "Fisher and colleagues designed a mat intended to replicate the effect of walking on cobblestones.",
+      "collocation": "replicate the results · replicate an experiment · difficult to replicate",
+      "note": "Hay dùng trong ngữ cảnh nghiên cứu khoa học."
+    },
+    {
+      "word": "mobility",
+      "pos": "n",
+      "ipa": "/məʊˈbɪl.ə.ti/",
+      "vi": "Khả năng di chuyển, tính cơ động",
+      "example": "After 16 weeks, these people showed marked improvements in mobility.",
+      "collocation": "social mobility · improve mobility · reduced mobility",
+      "note": "Tính từ: mobile."
+    },
+    {
+      "word": "advocate",
+      "pos": "v",
+      "ipa": "/ˈæd.və.keɪt/",
+      "vi": "Ủng hộ, vận động cho",
+      "example": "Reflexologists have long advocated walking on textured surfaces to stimulate so-called 'acupoints' on the soles of the feet.",
+      "collocation": "advocate for · strongly advocate · advocate a policy",
+      "note": "Danh từ: advocate /ˈæd.və.kət/ (người ủng hộ) — khác cách đọc."
+    },
+    {
+      "word": "stimulate",
+      "pos": "v",
+      "ipa": "/ˈstɪm.jə.leɪt/",
+      "vi": "Kích thích, thúc đẩy",
+      "example": "Reflexologists have long advocated walking on textured surfaces to stimulate so-called 'acupoints' on the soles of the feet.",
+      "collocation": "stimulate growth · stimulate the economy · stimulate interest",
+      "note": "Danh từ: stimulation. Tính từ: stimulating."
+    },
+    {
+      "word": "amenity",
+      "pos": "n",
+      "ipa": "/əˈmiː.nə.ti/",
+      "vi": "Tiện ích, tiện nghi",
+      "example": "In China, spas, apartment blocks and even factories promote their cobblestone paths as healthful amenities.",
+      "collocation": "local amenities · public amenities · basic amenities",
+      "note": "Thường dùng ở số nhiều: amenities."
+    },
+    {
+      "word": "strain",
+      "pos": "n",
+      "ipa": "/streɪn/",
+      "vi": "Sự căng thẳng, áp lực",
+      "example": "Forces in the joint are reduced, putting less strain on the system.",
+      "collocation": "put strain on · under strain · muscle strain",
+      "note": "Cũng dùng như động từ: 'strain a muscle' (căng cơ)."
+    },
+    {
+      "word": "alleviate",
+      "pos": "v",
+      "ipa": "/əˈliː.vi.eɪt/",
+      "vi": "Giảm nhẹ, làm dịu",
+      "example": "A weekend or even a few hours spent in the countryside could help alleviate a sufferer's aches and pains.",
+      "collocation": "alleviate pain · alleviate poverty · alleviate the problem",
+      "note": "Trang trọng hơn 'reduce'. Rất ăn điểm trong IELTS Writing."
+    },
+    {
+      "word": "dwindle",
+      "pos": "v",
+      "ipa": "/ˈdwɪn.dəl/",
+      "vi": "Thu hẹp dần, giảm dần",
+      "example": "For many modern citizens, the countryside is not as accessible as it once was and is in fact a dwindling resource.",
+      "collocation": "dwindle in size · dwindle rapidly · numbers dwindle",
+      "note": "Mang sắc thái tiêu cực, nhấn mạnh sự suy giảm dần dần."
+    }
+  ]
+}
