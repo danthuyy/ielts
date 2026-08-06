@@ -1,0 +1,249 @@
+{
+  "id": "topic_animals",
+  "title": "Chủ đề: Động vật & Thiên nhiên",
+  "description": "Từ vựng IELTS chủ đề động vật hoang dã và tự nhiên",
+  "date": "2026-08-07",
+  "tags": ["environment", "science"],
+  "words": [
+    {
+      "word": "predator",
+      "pos": "n",
+      "ipa": "/ˈpredətə/",
+      "vi": "Kẻ săn mồi",
+      "example": "The lion is a top predator.",
+      "collocation": "a natural predator · top predator · apex predator",
+      "synonyms": "hunter · carnivore",
+      "forms": "predatory (adj)"
+    },
+    {
+      "word": "prey",
+      "pos": "n",
+      "ipa": "/preɪ/",
+      "vi": "Con mồi",
+      "example": "The eagle swooped on its prey.",
+      "collocation": "easy prey · hunt for prey · fall prey to",
+      "synonyms": "quarry · victim"
+    },
+    {
+      "word": "species",
+      "pos": "n",
+      "ipa": "/ˈspiːʃiːz/",
+      "vi": "Loài",
+      "example": "The forest is home to hundreds of species.",
+      "collocation": "an endangered species · a rare species · native species",
+      "synonyms": "breed · type · kind"
+    },
+    {
+      "word": "herd",
+      "pos": "n",
+      "ipa": "/hɜːd/",
+      "vi": "Đàn (gia súc)",
+      "example": "A herd of elephants crossed the river.",
+      "collocation": "a herd of · a large herd · herd of elephants",
+      "synonyms": "flock · drove · pack"
+    },
+    {
+      "word": "mammal",
+      "pos": "n",
+      "ipa": "/ˈmæml/",
+      "vi": "Động vật có vú",
+      "example": "Whales are the largest mammals.",
+      "collocation": "a marine mammal · a small mammal · warm-blooded mammal",
+      "synonyms": "creature · animal"
+    },
+    {
+      "word": "reptile",
+      "pos": "n",
+      "ipa": "/ˈreptaɪl/",
+      "vi": "Bò sát",
+      "example": "Snakes and lizards are reptiles.",
+      "collocation": "a cold-blooded reptile · a scaly reptile",
+      "synonyms": "creature"
+    },
+    {
+      "word": "breed",
+      "pos": "v",
+      "ipa": "/briːd/",
+      "vi": "Sinh sản; nhân giống",
+      "example": "Pandas rarely breed in captivity.",
+      "collocation": "breed in captivity · breed rapidly · selectively breed",
+      "synonyms": "reproduce · rear · multiply",
+      "forms": "breeding (n) · breeder (n)"
+    },
+    {
+      "word": "hibernate",
+      "pos": "v",
+      "ipa": "/ˈhaɪbəneɪt/",
+      "vi": "Ngủ đông",
+      "example": "Bears hibernate through the cold months.",
+      "collocation": "hibernate in winter · animals hibernate",
+      "synonyms": "sleep through winter",
+      "forms": "hibernation (n)"
+    },
+    {
+      "word": "camouflage",
+      "pos": "n",
+      "ipa": "/ˈkæməflɑːʒ/",
+      "vi": "Sự nguỵ trang",
+      "example": "The insect uses camouflage to hide.",
+      "collocation": "natural camouflage · use camouflage · perfect camouflage",
+      "synonyms": "disguise · concealment",
+      "forms": "camouflage (v)"
+    },
+    {
+      "word": "extinct",
+      "pos": "adj",
+      "ipa": "/ɪkˈstɪŋkt/",
+      "vi": "Tuyệt chủng",
+      "example": "The dodo became extinct centuries ago.",
+      "collocation": "become extinct · nearly extinct · an extinct species",
+      "synonyms": "died out · wiped out · vanished",
+      "forms": "extinction (n)"
+    },
+    {
+      "word": "poaching",
+      "pos": "n",
+      "ipa": "/ˈpəʊtʃɪŋ/",
+      "vi": "Nạn săn trộm",
+      "example": "Poaching threatens the last rhinos.",
+      "collocation": "illegal poaching · rhino poaching · combat poaching",
+      "synonyms": "illegal hunting",
+      "forms": "poach (v) · poacher (n)"
+    },
+    {
+      "word": "wildlife",
+      "pos": "n",
+      "ipa": "/ˈwaɪldlaɪf/",
+      "vi": "Động vật hoang dã",
+      "example": "The reserve protects local wildlife.",
+      "collocation": "protect wildlife · native wildlife · wildlife reserve",
+      "synonyms": "fauna · animals"
+    },
+    {
+      "word": "captivity",
+      "pos": "n",
+      "ipa": "/kæpˈtɪvəti/",
+      "vi": "Sự nuôi nhốt",
+      "example": "Some animals will not breed in captivity.",
+      "collocation": "in captivity · bred in captivity · release from captivity",
+      "synonyms": "confinement · imprisonment",
+      "forms": "captive (adj)"
+    },
+    {
+      "word": "domesticated",
+      "pos": "adj",
+      "ipa": "/dəˈmestɪkeɪtɪd/",
+      "vi": "Được thuần hoá",
+      "example": "Dogs were domesticated thousands of years ago.",
+      "collocation": "a domesticated animal · domesticated species",
+      "synonyms": "tamed · domestic",
+      "forms": "domesticate (v)"
+    },
+    {
+      "word": "nocturnal",
+      "pos": "adj",
+      "ipa": "/nɒkˈtɜːnl/",
+      "vi": "Sống về đêm",
+      "example": "Owls are nocturnal hunters.",
+      "collocation": "a nocturnal animal · nocturnal habits",
+      "synonyms": "night-active"
+    },
+    {
+      "word": "herbivore",
+      "pos": "n",
+      "ipa": "/ˈhɜːbɪvɔː/",
+      "vi": "Động vật ăn cỏ",
+      "example": "Cows and deer are herbivores.",
+      "collocation": "a large herbivore · grazing herbivore",
+      "synonyms": "plant-eater",
+      "forms": "herbivorous (adj)"
+    },
+    {
+      "word": "carnivore",
+      "pos": "n",
+      "ipa": "/ˈkɑːnɪvɔː/",
+      "vi": "Động vật ăn thịt",
+      "example": "Lions are powerful carnivores.",
+      "collocation": "a fierce carnivore · a large carnivore",
+      "synonyms": "meat-eater · predator",
+      "forms": "carnivorous (adj)"
+    },
+    {
+      "word": "flock",
+      "pos": "n",
+      "ipa": "/flɒk/",
+      "vi": "Đàn (chim/cừu)",
+      "example": "A flock of birds rose into the sky.",
+      "collocation": "a flock of birds · a flock of sheep · a huge flock",
+      "synonyms": "herd · swarm · group"
+    },
+    {
+      "word": "tame",
+      "pos": "adj",
+      "ipa": "/teɪm/",
+      "vi": "Đã thuần, hiền",
+      "example": "The deer here are quite tame.",
+      "collocation": "a tame animal · surprisingly tame · become tame",
+      "synonyms": "domesticated · gentle · docile",
+      "forms": "tame (v)"
+    },
+    {
+      "word": "venomous",
+      "pos": "adj",
+      "ipa": "/ˈvenəməs/",
+      "vi": "Có nọc độc",
+      "example": "The bite of a venomous snake can kill.",
+      "collocation": "a venomous snake · highly venomous · venomous bite",
+      "synonyms": "poisonous · toxic",
+      "forms": "venom (n)"
+    },
+    {
+      "word": "spawn",
+      "pos": "v",
+      "ipa": "/spɔːn/",
+      "vi": "Đẻ trứng (cá/ếch)",
+      "example": "Salmon return to the river to spawn.",
+      "collocation": "salmon spawn · spawn upstream",
+      "synonyms": "reproduce · breed"
+    },
+    {
+      "word": "plumage",
+      "pos": "n",
+      "ipa": "/ˈpluːmɪdʒ/",
+      "vi": "Bộ lông vũ",
+      "example": "The male bird has bright plumage.",
+      "collocation": "bright plumage · colourful plumage · breeding plumage",
+      "synonyms": "feathers · coat"
+    },
+    {
+      "word": "burrow",
+      "pos": "n",
+      "ipa": "/ˈbʌrəʊ/",
+      "vi": "Hang (thú đào)",
+      "example": "The rabbit vanished into its burrow.",
+      "collocation": "a rabbit burrow · dig a burrow · underground burrow",
+      "synonyms": "den · hole · lair",
+      "forms": "burrow (v)"
+    },
+    {
+      "word": "graze",
+      "pos": "v",
+      "ipa": "/ɡreɪz/",
+      "vi": "Gặm cỏ",
+      "example": "Sheep grazed on the hillside.",
+      "collocation": "cattle graze · graze in a field · freely graze",
+      "synonyms": "feed · browse",
+      "forms": "grazing (n)"
+    },
+    {
+      "word": "swarm",
+      "pos": "n",
+      "ipa": "/swɔːm/",
+      "vi": "Bầy (côn trùng)",
+      "example": "A swarm of bees filled the air.",
+      "collocation": "a swarm of bees · a swarm of insects · a huge swarm",
+      "synonyms": "flock · horde · cloud",
+      "forms": "swarm (v)"
+    }
+  ]
+}

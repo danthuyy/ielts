@@ -1,0 +1,244 @@
+{
+  "id": "topic_housing",
+  "title": "Chủ đề: Nhà cửa & Kiến trúc",
+  "description": "Từ vựng IELTS chủ đề nhà ở, kiến trúc và xây dựng",
+  "date": "2026-08-07",
+  "tags": ["society", "culture"],
+  "words": [
+    {
+      "word": "facade",
+      "pos": "n",
+      "ipa": "/fəˈsɑːd/",
+      "vi": "Mặt tiền (nhà)",
+      "example": "The building has an ornate stone facade.",
+      "collocation": "a grand facade · glass facade · restore the facade",
+      "synonyms": "front · frontage · exterior"
+    },
+    {
+      "word": "renovate",
+      "pos": "v",
+      "ipa": "/ˈrenəveɪt/",
+      "vi": "Tân trang, cải tạo",
+      "example": "They renovated the old farmhouse.",
+      "collocation": "renovate a house · fully renovate · renovate the interior",
+      "synonyms": "refurbish · do up · modernise",
+      "forms": "renovation (n)"
+    },
+    {
+      "word": "dilapidated",
+      "pos": "adj",
+      "ipa": "/dɪˈlæpɪdeɪtɪd/",
+      "vi": "Đổ nát, xuống cấp",
+      "example": "The family lived in a dilapidated cottage.",
+      "collocation": "a dilapidated building · dilapidated state",
+      "synonyms": "run-down · decaying · ramshackle"
+    },
+    {
+      "word": "spacious",
+      "pos": "adj",
+      "ipa": "/ˈspeɪʃəs/",
+      "vi": "Rộng rãi",
+      "example": "The apartment is bright and spacious.",
+      "collocation": "a spacious flat · spacious rooms · light and spacious",
+      "synonyms": "roomy · airy · large"
+    },
+    {
+      "word": "cramped",
+      "pos": "adj",
+      "ipa": "/kræmpt/",
+      "vi": "Chật chội",
+      "example": "Five people shared a cramped flat.",
+      "collocation": "cramped conditions · a cramped flat · feel cramped",
+      "synonyms": "crowded · confined · poky"
+    },
+    {
+      "word": "storey",
+      "pos": "n",
+      "ipa": "/ˈstɔːri/",
+      "vi": "Tầng (nhà)",
+      "example": "They live in a three-storey house.",
+      "collocation": "a two-storey house · multi-storey · top storey",
+      "synonyms": "floor · level"
+    },
+    {
+      "word": "tenant",
+      "pos": "n",
+      "ipa": "/ˈtenənt/",
+      "vi": "Người thuê nhà",
+      "example": "The landlord raised the rent for tenants.",
+      "collocation": "a new tenant · evict a tenant · long-term tenant",
+      "synonyms": "renter · occupant · lodger",
+      "forms": "tenancy (n)"
+    },
+    {
+      "word": "landlord",
+      "pos": "n",
+      "ipa": "/ˈlændlɔːd/",
+      "vi": "Chủ nhà cho thuê",
+      "example": "The landlord refused to repair the roof.",
+      "collocation": "a private landlord · a good landlord",
+      "synonyms": "property owner · lessor"
+    },
+    {
+      "word": "furnished",
+      "pos": "adj",
+      "ipa": "/ˈfɜːnɪʃt/",
+      "vi": "Có sẵn nội thất",
+      "example": "They rented a fully furnished apartment.",
+      "collocation": "a furnished flat · fully furnished · tastefully furnished",
+      "synonyms": "equipped · fitted-out",
+      "forms": "furnish (v) · furnishings (n)"
+    },
+    {
+      "word": "refurbish",
+      "pos": "v",
+      "ipa": "/ˌriːˈfɜːbɪʃ/",
+      "vi": "Tu sửa, làm mới",
+      "example": "The hotel was recently refurbished.",
+      "collocation": "refurbish an office · recently refurbished",
+      "synonyms": "renovate · do up · revamp",
+      "forms": "refurbishment (n)"
+    },
+    {
+      "word": "derelict",
+      "pos": "adj",
+      "ipa": "/ˈderəlɪkt/",
+      "vi": "Bỏ hoang, hoang phế",
+      "example": "The factory has stood derelict for years.",
+      "collocation": "a derelict building · derelict land · stand derelict",
+      "synonyms": "abandoned · deserted · run-down"
+    },
+    {
+      "word": "ventilation",
+      "pos": "n",
+      "ipa": "/ˌventɪˈleɪʃən/",
+      "vi": "Sự thông gió",
+      "example": "The basement had poor ventilation.",
+      "collocation": "poor ventilation · good ventilation · ventilation system",
+      "synonyms": "airflow · air circulation",
+      "forms": "ventilate (v)"
+    },
+    {
+      "word": "insulation",
+      "pos": "n",
+      "ipa": "/ˌɪnsjʊˈleɪʃən/",
+      "vi": "Vật liệu/sự cách nhiệt",
+      "example": "Good insulation keeps the house warm.",
+      "collocation": "loft insulation · good insulation · thermal insulation",
+      "synonyms": "lagging · padding",
+      "forms": "insulate (v)"
+    },
+    {
+      "word": "plumbing",
+      "pos": "n",
+      "ipa": "/ˈplʌmɪŋ/",
+      "vi": "Hệ thống ống nước",
+      "example": "The old plumbing keeps leaking.",
+      "collocation": "old plumbing · fix the plumbing · plumbing system",
+      "synonyms": "pipework · pipes",
+      "forms": "plumber (n)"
+    },
+    {
+      "word": "mansion",
+      "pos": "n",
+      "ipa": "/ˈmænʃən/",
+      "vi": "Biệt thự, dinh thự",
+      "example": "The star owns a huge country mansion.",
+      "collocation": "a grand mansion · country mansion · sprawling mansion",
+      "synonyms": "stately home · manor"
+    },
+    {
+      "word": "cottage",
+      "pos": "n",
+      "ipa": "/ˈkɒtɪdʒ/",
+      "vi": "Nhà tranh nhỏ, nhà nghỉ quê",
+      "example": "They spent the weekend in a country cottage.",
+      "collocation": "a country cottage · a thatched cottage · holiday cottage",
+      "synonyms": "cabin · lodge"
+    },
+    {
+      "word": "terrace",
+      "pos": "n",
+      "ipa": "/ˈterəs/",
+      "vi": "Nhà liền kề; sân hiên",
+      "example": "They bought a Victorian terrace.",
+      "collocation": "a terrace of houses · a row of terraces · sunny terrace",
+      "synonyms": "row house · patio",
+      "forms": "terraced (adj)"
+    },
+    {
+      "word": "courtyard",
+      "pos": "n",
+      "ipa": "/ˈkɔːtjɑːd/",
+      "vi": "Sân trong",
+      "example": "The house is built around a courtyard.",
+      "collocation": "a central courtyard · a paved courtyard",
+      "synonyms": "quadrangle · patio · yard"
+    },
+    {
+      "word": "balcony",
+      "pos": "n",
+      "ipa": "/ˈbælkəni/",
+      "vi": "Ban công",
+      "example": "The flat has a balcony overlooking the sea.",
+      "collocation": "a small balcony · sit on the balcony · balcony overlooking",
+      "synonyms": "terrace · veranda"
+    },
+    {
+      "word": "scaffolding",
+      "pos": "n",
+      "ipa": "/ˈskæfəldɪŋ/",
+      "vi": "Giàn giáo",
+      "example": "The building was covered in scaffolding.",
+      "collocation": "erect scaffolding · covered in scaffolding",
+      "synonyms": "framework · staging",
+      "forms": "scaffold (n)"
+    },
+    {
+      "word": "demolish",
+      "pos": "v",
+      "ipa": "/dɪˈmɒlɪʃ/",
+      "vi": "Phá dỡ, đập bỏ",
+      "example": "The old flats were demolished last year.",
+      "collocation": "demolish a building · demolish the old block",
+      "synonyms": "knock down · tear down · raze",
+      "forms": "demolition (n)"
+    },
+    {
+      "word": "sturdy",
+      "pos": "adj",
+      "ipa": "/ˈstɜːdi/",
+      "vi": "Chắc chắn, vững chãi",
+      "example": "The bridge is old but sturdy.",
+      "collocation": "a sturdy structure · sturdy walls · sturdy construction",
+      "synonyms": "robust · solid · well-built"
+    },
+    {
+      "word": "quaint",
+      "pos": "adj",
+      "ipa": "/kweɪnt/",
+      "vi": "Cổ kính duyên dáng",
+      "example": "They stayed in a quaint little village.",
+      "collocation": "a quaint village · quaint cottages · quaint charm",
+      "synonyms": "charming · picturesque · old-fashioned"
+    },
+    {
+      "word": "ornate",
+      "pos": "adj",
+      "ipa": "/ɔːˈneɪt/",
+      "vi": "Cầu kỳ, chạm trổ",
+      "example": "The palace has an ornate ceiling.",
+      "collocation": "ornate decoration · an ornate ceiling · ornate carvings",
+      "synonyms": "elaborate · decorative · fancy"
+    },
+    {
+      "word": "partition",
+      "pos": "n",
+      "ipa": "/pɑːˈtɪʃən/",
+      "vi": "Vách ngăn",
+      "example": "A glass partition divides the office.",
+      "collocation": "a glass partition · put up a partition · office partition",
+      "synonyms": "divider · screen · wall"
+    }
+  ]
+}
