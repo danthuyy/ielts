@@ -12,7 +12,8 @@
       "vi": "Phương án thay thế",
       "example": "Cycling is a healthy alternative to driving.",
       "collocation": "viable alternative · a cheaper alternative · alternative to",
-      "synonyms": "option · substitute · choice"
+      "synonyms": "option · substitute · choice",
+      "forms": "alternatively (adv) · alternate (v)"
     },
     {
       "word": "circumstance",
@@ -21,7 +22,8 @@
       "vi": "Hoàn cảnh, tình huống",
       "example": "Under no circumstances should you share your password.",
       "collocation": "in the circumstances · exceptional circumstance · unforeseen circumstance",
-      "synonyms": "situation · condition · context"
+      "synonyms": "situation · condition · context",
+      "forms": "circumstantial (adj)"
     },
     {
       "word": "compensate",
@@ -30,7 +32,8 @@
       "vi": "Đền bù; bù đắp",
       "example": "Nothing can compensate for the loss of a loved one.",
       "collocation": "compensate for · fully compensate · compensate victims",
-      "synonyms": "make up for · reimburse · offset"
+      "synonyms": "make up for · reimburse · offset",
+      "forms": "compensation (n) · compensatory (adj)"
     },
     {
       "word": "component",
@@ -48,7 +51,8 @@
       "vi": "Sự đồng ý",
       "example": "The operation cannot go ahead without consent.",
       "collocation": "give consent · without consent · informed consent",
-      "synonyms": "permission · agreement · approval"
+      "synonyms": "permission · agreement · approval",
+      "forms": "consensual (adj) · consenting (adj)"
     },
     {
       "word": "considerable",
@@ -57,7 +61,8 @@
       "vi": "Đáng kể",
       "example": "The project required considerable effort.",
       "collocation": "considerable amount · considerable effort · a considerable sum",
-      "synonyms": "substantial · significant · sizeable"
+      "synonyms": "substantial · significant · sizeable",
+      "forms": "considerably (adv) · consider (v) · consideration (n)"
     },
     {
       "word": "constant",
@@ -66,7 +71,8 @@
       "vi": "Liên tục, không đổi",
       "example": "The patient needs constant care.",
       "collocation": "constant change · remain constant · under constant pressure",
-      "synonyms": "continuous · unchanging · persistent"
+      "synonyms": "continuous · unchanging · persistent",
+      "forms": "constantly (adv) · constancy (n)"
     },
     {
       "word": "contribute",
@@ -75,7 +81,8 @@
       "vi": "Đóng góp; góp phần",
       "example": "Smoking contributes to heart disease.",
       "collocation": "contribute to · contribute significantly · contribute money",
-      "synonyms": "give · donate · add to"
+      "synonyms": "give · donate · add to",
+      "forms": "contribution (n) · contributor (n) · contributory (adj)"
     },
     {
       "word": "coordinate",
@@ -84,7 +91,8 @@
       "vi": "Điều phối",
       "example": "She coordinates the relief effort.",
       "collocation": "coordinate efforts · closely coordinate · coordinate activities",
-      "synonyms": "organise · orchestrate · harmonise"
+      "synonyms": "organise · orchestrate · harmonise",
+      "forms": "coordination (n) · coordinator (n)"
     },
     {
       "word": "core",
@@ -102,7 +110,8 @@
       "vi": "Thuộc tập đoàn",
       "example": "The firm is changing its corporate culture.",
       "collocation": "corporate culture · corporate image · corporate responsibility",
-      "synonyms": "business · company · commercial"
+      "synonyms": "business · company · commercial",
+      "forms": "corporation (n) · incorporate (v)"
     },
     {
       "word": "criteria",
@@ -111,7 +120,8 @@
       "vi": "Tiêu chí (số nhiều)",
       "example": "Applicants must meet strict criteria.",
       "collocation": "meet the criteria · strict criteria · selection criteria",
-      "synonyms": "standards · benchmarks · requirements"
+      "synonyms": "standards · benchmarks · requirements",
+      "forms": "criterion (n, số ít)"
     },
     {
       "word": "demonstrate",
@@ -120,7 +130,8 @@
       "vi": "Chứng minh; biểu diễn",
       "example": "The study demonstrates a clear link.",
       "collocation": "demonstrate clearly · demonstrate a skill · research demonstrates",
-      "synonyms": "show · prove · illustrate"
+      "synonyms": "show · prove · illustrate",
+      "forms": "demonstration (n) · demonstrable (adj) · demonstrator (n)"
     },
     {
       "word": "document",
@@ -129,7 +140,8 @@
       "vi": "Ghi lại bằng tài liệu",
       "example": "The report documents years of abuse.",
       "collocation": "carefully document · well documented · document a case",
-      "synonyms": "record · chronicle · log"
+      "synonyms": "record · chronicle · log",
+      "forms": "documentation (n) · documentary (n)"
     },
     {
       "word": "dominant",
@@ -138,7 +150,8 @@
       "vi": "Chi phối, thống trị",
       "example": "The company holds a dominant position in the market.",
       "collocation": "dominant position · dominant force · become dominant",
-      "synonyms": "prevailing · leading · commanding"
+      "synonyms": "prevailing · leading · commanding",
+      "forms": "dominate (v) · dominance (n) · domination (n)"
     },
     {
       "word": "emphasis",
@@ -147,7 +160,8 @@
       "vi": "Sự nhấn mạnh",
       "example": "The course places emphasis on speaking.",
       "collocation": "place emphasis on · particular emphasis · strong emphasis",
-      "synonyms": "stress · importance · focus"
+      "synonyms": "stress · importance · focus",
+      "forms": "emphasise (v) · emphatic (adj) · emphatically (adv)"
     },
     {
       "word": "ensure",
@@ -165,7 +179,8 @@
       "vi": "Loại trừ",
       "example": "The price excludes tax.",
       "collocation": "exclude from · deliberately exclude · exclude the possibility",
-      "synonyms": "leave out · bar · rule out"
+      "synonyms": "leave out · bar · rule out",
+      "forms": "exclusion (n) · exclusive (adj) · exclusively (adv)"
     },
     {
       "word": "framework",
@@ -183,7 +198,8 @@
       "vi": "Minh hoạ, cho thấy",
       "example": "This example illustrates the problem well.",
       "collocation": "clearly illustrate · illustrate a point · illustrate with examples",
-      "synonyms": "show · demonstrate · exemplify"
+      "synonyms": "show · demonstrate · exemplify",
+      "forms": "illustration (n) · illustrative (adj) · illustrator (n)"
     },
     {
       "word": "imply",
@@ -192,7 +208,8 @@
       "vi": "Ngụ ý",
       "example": "Her silence seemed to imply agreement.",
       "collocation": "strongly imply · imply that · seem to imply",
-      "synonyms": "suggest · hint · insinuate"
+      "synonyms": "suggest · hint · insinuate",
+      "forms": "implication (n) · implicit (adj)"
     },
     {
       "word": "initial",
@@ -201,7 +218,8 @@
       "vi": "Ban đầu",
       "example": "The initial response was positive.",
       "collocation": "initial stage · initial reaction · initial cost",
-      "synonyms": "first · early · opening"
+      "synonyms": "first · early · opening",
+      "forms": "initially (adv) · initiate (v)"
     },
     {
       "word": "justify",
@@ -210,7 +228,8 @@
       "vi": "Biện minh, chứng minh là đúng",
       "example": "How can you justify such a high price?",
       "collocation": "justify a decision · fully justify · hard to justify",
-      "synonyms": "defend · warrant · vindicate"
+      "synonyms": "defend · warrant · vindicate",
+      "forms": "justification (n) · justifiable (adj) · justified (adj)"
     },
     {
       "word": "maximise",
@@ -219,7 +238,8 @@
       "vi": "Tối đa hoá",
       "example": "The layout maximises natural light.",
       "collocation": "maximise profit · maximise efficiency · maximise the use of",
-      "synonyms": "optimise · increase · boost"
+      "synonyms": "optimise · increase · boost",
+      "forms": "maximum (n) · maximal (adj) · maximisation (n)"
     },
     {
       "word": "proportion",
@@ -228,7 +248,8 @@
       "vi": "Tỉ lệ, phần",
       "example": "A large proportion of income goes on rent.",
       "collocation": "large proportion · in proportion · a small proportion",
-      "synonyms": "percentage · ratio · fraction"
+      "synonyms": "percentage · ratio · fraction",
+      "forms": "proportional (adj) · proportionate (adj) · disproportionate (adj)"
     }
   ]
 }

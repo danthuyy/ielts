@@ -373,6 +373,10 @@
   font-size: var(--text-sm);
   color: var(--success);
 }
+.flashcard__forms {
+  font-size: var(--text-sm);
+  color: var(--warning);
+}
 .flashcard__example {
   font-size: var(--text-sm);
   font-style: italic;

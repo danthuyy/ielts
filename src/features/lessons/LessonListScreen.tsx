@@ -64,7 +64,8 @@ export function LessonListScreen() {
         word.word.toLowerCase().includes(needle) ||
         word.vi.toLowerCase().includes(needle) ||
         word.collocation.toLowerCase().includes(needle) ||
-        word.synonyms.toLowerCase().includes(needle),
+        word.synonyms.toLowerCase().includes(needle) ||
+        word.forms.toLowerCase().includes(needle),
     ).slice(0, WORD_HITS_LIMIT);
   }, [query]);
 

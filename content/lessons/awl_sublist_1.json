@@ -12,7 +12,8 @@
       "vi": "Phân tích",
       "example": "Researchers analysed the survey data.",
       "collocation": "analyse data · carefully analyse · analyse the results",
-      "synonyms": "examine · study · scrutinise"
+      "synonyms": "examine · study · scrutinise",
+      "forms": "analysis (n) · analytical (adj) · analyst (n)"
     },
     {
       "word": "approach",
@@ -21,7 +22,8 @@
       "vi": "Cách tiếp cận",
       "example": "The school adopted a new approach to teaching.",
       "collocation": "a new approach · adopt an approach · practical approach",
-      "synonyms": "method · strategy · way"
+      "synonyms": "method · strategy · way",
+      "forms": "approachable (adj) · approaching (adj)"
     },
     {
       "word": "assess",
@@ -30,7 +32,8 @@
       "vi": "Đánh giá",
       "example": "Experts assessed the damage after the storm.",
       "collocation": "assess the impact · assess risk · carefully assess",
-      "synonyms": "evaluate · judge · gauge"
+      "synonyms": "evaluate · judge · gauge",
+      "forms": "assessment (n) · assessor (n)"
     },
     {
       "word": "assume",
@@ -39,7 +42,8 @@
       "vi": "Cho rằng, giả định",
       "example": "We cannot assume the trend will continue.",
       "collocation": "assume responsibility · reasonably assume",
-      "synonyms": "presume · suppose · take for granted"
+      "synonyms": "presume · suppose · take for granted",
+      "forms": "assumption (n) · assumed (adj)"
     },
     {
       "word": "authority",
@@ -48,7 +52,8 @@
       "vi": "Nhà chức trách; quyền lực",
       "example": "The local authority approved the plan.",
       "collocation": "local authority · in authority · exercise authority",
-      "synonyms": "official body · power · control"
+      "synonyms": "official body · power · control",
+      "forms": "authorise (v) · authoritative (adj) · authorisation (n)"
     },
     {
       "word": "benefit",
@@ -57,7 +62,8 @@
       "vi": "Lợi ích",
       "example": "Regular exercise has many health benefits.",
       "collocation": "major benefit · reap the benefits · of great benefit",
-      "synonyms": "advantage · gain · perk"
+      "synonyms": "advantage · gain · perk",
+      "forms": "beneficial (adj) · beneficiary (n)"
     },
     {
       "word": "concept",
@@ -66,7 +72,8 @@
       "vi": "Khái niệm",
       "example": "Students struggled with the abstract concept.",
       "collocation": "abstract concept · grasp a concept · key concept",
-      "synonyms": "idea · notion · principle"
+      "synonyms": "idea · notion · principle",
+      "forms": "conceptual (adj) · conception (n) · conceive (v)"
     },
     {
       "word": "consist",
@@ -75,7 +82,8 @@
       "vi": "Bao gồm, gồm có",
       "example": "The team consists of six members.",
       "collocation": "consist of · mainly consist of",
-      "synonyms": "comprise · be made up of"
+      "synonyms": "comprise · be made up of",
+      "forms": "consistent (adj) · consistency (n) · consistently (adv)"
     },
     {
       "word": "constitute",
@@ -84,7 +92,8 @@
       "vi": "Cấu thành, tạo nên",
       "example": "Women constitute half the workforce.",
       "collocation": "constitute a threat · constitute a majority",
-      "synonyms": "make up · form · amount to"
+      "synonyms": "make up · form · amount to",
+      "forms": "constitution (n) · constitutional (adj) · constituent (n)"
     },
     {
       "word": "context",
@@ -93,7 +102,8 @@
       "vi": "Bối cảnh, ngữ cảnh",
       "example": "The word's meaning depends on context.",
       "collocation": "in this context · social context · historical context",
-      "synonyms": "setting · background · circumstances"
+      "synonyms": "setting · background · circumstances",
+      "forms": "contextual (adj) · contextualise (v)"
     },
     {
       "word": "define",
@@ -102,7 +112,8 @@
       "vi": "Định nghĩa, xác định",
       "example": "It is hard to define happiness precisely.",
       "collocation": "clearly define · define a term · define a goal",
-      "synonyms": "specify · determine · characterise"
+      "synonyms": "specify · determine · characterise",
+      "forms": "definition (n) · definite (adj) · definitive (adj)"
     },
     {
       "word": "derive",
@@ -111,7 +122,8 @@
       "vi": "Bắt nguồn; thu được",
       "example": "Many English words derive from Latin.",
       "collocation": "derive from · derive benefit · derive pleasure",
-      "synonyms": "obtain · gain · originate"
+      "synonyms": "obtain · gain · originate",
+      "forms": "derivation (n) · derivative (n)"
     },
     {
       "word": "distribute",
@@ -120,7 +132,8 @@
       "vi": "Phân phối",
       "example": "Aid was distributed to the flood victims.",
       "collocation": "distribute evenly · distribute aid · widely distributed",
-      "synonyms": "hand out · allocate · share out"
+      "synonyms": "hand out · allocate · share out",
+      "forms": "distribution (n) · distributor (n)"
     },
     {
       "word": "economy",
@@ -129,7 +142,8 @@
       "vi": "Nền kinh tế",
       "example": "The economy grew by three percent.",
       "collocation": "global economy · booming economy · stimulate the economy",
-      "synonyms": "financial system · market"
+      "synonyms": "financial system · market",
+      "forms": "economic (adj) · economical (adj) · economist (n)"
     },
     {
       "word": "establish",
@@ -138,7 +152,8 @@
       "vi": "Thành lập; xác lập",
       "example": "The charity was established in 1990.",
       "collocation": "establish a company · firmly establish · establish a link",
-      "synonyms": "set up · found · create"
+      "synonyms": "set up · found · create",
+      "forms": "establishment (n) · established (adj)"
     },
     {
       "word": "estimate",
@@ -147,7 +162,8 @@
       "vi": "Ước tính",
       "example": "Experts estimate the population at ten million.",
       "collocation": "estimate the cost · roughly estimate · conservatively estimate",
-      "synonyms": "calculate · gauge · reckon"
+      "synonyms": "calculate · gauge · reckon",
+      "forms": "estimation (n) · estimated (adj) · overestimate (v)"
     },
     {
       "word": "evident",
@@ -156,7 +172,8 @@
       "vi": "Rõ ràng, hiển nhiên",
       "example": "It was evident that she was upset.",
       "collocation": "clearly evident · become evident · self-evident",
-      "synonyms": "obvious · apparent · clear"
+      "synonyms": "obvious · apparent · clear",
+      "forms": "evidence (n) · evidently (adv)"
     },
     {
       "word": "export",
@@ -165,7 +182,8 @@
       "vi": "Xuất khẩu",
       "example": "The country exports coffee worldwide.",
       "collocation": "export goods · export oil · export to",
-      "synonyms": "sell abroad · ship overseas"
+      "synonyms": "sell abroad · ship overseas",
+      "forms": "exporter (n) · exportation (n)"
     },
     {
       "word": "factor",
@@ -183,7 +201,8 @@
       "vi": "Tài chính",
       "example": "She works in corporate finance.",
       "collocation": "personal finance · public finance · finance minister",
-      "synonyms": "funding · money · funds"
+      "synonyms": "funding · money · funds",
+      "forms": "financial (adj) · financially (adv) · financier (n)"
     },
     {
       "word": "formula",
@@ -192,7 +211,8 @@
       "vi": "Công thức",
       "example": "There is no magic formula for success.",
       "collocation": "a simple formula · secret formula · apply a formula",
-      "synonyms": "equation · recipe · method"
+      "synonyms": "equation · recipe · method",
+      "forms": "formulate (v) · formulation (n)"
     },
     {
       "word": "function",
@@ -201,7 +221,8 @@
       "vi": "Chức năng",
       "example": "The primary function of a fridge is to keep food cold.",
       "collocation": "primary function · perform a function · basic function",
-      "synonyms": "purpose · role · use"
+      "synonyms": "purpose · role · use",
+      "forms": "functional (adj) · functionality (n)"
     },
     {
       "word": "identify",
@@ -210,7 +231,8 @@
       "vi": "Nhận diện, xác định",
       "example": "Doctors identified the cause of the illness.",
       "collocation": "identify a problem · correctly identify · identify a trend",
-      "synonyms": "recognise · pinpoint · detect"
+      "synonyms": "recognise · pinpoint · detect",
+      "forms": "identification (n) · identity (n) · identifiable (adj)"
     },
     {
       "word": "income",
@@ -228,7 +250,8 @@
       "vi": "Cho thấy, chỉ ra",
       "example": "The data indicate a rise in demand.",
       "collocation": "clearly indicate · results indicate · indicate a trend",
-      "synonyms": "show · suggest · signal"
+      "synonyms": "show · suggest · signal",
+      "forms": "indication (n) · indicator (n) · indicative (adj)"
     }
   ]
 }

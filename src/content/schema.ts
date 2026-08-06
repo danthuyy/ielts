@@ -45,6 +45,14 @@ export const wordSchema = z.object({
    * words have no clean synonym, and the UI hides the field when it is empty.
    */
   synonyms: z.string().default(''),
+  /**
+   * The word family — the same root in its other parts of speech, e.g. for
+   * "analyse": "analysis (n) · analytical (adj) · analyst (n)". Word formation
+   * is its own IELTS skill; showing the family turns one headword into a small
+   * cluster the learner can recognise and produce. Optional, " · "-separated,
+   * each entry tagged with its part of speech in brackets.
+   */
+  forms: z.string().default(''),
   /** A usage tip — when to reach for the word, register, common mistakes. */
   note: z.string().default(''),
 });

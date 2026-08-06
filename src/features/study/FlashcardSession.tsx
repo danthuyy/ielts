@@ -258,6 +258,12 @@ export function FlashcardSession({ words, backTo, finishedMessage, onRetry }: Pr
                 <p className="flashcard__synonyms">{word.synonyms}</p>
               </div>
             )}
+            {word.forms && (
+              <div className="flashcard__box">
+                <p className="flashcard__box-title">Họ từ</p>
+                <p className="flashcard__forms">{word.forms}</p>
+              </div>
+            )}
             {word.example && (
               <div className="flashcard__box">
                 <p className="flashcard__box-title">Example</p>

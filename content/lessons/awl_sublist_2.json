@@ -12,7 +12,8 @@
       "vi": "Loại, hạng mục",
       "example": "Products are sorted into categories.",
       "collocation": "broad category · fall into a category · separate category",
-      "synonyms": "class · group · type"
+      "synonyms": "class · group · type",
+      "forms": "categorise (v) · categorical (adj) · categorisation (n)"
     },
     {
       "word": "community",
@@ -21,7 +22,8 @@
       "vi": "Cộng đồng",
       "example": "The festival brings the whole community together.",
       "collocation": "local community · close-knit community · sense of community",
-      "synonyms": "neighbourhood · public · society"
+      "synonyms": "neighbourhood · public · society",
+      "forms": "communal (adj) · communally (adv)"
     },
     {
       "word": "complex",
@@ -30,7 +32,8 @@
       "vi": "Phức tạp",
       "example": "Climate change is a complex problem.",
       "collocation": "complex problem · highly complex · complex system",
-      "synonyms": "complicated · intricate · involved"
+      "synonyms": "complicated · intricate · involved",
+      "forms": "complexity (n)"
     },
     {
       "word": "conclude",
@@ -39,7 +42,8 @@
       "vi": "Kết luận; kết thúc",
       "example": "The report concludes that reform is needed.",
       "collocation": "conclude that · study concludes · conclude a deal",
-      "synonyms": "deduce · infer · finish"
+      "synonyms": "deduce · infer · finish",
+      "forms": "conclusion (n) · conclusive (adj) · conclusively (adv)"
     },
     {
       "word": "conduct",
@@ -48,7 +52,8 @@
       "vi": "Tiến hành, thực hiện",
       "example": "Scientists conducted a series of tests.",
       "collocation": "conduct research · conduct a survey · conduct an experiment",
-      "synonyms": "carry out · perform · undertake"
+      "synonyms": "carry out · perform · undertake",
+      "forms": "conductor (n) · conduction (n)"
     },
     {
       "word": "consequence",
@@ -57,7 +62,8 @@
       "vi": "Hậu quả",
       "example": "Ignoring the warning had serious consequences.",
       "collocation": "serious consequence · face the consequences · unintended consequence",
-      "synonyms": "result · outcome · repercussion"
+      "synonyms": "result · outcome · repercussion",
+      "forms": "consequent (adj) · consequently (adv) · consequential (adj)"
     },
     {
       "word": "consume",
@@ -66,7 +72,8 @@
       "vi": "Tiêu thụ, tiêu dùng",
       "example": "Modern homes consume a lot of electricity.",
       "collocation": "consume energy · consume resources · consume less",
-      "synonyms": "use up · eat through · devour"
+      "synonyms": "use up · eat through · devour",
+      "forms": "consumption (n) · consumer (n) · consumerism (n)"
     },
     {
       "word": "design",
@@ -75,7 +82,8 @@
       "vi": "Thiết kế",
       "example": "The building was designed to save energy.",
       "collocation": "design a system · carefully design · design for",
-      "synonyms": "plan · create · devise"
+      "synonyms": "plan · create · devise",
+      "forms": "designer (n) · designed (adj)"
     },
     {
       "word": "distinct",
@@ -84,7 +92,8 @@
       "vi": "Khác biệt, rõ rệt",
       "example": "The two species are quite distinct.",
       "collocation": "distinct advantage · clearly distinct · distinct from",
-      "synonyms": "separate · different · clear"
+      "synonyms": "separate · different · clear",
+      "forms": "distinction (n) · distinctive (adj) · distinctly (adv)"
     },
     {
       "word": "element",
@@ -93,7 +102,8 @@
       "vi": "Yếu tố, thành phần",
       "example": "Trust is a key element of teamwork.",
       "collocation": "key element · essential element · element of risk",
-      "synonyms": "component · factor · part"
+      "synonyms": "component · factor · part",
+      "forms": "elementary (adj) · elemental (adj)"
     },
     {
       "word": "evaluate",
@@ -102,7 +112,8 @@
       "vi": "Đánh giá",
       "example": "We need to evaluate the risks first.",
       "collocation": "evaluate the results · carefully evaluate · evaluate options",
-      "synonyms": "assess · appraise · gauge"
+      "synonyms": "assess · appraise · gauge",
+      "forms": "evaluation (n) · evaluative (adj)"
     },
     {
       "word": "feature",
@@ -111,7 +122,8 @@
       "vi": "Đặc điểm, tính năng",
       "example": "A key feature of the phone is its camera.",
       "collocation": "key feature · distinctive feature · notable feature",
-      "synonyms": "characteristic · trait · aspect"
+      "synonyms": "characteristic · trait · aspect",
+      "forms": "featured (adj)"
     },
     {
       "word": "focus",
@@ -120,7 +132,8 @@
       "vi": "Tập trung",
       "example": "The campaign focuses on young people.",
       "collocation": "focus on · focus attention · sharply focus",
-      "synonyms": "concentrate · centre · zero in"
+      "synonyms": "concentrate · centre · zero in",
+      "forms": "focused (adj) · focal (adj)"
     },
     {
       "word": "impact",
@@ -129,7 +142,8 @@
       "vi": "Tác động",
       "example": "Tourism has a huge impact on the economy.",
       "collocation": "major impact · have an impact · negative impact",
-      "synonyms": "effect · influence · consequence"
+      "synonyms": "effect · influence · consequence",
+      "forms": "impactful (adj)"
     },
     {
       "word": "invest",
@@ -138,7 +152,8 @@
       "vi": "Đầu tư",
       "example": "The firm invests heavily in research.",
       "collocation": "invest in · invest heavily · invest time",
-      "synonyms": "put money into · fund · back"
+      "synonyms": "put money into · fund · back",
+      "forms": "investment (n) · investor (n)"
     },
     {
       "word": "maintain",
@@ -147,7 +162,8 @@
       "vi": "Duy trì; bảo trì",
       "example": "It is important to maintain a healthy diet.",
       "collocation": "maintain standards · maintain a balance · maintain equipment",
-      "synonyms": "keep up · sustain · preserve"
+      "synonyms": "keep up · sustain · preserve",
+      "forms": "maintenance (n) · maintained (adj)"
     },
     {
       "word": "obtain",
@@ -156,7 +172,8 @@
       "vi": "Đạt được, có được",
       "example": "You must obtain a licence first.",
       "collocation": "obtain permission · obtain information · easily obtain",
-      "synonyms": "get · acquire · secure"
+      "synonyms": "get · acquire · secure",
+      "forms": "obtainable (adj)"
     },
     {
       "word": "participate",
@@ -165,7 +182,8 @@
       "vi": "Tham gia",
       "example": "All students are encouraged to participate.",
       "collocation": "participate in · actively participate · fully participate",
-      "synonyms": "take part · join in · engage"
+      "synonyms": "take part · join in · engage",
+      "forms": "participation (n) · participant (n)"
     },
     {
       "word": "perceive",
@@ -174,7 +192,8 @@
       "vi": "Nhận thức, cảm nhận",
       "example": "The public perceives the policy as unfair.",
       "collocation": "perceive as · widely perceived · perceive a threat",
-      "synonyms": "see · regard · view"
+      "synonyms": "see · regard · view",
+      "forms": "perception (n) · perceptive (adj) · perceptible (adj)"
     },
     {
       "word": "potential",
@@ -183,7 +202,8 @@
       "vi": "Tiềm năng",
       "example": "The region has huge tourism potential.",
       "collocation": "huge potential · realise potential · growth potential",
-      "synonyms": "promise · capability · possibility"
+      "synonyms": "promise · capability · possibility",
+      "forms": "potentially (adv) · potent (adj)"
     },
     {
       "word": "previous",
@@ -192,7 +212,8 @@
       "vi": "Trước đó",
       "example": "No previous experience is required.",
       "collocation": "previous experience · in previous years · previous research",
-      "synonyms": "earlier · prior · preceding"
+      "synonyms": "earlier · prior · preceding",
+      "forms": "previously (adv)"
     },
     {
       "word": "purchase",
@@ -201,7 +222,8 @@
       "vi": "Mua",
       "example": "Customers can purchase tickets online.",
       "collocation": "purchase goods · purchase online · purchase a ticket",
-      "synonyms": "buy · acquire · procure"
+      "synonyms": "buy · acquire · procure",
+      "forms": "purchaser (n)"
     },
     {
       "word": "range",
@@ -210,7 +232,8 @@
       "vi": "Phạm vi, khoảng",
       "example": "The shop offers a wide range of products.",
       "collocation": "wide range · price range · range of options",
-      "synonyms": "variety · spectrum · scope"
+      "synonyms": "variety · spectrum · scope",
+      "forms": "wide-ranging (adj)"
     },
     {
       "word": "region",
@@ -219,7 +242,8 @@
       "vi": "Vùng, khu vực",
       "example": "The region is famous for its wine.",
       "collocation": "remote region · coastal region · entire region",
-      "synonyms": "area · zone · district"
+      "synonyms": "area · zone · district",
+      "forms": "regional (adj) · regionally (adv)"
     },
     {
       "word": "strategy",
@@ -228,7 +252,8 @@
       "vi": "Chiến lược",
       "example": "The company adopted a new marketing strategy.",
       "collocation": "effective strategy · long-term strategy · marketing strategy",
-      "synonyms": "plan · approach · tactic"
+      "synonyms": "plan · approach · tactic",
+      "forms": "strategic (adj) · strategist (n) · strategically (adv)"
     }
   ]
 }
