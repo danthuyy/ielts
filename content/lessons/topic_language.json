@@ -1,0 +1,250 @@
+{
+  "id": "topic_language",
+  "title": "Chủ đề: Ngôn ngữ & Giao tiếp",
+  "description": "Từ vựng IELTS chủ đề ngôn ngữ, học ngoại ngữ và giao tiếp",
+  "date": "2026-08-07",
+  "tags": ["education", "culture"],
+  "words": [
+    {
+      "word": "bilingual",
+      "pos": "adj",
+      "ipa": "/baɪˈlɪŋɡwəl/",
+      "vi": "Song ngữ",
+      "example": "She is bilingual in English and French.",
+      "collocation": "a bilingual child · bilingual education · fully bilingual",
+      "synonyms": "two-language"
+    },
+    {
+      "word": "fluent",
+      "pos": "adj",
+      "ipa": "/ˈfluːənt/",
+      "vi": "Lưu loát, trôi chảy",
+      "example": "He is fluent in three languages.",
+      "collocation": "fluent in · become fluent · fluent speaker",
+      "synonyms": "articulate · flowing · effortless",
+      "forms": "fluency (n) · fluently (adv)"
+    },
+    {
+      "word": "articulate",
+      "pos": "adj",
+      "ipa": "/ɑːˈtɪkjələt/",
+      "vi": "Diễn đạt rõ ràng",
+      "example": "She is an articulate and confident speaker.",
+      "collocation": "an articulate speaker · highly articulate",
+      "synonyms": "eloquent · well-spoken · coherent",
+      "forms": "articulate (v) · articulation (n)"
+    },
+    {
+      "word": "dialect",
+      "pos": "n",
+      "ipa": "/ˈdaɪəlekt/",
+      "vi": "Phương ngữ",
+      "example": "The region has its own dialect.",
+      "collocation": "a local dialect · regional dialect · speak a dialect",
+      "synonyms": "vernacular · variety"
+    },
+    {
+      "word": "accent",
+      "pos": "n",
+      "ipa": "/ˈæksent/",
+      "vi": "Giọng, chất giọng",
+      "example": "He speaks English with a slight accent.",
+      "collocation": "a strong accent · foreign accent · regional accent",
+      "synonyms": "pronunciation · inflection"
+    },
+    {
+      "word": "eloquent",
+      "pos": "adj",
+      "ipa": "/ˈeləkwənt/",
+      "vi": "Hùng biện, lưu loát",
+      "example": "She gave an eloquent speech.",
+      "collocation": "an eloquent speech · eloquent defence",
+      "synonyms": "articulate · fluent · persuasive",
+      "forms": "eloquence (n) · eloquently (adv)"
+    },
+    {
+      "word": "mother tongue",
+      "pos": "n",
+      "ipa": "/ˈmʌðə tʌŋ/",
+      "vi": "Tiếng mẹ đẻ",
+      "example": "His mother tongue is Vietnamese.",
+      "collocation": "speak your mother tongue · mother tongue interference",
+      "synonyms": "native language · first language"
+    },
+    {
+      "word": "colloquial",
+      "pos": "adj",
+      "ipa": "/kəˈləʊkwiəl/",
+      "vi": "Thông tục, khẩu ngữ",
+      "example": "The book is full of colloquial phrases.",
+      "collocation": "colloquial language · colloquial expression",
+      "synonyms": "informal · conversational · everyday",
+      "forms": "colloquially (adv)"
+    },
+    {
+      "word": "slang",
+      "pos": "n",
+      "ipa": "/slæŋ/",
+      "vi": "Tiếng lóng",
+      "example": "Teenagers use a lot of slang.",
+      "collocation": "street slang · use slang · modern slang",
+      "synonyms": "jargon · informal language"
+    },
+    {
+      "word": "gesture",
+      "pos": "n",
+      "ipa": "/ˈdʒestʃə/",
+      "vi": "Cử chỉ",
+      "example": "He made a welcoming gesture.",
+      "collocation": "a hand gesture · a friendly gesture · make a gesture",
+      "synonyms": "motion · signal · sign",
+      "forms": "gesture (v)"
+    },
+    {
+      "word": "verbal",
+      "pos": "adj",
+      "ipa": "/ˈvɜːbl/",
+      "vi": "Bằng lời nói",
+      "example": "Babies communicate before they have verbal skills.",
+      "collocation": "verbal communication · verbal agreement · verbal skills",
+      "synonyms": "spoken · oral",
+      "forms": "verbally (adv)"
+    },
+    {
+      "word": "nonverbal",
+      "pos": "adj",
+      "ipa": "/ˌnɒnˈvɜːbl/",
+      "vi": "Phi ngôn ngữ",
+      "example": "Much of communication is nonverbal.",
+      "collocation": "nonverbal communication · nonverbal cues",
+      "synonyms": "body language · unspoken"
+    },
+    {
+      "word": "proficiency",
+      "pos": "n",
+      "ipa": "/prəˈfɪʃənsi/",
+      "vi": "Sự thành thạo",
+      "example": "The test measures language proficiency.",
+      "collocation": "language proficiency · proficiency test · high proficiency",
+      "synonyms": "competence · skill · mastery",
+      "forms": "proficient (adj)"
+    },
+    {
+      "word": "immersion",
+      "pos": "n",
+      "ipa": "/ɪˈmɜːʃən/",
+      "vi": "Sự đắm mình (học ngoại ngữ)",
+      "example": "Immersion is the fastest way to learn.",
+      "collocation": "language immersion · total immersion · immersion programme",
+      "synonyms": "total exposure",
+      "forms": "immerse (v)"
+    },
+    {
+      "word": "pronunciation",
+      "pos": "n",
+      "ipa": "/prəˌnʌnsiˈeɪʃən/",
+      "vi": "Sự phát âm",
+      "example": "Listening improves your pronunciation.",
+      "collocation": "clear pronunciation · improve pronunciation · correct pronunciation",
+      "synonyms": "articulation · diction · accent",
+      "forms": "pronounce (v)"
+    },
+    {
+      "word": "idiom",
+      "pos": "n",
+      "ipa": "/ˈɪdiəm/",
+      "vi": "Thành ngữ",
+      "example": "Idioms are hard for learners to grasp.",
+      "collocation": "a common idiom · use an idiom · English idiom",
+      "synonyms": "expression · phrase · saying",
+      "forms": "idiomatic (adj)"
+    },
+    {
+      "word": "linguistic",
+      "pos": "adj",
+      "ipa": "/lɪŋˈɡwɪstɪk/",
+      "vi": "Thuộc ngôn ngữ học",
+      "example": "The country has great linguistic diversity.",
+      "collocation": "linguistic ability · linguistic diversity · linguistic skills",
+      "synonyms": "language-related",
+      "forms": "linguistics (n) · linguist (n)"
+    },
+    {
+      "word": "intonation",
+      "pos": "n",
+      "ipa": "/ˌɪntəˈneɪʃən/",
+      "vi": "Ngữ điệu",
+      "example": "Questions often use rising intonation.",
+      "collocation": "rising intonation · natural intonation · falling intonation",
+      "synonyms": "inflection · tone · pitch"
+    },
+    {
+      "word": "expressive",
+      "pos": "adj",
+      "ipa": "/ɪkˈspresɪv/",
+      "vi": "Giàu biểu cảm",
+      "example": "Her face is very expressive.",
+      "collocation": "expressive face · highly expressive · expressive language",
+      "synonyms": "eloquent · vivid · articulate",
+      "forms": "express (v) · expression (n)"
+    },
+    {
+      "word": "misinterpret",
+      "pos": "v",
+      "ipa": "/ˌmɪsɪnˈtɜːprɪt/",
+      "vi": "Hiểu sai, diễn giải sai",
+      "example": "His silence was misinterpreted as anger.",
+      "collocation": "misinterpret a message · easily misinterpret",
+      "synonyms": "misunderstand · misconstrue",
+      "forms": "misinterpretation (n)"
+    },
+    {
+      "word": "comprehend",
+      "pos": "v",
+      "ipa": "/ˌkɒmprɪˈhend/",
+      "vi": "Hiểu, lĩnh hội",
+      "example": "Young children cannot comprehend abstract ideas.",
+      "collocation": "fully comprehend · fail to comprehend · hard to comprehend",
+      "synonyms": "understand · grasp · take in",
+      "forms": "comprehension (n) · comprehensible (adj)"
+    },
+    {
+      "word": "jargon",
+      "pos": "n",
+      "ipa": "/ˈdʒɑːɡən/",
+      "vi": "Biệt ngữ, thuật ngữ chuyên ngành",
+      "example": "The report is full of technical jargon.",
+      "collocation": "technical jargon · legal jargon · full of jargon",
+      "synonyms": "terminology · lingo"
+    },
+    {
+      "word": "literate",
+      "pos": "adj",
+      "ipa": "/ˈlɪtərət/",
+      "vi": "Biết đọc biết viết",
+      "example": "The programme helps adults become literate.",
+      "collocation": "fully literate · computer-literate · barely literate",
+      "synonyms": "educated · able to read",
+      "forms": "literacy (n)"
+    },
+    {
+      "word": "multilingual",
+      "pos": "adj",
+      "ipa": "/ˌmʌltiˈlɪŋɡwəl/",
+      "vi": "Đa ngữ",
+      "example": "The hotel has multilingual staff.",
+      "collocation": "a multilingual city · multilingual staff",
+      "synonyms": "polyglot · many-tongued"
+    },
+    {
+      "word": "coherently",
+      "pos": "adv",
+      "ipa": "/kəʊˈhɪərəntli/",
+      "vi": "Một cách mạch lạc",
+      "example": "She argued her case coherently.",
+      "collocation": "speak coherently · argue coherently",
+      "synonyms": "clearly · logically · lucidly",
+      "forms": "coherent (adj) · coherence (n)"
+    }
+  ]
+}

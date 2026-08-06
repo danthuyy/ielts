@@ -1,0 +1,247 @@
+{
+  "id": "topic_weather",
+  "title": "Chủ đề: Thời tiết & Khí hậu",
+  "description": "Từ vựng IELTS chủ đề thời tiết, khí hậu và hiện tượng tự nhiên",
+  "date": "2026-08-07",
+  "tags": ["environment", "science"],
+  "words": [
+    {
+      "word": "forecast",
+      "pos": "n",
+      "ipa": "/ˈfɔːkɑːst/",
+      "vi": "Dự báo",
+      "example": "The forecast is for heavy rain.",
+      "collocation": "the weather forecast · a gloomy forecast · according to the forecast",
+      "synonyms": "prediction · outlook",
+      "forms": "forecast (v)"
+    },
+    {
+      "word": "humid",
+      "pos": "adj",
+      "ipa": "/ˈhjuːmɪd/",
+      "vi": "Ẩm ướt",
+      "example": "The summers here are hot and humid.",
+      "collocation": "hot and humid · a humid climate · humid air",
+      "synonyms": "muggy · damp · sticky",
+      "forms": "humidity (n)"
+    },
+    {
+      "word": "arid",
+      "pos": "adj",
+      "ipa": "/ˈærɪd/",
+      "vi": "Khô cằn",
+      "example": "Few crops grow in the arid soil.",
+      "collocation": "an arid region · arid desert · arid climate",
+      "synonyms": "dry · parched · barren",
+      "forms": "aridity (n)"
+    },
+    {
+      "word": "temperate",
+      "pos": "adj",
+      "ipa": "/ˈtempərət/",
+      "vi": "Ôn hoà",
+      "example": "Britain has a temperate climate.",
+      "collocation": "a temperate climate · temperate zone · temperate regions",
+      "synonyms": "mild · moderate"
+    },
+    {
+      "word": "precipitation",
+      "pos": "n",
+      "ipa": "/prɪˌsɪpɪˈteɪʃən/",
+      "vi": "Lượng mưa (nói chung)",
+      "example": "The area gets little precipitation.",
+      "collocation": "heavy precipitation · annual precipitation · low precipitation",
+      "synonyms": "rainfall · rain and snow"
+    },
+    {
+      "word": "torrential",
+      "pos": "adj",
+      "ipa": "/təˈrenʃl/",
+      "vi": "Như trút nước (mưa)",
+      "example": "Torrential rain flooded the streets.",
+      "collocation": "torrential rain · torrential downpour",
+      "synonyms": "pouring · heavy"
+    },
+    {
+      "word": "blizzard",
+      "pos": "n",
+      "ipa": "/ˈblɪzəd/",
+      "vi": "Bão tuyết",
+      "example": "A blizzard closed the mountain roads.",
+      "collocation": "a fierce blizzard · caught in a blizzard",
+      "synonyms": "snowstorm"
+    },
+    {
+      "word": "gale",
+      "pos": "n",
+      "ipa": "/ɡeɪl/",
+      "vi": "Gió mạnh, bão",
+      "example": "A gale ripped tiles from the roof.",
+      "collocation": "a howling gale · gale-force winds · a severe gale",
+      "synonyms": "strong wind · storm"
+    },
+    {
+      "word": "overcast",
+      "pos": "adj",
+      "ipa": "/ˌəʊvəˈkɑːst/",
+      "vi": "U ám, nhiều mây",
+      "example": "The sky was grey and overcast.",
+      "collocation": "an overcast sky · overcast weather · grey and overcast",
+      "synonyms": "cloudy · grey · dull"
+    },
+    {
+      "word": "frost",
+      "pos": "n",
+      "ipa": "/frɒst/",
+      "vi": "Sương giá",
+      "example": "A hard frost covered the fields.",
+      "collocation": "a hard frost · morning frost · ground frost",
+      "synonyms": "ice · freeze",
+      "forms": "frosty (adj)"
+    },
+    {
+      "word": "scorching",
+      "pos": "adj",
+      "ipa": "/ˈskɔːtʃɪŋ/",
+      "vi": "Nóng như thiêu",
+      "example": "They worked in the scorching heat.",
+      "collocation": "scorching heat · a scorching day · scorching sun",
+      "synonyms": "sweltering · blazing · roasting"
+    },
+    {
+      "word": "mild",
+      "pos": "adj",
+      "ipa": "/maɪld/",
+      "vi": "Ôn hoà, dịu",
+      "example": "It has been a mild winter this year.",
+      "collocation": "a mild winter · mild weather · unusually mild",
+      "synonyms": "gentle · moderate · temperate"
+    },
+    {
+      "word": "monsoon",
+      "pos": "n",
+      "ipa": "/mɒnˈsuːn/",
+      "vi": "Gió mùa, mùa mưa",
+      "example": "The monsoon brings heavy rain each year.",
+      "collocation": "the monsoon season · heavy monsoon · monsoon rains",
+      "synonyms": "rainy season"
+    },
+    {
+      "word": "hail",
+      "pos": "n",
+      "ipa": "/heɪl/",
+      "vi": "Mưa đá",
+      "example": "Hail battered the crops.",
+      "collocation": "a hail storm · heavy hail · a shower of hail",
+      "synonyms": "ice pellets",
+      "forms": "hail (v)"
+    },
+    {
+      "word": "drizzle",
+      "pos": "n",
+      "ipa": "/ˈdrɪzl/",
+      "vi": "Mưa phùn",
+      "example": "A light drizzle fell all morning.",
+      "collocation": "light drizzle · a fine drizzle · steady drizzle",
+      "synonyms": "light rain · mist",
+      "forms": "drizzle (v)"
+    },
+    {
+      "word": "thaw",
+      "pos": "v",
+      "ipa": "/θɔː/",
+      "vi": "Tan băng",
+      "example": "The snow began to thaw in spring.",
+      "collocation": "the snow thaws · begin to thaw · thaw out",
+      "synonyms": "melt · defrost",
+      "forms": "thaw (n)"
+    },
+    {
+      "word": "tropical",
+      "pos": "adj",
+      "ipa": "/ˈtrɒpɪkl/",
+      "vi": "Nhiệt đới",
+      "example": "The island has a tropical climate.",
+      "collocation": "a tropical climate · tropical storm · tropical rainforest",
+      "synonyms": "hot · humid · equatorial"
+    },
+    {
+      "word": "sweltering",
+      "pos": "adj",
+      "ipa": "/ˈsweltərɪŋ/",
+      "vi": "Oi bức, ngột ngạt",
+      "example": "The city was sweltering in August.",
+      "collocation": "sweltering heat · a sweltering day",
+      "synonyms": "scorching · stifling · baking",
+      "forms": "swelter (v)"
+    },
+    {
+      "word": "downpour",
+      "pos": "n",
+      "ipa": "/ˈdaʊnpɔː/",
+      "vi": "Trận mưa lớn",
+      "example": "A sudden downpour soaked the crowd.",
+      "collocation": "a sudden downpour · heavy downpour · torrential downpour",
+      "synonyms": "cloudburst · deluge"
+    },
+    {
+      "word": "breeze",
+      "pos": "n",
+      "ipa": "/briːz/",
+      "vi": "Làn gió nhẹ",
+      "example": "A cool breeze came off the sea.",
+      "collocation": "a gentle breeze · a cool breeze · a sea breeze",
+      "synonyms": "light wind · draught",
+      "forms": "breezy (adj)"
+    },
+    {
+      "word": "meteorology",
+      "pos": "n",
+      "ipa": "/ˌmiːtiəˈrɒlədʒi/",
+      "vi": "Khí tượng học",
+      "example": "Meteorology helps predict storms.",
+      "collocation": "study meteorology · modern meteorology",
+      "synonyms": "weather science",
+      "forms": "meteorologist (n) · meteorological (adj)"
+    },
+    {
+      "word": "freezing",
+      "pos": "adj",
+      "ipa": "/ˈfriːzɪŋ/",
+      "vi": "Rét buốt, đóng băng",
+      "example": "It was freezing cold outside.",
+      "collocation": "freezing cold · freezing temperatures · absolutely freezing",
+      "synonyms": "icy · frigid · bitter",
+      "forms": "freeze (v)"
+    },
+    {
+      "word": "damp",
+      "pos": "adj",
+      "ipa": "/dæmp/",
+      "vi": "Ẩm thấp",
+      "example": "The old house felt cold and damp.",
+      "collocation": "a damp climate · damp weather · cold and damp",
+      "synonyms": "moist · humid · clammy",
+      "forms": "dampness (n)"
+    },
+    {
+      "word": "gust",
+      "pos": "n",
+      "ipa": "/ɡʌst/",
+      "vi": "Cơn gió giật",
+      "example": "A gust of wind blew the door shut.",
+      "collocation": "a sudden gust · a gust of wind · strong gusts",
+      "synonyms": "blast · flurry · squall",
+      "forms": "gusty (adj)"
+    },
+    {
+      "word": "spell",
+      "pos": "n",
+      "ipa": "/spel/",
+      "vi": "Đợt (thời tiết)",
+      "example": "We had a long dry spell in July.",
+      "collocation": "a dry spell · a cold spell · a spell of rain",
+      "synonyms": "period · stretch · interval"
+    }
+  ]
+}
