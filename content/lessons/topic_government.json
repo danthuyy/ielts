@@ -1,0 +1,234 @@
+{
+  "id": "topic_government",
+  "title": "Chủ đề: Chính trị & Nhà nước",
+  "description": "Từ vựng IELTS chủ đề chính trị, chính phủ và pháp chế",
+  "date": "2026-08-07",
+  "tags": ["society", "crime"],
+  "words": [
+    {
+      "word": "democracy",
+      "pos": "n",
+      "ipa": "/dɪˈmɒkrəsi/",
+      "vi": "Nền dân chủ",
+      "example": "Free elections are the basis of democracy.",
+      "collocation": "representative democracy · uphold democracy · fragile democracy",
+      "synonyms": "self-government · republic"
+    },
+    {
+      "word": "legislation",
+      "pos": "n",
+      "ipa": "/ˌledʒɪsˈleɪʃən/",
+      "vi": "Pháp luật, luật lệ",
+      "example": "Parliament passed new legislation on data.",
+      "collocation": "pass legislation · new legislation · anti-smoking legislation",
+      "synonyms": "law · statute · act"
+    },
+    {
+      "word": "policy",
+      "pos": "n",
+      "ipa": "/ˈpɒləsi/",
+      "vi": "Chính sách",
+      "example": "The government changed its immigration policy.",
+      "collocation": "government policy · foreign policy · public policy",
+      "synonyms": "strategy · approach · plan"
+    },
+    {
+      "word": "election",
+      "pos": "n",
+      "ipa": "/ɪˈlekʃən/",
+      "vi": "Cuộc bầu cử",
+      "example": "The election was held in November.",
+      "collocation": "general election · win an election · hold an election",
+      "synonyms": "vote · poll · ballot"
+    },
+    {
+      "word": "democratic",
+      "pos": "adj",
+      "ipa": "/ˌdeməˈkrætɪk/",
+      "vi": "Dân chủ",
+      "example": "The country held its first democratic election.",
+      "collocation": "democratic society · democratic process · democratic values",
+      "synonyms": "representative · egalitarian"
+    },
+    {
+      "word": "citizen",
+      "pos": "n",
+      "ipa": "/ˈsɪtɪzn/",
+      "vi": "Công dân",
+      "example": "Every citizen has the right to vote.",
+      "collocation": "ordinary citizen · senior citizen · law-abiding citizen",
+      "synonyms": "national · resident · subject"
+    },
+    {
+      "word": "constituency",
+      "pos": "n",
+      "ipa": "/kənˈstɪtjuənsi/",
+      "vi": "Đơn vị bầu cử; cử tri",
+      "example": "The MP visited her constituency.",
+      "collocation": "local constituency · a safe constituency",
+      "synonyms": "electorate · voters · district"
+    },
+    {
+      "word": "referendum",
+      "pos": "n",
+      "ipa": "/ˌrefəˈrendəm/",
+      "vi": "Cuộc trưng cầu dân ý",
+      "example": "The issue was decided by referendum.",
+      "collocation": "hold a referendum · national referendum",
+      "synonyms": "vote · plebiscite · ballot"
+    },
+    {
+      "word": "sanction",
+      "pos": "n",
+      "ipa": "/ˈsæŋkʃən/",
+      "vi": "Lệnh trừng phạt",
+      "example": "The UN imposed sanctions on the country.",
+      "collocation": "impose sanctions · economic sanctions · lift sanctions",
+      "synonyms": "penalty · embargo · restriction"
+    },
+    {
+      "word": "bureaucracy",
+      "pos": "n",
+      "ipa": "/bjʊəˈrɒkrəsi/",
+      "vi": "Bộ máy quan liêu",
+      "example": "Businesses complain about too much bureaucracy.",
+      "collocation": "excessive bureaucracy · government bureaucracy",
+      "synonyms": "red tape · officialdom"
+    },
+    {
+      "word": "diplomacy",
+      "pos": "n",
+      "ipa": "/dɪˈpləʊməsi/",
+      "vi": "Ngoại giao",
+      "example": "The crisis was solved through diplomacy.",
+      "collocation": "quiet diplomacy · international diplomacy",
+      "synonyms": "negotiation · statesmanship"
+    },
+    {
+      "word": "regime",
+      "pos": "n",
+      "ipa": "/reɪˈʒiːm/",
+      "vi": "Chế độ, chính quyền",
+      "example": "The regime suppressed all protest.",
+      "collocation": "authoritarian regime · military regime · oppressive regime",
+      "synonyms": "government · administration · rule"
+    },
+    {
+      "word": "legitimate",
+      "pos": "adj",
+      "ipa": "/lɪˈdʒɪtɪmət/",
+      "vi": "Hợp pháp, chính đáng",
+      "example": "The election gave the government a legitimate mandate.",
+      "collocation": "legitimate government · legitimate concern · perfectly legitimate",
+      "synonyms": "lawful · valid · rightful"
+    },
+    {
+      "word": "mandate",
+      "pos": "n",
+      "ipa": "/ˈmændeɪt/",
+      "vi": "Quyền uỷ nhiệm",
+      "example": "The party won a clear mandate to govern.",
+      "collocation": "a clear mandate · democratic mandate · popular mandate",
+      "synonyms": "authority · authorisation"
+    },
+    {
+      "word": "autocratic",
+      "pos": "adj",
+      "ipa": "/ˌɔːtəˈkrætɪk/",
+      "vi": "Chuyên quyền, độc đoán",
+      "example": "The country was ruled by an autocratic leader.",
+      "collocation": "autocratic ruler · autocratic regime",
+      "synonyms": "dictatorial · tyrannical · authoritarian"
+    },
+    {
+      "word": "transparency",
+      "pos": "n",
+      "ipa": "/trænsˈpærənsi/",
+      "vi": "Sự minh bạch",
+      "example": "Voters demand greater transparency.",
+      "collocation": "financial transparency · greater transparency · lack of transparency",
+      "synonyms": "openness · accountability"
+    },
+    {
+      "word": "coalition",
+      "pos": "n",
+      "ipa": "/ˌkəʊəˈlɪʃən/",
+      "vi": "Liên minh",
+      "example": "The two parties formed a coalition.",
+      "collocation": "form a coalition · coalition government · fragile coalition",
+      "synonyms": "alliance · partnership · bloc"
+    },
+    {
+      "word": "authoritarian",
+      "pos": "adj",
+      "ipa": "/ɔːˌθɒrɪˈteəriən/",
+      "vi": "Độc tài, chuyên chế",
+      "example": "Citizens have few rights under authoritarian rule.",
+      "collocation": "authoritarian regime · authoritarian rule",
+      "synonyms": "dictatorial · oppressive · autocratic"
+    },
+    {
+      "word": "suffrage",
+      "pos": "n",
+      "ipa": "/ˈsʌfrɪdʒ/",
+      "vi": "Quyền bầu cử",
+      "example": "Universal suffrage was won after decades of protest.",
+      "collocation": "universal suffrage · women’s suffrage",
+      "synonyms": "the vote · voting rights"
+    },
+    {
+      "word": "partisan",
+      "pos": "adj",
+      "ipa": "/ˌpɑːtɪˈzæn/",
+      "vi": "Phe phái, thiên vị đảng",
+      "example": "The debate became bitterly partisan.",
+      "collocation": "partisan politics · deeply partisan",
+      "synonyms": "biased · one-sided · factional"
+    },
+    {
+      "word": "advocate",
+      "pos": "n",
+      "ipa": "/ˈædvəkət/",
+      "vi": "Người ủng hộ, vận động",
+      "example": "She is a leading advocate of reform.",
+      "collocation": "a strong advocate · advocate for · leading advocate",
+      "synonyms": "supporter · champion · proponent"
+    },
+    {
+      "word": "enact",
+      "pos": "v",
+      "ipa": "/ɪˈnækt/",
+      "vi": "Ban hành (luật)",
+      "example": "The government enacted strict new laws.",
+      "collocation": "enact a law · enact legislation · newly enacted",
+      "synonyms": "pass · legislate · implement"
+    },
+    {
+      "word": "oppress",
+      "pos": "v",
+      "ipa": "/əˈpres/",
+      "vi": "Áp bức",
+      "example": "The regime oppressed its own people.",
+      "collocation": "oppress the people · brutally oppress",
+      "synonyms": "persecute · subjugate · tyrannise"
+    },
+    {
+      "word": "reform",
+      "pos": "n",
+      "ipa": "/rɪˈfɔːm/",
+      "vi": "Sự cải cách",
+      "example": "The country needs deep political reform.",
+      "collocation": "political reform · economic reform · sweeping reform",
+      "synonyms": "change · overhaul · improvement"
+    },
+    {
+      "word": "scrutinise",
+      "pos": "v",
+      "ipa": "/ˈskruːtɪnaɪz/",
+      "vi": "Xem xét kỹ",
+      "example": "Journalists scrutinise every government decision.",
+      "collocation": "scrutinise closely · scrutinise the budget",
+      "synonyms": "examine · inspect · study"
+    }
+  ]
+}
