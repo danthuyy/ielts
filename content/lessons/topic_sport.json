@@ -1,0 +1,249 @@
+{
+  "id": "topic_sport",
+  "title": "Chủ đề: Thể thao",
+  "description": "Từ vựng IELTS chủ đề thể thao, thi đấu và rèn luyện",
+  "date": "2026-08-07",
+  "tags": ["sport", "health"],
+  "words": [
+    {
+      "word": "athlete",
+      "pos": "n",
+      "ipa": "/ˈæθliːt/",
+      "vi": "Vận động viên",
+      "example": "The athlete broke the world record.",
+      "collocation": "professional athlete · elite athlete · a talented athlete",
+      "synonyms": "sportsperson · competitor",
+      "forms": "athletic (adj) · athletics (n)"
+    },
+    {
+      "word": "endurance",
+      "pos": "n",
+      "ipa": "/ɪnˈdjʊərəns/",
+      "vi": "Sức bền",
+      "example": "Marathon running requires great endurance.",
+      "collocation": "physical endurance · endurance test · build endurance",
+      "synonyms": "stamina · staying power",
+      "forms": "endure (v) · enduring (adj)"
+    },
+    {
+      "word": "stamina",
+      "pos": "n",
+      "ipa": "/ˈstæmɪnə/",
+      "vi": "Sức dẻo dai",
+      "example": "Swimming builds stamina.",
+      "collocation": "build stamina · lack stamina · great stamina",
+      "synonyms": "endurance · energy · staying power"
+    },
+    {
+      "word": "agility",
+      "pos": "n",
+      "ipa": "/əˈdʒɪləti/",
+      "vi": "Sự nhanh nhẹn",
+      "example": "Gymnastics demands strength and agility.",
+      "collocation": "physical agility · speed and agility · mental agility",
+      "synonyms": "nimbleness · quickness",
+      "forms": "agile (adj)"
+    },
+    {
+      "word": "spectator",
+      "pos": "n",
+      "ipa": "/spekˈteɪtə/",
+      "vi": "Khán giả",
+      "example": "Thousands of spectators filled the stadium.",
+      "collocation": "a spectator · thousands of spectators · spectator sport",
+      "synonyms": "onlooker · viewer · fan",
+      "forms": "spectate (v)"
+    },
+    {
+      "word": "referee",
+      "pos": "n",
+      "ipa": "/ˌrefəˈriː/",
+      "vi": "Trọng tài",
+      "example": "The referee awarded a penalty.",
+      "collocation": "the referee · a fair referee · referee’s decision",
+      "synonyms": "official · umpire · judge"
+    },
+    {
+      "word": "tournament",
+      "pos": "n",
+      "ipa": "/ˈtʊənəmənt/",
+      "vi": "Giải đấu",
+      "example": "She reached the final of the tournament.",
+      "collocation": "win a tournament · knockout tournament · major tournament",
+      "synonyms": "competition · championship · contest"
+    },
+    {
+      "word": "opponent",
+      "pos": "n",
+      "ipa": "/əˈpəʊnənt/",
+      "vi": "Đối thủ",
+      "example": "He defeated a much stronger opponent.",
+      "collocation": "a tough opponent · beat an opponent · worthy opponent",
+      "synonyms": "rival · adversary · competitor",
+      "forms": "oppose (v) · opposition (n)"
+    },
+    {
+      "word": "tactics",
+      "pos": "n",
+      "ipa": "/ˈtæktɪks/",
+      "vi": "Chiến thuật",
+      "example": "The coach changed tactics at half-time.",
+      "collocation": "change tactics · clever tactics · defensive tactics",
+      "synonyms": "strategy · manoeuvres · approach",
+      "forms": "tactical (adj) · tactically (adv)"
+    },
+    {
+      "word": "perseverance",
+      "pos": "n",
+      "ipa": "/ˌpɜːsɪˈvɪərəns/",
+      "vi": "Sự kiên trì",
+      "example": "Her success came from sheer perseverance.",
+      "collocation": "sheer perseverance · reward perseverance",
+      "synonyms": "persistence · determination · tenacity",
+      "forms": "persevere (v)"
+    },
+    {
+      "word": "amateur",
+      "pos": "n",
+      "ipa": "/ˈæmətə/",
+      "vi": "Người nghiệp dư",
+      "example": "The event is open to amateurs.",
+      "collocation": "a keen amateur · amateur athlete · talented amateur",
+      "synonyms": "non-professional · beginner",
+      "forms": "amateurish (adj)"
+    },
+    {
+      "word": "adrenaline",
+      "pos": "n",
+      "ipa": "/əˈdrenəlɪn/",
+      "vi": "Adrenaline (hưng phấn)",
+      "example": "The race gave her an adrenaline rush.",
+      "collocation": "adrenaline rush · pump adrenaline · adrenaline-fuelled",
+      "synonyms": "excitement · rush"
+    },
+    {
+      "word": "defeat",
+      "pos": "n",
+      "ipa": "/dɪˈfiːt/",
+      "vi": "Thất bại",
+      "example": "The team suffered a heavy defeat.",
+      "collocation": "suffer defeat · a heavy defeat · admit defeat",
+      "synonyms": "loss · beating · setback",
+      "forms": "defeated (adj)"
+    },
+    {
+      "word": "triumph",
+      "pos": "n",
+      "ipa": "/ˈtraɪəmf/",
+      "vi": "Chiến thắng vang dội",
+      "example": "The win was a personal triumph.",
+      "collocation": "a great triumph · sporting triumph · triumph over",
+      "synonyms": "victory · win · success",
+      "forms": "triumphant (adj) · triumphantly (adv)"
+    },
+    {
+      "word": "coach",
+      "pos": "n",
+      "ipa": "/kəʊtʃ/",
+      "vi": "Huấn luyện viên",
+      "example": "The coach praised the young players.",
+      "collocation": "a top coach · head coach · fitness coach",
+      "synonyms": "trainer · instructor · mentor",
+      "forms": "coaching (n)"
+    },
+    {
+      "word": "fixture",
+      "pos": "n",
+      "ipa": "/ˈfɪkstʃə/",
+      "vi": "Trận đấu theo lịch",
+      "example": "The next fixture is away from home.",
+      "collocation": "a home fixture · league fixture · fixture list",
+      "synonyms": "match · game · event"
+    },
+    {
+      "word": "underdog",
+      "pos": "n",
+      "ipa": "/ˈʌndədɒɡ/",
+      "vi": "Kèo dưới, bên yếu thế",
+      "example": "The underdog won against all odds.",
+      "collocation": "the underdog · back the underdog",
+      "synonyms": "outsider · long shot"
+    },
+    {
+      "word": "sportsmanship",
+      "pos": "n",
+      "ipa": "/ˈspɔːtsmənʃɪp/",
+      "vi": "Tinh thần thể thao",
+      "example": "He showed great sportsmanship in defeat.",
+      "collocation": "good sportsmanship · show sportsmanship",
+      "synonyms": "fair play · fairness"
+    },
+    {
+      "word": "competitive",
+      "pos": "adj",
+      "ipa": "/kəmˈpetətɪv/",
+      "vi": "Có tính cạnh tranh",
+      "example": "Tennis is a highly competitive sport.",
+      "collocation": "highly competitive · competitive sport · a competitive edge",
+      "synonyms": "cut-throat · aggressive · ambitious",
+      "forms": "compete (v) · competition (n) · competitor (n)"
+    },
+    {
+      "word": "forfeit",
+      "pos": "v",
+      "ipa": "/ˈfɔːfɪt/",
+      "vi": "Bị mất, chịu phạt (thua)",
+      "example": "The team forfeited the match.",
+      "collocation": "forfeit a match · forfeit the right · forfeit points",
+      "synonyms": "lose · surrender · relinquish",
+      "forms": "forfeiture (n)"
+    },
+    {
+      "word": "exertion",
+      "pos": "n",
+      "ipa": "/ɪɡˈzɜːʃən/",
+      "vi": "Sự gắng sức",
+      "example": "He was breathless from the exertion.",
+      "collocation": "physical exertion · great exertion · avoid exertion",
+      "synonyms": "effort · strain · exercise",
+      "forms": "exert (v)"
+    },
+    {
+      "word": "prowess",
+      "pos": "n",
+      "ipa": "/ˈpraʊəs/",
+      "vi": "Tài năng, sự điêu luyện",
+      "example": "She is famous for her athletic prowess.",
+      "collocation": "athletic prowess · sporting prowess",
+      "synonyms": "skill · expertise · mastery"
+    },
+    {
+      "word": "gruelling",
+      "pos": "adj",
+      "ipa": "/ˈɡruːəlɪŋ/",
+      "vi": "Cực nhọc, hành xác",
+      "example": "The cyclists faced a gruelling climb.",
+      "collocation": "a gruelling race · gruelling training · gruelling schedule",
+      "synonyms": "exhausting · punishing · arduous"
+    },
+    {
+      "word": "formidable",
+      "pos": "adj",
+      "ipa": "/fəˈmɪdəbl/",
+      "vi": "Đáng gờm",
+      "example": "They faced a formidable opponent.",
+      "collocation": "a formidable opponent · formidable strength",
+      "synonyms": "daunting · fearsome · powerful"
+    },
+    {
+      "word": "nimble",
+      "pos": "adj",
+      "ipa": "/ˈnɪmbl/",
+      "vi": "Nhanh nhẹn, khéo léo",
+      "example": "The boxer was quick and nimble.",
+      "collocation": "nimble feet · nimble fingers · surprisingly nimble",
+      "synonyms": "agile · quick · deft",
+      "forms": "nimbly (adv)"
+    }
+  ]
+}

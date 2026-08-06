@@ -1,0 +1,251 @@
+{
+  "id": "topic_money",
+  "title": "Chủ đề: Kinh tế & Tiền bạc",
+  "description": "Từ vựng IELTS chủ đề kinh tế, tài chính và tiền bạc",
+  "date": "2026-08-07",
+  "tags": ["money", "society"],
+  "words": [
+    {
+      "word": "recession",
+      "pos": "n",
+      "ipa": "/rɪˈseʃən/",
+      "vi": "Suy thoái kinh tế",
+      "example": "The country slid into a deep recession.",
+      "collocation": "deep recession · economic recession · slide into recession",
+      "synonyms": "downturn · slump · depression",
+      "forms": "recessionary (adj)"
+    },
+    {
+      "word": "inflation",
+      "pos": "n",
+      "ipa": "/ɪnˈfleɪʃən/",
+      "vi": "Lạm phát",
+      "example": "Rising inflation eats into wages.",
+      "collocation": "rising inflation · curb inflation · high inflation",
+      "synonyms": "price rises",
+      "forms": "inflationary (adj) · inflate (v)"
+    },
+    {
+      "word": "deficit",
+      "pos": "n",
+      "ipa": "/ˈdefɪsɪt/",
+      "vi": "Thâm hụt",
+      "example": "The government is trying to cut the deficit.",
+      "collocation": "budget deficit · trade deficit · reduce the deficit",
+      "synonyms": "shortfall · shortage"
+    },
+    {
+      "word": "surplus",
+      "pos": "n",
+      "ipa": "/ˈsɜːpləs/",
+      "vi": "Thặng dư, dư thừa",
+      "example": "The country runs a large trade surplus.",
+      "collocation": "trade surplus · budget surplus · a surplus of",
+      "synonyms": "excess · glut"
+    },
+    {
+      "word": "asset",
+      "pos": "n",
+      "ipa": "/ˈæset/",
+      "vi": "Tài sản",
+      "example": "The house is their most valuable asset.",
+      "collocation": "valuable asset · financial asset · fixed asset",
+      "synonyms": "property · holdings · resource"
+    },
+    {
+      "word": "liability",
+      "pos": "n",
+      "ipa": "/ˌlaɪəˈbɪləti/",
+      "vi": "Khoản nợ; trách nhiệm pháp lý",
+      "example": "The company has more assets than liabilities.",
+      "collocation": "financial liability · a liability · limited liability",
+      "synonyms": "debt · obligation",
+      "forms": "liable (adj)"
+    },
+    {
+      "word": "subsidy",
+      "pos": "n",
+      "ipa": "/ˈsʌbsədi/",
+      "vi": "Khoản trợ cấp",
+      "example": "Farmers receive a government subsidy.",
+      "collocation": "government subsidy · farm subsidy · cut subsidies",
+      "synonyms": "grant · funding · handout",
+      "forms": "subsidise (v) · subsidised (adj)"
+    },
+    {
+      "word": "austerity",
+      "pos": "n",
+      "ipa": "/ɔːˈsterəti/",
+      "vi": "Chính sách thắt lưng buộc bụng",
+      "example": "Austerity measures hit the poorest hardest.",
+      "collocation": "austerity measures · years of austerity",
+      "synonyms": "cutbacks · belt-tightening",
+      "forms": "austere (adj)"
+    },
+    {
+      "word": "poverty",
+      "pos": "n",
+      "ipa": "/ˈpɒvəti/",
+      "vi": "Sự nghèo đói",
+      "example": "Millions still live in extreme poverty.",
+      "collocation": "extreme poverty · live in poverty · escape poverty",
+      "synonyms": "destitution · hardship · need",
+      "forms": "poor (adj) · impoverished (adj)"
+    },
+    {
+      "word": "thrifty",
+      "pos": "adj",
+      "ipa": "/ˈθrɪfti/",
+      "vi": "Tiết kiệm, chi tiêu dè sẻn",
+      "example": "Thrifty shoppers wait for the sales.",
+      "collocation": "thrifty shopper · a thrifty habit",
+      "synonyms": "frugal · economical · careful",
+      "forms": "thrift (n)"
+    },
+    {
+      "word": "frugal",
+      "pos": "adj",
+      "ipa": "/ˈfruːɡl/",
+      "vi": "Tằn tiện, đạm bạc",
+      "example": "They lead a simple, frugal life.",
+      "collocation": "frugal lifestyle · frugal with money",
+      "synonyms": "thrifty · economical · sparing",
+      "forms": "frugally (adv) · frugality (n)"
+    },
+    {
+      "word": "squander",
+      "pos": "v",
+      "ipa": "/ˈskwɒndə/",
+      "vi": "Tiêu xài phung phí",
+      "example": "He squandered his savings on gambling.",
+      "collocation": "squander money · squander an opportunity · squander a fortune",
+      "synonyms": "waste · fritter away · blow"
+    },
+    {
+      "word": "wealth",
+      "pos": "n",
+      "ipa": "/welθ/",
+      "vi": "Của cải, sự giàu có",
+      "example": "A small elite controls most of the wealth.",
+      "collocation": "accumulate wealth · vast wealth · distribution of wealth",
+      "synonyms": "riches · affluence · fortune",
+      "forms": "wealthy (adj)"
+    },
+    {
+      "word": "stagnant",
+      "pos": "adj",
+      "ipa": "/ˈstæɡnənt/",
+      "vi": "Trì trệ, đình đốn",
+      "example": "Wages have been stagnant for a decade.",
+      "collocation": "stagnant economy · stagnant wages · remain stagnant",
+      "synonyms": "sluggish · flat · static",
+      "forms": "stagnate (v) · stagnation (n)"
+    },
+    {
+      "word": "fiscal",
+      "pos": "adj",
+      "ipa": "/ˈfɪskl/",
+      "vi": "Thuộc tài chính công",
+      "example": "The government tightened fiscal policy.",
+      "collocation": "fiscal policy · fiscal year · fiscal deficit",
+      "synonyms": "financial · budgetary · economic",
+      "forms": "fiscally (adv)"
+    },
+    {
+      "word": "monetary",
+      "pos": "adj",
+      "ipa": "/ˈmʌnɪtri/",
+      "vi": "Thuộc tiền tệ",
+      "example": "The central bank sets monetary policy.",
+      "collocation": "monetary policy · monetary value · monetary union",
+      "synonyms": "financial · fiscal · pecuniary"
+    },
+    {
+      "word": "taxation",
+      "pos": "n",
+      "ipa": "/tækˈseɪʃən/",
+      "vi": "Sự đánh thuế",
+      "example": "Higher taxation funds public services.",
+      "collocation": "high taxation · income taxation · system of taxation",
+      "synonyms": "taxes · levies · duties",
+      "forms": "tax (n) · taxable (adj)"
+    },
+    {
+      "word": "budget",
+      "pos": "n",
+      "ipa": "/ˈbʌdʒɪt/",
+      "vi": "Ngân sách",
+      "example": "The family lives on a tight budget.",
+      "collocation": "tight budget · annual budget · balance the budget",
+      "synonyms": "allowance · funds · finances",
+      "forms": "budgetary (adj)"
+    },
+    {
+      "word": "debt",
+      "pos": "n",
+      "ipa": "/det/",
+      "vi": "Nợ",
+      "example": "The country is deep in debt.",
+      "collocation": "in debt · pay off debt · national debt",
+      "synonyms": "arrears · liability · what is owed",
+      "forms": "indebted (adj)"
+    },
+    {
+      "word": "mortgage",
+      "pos": "n",
+      "ipa": "/ˈmɔːɡɪdʒ/",
+      "vi": "Khoản vay thế chấp nhà",
+      "example": "They took out a mortgage to buy the flat.",
+      "collocation": "take out a mortgage · pay a mortgage · mortgage rate",
+      "synonyms": "home loan · loan"
+    },
+    {
+      "word": "revenue",
+      "pos": "n",
+      "ipa": "/ˈrevənjuː/",
+      "vi": "Nguồn thu, doanh thu",
+      "example": "Tax revenue funds the health service.",
+      "collocation": "tax revenue · generate revenue · annual revenue",
+      "synonyms": "income · earnings · takings"
+    },
+    {
+      "word": "bankrupt",
+      "pos": "adj",
+      "ipa": "/ˈbæŋkrʌpt/",
+      "vi": "Phá sản, vỡ nợ",
+      "example": "The airline went bankrupt last year.",
+      "collocation": "go bankrupt · declare bankrupt · virtually bankrupt",
+      "synonyms": "insolvent · ruined · broke",
+      "forms": "bankruptcy (n)"
+    },
+    {
+      "word": "dividend",
+      "pos": "n",
+      "ipa": "/ˈdɪvɪdend/",
+      "vi": "Cổ tức",
+      "example": "Shareholders received a large dividend.",
+      "collocation": "pay a dividend · annual dividend · high dividend",
+      "synonyms": "return · payout · yield"
+    },
+    {
+      "word": "speculate",
+      "pos": "v",
+      "ipa": "/ˈspekjuleɪt/",
+      "vi": "Đầu cơ; suy đoán",
+      "example": "Investors speculate on rising house prices.",
+      "collocation": "speculate on · speculate in property · wildly speculate",
+      "synonyms": "gamble · invest · conjecture",
+      "forms": "speculation (n) · speculative (adj)"
+    },
+    {
+      "word": "remittance",
+      "pos": "n",
+      "ipa": "/rɪˈmɪtəns/",
+      "vi": "Kiều hối, tiền gửi về",
+      "example": "Remittances from abroad support many families.",
+      "collocation": "send a remittance · remittance flow · overseas remittances",
+      "synonyms": "transfer · payment",
+      "forms": "remit (v)"
+    }
+  ]
+}
