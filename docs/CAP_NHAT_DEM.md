@@ -41,6 +41,15 @@ xanh rồi mới commit & push**, và **kiểm chứng bằng UI thật** trên 
   - Hiện **Kỷ lục** điểm cao nhất từng đạt cho bài đó; vượt kỷ lục thì báo "mới!".
   - Đáp án nhiễu lấy trong chính tập đang kiểm tra (không trộn từ bài khác).
 
+### Họ từ (word families)
+
+- Thêm trường `forms` vào schema: **các dạng khác cùng gốc của từ** theo từng từ
+  loại, ví dụ `analyse → analysis (n) · analytical (adj) · analyst (n)`. Word
+  formation là một kỹ năng IELTS riêng, nên hiện họ từ biến một headword thành
+  cả một chùm từ để nhận diện và dùng được.
+- Hiển thị ở **Chi tiết từ** và **Flashcard** (khối "Họ từ"), tìm được trong ô
+  tìm kiếm. Đã điền cho **toàn bộ 250 từ AWL** (sublist 1–10).
+
 ### Từ vựng của ngày
 
 - Card **"Từ vựng hôm nay"** trên Trang chủ: mỗi ngày một từ, chọn bằng cách băm
@@ -59,15 +68,15 @@ xanh rồi mới commit & push**, và **kiểm chứng bằng UI thật** trên 
 
 ## 2. Nội dung từ vựng
 
-Từ **1 bài / 25 từ** ban đầu (thực tế 5 bài / 125 từ trước phiên này) mở rộng lên
-**14 bài / 350 từ**:
+Từ **5 bài / 125 từ** trước phiên này mở rộng lên **30 bài / 750 từ**:
 
-| Nhóm            | Bài                                                                                                   |
-| --------------- | ----------------------------------------------------------------------------------------------------- |
-| Học thuật (AWL) | `awl_sublist_1`, `awl_sublist_2` (50 từ Academic Word List — nhóm giá trị nhất cho IELTS)             |
-| Chủ đề          | Môi trường, Giáo dục, Công nghệ, Sức khoẻ, Tội phạm & Pháp luật, Truyền thông, Công việc & Kinh doanh |
+| Nhóm            | Bài                                                                                                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Học thuật (AWL) | `awl_sublist_1` … `awl_sublist_10` — **trọn bộ 10 sublist Academic Word List, 250 từ**, mỗi từ có họ từ                                                          |
+| Chủ đề          | Môi trường, Giáo dục, Công nghệ, Sức khoẻ, Tội phạm, Truyền thông, Công việc, Du lịch, Toàn cầu hoá, Văn hoá, Gia đình, Chính trị, Khoa học, Đô thị hoá, Ẩm thực |
 
-Mỗi từ có: nghĩa tiếng Việt, IPA, **collocation**, **synonyms**, câu ví dụ.
+Mỗi từ có: nghĩa tiếng Việt, IPA, **collocation**, **synonyms**, **họ từ** (AWL),
+câu ví dụ.
 
 > ⚠️ **Nội dung do AI soạn, cần rà lại.** IPA và một số nghĩa/ví dụ nên được người
 > dạy soát qua trước khi coi là chuẩn tuyệt đối. Việc thêm/sửa từ không đụng chạm
@@ -81,7 +90,7 @@ Các bài mới để `date` trong tuần hiện tại nên xuất hiện luôn 
 
 Chạy dev, đi qua từng màn, soi console — **không có lỗi** ở:
 
-- Trang chủ (card Từ vựng hôm nay, lưới 14 chủ đề, thống kê 350 từ)
+- Trang chủ (card Từ vựng hôm nay, lưới bài học, thống kê tổng số từ)
 - Thư viện (tìm theo synonym ra đúng từ; bộ lọc chủ đề)
 - Học mix bài mới (đáp án nhiễu nằm trong bài)
 - Kiểm tra: chơi trọn 15 câu → màn kết quả hiện **Xếp loại + Kỷ lục + xem lại**

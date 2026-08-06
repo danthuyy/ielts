@@ -3,9 +3,10 @@
 Cập nhật: 07/08/2026. Ghi lại để người (hoặc AI) quay lại sau này biết đang ở
 đâu mà không phải đọc lại toàn bộ lịch sử git.
 
-> Phiên làm lớn đêm 06–07/08: thêm Học theo kỳ, synonyms, xếp loại + kỷ lục cho
-> Kiểm tra, Từ vựng của ngày, và mở rộng nội dung lên 14 bài / 350 từ. Chi tiết
-> ở [CAP_NHAT_DEM.md](CAP_NHAT_DEM.md).
+> Phiên làm lớn đêm 06–07/08: thêm Học theo kỳ, synonyms, họ từ (word families),
+> xếp loại + kỷ lục cho Kiểm tra, Từ vựng của ngày, và mở rộng nội dung lên
+> **30 bài / 750 từ** (trọn bộ AWL 10 sublist). Chi tiết ở
+> [CAP_NHAT_DEM.md](CAP_NHAT_DEM.md).
 
 ## Đang ở đâu
 
@@ -18,10 +19,9 @@ https://danthuyy.github.io/ielts/, deploy tự động khi push lên `main`.
 
 ## Giới hạn thật hiện nay
 
-**Nội dung: 14 bài học, 350 từ** (5 bài chủ đề đọc gốc + 7 bài chủ đề IELTS +
-2 bài AWL). Phần lớn do AI soạn nên **IPA và nghĩa nên được rà lại**. Vẫn còn
-dư địa lớn: AWL mới có 2/10 sublist, và nhiều chủ đề IELTS chưa có. Xem
-[CONTRIBUTING.md](../CONTRIBUTING.md) để thêm bài.
+**Nội dung: 30 bài học, 750 từ** — gồm 5 bài đọc gốc, trọn bộ AWL 10 sublist
+(250 từ) và 15 bài chủ đề IELTS. Phần lớn do AI soạn nên **IPA và nghĩa nên được
+rà lại**. Xem [CONTRIBUTING.md](../CONTRIBUTING.md) để thêm bài.
 
 ## Nợ kỹ thuật đã biết
 
