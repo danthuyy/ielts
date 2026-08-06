@@ -13,22 +13,16 @@ import { useKeyboard } from '@/hooks/useKeyboard';
 import { useRetryQueue } from '@/hooks/useRetryQueue';
 import { useSessionWords } from '@/hooks/useSessionWords';
 import { useSettings } from '@/hooks/useSettings';
+import { buildChoiceOptions } from '@/lib/choices';
 import { getSrsState, recordActivity, recordAnswer } from '@/lib/progress';
 import { processAnswer, QUALITY } from '@/lib/srs';
 import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { resultLine, resultSticker } from '@/lib/stickers';
 import { speak } from '@/lib/tts';
-import { shuffle } from '@/lib/utils';
 import type { StudyWord } from '@/content/schema';
 
 const OPTION_COUNT = 4;
 const REVEAL_MS = 1500;
-
-/** Distractors are drawn from the whole corpus, so options stay plausible. */
-function buildOptions(target: StudyWord): StudyWord[] {
-  const pool = ALL_STUDY_WORDS.filter((candidate) => candidate.word !== target.word);
-  return shuffle([...shuffle(pool).slice(0, OPTION_COUNT - 1), target]);
-}
 
 export function QuizChoiceScreen() {
   return <Restartable>{(restart) => <ChoiceSession onRetry={restart} />}</Restartable>;
@@ -53,7 +47,12 @@ function ChoiceSession({ onRetry }: { onRetry: () => void }) {
   const timerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   const word = queue.current;
-  const options = useMemo(() => (word ? buildOptions(word) : []), [word]);
+  // Distractors prefer the words in this session, so a quiz on one lesson is a
+  // choice between that lesson's words rather than the whole library.
+  const options = useMemo(
+    () => (word ? buildChoiceOptions(word, ordered, ALL_STUDY_WORDS, OPTION_COUNT) : []),
+    [word, ordered],
+  );
 
   const autoSpeakRef = useRef(settings.autoSpeak);
   useEffect(() => {

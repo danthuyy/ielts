@@ -10,6 +10,7 @@ import { WordBank } from '@/components/WordBank';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useMasteryQueue } from '@/hooks/useMasteryQueue';
 import { useSettings } from '@/hooks/useSettings';
+import { buildChoiceOptions } from '@/lib/choices';
 import { compareAnswer, type Segment } from '@/lib/diff';
 import {
   GRADUATED,
@@ -100,12 +101,11 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     if (!word || (rung !== 'choice-en' && rung !== 'choice-vi' && rung !== 'listen-choice')) {
       return [];
     }
-    const distractors = shuffle(ALL_STUDY_WORDS.filter((entry) => entry.word !== word.word)).slice(
-      0,
-      OPTION_COUNT - 1,
-    );
-    return shuffle([...distractors, word]);
-  }, [word, rung]);
+    // Distractors come from the words in this session first — so studying a
+    // fresh lesson stops filling every question with vocabulary from old ones —
+    // and only borrow from the wider corpus when the session is too small.
+    return buildChoiceOptions(word, session, ALL_STUDY_WORDS, OPTION_COUNT);
+  }, [word, rung, session]);
 
   const tiles = useMemo(() => {
     if (!word || rung !== 'assemble') return [];
