@@ -62,10 +62,10 @@ xanh rồi mới commit & push**, và **kiểm chứng bằng UI thật** trên 
 Từ **1 bài / 25 từ** ban đầu (thực tế 5 bài / 125 từ trước phiên này) mở rộng lên
 **14 bài / 350 từ**:
 
-| Nhóm | Bài |
-| --- | --- |
-| Học thuật (AWL) | `awl_sublist_1`, `awl_sublist_2` (50 từ Academic Word List — nhóm giá trị nhất cho IELTS) |
-| Chủ đề | Môi trường, Giáo dục, Công nghệ, Sức khoẻ, Tội phạm & Pháp luật, Truyền thông, Công việc & Kinh doanh |
+| Nhóm            | Bài                                                                                                   |
+| --------------- | ----------------------------------------------------------------------------------------------------- |
+| Học thuật (AWL) | `awl_sublist_1`, `awl_sublist_2` (50 từ Academic Word List — nhóm giá trị nhất cho IELTS)             |
+| Chủ đề          | Môi trường, Giáo dục, Công nghệ, Sức khoẻ, Tội phạm & Pháp luật, Truyền thông, Công việc & Kinh doanh |
 
 Mỗi từ có: nghĩa tiếng Việt, IPA, **collocation**, **synonyms**, câu ví dụ.
 
