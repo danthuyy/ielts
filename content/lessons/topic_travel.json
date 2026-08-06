@@ -1,0 +1,234 @@
+{
+  "id": "topic_travel",
+  "title": "Chủ đề: Du lịch",
+  "description": "Từ vựng IELTS chủ đề du lịch, tham quan và văn hoá",
+  "date": "2026-08-07",
+  "tags": ["travel", "culture"],
+  "words": [
+    {
+      "word": "itinerary",
+      "pos": "n",
+      "ipa": "/aɪˈtɪnərəri/",
+      "vi": "Lịch trình chuyến đi",
+      "example": "The tour has a packed itinerary.",
+      "collocation": "detailed itinerary · plan an itinerary · packed itinerary",
+      "synonyms": "schedule · plan · route"
+    },
+    {
+      "word": "excursion",
+      "pos": "n",
+      "ipa": "/ɪkˈskɜːʃən/",
+      "vi": "Chuyến tham quan ngắn",
+      "example": "We booked a day excursion to the ruins.",
+      "collocation": "day excursion · guided excursion · go on an excursion",
+      "synonyms": "outing · trip · jaunt"
+    },
+    {
+      "word": "destination",
+      "pos": "n",
+      "ipa": "/ˌdestɪˈneɪʃən/",
+      "vi": "Điểm đến",
+      "example": "Bali is a popular tourist destination.",
+      "collocation": "popular destination · holiday destination · final destination",
+      "synonyms": "resort · location · endpoint"
+    },
+    {
+      "word": "accommodation",
+      "pos": "n",
+      "ipa": "/əˌkɒməˈdeɪʃən/",
+      "vi": "Chỗ ở",
+      "example": "The price includes flights and accommodation.",
+      "collocation": "book accommodation · budget accommodation · overnight accommodation",
+      "synonyms": "lodging · housing · rooms"
+    },
+    {
+      "word": "picturesque",
+      "pos": "adj",
+      "ipa": "/ˌpɪktʃəˈresk/",
+      "vi": "Đẹp như tranh",
+      "example": "They stayed in a picturesque fishing village.",
+      "collocation": "picturesque village · picturesque scenery",
+      "synonyms": "scenic · charming · quaint"
+    },
+    {
+      "word": "bustling",
+      "pos": "adj",
+      "ipa": "/ˈbʌslɪŋ/",
+      "vi": "Nhộn nhịp, tấp nập",
+      "example": "The bustling market was full of tourists.",
+      "collocation": "bustling city · bustling market · bustling with life",
+      "synonyms": "busy · lively · thriving"
+    },
+    {
+      "word": "souvenir",
+      "pos": "n",
+      "ipa": "/ˌsuːvəˈnɪə/",
+      "vi": "Đồ lưu niệm",
+      "example": "She bought a souvenir for her sister.",
+      "collocation": "buy a souvenir · souvenir shop · a nice souvenir",
+      "synonyms": "memento · keepsake"
+    },
+    {
+      "word": "sightseeing",
+      "pos": "n",
+      "ipa": "/ˈsaɪtsiːɪŋ/",
+      "vi": "Sự tham quan ngắm cảnh",
+      "example": "We spent the morning sightseeing.",
+      "collocation": "go sightseeing · sightseeing tour · a day of sightseeing",
+      "synonyms": "touring · exploring"
+    },
+    {
+      "word": "remote",
+      "pos": "adj",
+      "ipa": "/rɪˈməʊt/",
+      "vi": "Xa xôi, hẻo lánh",
+      "example": "They trekked to a remote mountain village.",
+      "collocation": "remote island · remote village · remote area",
+      "synonyms": "isolated · far-flung · secluded"
+    },
+    {
+      "word": "breathtaking",
+      "pos": "adj",
+      "ipa": "/ˈbreθteɪkɪŋ/",
+      "vi": "Ngoạn mục, đẹp sững sờ",
+      "example": "The view from the summit was breathtaking.",
+      "collocation": "breathtaking view · breathtaking scenery",
+      "synonyms": "stunning · spectacular · awe-inspiring"
+    },
+    {
+      "word": "hospitality",
+      "pos": "n",
+      "ipa": "/ˌhɒspɪˈtæləti/",
+      "vi": "Sự hiếu khách",
+      "example": "We were touched by their warm hospitality.",
+      "collocation": "warm hospitality · local hospitality · show hospitality",
+      "synonyms": "friendliness · welcome · warmth"
+    },
+    {
+      "word": "customs",
+      "pos": "n",
+      "ipa": "/ˈkʌstəmz/",
+      "vi": "Hải quan; phong tục",
+      "example": "You must declare goods at customs.",
+      "collocation": "go through customs · customs officer · local customs",
+      "synonyms": "border control · traditions"
+    },
+    {
+      "word": "voyage",
+      "pos": "n",
+      "ipa": "/ˈvɔɪɪdʒ/",
+      "vi": "Cuộc hành trình dài (đường biển)",
+      "example": "The voyage across the Atlantic took two weeks.",
+      "collocation": "long voyage · maiden voyage · voyage across",
+      "synonyms": "journey · expedition · crossing"
+    },
+    {
+      "word": "jet lag",
+      "pos": "n",
+      "ipa": "/ˈdʒet læɡ/",
+      "vi": "Sự mệt do lệch múi giờ",
+      "example": "She was still recovering from jet lag.",
+      "collocation": "suffer from jet lag · bad jet lag",
+      "synonyms": "fatigue · time-zone fatigue"
+    },
+    {
+      "word": "expedition",
+      "pos": "n",
+      "ipa": "/ˌekspəˈdɪʃən/",
+      "vi": "Cuộc thám hiểm",
+      "example": "The expedition reached the South Pole.",
+      "collocation": "mount an expedition · scientific expedition · polar expedition",
+      "synonyms": "journey · exploration · quest"
+    },
+    {
+      "word": "affordable",
+      "pos": "adj",
+      "ipa": "/əˈfɔːdəbəl/",
+      "vi": "Vừa túi tiền",
+      "example": "The hostel offers affordable rooms.",
+      "collocation": "affordable price · affordable travel · affordable housing",
+      "synonyms": "reasonable · inexpensive · budget"
+    },
+    {
+      "word": "landmark",
+      "pos": "n",
+      "ipa": "/ˈlændmɑːk/",
+      "vi": "Địa danh nổi bật",
+      "example": "The tower is the city's most famous landmark.",
+      "collocation": "famous landmark · historic landmark · visit a landmark",
+      "synonyms": "monument · attraction · site"
+    },
+    {
+      "word": "vibrant",
+      "pos": "adj",
+      "ipa": "/ˈvaɪbrənt/",
+      "vi": "Sôi động, rực rỡ",
+      "example": "The city has a vibrant nightlife.",
+      "collocation": "vibrant culture · vibrant city · vibrant colours",
+      "synonyms": "lively · dynamic · buzzing"
+    },
+    {
+      "word": "indigenous",
+      "pos": "adj",
+      "ipa": "/ɪnˈdɪdʒənəs/",
+      "vi": "Bản địa",
+      "example": "The museum celebrates indigenous culture.",
+      "collocation": "indigenous people · indigenous culture · indigenous species",
+      "synonyms": "native · local · aboriginal"
+    },
+    {
+      "word": "backpacker",
+      "pos": "n",
+      "ipa": "/ˈbækpækə/",
+      "vi": "Dân du lịch bụi",
+      "example": "The town is popular with backpackers.",
+      "collocation": "young backpacker · backpacker hostel",
+      "synonyms": "traveller · tourist"
+    },
+    {
+      "word": "scenic",
+      "pos": "adj",
+      "ipa": "/ˈsiːnɪk/",
+      "vi": "Có phong cảnh đẹp",
+      "example": "We took the scenic route along the coast.",
+      "collocation": "scenic route · scenic view · scenic drive",
+      "synonyms": "picturesque · beautiful · panoramic"
+    },
+    {
+      "word": "overrun",
+      "pos": "v",
+      "ipa": "/ˌəʊvəˈrʌn/",
+      "vi": "Tràn ngập",
+      "example": "The beach is overrun with tourists in summer.",
+      "collocation": "overrun with tourists · be overrun",
+      "synonyms": "swamp · overwhelm · flood"
+    },
+    {
+      "word": "authentic",
+      "pos": "adj",
+      "ipa": "/ɔːˈθentɪk/",
+      "vi": "Đích thực, nguyên bản",
+      "example": "The restaurant serves authentic Thai food.",
+      "collocation": "authentic cuisine · authentic experience · truly authentic",
+      "synonyms": "genuine · real · original"
+    },
+    {
+      "word": "embark",
+      "pos": "v",
+      "ipa": "/ɪmˈbɑːk/",
+      "vi": "Bắt đầu (chuyến đi/việc lớn)",
+      "example": "They embarked on a three-month trip.",
+      "collocation": "embark on a journey · embark on a trip",
+      "synonyms": "set out · begin · launch into"
+    },
+    {
+      "word": "stopover",
+      "pos": "n",
+      "ipa": "/ˈstɒpəʊvə/",
+      "vi": "Điểm dừng chân",
+      "example": "We had a stopover in Dubai.",
+      "collocation": "a short stopover · overnight stopover",
+      "synonyms": "layover · break · halt"
+    }
+  ]
+}

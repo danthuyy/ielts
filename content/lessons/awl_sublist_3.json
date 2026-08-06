@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_3",
+  "title": "AWL Sublist 3",
+  "description": "Academic Word List — nhóm 3",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "alternative",
+      "pos": "n",
+      "ipa": "/ɔːlˈtɜːnətɪv/",
+      "vi": "Phương án thay thế",
+      "example": "Cycling is a healthy alternative to driving.",
+      "collocation": "viable alternative · a cheaper alternative · alternative to",
+      "synonyms": "option · substitute · choice"
+    },
+    {
+      "word": "circumstance",
+      "pos": "n",
+      "ipa": "/ˈsɜːkəmstɑːns/",
+      "vi": "Hoàn cảnh, tình huống",
+      "example": "Under no circumstances should you share your password.",
+      "collocation": "in the circumstances · exceptional circumstance · unforeseen circumstance",
+      "synonyms": "situation · condition · context"
+    },
+    {
+      "word": "compensate",
+      "pos": "v",
+      "ipa": "/ˈkɒmpənseɪt/",
+      "vi": "Đền bù; bù đắp",
+      "example": "Nothing can compensate for the loss of a loved one.",
+      "collocation": "compensate for · fully compensate · compensate victims",
+      "synonyms": "make up for · reimburse · offset"
+    },
+    {
+      "word": "component",
+      "pos": "n",
+      "ipa": "/kəmˈpəʊnənt/",
+      "vi": "Bộ phận, thành phần",
+      "example": "Memory is a key component of a computer.",
+      "collocation": "key component · essential component · electronic component",
+      "synonyms": "part · element · constituent"
+    },
+    {
+      "word": "consent",
+      "pos": "n",
+      "ipa": "/kənˈsent/",
+      "vi": "Sự đồng ý",
+      "example": "The operation cannot go ahead without consent.",
+      "collocation": "give consent · without consent · informed consent",
+      "synonyms": "permission · agreement · approval"
+    },
+    {
+      "word": "considerable",
+      "pos": "adj",
+      "ipa": "/kənˈsɪdərəbəl/",
+      "vi": "Đáng kể",
+      "example": "The project required considerable effort.",
+      "collocation": "considerable amount · considerable effort · a considerable sum",
+      "synonyms": "substantial · significant · sizeable"
+    },
+    {
+      "word": "constant",
+      "pos": "adj",
+      "ipa": "/ˈkɒnstənt/",
+      "vi": "Liên tục, không đổi",
+      "example": "The patient needs constant care.",
+      "collocation": "constant change · remain constant · under constant pressure",
+      "synonyms": "continuous · unchanging · persistent"
+    },
+    {
+      "word": "contribute",
+      "pos": "v",
+      "ipa": "/kənˈtrɪbjuːt/",
+      "vi": "Đóng góp; góp phần",
+      "example": "Smoking contributes to heart disease.",
+      "collocation": "contribute to · contribute significantly · contribute money",
+      "synonyms": "give · donate · add to"
+    },
+    {
+      "word": "coordinate",
+      "pos": "v",
+      "ipa": "/kəʊˈɔːdɪneɪt/",
+      "vi": "Điều phối",
+      "example": "She coordinates the relief effort.",
+      "collocation": "coordinate efforts · closely coordinate · coordinate activities",
+      "synonyms": "organise · orchestrate · harmonise"
+    },
+    {
+      "word": "core",
+      "pos": "n",
+      "ipa": "/kɔː/",
+      "vi": "Cốt lõi, trung tâm",
+      "example": "Honesty is at the core of the company's values.",
+      "collocation": "core value · at the core · core business",
+      "synonyms": "heart · centre · nucleus"
+    },
+    {
+      "word": "corporate",
+      "pos": "adj",
+      "ipa": "/ˈkɔːpərət/",
+      "vi": "Thuộc tập đoàn",
+      "example": "The firm is changing its corporate culture.",
+      "collocation": "corporate culture · corporate image · corporate responsibility",
+      "synonyms": "business · company · commercial"
+    },
+    {
+      "word": "criteria",
+      "pos": "n",
+      "ipa": "/kraɪˈtɪəriə/",
+      "vi": "Tiêu chí (số nhiều)",
+      "example": "Applicants must meet strict criteria.",
+      "collocation": "meet the criteria · strict criteria · selection criteria",
+      "synonyms": "standards · benchmarks · requirements"
+    },
+    {
+      "word": "demonstrate",
+      "pos": "v",
+      "ipa": "/ˈdemənstreɪt/",
+      "vi": "Chứng minh; biểu diễn",
+      "example": "The study demonstrates a clear link.",
+      "collocation": "demonstrate clearly · demonstrate a skill · research demonstrates",
+      "synonyms": "show · prove · illustrate"
+    },
+    {
+      "word": "document",
+      "pos": "v",
+      "ipa": "/ˈdɒkjumɛnt/",
+      "vi": "Ghi lại bằng tài liệu",
+      "example": "The report documents years of abuse.",
+      "collocation": "carefully document · well documented · document a case",
+      "synonyms": "record · chronicle · log"
+    },
+    {
+      "word": "dominant",
+      "pos": "adj",
+      "ipa": "/ˈdɒmɪnənt/",
+      "vi": "Chi phối, thống trị",
+      "example": "The company holds a dominant position in the market.",
+      "collocation": "dominant position · dominant force · become dominant",
+      "synonyms": "prevailing · leading · commanding"
+    },
+    {
+      "word": "emphasis",
+      "pos": "n",
+      "ipa": "/ˈemfəsɪs/",
+      "vi": "Sự nhấn mạnh",
+      "example": "The course places emphasis on speaking.",
+      "collocation": "place emphasis on · particular emphasis · strong emphasis",
+      "synonyms": "stress · importance · focus"
+    },
+    {
+      "word": "ensure",
+      "pos": "v",
+      "ipa": "/ɪnˈʃʊə/",
+      "vi": "Đảm bảo",
+      "example": "Checks ensure the water is safe to drink.",
+      "collocation": "ensure safety · ensure success · help ensure",
+      "synonyms": "guarantee · make certain · secure"
+    },
+    {
+      "word": "exclude",
+      "pos": "v",
+      "ipa": "/ɪkˈskluːd/",
+      "vi": "Loại trừ",
+      "example": "The price excludes tax.",
+      "collocation": "exclude from · deliberately exclude · exclude the possibility",
+      "synonyms": "leave out · bar · rule out"
+    },
+    {
+      "word": "framework",
+      "pos": "n",
+      "ipa": "/ˈfreɪmwɜːk/",
+      "vi": "Khung, bộ khung",
+      "example": "The talks set a framework for peace.",
+      "collocation": "legal framework · theoretical framework · within a framework",
+      "synonyms": "structure · system · basis"
+    },
+    {
+      "word": "illustrate",
+      "pos": "v",
+      "ipa": "/ˈɪləstreɪt/",
+      "vi": "Minh hoạ, cho thấy",
+      "example": "This example illustrates the problem well.",
+      "collocation": "clearly illustrate · illustrate a point · illustrate with examples",
+      "synonyms": "show · demonstrate · exemplify"
+    },
+    {
+      "word": "imply",
+      "pos": "v",
+      "ipa": "/ɪmˈplaɪ/",
+      "vi": "Ngụ ý",
+      "example": "Her silence seemed to imply agreement.",
+      "collocation": "strongly imply · imply that · seem to imply",
+      "synonyms": "suggest · hint · insinuate"
+    },
+    {
+      "word": "initial",
+      "pos": "adj",
+      "ipa": "/ɪˈnɪʃəl/",
+      "vi": "Ban đầu",
+      "example": "The initial response was positive.",
+      "collocation": "initial stage · initial reaction · initial cost",
+      "synonyms": "first · early · opening"
+    },
+    {
+      "word": "justify",
+      "pos": "v",
+      "ipa": "/ˈdʒʌstɪfaɪ/",
+      "vi": "Biện minh, chứng minh là đúng",
+      "example": "How can you justify such a high price?",
+      "collocation": "justify a decision · fully justify · hard to justify",
+      "synonyms": "defend · warrant · vindicate"
+    },
+    {
+      "word": "maximise",
+      "pos": "v",
+      "ipa": "/ˈmæksɪmaɪz/",
+      "vi": "Tối đa hoá",
+      "example": "The layout maximises natural light.",
+      "collocation": "maximise profit · maximise efficiency · maximise the use of",
+      "synonyms": "optimise · increase · boost"
+    },
+    {
+      "word": "proportion",
+      "pos": "n",
+      "ipa": "/prəˈpɔːʃən/",
+      "vi": "Tỉ lệ, phần",
+      "example": "A large proportion of income goes on rent.",
+      "collocation": "large proportion · in proportion · a small proportion",
+      "synonyms": "percentage · ratio · fraction"
+    }
+  ]
+}
