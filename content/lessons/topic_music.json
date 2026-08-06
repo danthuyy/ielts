@@ -1,0 +1,240 @@
+{
+  "id": "topic_music",
+  "title": "Chủ đề: Âm nhạc",
+  "description": "Từ vựng IELTS chủ đề âm nhạc, biểu diễn và cảm thụ",
+  "date": "2026-08-07",
+  "tags": ["culture", "psychology"],
+  "words": [
+    {
+      "word": "melody",
+      "pos": "n",
+      "ipa": "/ˈmelədi/",
+      "vi": "Giai điệu",
+      "example": "The song has a beautiful melody.",
+      "collocation": "a beautiful melody · a simple melody · a haunting melody",
+      "synonyms": "tune · air",
+      "forms": "melodic (adj) · melodious (adj)"
+    },
+    {
+      "word": "rhythm",
+      "pos": "n",
+      "ipa": "/ˈrɪðəm/",
+      "vi": "Nhịp điệu",
+      "example": "The drummer kept a steady rhythm.",
+      "collocation": "a steady rhythm · keep the rhythm · a catchy rhythm",
+      "synonyms": "beat · tempo · pulse",
+      "forms": "rhythmic (adj)"
+    },
+    {
+      "word": "tempo",
+      "pos": "n",
+      "ipa": "/ˈtempəʊ/",
+      "vi": "Nhịp độ",
+      "example": "The song has a fast tempo.",
+      "collocation": "a fast tempo · a slow tempo · change tempo",
+      "synonyms": "pace · speed"
+    },
+    {
+      "word": "lyrics",
+      "pos": "n",
+      "ipa": "/ˈlɪrɪks/",
+      "vi": "Lời bài hát",
+      "example": "The lyrics are deeply personal.",
+      "collocation": "song lyrics · meaningful lyrics · write lyrics",
+      "synonyms": "words · verse",
+      "forms": "lyrical (adj)"
+    },
+    {
+      "word": "composer",
+      "pos": "n",
+      "ipa": "/kəmˈpəʊzə/",
+      "vi": "Nhà soạn nhạc",
+      "example": "The composer wrote the film score.",
+      "collocation": "a classical composer · a great composer",
+      "synonyms": "songwriter · musician",
+      "forms": "compose (v) · composition (n)"
+    },
+    {
+      "word": "orchestra",
+      "pos": "n",
+      "ipa": "/ˈɔːkɪstrə/",
+      "vi": "Dàn nhạc giao hưởng",
+      "example": "A full orchestra played the piece.",
+      "collocation": "a symphony orchestra · conduct an orchestra",
+      "synonyms": "ensemble · philharmonic",
+      "forms": "orchestral (adj)"
+    },
+    {
+      "word": "ensemble",
+      "pos": "n",
+      "ipa": "/ɒnˈsɒmbl/",
+      "vi": "Nhóm hoà tấu",
+      "example": "A small jazz ensemble performed.",
+      "collocation": "a jazz ensemble · a string ensemble",
+      "synonyms": "group · band · troupe"
+    },
+    {
+      "word": "instrumental",
+      "pos": "adj",
+      "ipa": "/ˌɪnstrəˈmentl/",
+      "vi": "Thuộc khí nhạc (không lời)",
+      "example": "The album has several instrumental tracks.",
+      "collocation": "an instrumental track · instrumental music",
+      "synonyms": "non-vocal",
+      "forms": "instrument (n)"
+    },
+    {
+      "word": "acoustic",
+      "pos": "adj",
+      "ipa": "/əˈkuːstɪk/",
+      "vi": "Mộc, không khuếch đại",
+      "example": "She played an acoustic version of the song.",
+      "collocation": "an acoustic guitar · an acoustic set",
+      "synonyms": "unplugged · non-electric",
+      "forms": "acoustics (n)"
+    },
+    {
+      "word": "tune",
+      "pos": "n",
+      "ipa": "/tjuːn/",
+      "vi": "Giai điệu, bài nhạc",
+      "example": "I can’t get that tune out of my head.",
+      "collocation": "hum a tune · a catchy tune · out of tune",
+      "synonyms": "melody · air · song",
+      "forms": "tuneful (adj)"
+    },
+    {
+      "word": "chord",
+      "pos": "n",
+      "ipa": "/kɔːd/",
+      "vi": "Hợp âm",
+      "example": "He strummed a few chords on the guitar.",
+      "collocation": "play a chord · a minor chord · strum a chord",
+      "synonyms": "harmony"
+    },
+    {
+      "word": "pitch",
+      "pos": "n",
+      "ipa": "/pɪtʃ/",
+      "vi": "Cao độ (âm thanh)",
+      "example": "She sang every note at the right pitch.",
+      "collocation": "perfect pitch · a high pitch · change pitch",
+      "synonyms": "tone · frequency"
+    },
+    {
+      "word": "vocalist",
+      "pos": "n",
+      "ipa": "/ˈvəʊkəlɪst/",
+      "vi": "Ca sĩ (chính)",
+      "example": "The band is looking for a new vocalist.",
+      "collocation": "a lead vocalist · a talented vocalist",
+      "synonyms": "singer · frontman",
+      "forms": "vocal (adj) · vocals (n)"
+    },
+    {
+      "word": "harmonise",
+      "pos": "v",
+      "ipa": "/ˈhɑːmənaɪz/",
+      "vi": "Hoà âm; hoà hợp",
+      "example": "Their voices harmonise beautifully.",
+      "collocation": "harmonise beautifully · voices harmonise",
+      "synonyms": "blend · sing in harmony",
+      "forms": "harmony (n) · harmonious (adj)"
+    },
+    {
+      "word": "upbeat",
+      "pos": "adj",
+      "ipa": "/ˈʌpbiːt/",
+      "vi": "Vui tươi, sôi động",
+      "example": "They played an upbeat dance track.",
+      "collocation": "an upbeat song · an upbeat mood · upbeat and cheerful",
+      "synonyms": "cheerful · lively · positive"
+    },
+    {
+      "word": "soulful",
+      "pos": "adj",
+      "ipa": "/ˈsəʊlfl/",
+      "vi": "Đầy cảm xúc, da diết",
+      "example": "She has a warm, soulful voice.",
+      "collocation": "a soulful voice · a soulful ballad",
+      "synonyms": "expressive · moving · heartfelt"
+    },
+    {
+      "word": "mellow",
+      "pos": "adj",
+      "ipa": "/ˈmeləʊ/",
+      "vi": "Êm dịu, du dương",
+      "example": "The café played mellow jazz.",
+      "collocation": "a mellow tone · mellow jazz · a mellow sound",
+      "synonyms": "soft · smooth · gentle"
+    },
+    {
+      "word": "resonate",
+      "pos": "v",
+      "ipa": "/ˈrezəneɪt/",
+      "vi": "Vang vọng; gây đồng cảm",
+      "example": "The lyrics resonate with young people.",
+      "collocation": "the sound resonates · resonate with · deeply resonate",
+      "synonyms": "echo · reverberate · strike a chord",
+      "forms": "resonance (n) · resonant (adj)"
+    },
+    {
+      "word": "rendition",
+      "pos": "n",
+      "ipa": "/renˈdɪʃən/",
+      "vi": "Bản trình diễn (lại)",
+      "example": "She gave a moving rendition of the ballad.",
+      "collocation": "a moving rendition · a live rendition · a soulful rendition",
+      "synonyms": "performance · version · interpretation",
+      "forms": "render (v)"
+    },
+    {
+      "word": "repertoire",
+      "pos": "n",
+      "ipa": "/ˈrepətwɑː/",
+      "vi": "Vốn tiết mục",
+      "example": "The choir has a wide repertoire.",
+      "collocation": "a wide repertoire · an extensive repertoire · add to a repertoire",
+      "synonyms": "collection · range"
+    },
+    {
+      "word": "percussion",
+      "pos": "n",
+      "ipa": "/pəˈkʌʃn/",
+      "vi": "Bộ gõ",
+      "example": "He plays percussion in the band.",
+      "collocation": "percussion instruments · the percussion section",
+      "synonyms": "drums",
+      "forms": "percussionist (n)"
+    },
+    {
+      "word": "symphony",
+      "pos": "n",
+      "ipa": "/ˈsɪmfəni/",
+      "vi": "Bản giao hưởng",
+      "example": "The orchestra performed a famous symphony.",
+      "collocation": "a classical symphony · perform a symphony",
+      "synonyms": "orchestral work",
+      "forms": "symphonic (adj)"
+    },
+    {
+      "word": "prodigy",
+      "pos": "n",
+      "ipa": "/ˈprɒdədʒi/",
+      "vi": "Thần đồng",
+      "example": "She was a musical prodigy as a child.",
+      "collocation": "a musical prodigy · a child prodigy",
+      "synonyms": "genius · wunderkind · talent"
+    },
+    {
+      "word": "haunting",
+      "pos": "adj",
+      "ipa": "/ˈhɔːntɪŋ/",
+      "vi": "Ám ảnh, day dứt (đẹp)",
+      "example": "The song has a haunting melody.",
+      "collocation": "a haunting melody · a haunting voice · hauntingly beautiful",
+      "synonyms": "evocative · poignant · unforgettable",
+      "forms": "haunt (v)"
+    }
+  ]
+}

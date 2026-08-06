@@ -1,0 +1,246 @@
+{
+  "id": "topic_mentalhealth",
+  "title": "Chủ đề: Sức khoẻ tinh thần",
+  "description": "Từ vựng IELTS chủ đề sức khoẻ tâm lý, stress và trị liệu",
+  "date": "2026-08-07",
+  "tags": ["health", "psychology"],
+  "words": [
+    {
+      "word": "anxiety",
+      "pos": "n",
+      "ipa": "/æŋˈzaɪəti/",
+      "vi": "Sự lo âu",
+      "example": "She struggles with severe anxiety.",
+      "collocation": "severe anxiety · social anxiety · suffer from anxiety",
+      "synonyms": "worry · unease · nervousness",
+      "forms": "anxious (adj)"
+    },
+    {
+      "word": "stress",
+      "pos": "n",
+      "ipa": "/stres/",
+      "vi": "Sự căng thẳng",
+      "example": "Chronic stress harms your health.",
+      "collocation": "chronic stress · under stress · cope with stress",
+      "synonyms": "pressure · strain · tension",
+      "forms": "stressful (adj) · stressed (adj)"
+    },
+    {
+      "word": "mindfulness",
+      "pos": "n",
+      "ipa": "/ˈmaɪndflnəs/",
+      "vi": "Chánh niệm, sự tỉnh thức",
+      "example": "Mindfulness can reduce anxiety.",
+      "collocation": "practise mindfulness · mindfulness meditation",
+      "synonyms": "awareness · presence",
+      "forms": "mindful (adj)"
+    },
+    {
+      "word": "therapy",
+      "pos": "n",
+      "ipa": "/ˈθerəpi/",
+      "vi": "Liệu pháp trị liệu",
+      "example": "He is having therapy for depression.",
+      "collocation": "undergo therapy · talking therapy · group therapy",
+      "synonyms": "treatment · counselling",
+      "forms": "therapist (n) · therapeutic (adj)"
+    },
+    {
+      "word": "counselling",
+      "pos": "n",
+      "ipa": "/ˈkaʊnsəlɪŋ/",
+      "vi": "Sự tư vấn tâm lý",
+      "example": "The school offers free counselling.",
+      "collocation": "seek counselling · offer counselling · career counselling",
+      "synonyms": "guidance · advice",
+      "forms": "counsellor (n)"
+    },
+    {
+      "word": "trauma",
+      "pos": "n",
+      "ipa": "/ˈtrɔːmə/",
+      "vi": "Sang chấn tâm lý",
+      "example": "She never recovered from the trauma.",
+      "collocation": "childhood trauma · emotional trauma · deep trauma",
+      "synonyms": "shock · ordeal",
+      "forms": "traumatic (adj) · traumatise (v)"
+    },
+    {
+      "word": "coping",
+      "pos": "n",
+      "ipa": "/ˈkəʊpɪŋ/",
+      "vi": "Sự đối phó, ứng phó",
+      "example": "Exercise is a healthy coping strategy.",
+      "collocation": "coping strategies · a coping mechanism",
+      "synonyms": "managing · handling",
+      "forms": "cope (v)"
+    },
+    {
+      "word": "stigma",
+      "pos": "n",
+      "ipa": "/ˈstɪɡmə/",
+      "vi": "Sự kỳ thị",
+      "example": "There is still a stigma around mental illness.",
+      "collocation": "the stigma of · social stigma · reduce stigma",
+      "synonyms": "shame · disgrace",
+      "forms": "stigmatise (v)"
+    },
+    {
+      "word": "overwhelmed",
+      "pos": "adj",
+      "ipa": "/ˌəʊvəˈwelmd/",
+      "vi": "Bị quá tải, ngợp",
+      "example": "She felt overwhelmed by the workload.",
+      "collocation": "feel overwhelmed · completely overwhelmed",
+      "synonyms": "swamped · overloaded",
+      "forms": "overwhelm (v) · overwhelming (adj)"
+    },
+    {
+      "word": "insomnia",
+      "pos": "n",
+      "ipa": "/ɪnˈsɒmniə/",
+      "vi": "Chứng mất ngủ",
+      "example": "Stress often causes insomnia.",
+      "collocation": "suffer from insomnia · chronic insomnia",
+      "synonyms": "sleeplessness"
+    },
+    {
+      "word": "self-esteem",
+      "pos": "n",
+      "ipa": "/ˌself ɪˈstiːm/",
+      "vi": "Lòng tự tôn, tự trọng",
+      "example": "Bullying can damage a child’s self-esteem.",
+      "collocation": "low self-esteem · boost self-esteem · high self-esteem",
+      "synonyms": "self-worth · confidence"
+    },
+    {
+      "word": "phobia",
+      "pos": "n",
+      "ipa": "/ˈfəʊbiə/",
+      "vi": "Nỗi ám ảnh sợ hãi",
+      "example": "He has a phobia of enclosed spaces.",
+      "collocation": "a phobia of · develop a phobia · an irrational phobia",
+      "synonyms": "fear · dread · aversion",
+      "forms": "phobic (adj)"
+    },
+    {
+      "word": "disorder",
+      "pos": "n",
+      "ipa": "/dɪsˈɔːdə/",
+      "vi": "Chứng rối loạn",
+      "example": "She was diagnosed with an anxiety disorder.",
+      "collocation": "a mental disorder · an eating disorder · a sleep disorder",
+      "synonyms": "condition · illness",
+      "forms": "disordered (adj)"
+    },
+    {
+      "word": "relaxation",
+      "pos": "n",
+      "ipa": "/ˌriːlækˈseɪʃən/",
+      "vi": "Sự thư giãn",
+      "example": "Deep breathing aids relaxation.",
+      "collocation": "a relaxation technique · deep relaxation",
+      "synonyms": "rest · unwinding",
+      "forms": "relax (v) · relaxing (adj)"
+    },
+    {
+      "word": "meditation",
+      "pos": "n",
+      "ipa": "/ˌmedɪˈteɪʃən/",
+      "vi": "Thiền định",
+      "example": "Daily meditation calms the mind.",
+      "collocation": "daily meditation · practise meditation · guided meditation",
+      "synonyms": "contemplation",
+      "forms": "meditate (v) · meditative (adj)"
+    },
+    {
+      "word": "distress",
+      "pos": "n",
+      "ipa": "/dɪˈstres/",
+      "vi": "Sự đau khổ, phiền muộn",
+      "example": "The news caused her great distress.",
+      "collocation": "emotional distress · in distress · cause distress",
+      "synonyms": "anguish · suffering",
+      "forms": "distressing (adj) · distressed (adj)"
+    },
+    {
+      "word": "panic",
+      "pos": "n",
+      "ipa": "/ˈpænɪk/",
+      "vi": "Sự hoảng loạn",
+      "example": "She had a panic attack before the exam.",
+      "collocation": "a panic attack · sheer panic · in a panic",
+      "synonyms": "alarm · fright · hysteria",
+      "forms": "panic (v) · panicky (adj)"
+    },
+    {
+      "word": "resilience",
+      "pos": "n",
+      "ipa": "/rɪˈzɪliəns/",
+      "vi": "Sự kiên cường, khả năng phục hồi",
+      "example": "Therapy helped her build resilience.",
+      "collocation": "emotional resilience · build resilience · mental resilience",
+      "synonyms": "toughness · fortitude",
+      "forms": "resilient (adj)"
+    },
+    {
+      "word": "reassure",
+      "pos": "v",
+      "ipa": "/ˌriːəˈʃʊə/",
+      "vi": "Trấn an",
+      "example": "The doctor reassured the worried patient.",
+      "collocation": "reassure someone · try to reassure · fully reassure",
+      "synonyms": "comfort · soothe · calm",
+      "forms": "reassurance (n) · reassuring (adj)"
+    },
+    {
+      "word": "soothe",
+      "pos": "v",
+      "ipa": "/suːð/",
+      "vi": "Xoa dịu, làm dịu",
+      "example": "Soft music soothes a crying baby.",
+      "collocation": "soothe nerves · soothe a child · music soothes",
+      "synonyms": "calm · comfort · ease",
+      "forms": "soothing (adj)"
+    },
+    {
+      "word": "uplifting",
+      "pos": "adj",
+      "ipa": "/ˌʌpˈlɪftɪŋ/",
+      "vi": "Nâng đỡ tinh thần",
+      "example": "It was an uplifting and hopeful film.",
+      "collocation": "an uplifting message · uplifting music",
+      "synonyms": "heartening · inspiring · cheering",
+      "forms": "uplift (v)"
+    },
+    {
+      "word": "cathartic",
+      "pos": "adj",
+      "ipa": "/kəˈθɑːtɪk/",
+      "vi": "Có tính giải toả cảm xúc",
+      "example": "Writing about it was cathartic.",
+      "collocation": "a cathartic experience · deeply cathartic",
+      "synonyms": "purging · liberating",
+      "forms": "catharsis (n)"
+    },
+    {
+      "word": "composure",
+      "pos": "n",
+      "ipa": "/kəmˈpəʊʒə/",
+      "vi": "Sự điềm tĩnh",
+      "example": "She kept her composure under pressure.",
+      "collocation": "keep your composure · regain composure · lose composure",
+      "synonyms": "calmness · poise · self-control",
+      "forms": "composed (adj)"
+    },
+    {
+      "word": "unwind",
+      "pos": "v",
+      "ipa": "/ˌʌnˈwaɪnd/",
+      "vi": "Thư giãn, xả hơi",
+      "example": "He listens to music to unwind.",
+      "collocation": "unwind after work · a way to unwind · help you unwind",
+      "synonyms": "relax · de-stress"
+    }
+  ]
+}
