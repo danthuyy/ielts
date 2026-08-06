@@ -1,0 +1,234 @@
+{
+  "id": "topic_science",
+  "title": "Chủ đề: Khoa học & Vũ trụ",
+  "description": "Từ vựng IELTS chủ đề khoa học, nghiên cứu và không gian",
+  "date": "2026-08-07",
+  "tags": ["technology", "education"],
+  "words": [
+    {
+      "word": "experiment",
+      "pos": "n",
+      "ipa": "/ɪkˈsperɪmənt/",
+      "vi": "Thí nghiệm",
+      "example": "Scientists conducted a series of experiments.",
+      "collocation": "conduct an experiment · scientific experiment · controlled experiment",
+      "synonyms": "test · trial · investigation"
+    },
+    {
+      "word": "laboratory",
+      "pos": "n",
+      "ipa": "/ləˈbɒrətri/",
+      "vi": "Phòng thí nghiệm",
+      "example": "The tests were carried out in a laboratory.",
+      "collocation": "research laboratory · in the laboratory · laboratory conditions",
+      "synonyms": "lab · workshop"
+    },
+    {
+      "word": "gravity",
+      "pos": "n",
+      "ipa": "/ˈɡrævəti/",
+      "vi": "Trọng lực",
+      "example": "Objects fall because of gravity.",
+      "collocation": "force of gravity · defy gravity · zero gravity",
+      "synonyms": "gravitation · pull"
+    },
+    {
+      "word": "molecule",
+      "pos": "n",
+      "ipa": "/ˈmɒlɪkjuːl/",
+      "vi": "Phân tử",
+      "example": "Water is made of tiny molecules.",
+      "collocation": "water molecule · a single molecule",
+      "synonyms": "particle · unit"
+    },
+    {
+      "word": "orbit",
+      "pos": "n",
+      "ipa": "/ˈɔːbɪt/",
+      "vi": "Quỹ đạo",
+      "example": "The satellite is in orbit around the Earth.",
+      "collocation": "in orbit · enter orbit · orbit around",
+      "synonyms": "circuit · path · revolution"
+    },
+    {
+      "word": "particle",
+      "pos": "n",
+      "ipa": "/ˈpɑːtɪkl/",
+      "vi": "Hạt",
+      "example": "The air was full of dust particles.",
+      "collocation": "tiny particle · subatomic particle · dust particle",
+      "synonyms": "fragment · speck · bit"
+    },
+    {
+      "word": "telescope",
+      "pos": "n",
+      "ipa": "/ˈtelɪskəʊp/",
+      "vi": "Kính viễn vọng",
+      "example": "Astronomers use a powerful telescope.",
+      "collocation": "powerful telescope · through a telescope · space telescope",
+      "synonyms": "scope · optical instrument"
+    },
+    {
+      "word": "astronomy",
+      "pos": "n",
+      "ipa": "/əˈstrɒnəmi/",
+      "vi": "Thiên văn học",
+      "example": "Astronomy is the study of the stars.",
+      "collocation": "study astronomy · modern astronomy",
+      "synonyms": "stargazing · cosmology"
+    },
+    {
+      "word": "specimen",
+      "pos": "n",
+      "ipa": "/ˈspesɪmɪn/",
+      "vi": "Mẫu vật",
+      "example": "The museum has a rare fossil specimen.",
+      "collocation": "a rare specimen · collect specimens · blood specimen",
+      "synonyms": "sample · example"
+    },
+    {
+      "word": "breakthrough",
+      "pos": "n",
+      "ipa": "/ˈbreɪkθruː/",
+      "vi": "Bước đột phá",
+      "example": "The team made a major medical breakthrough.",
+      "collocation": "major breakthrough · scientific breakthrough · make a breakthrough",
+      "synonyms": "advance · discovery · leap"
+    },
+    {
+      "word": "theoretical",
+      "pos": "adj",
+      "ipa": "/ˌθɪəˈretɪkl/",
+      "vi": "Thuộc lý thuyết",
+      "example": "The idea is still purely theoretical.",
+      "collocation": "theoretical model · purely theoretical · theoretical physics",
+      "synonyms": "abstract · hypothetical · conceptual"
+    },
+    {
+      "word": "observation",
+      "pos": "n",
+      "ipa": "/ˌɒbzəˈveɪʃən/",
+      "vi": "Sự quan sát",
+      "example": "The theory is based on careful observation.",
+      "collocation": "careful observation · under observation · make an observation",
+      "synonyms": "monitoring · scrutiny · watching"
+    },
+    {
+      "word": "phenomenon",
+      "pos": "n",
+      "ipa": "/fɪˈnɒmɪnən/",
+      "vi": "Hiện tượng",
+      "example": "Rainbows are a natural phenomenon.",
+      "collocation": "natural phenomenon · a strange phenomenon · study a phenomenon",
+      "synonyms": "occurrence · event · marvel"
+    },
+    {
+      "word": "simulate",
+      "pos": "v",
+      "ipa": "/ˈsɪmjuleɪt/",
+      "vi": "Mô phỏng",
+      "example": "The software simulates real flight conditions.",
+      "collocation": "simulate conditions · computer-simulate · realistically simulate",
+      "synonyms": "imitate · replicate · model"
+    },
+    {
+      "word": "apparatus",
+      "pos": "n",
+      "ipa": "/ˌæpəˈreɪtəs/",
+      "vi": "Bộ máy, thiết bị",
+      "example": "The experiment needs special apparatus.",
+      "collocation": "laboratory apparatus · scientific apparatus",
+      "synonyms": "equipment · instruments · gear"
+    },
+    {
+      "word": "quantify",
+      "pos": "v",
+      "ipa": "/ˈkwɒntɪfaɪ/",
+      "vi": "Định lượng",
+      "example": "It is hard to quantify the damage.",
+      "collocation": "quantify the effect · hard to quantify · precisely quantify",
+      "synonyms": "measure · calculate · gauge"
+    },
+    {
+      "word": "correlation",
+      "pos": "n",
+      "ipa": "/ˌkɒrəˈleɪʃən/",
+      "vi": "Mối tương quan",
+      "example": "There is a strong correlation between the two.",
+      "collocation": "strong correlation · correlation between · positive correlation",
+      "synonyms": "link · connection · relationship"
+    },
+    {
+      "word": "groundbreaking",
+      "pos": "adj",
+      "ipa": "/ˈɡraʊndbreɪkɪŋ/",
+      "vi": "Đột phá, tiên phong",
+      "example": "The study was truly groundbreaking.",
+      "collocation": "groundbreaking research · groundbreaking discovery",
+      "synonyms": "pioneering · innovative · revolutionary"
+    },
+    {
+      "word": "rigorous",
+      "pos": "adj",
+      "ipa": "/ˈrɪɡərəs/",
+      "vi": "Nghiêm ngặt, kỹ lưỡng",
+      "example": "The drug went through rigorous testing.",
+      "collocation": "rigorous testing · rigorous method · rigorous analysis",
+      "synonyms": "thorough · strict · exacting"
+    },
+    {
+      "word": "verify",
+      "pos": "v",
+      "ipa": "/ˈverɪfaɪ/",
+      "vi": "Kiểm chứng",
+      "example": "Other scientists must verify the findings.",
+      "collocation": "verify a result · independently verify · verify the data",
+      "synonyms": "confirm · corroborate · substantiate"
+    },
+    {
+      "word": "cosmos",
+      "pos": "n",
+      "ipa": "/ˈkɒzmɒs/",
+      "vi": "Vũ trụ",
+      "example": "Telescopes let us explore the cosmos.",
+      "collocation": "the vast cosmos · explore the cosmos",
+      "synonyms": "universe · space"
+    },
+    {
+      "word": "propulsion",
+      "pos": "n",
+      "ipa": "/prəˈpʌlʃən/",
+      "vi": "Sự đẩy (động cơ)",
+      "example": "The rocket uses advanced propulsion.",
+      "collocation": "rocket propulsion · jet propulsion",
+      "synonyms": "thrust · drive · force"
+    },
+    {
+      "word": "hypothesise",
+      "pos": "v",
+      "ipa": "/haɪˈpɒθəsaɪz/",
+      "vi": "Đưa ra giả thuyết",
+      "example": "Researchers hypothesise that the climate is warming.",
+      "collocation": "hypothesise that · scientists hypothesise",
+      "synonyms": "theorise · postulate · conjecture"
+    },
+    {
+      "word": "prevailing",
+      "pos": "adj",
+      "ipa": "/prɪˈveɪlɪŋ/",
+      "vi": "Phổ biến, thịnh hành",
+      "example": "The prevailing view is that the universe is expanding.",
+      "collocation": "prevailing view · prevailing theory · prevailing wind",
+      "synonyms": "dominant · widespread · current"
+    },
+    {
+      "word": "elaborate",
+      "pos": "adj",
+      "ipa": "/ɪˈlæbərət/",
+      "vi": "Công phu, tỉ mỉ",
+      "example": "The scientists designed an elaborate experiment.",
+      "collocation": "elaborate experiment · elaborate design · highly elaborate",
+      "synonyms": "detailed · intricate · complex"
+    }
+  ]
+}

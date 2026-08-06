@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_8",
+  "title": "AWL Sublist 8",
+  "description": "Academic Word List — nhóm 8",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "abstract",
+      "pos": "adj",
+      "ipa": "/ˈæbstrækt/",
+      "vi": "Trừu tượng",
+      "example": "Justice is an abstract concept.",
+      "collocation": "abstract concept · abstract idea · abstract art",
+      "synonyms": "theoretical · conceptual · intangible"
+    },
+    {
+      "word": "accompany",
+      "pos": "v",
+      "ipa": "/əˈkʌmpəni/",
+      "vi": "Đi kèm, đi cùng",
+      "example": "Thunder is usually accompanied by lightning.",
+      "collocation": "accompany someone · be accompanied by",
+      "synonyms": "go with · escort · attend"
+    },
+    {
+      "word": "accumulate",
+      "pos": "v",
+      "ipa": "/əˈkjuːmjəleɪt/",
+      "vi": "Tích luỹ",
+      "example": "Over the years he accumulated a fortune.",
+      "collocation": "accumulate wealth · gradually accumulate · accumulate evidence",
+      "synonyms": "amass · build up · gather"
+    },
+    {
+      "word": "ambiguous",
+      "pos": "adj",
+      "ipa": "/æmˈbɪɡjuəs/",
+      "vi": "Mơ hồ, nước đôi",
+      "example": "The wording of the rule is ambiguous.",
+      "collocation": "deliberately ambiguous · ambiguous wording",
+      "synonyms": "unclear · vague · equivocal"
+    },
+    {
+      "word": "appreciate",
+      "pos": "v",
+      "ipa": "/əˈpriːʃieɪt/",
+      "vi": "Trân trọng; hiểu rõ",
+      "example": "I appreciate your help.",
+      "collocation": "fully appreciate · greatly appreciate · appreciate the value",
+      "synonyms": "value · recognise · be grateful for"
+    },
+    {
+      "word": "arbitrary",
+      "pos": "adj",
+      "ipa": "/ˈɑːbɪtrəri/",
+      "vi": "Tuỳ tiện, độc đoán",
+      "example": "The choice seemed completely arbitrary.",
+      "collocation": "arbitrary decision · seemingly arbitrary · arbitrary rule",
+      "synonyms": "random · capricious · unreasonable"
+    },
+    {
+      "word": "clarify",
+      "pos": "v",
+      "ipa": "/ˈklærɪfaɪ/",
+      "vi": "Làm rõ",
+      "example": "Could you clarify what you mean?",
+      "collocation": "clarify a point · clarify the situation · help clarify",
+      "synonyms": "explain · make clear · elucidate"
+    },
+    {
+      "word": "complement",
+      "pos": "v",
+      "ipa": "/ˈkɒmplɪment/",
+      "vi": "Bổ sung, làm hoàn thiện",
+      "example": "The wine complements the meal nicely.",
+      "collocation": "complement each other · perfectly complement",
+      "synonyms": "go well with · enhance · round off"
+    },
+    {
+      "word": "contradict",
+      "pos": "v",
+      "ipa": "/ˌkɒntrəˈdɪkt/",
+      "vi": "Mâu thuẫn, phản bác",
+      "example": "The two reports contradict each other.",
+      "collocation": "contradict a statement · directly contradict · contradict yourself",
+      "synonyms": "oppose · dispute · be at odds with"
+    },
+    {
+      "word": "crucial",
+      "pos": "adj",
+      "ipa": "/ˈkruːʃəl/",
+      "vi": "Then chốt, quyết định",
+      "example": "Sleep plays a crucial role in learning.",
+      "collocation": "crucial role · crucial factor · absolutely crucial",
+      "synonyms": "vital · essential · decisive"
+    },
+    {
+      "word": "currency",
+      "pos": "n",
+      "ipa": "/ˈkʌrənsi/",
+      "vi": "Tiền tệ",
+      "example": "The country adopted a new currency.",
+      "collocation": "foreign currency · strong currency · local currency",
+      "synonyms": "money · legal tender"
+    },
+    {
+      "word": "detect",
+      "pos": "v",
+      "ipa": "/dɪˈtekt/",
+      "vi": "Phát hiện",
+      "example": "The device detects smoke.",
+      "collocation": "detect a problem · early detect · hard to detect",
+      "synonyms": "discover · sense · identify"
+    },
+    {
+      "word": "displace",
+      "pos": "v",
+      "ipa": "/dɪsˈpleɪs/",
+      "vi": "Thay thế; dời chỗ",
+      "example": "The war displaced thousands of families.",
+      "collocation": "displace workers · displace people · gradually displace",
+      "synonyms": "replace · oust · uproot"
+    },
+    {
+      "word": "dramatic",
+      "pos": "adj",
+      "ipa": "/drəˈmætɪk/",
+      "vi": "Đột ngột, ấn tượng",
+      "example": "There has been a dramatic rise in prices.",
+      "collocation": "dramatic increase · dramatic change · dramatic effect",
+      "synonyms": "striking · sharp · marked"
+    },
+    {
+      "word": "eventual",
+      "pos": "adj",
+      "ipa": "/ɪˈventʃuəl/",
+      "vi": "Cuối cùng, rốt cuộc",
+      "example": "Their eventual success surprised everyone.",
+      "collocation": "eventual outcome · eventual success · eventual collapse",
+      "synonyms": "final · ultimate · resulting"
+    },
+    {
+      "word": "fluctuate",
+      "pos": "v",
+      "ipa": "/ˈflʌktʃueɪt/",
+      "vi": "Dao động",
+      "example": "Exchange rates fluctuate daily.",
+      "collocation": "prices fluctuate · fluctuate wildly · fluctuate between",
+      "synonyms": "vary · swing · shift"
+    },
+    {
+      "word": "guideline",
+      "pos": "n",
+      "ipa": "/ˈɡaɪdlaɪn/",
+      "vi": "Hướng dẫn, nguyên tắc",
+      "example": "The company issued new safety guidelines.",
+      "collocation": "follow guidelines · clear guidelines · official guideline",
+      "synonyms": "rule · direction · standard"
+    },
+    {
+      "word": "highlight",
+      "pos": "v",
+      "ipa": "/ˈhaɪlaɪt/",
+      "vi": "Nhấn mạnh, làm nổi bật",
+      "example": "The report highlights the risks of pollution.",
+      "collocation": "highlight a problem · highlight the need · clearly highlight",
+      "synonyms": "emphasise · stress · underline"
+    },
+    {
+      "word": "implicit",
+      "pos": "adj",
+      "ipa": "/ɪmˈplɪsɪt/",
+      "vi": "Ngầm hiểu",
+      "example": "There was an implicit threat in his words.",
+      "collocation": "implicit assumption · implicit in · an implicit threat",
+      "synonyms": "implied · unspoken · tacit"
+    },
+    {
+      "word": "induce",
+      "pos": "v",
+      "ipa": "/ɪnˈdjuːs/",
+      "vi": "Gây ra; thuyết phục",
+      "example": "The drug induces drowsiness.",
+      "collocation": "induce sleep · induce someone to · stress-induced",
+      "synonyms": "cause · bring about · persuade"
+    },
+    {
+      "word": "infrastructure",
+      "pos": "n",
+      "ipa": "/ˈɪnfrəstrʌktʃə/",
+      "vi": "Cơ sở hạ tầng",
+      "example": "The country invested heavily in infrastructure.",
+      "collocation": "poor infrastructure · improve infrastructure · transport infrastructure",
+      "synonyms": "facilities · framework · system"
+    },
+    {
+      "word": "intense",
+      "pos": "adj",
+      "ipa": "/ɪnˈtens/",
+      "vi": "Mãnh liệt, dữ dội",
+      "example": "There is intense competition for jobs.",
+      "collocation": "intense competition · intense pressure · intense heat",
+      "synonyms": "extreme · fierce · acute"
+    },
+    {
+      "word": "minimise",
+      "pos": "v",
+      "ipa": "/ˈmɪnɪmaɪz/",
+      "vi": "Giảm thiểu",
+      "example": "Wear a helmet to minimise the risk of injury.",
+      "collocation": "minimise risk · minimise damage · minimise the impact",
+      "synonyms": "reduce · lessen · curtail"
+    },
+    {
+      "word": "radical",
+      "pos": "adj",
+      "ipa": "/ˈrædɪkl/",
+      "vi": "Cấp tiến, triệt để",
+      "example": "The plan calls for radical reform.",
+      "collocation": "radical change · radical reform · radical approach",
+      "synonyms": "drastic · sweeping · revolutionary"
+    },
+    {
+      "word": "reinforce",
+      "pos": "v",
+      "ipa": "/ˌriːɪnˈfɔːs/",
+      "vi": "Củng cố, tăng cường",
+      "example": "The results reinforce earlier findings.",
+      "collocation": "reinforce a message · reinforce the idea · strongly reinforce",
+      "synonyms": "strengthen · bolster · underpin"
+    }
+  ]
+}
