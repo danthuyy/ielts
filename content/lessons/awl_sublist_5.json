@@ -12,7 +12,8 @@
       "vi": "Điều chỉnh",
       "example": "It takes time to adjust to a new job.",
       "collocation": "adjust to · easily adjust · adjust the settings",
-      "synonyms": "adapt · modify · tweak"
+      "synonyms": "adapt · modify · tweak",
+      "forms": "adjustment (n) · adjustable (adj)"
     },
     {
       "word": "alter",
@@ -21,7 +22,8 @@
       "vi": "Thay đổi, sửa đổi",
       "example": "The plan was altered at the last minute.",
       "collocation": "alter significantly · alter a plan · slightly alter",
-      "synonyms": "change · modify · amend"
+      "synonyms": "change · modify · amend",
+      "forms": "alteration (n) · altered (adj)"
     },
     {
       "word": "aware",
@@ -30,7 +32,8 @@
       "vi": "Nhận thức, ý thức được",
       "example": "Drivers should be aware of cyclists.",
       "collocation": "become aware · fully aware · aware of",
-      "synonyms": "conscious · mindful · cognisant"
+      "synonyms": "conscious · mindful · cognisant",
+      "forms": "awareness (n) · unaware (adj)"
     },
     {
       "word": "capacity",
@@ -39,7 +42,8 @@
       "vi": "Sức chứa; năng lực",
       "example": "The stadium has a capacity of 60,000.",
       "collocation": "full capacity · capacity to · storage capacity",
-      "synonyms": "ability · volume · capability"
+      "synonyms": "ability · volume · capability",
+      "forms": "capable (adj) · capably (adv)"
     },
     {
       "word": "challenge",
@@ -48,7 +52,8 @@
       "vi": "Thử thách",
       "example": "Learning a language is a real challenge.",
       "collocation": "major challenge · face a challenge · rise to the challenge",
-      "synonyms": "difficulty · test · hurdle"
+      "synonyms": "difficulty · test · hurdle",
+      "forms": "challenging (adj) · challenger (n)"
     },
     {
       "word": "compound",
@@ -66,7 +71,8 @@
       "vi": "Xung đột, mâu thuẫn",
       "example": "The two countries are in armed conflict.",
       "collocation": "armed conflict · come into conflict · resolve a conflict",
-      "synonyms": "dispute · clash · friction"
+      "synonyms": "dispute · clash · friction",
+      "forms": "conflicting (adj)"
     },
     {
       "word": "consult",
@@ -75,7 +81,8 @@
       "vi": "Tham khảo, hỏi ý kiến",
       "example": "You should consult a doctor about the pain.",
       "collocation": "consult a doctor · consult widely · consult an expert",
-      "synonyms": "seek advice · refer to · confer"
+      "synonyms": "seek advice · refer to · confer",
+      "forms": "consultation (n) · consultant (n) · consultancy (n)"
     },
     {
       "word": "discrete",
@@ -84,7 +91,8 @@
       "vi": "Riêng biệt, tách rời",
       "example": "The course is split into discrete modules.",
       "collocation": "discrete units · discrete category · discrete steps",
-      "synonyms": "separate · distinct · individual"
+      "synonyms": "separate · distinct · individual",
+      "forms": "discretely (adv) · discreteness (n)"
     },
     {
       "word": "draft",
@@ -102,7 +110,8 @@
       "vi": "Cho phép, tạo điều kiện",
       "example": "The grant enabled her to study abroad.",
       "collocation": "enable someone to · technology enables · enable access",
-      "synonyms": "allow · permit · empower"
+      "synonyms": "allow · permit · empower",
+      "forms": "enabled (adj)"
     },
     {
       "word": "enforce",
@@ -111,7 +120,8 @@
       "vi": "Thi hành, cưỡng chế",
       "example": "Police enforce traffic laws.",
       "collocation": "enforce a law · strictly enforce · enforce rules",
-      "synonyms": "impose · implement · uphold"
+      "synonyms": "impose · implement · uphold",
+      "forms": "enforcement (n) · enforceable (adj)"
     },
     {
       "word": "equivalent",
@@ -120,7 +130,8 @@
       "vi": "Tương đương",
       "example": "A dollar is equivalent to about 25,000 dong.",
       "collocation": "equivalent to · roughly equivalent · the equivalent amount",
-      "synonyms": "equal · comparable · corresponding"
+      "synonyms": "equal · comparable · corresponding",
+      "forms": "equivalence (n) · equivalently (adv)"
     },
     {
       "word": "evolve",
@@ -129,7 +140,8 @@
       "vi": "Tiến hoá, phát triển",
       "example": "The company evolved from a small startup.",
       "collocation": "gradually evolve · evolve into · evolve over time",
-      "synonyms": "develop · progress · advance"
+      "synonyms": "develop · progress · advance",
+      "forms": "evolution (n) · evolutionary (adj)"
     },
     {
       "word": "expand",
@@ -138,7 +150,8 @@
       "vi": "Mở rộng",
       "example": "The firm plans to expand into Asia.",
       "collocation": "expand rapidly · expand a business · expand into",
-      "synonyms": "grow · enlarge · extend"
+      "synonyms": "grow · enlarge · extend",
+      "forms": "expansion (n) · expansive (adj)"
     },
     {
       "word": "expose",
@@ -147,7 +160,8 @@
       "vi": "Phơi bày; tiếp xúc",
       "example": "The report exposed serious failings.",
       "collocation": "expose to · expose the truth · widely exposed",
-      "synonyms": "reveal · uncover · lay bare"
+      "synonyms": "reveal · uncover · lay bare",
+      "forms": "exposure (n) · exposed (adj)"
     },
     {
       "word": "facilitate",
@@ -156,7 +170,8 @@
       "vi": "Tạo thuận lợi cho",
       "example": "The app facilitates communication between teams.",
       "collocation": "facilitate learning · facilitate trade · greatly facilitate",
-      "synonyms": "ease · enable · assist"
+      "synonyms": "ease · enable · assist",
+      "forms": "facilitation (n) · facilitator (n)"
     },
     {
       "word": "fundamental",
@@ -165,7 +180,8 @@
       "vi": "Cơ bản, cốt yếu",
       "example": "Access to education is a fundamental right.",
       "collocation": "fundamental change · fundamental right · fundamental difference",
-      "synonyms": "basic · essential · core"
+      "synonyms": "basic · essential · core",
+      "forms": "fundamentally (adv) · fundamentals (n)"
     },
     {
       "word": "generate",
@@ -174,7 +190,8 @@
       "vi": "Tạo ra, sinh ra",
       "example": "Tourism generates a lot of income.",
       "collocation": "generate income · generate electricity · generate interest",
-      "synonyms": "produce · create · yield"
+      "synonyms": "produce · create · yield",
+      "forms": "generation (n) · generator (n)"
     },
     {
       "word": "monitor",
@@ -183,7 +200,8 @@
       "vi": "Theo dõi, giám sát",
       "example": "Doctors monitor the patient's heart rate.",
       "collocation": "closely monitor · monitor progress · continuously monitor",
-      "synonyms": "track · observe · oversee"
+      "synonyms": "track · observe · oversee",
+      "forms": "monitoring (n)"
     },
     {
       "word": "notion",
@@ -192,7 +210,8 @@
       "vi": "Quan niệm, ý niệm",
       "example": "He rejected the notion that money brings happiness.",
       "collocation": "vague notion · reject the notion · the notion that",
-      "synonyms": "idea · concept · belief"
+      "synonyms": "idea · concept · belief",
+      "forms": "notional (adj)"
     },
     {
       "word": "objective",
@@ -201,7 +220,8 @@
       "vi": "Mục tiêu",
       "example": "The main objective is to reduce costs.",
       "collocation": "main objective · achieve an objective · clear objective",
-      "synonyms": "goal · aim · target"
+      "synonyms": "goal · aim · target",
+      "forms": "objectively (adv) · objectivity (n)"
     },
     {
       "word": "perspective",
@@ -219,7 +239,8 @@
       "vi": "Chính xác, tỉ mỉ",
       "example": "We need precise measurements.",
       "collocation": "precise measurement · to be precise · precise details",
-      "synonyms": "exact · accurate · specific"
+      "synonyms": "exact · accurate · specific",
+      "forms": "precisely (adv) · precision (n)"
     },
     {
       "word": "pursue",
@@ -228,7 +249,8 @@
       "vi": "Theo đuổi",
       "example": "She decided to pursue a career in medicine.",
       "collocation": "pursue a career · pursue a goal · actively pursue",
-      "synonyms": "chase · follow · strive for"
+      "synonyms": "chase · follow · strive for",
+      "forms": "pursuit (n)"
     }
   ]
 }

@@ -12,7 +12,8 @@
       "vi": "Thích nghi; điều chỉnh",
       "example": "Animals adapt to their environment.",
       "collocation": "adapt to · quickly adapt · adapt a plan",
-      "synonyms": "adjust · modify · acclimatise"
+      "synonyms": "adjust · modify · acclimatise",
+      "forms": "adaptation (n) · adaptable (adj) · adaptive (adj)"
     },
     {
       "word": "aid",
@@ -39,7 +40,8 @@
       "vi": "Toàn diện",
       "example": "The report gives a comprehensive overview.",
       "collocation": "comprehensive review · comprehensive plan · fully comprehensive",
-      "synonyms": "thorough · complete · all-inclusive"
+      "synonyms": "thorough · complete · all-inclusive",
+      "forms": "comprehensively (adv) · comprehend (v)"
     },
     {
       "word": "confirm",
@@ -48,7 +50,8 @@
       "vi": "Xác nhận",
       "example": "Tests confirmed the diagnosis.",
       "collocation": "confirm a booking · confirm that · officially confirm",
-      "synonyms": "verify · corroborate · validate"
+      "synonyms": "verify · corroborate · validate",
+      "forms": "confirmation (n) · confirmed (adj)"
     },
     {
       "word": "contrary",
@@ -66,7 +69,8 @@
       "vi": "Chuyển đổi",
       "example": "The barn was converted into a house.",
       "collocation": "convert into · convert to · easily convert",
-      "synonyms": "change · transform · turn"
+      "synonyms": "change · transform · turn",
+      "forms": "conversion (n) · convertible (adj)"
     },
     {
       "word": "decade",
@@ -84,7 +88,8 @@
       "vi": "Phủ nhận; từ chối",
       "example": "He denied any involvement in the crime.",
       "collocation": "deny a claim · flatly deny · deny access",
-      "synonyms": "refute · reject · dispute"
+      "synonyms": "refute · reject · dispute",
+      "forms": "denial (n) · undeniable (adj)"
     },
     {
       "word": "differentiate",
@@ -93,7 +98,8 @@
       "vi": "Phân biệt",
       "example": "It is hard to differentiate the two species.",
       "collocation": "differentiate between · clearly differentiate",
-      "synonyms": "distinguish · tell apart · discriminate"
+      "synonyms": "distinguish · tell apart · discriminate",
+      "forms": "differentiation (n) · differential (adj)"
     },
     {
       "word": "dispose",
@@ -102,7 +108,8 @@
       "vi": "Vứt bỏ, xử lý",
       "example": "How do you dispose of old batteries?",
       "collocation": "dispose of · safely dispose · dispose of waste",
-      "synonyms": "discard · get rid of · throw away"
+      "synonyms": "discard · get rid of · throw away",
+      "forms": "disposal (n) · disposable (adj)"
     },
     {
       "word": "dynamic",
@@ -111,7 +118,8 @@
       "vi": "Năng động",
       "example": "The country has a dynamic economy.",
       "collocation": "dynamic economy · dynamic leader · highly dynamic",
-      "synonyms": "energetic · vibrant · active"
+      "synonyms": "energetic · vibrant · active",
+      "forms": "dynamically (adv) · dynamism (n)"
     },
     {
       "word": "eliminate",
@@ -120,7 +128,8 @@
       "vi": "Loại bỏ",
       "example": "The new system eliminates paperwork.",
       "collocation": "eliminate the need · completely eliminate · eliminate waste",
-      "synonyms": "remove · eradicate · get rid of"
+      "synonyms": "remove · eradicate · get rid of",
+      "forms": "elimination (n)"
     },
     {
       "word": "empirical",
@@ -129,7 +138,8 @@
       "vi": "Thực nghiệm",
       "example": "There is little empirical evidence for the claim.",
       "collocation": "empirical evidence · empirical data · empirical research",
-      "synonyms": "observed · experiential · factual"
+      "synonyms": "observed · experiential · factual",
+      "forms": "empirically (adv)"
     },
     {
       "word": "equip",
@@ -138,7 +148,8 @@
       "vi": "Trang bị",
       "example": "The school is equipped with modern computers.",
       "collocation": "equip with · fully equipped · well equipped",
-      "synonyms": "supply · provide · furnish"
+      "synonyms": "supply · provide · furnish",
+      "forms": "equipment (n) · equipped (adj)"
     },
     {
       "word": "finite",
@@ -147,7 +158,8 @@
       "vi": "Hữu hạn",
       "example": "Oil is a finite resource.",
       "collocation": "finite resources · a finite number · finite supply",
-      "synonyms": "limited · bounded · restricted"
+      "synonyms": "limited · bounded · restricted",
+      "forms": "infinite (adj) · finitely (adv)"
     },
     {
       "word": "foundation",
@@ -156,7 +168,8 @@
       "vi": "Nền tảng; quỹ",
       "example": "Reading lays the foundation for learning.",
       "collocation": "lay the foundation · strong foundation · charitable foundation",
-      "synonyms": "basis · groundwork · base"
+      "synonyms": "basis · groundwork · base",
+      "forms": "found (v) · founder (n) · foundational (adj)"
     },
     {
       "word": "grade",
@@ -165,7 +178,8 @@
       "vi": "Điểm số; cấp bậc",
       "example": "She got top grades in every subject.",
       "collocation": "high grade · good grades · grade of steel",
-      "synonyms": "mark · rank · level"
+      "synonyms": "mark · rank · level",
+      "forms": "grading (n) · graded (adj)"
     },
     {
       "word": "identical",
@@ -174,7 +188,8 @@
       "vi": "Giống hệt",
       "example": "The two copies are identical.",
       "collocation": "identical to · virtually identical · identical twins",
-      "synonyms": "the same · matching · indistinguishable"
+      "synonyms": "the same · matching · indistinguishable",
+      "forms": "identically (adv)"
     },
     {
       "word": "ideology",
@@ -183,7 +198,8 @@
       "vi": "Hệ tư tưởng",
       "example": "The party is driven by ideology.",
       "collocation": "political ideology · dominant ideology · rigid ideology",
-      "synonyms": "belief system · doctrine · philosophy"
+      "synonyms": "belief system · doctrine · philosophy",
+      "forms": "ideological (adj) · ideologically (adv)"
     },
     {
       "word": "mature",
@@ -192,7 +208,8 @@
       "vi": "Trưởng thành, chín chắn",
       "example": "She is very mature for her age.",
       "collocation": "mature attitude · emotionally mature · a mature student",
-      "synonyms": "grown-up · sensible · developed"
+      "synonyms": "grown-up · sensible · developed",
+      "forms": "maturity (n) · maturation (n)"
     },
     {
       "word": "medium",
@@ -201,7 +218,8 @@
       "vi": "Phương tiện",
       "example": "Television is a powerful medium.",
       "collocation": "a medium of · powerful medium · through the medium of",
-      "synonyms": "means · channel · vehicle"
+      "synonyms": "means · channel · vehicle",
+      "forms": "media (n, số nhiều)"
     },
     {
       "word": "military",
@@ -210,7 +228,8 @@
       "vi": "Thuộc quân sự",
       "example": "The government increased military spending.",
       "collocation": "military force · military action · military spending",
-      "synonyms": "armed · martial · defence"
+      "synonyms": "armed · martial · defence",
+      "forms": "militarise (v) · militant (adj)"
     },
     {
       "word": "mutual",
@@ -219,7 +238,8 @@
       "vi": "Lẫn nhau, chung",
       "example": "The deal is of mutual benefit.",
       "collocation": "mutual respect · mutual benefit · mutual understanding",
-      "synonyms": "reciprocal · shared · joint"
+      "synonyms": "reciprocal · shared · joint",
+      "forms": "mutually (adv) · mutuality (n)"
     },
     {
       "word": "mediate",
@@ -228,7 +248,8 @@
       "vi": "Làm trung gian hoà giải",
       "example": "The UN tried to mediate between the two sides.",
       "collocation": "mediate a dispute · mediate between",
-      "synonyms": "arbitrate · intervene · reconcile"
+      "synonyms": "arbitrate · intervene · reconcile",
+      "forms": "mediation (n) · mediator (n)"
     }
   ]
 }
