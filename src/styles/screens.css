@@ -119,6 +119,45 @@
   color: var(--text-dim);
 }
 
+.wotd-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid transparent;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+.wotd-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+.wotd-card__word {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text);
+}
+.wotd-card__pos {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.wotd-card__ipa {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.wotd-card__vi {
+  font-size: var(--text-base);
+  color: var(--text);
+}
+.wotd-card__syn {
+  margin-top: var(--sp-1);
+  font-size: var(--text-sm);
+  color: var(--success);
+}
+
 .streak {
   display: flex;
   align-items: center;

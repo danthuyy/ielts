@@ -1,8 +1,9 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 
-import { LESSONS } from '@/content/lessons';
+import { ALL_STUDY_WORDS, LESSONS } from '@/content/lessons';
 import { categoryOf } from '@/content/categories';
+import { pickWordOfDay } from '@/lib/wordOfDay';
 import { routes, STUDY_MODES } from '@/app/routes';
 import { useSettings } from '@/hooks/useSettings';
 import { LoadingScreen } from '@/components/ScreenState';
@@ -97,6 +98,9 @@ export function HomeScreen() {
   const peak = Math.max(...days.map((day) => day.studied), settings.dailyGoal, 1);
   const nothingDue = dueCount === 0;
   const now = new Date();
+  // Same word for the whole day, chosen from the date — no storage, and stable
+  // across reloads. See lib/wordOfDay.
+  const wordOfDay = pickWordOfDay(ALL_STUDY_WORDS, toDateKey(now));
 
   return (
     <div className="page">
@@ -253,6 +257,18 @@ export function HomeScreen() {
         </div>
 
         <div className="home-col">
+          {wordOfDay && (
+            <Link className="card wotd-card" to={routes.word(wordOfDay.id)}>
+              <span className="section__label">Từ vựng hôm nay</span>
+              <span className="wotd-card__word">
+                {wordOfDay.word} <span className="wotd-card__pos">{wordOfDay.pos}</span>
+              </span>
+              <span className="wotd-card__ipa">{wordOfDay.ipa}</span>
+              <span className="wotd-card__vi">{wordOfDay.vi}</span>
+              {wordOfDay.synonyms && <span className="wotd-card__syn">≈ {wordOfDay.synonyms}</span>}
+            </Link>
+          )}
+
           <section className="card">
             <div className="streak">
               <span className="streak__flame" aria-hidden="true">
