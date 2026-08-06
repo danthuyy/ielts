@@ -91,6 +91,29 @@ export function SettingsScreen() {
         : 'Đang dùng bản mới nhất.',
     );
   }, []);
+
+  /**
+   * The escape hatch for a device wedged on an old build.
+   *
+   * Deleting the caches and unregistering the worker drops the client back to
+   * plain network loads, so the very next load comes straight from the server.
+   * It only clears the app shell — progress lives in IndexedDB and Supabase and
+   * is not touched.
+   */
+  const hardReload = useCallback(async () => {
+    setUpdateNote('Đang xoá bộ nhớ đệm...');
+    try {
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((key) => caches.delete(key)));
+      }
+      const registrations = (await navigator.serviceWorker?.getRegistrations()) ?? [];
+      await Promise.all(registrations.map((registration) => registration.unregister()));
+    } finally {
+      // `true` is a legacy hint to bypass the HTTP cache; harmless where ignored.
+      window.location.reload();
+    }
+  }, []);
   const fileInput = useRef<HTMLInputElement>(null);
   const [backupNote, setBackupNote] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null);
   const [pendingRestore, setPendingRestore] = useState<BackupFile | null>(null);
@@ -498,6 +521,20 @@ export function SettingsScreen() {
           </button>
         </div>
         {updateNote && <p className="hint-text">{updateNote}</p>}
+        <div className="setting-row">
+          <span
+            className="setting-row__title"
+            style={{ flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}
+          >
+            <span>Kẹt ở bản cũ?</span>
+            <span className="hint-text" style={{ padding: 0 }}>
+              Xoá bộ nhớ đệm rồi tải lại. Không mất tiến độ học.
+            </span>
+          </span>
+          <button className="btn btn--secondary" onClick={() => void hardReload()}>
+            Tải lại sạch
+          </button>
+        </div>
       </section>
 
       <p className="app-meta">

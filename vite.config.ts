@@ -87,10 +87,41 @@ export default defineConfig(({ command }) => ({
         // message the button sends, so a later update never swaps the app out
         // from under a session in progress.
         clientsClaim: true,
-        // Progress lives in Supabase; a cached response would show stale data
-        // after studying on another device.
+        // THE ROOT-CAUSE FIX for "pushed a new build, phones still show the old
+        // one for days".
+        //
+        // The default generated worker serves the *precached* index.html for
+        // every navigation (createHandlerBoundToURL). index.html is the one
+        // file with no content hash, so pinning it in the cache pins the whole
+        // app to the snapshot the worker was installed with — and with hash
+        // routing the SPA never navigates, so the worker rarely gets a reason
+        // to check for a newer self. The entry point could stay frozen for
+        // days while every hashed bundle it points at sits unused on the server.
+        //
+        // Disabling the fallback route and handling navigations network-first
+        // means an online client always fetches the latest index.html — which
+        // references the latest bundles — and only falls back to the copy
+        // cached on its last online visit when actually offline. The bundles
+        // themselves are content-hashed and stay cache-first, which is correct
+        // and free.
+        navigateFallback: null,
         runtimeCaching: [
           {
+            // Only real page loads, not hash changes (those never reach the SW).
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'app-shell',
+              // A slow-but-online connection should still wait a moment for the
+              // fresh copy before giving up to the cached one.
+              networkTimeoutSeconds: 4,
+              expiration: { maxEntries: 4 },
+              cacheableResponse: { statuses: [200] },
+            },
+          },
+          {
+            // Progress lives in Supabase; a cached response would show stale
+            // data after studying on another device.
             urlPattern: /^https:\/\/[a-z0-9]+\.supabase\.co\/rest\/v1\//,
             handler: 'NetworkOnly',
           },

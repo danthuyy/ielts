@@ -209,10 +209,21 @@ npm run validate:content && npm run typecheck && npm run lint && npm run format:
 worker khi có **điều hướng thật** — app này định tuyến bằng hash nên không bao
 giờ điều hướng. Một tab để mở phục vụ bản cũ nhiều ngày liền.
 
+- **Gốc rễ, đừng gỡ:** trong `vite.config.ts`, `workbox.navigateFallback: null`
+  - một route `NetworkFirst` cho `request.mode === 'navigate'`. Mặc định
+    vite-plugin-pwa phục vụ `index.html` **từ precache** cho mọi lần mở trang
+    (`createHandlerBoundToURL`), mà `index.html` là file duy nhất không có hash —
+    ghim nó là ghim cả app vào một bản chụp. NetworkFirst cho máy còn mạng luôn
+    lấy HTML mới nhất → bundle mới nhất; offline mới rơi về cache. Bundle có hash
+    nên vẫn nằm trong precache cache-first, đúng.
 - `registerType: 'prompt'`, không phải `autoUpdate`. Tự reload giữa lúc đang làm
-  dở một câu là mất phiên học.
+  dở một câu là mất phiên học. NetworkFirst lo phần "luôn mới", dải thông báo lo
+  phần đổi worker.
 - Component tự gọi `registration.update()` mỗi 30 phút, mỗi lần tab được nhìn
   lại, và mỗi lần có mạng trở lại.
+- **Nút "Tải lại sạch"** ở Cài đặt xoá cache + gỡ worker rồi tải lại — đường
+  thoát cho máy lỡ kẹt. Chỉ đụng app shell, **không** đụng tiến độ (tiến độ ở
+  IndexedDB + Supabase).
 - `__BUILD_ID__` (define trong `vite.config.ts`) là mã commit, hiện ở **Cài đặt
   → Phiên bản**. Đừng bỏ — không có nó thì không cách nào biết đang chạy bản nào
   ngoài việc mò tìm thay đổi nhìn thấy được.
