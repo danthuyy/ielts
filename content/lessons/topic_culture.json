@@ -1,0 +1,234 @@
+{
+  "id": "topic_culture",
+  "title": "Chủ đề: Văn hoá & Nghệ thuật",
+  "description": "Từ vựng IELTS chủ đề văn hoá, di sản và nghệ thuật",
+  "date": "2026-08-07",
+  "tags": ["culture", "society"],
+  "words": [
+    {
+      "word": "heritage",
+      "pos": "n",
+      "ipa": "/ˈherɪtɪdʒ/",
+      "vi": "Di sản",
+      "example": "The old town is a world heritage site.",
+      "collocation": "cultural heritage · world heritage · rich heritage",
+      "synonyms": "legacy · tradition · inheritance"
+    },
+    {
+      "word": "tradition",
+      "pos": "n",
+      "ipa": "/trəˈdɪʃən/",
+      "vi": "Truyền thống",
+      "example": "The festival is a centuries-old tradition.",
+      "collocation": "long tradition · uphold a tradition · family tradition",
+      "synonyms": "custom · convention · practice"
+    },
+    {
+      "word": "ritual",
+      "pos": "n",
+      "ipa": "/ˈrɪtʃuəl/",
+      "vi": "Nghi lễ, nghi thức",
+      "example": "The ceremony follows an ancient ritual.",
+      "collocation": "religious ritual · daily ritual · perform a ritual",
+      "synonyms": "ceremony · rite · custom"
+    },
+    {
+      "word": "masterpiece",
+      "pos": "n",
+      "ipa": "/ˈmɑːstəpiːs/",
+      "vi": "Kiệt tác",
+      "example": "The painting is considered a masterpiece.",
+      "collocation": "artistic masterpiece · a true masterpiece",
+      "synonyms": "work of art · classic"
+    },
+    {
+      "word": "contemporary",
+      "pos": "adj",
+      "ipa": "/kənˈtemprəri/",
+      "vi": "Đương đại",
+      "example": "The gallery shows contemporary art.",
+      "collocation": "contemporary art · contemporary music · contemporary society",
+      "synonyms": "modern · current · present-day"
+    },
+    {
+      "word": "aesthetic",
+      "pos": "adj",
+      "ipa": "/iːsˈθetɪk/",
+      "vi": "Thuộc thẩm mỹ",
+      "example": "The building has great aesthetic appeal.",
+      "collocation": "aesthetic appeal · aesthetic value · aesthetic sense",
+      "synonyms": "artistic · visual · tasteful"
+    },
+    {
+      "word": "craftsmanship",
+      "pos": "n",
+      "ipa": "/ˈkrɑːftsmənʃɪp/",
+      "vi": "Tay nghề thủ công",
+      "example": "The furniture shows superb craftsmanship.",
+      "collocation": "fine craftsmanship · skilled craftsmanship",
+      "synonyms": "workmanship · skill · artistry"
+    },
+    {
+      "word": "preserve",
+      "pos": "v",
+      "ipa": "/prɪˈzɜːv/",
+      "vi": "Bảo tồn, giữ gìn",
+      "example": "The trust works to preserve historic buildings.",
+      "collocation": "preserve heritage · preserve tradition · well preserved",
+      "synonyms": "conserve · protect · maintain"
+    },
+    {
+      "word": "diverse",
+      "pos": "adj",
+      "ipa": "/daɪˈvɜːs/",
+      "vi": "Đa dạng",
+      "example": "The city has a culturally diverse population.",
+      "collocation": "culturally diverse · diverse range · diverse population",
+      "synonyms": "varied · wide-ranging · assorted"
+    },
+    {
+      "word": "folklore",
+      "pos": "n",
+      "ipa": "/ˈfəʊklɔː/",
+      "vi": "Văn hoá dân gian",
+      "example": "The story comes from local folklore.",
+      "collocation": "local folklore · rich folklore",
+      "synonyms": "legend · myth · tradition"
+    },
+    {
+      "word": "exhibit",
+      "pos": "v",
+      "ipa": "/ɪɡˈzɪbɪt/",
+      "vi": "Trưng bày",
+      "example": "Her paintings are exhibited in Paris.",
+      "collocation": "exhibit artwork · exhibit in a gallery · publicly exhibit",
+      "synonyms": "display · show · present"
+    },
+    {
+      "word": "sculpture",
+      "pos": "n",
+      "ipa": "/ˈskʌlptʃə/",
+      "vi": "Điêu khắc, tượng",
+      "example": "A bronze sculpture stands in the square.",
+      "collocation": "bronze sculpture · modern sculpture · a huge sculpture",
+      "synonyms": "statue · carving"
+    },
+    {
+      "word": "patron",
+      "pos": "n",
+      "ipa": "/ˈpeɪtrən/",
+      "vi": "Người bảo trợ",
+      "example": "The prince was a patron of the arts.",
+      "collocation": "patron of the arts · wealthy patron",
+      "synonyms": "sponsor · benefactor · supporter"
+    },
+    {
+      "word": "revival",
+      "pos": "n",
+      "ipa": "/rɪˈvaɪvl/",
+      "vi": "Sự hồi sinh, phục hưng",
+      "example": "There has been a revival of folk music.",
+      "collocation": "cultural revival · a revival of interest · artistic revival",
+      "synonyms": "resurgence · comeback · renaissance"
+    },
+    {
+      "word": "convey",
+      "pos": "v",
+      "ipa": "/kənˈveɪ/",
+      "vi": "Truyền đạt, thể hiện",
+      "example": "The painting conveys a sense of loss.",
+      "collocation": "convey a message · convey emotion · convey meaning",
+      "synonyms": "express · communicate · get across"
+    },
+    {
+      "word": "immerse",
+      "pos": "v",
+      "ipa": "/ɪˈmɜːs/",
+      "vi": "Đắm mình vào",
+      "example": "Travellers can immerse themselves in local culture.",
+      "collocation": "immerse oneself in · fully immerse",
+      "synonyms": "absorb · engross · steep"
+    },
+    {
+      "word": "prominent",
+      "pos": "adj",
+      "ipa": "/ˈprɒmɪnənt/",
+      "vi": "Nổi bật, lỗi lạc",
+      "example": "She is a prominent figure in the art world.",
+      "collocation": "prominent figure · prominent role · prominent artist",
+      "synonyms": "notable · leading · eminent"
+    },
+    {
+      "word": "authenticity",
+      "pos": "n",
+      "ipa": "/ˌɔːθenˈtɪsəti/",
+      "vi": "Tính chân thực",
+      "example": "Tourists seek cultural authenticity.",
+      "collocation": "cultural authenticity · question the authenticity",
+      "synonyms": "genuineness · realness"
+    },
+    {
+      "word": "inspiration",
+      "pos": "n",
+      "ipa": "/ˌɪnspəˈreɪʃən/",
+      "vi": "Nguồn cảm hứng",
+      "example": "Nature is a great source of inspiration.",
+      "collocation": "source of inspiration · draw inspiration · find inspiration",
+      "synonyms": "stimulus · influence · muse"
+    },
+    {
+      "word": "depict",
+      "pos": "v",
+      "ipa": "/dɪˈpɪkt/",
+      "vi": "Miêu tả, khắc hoạ",
+      "example": "The mural depicts village life.",
+      "collocation": "depict a scene · vividly depict · depict life",
+      "synonyms": "portray · represent · illustrate"
+    },
+    {
+      "word": "timeless",
+      "pos": "adj",
+      "ipa": "/ˈtaɪmləs/",
+      "vi": "Vượt thời gian",
+      "example": "The film has a timeless appeal.",
+      "collocation": "timeless beauty · timeless classic · timeless appeal",
+      "synonyms": "enduring · ageless · classic"
+    },
+    {
+      "word": "genre",
+      "pos": "n",
+      "ipa": "/ˈʒɒnrə/",
+      "vi": "Thể loại",
+      "example": "Jazz is her favourite musical genre.",
+      "collocation": "musical genre · literary genre · a new genre",
+      "synonyms": "category · type · style"
+    },
+    {
+      "word": "artefact",
+      "pos": "n",
+      "ipa": "/ˈɑːtɪfækt/",
+      "vi": "Hiện vật, cổ vật",
+      "example": "The museum displays ancient artefacts.",
+      "collocation": "ancient artefact · rare artefact · museum artefact",
+      "synonyms": "relic · object · antiquity"
+    },
+    {
+      "word": "acclaim",
+      "pos": "n",
+      "ipa": "/əˈkleɪm/",
+      "vi": "Sự tán dương",
+      "example": "The novel won critical acclaim.",
+      "collocation": "critical acclaim · widespread acclaim · win acclaim",
+      "synonyms": "praise · recognition · applause"
+    },
+    {
+      "word": "symbolic",
+      "pos": "adj",
+      "ipa": "/sɪmˈbɒlɪk/",
+      "vi": "Mang tính biểu tượng",
+      "example": "The dragon is symbolic of good fortune.",
+      "collocation": "symbolic gesture · deeply symbolic · symbolic meaning",
+      "synonyms": "representative · emblematic"
+    }
+  ]
+}

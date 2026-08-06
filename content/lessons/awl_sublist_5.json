@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_5",
+  "title": "AWL Sublist 5",
+  "description": "Academic Word List — nhóm 5",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "adjust",
+      "pos": "v",
+      "ipa": "/əˈdʒʌst/",
+      "vi": "Điều chỉnh",
+      "example": "It takes time to adjust to a new job.",
+      "collocation": "adjust to · easily adjust · adjust the settings",
+      "synonyms": "adapt · modify · tweak"
+    },
+    {
+      "word": "alter",
+      "pos": "v",
+      "ipa": "/ˈɔːltə/",
+      "vi": "Thay đổi, sửa đổi",
+      "example": "The plan was altered at the last minute.",
+      "collocation": "alter significantly · alter a plan · slightly alter",
+      "synonyms": "change · modify · amend"
+    },
+    {
+      "word": "aware",
+      "pos": "adj",
+      "ipa": "/əˈweə/",
+      "vi": "Nhận thức, ý thức được",
+      "example": "Drivers should be aware of cyclists.",
+      "collocation": "become aware · fully aware · aware of",
+      "synonyms": "conscious · mindful · cognisant"
+    },
+    {
+      "word": "capacity",
+      "pos": "n",
+      "ipa": "/kəˈpæsəti/",
+      "vi": "Sức chứa; năng lực",
+      "example": "The stadium has a capacity of 60,000.",
+      "collocation": "full capacity · capacity to · storage capacity",
+      "synonyms": "ability · volume · capability"
+    },
+    {
+      "word": "challenge",
+      "pos": "n",
+      "ipa": "/ˈtʃælɪndʒ/",
+      "vi": "Thử thách",
+      "example": "Learning a language is a real challenge.",
+      "collocation": "major challenge · face a challenge · rise to the challenge",
+      "synonyms": "difficulty · test · hurdle"
+    },
+    {
+      "word": "compound",
+      "pos": "v",
+      "ipa": "/kəmˈpaʊnd/",
+      "vi": "Làm trầm trọng thêm",
+      "example": "The delays compounded their difficulties.",
+      "collocation": "compound the problem · further compound",
+      "synonyms": "worsen · aggravate · intensify"
+    },
+    {
+      "word": "conflict",
+      "pos": "n",
+      "ipa": "/ˈkɒnflɪkt/",
+      "vi": "Xung đột, mâu thuẫn",
+      "example": "The two countries are in armed conflict.",
+      "collocation": "armed conflict · come into conflict · resolve a conflict",
+      "synonyms": "dispute · clash · friction"
+    },
+    {
+      "word": "consult",
+      "pos": "v",
+      "ipa": "/kənˈsʌlt/",
+      "vi": "Tham khảo, hỏi ý kiến",
+      "example": "You should consult a doctor about the pain.",
+      "collocation": "consult a doctor · consult widely · consult an expert",
+      "synonyms": "seek advice · refer to · confer"
+    },
+    {
+      "word": "discrete",
+      "pos": "adj",
+      "ipa": "/dɪˈskriːt/",
+      "vi": "Riêng biệt, tách rời",
+      "example": "The course is split into discrete modules.",
+      "collocation": "discrete units · discrete category · discrete steps",
+      "synonyms": "separate · distinct · individual"
+    },
+    {
+      "word": "draft",
+      "pos": "n",
+      "ipa": "/drɑːft/",
+      "vi": "Bản thảo",
+      "example": "She wrote a first draft of the essay.",
+      "collocation": "first draft · rough draft · final draft",
+      "synonyms": "version · outline · sketch"
+    },
+    {
+      "word": "enable",
+      "pos": "v",
+      "ipa": "/ɪˈneɪbl/",
+      "vi": "Cho phép, tạo điều kiện",
+      "example": "The grant enabled her to study abroad.",
+      "collocation": "enable someone to · technology enables · enable access",
+      "synonyms": "allow · permit · empower"
+    },
+    {
+      "word": "enforce",
+      "pos": "v",
+      "ipa": "/ɪnˈfɔːs/",
+      "vi": "Thi hành, cưỡng chế",
+      "example": "Police enforce traffic laws.",
+      "collocation": "enforce a law · strictly enforce · enforce rules",
+      "synonyms": "impose · implement · uphold"
+    },
+    {
+      "word": "equivalent",
+      "pos": "adj",
+      "ipa": "/ɪˈkwɪvələnt/",
+      "vi": "Tương đương",
+      "example": "A dollar is equivalent to about 25,000 dong.",
+      "collocation": "equivalent to · roughly equivalent · the equivalent amount",
+      "synonyms": "equal · comparable · corresponding"
+    },
+    {
+      "word": "evolve",
+      "pos": "v",
+      "ipa": "/ɪˈvɒlv/",
+      "vi": "Tiến hoá, phát triển",
+      "example": "The company evolved from a small startup.",
+      "collocation": "gradually evolve · evolve into · evolve over time",
+      "synonyms": "develop · progress · advance"
+    },
+    {
+      "word": "expand",
+      "pos": "v",
+      "ipa": "/ɪkˈspænd/",
+      "vi": "Mở rộng",
+      "example": "The firm plans to expand into Asia.",
+      "collocation": "expand rapidly · expand a business · expand into",
+      "synonyms": "grow · enlarge · extend"
+    },
+    {
+      "word": "expose",
+      "pos": "v",
+      "ipa": "/ɪkˈspəʊz/",
+      "vi": "Phơi bày; tiếp xúc",
+      "example": "The report exposed serious failings.",
+      "collocation": "expose to · expose the truth · widely exposed",
+      "synonyms": "reveal · uncover · lay bare"
+    },
+    {
+      "word": "facilitate",
+      "pos": "v",
+      "ipa": "/fəˈsɪlɪteɪt/",
+      "vi": "Tạo thuận lợi cho",
+      "example": "The app facilitates communication between teams.",
+      "collocation": "facilitate learning · facilitate trade · greatly facilitate",
+      "synonyms": "ease · enable · assist"
+    },
+    {
+      "word": "fundamental",
+      "pos": "adj",
+      "ipa": "/ˌfʌndəˈmentl/",
+      "vi": "Cơ bản, cốt yếu",
+      "example": "Access to education is a fundamental right.",
+      "collocation": "fundamental change · fundamental right · fundamental difference",
+      "synonyms": "basic · essential · core"
+    },
+    {
+      "word": "generate",
+      "pos": "v",
+      "ipa": "/ˈdʒenəreɪt/",
+      "vi": "Tạo ra, sinh ra",
+      "example": "Tourism generates a lot of income.",
+      "collocation": "generate income · generate electricity · generate interest",
+      "synonyms": "produce · create · yield"
+    },
+    {
+      "word": "monitor",
+      "pos": "v",
+      "ipa": "/ˈmɒnɪtə/",
+      "vi": "Theo dõi, giám sát",
+      "example": "Doctors monitor the patient's heart rate.",
+      "collocation": "closely monitor · monitor progress · continuously monitor",
+      "synonyms": "track · observe · oversee"
+    },
+    {
+      "word": "notion",
+      "pos": "n",
+      "ipa": "/ˈnəʊʃən/",
+      "vi": "Quan niệm, ý niệm",
+      "example": "He rejected the notion that money brings happiness.",
+      "collocation": "vague notion · reject the notion · the notion that",
+      "synonyms": "idea · concept · belief"
+    },
+    {
+      "word": "objective",
+      "pos": "n",
+      "ipa": "/əbˈdʒektɪv/",
+      "vi": "Mục tiêu",
+      "example": "The main objective is to reduce costs.",
+      "collocation": "main objective · achieve an objective · clear objective",
+      "synonyms": "goal · aim · target"
+    },
+    {
+      "word": "perspective",
+      "pos": "n",
+      "ipa": "/pəˈspektɪv/",
+      "vi": "Góc nhìn, quan điểm",
+      "example": "Travel gives you a new perspective on life.",
+      "collocation": "from a perspective · fresh perspective · put into perspective",
+      "synonyms": "viewpoint · angle · outlook"
+    },
+    {
+      "word": "precise",
+      "pos": "adj",
+      "ipa": "/prɪˈsaɪs/",
+      "vi": "Chính xác, tỉ mỉ",
+      "example": "We need precise measurements.",
+      "collocation": "precise measurement · to be precise · precise details",
+      "synonyms": "exact · accurate · specific"
+    },
+    {
+      "word": "pursue",
+      "pos": "v",
+      "ipa": "/pəˈsjuː/",
+      "vi": "Theo đuổi",
+      "example": "She decided to pursue a career in medicine.",
+      "collocation": "pursue a career · pursue a goal · actively pursue",
+      "synonyms": "chase · follow · strive for"
+    }
+  ]
+}
