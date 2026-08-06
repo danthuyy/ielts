@@ -1,0 +1,234 @@
+{
+  "id": "australian_parrots",
+  "title": "Australian Parrots And Their Adaptation To Habitat Change",
+  "description": "Bài đọc về vẹt Úc và sự thích nghi với thay đổi môi trường sống",
+  "date": "2026-08-06",
+  "tags": ["environment"],
+  "words": [
+    {
+      "word": "diversity",
+      "pos": "n",
+      "ipa": "/daɪˈvɜː.sə.ti/",
+      "vi": "Sự đa dạng",
+      "example": "Nowhere do they display such a richness of diversity and form as in Australia.",
+      "collocation": "biological diversity · cultural diversity · diversity of",
+      "note": "Tính từ: diverse. Rất hay gặp trong IELTS khi nói về môi trường và xã hội."
+    },
+    {
+      "word": "renowned",
+      "pos": "adj",
+      "ipa": "/rɪˈnaʊnd/",
+      "vi": "Nổi tiếng, lừng danh",
+      "example": "Australia has long been renowned for the number and variety of its parrots.",
+      "collocation": "renowned for · internationally renowned · renowned expert",
+      "note": "Trang trọng hơn 'famous'. Luôn đi với 'for'."
+    },
+    {
+      "word": "descendant",
+      "pos": "n",
+      "ipa": "/dɪˈsen.dənt/",
+      "vi": "Hậu duệ, con cháu",
+      "example": "Parrots are descendants of an ancient line.",
+      "collocation": "direct descendant · descendant of · living descendant",
+      "note": "Trái nghĩa: ancestor (tổ tiên)."
+    },
+    {
+      "word": "inhabit",
+      "pos": "v",
+      "ipa": "/ɪnˈhæb.ɪt/",
+      "vi": "Sinh sống, cư trú",
+      "example": "Since most species inhabit Africa, Australia and South America, it seems almost certain that parrots originated on the ancient continent of Gondwana.",
+      "collocation": "inhabit a region · densely inhabited · inhabit the forest",
+      "note": "Danh từ: inhabitant (cư dân)."
+    },
+    {
+      "word": "comprise",
+      "pos": "v",
+      "ipa": "/kəmˈpraɪz/",
+      "vi": "Bao gồm, bao hàm",
+      "example": "Much of Gondwana comprised vast rainforests intersected by huge slow-flowing rivers and expansive lakes.",
+      "collocation": "comprise of · mainly comprise · comprise a large proportion",
+      "note": "Đồng nghĩa: consist of, be made up of."
+    },
+    {
+      "word": "expansive",
+      "pos": "adj",
+      "ipa": "/ɪkˈspæn.sɪv/",
+      "vi": "Rộng lớn, bao la",
+      "example": "Gondwana comprised vast rainforests intersected by huge slow-flowing rivers and expansive lakes.",
+      "collocation": "expansive area · expansive view · expansive landscape",
+      "note": ""
+    },
+    {
+      "word": "contract",
+      "pos": "v",
+      "ipa": "/kənˈtrækt/",
+      "vi": "Co lại, thu hẹp",
+      "example": "The rainforests that once covered it gradually contracted to the continental margins.",
+      "collocation": "contract sharply · muscles contract · contract in size",
+      "note": "Nhấn âm hai khi là động từ. Nhấn âm đầu /ˈkɒn.trækt/ khi là danh từ (hợp đồng)."
+    },
+    {
+      "word": "margin",
+      "pos": "n",
+      "ipa": "/ˈmɑː.dʒɪn/",
+      "vi": "Rìa, lề; biên độ",
+      "example": "The rainforests gradually contracted to the continental margins, where they still exist today.",
+      "collocation": "profit margin · continental margin · by a narrow margin",
+      "note": "Nhiều nghĩa: rìa (địa lý), lề (giấy), biên lợi nhuận (kinh tế)."
+    },
+    {
+      "word": "extinction",
+      "pos": "n",
+      "ipa": "/ɪkˈstɪŋk.ʃən/",
+      "vi": "Sự tuyệt chủng",
+      "example": "The creatures that remained in those shrinking rainforests had to adapt to the drier conditions or face extinction.",
+      "collocation": "face extinction · on the brink of extinction · mass extinction",
+      "note": "Tính từ: extinct. Rất hay gặp trong IELTS chủ đề Environment."
+    },
+    {
+      "word": "ancestral",
+      "pos": "adj",
+      "ipa": "/ænˈses.trəl/",
+      "vi": "Thuộc tổ tiên, của tổ tiên",
+      "example": "The parrots spread from ancestral forests through eucalypt woodlands to colonise the central deserts.",
+      "collocation": "ancestral home · ancestral land · ancestral species",
+      "note": "Danh từ: ancestor."
+    },
+    {
+      "word": "diversify",
+      "pos": "v",
+      "ipa": "/daɪˈvɜː.sɪ.faɪ/",
+      "vi": "Đa dạng hoá",
+      "example": "They diversified into a wide range of species with adaptations that reflect the many changes animals had to make.",
+      "collocation": "diversify the economy · diversify into · diversify a portfolio",
+      "note": "Danh từ: diversification."
+    },
+    {
+      "word": "adaptation",
+      "pos": "n",
+      "ipa": "/ˌæd.æpˈteɪ.ʃən/",
+      "vi": "Sự thích nghi, sự thích ứng",
+      "example": "They diversified into a wide range of species with adaptations that reflect the many changes animals had to make to survive.",
+      "collocation": "adaptation to · evolutionary adaptation · climate adaptation",
+      "note": "Động từ: adapt. Tính từ: adaptive."
+    },
+    {
+      "word": "evolutionary",
+      "pos": "adj",
+      "ipa": "/ˌiː.vəˈluː.ʃən.ər.i/",
+      "vi": "Thuộc tiến hoá",
+      "example": "These evolutionary pressures helped mould keratin into a range of tools capable of gathering the new food types.",
+      "collocation": "evolutionary process · evolutionary theory · evolutionary pressure",
+      "note": "Danh từ: evolution."
+    },
+    {
+      "word": "substance",
+      "pos": "n",
+      "ipa": "/ˈsʌb.stəns/",
+      "vi": "Chất, vật chất",
+      "example": "These evolutionary pressures helped mould keratin, the substance from which beaks are made, into a range of tools.",
+      "collocation": "chemical substance · harmful substance · substance abuse",
+      "note": ""
+    },
+    {
+      "word": "extract",
+      "pos": "v",
+      "ipa": "/ɪkˈstrækt/",
+      "vi": "Chiết xuất, lấy ra",
+      "example": "Some have comparatively long beaks that are perfect for extracting seeds from fruit.",
+      "collocation": "extract information · extract oil · extract data",
+      "note": "Danh từ: extraction. Nhấn âm hai khi là động từ, âm đầu khi là danh từ."
+    },
+    {
+      "word": "pollination",
+      "pos": "n",
+      "ipa": "/ˌpɒl.ɪˈneɪ.ʃən/",
+      "vi": "Sự thụ phấn",
+      "example": "Flowers which depend on birds for pollination are more often red.",
+      "collocation": "cross-pollination · insect pollination · pollination process",
+      "note": "Động từ: pollinate."
+    },
+    {
+      "word": "nomadic",
+      "pos": "adj",
+      "ipa": "/nəʊˈmæd.ɪk/",
+      "vi": "Du mục, lang thang",
+      "example": "The majority are nomadic to some degree, moving around to take advantage of feeding and breeding places.",
+      "collocation": "nomadic lifestyle · nomadic people · nomadic tribe",
+      "note": "Danh từ: nomad."
+    },
+    {
+      "word": "thrive",
+      "pos": "v",
+      "ipa": "/θraɪv/",
+      "vi": "Phát triển mạnh, thịnh vượng",
+      "example": "Forest clearing created grasslands where galahs and corellas thrive.",
+      "collocation": "thrive in · thrive on · continue to thrive",
+      "note": "Mạnh hơn 'survive': không chỉ sống sót mà còn phát triển tốt."
+    },
+    {
+      "word": "fare",
+      "pos": "v",
+      "ipa": "/feər/",
+      "vi": "Xoay sở, diễn ra (tốt hay xấu)",
+      "example": "But other parrot species did not fare so well when their environments were altered.",
+      "collocation": "fare well · fare badly · fare better",
+      "note": "Nghĩa khác: giá vé (danh từ). Khi là động từ, thường đi với 'well/badly'."
+    },
+    {
+      "word": "habitat",
+      "pos": "n",
+      "ipa": "/ˈhæb.ɪ.tæt/",
+      "vi": "Môi trường sống, nơi cư trú",
+      "example": "Numbers of ground parrots declined when a great part of their habitat was destroyed.",
+      "collocation": "natural habitat · habitat loss · habitat destruction",
+      "note": "Từ cốt lõi trong IELTS chủ đề Environment."
+    },
+    {
+      "word": "confront",
+      "pos": "v",
+      "ipa": "/kənˈfrʌnt/",
+      "vi": "Đối mặt, đương đầu",
+      "example": "Even some parrot species that benefited from forest clearing at first are now confronted by a shortage of nesting sites.",
+      "collocation": "confront a problem · be confronted with · confront challenges",
+      "note": "Danh từ: confrontation."
+    },
+    {
+      "word": "colonise",
+      "pos": "v",
+      "ipa": "/ˈkɒl.ə.naɪz/",
+      "vi": "Chiếm đóng, định cư",
+      "example": "After farmers cleared large areas of forest on Kangaroo Island, the island was colonised by galahs.",
+      "collocation": "colonise an area · colonise new territory · colonise the land",
+      "note": "Chính tả Mỹ: colonize. Danh từ: colonisation."
+    },
+    {
+      "word": "precipitate",
+      "pos": "v",
+      "ipa": "/prɪˈsɪp.ɪ.teɪt/",
+      "vi": "Gây ra, thúc đẩy (thường là điều xấu)",
+      "example": "Their success precipitated a partial collapse in the black cockatoo population.",
+      "collocation": "precipitate a crisis · precipitate change · precipitate a decline",
+      "note": "Mang sắc thái 'gây ra đột ngột'. Trang trọng hơn 'cause'."
+    },
+    {
+      "word": "scarce",
+      "pos": "adj",
+      "ipa": "/skeəs/",
+      "vi": "Khan hiếm, thiếu hụt",
+      "example": "The black cockatoo population collapsed when they lost the struggle for scarce nesting hollows.",
+      "collocation": "scarce resources · increasingly scarce · scarce supply",
+      "note": "Danh từ: scarcity."
+    },
+    {
+      "word": "equitable",
+      "pos": "adj",
+      "ipa": "/ˈek.wɪ.tə.bəl/",
+      "vi": "Công bằng, hợp lý",
+      "example": "There may be no final answer to ensuring an equitable balance between parrot species.",
+      "collocation": "equitable distribution · equitable access · equitable solution",
+      "note": "Khác 'equal' (bằng nhau). 'Equitable' nhấn mạnh sự công bằng, hợp lý."
+    }
+  ]
+}
