@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_1",
+  "title": "AWL Sublist 1",
+  "description": "Academic Word List — nhóm 1: những từ học thuật xuất hiện dày nhất",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "analyse",
+      "pos": "v",
+      "ipa": "/ˈænəlaɪz/",
+      "vi": "Phân tích",
+      "example": "Researchers analysed the survey data.",
+      "collocation": "analyse data · carefully analyse · analyse the results",
+      "synonyms": "examine · study · scrutinise"
+    },
+    {
+      "word": "approach",
+      "pos": "n",
+      "ipa": "/əˈprəʊtʃ/",
+      "vi": "Cách tiếp cận",
+      "example": "The school adopted a new approach to teaching.",
+      "collocation": "a new approach · adopt an approach · practical approach",
+      "synonyms": "method · strategy · way"
+    },
+    {
+      "word": "assess",
+      "pos": "v",
+      "ipa": "/əˈses/",
+      "vi": "Đánh giá",
+      "example": "Experts assessed the damage after the storm.",
+      "collocation": "assess the impact · assess risk · carefully assess",
+      "synonyms": "evaluate · judge · gauge"
+    },
+    {
+      "word": "assume",
+      "pos": "v",
+      "ipa": "/əˈsjuːm/",
+      "vi": "Cho rằng, giả định",
+      "example": "We cannot assume the trend will continue.",
+      "collocation": "assume responsibility · reasonably assume",
+      "synonyms": "presume · suppose · take for granted"
+    },
+    {
+      "word": "authority",
+      "pos": "n",
+      "ipa": "/ɔːˈθɒrəti/",
+      "vi": "Nhà chức trách; quyền lực",
+      "example": "The local authority approved the plan.",
+      "collocation": "local authority · in authority · exercise authority",
+      "synonyms": "official body · power · control"
+    },
+    {
+      "word": "benefit",
+      "pos": "n",
+      "ipa": "/ˈbenɪfɪt/",
+      "vi": "Lợi ích",
+      "example": "Regular exercise has many health benefits.",
+      "collocation": "major benefit · reap the benefits · of great benefit",
+      "synonyms": "advantage · gain · perk"
+    },
+    {
+      "word": "concept",
+      "pos": "n",
+      "ipa": "/ˈkɒnsept/",
+      "vi": "Khái niệm",
+      "example": "Students struggled with the abstract concept.",
+      "collocation": "abstract concept · grasp a concept · key concept",
+      "synonyms": "idea · notion · principle"
+    },
+    {
+      "word": "consist",
+      "pos": "v",
+      "ipa": "/kənˈsɪst/",
+      "vi": "Bao gồm, gồm có",
+      "example": "The team consists of six members.",
+      "collocation": "consist of · mainly consist of",
+      "synonyms": "comprise · be made up of"
+    },
+    {
+      "word": "constitute",
+      "pos": "v",
+      "ipa": "/ˈkɒnstɪtjuːt/",
+      "vi": "Cấu thành, tạo nên",
+      "example": "Women constitute half the workforce.",
+      "collocation": "constitute a threat · constitute a majority",
+      "synonyms": "make up · form · amount to"
+    },
+    {
+      "word": "context",
+      "pos": "n",
+      "ipa": "/ˈkɒntekst/",
+      "vi": "Bối cảnh, ngữ cảnh",
+      "example": "The word's meaning depends on context.",
+      "collocation": "in this context · social context · historical context",
+      "synonyms": "setting · background · circumstances"
+    },
+    {
+      "word": "define",
+      "pos": "v",
+      "ipa": "/dɪˈfaɪn/",
+      "vi": "Định nghĩa, xác định",
+      "example": "It is hard to define happiness precisely.",
+      "collocation": "clearly define · define a term · define a goal",
+      "synonyms": "specify · determine · characterise"
+    },
+    {
+      "word": "derive",
+      "pos": "v",
+      "ipa": "/dɪˈraɪv/",
+      "vi": "Bắt nguồn; thu được",
+      "example": "Many English words derive from Latin.",
+      "collocation": "derive from · derive benefit · derive pleasure",
+      "synonyms": "obtain · gain · originate"
+    },
+    {
+      "word": "distribute",
+      "pos": "v",
+      "ipa": "/dɪˈstrɪbjuːt/",
+      "vi": "Phân phối",
+      "example": "Aid was distributed to the flood victims.",
+      "collocation": "distribute evenly · distribute aid · widely distributed",
+      "synonyms": "hand out · allocate · share out"
+    },
+    {
+      "word": "economy",
+      "pos": "n",
+      "ipa": "/ɪˈkɒnəmi/",
+      "vi": "Nền kinh tế",
+      "example": "The economy grew by three percent.",
+      "collocation": "global economy · booming economy · stimulate the economy",
+      "synonyms": "financial system · market"
+    },
+    {
+      "word": "establish",
+      "pos": "v",
+      "ipa": "/ɪˈstæblɪʃ/",
+      "vi": "Thành lập; xác lập",
+      "example": "The charity was established in 1990.",
+      "collocation": "establish a company · firmly establish · establish a link",
+      "synonyms": "set up · found · create"
+    },
+    {
+      "word": "estimate",
+      "pos": "v",
+      "ipa": "/ˈestɪmeɪt/",
+      "vi": "Ước tính",
+      "example": "Experts estimate the population at ten million.",
+      "collocation": "estimate the cost · roughly estimate · conservatively estimate",
+      "synonyms": "calculate · gauge · reckon"
+    },
+    {
+      "word": "evident",
+      "pos": "adj",
+      "ipa": "/ˈevɪdənt/",
+      "vi": "Rõ ràng, hiển nhiên",
+      "example": "It was evident that she was upset.",
+      "collocation": "clearly evident · become evident · self-evident",
+      "synonyms": "obvious · apparent · clear"
+    },
+    {
+      "word": "export",
+      "pos": "v",
+      "ipa": "/ɪkˈspɔːt/",
+      "vi": "Xuất khẩu",
+      "example": "The country exports coffee worldwide.",
+      "collocation": "export goods · export oil · export to",
+      "synonyms": "sell abroad · ship overseas"
+    },
+    {
+      "word": "factor",
+      "pos": "n",
+      "ipa": "/ˈfæktə/",
+      "vi": "Yếu tố, nhân tố",
+      "example": "Cost is a key factor in the decision.",
+      "collocation": "key factor · contributing factor · decisive factor",
+      "synonyms": "element · cause · consideration"
+    },
+    {
+      "word": "finance",
+      "pos": "n",
+      "ipa": "/ˈfaɪnæns/",
+      "vi": "Tài chính",
+      "example": "She works in corporate finance.",
+      "collocation": "personal finance · public finance · finance minister",
+      "synonyms": "funding · money · funds"
+    },
+    {
+      "word": "formula",
+      "pos": "n",
+      "ipa": "/ˈfɔːmjələ/",
+      "vi": "Công thức",
+      "example": "There is no magic formula for success.",
+      "collocation": "a simple formula · secret formula · apply a formula",
+      "synonyms": "equation · recipe · method"
+    },
+    {
+      "word": "function",
+      "pos": "n",
+      "ipa": "/ˈfʌŋkʃən/",
+      "vi": "Chức năng",
+      "example": "The primary function of a fridge is to keep food cold.",
+      "collocation": "primary function · perform a function · basic function",
+      "synonyms": "purpose · role · use"
+    },
+    {
+      "word": "identify",
+      "pos": "v",
+      "ipa": "/aɪˈdentɪfaɪ/",
+      "vi": "Nhận diện, xác định",
+      "example": "Doctors identified the cause of the illness.",
+      "collocation": "identify a problem · correctly identify · identify a trend",
+      "synonyms": "recognise · pinpoint · detect"
+    },
+    {
+      "word": "income",
+      "pos": "n",
+      "ipa": "/ˈɪŋkʌm/",
+      "vi": "Thu nhập",
+      "example": "Households on a low income get extra support.",
+      "collocation": "annual income · disposable income · source of income",
+      "synonyms": "earnings · revenue · salary"
+    },
+    {
+      "word": "indicate",
+      "pos": "v",
+      "ipa": "/ˈɪndɪkeɪt/",
+      "vi": "Cho thấy, chỉ ra",
+      "example": "The data indicate a rise in demand.",
+      "collocation": "clearly indicate · results indicate · indicate a trend",
+      "synonyms": "show · suggest · signal"
+    }
+  ]
+}

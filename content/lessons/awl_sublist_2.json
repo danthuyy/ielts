@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_2",
+  "title": "AWL Sublist 2",
+  "description": "Academic Word List — nhóm 2: từ học thuật thông dụng cao",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "category",
+      "pos": "n",
+      "ipa": "/ˈkætəɡəri/",
+      "vi": "Loại, hạng mục",
+      "example": "Products are sorted into categories.",
+      "collocation": "broad category · fall into a category · separate category",
+      "synonyms": "class · group · type"
+    },
+    {
+      "word": "community",
+      "pos": "n",
+      "ipa": "/kəˈmjuːnəti/",
+      "vi": "Cộng đồng",
+      "example": "The festival brings the whole community together.",
+      "collocation": "local community · close-knit community · sense of community",
+      "synonyms": "neighbourhood · public · society"
+    },
+    {
+      "word": "complex",
+      "pos": "adj",
+      "ipa": "/ˈkɒmpleks/",
+      "vi": "Phức tạp",
+      "example": "Climate change is a complex problem.",
+      "collocation": "complex problem · highly complex · complex system",
+      "synonyms": "complicated · intricate · involved"
+    },
+    {
+      "word": "conclude",
+      "pos": "v",
+      "ipa": "/kənˈkluːd/",
+      "vi": "Kết luận; kết thúc",
+      "example": "The report concludes that reform is needed.",
+      "collocation": "conclude that · study concludes · conclude a deal",
+      "synonyms": "deduce · infer · finish"
+    },
+    {
+      "word": "conduct",
+      "pos": "v",
+      "ipa": "/kənˈdʌkt/",
+      "vi": "Tiến hành, thực hiện",
+      "example": "Scientists conducted a series of tests.",
+      "collocation": "conduct research · conduct a survey · conduct an experiment",
+      "synonyms": "carry out · perform · undertake"
+    },
+    {
+      "word": "consequence",
+      "pos": "n",
+      "ipa": "/ˈkɒnsɪkwəns/",
+      "vi": "Hậu quả",
+      "example": "Ignoring the warning had serious consequences.",
+      "collocation": "serious consequence · face the consequences · unintended consequence",
+      "synonyms": "result · outcome · repercussion"
+    },
+    {
+      "word": "consume",
+      "pos": "v",
+      "ipa": "/kənˈsjuːm/",
+      "vi": "Tiêu thụ, tiêu dùng",
+      "example": "Modern homes consume a lot of electricity.",
+      "collocation": "consume energy · consume resources · consume less",
+      "synonyms": "use up · eat through · devour"
+    },
+    {
+      "word": "design",
+      "pos": "v",
+      "ipa": "/dɪˈzaɪn/",
+      "vi": "Thiết kế",
+      "example": "The building was designed to save energy.",
+      "collocation": "design a system · carefully design · design for",
+      "synonyms": "plan · create · devise"
+    },
+    {
+      "word": "distinct",
+      "pos": "adj",
+      "ipa": "/dɪˈstɪŋkt/",
+      "vi": "Khác biệt, rõ rệt",
+      "example": "The two species are quite distinct.",
+      "collocation": "distinct advantage · clearly distinct · distinct from",
+      "synonyms": "separate · different · clear"
+    },
+    {
+      "word": "element",
+      "pos": "n",
+      "ipa": "/ˈelɪmənt/",
+      "vi": "Yếu tố, thành phần",
+      "example": "Trust is a key element of teamwork.",
+      "collocation": "key element · essential element · element of risk",
+      "synonyms": "component · factor · part"
+    },
+    {
+      "word": "evaluate",
+      "pos": "v",
+      "ipa": "/ɪˈvæljueɪt/",
+      "vi": "Đánh giá",
+      "example": "We need to evaluate the risks first.",
+      "collocation": "evaluate the results · carefully evaluate · evaluate options",
+      "synonyms": "assess · appraise · gauge"
+    },
+    {
+      "word": "feature",
+      "pos": "n",
+      "ipa": "/ˈfiːtʃə/",
+      "vi": "Đặc điểm, tính năng",
+      "example": "A key feature of the phone is its camera.",
+      "collocation": "key feature · distinctive feature · notable feature",
+      "synonyms": "characteristic · trait · aspect"
+    },
+    {
+      "word": "focus",
+      "pos": "v",
+      "ipa": "/ˈfəʊkəs/",
+      "vi": "Tập trung",
+      "example": "The campaign focuses on young people.",
+      "collocation": "focus on · focus attention · sharply focus",
+      "synonyms": "concentrate · centre · zero in"
+    },
+    {
+      "word": "impact",
+      "pos": "n",
+      "ipa": "/ˈɪmpækt/",
+      "vi": "Tác động",
+      "example": "Tourism has a huge impact on the economy.",
+      "collocation": "major impact · have an impact · negative impact",
+      "synonyms": "effect · influence · consequence"
+    },
+    {
+      "word": "invest",
+      "pos": "v",
+      "ipa": "/ɪnˈvest/",
+      "vi": "Đầu tư",
+      "example": "The firm invests heavily in research.",
+      "collocation": "invest in · invest heavily · invest time",
+      "synonyms": "put money into · fund · back"
+    },
+    {
+      "word": "maintain",
+      "pos": "v",
+      "ipa": "/meɪnˈteɪn/",
+      "vi": "Duy trì; bảo trì",
+      "example": "It is important to maintain a healthy diet.",
+      "collocation": "maintain standards · maintain a balance · maintain equipment",
+      "synonyms": "keep up · sustain · preserve"
+    },
+    {
+      "word": "obtain",
+      "pos": "v",
+      "ipa": "/əbˈteɪn/",
+      "vi": "Đạt được, có được",
+      "example": "You must obtain a licence first.",
+      "collocation": "obtain permission · obtain information · easily obtain",
+      "synonyms": "get · acquire · secure"
+    },
+    {
+      "word": "participate",
+      "pos": "v",
+      "ipa": "/pɑːˈtɪsɪpeɪt/",
+      "vi": "Tham gia",
+      "example": "All students are encouraged to participate.",
+      "collocation": "participate in · actively participate · fully participate",
+      "synonyms": "take part · join in · engage"
+    },
+    {
+      "word": "perceive",
+      "pos": "v",
+      "ipa": "/pəˈsiːv/",
+      "vi": "Nhận thức, cảm nhận",
+      "example": "The public perceives the policy as unfair.",
+      "collocation": "perceive as · widely perceived · perceive a threat",
+      "synonyms": "see · regard · view"
+    },
+    {
+      "word": "potential",
+      "pos": "n",
+      "ipa": "/pəˈtenʃəl/",
+      "vi": "Tiềm năng",
+      "example": "The region has huge tourism potential.",
+      "collocation": "huge potential · realise potential · growth potential",
+      "synonyms": "promise · capability · possibility"
+    },
+    {
+      "word": "previous",
+      "pos": "adj",
+      "ipa": "/ˈpriːviəs/",
+      "vi": "Trước đó",
+      "example": "No previous experience is required.",
+      "collocation": "previous experience · in previous years · previous research",
+      "synonyms": "earlier · prior · preceding"
+    },
+    {
+      "word": "purchase",
+      "pos": "v",
+      "ipa": "/ˈpɜːtʃəs/",
+      "vi": "Mua",
+      "example": "Customers can purchase tickets online.",
+      "collocation": "purchase goods · purchase online · purchase a ticket",
+      "synonyms": "buy · acquire · procure"
+    },
+    {
+      "word": "range",
+      "pos": "n",
+      "ipa": "/reɪndʒ/",
+      "vi": "Phạm vi, khoảng",
+      "example": "The shop offers a wide range of products.",
+      "collocation": "wide range · price range · range of options",
+      "synonyms": "variety · spectrum · scope"
+    },
+    {
+      "word": "region",
+      "pos": "n",
+      "ipa": "/ˈriːdʒən/",
+      "vi": "Vùng, khu vực",
+      "example": "The region is famous for its wine.",
+      "collocation": "remote region · coastal region · entire region",
+      "synonyms": "area · zone · district"
+    },
+    {
+      "word": "strategy",
+      "pos": "n",
+      "ipa": "/ˈstrætədʒi/",
+      "vi": "Chiến lược",
+      "example": "The company adopted a new marketing strategy.",
+      "collocation": "effective strategy · long-term strategy · marketing strategy",
+      "synonyms": "plan · approach · tactic"
+    }
+  ]
+}
