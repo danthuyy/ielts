@@ -1,0 +1,259 @@
+{
+  "id": "awl_sublist_9",
+  "title": "AWL Sublist 9",
+  "description": "Academic Word List — nhóm 9",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "accommodate",
+      "pos": "v",
+      "ipa": "/əˈkɒmədeɪt/",
+      "vi": "Chứa; đáp ứng",
+      "example": "The hotel can accommodate 200 guests.",
+      "collocation": "accommodate guests · accommodate needs",
+      "synonyms": "house · hold · cater for",
+      "forms": "accommodation (n) · accommodating (adj)"
+    },
+    {
+      "word": "analogy",
+      "pos": "n",
+      "ipa": "/əˈnælədʒi/",
+      "vi": "Sự loại suy, phép so sánh",
+      "example": "She drew an analogy between the brain and a computer.",
+      "collocation": "draw an analogy · by analogy · a useful analogy",
+      "synonyms": "comparison · parallel",
+      "forms": "analogous (adj) · analogical (adj)"
+    },
+    {
+      "word": "anticipate",
+      "pos": "v",
+      "ipa": "/ænˈtɪsɪpeɪt/",
+      "vi": "Dự đoán, lường trước",
+      "example": "We did not anticipate such a large crowd.",
+      "collocation": "anticipate a problem · widely anticipated · anticipate demand",
+      "synonyms": "expect · foresee · predict",
+      "forms": "anticipation (n) · anticipated (adj)"
+    },
+    {
+      "word": "assure",
+      "pos": "v",
+      "ipa": "/əˈʃʊə/",
+      "vi": "Cam đoan, đảm bảo",
+      "example": "I assure you the work will be done on time.",
+      "collocation": "assure someone · assure quality · rest assured",
+      "synonyms": "guarantee · promise · reassure",
+      "forms": "assurance (n) · assured (adj)"
+    },
+    {
+      "word": "attain",
+      "pos": "v",
+      "ipa": "/əˈteɪn/",
+      "vi": "Đạt được",
+      "example": "She attained a high level of fluency.",
+      "collocation": "attain a goal · attain success · hard to attain",
+      "synonyms": "achieve · reach · accomplish",
+      "forms": "attainment (n) · attainable (adj)"
+    },
+    {
+      "word": "cease",
+      "pos": "v",
+      "ipa": "/siːs/",
+      "vi": "Ngừng, chấm dứt",
+      "example": "The factory ceased production last year.",
+      "collocation": "cease operations · cease fire · never cease",
+      "synonyms": "stop · halt · discontinue",
+      "forms": "ceaseless (adj) · cessation (n)"
+    },
+    {
+      "word": "coherent",
+      "pos": "adj",
+      "ipa": "/kəʊˈhɪərənt/",
+      "vi": "Mạch lạc",
+      "example": "She gave a clear and coherent answer.",
+      "collocation": "coherent argument · coherent plan · perfectly coherent",
+      "synonyms": "logical · consistent · lucid",
+      "forms": "coherence (n) · coherently (adv)"
+    },
+    {
+      "word": "coincide",
+      "pos": "v",
+      "ipa": "/ˌkəʊɪnˈsaɪd/",
+      "vi": "Trùng khớp",
+      "example": "The festival coincides with the harvest.",
+      "collocation": "coincide with · happen to coincide",
+      "synonyms": "concur · overlap · match",
+      "forms": "coincidence (n) · coincidental (adj)"
+    },
+    {
+      "word": "commence",
+      "pos": "v",
+      "ipa": "/kəˈmens/",
+      "vi": "Bắt đầu",
+      "example": "The ceremony will commence at noon.",
+      "collocation": "commence work · commence proceedings",
+      "synonyms": "begin · start · initiate",
+      "forms": "commencement (n)"
+    },
+    {
+      "word": "compatible",
+      "pos": "adj",
+      "ipa": "/kəmˈpætəbl/",
+      "vi": "Tương thích",
+      "example": "The software is compatible with older phones.",
+      "collocation": "compatible with · fully compatible",
+      "synonyms": "consistent · matching · congruous",
+      "forms": "compatibility (n) · incompatible (adj)"
+    },
+    {
+      "word": "confine",
+      "pos": "v",
+      "ipa": "/kənˈfaɪn/",
+      "vi": "Giới hạn; giam",
+      "example": "The problem is not confined to one country.",
+      "collocation": "confine to · be confined · confine yourself",
+      "synonyms": "restrict · limit · imprison",
+      "forms": "confinement (n) · confined (adj)"
+    },
+    {
+      "word": "controversy",
+      "pos": "n",
+      "ipa": "/ˈkɒntrəvɜːsi/",
+      "vi": "Cuộc tranh cãi",
+      "example": "The decision sparked huge controversy.",
+      "collocation": "spark controversy · a heated controversy",
+      "synonyms": "dispute · debate · argument",
+      "forms": "controversial (adj) · controversially (adv)"
+    },
+    {
+      "word": "device",
+      "pos": "n",
+      "ipa": "/dɪˈvaɪs/",
+      "vi": "Thiết bị",
+      "example": "The device measures air quality.",
+      "collocation": "electronic device · a clever device · mobile device",
+      "synonyms": "gadget · appliance · tool",
+      "forms": "devise (v)"
+    },
+    {
+      "word": "devote",
+      "pos": "v",
+      "ipa": "/dɪˈvəʊt/",
+      "vi": "Cống hiến, dành cho",
+      "example": "She devotes her weekends to volunteering.",
+      "collocation": "devote time · devote yourself · fully devote",
+      "synonyms": "dedicate · commit · give",
+      "forms": "devotion (n) · devoted (adj)"
+    },
+    {
+      "word": "diminish",
+      "pos": "v",
+      "ipa": "/dɪˈmɪnɪʃ/",
+      "vi": "Giảm bớt",
+      "example": "His influence gradually diminished.",
+      "collocation": "diminish rapidly · greatly diminish · diminish in value",
+      "synonyms": "decrease · lessen · dwindle",
+      "forms": "diminished (adj) · diminishing (adj)"
+    },
+    {
+      "word": "duration",
+      "pos": "n",
+      "ipa": "/djuˈreɪʃən/",
+      "vi": "Khoảng thời gian",
+      "example": "Stay seated for the duration of the flight.",
+      "collocation": "for the duration · short duration · long duration",
+      "synonyms": "length · period · span",
+      "forms": "durable (adj) · durability (n)"
+    },
+    {
+      "word": "erode",
+      "pos": "v",
+      "ipa": "/ɪˈrəʊd/",
+      "vi": "Xói mòn, bào mòn",
+      "example": "The scandal eroded public trust.",
+      "collocation": "erode trust · gradually erode · erode away",
+      "synonyms": "wear away · undermine · eat into",
+      "forms": "erosion (n) · erosive (adj)"
+    },
+    {
+      "word": "ethical",
+      "pos": "adj",
+      "ipa": "/ˈeθɪkl/",
+      "vi": "Thuộc đạo đức",
+      "example": "The company follows strict ethical standards.",
+      "collocation": "ethical issue · ethical standards · highly ethical",
+      "synonyms": "moral · principled · honourable",
+      "forms": "ethics (n) · ethically (adv) · unethical (adj)"
+    },
+    {
+      "word": "inherent",
+      "pos": "adj",
+      "ipa": "/ɪnˈhɪərənt/",
+      "vi": "Vốn có, cố hữu",
+      "example": "There is an inherent risk in the plan.",
+      "collocation": "inherent risk · inherent in · inherent flaw",
+      "synonyms": "intrinsic · innate · built-in",
+      "forms": "inherently (adv)"
+    },
+    {
+      "word": "insight",
+      "pos": "n",
+      "ipa": "/ˈɪnsaɪt/",
+      "vi": "Sự thấu hiểu",
+      "example": "The book offers real insight into the war.",
+      "collocation": "valuable insight · gain insight · deep insight",
+      "synonyms": "understanding · perception · awareness",
+      "forms": "insightful (adj)"
+    },
+    {
+      "word": "norm",
+      "pos": "n",
+      "ipa": "/nɔːm/",
+      "vi": "Chuẩn mực",
+      "example": "Working from home has become the norm.",
+      "collocation": "social norm · cultural norm · the norm",
+      "synonyms": "standard · convention · rule",
+      "forms": "normal (adj) · normalise (v) · normative (adj)"
+    },
+    {
+      "word": "overlap",
+      "pos": "v",
+      "ipa": "/ˌəʊvəˈlæp/",
+      "vi": "Chồng chéo, trùng lặp",
+      "example": "The two jobs overlap in several areas.",
+      "collocation": "overlap with · partly overlap · significantly overlap",
+      "synonyms": "coincide · intersect",
+      "forms": "overlap (n) · overlapping (adj)"
+    },
+    {
+      "word": "refine",
+      "pos": "v",
+      "ipa": "/rɪˈfaɪn/",
+      "vi": "Tinh chỉnh, làm tinh",
+      "example": "Engineers refined the design over months.",
+      "collocation": "refine a process · further refine · refine a method",
+      "synonyms": "improve · perfect · hone",
+      "forms": "refinement (n) · refined (adj)"
+    },
+    {
+      "word": "rigid",
+      "pos": "adj",
+      "ipa": "/ˈrɪdʒɪd/",
+      "vi": "Cứng nhắc",
+      "example": "The school has a rigid timetable.",
+      "collocation": "rigid rules · rigid structure · overly rigid",
+      "synonyms": "inflexible · stiff · strict",
+      "forms": "rigidity (n) · rigidly (adv)"
+    },
+    {
+      "word": "trigger",
+      "pos": "v",
+      "ipa": "/ˈtrɪɡə/",
+      "vi": "Kích hoạt, gây ra",
+      "example": "The news triggered a wave of protests.",
+      "collocation": "trigger a response · trigger an alarm · trigger memories",
+      "synonyms": "set off · spark · prompt",
+      "forms": "trigger (n)"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "id": "awl_sublist_10",
+  "title": "AWL Sublist 10",
+  "description": "Academic Word List — nhóm 10 (nhóm cuối)",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "adjacent",
+      "pos": "adj",
+      "ipa": "/əˈdʒeɪsnt/",
+      "vi": "Kề bên, liền kề",
+      "example": "The car park is adjacent to the station.",
+      "collocation": "adjacent to · adjacent building · adjacent rooms",
+      "synonyms": "neighbouring · adjoining · next to"
+    },
+    {
+      "word": "assemble",
+      "pos": "v",
+      "ipa": "/əˈsembl/",
+      "vi": "Lắp ráp; tập hợp",
+      "example": "A crowd assembled outside the court.",
+      "collocation": "assemble a team · assemble furniture · quickly assemble",
+      "synonyms": "gather · put together · convene",
+      "forms": "assembly (n) · assembled (adj)"
+    },
+    {
+      "word": "collapse",
+      "pos": "v",
+      "ipa": "/kəˈlæps/",
+      "vi": "Sụp đổ",
+      "example": "The old bridge collapsed in the flood.",
+      "collocation": "collapse suddenly · economy collapse · collapse under",
+      "synonyms": "fall down · cave in · break down",
+      "forms": "collapse (n) · collapsible (adj)"
+    },
+    {
+      "word": "colleague",
+      "pos": "n",
+      "ipa": "/ˈkɒliːɡ/",
+      "vi": "Đồng nghiệp",
+      "example": "She is well liked by her colleagues.",
+      "collocation": "close colleague · fellow colleague · former colleague",
+      "synonyms": "co-worker · associate · workmate"
+    },
+    {
+      "word": "compile",
+      "pos": "v",
+      "ipa": "/kəmˈpaɪl/",
+      "vi": "Biên soạn, tổng hợp",
+      "example": "They compiled a list of every species.",
+      "collocation": "compile a list · compile data · carefully compile",
+      "synonyms": "assemble · collect · put together",
+      "forms": "compilation (n)"
+    },
+    {
+      "word": "conceive",
+      "pos": "v",
+      "ipa": "/kənˈsiːv/",
+      "vi": "Hình thành (ý tưởng)",
+      "example": "The project was conceived ten years ago.",
+      "collocation": "conceive an idea · hard to conceive · originally conceive",
+      "synonyms": "imagine · devise · think up",
+      "forms": "concept (n) · conception (n) · conceivable (adj)"
+    },
+    {
+      "word": "convince",
+      "pos": "v",
+      "ipa": "/kənˈvɪns/",
+      "vi": "Thuyết phục",
+      "example": "She convinced them to change the plan.",
+      "collocation": "convince someone · fully convince · try to convince",
+      "synonyms": "persuade · assure · win over",
+      "forms": "convincing (adj) · conviction (n) · convinced (adj)"
+    },
+    {
+      "word": "enormous",
+      "pos": "adj",
+      "ipa": "/ɪˈnɔːməs/",
+      "vi": "Khổng lồ",
+      "example": "The project required an enormous amount of work.",
+      "collocation": "enormous amount · enormous impact · enormous pressure",
+      "synonyms": "huge · immense · vast",
+      "forms": "enormously (adv) · enormity (n)"
+    },
+    {
+      "word": "forthcoming",
+      "pos": "adj",
+      "ipa": "/ˌfɔːθˈkʌmɪŋ/",
+      "vi": "Sắp tới; sẵn lòng cung cấp",
+      "example": "Details of the forthcoming trip will follow.",
+      "collocation": "forthcoming event · forthcoming election · not forthcoming",
+      "synonyms": "upcoming · imminent · approaching"
+    },
+    {
+      "word": "integrity",
+      "pos": "n",
+      "ipa": "/ɪnˈteɡrəti/",
+      "vi": "Sự chính trực; sự toàn vẹn",
+      "example": "He is a man of great integrity.",
+      "collocation": "personal integrity · professional integrity · structural integrity",
+      "synonyms": "honesty · uprightness · wholeness"
+    },
+    {
+      "word": "intrinsic",
+      "pos": "adj",
+      "ipa": "/ɪnˈtrɪnzɪk/",
+      "vi": "Vốn có, nội tại",
+      "example": "Curiosity is an intrinsic part of learning.",
+      "collocation": "intrinsic value · intrinsic motivation · intrinsic to",
+      "synonyms": "inherent · innate · fundamental",
+      "forms": "intrinsically (adv)"
+    },
+    {
+      "word": "invoke",
+      "pos": "v",
+      "ipa": "/ɪnˈvəʊk/",
+      "vi": "Viện dẫn; gợi lên",
+      "example": "The lawyer invoked an old law.",
+      "collocation": "invoke a law · invoke the right · invoke memories",
+      "synonyms": "cite · call upon · appeal to",
+      "forms": "invocation (n)"
+    },
+    {
+      "word": "likewise",
+      "pos": "adv",
+      "ipa": "/ˈlaɪkwaɪz/",
+      "vi": "Tương tự, cũng vậy",
+      "example": "She worked hard, and expected others to do likewise.",
+      "collocation": "do likewise · behave likewise",
+      "synonyms": "similarly · equally · in the same way"
+    },
+    {
+      "word": "nonetheless",
+      "pos": "adv",
+      "ipa": "/ˌnʌnðəˈles/",
+      "vi": "Tuy nhiên, dù vậy",
+      "example": "The risk is small; it is real nonetheless.",
+      "collocation": "nonetheless important · but nonetheless",
+      "synonyms": "nevertheless · even so · still"
+    },
+    {
+      "word": "ongoing",
+      "pos": "adj",
+      "ipa": "/ˈɒnɡəʊɪŋ/",
+      "vi": "Đang diễn ra",
+      "example": "The investigation is still ongoing.",
+      "collocation": "ongoing process · ongoing debate · ongoing investigation",
+      "synonyms": "continuing · current · in progress"
+    },
+    {
+      "word": "panel",
+      "pos": "n",
+      "ipa": "/ˈpænl/",
+      "vi": "Ban, hội đồng; tấm",
+      "example": "A panel of experts reviewed the plan.",
+      "collocation": "expert panel · a panel of judges · solar panel",
+      "synonyms": "committee · board · jury",
+      "forms": "panellist (n)"
+    },
+    {
+      "word": "persist",
+      "pos": "v",
+      "ipa": "/pəˈsɪst/",
+      "vi": "Kiên trì; dai dẳng",
+      "example": "If the symptoms persist, see a doctor.",
+      "collocation": "persist in · problems persist · persist with",
+      "synonyms": "persevere · continue · carry on",
+      "forms": "persistence (n) · persistent (adj) · persistently (adv)"
+    },
+    {
+      "word": "pose",
+      "pos": "v",
+      "ipa": "/pəʊz/",
+      "vi": "Đặt ra (nguy cơ); tạo dáng",
+      "example": "Pollution poses a serious threat to health.",
+      "collocation": "pose a threat · pose a risk · pose a question",
+      "synonyms": "present · constitute · create"
+    },
+    {
+      "word": "reluctant",
+      "pos": "adj",
+      "ipa": "/rɪˈlʌktənt/",
+      "vi": "Miễn cưỡng, do dự",
+      "example": "He was reluctant to admit his mistake.",
+      "collocation": "reluctant to · deeply reluctant",
+      "synonyms": "unwilling · hesitant · loath",
+      "forms": "reluctance (n) · reluctantly (adv)"
+    },
+    {
+      "word": "straightforward",
+      "pos": "adj",
+      "ipa": "/ˌstreɪtˈfɔːwəd/",
+      "vi": "Đơn giản, thẳng thắn",
+      "example": "The instructions are quite straightforward.",
+      "collocation": "straightforward task · a straightforward answer · fairly straightforward",
+      "synonyms": "simple · uncomplicated · direct"
+    },
+    {
+      "word": "undergo",
+      "pos": "v",
+      "ipa": "/ˌʌndəˈɡəʊ/",
+      "vi": "Trải qua, chịu",
+      "example": "The city has undergone huge changes.",
+      "collocation": "undergo surgery · undergo change · undergo training",
+      "synonyms": "experience · go through · endure"
+    },
+    {
+      "word": "denote",
+      "pos": "v",
+      "ipa": "/dɪˈnəʊt/",
+      "vi": "Biểu thị, chỉ",
+      "example": "A red light denotes danger.",
+      "collocation": "denote a meaning · commonly denote",
+      "synonyms": "signify · indicate · represent",
+      "forms": "denotation (n)"
+    },
+    {
+      "word": "levy",
+      "pos": "v",
+      "ipa": "/ˈlevi/",
+      "vi": "Đánh (thuế, phí)",
+      "example": "The government levied a new tax on fuel.",
+      "collocation": "levy a tax · levy a fine · levy duties",
+      "synonyms": "impose · charge · exact",
+      "forms": "levy (n)"
+    },
+    {
+      "word": "prone",
+      "pos": "adj",
+      "ipa": "/prəʊn/",
+      "vi": "Dễ mắc, có xu hướng",
+      "example": "He is prone to making careless mistakes.",
+      "collocation": "prone to · accident-prone · error-prone",
+      "synonyms": "susceptible · liable · inclined"
+    },
+    {
+      "word": "whereby",
+      "pos": "adv",
+      "ipa": "/weəˈbaɪ/",
+      "vi": "Theo đó, nhờ đó mà",
+      "example": "A scheme whereby students can study abroad.",
+      "collocation": "a system whereby · a method whereby",
+      "synonyms": "by which · through which"
+    }
+  ]
+}
