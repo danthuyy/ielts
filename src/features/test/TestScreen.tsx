@@ -10,7 +10,15 @@ import { ResultScreen } from '@/components/ResultScreen';
 import { Sticker } from '@/components/Sticker';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useSettings } from '@/hooks/useSettings';
-import { getSrsState, recordActivity, recordAnswer, saveTestResult } from '@/lib/progress';
+import { buildChoiceOptions } from '@/lib/choices';
+import {
+  getBestTestScore,
+  getSrsState,
+  recordActivity,
+  recordAnswer,
+  saveTestResult,
+} from '@/lib/progress';
+import { gradeFor } from '@/lib/grade';
 import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { processAnswer, QUALITY } from '@/lib/srs';
 import { resultLine, resultSticker } from '@/lib/stickers';
@@ -46,10 +54,12 @@ function buildQuestions(pool: readonly StudyWord[]): Question[] {
       // Rotate through the modes instead of drawing at random, so a 15-question
       // test always exercises all three rather than, occasionally, just one.
       const mode = MODES[position % MODES.length] as Mode;
-      const distractors = shuffle(
-        ALL_STUDY_WORDS.filter((entry) => entry.word !== word.word),
-      ).slice(0, OPTION_COUNT - 1);
-      return { word, mode, options: mode === 'choice' ? shuffle([...distractors, word]) : [] };
+      // Distractors prefer the tested pool so a lesson test is a choice between
+      // that lesson's words, not the whole library — and no option repeats the
+      // answer's meaning. See lib/choices.
+      const options =
+        mode === 'choice' ? buildChoiceOptions(word, pool, ALL_STUDY_WORDS, OPTION_COUNT) : [];
+      return { word, mode, options };
     });
 }
 
@@ -70,7 +80,12 @@ function TestSession({ onRetry }: { onRetry: () => void }) {
 
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState('');
-  const [outcome, setOutcome] = useState<{ correct: number; duration: number } | null>(null);
+  const [outcome, setOutcome] = useState<{
+    correct: number;
+    duration: number;
+    /** Best score for this lesson *before* this attempt, for "kỷ lục" display. */
+    prevBest: number | null;
+  } | null>(null);
   /** Every question answered so far. The whole list, not just the misses. */
   const [attempts, setAttempts] = useState<Attempt[]>([]);
   /**
@@ -141,9 +156,13 @@ function TestSession({ onRetry }: { onRetry: () => void }) {
 
     const correct = attempts.filter((entry) => entry.correct).length;
     const duration = Math.floor((Date.now() - startedAtRef.current) / 1000);
-    setOutcome({ correct, duration });
+    const lessonKey = lesson?.id ?? 'all';
+    // Read the old record before this result is written, so "kỷ lục mới" can be
+    // decided by comparing against it rather than against itself.
+    const prevBest = await getBestTestScore(lessonKey);
+    setOutcome({ correct, duration, prevBest });
     await saveTestResult({
-      lessonId: lesson?.id ?? 'all',
+      lessonId: lessonKey,
       mode: 'mixed',
       score: percent(correct, questions.length),
       total: questions.length,
@@ -182,17 +201,30 @@ function TestSession({ onRetry }: { onRetry: () => void }) {
     const correct = outcome?.correct ?? score;
     const scorePercent = percent(correct, questions.length);
     const missed = attempts.filter((entry) => !entry.correct);
+    const grade = gradeFor(scorePercent);
+    const prevBest = outcome?.prevBest ?? null;
+    // A record needs a genuine previous score to beat; the first ever test is
+    // not "phá kỷ lục", it just sets one.
+    const isRecord = prevBest !== null && scorePercent > prevBest;
+    const bestValue = isRecord
+      ? `${scorePercent}% (mới!)`
+      : prevBest !== null
+        ? `${prevBest}%`
+        : `${scorePercent}%`;
     return (
       <ResultScreen
         sticker={settings.showStickers ? resultSticker(correct, questions.length) : undefined}
-        emoji={scorePercent >= 80 ? '🏆' : '👏'}
-        title="Hoàn thành bài kiểm tra!"
+        emoji={grade.emoji}
+        title={`Xếp loại ${grade.tier} · ${grade.label}`}
         details={[
           { label: 'Điểm số', value: `${scorePercent}%` },
+          { label: 'Kỷ lục', value: bestValue },
           { label: 'Thời gian', value: formatClock(outcome?.duration ?? 0) },
         ]}
         score={{ correct, total: questions.length }}
-        message={resultLine(correct, questions.length)}
+        message={
+          isRecord ? '🎉 Điểm cao nhất từ trước tới nay!' : resultLine(correct, questions.length)
+        }
         sound={scorePercent >= 70 ? 'perfect' : 'poor'}
         continueTo={backTo}
         continueLabel="Kết thúc"

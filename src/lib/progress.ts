@@ -365,6 +365,16 @@ export async function getTestHistory(limit = 20): Promise<TestResult[]> {
   return db.testHistory.orderBy('date').reverse().limit(limit).toArray();
 }
 
+/**
+ * The best score (percentage) ever recorded for a lesson's test, or null if it
+ * has never been tested. Lets the result screen show a personal best to beat.
+ */
+export async function getBestTestScore(lessonId: string): Promise<number | null> {
+  const results = await db.testHistory.where('lessonId').equals(lessonId).toArray();
+  if (results.length === 0) return null;
+  return results.reduce((best, result) => Math.max(best, result.score), 0);
+}
+
 export async function recordActivity(
   wordsStudied: number,
   wordsCorrect: number,
