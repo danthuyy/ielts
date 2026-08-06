@@ -68,12 +68,12 @@ xanh rồi mới commit & push**, và **kiểm chứng bằng UI thật** trên 
 
 ## 2. Nội dung từ vựng
 
-Từ **5 bài / 125 từ** trước phiên này mở rộng lên **40 bài / 1000 từ** (8×):
+Từ **5 bài / 125 từ** trước phiên này mở rộng lên **50 bài / 1241 từ** (~10×):
 
-| Nhóm            | Bài                                                                                                                                                                                                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Học thuật (AWL) | `awl_sublist_1` … `awl_sublist_10` — **trọn bộ 10 sublist Academic Word List, 250 từ**, mỗi từ có họ từ                                                                                                                                                                |
-| Chủ đề (25 bài) | Môi trường, Giáo dục, Công nghệ, Sức khoẻ, Tội phạm, Truyền thông, Công việc, Du lịch, Toàn cầu hoá, Văn hoá, Gia đình, Chính trị, Khoa học, Đô thị hoá, Ẩm thực, Kinh tế, Thể thao, Quan hệ, Giao thông, Nhà cửa, Động vật, Ngôn ngữ, Thời tiết, Tiêu dùng, Tính cách |
+| Nhóm            | Bài                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Học thuật (AWL) | `awl_sublist_1` … `awl_sublist_10` — **trọn bộ 10 sublist Academic Word List, 250 từ**, mỗi từ có họ từ                                                                                                                                                                                                                                                                                                  |
+| Chủ đề (35 bài) | Môi trường, Giáo dục, Công nghệ, Sức khoẻ, Tội phạm, Truyền thông, Công việc, Du lịch, Toàn cầu hoá, Văn hoá, Gia đình, Chính trị, Khoa học, Đô thị hoá, Ẩm thực, Kinh tế, Thể thao, Quan hệ, Giao thông, Nhà cửa, Động vật, Ngôn ngữ, Thời tiết, Tiêu dùng, Tính cách, Lễ hội, Thời trang, Giải trí, Dân số & Tuổi già, Việc làm, Quảng cáo, Sức khoẻ tinh thần, Âm nhạc, Khám phá Vũ trụ, Thiện nguyện |
 
 Mỗi từ có: nghĩa tiếng Việt, IPA, **collocation**, **synonyms**, **họ từ** (AWL),
 câu ví dụ.
