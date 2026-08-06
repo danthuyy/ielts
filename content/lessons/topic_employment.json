@@ -1,0 +1,239 @@
+{
+  "id": "topic_employment",
+  "title": "Chủ đề: Việc làm & Phỏng vấn",
+  "description": "Từ vựng IELTS chủ đề tuyển dụng, phỏng vấn và nơi làm việc",
+  "date": "2026-08-07",
+  "tags": ["work", "society"],
+  "words": [
+    {
+      "word": "applicant",
+      "pos": "n",
+      "ipa": "/ˈæplɪkənt/",
+      "vi": "Người nộp đơn ứng tuyển",
+      "example": "Hundreds of applicants applied for the job.",
+      "collocation": "a strong applicant · reject an applicant · successful applicant",
+      "synonyms": "candidate · job-seeker",
+      "forms": "apply (v) · application (n)"
+    },
+    {
+      "word": "candidate",
+      "pos": "n",
+      "ipa": "/ˈkændɪdət/",
+      "vi": "Ứng viên",
+      "example": "She was the strongest candidate.",
+      "collocation": "a strong candidate · the ideal candidate · shortlist candidates",
+      "synonyms": "applicant · contender",
+      "forms": "candidacy (n)"
+    },
+    {
+      "word": "vacancy",
+      "pos": "n",
+      "ipa": "/ˈveɪkənsi/",
+      "vi": "Vị trí trống",
+      "example": "The company advertised a vacancy.",
+      "collocation": "fill a vacancy · a job vacancy · advertise a vacancy",
+      "synonyms": "opening · position",
+      "forms": "vacant (adj)"
+    },
+    {
+      "word": "shortlist",
+      "pos": "v",
+      "ipa": "/ˈʃɔːtlɪst/",
+      "vi": "Đưa vào danh sách rút gọn",
+      "example": "She was shortlisted for the post.",
+      "collocation": "be shortlisted · shortlist candidates",
+      "synonyms": "select · pick",
+      "forms": "shortlist (n)"
+    },
+    {
+      "word": "probation",
+      "pos": "n",
+      "ipa": "/prəˈbeɪʃən/",
+      "vi": "Thời gian thử việc",
+      "example": "New staff are on probation for six months.",
+      "collocation": "a probation period · on probation",
+      "synonyms": "trial period",
+      "forms": "probationary (adj)"
+    },
+    {
+      "word": "appraisal",
+      "pos": "n",
+      "ipa": "/əˈpreɪzl/",
+      "vi": "Sự đánh giá (nhân viên)",
+      "example": "Her annual appraisal went well.",
+      "collocation": "an annual appraisal · a performance appraisal",
+      "synonyms": "evaluation · assessment · review",
+      "forms": "appraise (v)"
+    },
+    {
+      "word": "perk",
+      "pos": "n",
+      "ipa": "/pɜːk/",
+      "vi": "Đãi ngộ, phúc lợi kèm theo",
+      "example": "Free meals are a perk of the job.",
+      "collocation": "job perks · a nice perk · perks of the job",
+      "synonyms": "benefit · bonus · advantage"
+    },
+    {
+      "word": "tenure",
+      "pos": "n",
+      "ipa": "/ˈtenjə/",
+      "vi": "Nhiệm kỳ; biên chế",
+      "example": "She achieved a lot during her tenure.",
+      "collocation": "a long tenure · during his tenure · job tenure",
+      "synonyms": "term · incumbency"
+    },
+    {
+      "word": "internship",
+      "pos": "n",
+      "ipa": "/ˈɪntɜːnʃɪp/",
+      "vi": "Kỳ thực tập",
+      "example": "He did a summer internship at a bank.",
+      "collocation": "a paid internship · do an internship · a summer internship",
+      "synonyms": "placement · traineeship",
+      "forms": "intern (n)"
+    },
+    {
+      "word": "apprenticeship",
+      "pos": "n",
+      "ipa": "/əˈprentɪʃɪp/",
+      "vi": "Thời gian học việc",
+      "example": "She served a four-year apprenticeship.",
+      "collocation": "serve an apprenticeship · an engineering apprenticeship",
+      "synonyms": "traineeship",
+      "forms": "apprentice (n)"
+    },
+    {
+      "word": "layoff",
+      "pos": "n",
+      "ipa": "/ˈleɪɒf/",
+      "vi": "Sự sa thải hàng loạt",
+      "example": "The factory announced hundreds of layoffs.",
+      "collocation": "mass layoffs · announce layoffs · face layoffs",
+      "synonyms": "redundancy · dismissal"
+    },
+    {
+      "word": "resignation",
+      "pos": "n",
+      "ipa": "/ˌrezɪɡˈneɪʃən/",
+      "vi": "Sự từ chức",
+      "example": "He handed in his resignation.",
+      "collocation": "hand in your resignation · a shock resignation",
+      "synonyms": "quitting · departure",
+      "forms": "resign (v)"
+    },
+    {
+      "word": "workload",
+      "pos": "n",
+      "ipa": "/ˈwɜːkləʊd/",
+      "vi": "Khối lượng công việc",
+      "example": "Staff complain about a heavy workload.",
+      "collocation": "a heavy workload · reduce the workload · manage a workload",
+      "synonyms": "burden · caseload"
+    },
+    {
+      "word": "deadline",
+      "pos": "n",
+      "ipa": "/ˈdedlaɪn/",
+      "vi": "Hạn chót",
+      "example": "We are working to a tight deadline.",
+      "collocation": "meet a deadline · a tight deadline · miss the deadline",
+      "synonyms": "time limit · cut-off"
+    },
+    {
+      "word": "teamwork",
+      "pos": "n",
+      "ipa": "/ˈtiːmwɜːk/",
+      "vi": "Sự làm việc nhóm",
+      "example": "The project depends on good teamwork.",
+      "collocation": "good teamwork · rely on teamwork · effective teamwork",
+      "synonyms": "collaboration · cooperation"
+    },
+    {
+      "word": "credentials",
+      "pos": "n",
+      "ipa": "/krəˈdenʃlz/",
+      "vi": "Năng lực/bằng cấp chứng minh",
+      "example": "She has impressive academic credentials.",
+      "collocation": "impressive credentials · academic credentials · check credentials",
+      "synonyms": "qualifications · references"
+    },
+    {
+      "word": "qualification",
+      "pos": "n",
+      "ipa": "/ˌkwɒlɪfɪˈkeɪʃən/",
+      "vi": "Bằng cấp, trình độ",
+      "example": "The job requires a formal qualification.",
+      "collocation": "a formal qualification · relevant qualifications · gain a qualification",
+      "synonyms": "credential · certificate",
+      "forms": "qualify (v) · qualified (adj)"
+    },
+    {
+      "word": "nepotism",
+      "pos": "n",
+      "ipa": "/ˈnepətɪzəm/",
+      "vi": "Sự thiên vị người thân",
+      "example": "The firm was accused of nepotism.",
+      "collocation": "accused of nepotism · rampant nepotism",
+      "synonyms": "favouritism · cronyism"
+    },
+    {
+      "word": "meritocracy",
+      "pos": "n",
+      "ipa": "/ˌmerɪˈtɒkrəsi/",
+      "vi": "Chế độ trọng dụng nhân tài",
+      "example": "They claim the company is a meritocracy.",
+      "collocation": "a true meritocracy · based on meritocracy",
+      "synonyms": "fair system",
+      "forms": "meritocratic (adj)"
+    },
+    {
+      "word": "hierarchy",
+      "pos": "n",
+      "ipa": "/ˈhaɪərɑːki/",
+      "vi": "Hệ thống thứ bậc",
+      "example": "She rose quickly through the hierarchy.",
+      "collocation": "a rigid hierarchy · the corporate hierarchy · climb the hierarchy",
+      "synonyms": "ranking · pecking order",
+      "forms": "hierarchical (adj)"
+    },
+    {
+      "word": "overtime",
+      "pos": "n",
+      "ipa": "/ˈəʊvətaɪm/",
+      "vi": "Giờ làm thêm",
+      "example": "He works overtime to earn more.",
+      "collocation": "work overtime · paid overtime · do overtime",
+      "synonyms": "extra hours"
+    },
+    {
+      "word": "sabbatical",
+      "pos": "n",
+      "ipa": "/səˈbætɪkl/",
+      "vi": "Kỳ nghỉ phép dài (nghiên cứu)",
+      "example": "She took a sabbatical to write a book.",
+      "collocation": "take a sabbatical · a year’s sabbatical",
+      "synonyms": "leave · break"
+    },
+    {
+      "word": "unemployment",
+      "pos": "n",
+      "ipa": "/ˌʌnɪmˈplɔɪmənt/",
+      "vi": "Tình trạng thất nghiệp",
+      "example": "Youth unemployment remains high.",
+      "collocation": "high unemployment · rising unemployment · youth unemployment",
+      "synonyms": "joblessness",
+      "forms": "unemployed (adj)"
+    },
+    {
+      "word": "self-employed",
+      "pos": "adj",
+      "ipa": "/ˌself ɪmˈplɔɪd/",
+      "vi": "Tự làm chủ, tự doanh",
+      "example": "More people are becoming self-employed.",
+      "collocation": "become self-employed · a self-employed worker",
+      "synonyms": "freelance · independent",
+      "forms": "self-employment (n)"
+    }
+  ]
+}

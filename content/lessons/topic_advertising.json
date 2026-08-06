@@ -1,0 +1,238 @@
+{
+  "id": "topic_advertising",
+  "title": "Chủ đề: Quảng cáo",
+  "description": "Từ vựng IELTS chủ đề quảng cáo, thương hiệu và thuyết phục",
+  "date": "2026-08-07",
+  "tags": ["media", "money"],
+  "words": [
+    {
+      "word": "slogan",
+      "pos": "n",
+      "ipa": "/ˈsləʊɡən/",
+      "vi": "Khẩu hiệu",
+      "example": "The slogan is easy to remember.",
+      "collocation": "a catchy slogan · an advertising slogan · a campaign slogan",
+      "synonyms": "catchphrase · motto"
+    },
+    {
+      "word": "endorsement",
+      "pos": "n",
+      "ipa": "/ɪnˈdɔːsmənt/",
+      "vi": "Sự chứng thực/quảng bá (người nổi tiếng)",
+      "example": "The star earns millions from endorsements.",
+      "collocation": "a celebrity endorsement · a product endorsement",
+      "synonyms": "backing · approval",
+      "forms": "endorse (v)"
+    },
+    {
+      "word": "jingle",
+      "pos": "n",
+      "ipa": "/ˈdʒɪŋɡl/",
+      "vi": "Nhạc hiệu quảng cáo",
+      "example": "The jingle stuck in my head all day.",
+      "collocation": "a catchy jingle · an advertising jingle",
+      "synonyms": "tune · ditty"
+    },
+    {
+      "word": "billboard",
+      "pos": "n",
+      "ipa": "/ˈbɪlbɔːd/",
+      "vi": "Biển quảng cáo lớn",
+      "example": "A huge billboard advertised the film.",
+      "collocation": "a giant billboard · a roadside billboard",
+      "synonyms": "hoarding · sign"
+    },
+    {
+      "word": "testimonial",
+      "pos": "n",
+      "ipa": "/ˌtestɪˈməʊniəl/",
+      "vi": "Lời chứng thực của khách hàng",
+      "example": "The website is full of glowing testimonials.",
+      "collocation": "a customer testimonial · glowing testimonials",
+      "synonyms": "endorsement · recommendation"
+    },
+    {
+      "word": "gimmick",
+      "pos": "n",
+      "ipa": "/ˈɡɪmɪk/",
+      "vi": "Chiêu trò câu khách",
+      "example": "The free gift is just a marketing gimmick.",
+      "collocation": "a marketing gimmick · a cheap gimmick",
+      "synonyms": "ploy · trick · stunt",
+      "forms": "gimmicky (adj)"
+    },
+    {
+      "word": "hype",
+      "pos": "n",
+      "ipa": "/haɪp/",
+      "vi": "Sự thổi phồng, tâng bốc",
+      "example": "The product did not live up to the hype.",
+      "collocation": "media hype · a lot of hype · live up to the hype",
+      "synonyms": "publicity · exaggeration",
+      "forms": "hype (v) · overhyped (adj)"
+    },
+    {
+      "word": "persuasive",
+      "pos": "adj",
+      "ipa": "/pəˈsweɪsɪv/",
+      "vi": "Có sức thuyết phục",
+      "example": "The advert is clever and persuasive.",
+      "collocation": "a persuasive advert · highly persuasive · a persuasive argument",
+      "synonyms": "convincing · compelling · cogent",
+      "forms": "persuade (v) · persuasion (n)"
+    },
+    {
+      "word": "subliminal",
+      "pos": "adj",
+      "ipa": "/ˌsʌbˈlɪmɪnl/",
+      "vi": "Đánh vào tiềm thức",
+      "example": "The film was accused of subliminal advertising.",
+      "collocation": "subliminal advertising · subliminal messages",
+      "synonyms": "subconscious · hidden"
+    },
+    {
+      "word": "commercial",
+      "pos": "n",
+      "ipa": "/kəˈmɜːʃl/",
+      "vi": "Đoạn quảng cáo (TV)",
+      "example": "The commercial aired during the match.",
+      "collocation": "a TV commercial · air a commercial · a catchy commercial",
+      "synonyms": "advert · ad · spot"
+    },
+    {
+      "word": "sponsor",
+      "pos": "v",
+      "ipa": "/ˈspɒnsə/",
+      "vi": "Tài trợ",
+      "example": "A bank sponsors the tournament.",
+      "collocation": "sponsor an event · sponsor a team · officially sponsor",
+      "synonyms": "fund · back · finance",
+      "forms": "sponsor (n) · sponsorship (n)"
+    },
+    {
+      "word": "logo",
+      "pos": "n",
+      "ipa": "/ˈləʊɡəʊ/",
+      "vi": "Biểu trưng, logo",
+      "example": "The logo is instantly recognisable.",
+      "collocation": "a company logo · a recognisable logo · redesign the logo",
+      "synonyms": "emblem · symbol · brandmark"
+    },
+    {
+      "word": "catchy",
+      "pos": "adj",
+      "ipa": "/ˈkætʃi/",
+      "vi": "Dễ nhớ, bắt tai",
+      "example": "The advert has a catchy tune.",
+      "collocation": "a catchy tune · a catchy slogan · catchy and memorable",
+      "synonyms": "memorable · appealing"
+    },
+    {
+      "word": "saturate",
+      "pos": "v",
+      "ipa": "/ˈsætʃəreɪt/",
+      "vi": "Làm bão hoà (thị trường)",
+      "example": "Cheap phones have saturated the market.",
+      "collocation": "saturate the market · a saturated market",
+      "synonyms": "flood · glut",
+      "forms": "saturation (n) · saturated (adj)"
+    },
+    {
+      "word": "targeted",
+      "pos": "adj",
+      "ipa": "/ˈtɑːɡɪtɪd/",
+      "vi": "Nhắm đối tượng cụ thể",
+      "example": "Online ads are highly targeted.",
+      "collocation": "targeted advertising · a targeted campaign · targeted at",
+      "synonyms": "focused · aimed",
+      "forms": "target (v)"
+    },
+    {
+      "word": "misleading",
+      "pos": "adj",
+      "ipa": "/ˌmɪsˈliːdɪŋ/",
+      "vi": "Gây hiểu lầm",
+      "example": "The advert made misleading claims.",
+      "collocation": "a misleading advert · misleading claims · deliberately misleading",
+      "synonyms": "deceptive · false · dishonest",
+      "forms": "mislead (v)"
+    },
+    {
+      "word": "deceptive",
+      "pos": "adj",
+      "ipa": "/dɪˈseptɪv/",
+      "vi": "Đánh lừa, dối trá",
+      "example": "The company used deceptive advertising.",
+      "collocation": "deceptive advertising · deceptive practices",
+      "synonyms": "misleading · dishonest · false",
+      "forms": "deceive (v) · deception (n)"
+    },
+    {
+      "word": "aspirational",
+      "pos": "adj",
+      "ipa": "/ˌæspəˈreɪʃənl/",
+      "vi": "Khơi gợi khát vọng",
+      "example": "The brand sells an aspirational lifestyle.",
+      "collocation": "aspirational branding · an aspirational lifestyle",
+      "synonyms": "ambitious · idealised",
+      "forms": "aspiration (n)"
+    },
+    {
+      "word": "mascot",
+      "pos": "n",
+      "ipa": "/ˈmæskɒt/",
+      "vi": "Linh vật (thương hiệu)",
+      "example": "The cartoon mascot appeals to children.",
+      "collocation": "a brand mascot · a cartoon mascot · the team mascot",
+      "synonyms": "emblem · symbol"
+    },
+    {
+      "word": "tagline",
+      "pos": "n",
+      "ipa": "/ˈtæɡlaɪn/",
+      "vi": "Câu chốt quảng cáo",
+      "example": "Everyone knows the brand’s tagline.",
+      "collocation": "a memorable tagline · the brand’s tagline",
+      "synonyms": "slogan · catchphrase"
+    },
+    {
+      "word": "ubiquitous",
+      "pos": "adj",
+      "ipa": "/juːˈbɪkwɪtəs/",
+      "vi": "Có mặt khắp nơi",
+      "example": "Advertising is ubiquitous online.",
+      "collocation": "ubiquitous advertising · a ubiquitous brand",
+      "synonyms": "omnipresent · pervasive · everywhere",
+      "forms": "ubiquity (n)"
+    },
+    {
+      "word": "glamorise",
+      "pos": "v",
+      "ipa": "/ˈɡlæməraɪz/",
+      "vi": "Tô vẽ hào nhoáng",
+      "example": "Adverts glamorise an unrealistic lifestyle.",
+      "collocation": "glamorise smoking · glamorise a lifestyle",
+      "synonyms": "romanticise · idealise",
+      "forms": "glamorous (adj)"
+    },
+    {
+      "word": "allure",
+      "pos": "n",
+      "ipa": "/əˈljʊə/",
+      "vi": "Sức quyến rũ, hấp dẫn",
+      "example": "Adverts play on the allure of luxury.",
+      "collocation": "the allure of · a certain allure · irresistible allure",
+      "synonyms": "appeal · charm · attraction",
+      "forms": "alluring (adj)"
+    },
+    {
+      "word": "footfall",
+      "pos": "n",
+      "ipa": "/ˈfʊtfɔːl/",
+      "vi": "Lượng khách ghé (cửa hàng)",
+      "example": "The sale boosted footfall in the shops.",
+      "collocation": "increase footfall · high footfall · declining footfall",
+      "synonyms": "foot traffic · visitors"
+    }
+  ]
+}
