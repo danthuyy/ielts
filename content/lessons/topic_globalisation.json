@@ -1,0 +1,234 @@
+{
+  "id": "topic_globalisation",
+  "title": "Chủ đề: Toàn cầu hoá",
+  "description": "Từ vựng IELTS chủ đề toàn cầu hoá, kinh tế và di cư",
+  "date": "2026-08-07",
+  "tags": ["society", "money"],
+  "words": [
+    {
+      "word": "globalisation",
+      "pos": "n",
+      "ipa": "/ˌɡləʊbəlaɪˈzeɪʃən/",
+      "vi": "Toàn cầu hoá",
+      "example": "Globalisation has linked economies worldwide.",
+      "collocation": "economic globalisation · pace of globalisation",
+      "synonyms": "interconnection · internationalisation"
+    },
+    {
+      "word": "multinational",
+      "pos": "adj",
+      "ipa": "/ˌmʌltiˈnæʃənəl/",
+      "vi": "Đa quốc gia",
+      "example": "Multinational firms dominate the industry.",
+      "collocation": "multinational company · multinational corporation",
+      "synonyms": "international · global"
+    },
+    {
+      "word": "outsourcing",
+      "pos": "n",
+      "ipa": "/ˈaʊtsɔːsɪŋ/",
+      "vi": "Việc thuê ngoài",
+      "example": "Outsourcing has moved many jobs abroad.",
+      "collocation": "labour outsourcing · outsourcing of jobs",
+      "synonyms": "subcontracting"
+    },
+    {
+      "word": "tariff",
+      "pos": "n",
+      "ipa": "/ˈtærɪf/",
+      "vi": "Thuế quan",
+      "example": "The country raised tariffs on imports.",
+      "collocation": "impose a tariff · trade tariff · high tariff",
+      "synonyms": "duty · levy · tax"
+    },
+    {
+      "word": "homogeneous",
+      "pos": "adj",
+      "ipa": "/ˌhɒməˈdʒiːniəs/",
+      "vi": "Đồng nhất, giống nhau",
+      "example": "Global brands make cities feel homogeneous.",
+      "collocation": "homogeneous culture · increasingly homogeneous",
+      "synonyms": "uniform · similar · alike"
+    },
+    {
+      "word": "interdependence",
+      "pos": "n",
+      "ipa": "/ˌɪntədɪˈpendəns/",
+      "vi": "Sự phụ thuộc lẫn nhau",
+      "example": "Trade creates economic interdependence.",
+      "collocation": "economic interdependence · growing interdependence",
+      "synonyms": "mutual reliance"
+    },
+    {
+      "word": "migration",
+      "pos": "n",
+      "ipa": "/maɪˈɡreɪʃən/",
+      "vi": "Sự di cư",
+      "example": "Economic migration has reshaped many cities.",
+      "collocation": "mass migration · labour migration · migration flow",
+      "synonyms": "movement · relocation · emigration"
+    },
+    {
+      "word": "prosperity",
+      "pos": "n",
+      "ipa": "/prɒˈsperəti/",
+      "vi": "Sự thịnh vượng",
+      "example": "Trade brought prosperity to the region.",
+      "collocation": "economic prosperity · shared prosperity · bring prosperity",
+      "synonyms": "wealth · affluence · success"
+    },
+    {
+      "word": "disparity",
+      "pos": "n",
+      "ipa": "/dɪˈspærəti/",
+      "vi": "Sự chênh lệch",
+      "example": "There is a wide disparity in wages.",
+      "collocation": "wealth disparity · income disparity · wide disparity",
+      "synonyms": "inequality · gap · imbalance"
+    },
+    {
+      "word": "assimilate",
+      "pos": "v",
+      "ipa": "/əˈsɪmɪleɪt/",
+      "vi": "Đồng hoá, hoà nhập",
+      "example": "Newcomers gradually assimilate into the culture.",
+      "collocation": "assimilate into · quickly assimilate · assimilate culture",
+      "synonyms": "absorb · integrate · blend in"
+    },
+    {
+      "word": "commodity",
+      "pos": "n",
+      "ipa": "/kəˈmɒdəti/",
+      "vi": "Hàng hoá",
+      "example": "Oil is a valuable commodity.",
+      "collocation": "global commodity · commodity prices · trade in commodities",
+      "synonyms": "goods · product · merchandise"
+    },
+    {
+      "word": "exploitation",
+      "pos": "n",
+      "ipa": "/ˌeksplɔɪˈteɪʃən/",
+      "vi": "Sự bóc lột; khai thác",
+      "example": "Critics warn of the exploitation of cheap labour.",
+      "collocation": "labour exploitation · exploitation of workers · ruthless exploitation",
+      "synonyms": "abuse · misuse"
+    },
+    {
+      "word": "diaspora",
+      "pos": "n",
+      "ipa": "/daɪˈæspərə/",
+      "vi": "Cộng đồng hải ngoại",
+      "example": "The country's diaspora sends money home.",
+      "collocation": "the diaspora · global diaspora",
+      "synonyms": "expatriate community"
+    },
+    {
+      "word": "integration",
+      "pos": "n",
+      "ipa": "/ˌɪntɪˈɡreɪʃən/",
+      "vi": "Sự hội nhập",
+      "example": "Economic integration has boosted trade.",
+      "collocation": "economic integration · social integration · regional integration",
+      "synonyms": "unification · merging · assimilation"
+    },
+    {
+      "word": "sovereignty",
+      "pos": "n",
+      "ipa": "/ˈsɒvrənti/",
+      "vi": "Chủ quyền",
+      "example": "Some fear globalisation erodes national sovereignty.",
+      "collocation": "national sovereignty · lose sovereignty · protect sovereignty",
+      "synonyms": "independence · autonomy · self-rule"
+    },
+    {
+      "word": "proliferation",
+      "pos": "n",
+      "ipa": "/prəˌlɪfəˈreɪʃən/",
+      "vi": "Sự lan rộng nhanh",
+      "example": "The proliferation of chains looks the same everywhere.",
+      "collocation": "proliferation of · rapid proliferation",
+      "synonyms": "spread · mushrooming · expansion"
+    },
+    {
+      "word": "emerging",
+      "pos": "adj",
+      "ipa": "/ɪˈmɜːdʒɪŋ/",
+      "vi": "Đang nổi lên",
+      "example": "China is a major emerging economy.",
+      "collocation": "emerging market · emerging economy · emerging trend",
+      "synonyms": "developing · rising · up-and-coming"
+    },
+    {
+      "word": "transnational",
+      "pos": "adj",
+      "ipa": "/trænzˈnæʃənəl/",
+      "vi": "Xuyên quốc gia",
+      "example": "Transnational firms operate in dozens of countries.",
+      "collocation": "transnational corporation · transnational crime",
+      "synonyms": "cross-border · international"
+    },
+    {
+      "word": "capital",
+      "pos": "n",
+      "ipa": "/ˈkæpɪtl/",
+      "vi": "Vốn",
+      "example": "Foreign capital flowed into the country.",
+      "collocation": "foreign capital · capital investment · flow of capital",
+      "synonyms": "funds · assets · money"
+    },
+    {
+      "word": "inequality",
+      "pos": "n",
+      "ipa": "/ˌɪnɪˈkwɒləti/",
+      "vi": "Sự bất bình đẳng",
+      "example": "Globalisation can widen inequality.",
+      "collocation": "rising inequality · income inequality · tackle inequality",
+      "synonyms": "disparity · unfairness · imbalance"
+    },
+    {
+      "word": "homogenise",
+      "pos": "v",
+      "ipa": "/həˈmɒdʒənaɪz/",
+      "vi": "Đồng nhất hoá",
+      "example": "Global media tends to homogenise culture.",
+      "collocation": "homogenise culture · homogenise tastes",
+      "synonyms": "standardise · make uniform"
+    },
+    {
+      "word": "displacement",
+      "pos": "n",
+      "ipa": "/dɪsˈpleɪsmənt/",
+      "vi": "Sự dịch chuyển/mất chỗ",
+      "example": "Automation causes job displacement.",
+      "collocation": "job displacement · mass displacement · displacement of workers",
+      "synonyms": "removal · uprooting"
+    },
+    {
+      "word": "boom",
+      "pos": "n",
+      "ipa": "/buːm/",
+      "vi": "Sự bùng nổ (kinh tế)",
+      "example": "The tech boom created thousands of jobs.",
+      "collocation": "economic boom · property boom · boom and bust",
+      "synonyms": "surge · upturn · expansion"
+    },
+    {
+      "word": "influx",
+      "pos": "n",
+      "ipa": "/ˈɪnflʌks/",
+      "vi": "Sự đổ vào (đông đảo)",
+      "example": "The city saw an influx of migrants.",
+      "collocation": "influx of · sudden influx · influx of tourists",
+      "synonyms": "inflow · flood · arrival"
+    },
+    {
+      "word": "flourish",
+      "pos": "v",
+      "ipa": "/ˈflʌrɪʃ/",
+      "vi": "Phát triển rực rỡ",
+      "example": "Trade allowed the port city to flourish.",
+      "collocation": "business flourish · flourish under · allow to flourish",
+      "synonyms": "thrive · prosper · boom"
+    }
+  ]
+}

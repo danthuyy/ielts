@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_4",
+  "title": "AWL Sublist 4",
+  "description": "Academic Word List — nhóm 4",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "access",
+      "pos": "n",
+      "ipa": "/ˈækses/",
+      "vi": "Sự tiếp cận, truy cập",
+      "example": "Everyone should have access to clean water.",
+      "collocation": "gain access · easy access · access to",
+      "synonyms": "entry · admission · availability"
+    },
+    {
+      "word": "annual",
+      "pos": "adj",
+      "ipa": "/ˈænjuəl/",
+      "vi": "Hàng năm",
+      "example": "The company publishes an annual report.",
+      "collocation": "annual report · annual income · annual event",
+      "synonyms": "yearly · once-a-year"
+    },
+    {
+      "word": "apparent",
+      "pos": "adj",
+      "ipa": "/əˈpærənt/",
+      "vi": "Rõ ràng; bề ngoài",
+      "example": "It soon became apparent that he was lying.",
+      "collocation": "become apparent · apparent reason · for no apparent reason",
+      "synonyms": "obvious · evident · seeming"
+    },
+    {
+      "word": "attitude",
+      "pos": "n",
+      "ipa": "/ˈætɪtjuːd/",
+      "vi": "Thái độ",
+      "example": "A positive attitude helps you learn faster.",
+      "collocation": "positive attitude · change of attitude · attitude towards",
+      "synonyms": "outlook · mindset · stance"
+    },
+    {
+      "word": "attribute",
+      "pos": "v",
+      "ipa": "/əˈtrɪbjuːt/",
+      "vi": "Quy cho, cho là do",
+      "example": "She attributes her success to hard work.",
+      "collocation": "attribute to · widely attributed · attribute success to",
+      "synonyms": "ascribe · credit · put down to"
+    },
+    {
+      "word": "code",
+      "pos": "n",
+      "ipa": "/kəʊd/",
+      "vi": "Bộ quy tắc; mã",
+      "example": "Staff must follow the code of conduct.",
+      "collocation": "code of conduct · dress code · moral code",
+      "synonyms": "rules · standards · cipher"
+    },
+    {
+      "word": "commit",
+      "pos": "v",
+      "ipa": "/kəˈmɪt/",
+      "vi": "Cam kết; phạm (tội)",
+      "example": "The government committed to cutting emissions.",
+      "collocation": "commit to · commit a crime · fully commit",
+      "synonyms": "pledge · dedicate · perpetrate"
+    },
+    {
+      "word": "communicate",
+      "pos": "v",
+      "ipa": "/kəˈmjuːnɪkeɪt/",
+      "vi": "Giao tiếp, truyền đạt",
+      "example": "Good leaders communicate clearly.",
+      "collocation": "communicate effectively · communicate with · communicate ideas",
+      "synonyms": "convey · express · get across"
+    },
+    {
+      "word": "concentrate",
+      "pos": "v",
+      "ipa": "/ˈkɒnsəntreɪt/",
+      "vi": "Tập trung",
+      "example": "It is hard to concentrate in a noisy room.",
+      "collocation": "concentrate on · hard to concentrate · concentrate efforts",
+      "synonyms": "focus · fix attention · zero in"
+    },
+    {
+      "word": "contrast",
+      "pos": "n",
+      "ipa": "/ˈkɒntrɑːst/",
+      "vi": "Sự tương phản",
+      "example": "There is a stark contrast between rich and poor.",
+      "collocation": "in contrast · sharp contrast · stark contrast",
+      "synonyms": "difference · disparity · comparison"
+    },
+    {
+      "word": "debate",
+      "pos": "n",
+      "ipa": "/dɪˈbeɪt/",
+      "vi": "Cuộc tranh luận",
+      "example": "The issue sparked a heated public debate.",
+      "collocation": "heated debate · public debate · ongoing debate",
+      "synonyms": "discussion · argument · dispute"
+    },
+    {
+      "word": "dimension",
+      "pos": "n",
+      "ipa": "/dɪˈmenʃən/",
+      "vi": "Khía cạnh; kích thước",
+      "example": "The scandal added a new dimension to the case.",
+      "collocation": "new dimension · add a dimension · political dimension",
+      "synonyms": "aspect · facet · measurement"
+    },
+    {
+      "word": "domestic",
+      "pos": "adj",
+      "ipa": "/dəˈmestɪk/",
+      "vi": "Trong nước; gia đình",
+      "example": "The airline operates only domestic flights.",
+      "collocation": "domestic market · domestic flight · domestic chores",
+      "synonyms": "internal · home · household"
+    },
+    {
+      "word": "emerge",
+      "pos": "v",
+      "ipa": "/ɪˈmɜːdʒ/",
+      "vi": "Nổi lên, xuất hiện",
+      "example": "New evidence has emerged in the case.",
+      "collocation": "emerge from · slowly emerge · new evidence emerges",
+      "synonyms": "appear · arise · surface"
+    },
+    {
+      "word": "ethnic",
+      "pos": "adj",
+      "ipa": "/ˈeθnɪk/",
+      "vi": "Thuộc dân tộc",
+      "example": "The city is home to many ethnic groups.",
+      "collocation": "ethnic group · ethnic minority · ethnic diversity",
+      "synonyms": "racial · cultural"
+    },
+    {
+      "word": "hypothesis",
+      "pos": "n",
+      "ipa": "/haɪˈpɒθəsɪs/",
+      "vi": "Giả thuyết",
+      "example": "The experiment tested her hypothesis.",
+      "collocation": "test a hypothesis · support the hypothesis · working hypothesis",
+      "synonyms": "theory · proposition · supposition"
+    },
+    {
+      "word": "implement",
+      "pos": "v",
+      "ipa": "/ˈɪmplɪment/",
+      "vi": "Thực thi, triển khai",
+      "example": "The school implemented a new grading system.",
+      "collocation": "implement a policy · fully implement · implement changes",
+      "synonyms": "carry out · put into practice · enforce"
+    },
+    {
+      "word": "impose",
+      "pos": "v",
+      "ipa": "/ɪmˈpəʊz/",
+      "vi": "Áp đặt",
+      "example": "The court imposed a heavy fine.",
+      "collocation": "impose a fine · impose restrictions · impose on",
+      "synonyms": "enforce · inflict · levy"
+    },
+    {
+      "word": "integrate",
+      "pos": "v",
+      "ipa": "/ˈɪntɪɡreɪt/",
+      "vi": "Hoà nhập; tích hợp",
+      "example": "Immigrants can struggle to integrate into society.",
+      "collocation": "integrate into · fully integrate · integrate systems",
+      "synonyms": "combine · merge · assimilate"
+    },
+    {
+      "word": "investigate",
+      "pos": "v",
+      "ipa": "/ɪnˈvestɪɡeɪt/",
+      "vi": "Điều tra",
+      "example": "Police are investigating the incident.",
+      "collocation": "investigate a crime · thoroughly investigate · investigate claims",
+      "synonyms": "examine · look into · probe"
+    },
+    {
+      "word": "mechanism",
+      "pos": "n",
+      "ipa": "/ˈmekənɪzəm/",
+      "vi": "Cơ chế",
+      "example": "The body has natural defence mechanisms.",
+      "collocation": "coping mechanism · defence mechanism · market mechanism",
+      "synonyms": "system · process · means"
+    },
+    {
+      "word": "predict",
+      "pos": "v",
+      "ipa": "/prɪˈdɪkt/",
+      "vi": "Dự đoán",
+      "example": "Experts predict a rise in prices.",
+      "collocation": "accurately predict · hard to predict · predict the future",
+      "synonyms": "forecast · foresee · anticipate"
+    },
+    {
+      "word": "resolve",
+      "pos": "v",
+      "ipa": "/rɪˈzɒlv/",
+      "vi": "Giải quyết",
+      "example": "The two sides resolved their dispute.",
+      "collocation": "resolve a dispute · resolve an issue · peacefully resolve",
+      "synonyms": "settle · sort out · fix"
+    },
+    {
+      "word": "retain",
+      "pos": "v",
+      "ipa": "/rɪˈteɪn/",
+      "vi": "Giữ lại",
+      "example": "The company struggles to retain skilled staff.",
+      "collocation": "retain information · retain control · retain staff",
+      "synonyms": "keep · hold on to · preserve"
+    },
+    {
+      "word": "undertake",
+      "pos": "v",
+      "ipa": "/ˌʌndəˈteɪk/",
+      "vi": "Đảm nhận, tiến hành",
+      "example": "The team undertook a major study.",
+      "collocation": "undertake a task · undertake research · undertake to",
+      "synonyms": "take on · carry out · commit to"
+    }
+  ]
+}
