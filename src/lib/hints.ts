@@ -17,6 +17,7 @@ export interface HintWord {
   pos: string;
   example?: string;
   collocation?: string;
+  synonyms?: string;
   note?: string;
 }
 
@@ -34,6 +35,8 @@ export type HintRung =
   | { kind: 'shape'; masked: string; length: number; pos: string }
   /** Vietnamese meaning. */
   | { kind: 'meaning'; text: string }
+  /** Near-synonyms — a meaning-level nudge toward the word. */
+  | { kind: 'synonym'; text: string }
   /** A collocation with the word itself blanked out. */
   | { kind: 'collocation'; text: string }
   /** The example sentence with the word blanked out. */
@@ -107,6 +110,7 @@ export function buildLadder(
     return [
       ...audioRung(word, variant),
       { kind: 'meaning', text: `${word.vi} (${word.pos})` },
+      ...(word.synonyms ? ([{ kind: 'synonym', text: word.synonyms }] as const) : []),
       { kind: 'ipa', text: word.ipa },
       { kind: 'youglish', word: word.word },
     ];
@@ -142,6 +146,10 @@ export function buildLadder(
   if (variant === 'listen') {
     rungs.push({ kind: 'meaning', text: `${word.vi} (${word.pos})` });
   }
+
+  // A meaning-level nudge: the synonyms point at the word without spelling any
+  // of it, so it sits above the letter rungs but below the raw meaning.
+  if (word.synonyms) rungs.push({ kind: 'synonym', text: word.synonyms });
 
   const collocation = word.collocation ? redactCollocation(word.collocation, word.word) : null;
   if (collocation) rungs.push({ kind: 'collocation', text: collocation });

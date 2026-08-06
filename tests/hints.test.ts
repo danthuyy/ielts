@@ -10,6 +10,7 @@ const WORD = {
   pos: 'adj',
   example: 'If they won a vast fortune, they would be back to normal.',
   collocation: 'a vast fortune · vast majority · vast amount',
+  synonyms: '',
   note: '',
 };
 
@@ -136,6 +137,25 @@ describe('buildLadder', () => {
 
   it('includes the usage note when the content has one', () => {
     expect(kinds({ ...WORD, note: 'Rất ăn điểm trong Writing.' }, 'type')).toContain('note');
+  });
+
+  it('offers the synonyms as a rung when the content has them', () => {
+    const withSyn = { ...WORD, synonyms: 'huge · immense · enormous' };
+    const order = kinds(withSyn, 'type');
+    expect(order).toContain('synonym');
+    // A meaning-level clue, so it must come before any letters are spelled out.
+    expect(order.indexOf('synonym')).toBeLessThan(order.indexOf('letters'));
+  });
+
+  it('skips the synonym rung when the content has none', () => {
+    expect(kinds({ ...WORD, synonyms: '' }, 'type')).not.toContain('synonym');
+    expect(kinds(WORD, 'type')).not.toContain('synonym');
+  });
+
+  it('offers the synonyms in the meaning-only hint style too', () => {
+    const withSyn = { ...WORD, synonyms: 'huge · immense · enormous' };
+    const order = buildLadder(withSyn, 'type', 'meaning').map((rung) => rung.kind);
+    expect(order).toContain('synonym');
   });
 
   it('never spells out the whole word', () => {

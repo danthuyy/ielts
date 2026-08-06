@@ -330,6 +330,10 @@
   font-size: var(--text-sm);
   color: var(--info);
 }
+.flashcard__synonyms {
+  font-size: var(--text-sm);
+  color: var(--success);
+}
 .flashcard__example {
   font-size: var(--text-sm);
   font-style: italic;

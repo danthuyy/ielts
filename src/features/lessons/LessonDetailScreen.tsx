@@ -63,7 +63,8 @@ export function LessonDetailScreen() {
     return (
       word.word.toLowerCase().includes(needle) ||
       word.vi.toLowerCase().includes(needle) ||
-      word.collocation.toLowerCase().includes(needle)
+      word.collocation.toLowerCase().includes(needle) ||
+      word.synonyms.toLowerCase().includes(needle)
     );
   });
 

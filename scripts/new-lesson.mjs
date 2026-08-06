@@ -74,6 +74,7 @@ function placeholderWord(index) {
     vi: `Nghĩa tiếng Việt của từ ${index}`,
     example: `Replace this sentence with a real example for word ${index}.`,
     collocation: 'collocation một · collocation hai · collocation ba',
+    synonyms: 'synonym one · synonym two',
   };
 }
 

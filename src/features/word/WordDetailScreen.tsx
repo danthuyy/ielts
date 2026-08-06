@@ -92,6 +92,12 @@ export function WordDetailScreen() {
             <p className="flashcard__collocation">{word.collocation}</p>
           </div>
         )}
+        {word.synonyms && (
+          <div className="flashcard__box">
+            <p className="flashcard__box-title">Từ đồng nghĩa</p>
+            <p className="flashcard__synonyms">{word.synonyms}</p>
+          </div>
+        )}
         {word.example && (
           <div className="flashcard__box">
             <p className="flashcard__box-title">Example</p>

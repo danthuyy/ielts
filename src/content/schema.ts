@@ -39,6 +39,12 @@ export const wordSchema = z.object({
   example: z.string().default(''),
   /** Common collocations, separated by " · ". */
   collocation: z.string().default(''),
+  /**
+   * Near-synonyms, separated by " · " — the paraphrase words an IELTS learner
+   * reaches for so they are not repeating the headword. Optional: plenty of
+   * words have no clean synonym, and the UI hides the field when it is empty.
+   */
+  synonyms: z.string().default(''),
   /** A usage tip — when to reach for the word, register, common mistakes. */
   note: z.string().default(''),
 });

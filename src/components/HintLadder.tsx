@@ -12,6 +12,7 @@ const RUNG_LABEL: Record<HintRung['kind'], string> = {
   audio: 'Nghe từ',
   shape: 'Dạng từ',
   meaning: 'Nghĩa',
+  synonym: 'Từ đồng nghĩa',
   collocation: 'Cụm hay đi kèm',
   example: 'Câu ví dụ',
   note: 'Lưu ý',
