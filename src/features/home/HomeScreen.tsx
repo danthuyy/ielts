@@ -221,6 +221,18 @@ export function HomeScreen() {
                 </span>
               </Link>
             )}
+            <Link className="mode-hero" to={routes.periodPicker()}>
+              <span className="mode-hero__icon" aria-hidden="true">
+                🗓️
+              </span>
+              <span className="mode-hero__text">
+                <strong>Học theo kỳ</strong>
+                <span>Chọn tuần, tháng hay năm — trộn hết từ đã thêm để ôn lại</span>
+              </span>
+              <span className="mode-hero__go" aria-hidden="true">
+                →
+              </span>
+            </Link>
             <div className="mode-grid">
               {STUDY_MODES.filter((mode) => mode.mode !== 'match' && mode.mode !== 'mix').map(
                 (mode) => (

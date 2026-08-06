@@ -8,6 +8,8 @@ import { LessonListScreen } from '@/features/lessons/LessonListScreen';
 import { LessonDetailScreen } from '@/features/lessons/LessonDetailScreen';
 import { FlashcardScreen } from '@/features/study/FlashcardScreen';
 import { MixSessionScreen } from '@/features/study/MixSessionScreen';
+import { PeriodPickerScreen } from '@/features/study/PeriodPickerScreen';
+import { MixPeriodScreen } from '@/features/study/MixPeriodScreen';
 import { QuizTypeScreen } from '@/features/quiz/QuizTypeScreen';
 import { QuizListenScreen } from '@/features/quiz/QuizListenScreen';
 import { QuizMatchScreen } from '@/features/quiz/QuizMatchScreen';
@@ -34,6 +36,7 @@ export const router = createHashRouter([
     ),
     children: [
       { index: true, element: <HomeScreen /> },
+      { path: 'study/period', element: <PeriodPickerScreen /> },
       { path: 'lessons', element: <LessonListScreen /> },
       { path: 'lessons/:lessonId', element: <LessonDetailScreen /> },
       { path: 'stats', element: <StatsScreen /> },
@@ -53,6 +56,7 @@ export const router = createHashRouter([
       { path: 'weak', element: <WeakWordsScreen /> },
       { path: 'new', element: <NewWordsScreen /> },
       { path: 'study/mix/:lessonId', element: <MixSessionScreen /> },
+      { path: 'study/period/:granularity/:periodKey', element: <MixPeriodScreen /> },
       { path: 'study/flashcard/:lessonId', element: <FlashcardScreen /> },
       { path: 'study/type/:lessonId', element: <QuizTypeScreen /> },
       { path: 'study/listen/:lessonId', element: <QuizListenScreen /> },
@@ -78,6 +82,9 @@ export const routes = {
   word: (wordId: string) => `/word/${encodeURIComponent(wordId)}`,
   settings: () => '/settings',
   study: (mode: StudyMode, lessonId: string) => `/study/${mode}/${encodeURIComponent(lessonId)}`,
+  periodPicker: () => '/study/period',
+  periodMix: (granularity: string, periodKey: string) =>
+    `/study/period/${granularity}/${encodeURIComponent(periodKey)}`,
   test: (lessonId?: string) => (lessonId ? `/test/${encodeURIComponent(lessonId)}` : '/test'),
 } as const;
 
