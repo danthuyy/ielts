@@ -1,0 +1,234 @@
+{
+  "id": "topic_crime",
+  "title": "Chủ đề: Tội phạm & Pháp luật",
+  "description": "Từ vựng IELTS chủ đề tội phạm, hình phạt và tư pháp",
+  "date": "2026-08-07",
+  "tags": ["crime", "society"],
+  "words": [
+    {
+      "word": "deterrent",
+      "pos": "n",
+      "ipa": "/dɪˈterənt/",
+      "vi": "Sự răn đe",
+      "example": "Long sentences are meant to be a deterrent.",
+      "collocation": "act as a deterrent · effective deterrent · strong deterrent",
+      "synonyms": "disincentive · discouragement"
+    },
+    {
+      "word": "offender",
+      "pos": "n",
+      "ipa": "/əˈfendə/",
+      "vi": "Người phạm tội",
+      "example": "Repeat offenders receive harsher sentences.",
+      "collocation": "first-time offender · repeat offender · young offender",
+      "synonyms": "criminal · culprit · lawbreaker"
+    },
+    {
+      "word": "custody",
+      "pos": "n",
+      "ipa": "/ˈkʌstədi/",
+      "vi": "Sự giam giữ; quyền nuôi con",
+      "example": "The suspect was taken into custody.",
+      "collocation": "in custody · take into custody · police custody",
+      "synonyms": "detention · imprisonment"
+    },
+    {
+      "word": "verdict",
+      "pos": "n",
+      "ipa": "/ˈvɜːdɪkt/",
+      "vi": "Phán quyết của toà",
+      "example": "The jury reached a guilty verdict.",
+      "collocation": "reach a verdict · guilty verdict · unanimous verdict",
+      "synonyms": "judgement · ruling · decision"
+    },
+    {
+      "word": "prosecute",
+      "pos": "v",
+      "ipa": "/ˈprɒsɪkjuːt/",
+      "vi": "Truy tố",
+      "example": "He was prosecuted for fraud.",
+      "collocation": "prosecute a crime · be prosecuted for",
+      "synonyms": "charge · take to court"
+    },
+    {
+      "word": "lenient",
+      "pos": "adj",
+      "ipa": "/ˈliːniənt/",
+      "vi": "Khoan dung, nhẹ",
+      "example": "Critics say the sentence was too lenient.",
+      "collocation": "lenient sentence · too lenient · lenient treatment",
+      "synonyms": "mild · soft · merciful"
+    },
+    {
+      "word": "rehabilitate",
+      "pos": "v",
+      "ipa": "/ˌriːəˈbɪlɪteɪt/",
+      "vi": "Cải tạo, phục hồi",
+      "example": "Prisons should try to rehabilitate offenders.",
+      "collocation": "rehabilitate offenders · help rehabilitate",
+      "synonyms": "reform · reintegrate"
+    },
+    {
+      "word": "vandalism",
+      "pos": "n",
+      "ipa": "/ˈvændəlɪzəm/",
+      "vi": "Sự phá hoại của công",
+      "example": "Vandalism costs the city millions each year.",
+      "collocation": "act of vandalism · mindless vandalism",
+      "synonyms": "destruction · defacement"
+    },
+    {
+      "word": "witness",
+      "pos": "n",
+      "ipa": "/ˈwɪtnəs/",
+      "vi": "Nhân chứng",
+      "example": "A witness described the getaway car.",
+      "collocation": "key witness · eyewitness · witness statement",
+      "synonyms": "observer · bystander"
+    },
+    {
+      "word": "convict",
+      "pos": "v",
+      "ipa": "/kənˈvɪkt/",
+      "vi": "Kết án",
+      "example": "He was convicted of theft.",
+      "collocation": "convict of a crime · wrongly convict",
+      "synonyms": "find guilty · sentence"
+    },
+    {
+      "word": "felony",
+      "pos": "n",
+      "ipa": "/ˈfeləni/",
+      "vi": "Trọng tội",
+      "example": "Armed robbery is a felony.",
+      "collocation": "commit a felony · serious felony",
+      "synonyms": "serious crime · offence"
+    },
+    {
+      "word": "parole",
+      "pos": "n",
+      "ipa": "/pəˈrəʊl/",
+      "vi": "Sự tạm tha có điều kiện",
+      "example": "He was released on parole after five years.",
+      "collocation": "release on parole · parole board · grant parole",
+      "synonyms": "conditional release"
+    },
+    {
+      "word": "corruption",
+      "pos": "n",
+      "ipa": "/kəˈrʌpʃən/",
+      "vi": "Sự tham nhũng",
+      "example": "The government promised to fight corruption.",
+      "collocation": "political corruption · tackle corruption · widespread corruption",
+      "synonyms": "bribery · dishonesty · graft"
+    },
+    {
+      "word": "trafficking",
+      "pos": "n",
+      "ipa": "/ˈtræfɪkɪŋ/",
+      "vi": "Buôn lậu (người/ma tuý)",
+      "example": "Police cracked down on drug trafficking.",
+      "collocation": "drug trafficking · human trafficking",
+      "synonyms": "smuggling · illegal trade"
+    },
+    {
+      "word": "juvenile",
+      "pos": "adj",
+      "ipa": "/ˈdʒuːvənaɪl/",
+      "vi": "Vị thành niên",
+      "example": "Juvenile crime often stems from poverty.",
+      "collocation": "juvenile crime · juvenile offender · juvenile court",
+      "synonyms": "youthful · underage"
+    },
+    {
+      "word": "acquit",
+      "pos": "v",
+      "ipa": "/əˈkwɪt/",
+      "vi": "Tuyên trắng án",
+      "example": "The court acquitted her of all charges.",
+      "collocation": "acquit of charges · be acquitted",
+      "synonyms": "clear · exonerate"
+    },
+    {
+      "word": "petty",
+      "pos": "adj",
+      "ipa": "/ˈpeti/",
+      "vi": "Vặt vãnh, nhỏ nhặt",
+      "example": "Petty crime rose in the area.",
+      "collocation": "petty crime · petty theft · petty offence",
+      "synonyms": "minor · trivial · small-scale"
+    },
+    {
+      "word": "incarceration",
+      "pos": "n",
+      "ipa": "/ɪnˌkɑːsəˈreɪʃən/",
+      "vi": "Sự giam cầm",
+      "example": "Mass incarceration is a controversial policy.",
+      "collocation": "mass incarceration · long incarceration",
+      "synonyms": "imprisonment · confinement"
+    },
+    {
+      "word": "misconduct",
+      "pos": "n",
+      "ipa": "/ˌmɪsˈkɒndʌkt/",
+      "vi": "Hành vi sai trái",
+      "example": "He was fired for misconduct.",
+      "collocation": "professional misconduct · serious misconduct",
+      "synonyms": "wrongdoing · malpractice"
+    },
+    {
+      "word": "bail",
+      "pos": "n",
+      "ipa": "/beɪl/",
+      "vi": "Sự tại ngoại, tiền bảo lãnh",
+      "example": "The judge granted bail.",
+      "collocation": "release on bail · grant bail · post bail",
+      "synonyms": "surety"
+    },
+    {
+      "word": "restitution",
+      "pos": "n",
+      "ipa": "/ˌrestɪˈtjuːʃən/",
+      "vi": "Sự bồi thường",
+      "example": "Offenders may be ordered to make restitution.",
+      "collocation": "make restitution · full restitution",
+      "synonyms": "compensation · repayment"
+    },
+    {
+      "word": "homicide",
+      "pos": "n",
+      "ipa": "/ˈhɒmɪsaɪd/",
+      "vi": "Tội giết người",
+      "example": "The city's homicide rate has fallen.",
+      "collocation": "commit homicide · homicide rate",
+      "synonyms": "murder · manslaughter"
+    },
+    {
+      "word": "extortion",
+      "pos": "n",
+      "ipa": "/ɪkˈstɔːʃən/",
+      "vi": "Sự tống tiền",
+      "example": "The gang was charged with extortion.",
+      "collocation": "commit extortion · extortion racket",
+      "synonyms": "blackmail · coercion"
+    },
+    {
+      "word": "deter",
+      "pos": "v",
+      "ipa": "/dɪˈtɜː/",
+      "vi": "Ngăn cản, răn đe",
+      "example": "Harsh penalties may deter offenders.",
+      "collocation": "deter criminals · deter crime · deter people from",
+      "synonyms": "discourage · put off · prevent"
+    },
+    {
+      "word": "culprit",
+      "pos": "n",
+      "ipa": "/ˈkʌlprɪt/",
+      "vi": "Thủ phạm",
+      "example": "Police are still searching for the culprit.",
+      "collocation": "catch the culprit · the real culprit",
+      "synonyms": "offender · wrongdoer"
+    }
+  ]
+}

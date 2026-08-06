@@ -1,0 +1,234 @@
+{
+  "id": "topic_work",
+  "title": "Chủ đề: Công việc & Kinh doanh",
+  "description": "Từ vựng IELTS chủ đề công việc, tuyển dụng và doanh nghiệp",
+  "date": "2026-08-07",
+  "tags": ["work", "money"],
+  "words": [
+    {
+      "word": "entrepreneur",
+      "pos": "n",
+      "ipa": "/ˌɒntrəprəˈnɜː/",
+      "vi": "Doanh nhân khởi nghiệp",
+      "example": "The entrepreneur launched three startups.",
+      "collocation": "successful entrepreneur · young entrepreneur",
+      "synonyms": "businessperson · founder"
+    },
+    {
+      "word": "productivity",
+      "pos": "n",
+      "ipa": "/ˌprɒdʌkˈtɪvəti/",
+      "vi": "Năng suất",
+      "example": "Remote work can boost productivity.",
+      "collocation": "boost productivity · high productivity · workplace productivity",
+      "synonyms": "efficiency · output"
+    },
+    {
+      "word": "recruit",
+      "pos": "v",
+      "ipa": "/rɪˈkruːt/",
+      "vi": "Tuyển dụng",
+      "example": "The firm is recruiting engineers.",
+      "collocation": "recruit staff · recruit talent",
+      "synonyms": "hire · take on · enlist"
+    },
+    {
+      "word": "incentive",
+      "pos": "n",
+      "ipa": "/ɪnˈsentɪv/",
+      "vi": "Sự khích lệ, động lực",
+      "example": "Bonuses are a strong incentive to work harder.",
+      "collocation": "financial incentive · offer an incentive · strong incentive",
+      "synonyms": "motivation · inducement · reward"
+    },
+    {
+      "word": "remuneration",
+      "pos": "n",
+      "ipa": "/rɪˌmjuːnəˈreɪʃən/",
+      "vi": "Tiền thù lao",
+      "example": "The job offers generous remuneration.",
+      "collocation": "generous remuneration · remuneration package",
+      "synonyms": "pay · compensation · salary"
+    },
+    {
+      "word": "workforce",
+      "pos": "n",
+      "ipa": "/ˈwɜːkfɔːs/",
+      "vi": "Lực lượng lao động",
+      "example": "The country needs a skilled workforce.",
+      "collocation": "skilled workforce · shrinking workforce",
+      "synonyms": "labour force · staff · employees"
+    },
+    {
+      "word": "delegate",
+      "pos": "v",
+      "ipa": "/ˈdelɪɡeɪt/",
+      "vi": "Giao phó, uỷ thác",
+      "example": "Good managers delegate tasks effectively.",
+      "collocation": "delegate tasks · delegate responsibility",
+      "synonyms": "assign · entrust · hand over"
+    },
+    {
+      "word": "redundancy",
+      "pos": "n",
+      "ipa": "/rɪˈdʌndənsi/",
+      "vi": "Sự sa thải do dôi dư",
+      "example": "The merger led to hundreds of redundancies.",
+      "collocation": "face redundancy · redundancy package",
+      "synonyms": "layoff · dismissal"
+    },
+    {
+      "word": "lucrative",
+      "pos": "adj",
+      "ipa": "/ˈluːkrətɪv/",
+      "vi": "Sinh lợi cao",
+      "example": "Consulting can be a lucrative career.",
+      "collocation": "lucrative business · lucrative deal · highly lucrative",
+      "synonyms": "profitable · well-paid · rewarding"
+    },
+    {
+      "word": "commute",
+      "pos": "v",
+      "ipa": "/kəˈmjuːt/",
+      "vi": "Đi làm xa hằng ngày",
+      "example": "Many people commute long distances to work.",
+      "collocation": "commute to work · daily commute · long commute",
+      "synonyms": "travel to work"
+    },
+    {
+      "word": "burnout",
+      "pos": "n",
+      "ipa": "/ˈbɜːnaʊt/",
+      "vi": "Sự kiệt sức",
+      "example": "Long hours can lead to burnout.",
+      "collocation": "suffer burnout · avoid burnout · workplace burnout",
+      "synonyms": "exhaustion · fatigue"
+    },
+    {
+      "word": "subordinate",
+      "pos": "n",
+      "ipa": "/səˈbɔːdɪnət/",
+      "vi": "Cấp dưới",
+      "example": "A leader should listen to their subordinates.",
+      "collocation": "manage subordinates · a loyal subordinate",
+      "synonyms": "junior · underling"
+    },
+    {
+      "word": "promotion",
+      "pos": "n",
+      "ipa": "/prəˈməʊʃən/",
+      "vi": "Sự thăng chức",
+      "example": "She earned a promotion after two years.",
+      "collocation": "earn a promotion · win promotion · promotion prospects",
+      "synonyms": "advancement · elevation"
+    },
+    {
+      "word": "freelance",
+      "pos": "adj",
+      "ipa": "/ˈfriːlɑːns/",
+      "vi": "Làm tự do",
+      "example": "More people now choose freelance work.",
+      "collocation": "freelance work · freelance writer",
+      "synonyms": "self-employed · contract"
+    },
+    {
+      "word": "turnover",
+      "pos": "n",
+      "ipa": "/ˈtɜːnəʊvə/",
+      "vi": "Doanh thu; tỉ lệ nghỉ việc",
+      "example": "The company reported a record turnover.",
+      "collocation": "annual turnover · high staff turnover",
+      "synonyms": "revenue · sales · churn"
+    },
+    {
+      "word": "liaise",
+      "pos": "v",
+      "ipa": "/liˈeɪz/",
+      "vi": "Phối hợp, liên lạc",
+      "example": "She liaises with clients across Asia.",
+      "collocation": "liaise with clients · liaise closely",
+      "synonyms": "coordinate · cooperate · communicate"
+    },
+    {
+      "word": "diligent",
+      "pos": "adj",
+      "ipa": "/ˈdɪlɪdʒənt/",
+      "vi": "Siêng năng, cần mẫn",
+      "example": "He is a diligent and reliable worker.",
+      "collocation": "diligent worker · diligent effort",
+      "synonyms": "hard-working · conscientious · assiduous"
+    },
+    {
+      "word": "prospects",
+      "pos": "n",
+      "ipa": "/ˈprɒspekts/",
+      "vi": "Triển vọng",
+      "example": "A degree improves your career prospects.",
+      "collocation": "career prospects · good prospects · job prospects",
+      "synonyms": "outlook · opportunities"
+    },
+    {
+      "word": "outsource",
+      "pos": "v",
+      "ipa": "/ˈaʊtsɔːs/",
+      "vi": "Thuê ngoài",
+      "example": "Firms often outsource customer service.",
+      "collocation": "outsource production · outsource jobs",
+      "synonyms": "contract out · subcontract"
+    },
+    {
+      "word": "stakeholder",
+      "pos": "n",
+      "ipa": "/ˈsteɪkhəʊldə/",
+      "vi": "Bên liên quan",
+      "example": "The plan involves all the stakeholders.",
+      "collocation": "key stakeholder · engage stakeholders",
+      "synonyms": "interested party · investor"
+    },
+    {
+      "word": "mundane",
+      "pos": "adj",
+      "ipa": "/mʌnˈdeɪn/",
+      "vi": "Tẻ nhạt, đơn điệu",
+      "example": "Automation handles the mundane tasks.",
+      "collocation": "mundane task · mundane routine",
+      "synonyms": "dull · monotonous · humdrum"
+    },
+    {
+      "word": "proficient",
+      "pos": "adj",
+      "ipa": "/prəˈfɪʃənt/",
+      "vi": "Thành thạo",
+      "example": "She is proficient in three languages.",
+      "collocation": "proficient in · highly proficient",
+      "synonyms": "skilled · competent · adept"
+    },
+    {
+      "word": "collaborate",
+      "pos": "v",
+      "ipa": "/kəˈlæbəreɪt/",
+      "vi": "Hợp tác",
+      "example": "The two teams collaborated on the design.",
+      "collocation": "collaborate on a project · collaborate closely",
+      "synonyms": "cooperate · work together · team up"
+    },
+    {
+      "word": "wage",
+      "pos": "n",
+      "ipa": "/weɪdʒ/",
+      "vi": "Tiền lương (theo giờ/tuần)",
+      "example": "Campaigners demanded a higher minimum wage.",
+      "collocation": "minimum wage · decent wage · wage rise",
+      "synonyms": "pay · salary · earnings"
+    },
+    {
+      "word": "menial",
+      "pos": "adj",
+      "ipa": "/ˈmiːniəl/",
+      "vi": "Thấp kém, lao động tay chân",
+      "example": "Immigrants often start in menial jobs.",
+      "collocation": "menial job · menial task · menial work",
+      "synonyms": "lowly · unskilled · humble"
+    }
+  ]
+}

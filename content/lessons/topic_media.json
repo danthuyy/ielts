@@ -1,0 +1,234 @@
+{
+  "id": "topic_media",
+  "title": "Chủ đề: Truyền thông",
+  "description": "Từ vựng IELTS chủ đề báo chí, mạng xã hội và quảng cáo",
+  "date": "2026-08-07",
+  "tags": ["media", "technology"],
+  "words": [
+    {
+      "word": "bias",
+      "pos": "n",
+      "ipa": "/ˈbaɪəs/",
+      "vi": "Sự thiên vị",
+      "example": "Readers accused the paper of political bias.",
+      "collocation": "media bias · political bias · without bias",
+      "synonyms": "prejudice · partiality · slant"
+    },
+    {
+      "word": "censorship",
+      "pos": "n",
+      "ipa": "/ˈsensəʃɪp/",
+      "vi": "Sự kiểm duyệt",
+      "example": "Strict censorship limits what journalists can report.",
+      "collocation": "strict censorship · media censorship · impose censorship",
+      "synonyms": "suppression · control"
+    },
+    {
+      "word": "sensationalism",
+      "pos": "n",
+      "ipa": "/senˈseɪʃənəlɪzəm/",
+      "vi": "Chủ nghĩa giật gân",
+      "example": "Tabloids are often accused of sensationalism.",
+      "collocation": "tabloid sensationalism · avoid sensationalism",
+      "synonyms": "exaggeration · hype"
+    },
+    {
+      "word": "coverage",
+      "pos": "n",
+      "ipa": "/ˈkʌvərɪdʒ/",
+      "vi": "Sự đưa tin",
+      "example": "The event received extensive media coverage.",
+      "collocation": "news coverage · extensive coverage · media coverage",
+      "synonyms": "reporting · reportage"
+    },
+    {
+      "word": "propaganda",
+      "pos": "n",
+      "ipa": "/ˌprɒpəˈɡændə/",
+      "vi": "Sự tuyên truyền",
+      "example": "The regime used the media for propaganda.",
+      "collocation": "state propaganda · spread propaganda · political propaganda",
+      "synonyms": "misinformation · indoctrination"
+    },
+    {
+      "word": "misinformation",
+      "pos": "n",
+      "ipa": "/ˌmɪsɪnfəˈmeɪʃən/",
+      "vi": "Thông tin sai lệch",
+      "example": "Misinformation spreads quickly on social media.",
+      "collocation": "spread misinformation · online misinformation",
+      "synonyms": "falsehood · disinformation"
+    },
+    {
+      "word": "credibility",
+      "pos": "n",
+      "ipa": "/ˌkredəˈbɪləti/",
+      "vi": "Độ tin cậy, uy tín",
+      "example": "Fake stories damage a newspaper's credibility.",
+      "collocation": "lose credibility · credibility of the source",
+      "synonyms": "trustworthiness · reliability"
+    },
+    {
+      "word": "influential",
+      "pos": "adj",
+      "ipa": "/ˌɪnfluˈenʃəl/",
+      "vi": "Có ảnh hưởng",
+      "example": "She is an influential voice in journalism.",
+      "collocation": "highly influential · influential figure",
+      "synonyms": "powerful · leading · authoritative"
+    },
+    {
+      "word": "broadcast",
+      "pos": "v",
+      "ipa": "/ˈbrɔːdkɑːst/",
+      "vi": "Phát sóng",
+      "example": "The match was broadcast live worldwide.",
+      "collocation": "broadcast live · broadcast news",
+      "synonyms": "air · transmit"
+    },
+    {
+      "word": "tabloid",
+      "pos": "n",
+      "ipa": "/ˈtæblɔɪd/",
+      "vi": "Báo lá cải",
+      "example": "Tabloids focus on celebrity gossip.",
+      "collocation": "tabloid press · tabloid newspaper",
+      "synonyms": "gutter press"
+    },
+    {
+      "word": "subscriber",
+      "pos": "n",
+      "ipa": "/səbˈskraɪbə/",
+      "vi": "Người đăng ký theo dõi",
+      "example": "The channel gained a million subscribers.",
+      "collocation": "paying subscriber · millions of subscribers",
+      "synonyms": "member · follower"
+    },
+    {
+      "word": "viral",
+      "pos": "adj",
+      "ipa": "/ˈvaɪrəl/",
+      "vi": "Lan truyền chóng mặt",
+      "example": "The clip went viral overnight.",
+      "collocation": "go viral · viral video",
+      "synonyms": "trending · widely shared"
+    },
+    {
+      "word": "manipulate",
+      "pos": "v",
+      "ipa": "/məˈnɪpjəleɪt/",
+      "vi": "Thao túng",
+      "example": "Advertisers try to manipulate our choices.",
+      "collocation": "manipulate public opinion · manipulate the media",
+      "synonyms": "influence · exploit · control"
+    },
+    {
+      "word": "scrutiny",
+      "pos": "n",
+      "ipa": "/ˈskruːtəni/",
+      "vi": "Sự soi xét kỹ lưỡng",
+      "example": "Politicians face constant public scrutiny.",
+      "collocation": "public scrutiny · close scrutiny · under scrutiny",
+      "synonyms": "examination · inspection"
+    },
+    {
+      "word": "anonymity",
+      "pos": "n",
+      "ipa": "/ˌænəˈnɪməti/",
+      "vi": "Sự ẩn danh",
+      "example": "Online anonymity can encourage abuse.",
+      "collocation": "online anonymity · preserve anonymity",
+      "synonyms": "namelessness · concealment"
+    },
+    {
+      "word": "outlet",
+      "pos": "n",
+      "ipa": "/ˈaʊtlet/",
+      "vi": "Kênh/hãng truyền thông",
+      "example": "Several news outlets reported the story.",
+      "collocation": "news outlet · media outlet",
+      "synonyms": "channel · publication"
+    },
+    {
+      "word": "audience",
+      "pos": "n",
+      "ipa": "/ˈɔːdiəns/",
+      "vi": "Khán giả, độc giả",
+      "example": "The show attracts a huge audience.",
+      "collocation": "target audience · reach an audience · wide audience",
+      "synonyms": "viewers · readership"
+    },
+    {
+      "word": "advertise",
+      "pos": "v",
+      "ipa": "/ˈædvətaɪz/",
+      "vi": "Quảng cáo",
+      "example": "Firms advertise heavily on social media.",
+      "collocation": "advertise a product · advertise online",
+      "synonyms": "promote · publicise · market"
+    },
+    {
+      "word": "distort",
+      "pos": "v",
+      "ipa": "/dɪˈstɔːt/",
+      "vi": "Bóp méo",
+      "example": "Headlines can distort the facts.",
+      "collocation": "distort the facts · distort the truth",
+      "synonyms": "twist · misrepresent · warp"
+    },
+    {
+      "word": "influencer",
+      "pos": "n",
+      "ipa": "/ˈɪnfluənsə/",
+      "vi": "Người có sức ảnh hưởng",
+      "example": "Brands pay influencers to promote products.",
+      "collocation": "social media influencer · top influencer",
+      "synonyms": "opinion leader · content creator"
+    },
+    {
+      "word": "pervasive",
+      "pos": "adj",
+      "ipa": "/pəˈveɪsɪv/",
+      "vi": "Lan tràn, phổ biến",
+      "example": "Advertising is pervasive in modern life.",
+      "collocation": "pervasive influence · pervasive advertising",
+      "synonyms": "widespread · ubiquitous · prevalent"
+    },
+    {
+      "word": "accountable",
+      "pos": "adj",
+      "ipa": "/əˈkaʊntəbəl/",
+      "vi": "Có trách nhiệm giải trình",
+      "example": "The press holds the powerful accountable.",
+      "collocation": "hold accountable · accountable to the public",
+      "synonyms": "answerable · responsible"
+    },
+    {
+      "word": "gossip",
+      "pos": "n",
+      "ipa": "/ˈɡɒsɪp/",
+      "vi": "Chuyện ngồi lê đôi mách",
+      "example": "Magazines thrive on celebrity gossip.",
+      "collocation": "celebrity gossip · spread gossip",
+      "synonyms": "rumour · hearsay"
+    },
+    {
+      "word": "subscription",
+      "pos": "n",
+      "ipa": "/səbˈskrɪpʃən/",
+      "vi": "Sự đăng ký thuê bao",
+      "example": "A subscription unlocks all the articles.",
+      "collocation": "monthly subscription · cancel a subscription",
+      "synonyms": "membership"
+    },
+    {
+      "word": "journalism",
+      "pos": "n",
+      "ipa": "/ˈdʒɜːnəlɪzəm/",
+      "vi": "Nghề báo",
+      "example": "Investigative journalism exposed the scandal.",
+      "collocation": "investigative journalism · quality journalism",
+      "synonyms": "reporting · the press"
+    }
+  ]
+}
