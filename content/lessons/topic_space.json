@@ -1,0 +1,234 @@
+{
+  "id": "topic_space",
+  "title": "Chủ đề: Khám phá Vũ trụ",
+  "description": "Từ vựng IELTS chủ đề du hành vũ trụ và thiên thể",
+  "date": "2026-08-07",
+  "tags": ["science", "technology"],
+  "words": [
+    {
+      "word": "astronaut",
+      "pos": "n",
+      "ipa": "/ˈæstrənɔːt/",
+      "vi": "Phi hành gia",
+      "example": "The astronaut spent six months in orbit.",
+      "collocation": "a veteran astronaut · train as an astronaut",
+      "synonyms": "spaceman · cosmonaut"
+    },
+    {
+      "word": "satellite",
+      "pos": "n",
+      "ipa": "/ˈsætəlaɪt/",
+      "vi": "Vệ tinh",
+      "example": "The satellite beams TV signals to Earth.",
+      "collocation": "a communications satellite · launch a satellite · an orbiting satellite",
+      "synonyms": "spacecraft"
+    },
+    {
+      "word": "spacecraft",
+      "pos": "n",
+      "ipa": "/ˈspeɪskrɑːft/",
+      "vi": "Tàu vũ trụ",
+      "example": "The spacecraft reached Mars in seven months.",
+      "collocation": "an unmanned spacecraft · launch a spacecraft",
+      "synonyms": "space vehicle"
+    },
+    {
+      "word": "launch",
+      "pos": "v",
+      "ipa": "/lɔːntʃ/",
+      "vi": "Phóng (tàu vũ trụ)",
+      "example": "They launched the rocket at dawn.",
+      "collocation": "launch a rocket · launch into orbit · a successful launch",
+      "synonyms": "send up · blast off",
+      "forms": "launch (n)"
+    },
+    {
+      "word": "rover",
+      "pos": "n",
+      "ipa": "/ˈrəʊvə/",
+      "vi": "Xe tự hành thám hiểm",
+      "example": "The rover collected rock samples on Mars.",
+      "collocation": "a Mars rover · deploy a rover",
+      "synonyms": "robotic vehicle"
+    },
+    {
+      "word": "probe",
+      "pos": "n",
+      "ipa": "/prəʊb/",
+      "vi": "Tàu thăm dò",
+      "example": "A probe was sent to study the comet.",
+      "collocation": "a space probe · send a probe · an unmanned probe",
+      "synonyms": "explorer"
+    },
+    {
+      "word": "weightless",
+      "pos": "adj",
+      "ipa": "/ˈweɪtləs/",
+      "vi": "Không trọng lượng",
+      "example": "Astronauts float weightless in space.",
+      "collocation": "float weightless · a weightless environment",
+      "synonyms": "zero-gravity",
+      "forms": "weightlessness (n)"
+    },
+    {
+      "word": "atmosphere",
+      "pos": "n",
+      "ipa": "/ˈætməsfɪə/",
+      "vi": "Bầu khí quyển",
+      "example": "Mars has a thin atmosphere.",
+      "collocation": "the Earth's atmosphere · a thin atmosphere · re-enter the atmosphere",
+      "synonyms": "air · sky",
+      "forms": "atmospheric (adj)"
+    },
+    {
+      "word": "celestial",
+      "pos": "adj",
+      "ipa": "/səˈlestiəl/",
+      "vi": "Thuộc thiên thể",
+      "example": "The moon is a celestial body.",
+      "collocation": "a celestial body · celestial navigation",
+      "synonyms": "heavenly · astronomical"
+    },
+    {
+      "word": "galaxy",
+      "pos": "n",
+      "ipa": "/ˈɡæləksi/",
+      "vi": "Thiên hà",
+      "example": "Our galaxy holds billions of stars.",
+      "collocation": "a distant galaxy · a spiral galaxy · the Milky Way galaxy",
+      "synonyms": "star system",
+      "forms": "galactic (adj)"
+    },
+    {
+      "word": "asteroid",
+      "pos": "n",
+      "ipa": "/ˈæstərɔɪd/",
+      "vi": "Tiểu hành tinh",
+      "example": "A huge asteroid passed close to Earth.",
+      "collocation": "an asteroid belt · a passing asteroid",
+      "synonyms": "space rock"
+    },
+    {
+      "word": "comet",
+      "pos": "n",
+      "ipa": "/ˈkɒmɪt/",
+      "vi": "Sao chổi",
+      "example": "The comet will not return for decades.",
+      "collocation": "a bright comet · a passing comet · the comet's tail",
+      "synonyms": "celestial body"
+    },
+    {
+      "word": "meteor",
+      "pos": "n",
+      "ipa": "/ˈmiːtiə/",
+      "vi": "Sao băng, thiên thạch",
+      "example": "We watched a meteor shower at night.",
+      "collocation": "a meteor shower · a bright meteor",
+      "synonyms": "shooting star",
+      "forms": "meteorite (n)"
+    },
+    {
+      "word": "trajectory",
+      "pos": "n",
+      "ipa": "/trəˈdʒektəri/",
+      "vi": "Quỹ đạo bay",
+      "example": "Engineers calculated the rocket’s trajectory.",
+      "collocation": "the trajectory of · a flight trajectory · alter the trajectory",
+      "synonyms": "path · course · arc"
+    },
+    {
+      "word": "extraterrestrial",
+      "pos": "adj",
+      "ipa": "/ˌekstrətəˈrestriəl/",
+      "vi": "Ngoài Trái Đất",
+      "example": "Scientists search for extraterrestrial life.",
+      "collocation": "extraterrestrial life · an extraterrestrial being",
+      "synonyms": "alien · otherworldly"
+    },
+    {
+      "word": "habitable",
+      "pos": "adj",
+      "ipa": "/ˈhæbɪtəbl/",
+      "vi": "Có thể sinh sống",
+      "example": "They found a potentially habitable planet.",
+      "collocation": "a habitable planet · a habitable zone",
+      "synonyms": "liveable · inhabitable",
+      "forms": "habitability (n)"
+    },
+    {
+      "word": "spacewalk",
+      "pos": "n",
+      "ipa": "/ˈspeɪswɔːk/",
+      "vi": "Cuộc đi bộ ngoài không gian",
+      "example": "The astronaut performed a six-hour spacewalk.",
+      "collocation": "perform a spacewalk · a risky spacewalk",
+      "synonyms": "EVA"
+    },
+    {
+      "word": "module",
+      "pos": "n",
+      "ipa": "/ˈmɒdjuːl/",
+      "vi": "Khoang, mô-đun (tàu)",
+      "example": "The lunar module landed on the moon.",
+      "collocation": "a lunar module · a command module · the crew module",
+      "synonyms": "unit · compartment",
+      "forms": "modular (adj)"
+    },
+    {
+      "word": "cosmic",
+      "pos": "adj",
+      "ipa": "/ˈkɒzmɪk/",
+      "vi": "Thuộc vũ trụ",
+      "example": "Cosmic rays bombard the spacecraft.",
+      "collocation": "cosmic rays · on a cosmic scale · cosmic dust",
+      "synonyms": "universal · astronomical"
+    },
+    {
+      "word": "terrestrial",
+      "pos": "adj",
+      "ipa": "/təˈrestriəl/",
+      "vi": "Thuộc Trái Đất, trên cạn",
+      "example": "Terrestrial planets are made of rock.",
+      "collocation": "terrestrial life · terrestrial planets",
+      "synonyms": "earthly · land-based"
+    },
+    {
+      "word": "colonisation",
+      "pos": "n",
+      "ipa": "/ˌkɒlənaɪˈzeɪʃən/",
+      "vi": "Sự định cư, chiếm cứ",
+      "example": "Some dream of the colonisation of Mars.",
+      "collocation": "space colonisation · the colonisation of Mars",
+      "synonyms": "settlement",
+      "forms": "colonise (v)"
+    },
+    {
+      "word": "stellar",
+      "pos": "adj",
+      "ipa": "/ˈstelə/",
+      "vi": "Thuộc các vì sao",
+      "example": "A stellar explosion lit up the sky.",
+      "collocation": "stellar dust · a stellar explosion",
+      "synonyms": "star-like · astral"
+    },
+    {
+      "word": "ascent",
+      "pos": "n",
+      "ipa": "/əˈsent/",
+      "vi": "Sự bay lên, đi lên",
+      "example": "The rocket’s ascent was flawless.",
+      "collocation": "a steep ascent · the rocket’s ascent",
+      "synonyms": "climb · rise",
+      "forms": "ascend (v)"
+    },
+    {
+      "word": "void",
+      "pos": "n",
+      "ipa": "/vɔɪd/",
+      "vi": "Khoảng không, hư không",
+      "example": "The probe drifted into the void of space.",
+      "collocation": "the void of space · a vast void",
+      "synonyms": "vacuum · emptiness · abyss"
+    }
+  ]
+}

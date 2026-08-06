@@ -1,0 +1,242 @@
+{
+  "id": "topic_volunteering",
+  "title": "Chủ đề: Thiện nguyện & Từ thiện",
+  "description": "Từ vựng IELTS chủ đề tình nguyện, từ thiện và cộng đồng",
+  "date": "2026-08-07",
+  "tags": ["society", "psychology"],
+  "words": [
+    {
+      "word": "charity",
+      "pos": "n",
+      "ipa": "/ˈtʃærəti/",
+      "vi": "Từ thiện; tổ chức từ thiện",
+      "example": "She gives regularly to charity.",
+      "collocation": "give to charity · a local charity · a charity event",
+      "synonyms": "good cause · philanthropy",
+      "forms": "charitable (adj)"
+    },
+    {
+      "word": "donate",
+      "pos": "v",
+      "ipa": "/dəʊˈneɪt/",
+      "vi": "Quyên góp, hiến tặng",
+      "example": "Thousands donated to the appeal.",
+      "collocation": "donate money · donate blood · generously donate",
+      "synonyms": "give · contribute · gift",
+      "forms": "donation (n) · donor (n)"
+    },
+    {
+      "word": "fundraise",
+      "pos": "v",
+      "ipa": "/ˈfʌndreɪz/",
+      "vi": "Gây quỹ",
+      "example": "The students fundraised for a new library.",
+      "collocation": "fundraise for charity · fundraise online",
+      "synonyms": "raise money",
+      "forms": "fundraiser (n) · fundraising (n)"
+    },
+    {
+      "word": "volunteer",
+      "pos": "n",
+      "ipa": "/ˌvɒlənˈtɪə/",
+      "vi": "Tình nguyện viên",
+      "example": "The charity relies on volunteers.",
+      "collocation": "a willing volunteer · recruit volunteers · a team of volunteers",
+      "synonyms": "helper · unpaid worker",
+      "forms": "volunteer (v) · voluntary (adj)"
+    },
+    {
+      "word": "altruism",
+      "pos": "n",
+      "ipa": "/ˈæltruɪzəm/",
+      "vi": "Lòng vị tha",
+      "example": "Her work is driven by pure altruism.",
+      "collocation": "pure altruism · an act of altruism",
+      "synonyms": "selflessness · unselfishness",
+      "forms": "altruistic (adj)"
+    },
+    {
+      "word": "philanthropy",
+      "pos": "n",
+      "ipa": "/fɪˈlænθrəpi/",
+      "vi": "Hoạt động từ thiện (quy mô lớn)",
+      "example": "The tycoon is famous for his philanthropy.",
+      "collocation": "corporate philanthropy · a life of philanthropy",
+      "synonyms": "charity · benevolence",
+      "forms": "philanthropist (n) · philanthropic (adj)"
+    },
+    {
+      "word": "nonprofit",
+      "pos": "adj",
+      "ipa": "/ˌnɒnˈprɒfɪt/",
+      "vi": "Phi lợi nhuận",
+      "example": "She works for a nonprofit organisation.",
+      "collocation": "a nonprofit organisation · run a nonprofit",
+      "synonyms": "not-for-profit · charitable"
+    },
+    {
+      "word": "outreach",
+      "pos": "n",
+      "ipa": "/ˈaʊtriːtʃ/",
+      "vi": "Hoạt động vươn tới cộng đồng",
+      "example": "The charity runs an outreach programme.",
+      "collocation": "community outreach · an outreach programme",
+      "synonyms": "engagement · community work"
+    },
+    {
+      "word": "benevolent",
+      "pos": "adj",
+      "ipa": "/bɪˈnevələnt/",
+      "vi": "Nhân từ, hảo tâm",
+      "example": "A benevolent donor funded the hospital.",
+      "collocation": "a benevolent donor · a benevolent society",
+      "synonyms": "kind · charitable · generous",
+      "forms": "benevolence (n)"
+    },
+    {
+      "word": "generous",
+      "pos": "adj",
+      "ipa": "/ˈdʒenərəs/",
+      "vi": "Hào phóng",
+      "example": "They made a generous donation.",
+      "collocation": "a generous donation · remarkably generous · generous with",
+      "synonyms": "giving · liberal · magnanimous",
+      "forms": "generosity (n) · generously (adv)"
+    },
+    {
+      "word": "selfless",
+      "pos": "adj",
+      "ipa": "/ˈselfləs/",
+      "vi": "Vị tha, quên mình",
+      "example": "Her selfless work saved many lives.",
+      "collocation": "a selfless act · selfless devotion",
+      "synonyms": "unselfish · altruistic",
+      "forms": "selflessness (n)"
+    },
+    {
+      "word": "humanitarian",
+      "pos": "adj",
+      "ipa": "/hjuːˌmænɪˈteəriən/",
+      "vi": "Nhân đạo",
+      "example": "They sent humanitarian aid to the region.",
+      "collocation": "humanitarian aid · a humanitarian crisis · humanitarian work",
+      "synonyms": "charitable · compassionate",
+      "forms": "humanitarianism (n)"
+    },
+    {
+      "word": "pledge",
+      "pos": "v",
+      "ipa": "/pledʒ/",
+      "vi": "Cam kết (đóng góp/ủng hộ)",
+      "example": "Donors pledged millions to the fund.",
+      "collocation": "pledge money · pledge support · publicly pledge",
+      "synonyms": "promise · vow · commit",
+      "forms": "pledge (n)"
+    },
+    {
+      "word": "grassroots",
+      "pos": "adj",
+      "ipa": "/ˌɡrɑːsˈruːts/",
+      "vi": "Từ cơ sở, quần chúng",
+      "example": "The campaign began as a grassroots movement.",
+      "collocation": "a grassroots movement · grassroots support · grassroots campaign",
+      "synonyms": "community-based · local"
+    },
+    {
+      "word": "relief",
+      "pos": "n",
+      "ipa": "/rɪˈliːf/",
+      "vi": "Cứu trợ",
+      "example": "Relief workers reached the flooded villages.",
+      "collocation": "disaster relief · relief efforts · provide relief",
+      "synonyms": "aid · assistance · help",
+      "forms": "relieve (v)"
+    },
+    {
+      "word": "empower",
+      "pos": "v",
+      "ipa": "/ɪmˈpaʊə/",
+      "vi": "Trao quyền, tiếp sức",
+      "example": "The project empowers women through education.",
+      "collocation": "empower people · empower communities · empower women",
+      "synonyms": "enable · strengthen · equip",
+      "forms": "empowerment (n)"
+    },
+    {
+      "word": "needy",
+      "pos": "adj",
+      "ipa": "/ˈniːdi/",
+      "vi": "Túng thiếu, cần giúp đỡ",
+      "example": "The food bank helps needy families.",
+      "collocation": "help the needy · needy families · the most needy",
+      "synonyms": "poor · deprived · disadvantaged"
+    },
+    {
+      "word": "underprivileged",
+      "pos": "adj",
+      "ipa": "/ˌʌndəˈprɪvəlɪdʒd/",
+      "vi": "Thiệt thòi, kém may mắn",
+      "example": "The scheme supports underprivileged children.",
+      "collocation": "underprivileged children · the underprivileged",
+      "synonyms": "disadvantaged · deprived"
+    },
+    {
+      "word": "goodwill",
+      "pos": "n",
+      "ipa": "/ˌɡʊdˈwɪl/",
+      "vi": "Thiện chí",
+      "example": "The donation was a gesture of goodwill.",
+      "collocation": "a gesture of goodwill · build goodwill · international goodwill",
+      "synonyms": "kindness · benevolence"
+    },
+    {
+      "word": "solidarity",
+      "pos": "n",
+      "ipa": "/ˌsɒlɪˈdærəti/",
+      "vi": "Sự đoàn kết, tương thân",
+      "example": "The community showed great solidarity.",
+      "collocation": "show solidarity · a sense of solidarity · in solidarity with",
+      "synonyms": "unity · togetherness"
+    },
+    {
+      "word": "charitable",
+      "pos": "adj",
+      "ipa": "/ˈtʃærɪtəbl/",
+      "vi": "Từ thiện; rộng lượng",
+      "example": "They set up a charitable foundation.",
+      "collocation": "a charitable donation · a charitable organisation · charitable work",
+      "synonyms": "philanthropic · generous",
+      "forms": "charity (n)"
+    },
+    {
+      "word": "destitute",
+      "pos": "adj",
+      "ipa": "/ˈdestɪtjuːt/",
+      "vi": "Bần cùng, khốn khó",
+      "example": "The war left thousands destitute.",
+      "collocation": "utterly destitute · the destitute · left destitute",
+      "synonyms": "penniless · impoverished · poverty-stricken",
+      "forms": "destitution (n)"
+    },
+    {
+      "word": "worthy",
+      "pos": "adj",
+      "ipa": "/ˈwɜːði/",
+      "vi": "Xứng đáng, chính đáng",
+      "example": "The money goes to a worthy cause.",
+      "collocation": "a worthy cause · a worthy winner · worthy of",
+      "synonyms": "deserving · meritorious",
+      "forms": "worthiness (n)"
+    },
+    {
+      "word": "rewarding",
+      "pos": "adj",
+      "ipa": "/rɪˈwɔːdɪŋ/",
+      "vi": "Bổ ích, đáng công",
+      "example": "Volunteering is deeply rewarding.",
+      "collocation": "a rewarding experience · deeply rewarding · emotionally rewarding",
+      "synonyms": "fulfilling · satisfying · gratifying",
+      "forms": "reward (n)"
+    }
+  ]
+}
