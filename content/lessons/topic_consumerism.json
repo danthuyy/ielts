@@ -1,0 +1,249 @@
+{
+  "id": "topic_consumerism",
+  "title": "Chủ đề: Mua sắm & Tiêu dùng",
+  "description": "Từ vựng IELTS chủ đề mua sắm, tiêu dùng và thương mại",
+  "date": "2026-08-07",
+  "tags": ["money", "media"],
+  "words": [
+    {
+      "word": "consumerism",
+      "pos": "n",
+      "ipa": "/kənˈsjuːmərɪzəm/",
+      "vi": "Chủ nghĩa tiêu dùng",
+      "example": "Advertising fuels consumerism.",
+      "collocation": "rampant consumerism · modern consumerism",
+      "synonyms": "materialism",
+      "forms": "consumer (n)"
+    },
+    {
+      "word": "retail",
+      "pos": "n",
+      "ipa": "/ˈriːteɪl/",
+      "vi": "Bán lẻ",
+      "example": "Online retail has boomed in recent years.",
+      "collocation": "retail price · retail sector · online retail",
+      "synonyms": "selling · trade",
+      "forms": "retailer (n)"
+    },
+    {
+      "word": "wholesale",
+      "pos": "adj",
+      "ipa": "/ˈhəʊlseɪl/",
+      "vi": "Bán buôn, bán sỉ",
+      "example": "They buy the goods at wholesale prices.",
+      "collocation": "wholesale price · buy wholesale · wholesale market",
+      "synonyms": "bulk · trade"
+    },
+    {
+      "word": "discount",
+      "pos": "n",
+      "ipa": "/ˈdɪskaʊnt/",
+      "vi": "Giảm giá",
+      "example": "The store offers a 20% discount.",
+      "collocation": "a big discount · offer a discount · at a discount",
+      "synonyms": "reduction · markdown · deal"
+    },
+    {
+      "word": "refund",
+      "pos": "n",
+      "ipa": "/ˈriːfʌnd/",
+      "vi": "Sự hoàn tiền",
+      "example": "She asked for a refund on the faulty phone.",
+      "collocation": "a full refund · claim a refund · get a refund",
+      "synonyms": "repayment · reimbursement",
+      "forms": "refund (v)"
+    },
+    {
+      "word": "warranty",
+      "pos": "n",
+      "ipa": "/ˈwɒrənti/",
+      "vi": "Bảo hành",
+      "example": "The laptop comes with a two-year warranty.",
+      "collocation": "a two-year warranty · under warranty · extended warranty",
+      "synonyms": "guarantee · assurance"
+    },
+    {
+      "word": "bargain",
+      "pos": "n",
+      "ipa": "/ˈbɑːɡɪn/",
+      "vi": "Món hời",
+      "example": "The coat was a real bargain in the sale.",
+      "collocation": "a real bargain · pick up a bargain · a bargain price",
+      "synonyms": "good deal · snip · steal"
+    },
+    {
+      "word": "extravagant",
+      "pos": "adj",
+      "ipa": "/ɪkˈstrævəɡənt/",
+      "vi": "Xa xỉ, hoang phí",
+      "example": "He has an extravagant lifestyle.",
+      "collocation": "extravagant spending · an extravagant gift · wildly extravagant",
+      "synonyms": "lavish · wasteful · excessive",
+      "forms": "extravagance (n)"
+    },
+    {
+      "word": "impulse",
+      "pos": "n",
+      "ipa": "/ˈɪmpʌls/",
+      "vi": "Sự bốc đồng",
+      "example": "She bought the dress on impulse.",
+      "collocation": "on impulse · impulse buy · resist the impulse",
+      "synonyms": "urge · whim · instinct",
+      "forms": "impulsive (adj)"
+    },
+    {
+      "word": "brand",
+      "pos": "n",
+      "ipa": "/brænd/",
+      "vi": "Thương hiệu",
+      "example": "The brand is popular with young people.",
+      "collocation": "a leading brand · brand loyalty · a well-known brand",
+      "synonyms": "make · label · trademark",
+      "forms": "branding (n)"
+    },
+    {
+      "word": "boycott",
+      "pos": "v",
+      "ipa": "/ˈbɔɪkɒt/",
+      "vi": "Tẩy chay",
+      "example": "Shoppers boycotted the brand over pollution.",
+      "collocation": "boycott a product · boycott a company · call to boycott",
+      "synonyms": "shun · reject · blacklist",
+      "forms": "boycott (n)"
+    },
+    {
+      "word": "counterfeit",
+      "pos": "adj",
+      "ipa": "/ˈkaʊntəfɪt/",
+      "vi": "Giả mạo, nhái",
+      "example": "The market sells counterfeit handbags.",
+      "collocation": "counterfeit goods · counterfeit money · sell counterfeit",
+      "synonyms": "fake · forged · imitation"
+    },
+    {
+      "word": "durable",
+      "pos": "adj",
+      "ipa": "/ˈdjʊərəbl/",
+      "vi": "Bền",
+      "example": "The boots are stylish and durable.",
+      "collocation": "durable goods · a durable material · highly durable",
+      "synonyms": "long-lasting · hard-wearing · sturdy",
+      "forms": "durability (n)"
+    },
+    {
+      "word": "receipt",
+      "pos": "n",
+      "ipa": "/rɪˈsiːt/",
+      "vi": "Hoá đơn, biên lai",
+      "example": "Keep the receipt in case you return it.",
+      "collocation": "keep the receipt · a receipt for · without a receipt",
+      "synonyms": "proof of purchase · slip"
+    },
+    {
+      "word": "voucher",
+      "pos": "n",
+      "ipa": "/ˈvaʊtʃə/",
+      "vi": "Phiếu quà tặng, phiếu giảm giá",
+      "example": "She spent her birthday voucher on books.",
+      "collocation": "a gift voucher · a discount voucher · redeem a voucher",
+      "synonyms": "coupon · token"
+    },
+    {
+      "word": "splurge",
+      "pos": "v",
+      "ipa": "/splɜːdʒ/",
+      "vi": "Vung tiền, chi mạnh",
+      "example": "They splurged on a luxury holiday.",
+      "collocation": "splurge on · splurge money",
+      "synonyms": "spend lavishly · treat yourself",
+      "forms": "splurge (n)"
+    },
+    {
+      "word": "materialistic",
+      "pos": "adj",
+      "ipa": "/məˌtɪəriəˈlɪstɪk/",
+      "vi": "Chuộng vật chất",
+      "example": "Critics say society is too materialistic.",
+      "collocation": "a materialistic society · overly materialistic",
+      "synonyms": "consumerist · money-oriented",
+      "forms": "materialism (n)"
+    },
+    {
+      "word": "luxurious",
+      "pos": "adj",
+      "ipa": "/lʌɡˈʒʊəriəs/",
+      "vi": "Sang trọng, xa hoa",
+      "example": "They stayed in a luxurious hotel.",
+      "collocation": "a luxurious hotel · luxurious surroundings",
+      "synonyms": "lavish · opulent · plush",
+      "forms": "luxury (n)"
+    },
+    {
+      "word": "secondhand",
+      "pos": "adj",
+      "ipa": "/ˌsekəndˈhænd/",
+      "vi": "Đã qua sử dụng",
+      "example": "She buys most of her clothes secondhand.",
+      "collocation": "secondhand goods · a secondhand car · buy secondhand",
+      "synonyms": "used · pre-owned · thrift"
+    },
+    {
+      "word": "haggle",
+      "pos": "v",
+      "ipa": "/ˈhæɡl/",
+      "vi": "Mặc cả",
+      "example": "Tourists haggle over prices in the market.",
+      "collocation": "haggle over the price · haggle with a seller",
+      "synonyms": "bargain · barter · negotiate"
+    },
+    {
+      "word": "markup",
+      "pos": "n",
+      "ipa": "/ˈmɑːkʌp/",
+      "vi": "Tiền chênh (giá bán so với giá gốc)",
+      "example": "The shop puts a big markup on drinks.",
+      "collocation": "a huge markup · a big markup on",
+      "synonyms": "margin · profit"
+    },
+    {
+      "word": "disposable",
+      "pos": "adj",
+      "ipa": "/dɪˈspəʊzəbl/",
+      "vi": "Dùng một lần; có thể chi tiêu",
+      "example": "People throw away tonnes of disposable cups.",
+      "collocation": "disposable products · disposable income · single-use disposable",
+      "synonyms": "single-use · throwaway",
+      "forms": "dispose (v) · disposal (n)"
+    },
+    {
+      "word": "consumer",
+      "pos": "n",
+      "ipa": "/kənˈsjuːmə/",
+      "vi": "Người tiêu dùng",
+      "example": "Consumers expect low prices and quality.",
+      "collocation": "the average consumer · consumer demand · consumer rights",
+      "synonyms": "buyer · customer · shopper",
+      "forms": "consume (v) · consumption (n)"
+    },
+    {
+      "word": "thrift",
+      "pos": "n",
+      "ipa": "/θrɪft/",
+      "vi": "Sự tiết kiệm",
+      "example": "Their thrift helped them buy a home.",
+      "collocation": "a habit of thrift · thrift and saving",
+      "synonyms": "frugality · economy · prudence",
+      "forms": "thrifty (adj)"
+    },
+    {
+      "word": "loyalty",
+      "pos": "n",
+      "ipa": "/ˈlɔɪəlti/",
+      "vi": "Sự trung thành (với thương hiệu)",
+      "example": "A loyalty card rewards regular shoppers.",
+      "collocation": "brand loyalty · customer loyalty · a loyalty card",
+      "synonyms": "allegiance · faithfulness",
+      "forms": "loyal (adj)"
+    }
+  ]
+}

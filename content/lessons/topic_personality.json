@@ -1,0 +1,254 @@
+{
+  "id": "topic_personality",
+  "title": "Chủ đề: Tính cách con người",
+  "description": "Từ vựng IELTS chủ đề miêu tả tính cách (rất hay cho Speaking)",
+  "date": "2026-08-07",
+  "tags": ["psychology", "society"],
+  "words": [
+    {
+      "word": "ambitious",
+      "pos": "adj",
+      "ipa": "/æmˈbɪʃəs/",
+      "vi": "Đầy tham vọng",
+      "example": "She is ambitious and hard-working.",
+      "collocation": "an ambitious person · ambitious plans · fiercely ambitious",
+      "synonyms": "aspiring · driven · determined",
+      "forms": "ambition (n)"
+    },
+    {
+      "word": "arrogant",
+      "pos": "adj",
+      "ipa": "/ˈærəɡənt/",
+      "vi": "Kiêu ngạo",
+      "example": "His arrogant manner annoyed everyone.",
+      "collocation": "an arrogant attitude · arrogant and rude",
+      "synonyms": "conceited · haughty · big-headed",
+      "forms": "arrogance (n)"
+    },
+    {
+      "word": "conscientious",
+      "pos": "adj",
+      "ipa": "/ˌkɒnʃiˈenʃəs/",
+      "vi": "Tận tâm, chu đáo",
+      "example": "She is a conscientious and careful student.",
+      "collocation": "a conscientious worker · conscientious about",
+      "synonyms": "diligent · thorough · dutiful",
+      "forms": "conscientiously (adv)"
+    },
+    {
+      "word": "courteous",
+      "pos": "adj",
+      "ipa": "/ˈkɜːtiəs/",
+      "vi": "Lịch sự, nhã nhặn",
+      "example": "The staff were friendly and courteous.",
+      "collocation": "courteous and polite · a courteous manner",
+      "synonyms": "polite · civil · gracious",
+      "forms": "courtesy (n)"
+    },
+    {
+      "word": "cynical",
+      "pos": "adj",
+      "ipa": "/ˈsɪnɪkl/",
+      "vi": "Hoài nghi, yếm thế",
+      "example": "He is cynical about politicians.",
+      "collocation": "a cynical view · deeply cynical · cynical about",
+      "synonyms": "sceptical · distrustful · jaded",
+      "forms": "cynicism (n)"
+    },
+    {
+      "word": "gregarious",
+      "pos": "adj",
+      "ipa": "/ɡrɪˈɡeəriəs/",
+      "vi": "Thích giao du, cởi mở",
+      "example": "She is warm and gregarious.",
+      "collocation": "a gregarious person · naturally gregarious",
+      "synonyms": "sociable · outgoing · convivial"
+    },
+    {
+      "word": "humble",
+      "pos": "adj",
+      "ipa": "/ˈhʌmbl/",
+      "vi": "Khiêm nhường",
+      "example": "Despite his fame, he stayed humble.",
+      "collocation": "a humble person · remain humble · humble beginnings",
+      "synonyms": "modest · unassuming · down-to-earth",
+      "forms": "humility (n)"
+    },
+    {
+      "word": "impulsive",
+      "pos": "adj",
+      "ipa": "/ɪmˈpʌlsɪv/",
+      "vi": "Bốc đồng",
+      "example": "He is impulsive and often regrets it.",
+      "collocation": "an impulsive decision · impulsive by nature",
+      "synonyms": "rash · spontaneous · hasty",
+      "forms": "impulsively (adv)"
+    },
+    {
+      "word": "meticulous",
+      "pos": "adj",
+      "ipa": "/məˈtɪkjələs/",
+      "vi": "Tỉ mỉ, kỹ lưỡng",
+      "example": "She keeps meticulous records.",
+      "collocation": "meticulous attention · meticulous planning · meticulous about",
+      "synonyms": "thorough · careful · precise",
+      "forms": "meticulously (adv)"
+    },
+    {
+      "word": "optimistic",
+      "pos": "adj",
+      "ipa": "/ˌɒptɪˈmɪstɪk/",
+      "vi": "Lạc quan",
+      "example": "She is optimistic about the future.",
+      "collocation": "optimistic about · cautiously optimistic · remain optimistic",
+      "synonyms": "hopeful · positive · upbeat",
+      "forms": "optimism (n)"
+    },
+    {
+      "word": "pessimistic",
+      "pos": "adj",
+      "ipa": "/ˌpesɪˈmɪstɪk/",
+      "vi": "Bi quan",
+      "example": "He is pessimistic about his chances.",
+      "collocation": "pessimistic about · deeply pessimistic",
+      "synonyms": "negative · gloomy · downbeat",
+      "forms": "pessimism (n)"
+    },
+    {
+      "word": "reserved",
+      "pos": "adj",
+      "ipa": "/rɪˈzɜːvd/",
+      "vi": "Kín đáo, dè dặt",
+      "example": "He is quiet and reserved with strangers.",
+      "collocation": "a reserved person · quiet and reserved",
+      "synonyms": "reticent · introverted · shy"
+    },
+    {
+      "word": "ruthless",
+      "pos": "adj",
+      "ipa": "/ˈruːθləs/",
+      "vi": "Nhẫn tâm, tàn nhẫn",
+      "example": "The dictator was ruthless with rivals.",
+      "collocation": "ruthless ambition · a ruthless leader · utterly ruthless",
+      "synonyms": "merciless · cut-throat · hard",
+      "forms": "ruthlessly (adv)"
+    },
+    {
+      "word": "self-conscious",
+      "pos": "adj",
+      "ipa": "/ˌselfˈkɒnʃəs/",
+      "vi": "Hay ngượng, tự ti",
+      "example": "She feels self-conscious about her accent.",
+      "collocation": "self-conscious about · painfully self-conscious",
+      "synonyms": "insecure · awkward · shy"
+    },
+    {
+      "word": "sociable",
+      "pos": "adj",
+      "ipa": "/ˈsəʊʃəbl/",
+      "vi": "Hoà đồng, thích giao thiệp",
+      "example": "He is sociable and makes friends easily.",
+      "collocation": "a sociable person · warm and sociable",
+      "synonyms": "outgoing · friendly · gregarious",
+      "forms": "sociability (n)"
+    },
+    {
+      "word": "stubborn",
+      "pos": "adj",
+      "ipa": "/ˈstʌbən/",
+      "vi": "Bướng bỉnh, cứng đầu",
+      "example": "He is too stubborn to admit he was wrong.",
+      "collocation": "stubborn and proud · a stubborn streak · as stubborn as a mule",
+      "synonyms": "obstinate · headstrong · inflexible",
+      "forms": "stubbornness (n)"
+    },
+    {
+      "word": "tenacious",
+      "pos": "adj",
+      "ipa": "/təˈneɪʃəs/",
+      "vi": "Kiên trì, bền chí",
+      "example": "Her tenacious effort finally paid off.",
+      "collocation": "tenacious and determined · a tenacious spirit",
+      "synonyms": "persistent · dogged · determined",
+      "forms": "tenacity (n)"
+    },
+    {
+      "word": "timid",
+      "pos": "adj",
+      "ipa": "/ˈtɪmɪd/",
+      "vi": "Rụt rè, nhút nhát",
+      "example": "The timid boy hid behind his mother.",
+      "collocation": "a timid child · timid and shy · rather timid",
+      "synonyms": "shy · nervous · fearful",
+      "forms": "timidity (n)"
+    },
+    {
+      "word": "versatile",
+      "pos": "adj",
+      "ipa": "/ˈvɜːsətaɪl/",
+      "vi": "Đa tài, linh hoạt",
+      "example": "She is a versatile and talented actor.",
+      "collocation": "a versatile performer · highly versatile",
+      "synonyms": "adaptable · all-round · flexible",
+      "forms": "versatility (n)"
+    },
+    {
+      "word": "vivacious",
+      "pos": "adj",
+      "ipa": "/vɪˈveɪʃəs/",
+      "vi": "Sôi nổi, sinh động",
+      "example": "She has a warm, vivacious personality.",
+      "collocation": "a vivacious personality · bright and vivacious",
+      "synonyms": "lively · vibrant · bubbly"
+    },
+    {
+      "word": "witty",
+      "pos": "adj",
+      "ipa": "/ˈwɪti/",
+      "vi": "Hóm hỉnh, dí dỏm",
+      "example": "His witty remarks made everyone laugh.",
+      "collocation": "a witty remark · quick and witty · witty humour",
+      "synonyms": "humorous · clever · sharp",
+      "forms": "wit (n)"
+    },
+    {
+      "word": "aloof",
+      "pos": "adj",
+      "ipa": "/əˈluːf/",
+      "vi": "Xa cách, lạnh lùng",
+      "example": "She seemed aloof at first, but is kind.",
+      "collocation": "seem aloof · remain aloof · cold and aloof",
+      "synonyms": "distant · detached · standoffish"
+    },
+    {
+      "word": "candid",
+      "pos": "adj",
+      "ipa": "/ˈkændɪd/",
+      "vi": "Thẳng thắn, thành thật",
+      "example": "He was refreshingly candid about his failures.",
+      "collocation": "a candid answer · brutally candid · candid about",
+      "synonyms": "frank · honest · outspoken",
+      "forms": "candour (n) · candidly (adv)"
+    },
+    {
+      "word": "compassionate",
+      "pos": "adj",
+      "ipa": "/kəmˈpæʃənət/",
+      "vi": "Giàu lòng trắc ẩn",
+      "example": "She is a warm, compassionate nurse.",
+      "collocation": "a compassionate person · deeply compassionate",
+      "synonyms": "kind · caring · sympathetic",
+      "forms": "compassion (n)"
+    },
+    {
+      "word": "charismatic",
+      "pos": "adj",
+      "ipa": "/ˌkærɪzˈmætɪk/",
+      "vi": "Lôi cuốn, có sức hút",
+      "example": "The charismatic leader inspired millions.",
+      "collocation": "a charismatic leader · charismatic and confident",
+      "synonyms": "magnetic · captivating · compelling",
+      "forms": "charisma (n)"
+    }
+  ]
+}
