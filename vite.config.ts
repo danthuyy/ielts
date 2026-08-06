@@ -77,7 +77,13 @@ export default defineConfig(({ command }) => ({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,woff2}'],
+        // index.html is deliberately NOT precached. Precaching it makes
+        // `precacheAndRoute`'s directoryIndex serve the cached copy for a
+        // navigation to `/ielts/`, cache-first — which shadows the NetworkFirst
+        // route below and is the exact behaviour that pinned the app to an old
+        // snapshot. The entry point must come from the network; the hashed
+        // bundles it points at are what get precached.
+        globPatterns: ['**/*.{js,css,png,svg,woff2}'],
         cleanupOutdatedCaches: true,
         // Takes control on the very first visit instead of waiting for the next
         // page load. Without it the first session runs uncontrolled, and an
@@ -115,6 +121,12 @@ export default defineConfig(({ command }) => ({
               // A slow-but-online connection should still wait a moment for the
               // fresh copy before giving up to the cached one.
               networkTimeoutSeconds: 4,
+              // Bypass GitHub Pages' max-age=600 on index.html. Without this the
+              // "network" fetch is answered by the browser's 10-minute HTTP
+              // cache, so a fresh deploy still would not show for those ten
+              // minutes. Offline is unaffected: the fetch simply fails and falls
+              // back to the app-shell cache below.
+              fetchOptions: { cache: 'no-store' },
               expiration: { maxEntries: 4 },
               cacheableResponse: { statuses: [200] },
             },

@@ -68,11 +68,25 @@ nó trỏ tới đúng bộ bundle của bản chụp ấy. Cộng với hash-ro
 giờ điều hướng lại sau khi vào) nên worker hiếm khi có dịp tự kiểm tra bản mới —
 điểm vào có thể đông cứng nhiều ngày trong khi bundle mới nằm chờ trên server.
 
-**Cách sửa tận gốc** (trong `vite.config.ts`): tắt route fallback đó
-(`navigateFallback: null`) và cho điều hướng chạy **NetworkFirst**. Máy còn mạng
-thì luôn tải `index.html` mới nhất → bundle mới nhất; mất mạng mới rơi về bản
-cache lần online gần nhất. Bundle có hash nên vẫn cache-first, đúng và miễn phí.
-Từ khi một máy tải được bản có NetworkFirst, nó **không thể kẹt lại** nữa.
+**Cách sửa tận gốc** (trong `vite.config.ts`) gồm ba mảnh, thiếu một là chưa ăn:
+
+1. `navigateFallback: null` — bỏ route fallback cache-first.
+2. **Không precache `index.html`** (bỏ `html` khỏi `globPatterns`). Đây là mảnh
+   dễ sót nhất: nếu `index.html` còn trong precache, `precacheAndRoute` có
+   `directoryIndex: 'index.html'` sẽ phục vụ nó cache-first cho `/ielts/`, chặn
+   trước cả route NetworkFirst. Lần sửa đầu chỉ bỏ `navigateFallback` mà vẫn để
+   `html` trong precache → tải lại thường vẫn ra bản cũ, cache `app-shell` rỗng.
+3. Route `NetworkFirst` cho `request.mode === 'navigate'`, kèm
+   `fetchOptions: { cache: 'no-store' }` để bỏ qua luôn cache HTTP `max-age=600`
+   của GitHub — không có nó thì "fetch mạng" vẫn bị cache HTTP 10 phút trả bản cũ.
+
+Kết quả: máy còn mạng luôn tải `index.html` mới nhất → bundle mới nhất; mất mạng
+mới rơi về bản `app-shell` cache lần online gần nhất. Bundle có hash nên vẫn nằm
+precache cache-first. Từ khi một máy tải được bản này, nó **không thể kẹt** nữa.
+
+Cách nhận biết sửa đã ăn: sau khi worker mới điều khiển, danh sách Cache Storage
+phải có `app-shell`, và tải lại thường (không xoá cache) phải nhảy sang mã commit
+mới. Đã kiểm chứng end-to-end trên site thật đúng như vậy.
 
 Với máy đã lỡ kẹt sẵn (chạy app cũ + worker cũ), không có cách nào đẩy code tới
 một client mà worker của nó không chịu bàn giao — đó là giới hạn nền tảng. Ba
