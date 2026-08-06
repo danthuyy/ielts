@@ -1,0 +1,234 @@
+{
+  "id": "topic_health",
+  "title": "Chủ đề: Sức khoẻ",
+  "description": "Từ vựng IELTS chủ đề sức khoẻ, bệnh tật và lối sống",
+  "date": "2026-08-07",
+  "tags": ["health", "society"],
+  "words": [
+    {
+      "word": "obesity",
+      "pos": "n",
+      "ipa": "/əʊˈbiːsəti/",
+      "vi": "Bệnh béo phì",
+      "example": "Childhood obesity has become a serious concern.",
+      "collocation": "childhood obesity · rising obesity · tackle obesity",
+      "synonyms": "overweight · corpulence"
+    },
+    {
+      "word": "sedentary",
+      "pos": "adj",
+      "ipa": "/ˈsedəntri/",
+      "vi": "Ít vận động, tĩnh tại",
+      "example": "A sedentary lifestyle increases health risks.",
+      "collocation": "sedentary lifestyle · sedentary job",
+      "synonyms": "inactive · desk-bound"
+    },
+    {
+      "word": "outbreak",
+      "pos": "n",
+      "ipa": "/ˈaʊtbreɪk/",
+      "vi": "Sự bùng phát (dịch bệnh)",
+      "example": "Health workers rushed to contain the outbreak.",
+      "collocation": "disease outbreak · flu outbreak · contain an outbreak",
+      "synonyms": "epidemic · flare-up"
+    },
+    {
+      "word": "contagious",
+      "pos": "adj",
+      "ipa": "/kənˈteɪdʒəs/",
+      "vi": "Dễ lây",
+      "example": "Measles is highly contagious.",
+      "collocation": "highly contagious · contagious disease",
+      "synonyms": "infectious · transmissible"
+    },
+    {
+      "word": "immune",
+      "pos": "adj",
+      "ipa": "/ɪˈmjuːn/",
+      "vi": "Miễn dịch",
+      "example": "Exercise can strengthen the immune system.",
+      "collocation": "immune system · immune response · immune to",
+      "synonyms": "resistant · protected"
+    },
+    {
+      "word": "nutritious",
+      "pos": "adj",
+      "ipa": "/njuˈtrɪʃəs/",
+      "vi": "Bổ dưỡng",
+      "example": "A nutritious breakfast improves concentration.",
+      "collocation": "nutritious food · nutritious diet · highly nutritious",
+      "synonyms": "wholesome · nourishing · healthy"
+    },
+    {
+      "word": "ailment",
+      "pos": "n",
+      "ipa": "/ˈeɪlmənt/",
+      "vi": "Bệnh nhẹ, chứng bệnh",
+      "example": "Pharmacists can advise on minor ailments.",
+      "collocation": "common ailment · minor ailment · treat an ailment",
+      "synonyms": "illness · complaint · disorder"
+    },
+    {
+      "word": "vitality",
+      "pos": "n",
+      "ipa": "/vaɪˈtæləti/",
+      "vi": "Sức sống, sinh lực",
+      "example": "Regular exercise restores vitality.",
+      "collocation": "youthful vitality · full of vitality",
+      "synonyms": "energy · vigour · liveliness"
+    },
+    {
+      "word": "diagnose",
+      "pos": "v",
+      "ipa": "/ˈdaɪəɡnəʊz/",
+      "vi": "Chẩn đoán",
+      "example": "Doctors diagnosed the illness early.",
+      "collocation": "diagnose a disease · early diagnose · correctly diagnose",
+      "synonyms": "identify · detect"
+    },
+    {
+      "word": "symptom",
+      "pos": "n",
+      "ipa": "/ˈsɪmptəm/",
+      "vi": "Triệu chứng",
+      "example": "A high fever is a common symptom of flu.",
+      "collocation": "common symptom · mild symptom · show symptoms",
+      "synonyms": "sign · indication"
+    },
+    {
+      "word": "preventive",
+      "pos": "adj",
+      "ipa": "/prɪˈventɪv/",
+      "vi": "Phòng ngừa",
+      "example": "Preventive care reduces long-term costs.",
+      "collocation": "preventive measures · preventive care",
+      "synonyms": "precautionary · protective"
+    },
+    {
+      "word": "malnutrition",
+      "pos": "n",
+      "ipa": "/ˌmælnjuˈtrɪʃən/",
+      "vi": "Suy dinh dưỡng",
+      "example": "Poverty often leads to malnutrition.",
+      "collocation": "severe malnutrition · suffer from malnutrition",
+      "synonyms": "undernourishment · starvation"
+    },
+    {
+      "word": "recuperate",
+      "pos": "v",
+      "ipa": "/rɪˈkuːpəreɪt/",
+      "vi": "Hồi phục, dưỡng bệnh",
+      "example": "She needs a week to recuperate after surgery.",
+      "collocation": "recuperate from illness · time to recuperate",
+      "synonyms": "recover · convalesce · heal"
+    },
+    {
+      "word": "hygiene",
+      "pos": "n",
+      "ipa": "/ˈhaɪdʒiːn/",
+      "vi": "Vệ sinh",
+      "example": "Good hygiene prevents the spread of disease.",
+      "collocation": "personal hygiene · good hygiene · food hygiene",
+      "synonyms": "cleanliness · sanitation"
+    },
+    {
+      "word": "addiction",
+      "pos": "n",
+      "ipa": "/əˈdɪkʃən/",
+      "vi": "Sự nghiện",
+      "example": "Support groups help people overcome addiction.",
+      "collocation": "drug addiction · fight addiction · addiction to",
+      "synonyms": "dependency · craving"
+    },
+    {
+      "word": "strenuous",
+      "pos": "adj",
+      "ipa": "/ˈstrenjuəs/",
+      "vi": "Gắng sức, vất vả",
+      "example": "Avoid strenuous exercise when you are ill.",
+      "collocation": "strenuous exercise · strenuous activity",
+      "synonyms": "arduous · demanding · vigorous"
+    },
+    {
+      "word": "therapeutic",
+      "pos": "adj",
+      "ipa": "/ˌθerəˈpjuːtɪk/",
+      "vi": "Có tính trị liệu",
+      "example": "Gardening can have a therapeutic effect.",
+      "collocation": "therapeutic effect · therapeutic value",
+      "synonyms": "healing · restorative · curative"
+    },
+    {
+      "word": "susceptible",
+      "pos": "adj",
+      "ipa": "/səˈseptəbəl/",
+      "vi": "Dễ mắc, dễ bị",
+      "example": "Older people are more susceptible to infection.",
+      "collocation": "susceptible to · particularly susceptible",
+      "synonyms": "prone · vulnerable · liable"
+    },
+    {
+      "word": "longevity",
+      "pos": "n",
+      "ipa": "/lɒnˈdʒevəti/",
+      "vi": "Sự trường thọ",
+      "example": "A healthy diet is linked to longevity.",
+      "collocation": "increased longevity · longevity of life",
+      "synonyms": "long life · durability"
+    },
+    {
+      "word": "inhale",
+      "pos": "v",
+      "ipa": "/ɪnˈheɪl/",
+      "vi": "Hít vào",
+      "example": "Do not inhale the fumes.",
+      "collocation": "inhale smoke · inhale deeply",
+      "synonyms": "breathe in"
+    },
+    {
+      "word": "wholesome",
+      "pos": "adj",
+      "ipa": "/ˈhəʊlsəm/",
+      "vi": "Lành mạnh, bổ ích",
+      "example": "The children were given wholesome meals.",
+      "collocation": "wholesome food · wholesome diet",
+      "synonyms": "healthy · nourishing · nutritious"
+    },
+    {
+      "word": "fatigue",
+      "pos": "n",
+      "ipa": "/fəˈtiːɡ/",
+      "vi": "Sự mệt mỏi",
+      "example": "Long shifts cause fatigue and mistakes.",
+      "collocation": "chronic fatigue · mental fatigue · combat fatigue",
+      "synonyms": "tiredness · exhaustion · weariness"
+    },
+    {
+      "word": "remedy",
+      "pos": "n",
+      "ipa": "/ˈremədi/",
+      "vi": "Phương thuốc, cách chữa",
+      "example": "Honey is a traditional remedy for a sore throat.",
+      "collocation": "natural remedy · herbal remedy · a remedy for",
+      "synonyms": "cure · treatment · solution"
+    },
+    {
+      "word": "deteriorate",
+      "pos": "v",
+      "ipa": "/dɪˈtɪəriəreɪt/",
+      "vi": "Xấu đi, suy giảm",
+      "example": "His condition deteriorated overnight.",
+      "collocation": "health deteriorate · rapidly deteriorate",
+      "synonyms": "worsen · decline · degenerate"
+    },
+    {
+      "word": "sanitation",
+      "pos": "n",
+      "ipa": "/ˌsænɪˈteɪʃən/",
+      "vi": "Điều kiện vệ sinh",
+      "example": "Poor sanitation spreads disease.",
+      "collocation": "poor sanitation · clean sanitation · sanitation system",
+      "synonyms": "hygiene · public health"
+    }
+  ]
+}

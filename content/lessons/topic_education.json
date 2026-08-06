@@ -1,0 +1,234 @@
+{
+  "id": "topic_education",
+  "title": "Chủ đề: Giáo dục",
+  "description": "Từ vựng IELTS chủ đề giáo dục, học tập và trường học",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "curriculum",
+      "pos": "n",
+      "ipa": "/kəˈrɪkjələm/",
+      "vi": "Chương trình giảng dạy",
+      "example": "The school revised its curriculum to include coding.",
+      "collocation": "national curriculum · curriculum design · broad curriculum",
+      "synonyms": "syllabus · course of study"
+    },
+    {
+      "word": "literacy",
+      "pos": "n",
+      "ipa": "/ˈlɪtərəsi/",
+      "vi": "Sự biết đọc biết viết",
+      "example": "Adult literacy programmes help people find better jobs.",
+      "collocation": "adult literacy · digital literacy · literacy rate",
+      "synonyms": "reading ability"
+    },
+    {
+      "word": "tuition",
+      "pos": "n",
+      "ipa": "/tjuˈɪʃən/",
+      "vi": "Học phí; sự dạy kèm",
+      "example": "University tuition fees have risen sharply.",
+      "collocation": "tuition fees · private tuition · pay tuition",
+      "synonyms": "teaching · instruction"
+    },
+    {
+      "word": "vocational",
+      "pos": "adj",
+      "ipa": "/vəʊˈkeɪʃənəl/",
+      "vi": "Thuộc dạy nghề",
+      "example": "Vocational courses prepare students for specific trades.",
+      "collocation": "vocational training · vocational course · vocational qualification",
+      "synonyms": "job-oriented · practical"
+    },
+    {
+      "word": "rote",
+      "pos": "n",
+      "ipa": "/rəʊt/",
+      "vi": "Học vẹt, học thuộc lòng",
+      "example": "Rote learning does little to develop critical thinking.",
+      "collocation": "rote learning · learn by rote",
+      "synonyms": "memorisation · mechanical repetition"
+    },
+    {
+      "word": "discipline",
+      "pos": "n",
+      "ipa": "/ˈdɪsəplɪn/",
+      "vi": "Kỷ luật; môn học",
+      "example": "Good discipline helps students focus in class.",
+      "collocation": "strict discipline · self-discipline · academic discipline",
+      "synonyms": "self-control · field of study"
+    },
+    {
+      "word": "enrol",
+      "pos": "v",
+      "ipa": "/ɪnˈrəʊl/",
+      "vi": "Ghi danh, đăng ký",
+      "example": "Thousands of students enrol in online courses each year.",
+      "collocation": "enrol in a course · enrol at a university",
+      "synonyms": "sign up · register"
+    },
+    {
+      "word": "undergraduate",
+      "pos": "n",
+      "ipa": "/ˌʌndəˈɡrædʒuət/",
+      "vi": "Sinh viên đại học",
+      "example": "She is an undergraduate studying economics.",
+      "collocation": "undergraduate degree · undergraduate student",
+      "synonyms": "bachelor's student"
+    },
+    {
+      "word": "scholarship",
+      "pos": "n",
+      "ipa": "/ˈskɒləʃɪp/",
+      "vi": "Học bổng",
+      "example": "He won a scholarship to study abroad.",
+      "collocation": "full scholarship · win a scholarship · scholarship programme",
+      "synonyms": "grant · bursary · award"
+    },
+    {
+      "word": "compulsory",
+      "pos": "adj",
+      "ipa": "/kəmˈpʌlsəri/",
+      "vi": "Bắt buộc",
+      "example": "Education is compulsory until the age of sixteen.",
+      "collocation": "compulsory education · compulsory subject · compulsory attendance",
+      "synonyms": "mandatory · obligatory · required"
+    },
+    {
+      "word": "pedagogy",
+      "pos": "n",
+      "ipa": "/ˈpedəɡɒdʒi/",
+      "vi": "Phương pháp sư phạm",
+      "example": "New pedagogy focuses on active learning.",
+      "collocation": "modern pedagogy · pedagogy and practice",
+      "synonyms": "teaching method · instruction"
+    },
+    {
+      "word": "aptitude",
+      "pos": "n",
+      "ipa": "/ˈæptɪtjuːd/",
+      "vi": "Năng khiếu, khả năng",
+      "example": "She has a natural aptitude for languages.",
+      "collocation": "aptitude for · natural aptitude · aptitude test",
+      "synonyms": "talent · flair · ability"
+    },
+    {
+      "word": "truancy",
+      "pos": "n",
+      "ipa": "/ˈtruːənsi/",
+      "vi": "Sự trốn học",
+      "example": "Schools are trying to reduce truancy among teenagers.",
+      "collocation": "persistent truancy · tackle truancy",
+      "synonyms": "absenteeism · playing truant"
+    },
+    {
+      "word": "holistic",
+      "pos": "adj",
+      "ipa": "/həˈlɪstɪk/",
+      "vi": "Toàn diện",
+      "example": "A holistic approach develops the whole child.",
+      "collocation": "holistic approach · holistic education · holistic development",
+      "synonyms": "comprehensive · all-round"
+    },
+    {
+      "word": "assessment",
+      "pos": "n",
+      "ipa": "/əˈsesmənt/",
+      "vi": "Sự đánh giá",
+      "example": "Continuous assessment reduces exam pressure.",
+      "collocation": "continuous assessment · formal assessment · assessment criteria",
+      "synonyms": "evaluation · appraisal"
+    },
+    {
+      "word": "motivation",
+      "pos": "n",
+      "ipa": "/ˌməʊtɪˈveɪʃən/",
+      "vi": "Động lực",
+      "example": "Praise can boost a student's motivation.",
+      "collocation": "intrinsic motivation · lack of motivation · boost motivation",
+      "synonyms": "drive · incentive · enthusiasm"
+    },
+    {
+      "word": "prestigious",
+      "pos": "adj",
+      "ipa": "/preˈstɪdʒəs/",
+      "vi": "Danh giá, uy tín",
+      "example": "He studied at a prestigious university.",
+      "collocation": "prestigious university · prestigious award",
+      "synonyms": "esteemed · renowned · distinguished"
+    },
+    {
+      "word": "dropout",
+      "pos": "n",
+      "ipa": "/ˈdrɒpaʊt/",
+      "vi": "Người bỏ học",
+      "example": "The dropout rate fell after new support was introduced.",
+      "collocation": "school dropout · dropout rate · high dropout",
+      "synonyms": "quitter · leaver"
+    },
+    {
+      "word": "faculty",
+      "pos": "n",
+      "ipa": "/ˈfækəlti/",
+      "vi": "Khoa; đội ngũ giảng viên",
+      "example": "She joined the faculty of medicine.",
+      "collocation": "faculty of law · faculty member · teaching faculty",
+      "synonyms": "department · academic staff"
+    },
+    {
+      "word": "mentor",
+      "pos": "n",
+      "ipa": "/ˈmentɔː/",
+      "vi": "Người cố vấn, dìu dắt",
+      "example": "A good mentor can shape a young career.",
+      "collocation": "act as a mentor · a trusted mentor",
+      "synonyms": "adviser · guide · coach"
+    },
+    {
+      "word": "plagiarism",
+      "pos": "n",
+      "ipa": "/ˈpleɪdʒərɪzəm/",
+      "vi": "Sự đạo văn",
+      "example": "Universities take plagiarism very seriously.",
+      "collocation": "commit plagiarism · avoid plagiarism",
+      "synonyms": "copying · cheating"
+    },
+    {
+      "word": "comprehension",
+      "pos": "n",
+      "ipa": "/ˌkɒmprɪˈhenʃən/",
+      "vi": "Sự hiểu, khả năng hiểu",
+      "example": "Reading widely improves comprehension.",
+      "collocation": "reading comprehension · beyond comprehension",
+      "synonyms": "understanding · grasp"
+    },
+    {
+      "word": "tertiary",
+      "pos": "adj",
+      "ipa": "/ˈtɜːʃəri/",
+      "vi": "Bậc cao đẳng/đại học",
+      "example": "Tertiary education is increasingly common.",
+      "collocation": "tertiary education · tertiary level",
+      "synonyms": "higher · post-secondary"
+    },
+    {
+      "word": "numeracy",
+      "pos": "n",
+      "ipa": "/ˈnjuːmərəsi/",
+      "vi": "Khả năng tính toán",
+      "example": "Employers value numeracy and literacy.",
+      "collocation": "basic numeracy · numeracy skills",
+      "synonyms": "maths ability"
+    },
+    {
+      "word": "lecture",
+      "pos": "n",
+      "ipa": "/ˈlektʃə/",
+      "vi": "Bài giảng",
+      "example": "Students attended a lecture on climate change.",
+      "collocation": "attend a lecture · give a lecture · lecture hall",
+      "synonyms": "talk · presentation"
+    }
+  ]
+}

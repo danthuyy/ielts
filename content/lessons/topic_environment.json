@@ -1,0 +1,234 @@
+{
+  "id": "topic_environment",
+  "title": "Chủ đề: Môi trường",
+  "description": "Từ vựng IELTS chủ đề môi trường, biến đổi khí hậu và bảo tồn",
+  "date": "2026-08-07",
+  "tags": ["environment", "society"],
+  "words": [
+    {
+      "word": "emission",
+      "pos": "n",
+      "ipa": "/ɪˈmɪʃən/",
+      "vi": "Khí thải, sự phát thải",
+      "example": "Governments are under pressure to cut carbon emissions from power stations.",
+      "collocation": "carbon emissions · reduce emissions · greenhouse gas emissions",
+      "synonyms": "discharge · release · output"
+    },
+    {
+      "word": "deforestation",
+      "pos": "n",
+      "ipa": "/ˌdiːˌfɒrɪˈsteɪʃən/",
+      "vi": "Nạn phá rừng",
+      "example": "Deforestation destroys the habitats of countless species.",
+      "collocation": "large-scale deforestation · combat deforestation · rate of deforestation",
+      "synonyms": "clearance of forests · logging"
+    },
+    {
+      "word": "sustainable",
+      "pos": "adj",
+      "ipa": "/səˈsteɪnəbəl/",
+      "vi": "Bền vững",
+      "example": "The city is investing in sustainable transport such as cycling and trams.",
+      "collocation": "sustainable development · sustainable growth · environmentally sustainable",
+      "synonyms": "viable · enduring · eco-friendly"
+    },
+    {
+      "word": "renewable",
+      "pos": "adj",
+      "ipa": "/rɪˈnjuːəbəl/",
+      "vi": "Có thể tái tạo",
+      "example": "Wind and solar are renewable sources of energy.",
+      "collocation": "renewable energy · renewable resources · renewable sources",
+      "synonyms": "sustainable · inexhaustible"
+    },
+    {
+      "word": "pollutant",
+      "pos": "n",
+      "ipa": "/pəˈluːtənt/",
+      "vi": "Chất gây ô nhiễm",
+      "example": "Factories release harmful pollutants into rivers.",
+      "collocation": "airborne pollutant · toxic pollutant · release pollutants",
+      "synonyms": "contaminant · toxin"
+    },
+    {
+      "word": "conservation",
+      "pos": "n",
+      "ipa": "/ˌkɒnsəˈveɪʃən/",
+      "vi": "Sự bảo tồn",
+      "example": "Conservation efforts have helped the tiger population recover.",
+      "collocation": "wildlife conservation · conservation efforts · energy conservation",
+      "synonyms": "preservation · protection · safeguarding"
+    },
+    {
+      "word": "biodiversity",
+      "pos": "n",
+      "ipa": "/ˌbaɪəʊdaɪˈvɜːsəti/",
+      "vi": "Đa dạng sinh học",
+      "example": "Rainforests are home to extraordinary biodiversity.",
+      "collocation": "rich biodiversity · loss of biodiversity · protect biodiversity",
+      "synonyms": "biological diversity · variety of life"
+    },
+    {
+      "word": "ecosystem",
+      "pos": "n",
+      "ipa": "/ˈiːkəʊsɪstəm/",
+      "vi": "Hệ sinh thái",
+      "example": "Pollution can upset the balance of a fragile ecosystem.",
+      "collocation": "fragile ecosystem · marine ecosystem · disrupt an ecosystem",
+      "synonyms": "biome · natural environment"
+    },
+    {
+      "word": "degradation",
+      "pos": "n",
+      "ipa": "/ˌdeɡrəˈdeɪʃən/",
+      "vi": "Sự suy thoái",
+      "example": "Overfarming leads to the degradation of the soil.",
+      "collocation": "environmental degradation · land degradation · soil degradation",
+      "synonyms": "deterioration · decline · erosion"
+    },
+    {
+      "word": "depletion",
+      "pos": "n",
+      "ipa": "/dɪˈpliːʃən/",
+      "vi": "Sự cạn kiệt",
+      "example": "The depletion of natural resources threatens future generations.",
+      "collocation": "resource depletion · ozone depletion · depletion of stocks",
+      "synonyms": "exhaustion · reduction · using up"
+    },
+    {
+      "word": "carbon footprint",
+      "pos": "n",
+      "ipa": "/ˈkɑːbən ˈfʊtprɪnt/",
+      "vi": "Dấu chân carbon (lượng khí thải gây ra)",
+      "example": "Eating less meat can shrink your carbon footprint.",
+      "collocation": "reduce your carbon footprint · a large carbon footprint",
+      "synonyms": "carbon emissions · environmental impact"
+    },
+    {
+      "word": "curb",
+      "pos": "v",
+      "ipa": "/kɜːb/",
+      "vi": "Kiềm chế, hạn chế",
+      "example": "Stricter laws are needed to curb air pollution.",
+      "collocation": "curb pollution · curb emissions · curb spending",
+      "synonyms": "restrain · limit · rein in"
+    },
+    {
+      "word": "offset",
+      "pos": "v",
+      "ipa": "/ˌɒfˈset/",
+      "vi": "Bù đắp, cân bằng lại",
+      "example": "Companies plant trees to offset their carbon emissions.",
+      "collocation": "offset emissions · offset the cost · carbon offset",
+      "synonyms": "counterbalance · compensate for · cancel out"
+    },
+    {
+      "word": "contamination",
+      "pos": "n",
+      "ipa": "/kənˌtæmɪˈneɪʃən/",
+      "vi": "Sự nhiễm bẩn, ô nhiễm",
+      "example": "The oil spill caused widespread contamination of the coast.",
+      "collocation": "water contamination · risk of contamination · food contamination",
+      "synonyms": "pollution · poisoning · tainting"
+    },
+    {
+      "word": "landfill",
+      "pos": "n",
+      "ipa": "/ˈlændfɪl/",
+      "vi": "Bãi chôn lấp rác",
+      "example": "Most household waste still ends up in landfill.",
+      "collocation": "landfill site · sent to landfill · landfill waste",
+      "synonyms": "dump · rubbish tip"
+    },
+    {
+      "word": "recycle",
+      "pos": "v",
+      "ipa": "/ˌriːˈsaɪkəl/",
+      "vi": "Tái chế",
+      "example": "Households are encouraged to recycle glass, paper and plastic.",
+      "collocation": "recycle waste · recycle materials · recycled paper",
+      "synonyms": "reuse · reprocess · reclaim"
+    },
+    {
+      "word": "greenhouse gas",
+      "pos": "n",
+      "ipa": "/ˈɡriːnhaʊs ɡæs/",
+      "vi": "Khí nhà kính",
+      "example": "Carbon dioxide is the most common greenhouse gas.",
+      "collocation": "greenhouse gas emissions · trap greenhouse gases",
+      "synonyms": "emission · carbon dioxide"
+    },
+    {
+      "word": "drought",
+      "pos": "n",
+      "ipa": "/draʊt/",
+      "vi": "Hạn hán",
+      "example": "A prolonged drought ruined the region's crops.",
+      "collocation": "severe drought · prolonged drought · drought-stricken",
+      "synonyms": "dry spell · water shortage"
+    },
+    {
+      "word": "scarcity",
+      "pos": "n",
+      "ipa": "/ˈskeəsəti/",
+      "vi": "Sự khan hiếm",
+      "example": "Water scarcity is a growing problem in many cities.",
+      "collocation": "water scarcity · food scarcity · scarcity of resources",
+      "synonyms": "shortage · lack · dearth"
+    },
+    {
+      "word": "endangered",
+      "pos": "adj",
+      "ipa": "/ɪnˈdeɪndʒəd/",
+      "vi": "Có nguy cơ tuyệt chủng",
+      "example": "The panda is no longer classified as an endangered species.",
+      "collocation": "endangered species · critically endangered · endangered wildlife",
+      "synonyms": "threatened · at risk · vulnerable"
+    },
+    {
+      "word": "emit",
+      "pos": "v",
+      "ipa": "/ɪˈmɪt/",
+      "vi": "Phát thải, thải ra",
+      "example": "Cars emit gases that pollute the air.",
+      "collocation": "emit carbon dioxide · emit pollutants · emit heat",
+      "synonyms": "give off · discharge · release"
+    },
+    {
+      "word": "deplete",
+      "pos": "v",
+      "ipa": "/dɪˈpliːt/",
+      "vi": "Làm cạn kiệt",
+      "example": "Overfishing has depleted fish stocks in the ocean.",
+      "collocation": "deplete resources · deplete reserves · rapidly deplete",
+      "synonyms": "exhaust · use up · drain"
+    },
+    {
+      "word": "pristine",
+      "pos": "adj",
+      "ipa": "/ˈprɪstiːn/",
+      "vi": "Nguyên sơ, tinh khôi",
+      "example": "Tourists are drawn to the island's pristine beaches.",
+      "collocation": "pristine condition · pristine environment · pristine wilderness",
+      "synonyms": "unspoilt · immaculate · untouched"
+    },
+    {
+      "word": "hazardous",
+      "pos": "adj",
+      "ipa": "/ˈhæzədəs/",
+      "vi": "Nguy hại, độc hại",
+      "example": "Hazardous waste must be disposed of carefully.",
+      "collocation": "hazardous waste · hazardous chemicals · potentially hazardous",
+      "synonyms": "dangerous · harmful · perilous"
+    },
+    {
+      "word": "sewage",
+      "pos": "n",
+      "ipa": "/ˈsuːɪdʒ/",
+      "vi": "Nước thải, nước cống",
+      "example": "Untreated sewage was pumped straight into the sea.",
+      "collocation": "raw sewage · sewage treatment · discharge sewage",
+      "synonyms": "wastewater · effluent"
+    }
+  ]
+}

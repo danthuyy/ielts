@@ -1,0 +1,234 @@
+{
+  "id": "topic_technology",
+  "title": "Chủ đề: Công nghệ",
+  "description": "Từ vựng IELTS chủ đề công nghệ, internet và tự động hoá",
+  "date": "2026-08-07",
+  "tags": ["technology", "media"],
+  "words": [
+    {
+      "word": "innovation",
+      "pos": "n",
+      "ipa": "/ˌɪnəˈveɪʃən/",
+      "vi": "Sự đổi mới, cải tiến",
+      "example": "The company is known for constant innovation.",
+      "collocation": "technological innovation · drive innovation · foster innovation",
+      "synonyms": "invention · advance · breakthrough"
+    },
+    {
+      "word": "automation",
+      "pos": "n",
+      "ipa": "/ˌɔːtəˈmeɪʃən/",
+      "vi": "Sự tự động hoá",
+      "example": "Automation has replaced many routine jobs.",
+      "collocation": "factory automation · automation of tasks",
+      "synonyms": "mechanisation · computerisation"
+    },
+    {
+      "word": "obsolete",
+      "pos": "adj",
+      "ipa": "/ˈɒbsəliːt/",
+      "vi": "Lỗi thời, lạc hậu",
+      "example": "Older phones quickly become obsolete.",
+      "collocation": "become obsolete · obsolete technology",
+      "synonyms": "outdated · antiquated · out of date"
+    },
+    {
+      "word": "surveillance",
+      "pos": "n",
+      "ipa": "/səˈveɪləns/",
+      "vi": "Sự giám sát, theo dõi",
+      "example": "Cities increasingly rely on surveillance cameras.",
+      "collocation": "mass surveillance · under surveillance · surveillance camera",
+      "synonyms": "monitoring · observation"
+    },
+    {
+      "word": "connectivity",
+      "pos": "n",
+      "ipa": "/ˌkɒnekˈtɪvəti/",
+      "vi": "Sự kết nối",
+      "example": "Rural areas often lack reliable connectivity.",
+      "collocation": "internet connectivity · high connectivity",
+      "synonyms": "connection · network access"
+    },
+    {
+      "word": "gadget",
+      "pos": "n",
+      "ipa": "/ˈɡædʒɪt/",
+      "vi": "Thiết bị nhỏ tiện dụng",
+      "example": "He loves buying the latest gadgets.",
+      "collocation": "latest gadget · handy gadget",
+      "synonyms": "device · gizmo · appliance"
+    },
+    {
+      "word": "cutting-edge",
+      "pos": "adj",
+      "ipa": "/ˌkʌtɪŋ ˈedʒ/",
+      "vi": "Tối tân, tiên tiến",
+      "example": "The lab uses cutting-edge equipment.",
+      "collocation": "cutting-edge technology · cutting-edge research",
+      "synonyms": "state-of-the-art · advanced"
+    },
+    {
+      "word": "malware",
+      "pos": "n",
+      "ipa": "/ˈmælweə/",
+      "vi": "Phần mềm độc hại",
+      "example": "The malware spread through email attachments.",
+      "collocation": "malware attack · spread malware",
+      "synonyms": "virus · malicious software"
+    },
+    {
+      "word": "encryption",
+      "pos": "n",
+      "ipa": "/ɪnˈkrɪpʃən/",
+      "vi": "Sự mã hoá",
+      "example": "Encryption keeps online payments secure.",
+      "collocation": "data encryption · strong encryption",
+      "synonyms": "encoding · scrambling"
+    },
+    {
+      "word": "disruptive",
+      "pos": "adj",
+      "ipa": "/dɪsˈrʌptɪv/",
+      "vi": "Có tính đột phá, phá vỡ",
+      "example": "Streaming was a disruptive force in the music industry.",
+      "collocation": "disruptive technology · disruptive innovation",
+      "synonyms": "groundbreaking · revolutionary"
+    },
+    {
+      "word": "seamless",
+      "pos": "adj",
+      "ipa": "/ˈsiːmləs/",
+      "vi": "Liền mạch, trơn tru",
+      "example": "The app offers a seamless user experience.",
+      "collocation": "seamless integration · seamless experience",
+      "synonyms": "smooth · flawless · uninterrupted"
+    },
+    {
+      "word": "prototype",
+      "pos": "n",
+      "ipa": "/ˈprəʊtətaɪp/",
+      "vi": "Nguyên mẫu",
+      "example": "Engineers tested the first prototype of the car.",
+      "collocation": "working prototype · build a prototype",
+      "synonyms": "model · mock-up"
+    },
+    {
+      "word": "bandwidth",
+      "pos": "n",
+      "ipa": "/ˈbændwɪdθ/",
+      "vi": "Băng thông",
+      "example": "Video calls use a lot of bandwidth.",
+      "collocation": "limited bandwidth · high bandwidth",
+      "synonyms": "capacity · data rate"
+    },
+    {
+      "word": "addictive",
+      "pos": "adj",
+      "ipa": "/əˈdɪktɪv/",
+      "vi": "Gây nghiện",
+      "example": "Social media can be highly addictive.",
+      "collocation": "highly addictive · addictive games",
+      "synonyms": "habit-forming · compulsive"
+    },
+    {
+      "word": "interface",
+      "pos": "n",
+      "ipa": "/ˈɪntəfeɪs/",
+      "vi": "Giao diện",
+      "example": "A clean interface makes the app easy to use.",
+      "collocation": "user interface · intuitive interface",
+      "synonyms": "dashboard · display"
+    },
+    {
+      "word": "redundant",
+      "pos": "adj",
+      "ipa": "/rɪˈdʌndənt/",
+      "vi": "Dư thừa; bị mất việc do máy móc",
+      "example": "Automation made many clerical jobs redundant.",
+      "collocation": "make redundant · redundant system",
+      "synonyms": "superfluous · unnecessary"
+    },
+    {
+      "word": "proliferate",
+      "pos": "v",
+      "ipa": "/prəˈlɪfəreɪt/",
+      "vi": "Sinh sôi, lan nhanh",
+      "example": "Fake accounts proliferate on social media.",
+      "collocation": "rapidly proliferate · proliferate online",
+      "synonyms": "multiply · mushroom · spread"
+    },
+    {
+      "word": "streamline",
+      "pos": "v",
+      "ipa": "/ˈstriːmlaɪn/",
+      "vi": "Tinh giản, tối ưu",
+      "example": "Software can streamline everyday tasks.",
+      "collocation": "streamline the process · streamline operations",
+      "synonyms": "simplify · optimise"
+    },
+    {
+      "word": "algorithm",
+      "pos": "n",
+      "ipa": "/ˈælɡərɪðəm/",
+      "vi": "Thuật toán",
+      "example": "The algorithm decides which posts you see.",
+      "collocation": "complex algorithm · recommendation algorithm",
+      "synonyms": "procedure · formula"
+    },
+    {
+      "word": "virtual",
+      "pos": "adj",
+      "ipa": "/ˈvɜːtʃuəl/",
+      "vi": "Ảo",
+      "example": "Virtual meetings have become normal for many workers.",
+      "collocation": "virtual reality · virtual meeting",
+      "synonyms": "simulated · online"
+    },
+    {
+      "word": "inevitable",
+      "pos": "adj",
+      "ipa": "/ɪnˈevɪtəbəl/",
+      "vi": "Không thể tránh khỏi",
+      "example": "Some job losses from automation seem inevitable.",
+      "collocation": "seemingly inevitable · inevitable consequence",
+      "synonyms": "unavoidable · certain"
+    },
+    {
+      "word": "digitise",
+      "pos": "v",
+      "ipa": "/ˈdɪdʒɪtaɪz/",
+      "vi": "Số hoá",
+      "example": "Libraries are digitising their old collections.",
+      "collocation": "digitise records · digitise archives",
+      "synonyms": "computerise · convert to digital"
+    },
+    {
+      "word": "intuitive",
+      "pos": "adj",
+      "ipa": "/ɪnˈtjuːɪtɪv/",
+      "vi": "Trực quan, dễ dùng",
+      "example": "The software is praised for its intuitive design.",
+      "collocation": "intuitive design · intuitive to use",
+      "synonyms": "user-friendly · easy to grasp"
+    },
+    {
+      "word": "glitch",
+      "pos": "n",
+      "ipa": "/ɡlɪtʃ/",
+      "vi": "Trục trặc, lỗi nhỏ",
+      "example": "A software glitch delayed thousands of flights.",
+      "collocation": "technical glitch · minor glitch · software glitch",
+      "synonyms": "fault · bug · hitch"
+    },
+    {
+      "word": "revolutionise",
+      "pos": "v",
+      "ipa": "/ˌrevəˈluːʃənaɪz/",
+      "vi": "Cách mạng hoá",
+      "example": "Smartphones revolutionised the way we communicate.",
+      "collocation": "revolutionise the industry · revolutionise the way",
+      "synonyms": "transform · overhaul"
+    }
+  ]
+}
