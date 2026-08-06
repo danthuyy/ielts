@@ -1,0 +1,233 @@
+{
+  "id": "topic_ageing",
+  "title": "Chủ đề: Dân số & Tuổi già",
+  "description": "Từ vựng IELTS chủ đề dân số, lão hoá và xã hội",
+  "date": "2026-08-07",
+  "tags": ["society", "health"],
+  "words": [
+    {
+      "word": "demographic",
+      "pos": "adj",
+      "ipa": "/ˌdeməˈɡræfɪk/",
+      "vi": "Thuộc nhân khẩu học",
+      "example": "The country faces a major demographic shift.",
+      "collocation": "demographic change · demographic trend · a demographic shift",
+      "synonyms": "population-related",
+      "forms": "demography (n)"
+    },
+    {
+      "word": "pension",
+      "pos": "n",
+      "ipa": "/ˈpenʃən/",
+      "vi": "Lương hưu",
+      "example": "Many retirees rely on a state pension.",
+      "collocation": "a state pension · draw a pension · a pension scheme",
+      "synonyms": "retirement income"
+    },
+    {
+      "word": "retirement",
+      "pos": "n",
+      "ipa": "/rɪˈtaɪəmənt/",
+      "vi": "Sự nghỉ hưu",
+      "example": "He took early retirement at sixty.",
+      "collocation": "early retirement · take retirement · a comfortable retirement",
+      "synonyms": "giving up work",
+      "forms": "retire (v) · retired (adj)"
+    },
+    {
+      "word": "elderly",
+      "pos": "adj",
+      "ipa": "/ˈeldəli/",
+      "vi": "Cao tuổi",
+      "example": "The scheme helps elderly people at home.",
+      "collocation": "the elderly · an elderly couple · care for the elderly",
+      "synonyms": "aged · old · senior"
+    },
+    {
+      "word": "geriatric",
+      "pos": "adj",
+      "ipa": "/ˌdʒeriˈætrɪk/",
+      "vi": "Thuộc lão khoa",
+      "example": "The hospital has a geriatric ward.",
+      "collocation": "geriatric care · geriatric medicine · a geriatric ward",
+      "synonyms": "elderly-care"
+    },
+    {
+      "word": "dementia",
+      "pos": "n",
+      "ipa": "/dɪˈmenʃə/",
+      "vi": "Chứng sa sút trí tuệ",
+      "example": "Dementia mainly affects older people.",
+      "collocation": "suffer from dementia · early dementia · dementia care",
+      "synonyms": "memory loss"
+    },
+    {
+      "word": "frail",
+      "pos": "adj",
+      "ipa": "/freɪl/",
+      "vi": "Yếu ớt, mảnh mai",
+      "example": "Her grandmother is old and frail.",
+      "collocation": "a frail old man · frail health · increasingly frail",
+      "synonyms": "weak · delicate · infirm",
+      "forms": "frailty (n)"
+    },
+    {
+      "word": "generational",
+      "pos": "adj",
+      "ipa": "/ˌdʒenəˈreɪʃənl/",
+      "vi": "Thuộc thế hệ",
+      "example": "There is a generational divide over the issue.",
+      "collocation": "a generational gap · a generational divide · generational change",
+      "synonyms": "age-related"
+    },
+    {
+      "word": "dependency",
+      "pos": "n",
+      "ipa": "/dɪˈpendənsi/",
+      "vi": "Sự lệ thuộc",
+      "example": "An ageing population raises the dependency ratio.",
+      "collocation": "the dependency ratio · financial dependency · reduce dependency",
+      "synonyms": "reliance · dependence",
+      "forms": "dependent (adj)"
+    },
+    {
+      "word": "birthrate",
+      "pos": "n",
+      "ipa": "/ˈbɜːθreɪt/",
+      "vi": "Tỉ lệ sinh",
+      "example": "The country has a falling birthrate.",
+      "collocation": "a falling birthrate · a low birthrate · a high birthrate",
+      "synonyms": "fertility rate"
+    },
+    {
+      "word": "mortality",
+      "pos": "n",
+      "ipa": "/mɔːˈtæləti/",
+      "vi": "Tỉ lệ tử vong",
+      "example": "Infant mortality has fallen sharply.",
+      "collocation": "infant mortality · a high mortality rate · reduce mortality",
+      "synonyms": "death rate"
+    },
+    {
+      "word": "senior",
+      "pos": "n",
+      "ipa": "/ˈsiːniə/",
+      "vi": "Người cao tuổi",
+      "example": "The park is popular with seniors.",
+      "collocation": "a senior citizen · discounts for seniors",
+      "synonyms": "elderly person · pensioner"
+    },
+    {
+      "word": "caregiver",
+      "pos": "n",
+      "ipa": "/ˈkeəɡɪvə/",
+      "vi": "Người chăm sóc",
+      "example": "Family caregivers need more support.",
+      "collocation": "a full-time caregiver · a family caregiver",
+      "synonyms": "carer · nurse · helper"
+    },
+    {
+      "word": "workforce",
+      "pos": "n",
+      "ipa": "/ˈwɜːkfɔːs/",
+      "vi": "Lực lượng lao động",
+      "example": "An ageing workforce worries employers.",
+      "collocation": "a shrinking workforce · an ageing workforce",
+      "synonyms": "labour force · staff"
+    },
+    {
+      "word": "longevity",
+      "pos": "n",
+      "ipa": "/lɒnˈdʒevəti/",
+      "vi": "Tuổi thọ",
+      "example": "Better healthcare has boosted longevity.",
+      "collocation": "increased longevity · human longevity",
+      "synonyms": "long life · lifespan"
+    },
+    {
+      "word": "sustainable",
+      "pos": "adj",
+      "ipa": "/səˈsteɪnəbl/",
+      "vi": "Bền vững (về hệ thống)",
+      "example": "The pension system may not be sustainable.",
+      "collocation": "a sustainable pension system · financially sustainable",
+      "synonyms": "viable · workable"
+    },
+    {
+      "word": "burden",
+      "pos": "n",
+      "ipa": "/ˈbɜːdn/",
+      "vi": "Gánh nặng",
+      "example": "Care costs are a growing burden on families.",
+      "collocation": "a financial burden · ease the burden · a growing burden",
+      "synonyms": "load · strain · weight"
+    },
+    {
+      "word": "vulnerable",
+      "pos": "adj",
+      "ipa": "/ˈvʌlnərəbl/",
+      "vi": "Dễ bị tổn thương",
+      "example": "The elderly are especially vulnerable.",
+      "collocation": "a vulnerable group · the most vulnerable · vulnerable to",
+      "synonyms": "at risk · defenceless · exposed",
+      "forms": "vulnerability (n)"
+    },
+    {
+      "word": "isolation",
+      "pos": "n",
+      "ipa": "/ˌaɪsəˈleɪʃən/",
+      "vi": "Sự cô lập, cô đơn",
+      "example": "Many older people suffer social isolation.",
+      "collocation": "social isolation · a sense of isolation · complete isolation",
+      "synonyms": "loneliness · seclusion",
+      "forms": "isolated (adj)"
+    },
+    {
+      "word": "welfare",
+      "pos": "n",
+      "ipa": "/ˈwelfeə/",
+      "vi": "Phúc lợi",
+      "example": "The welfare state supports the elderly.",
+      "collocation": "the welfare state · welfare benefits · social welfare",
+      "synonyms": "wellbeing · social security"
+    },
+    {
+      "word": "ageing",
+      "pos": "adj",
+      "ipa": "/ˈeɪdʒɪŋ/",
+      "vi": "Đang già đi (dân số)",
+      "example": "Japan has a rapidly ageing population.",
+      "collocation": "an ageing population · an ageing society",
+      "synonyms": "greying · getting older"
+    },
+    {
+      "word": "inheritance",
+      "pos": "n",
+      "ipa": "/ɪnˈherɪtəns/",
+      "vi": "Sự thừa kế, di sản",
+      "example": "She left a large inheritance to charity.",
+      "collocation": "leave an inheritance · a large inheritance · inheritance tax",
+      "synonyms": "legacy · bequest",
+      "forms": "inherit (v)"
+    },
+    {
+      "word": "nursing home",
+      "pos": "n",
+      "ipa": "/ˈnɜːsɪŋ həʊm/",
+      "vi": "Viện dưỡng lão",
+      "example": "He moved into a nursing home last year.",
+      "collocation": "move into a nursing home · a nursing home resident",
+      "synonyms": "care home · residential home"
+    },
+    {
+      "word": "active",
+      "pos": "adj",
+      "ipa": "/ˈæktɪv/",
+      "vi": "Năng động, tích cực",
+      "example": "Many seniors stay active well into old age.",
+      "collocation": "an active lifestyle · stay active · remain active",
+      "synonyms": "energetic · lively · dynamic",
+      "forms": "activity (n)"
+    }
+  ]
+}

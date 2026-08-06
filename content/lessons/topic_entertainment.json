@@ -1,0 +1,232 @@
+{
+  "id": "topic_entertainment",
+  "title": "Chủ đề: Giải trí & Điện ảnh",
+  "description": "Từ vựng IELTS chủ đề phim ảnh, sân khấu và giải trí",
+  "date": "2026-08-07",
+  "tags": ["culture", "media"],
+  "words": [
+    {
+      "word": "blockbuster",
+      "pos": "n",
+      "ipa": "/ˈblɒkbʌstə/",
+      "vi": "Bom tấn (phim ăn khách)",
+      "example": "The film became a summer blockbuster.",
+      "collocation": "a summer blockbuster · a Hollywood blockbuster",
+      "synonyms": "hit · smash · box-office success"
+    },
+    {
+      "word": "sequel",
+      "pos": "n",
+      "ipa": "/ˈsiːkwəl/",
+      "vi": "Phần tiếp theo",
+      "example": "The sequel was even more popular.",
+      "collocation": "a sequel to · a long-awaited sequel",
+      "synonyms": "follow-up · continuation"
+    },
+    {
+      "word": "plot",
+      "pos": "n",
+      "ipa": "/plɒt/",
+      "vi": "Cốt truyện",
+      "example": "The film has a gripping plot.",
+      "collocation": "a gripping plot · a twist in the plot · the plot unfolds",
+      "synonyms": "storyline · narrative"
+    },
+    {
+      "word": "protagonist",
+      "pos": "n",
+      "ipa": "/prəˈtæɡənɪst/",
+      "vi": "Nhân vật chính",
+      "example": "The protagonist faces an impossible choice.",
+      "collocation": "the main protagonist · a likeable protagonist",
+      "synonyms": "hero · lead · main character"
+    },
+    {
+      "word": "soundtrack",
+      "pos": "n",
+      "ipa": "/ˈsaʊndtræk/",
+      "vi": "Nhạc phim",
+      "example": "The soundtrack won an award.",
+      "collocation": "a memorable soundtrack · the film soundtrack",
+      "synonyms": "score · music"
+    },
+    {
+      "word": "premiere",
+      "pos": "n",
+      "ipa": "/ˈpremieə/",
+      "vi": "Buổi công chiếu ra mắt",
+      "example": "Stars attended the film premiere.",
+      "collocation": "a world premiere · the film premiere · attend the premiere",
+      "synonyms": "debut · opening"
+    },
+    {
+      "word": "cast",
+      "pos": "n",
+      "ipa": "/kɑːst/",
+      "vi": "Dàn diễn viên",
+      "example": "The film has a star-studded cast.",
+      "collocation": "a star-studded cast · the whole cast · a talented cast",
+      "synonyms": "actors · line-up · company"
+    },
+    {
+      "word": "rehearsal",
+      "pos": "n",
+      "ipa": "/rɪˈhɜːsl/",
+      "vi": "Buổi tập dượt",
+      "example": "The actors had a final rehearsal.",
+      "collocation": "a dress rehearsal · a final rehearsal · during rehearsal",
+      "synonyms": "practice · run-through",
+      "forms": "rehearse (v)"
+    },
+    {
+      "word": "applause",
+      "pos": "n",
+      "ipa": "/əˈplɔːz/",
+      "vi": "Tràng vỗ tay",
+      "example": "The performance earned loud applause.",
+      "collocation": "loud applause · a round of applause · thunderous applause",
+      "synonyms": "clapping · ovation · acclaim",
+      "forms": "applaud (v)"
+    },
+    {
+      "word": "encore",
+      "pos": "n",
+      "ipa": "/ˈɒŋkɔː/",
+      "vi": "Màn diễn thêm (theo yêu cầu)",
+      "example": "The crowd demanded an encore.",
+      "collocation": "demand an encore · play an encore",
+      "synonyms": "repeat performance"
+    },
+    {
+      "word": "improvise",
+      "pos": "v",
+      "ipa": "/ˈɪmprəvaɪz/",
+      "vi": "Ứng biến, ứng tác",
+      "example": "The comedian improvised the whole act.",
+      "collocation": "improvise a scene · improvise on stage · brilliantly improvise",
+      "synonyms": "ad-lib · make it up",
+      "forms": "improvisation (n)"
+    },
+    {
+      "word": "backstage",
+      "pos": "adv",
+      "ipa": "/ˌbækˈsteɪdʒ/",
+      "vi": "Ở hậu trường",
+      "example": "Reporters were allowed backstage.",
+      "collocation": "go backstage · backstage pass · work backstage",
+      "synonyms": "behind the scenes"
+    },
+    {
+      "word": "script",
+      "pos": "n",
+      "ipa": "/skrɪpt/",
+      "vi": "Kịch bản",
+      "example": "The script took two years to write.",
+      "collocation": "a film script · write a script · stick to the script",
+      "synonyms": "screenplay · text · scenario",
+      "forms": "scripted (adj)"
+    },
+    {
+      "word": "subtitle",
+      "pos": "n",
+      "ipa": "/ˈsʌbtaɪtl/",
+      "vi": "Phụ đề",
+      "example": "The film has English subtitles.",
+      "collocation": "with subtitles · read the subtitles · English subtitles",
+      "synonyms": "caption"
+    },
+    {
+      "word": "cinematography",
+      "pos": "n",
+      "ipa": "/ˌsɪnəməˈtɒɡrəfi/",
+      "vi": "Nghệ thuật quay phim",
+      "example": "The cinematography is breathtaking.",
+      "collocation": "stunning cinematography · award-winning cinematography",
+      "synonyms": "filming · camerawork"
+    },
+    {
+      "word": "choreography",
+      "pos": "n",
+      "ipa": "/ˌkɒriˈɒɡrəfi/",
+      "vi": "Biên đạo múa",
+      "example": "The choreography was flawless.",
+      "collocation": "intricate choreography · dance choreography",
+      "synonyms": "dance routine · staging",
+      "forms": "choreograph (v)"
+    },
+    {
+      "word": "virtuoso",
+      "pos": "n",
+      "ipa": "/ˌvɜːtʃuˈəʊzəʊ/",
+      "vi": "Nghệ sĩ bậc thầy",
+      "example": "She is a violin virtuoso.",
+      "collocation": "a piano virtuoso · a true virtuoso",
+      "synonyms": "master · maestro · prodigy"
+    },
+    {
+      "word": "ovation",
+      "pos": "n",
+      "ipa": "/əʊˈveɪʃən/",
+      "vi": "Sự tán thưởng nồng nhiệt",
+      "example": "The singer got a standing ovation.",
+      "collocation": "a standing ovation · receive an ovation",
+      "synonyms": "applause · acclaim"
+    },
+    {
+      "word": "mainstream",
+      "pos": "adj",
+      "ipa": "/ˈmeɪnstriːm/",
+      "vi": "Chính thống, đại chúng",
+      "example": "The band crossed into mainstream music.",
+      "collocation": "mainstream cinema · mainstream media · go mainstream",
+      "synonyms": "conventional · popular"
+    },
+    {
+      "word": "hilarious",
+      "pos": "adj",
+      "ipa": "/hɪˈleəriəs/",
+      "vi": "Cực kỳ hài hước",
+      "example": "The comedy was hilarious.",
+      "collocation": "absolutely hilarious · a hilarious scene",
+      "synonyms": "funny · comical · side-splitting"
+    },
+    {
+      "word": "gripping",
+      "pos": "adj",
+      "ipa": "/ˈɡrɪpɪŋ/",
+      "vi": "Cuốn hút, hồi hộp",
+      "example": "It is a gripping thriller.",
+      "collocation": "a gripping story · a gripping drama · utterly gripping",
+      "synonyms": "compelling · riveting · absorbing"
+    },
+    {
+      "word": "mediocre",
+      "pos": "adj",
+      "ipa": "/ˌmiːdiˈəʊkə/",
+      "vi": "Tầm thường, xoàng",
+      "example": "The film got mediocre reviews.",
+      "collocation": "a mediocre film · a mediocre performance",
+      "synonyms": "average · unremarkable · so-so",
+      "forms": "mediocrity (n)"
+    },
+    {
+      "word": "acclaimed",
+      "pos": "adj",
+      "ipa": "/əˈkleɪmd/",
+      "vi": "Được ca ngợi",
+      "example": "The film was critically acclaimed.",
+      "collocation": "a critically acclaimed film · widely acclaimed",
+      "synonyms": "praised · celebrated · lauded",
+      "forms": "acclaim (n)"
+    },
+    {
+      "word": "immersive",
+      "pos": "adj",
+      "ipa": "/ɪˈmɜːsɪv/",
+      "vi": "Đắm chìm, cuốn hút toàn diện",
+      "example": "The show offers an immersive experience.",
+      "collocation": "an immersive experience · immersive technology",
+      "synonyms": "engrossing · absorbing"
+    }
+  ]
+}
