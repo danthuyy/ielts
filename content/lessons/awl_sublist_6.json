@@ -1,0 +1,234 @@
+{
+  "id": "awl_sublist_6",
+  "title": "AWL Sublist 6",
+  "description": "Academic Word List — nhóm 6",
+  "date": "2026-08-07",
+  "tags": ["education", "society"],
+  "words": [
+    {
+      "word": "acknowledge",
+      "pos": "v",
+      "ipa": "/əkˈnɒlɪdʒ/",
+      "vi": "Thừa nhận; ghi nhận",
+      "example": "She acknowledged that she had been wrong.",
+      "collocation": "acknowledge a mistake · widely acknowledged · acknowledge that",
+      "synonyms": "admit · recognise · concede"
+    },
+    {
+      "word": "allocate",
+      "pos": "v",
+      "ipa": "/ˈæləkeɪt/",
+      "vi": "Phân bổ",
+      "example": "The budget allocates money for schools.",
+      "collocation": "allocate resources · allocate funds · fairly allocate",
+      "synonyms": "assign · distribute · earmark"
+    },
+    {
+      "word": "assign",
+      "pos": "v",
+      "ipa": "/əˈsaɪn/",
+      "vi": "Giao, phân công",
+      "example": "Each student was assigned a topic.",
+      "collocation": "assign a task · assign responsibility · randomly assign",
+      "synonyms": "allocate · delegate · designate"
+    },
+    {
+      "word": "brief",
+      "pos": "adj",
+      "ipa": "/briːf/",
+      "vi": "Ngắn gọn",
+      "example": "He gave a brief account of the events.",
+      "collocation": "brief summary · a brief moment · keep it brief",
+      "synonyms": "short · concise · succinct"
+    },
+    {
+      "word": "capable",
+      "pos": "adj",
+      "ipa": "/ˈkeɪpəbl/",
+      "vi": "Có khả năng",
+      "example": "She is capable of great things.",
+      "collocation": "capable of · highly capable · a capable leader",
+      "synonyms": "able · competent · skilled"
+    },
+    {
+      "word": "cite",
+      "pos": "v",
+      "ipa": "/saɪt/",
+      "vi": "Trích dẫn, viện dẫn",
+      "example": "The author cites several studies.",
+      "collocation": "cite an example · cite evidence · frequently cited",
+      "synonyms": "quote · refer to · mention"
+    },
+    {
+      "word": "cooperate",
+      "pos": "v",
+      "ipa": "/kəʊˈɒpəreɪt/",
+      "vi": "Hợp tác",
+      "example": "The two governments agreed to cooperate.",
+      "collocation": "cooperate with · fully cooperate · refuse to cooperate",
+      "synonyms": "collaborate · work together · team up"
+    },
+    {
+      "word": "discriminate",
+      "pos": "v",
+      "ipa": "/dɪˈskrɪmɪneɪt/",
+      "vi": "Phân biệt đối xử; phân biệt",
+      "example": "It is illegal to discriminate against women.",
+      "collocation": "discriminate against · discriminate between",
+      "synonyms": "differentiate · be biased · distinguish"
+    },
+    {
+      "word": "domain",
+      "pos": "n",
+      "ipa": "/dəˈmeɪn/",
+      "vi": "Lĩnh vực, phạm vi",
+      "example": "This falls within the domain of science.",
+      "collocation": "public domain · in the domain of · specialist domain",
+      "synonyms": "field · area · sphere"
+    },
+    {
+      "word": "exceed",
+      "pos": "v",
+      "ipa": "/ɪkˈsiːd/",
+      "vi": "Vượt quá",
+      "example": "The results exceeded all expectations.",
+      "collocation": "exceed expectations · exceed the limit · far exceed",
+      "synonyms": "surpass · go beyond · outstrip"
+    },
+    {
+      "word": "expert",
+      "pos": "n",
+      "ipa": "/ˈekspɜːt/",
+      "vi": "Chuyên gia",
+      "example": "Experts warn of rising sea levels.",
+      "collocation": "leading expert · consult an expert · expert opinion",
+      "synonyms": "specialist · authority · professional"
+    },
+    {
+      "word": "explicit",
+      "pos": "adj",
+      "ipa": "/ɪkˈsplɪsɪt/",
+      "vi": "Rõ ràng, minh bạch",
+      "example": "The instructions were explicit.",
+      "collocation": "explicit instructions · make explicit · explicit reference",
+      "synonyms": "clear · precise · unambiguous"
+    },
+    {
+      "word": "flexible",
+      "pos": "adj",
+      "ipa": "/ˈfleksəbl/",
+      "vi": "Linh hoạt",
+      "example": "The job offers flexible working hours.",
+      "collocation": "flexible hours · flexible approach · highly flexible",
+      "synonyms": "adaptable · versatile · accommodating"
+    },
+    {
+      "word": "ignorant",
+      "pos": "adj",
+      "ipa": "/ˈɪɡnərənt/",
+      "vi": "Thiếu hiểu biết",
+      "example": "Many people are ignorant of the risks.",
+      "collocation": "ignorant of · blissfully ignorant · politically ignorant",
+      "synonyms": "unaware · uninformed · uneducated"
+    },
+    {
+      "word": "incidence",
+      "pos": "n",
+      "ipa": "/ˈɪnsɪdəns/",
+      "vi": "Tỉ lệ mắc/xảy ra",
+      "example": "There is a high incidence of diabetes here.",
+      "collocation": "high incidence · incidence of disease · low incidence",
+      "synonyms": "rate · frequency · occurrence"
+    },
+    {
+      "word": "index",
+      "pos": "n",
+      "ipa": "/ˈɪndeks/",
+      "vi": "Chỉ số; mục lục",
+      "example": "The cost of living index rose again.",
+      "collocation": "price index · index of · consult the index",
+      "synonyms": "indicator · gauge · list"
+    },
+    {
+      "word": "inhibit",
+      "pos": "v",
+      "ipa": "/ɪnˈhɪbɪt/",
+      "vi": "Kìm hãm, cản trở",
+      "example": "Fear can inhibit learning.",
+      "collocation": "inhibit growth · inhibit development · strongly inhibit",
+      "synonyms": "hinder · restrain · impede"
+    },
+    {
+      "word": "initiate",
+      "pos": "v",
+      "ipa": "/ɪˈnɪʃieɪt/",
+      "vi": "Khởi xướng, bắt đầu",
+      "example": "The company initiated a review.",
+      "collocation": "initiate a process · initiate talks · initiate reform",
+      "synonyms": "begin · start · launch"
+    },
+    {
+      "word": "instruct",
+      "pos": "v",
+      "ipa": "/ɪnˈstrʌkt/",
+      "vi": "Chỉ dẫn; ra lệnh",
+      "example": "The pilot was instructed to land.",
+      "collocation": "instruct someone to · clearly instruct · instruct students",
+      "synonyms": "direct · order · teach"
+    },
+    {
+      "word": "migrate",
+      "pos": "v",
+      "ipa": "/maɪˈɡreɪt/",
+      "vi": "Di cư",
+      "example": "Many birds migrate south for winter.",
+      "collocation": "migrate to · seasonally migrate · migrate south",
+      "synonyms": "move · relocate · travel"
+    },
+    {
+      "word": "minimum",
+      "pos": "n",
+      "ipa": "/ˈmɪnɪməm/",
+      "vi": "Mức tối thiểu",
+      "example": "Costs were kept to a minimum.",
+      "collocation": "keep to a minimum · bare minimum · minimum wage",
+      "synonyms": "least · lowest · floor"
+    },
+    {
+      "word": "motive",
+      "pos": "n",
+      "ipa": "/ˈməʊtɪv/",
+      "vi": "Động cơ",
+      "example": "Police could find no motive for the crime.",
+      "collocation": "ulterior motive · a clear motive · question the motive",
+      "synonyms": "reason · incentive · rationale"
+    },
+    {
+      "word": "neutral",
+      "pos": "adj",
+      "ipa": "/ˈnjuːtrəl/",
+      "vi": "Trung lập",
+      "example": "The country stayed neutral during the war.",
+      "collocation": "neutral stance · remain neutral · politically neutral",
+      "synonyms": "impartial · unbiased · objective"
+    },
+    {
+      "word": "rational",
+      "pos": "adj",
+      "ipa": "/ˈræʃənl/",
+      "vi": "Hợp lý, lý trí",
+      "example": "We need a rational approach to the problem.",
+      "collocation": "rational decision · rational argument · perfectly rational",
+      "synonyms": "logical · reasoned · sensible"
+    },
+    {
+      "word": "reveal",
+      "pos": "v",
+      "ipa": "/rɪˈviːl/",
+      "vi": "Tiết lộ, để lộ",
+      "example": "The study revealed surprising results.",
+      "collocation": "reveal the truth · reveal details · a survey reveals",
+      "synonyms": "disclose · uncover · expose"
+    }
+  ]
+}

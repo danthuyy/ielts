@@ -1,0 +1,234 @@
+{
+  "id": "topic_family",
+  "title": "Chủ đề: Gia đình & Tuổi thơ",
+  "description": "Từ vựng IELTS chủ đề gia đình, nuôi dạy con và tuổi thơ",
+  "date": "2026-08-07",
+  "tags": ["family", "society"],
+  "words": [
+    {
+      "word": "upbringing",
+      "pos": "n",
+      "ipa": "/ˈʌpbrɪŋɪŋ/",
+      "vi": "Sự nuôi dạy",
+      "example": "She had a strict upbringing.",
+      "collocation": "strict upbringing · religious upbringing · a happy upbringing",
+      "synonyms": "rearing · nurturing · childhood"
+    },
+    {
+      "word": "nurture",
+      "pos": "v",
+      "ipa": "/ˈnɜːtʃə/",
+      "vi": "Nuôi dưỡng, bồi dưỡng",
+      "example": "Parents should nurture their children's curiosity.",
+      "collocation": "nurture talent · nurture a child · carefully nurture",
+      "synonyms": "foster · cultivate · raise"
+    },
+    {
+      "word": "sibling",
+      "pos": "n",
+      "ipa": "/ˈsɪblɪŋ/",
+      "vi": "Anh chị em ruột",
+      "example": "Sibling rivalry is common in large families.",
+      "collocation": "older sibling · sibling rivalry · younger sibling",
+      "synonyms": "brother or sister"
+    },
+    {
+      "word": "obedient",
+      "pos": "adj",
+      "ipa": "/əˈbiːdiənt/",
+      "vi": "Vâng lời",
+      "example": "He was a quiet, obedient child.",
+      "collocation": "obedient child · perfectly obedient",
+      "synonyms": "dutiful · compliant · well-behaved"
+    },
+    {
+      "word": "household",
+      "pos": "n",
+      "ipa": "/ˈhaʊshəʊld/",
+      "vi": "Hộ gia đình",
+      "example": "Household chores are shared equally.",
+      "collocation": "a large household · household chores · household income",
+      "synonyms": "family · home"
+    },
+    {
+      "word": "guardian",
+      "pos": "n",
+      "ipa": "/ˈɡɑːdiən/",
+      "vi": "Người giám hộ",
+      "example": "Her aunt became her legal guardian.",
+      "collocation": "legal guardian · appoint a guardian",
+      "synonyms": "protector · custodian · carer"
+    },
+    {
+      "word": "affectionate",
+      "pos": "adj",
+      "ipa": "/əˈfekʃənət/",
+      "vi": "Trìu mến, tình cảm",
+      "example": "They are a very affectionate family.",
+      "collocation": "affectionate towards · warmly affectionate",
+      "synonyms": "loving · tender · caring"
+    },
+    {
+      "word": "generation",
+      "pos": "n",
+      "ipa": "/ˌdʒenəˈreɪʃən/",
+      "vi": "Thế hệ",
+      "example": "There is a wide generation gap in the family.",
+      "collocation": "younger generation · generation gap · future generations",
+      "synonyms": "age group · era"
+    },
+    {
+      "word": "inherit",
+      "pos": "v",
+      "ipa": "/ɪnˈherɪt/",
+      "vi": "Thừa kế; di truyền",
+      "example": "He inherited his father's temper.",
+      "collocation": "inherit money · inherit a trait · inherit from",
+      "synonyms": "be left · receive · take after"
+    },
+    {
+      "word": "nurturing",
+      "pos": "adj",
+      "ipa": "/ˈnɜːtʃərɪŋ/",
+      "vi": "Nuôi dưỡng, ấm áp",
+      "example": "Children thrive in a nurturing environment.",
+      "collocation": "nurturing environment · nurturing parent",
+      "synonyms": "caring · supportive · loving"
+    },
+    {
+      "word": "adolescent",
+      "pos": "n",
+      "ipa": "/ˌædəˈlesnt/",
+      "vi": "Thanh thiếu niên",
+      "example": "Adolescents crave independence.",
+      "collocation": "a troubled adolescent · adolescent behaviour",
+      "synonyms": "teenager · youth · youngster"
+    },
+    {
+      "word": "bond",
+      "pos": "n",
+      "ipa": "/bɒnd/",
+      "vi": "Sự gắn kết",
+      "example": "There is a strong bond between the twins.",
+      "collocation": "strong bond · family bond · form a bond",
+      "synonyms": "connection · tie · attachment"
+    },
+    {
+      "word": "foster",
+      "pos": "v",
+      "ipa": "/ˈfɒstə/",
+      "vi": "Nuôi dưỡng; thúc đẩy",
+      "example": "The couple decided to foster a child.",
+      "collocation": "foster a child · foster independence · foster creativity",
+      "synonyms": "nurture · encourage · promote"
+    },
+    {
+      "word": "extended family",
+      "pos": "n",
+      "ipa": "/ɪkˌstendɪd ˈfæmli/",
+      "vi": "Đại gia đình",
+      "example": "In many cultures, the extended family lives together.",
+      "collocation": "live with the extended family · a large extended family",
+      "synonyms": "relatives · kin"
+    },
+    {
+      "word": "spoil",
+      "pos": "v",
+      "ipa": "/spɔɪl/",
+      "vi": "Nuông chiều; làm hỏng",
+      "example": "Grandparents often spoil their grandchildren.",
+      "collocation": "spoil a child · spoil rotten · spoil the fun",
+      "synonyms": "pamper · indulge · ruin"
+    },
+    {
+      "word": "tantrum",
+      "pos": "n",
+      "ipa": "/ˈtæntrəm/",
+      "vi": "Cơn ăn vạ",
+      "example": "The toddler threw a tantrum in the shop.",
+      "collocation": "throw a tantrum · temper tantrum",
+      "synonyms": "outburst · fit"
+    },
+    {
+      "word": "resemble",
+      "pos": "v",
+      "ipa": "/rɪˈzembl/",
+      "vi": "Giống, trông giống",
+      "example": "She closely resembles her mother.",
+      "collocation": "closely resemble · resemble a parent",
+      "synonyms": "look like · take after"
+    },
+    {
+      "word": "strict",
+      "pos": "adj",
+      "ipa": "/strɪkt/",
+      "vi": "Nghiêm khắc",
+      "example": "Their parents were very strict.",
+      "collocation": "strict parent · strict rules · very strict",
+      "synonyms": "stern · firm · rigorous"
+    },
+    {
+      "word": "dependent",
+      "pos": "adj",
+      "ipa": "/dɪˈpendənt/",
+      "vi": "Phụ thuộc",
+      "example": "Young children are dependent on their parents.",
+      "collocation": "dependent on · financially dependent · heavily dependent",
+      "synonyms": "reliant · needy · relying on"
+    },
+    {
+      "word": "maternal",
+      "pos": "adj",
+      "ipa": "/məˈtɜːnl/",
+      "vi": "Thuộc về mẹ",
+      "example": "She felt a strong maternal instinct.",
+      "collocation": "maternal instinct · maternal love · maternal side",
+      "synonyms": "motherly · nurturing"
+    },
+    {
+      "word": "role model",
+      "pos": "n",
+      "ipa": "/ˈrəʊl mɒdl/",
+      "vi": "Tấm gương, hình mẫu",
+      "example": "Parents are their children's first role models.",
+      "collocation": "a positive role model · act as a role model",
+      "synonyms": "example · inspiration · idol"
+    },
+    {
+      "word": "nuclear family",
+      "pos": "n",
+      "ipa": "/ˌnjuːkliə ˈfæmli/",
+      "vi": "Gia đình hạt nhân",
+      "example": "The nuclear family is smaller than it used to be.",
+      "collocation": "the traditional nuclear family",
+      "synonyms": "immediate family"
+    },
+    {
+      "word": "instil",
+      "pos": "v",
+      "ipa": "/ɪnˈstɪl/",
+      "vi": "Truyền, gieo (giá trị)",
+      "example": "Parents try to instil good values in their children.",
+      "collocation": "instil values · instil discipline · instil confidence",
+      "synonyms": "inculcate · implant · impart"
+    },
+    {
+      "word": "sheltered",
+      "pos": "adj",
+      "ipa": "/ˈʃeltəd/",
+      "vi": "Được bao bọc",
+      "example": "He had a sheltered childhood.",
+      "collocation": "sheltered childhood · sheltered upbringing",
+      "synonyms": "protected · cosseted"
+    },
+    {
+      "word": "estranged",
+      "pos": "adj",
+      "ipa": "/ɪˈstreɪndʒd/",
+      "vi": "Xa cách, ly tán",
+      "example": "She is estranged from her father.",
+      "collocation": "estranged from · estranged father",
+      "synonyms": "alienated · separated"
+    }
+  ]
+}
