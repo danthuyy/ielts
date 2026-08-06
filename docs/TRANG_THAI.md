@@ -1,21 +1,26 @@
 # Trạng thái dự án
 
-Cập nhật: 02/08/2026. Ghi lại để người (hoặc AI) quay lại sau này biết đang ở
+Cập nhật: 07/08/2026. Ghi lại để người (hoặc AI) quay lại sau này biết đang ở
 đâu mà không phải đọc lại toàn bộ lịch sử git.
+
+> Phiên làm lớn đêm 06–07/08: thêm Học theo kỳ, synonyms, xếp loại + kỷ lục cho
+> Kiểm tra, Từ vựng của ngày, và mở rộng nội dung lên 14 bài / 350 từ. Chi tiết
+> ở [CAP_NHAT_DEM.md](CAP_NHAT_DEM.md).
 
 ## Đang ở đâu
 
 Ứng dụng đã hoàn chỉnh về mặt tính năng và hạ tầng. Site chạy tại
 https://danthuyy.github.io/ielts/, deploy tự động khi push lên `main`.
 
-- 221 test, TypeScript strict, ESLint sạch
+- 317 test, TypeScript strict, ESLint sạch
 - Lighthouse **100** cả bốn hạng mục, tổng trang 416 kB (ngân sách 600 kB)
 - 4 workflow: CI, CodeQL, Lighthouse, Deploy
 
 ## Giới hạn thật hiện nay
 
-**Nội dung: mới 1 bài học, 25 từ.** Toàn bộ hạ tầng soạn nội dung đã xong — đây
-là việc còn lại có giá trị lớn nhất, và nó không phải việc lập trình. Xem
+**Nội dung: 14 bài học, 350 từ** (5 bài chủ đề đọc gốc + 7 bài chủ đề IELTS +
+2 bài AWL). Phần lớn do AI soạn nên **IPA và nghĩa nên được rà lại**. Vẫn còn
+dư địa lớn: AWL mới có 2/10 sublist, và nhiều chủ đề IELTS chưa có. Xem
 [CONTRIBUTING.md](../CONTRIBUTING.md) để thêm bài.
 
 ## Nợ kỹ thuật đã biết
