@@ -1,0 +1,250 @@
+{
+  "id": "topic_urbanisation",
+  "title": "Chủ đề: Đô thị hoá",
+  "description": "Từ vựng IELTS chủ đề đô thị hoá, thành phố và quy hoạch",
+  "date": "2026-08-07",
+  "tags": ["society", "environment"],
+  "words": [
+    {
+      "word": "urbanisation",
+      "pos": "n",
+      "ipa": "/ˌɜːbənaɪˈzeɪʃən/",
+      "vi": "Đô thị hoá",
+      "example": "Rapid urbanisation has strained public services.",
+      "collocation": "rapid urbanisation · pace of urbanisation",
+      "synonyms": "city growth · urban expansion",
+      "forms": "urban (adj) · urbanise (v)"
+    },
+    {
+      "word": "congestion",
+      "pos": "n",
+      "ipa": "/kənˈdʒestʃən/",
+      "vi": "Sự tắc nghẽn",
+      "example": "Traffic congestion is worst at rush hour.",
+      "collocation": "traffic congestion · ease congestion · severe congestion",
+      "synonyms": "jam · overcrowding · blockage",
+      "forms": "congested (adj)"
+    },
+    {
+      "word": "metropolis",
+      "pos": "n",
+      "ipa": "/məˈtrɒpəlɪs/",
+      "vi": "Đô thị lớn",
+      "example": "Tokyo is a vast metropolis.",
+      "collocation": "a bustling metropolis · sprawling metropolis",
+      "synonyms": "city · megacity",
+      "forms": "metropolitan (adj)"
+    },
+    {
+      "word": "slum",
+      "pos": "n",
+      "ipa": "/slʌm/",
+      "vi": "Khu ổ chuột",
+      "example": "Millions of people live in city slums.",
+      "collocation": "urban slum · live in a slum · slum housing",
+      "synonyms": "shanty town · ghetto"
+    },
+    {
+      "word": "overpopulation",
+      "pos": "n",
+      "ipa": "/ˌəʊvəpɒpjʊˈleɪʃən/",
+      "vi": "Sự quá tải dân số",
+      "example": "Overpopulation puts pressure on housing.",
+      "collocation": "urban overpopulation · problem of overpopulation",
+      "synonyms": "overcrowding",
+      "forms": "overpopulated (adj)"
+    },
+    {
+      "word": "sprawl",
+      "pos": "n",
+      "ipa": "/sprɔːl/",
+      "vi": "Sự lan rộng lộn xộn",
+      "example": "Urban sprawl eats into farmland.",
+      "collocation": "urban sprawl · suburban sprawl",
+      "synonyms": "spread · expansion",
+      "forms": "sprawling (adj)"
+    },
+    {
+      "word": "suburb",
+      "pos": "n",
+      "ipa": "/ˈsʌbɜːb/",
+      "vi": "Ngoại ô",
+      "example": "They moved to a quiet suburb.",
+      "collocation": "leafy suburb · live in the suburbs · quiet suburb",
+      "synonyms": "outskirts · residential area",
+      "forms": "suburban (adj)"
+    },
+    {
+      "word": "pedestrian",
+      "pos": "n",
+      "ipa": "/pəˈdestriən/",
+      "vi": "Người đi bộ",
+      "example": "The city centre is a pedestrian zone.",
+      "collocation": "pedestrian crossing · pedestrian zone",
+      "synonyms": "walker · foot traffic"
+    },
+    {
+      "word": "residential",
+      "pos": "adj",
+      "ipa": "/ˌrezɪˈdenʃəl/",
+      "vi": "Thuộc khu dân cư",
+      "example": "The factory is far from residential areas.",
+      "collocation": "residential area · residential district · quiet residential",
+      "synonyms": "domestic · suburban",
+      "forms": "residence (n) · resident (n) · reside (v)"
+    },
+    {
+      "word": "relocate",
+      "pos": "v",
+      "ipa": "/ˌriːləʊˈkeɪt/",
+      "vi": "Di dời, chuyển chỗ",
+      "example": "The company relocated its head office.",
+      "collocation": "relocate to · relocate a factory · relocate abroad",
+      "synonyms": "move · resettle · transfer",
+      "forms": "relocation (n)"
+    },
+    {
+      "word": "gentrification",
+      "pos": "n",
+      "ipa": "/ˌdʒentrɪfɪˈkeɪʃən/",
+      "vi": "Sự \"thượng lưu hoá\" khu phố",
+      "example": "Gentrification has pushed out long-time residents.",
+      "collocation": "urban gentrification · rapid gentrification",
+      "synonyms": "redevelopment",
+      "forms": "gentrify (v)"
+    },
+    {
+      "word": "skyscraper",
+      "pos": "n",
+      "ipa": "/ˈskaɪskreɪpə/",
+      "vi": "Nhà chọc trời",
+      "example": "Gleaming skyscrapers line the river.",
+      "collocation": "towering skyscraper · glass skyscraper",
+      "synonyms": "high-rise · tower"
+    },
+    {
+      "word": "commuter",
+      "pos": "n",
+      "ipa": "/kəˈmjuːtə/",
+      "vi": "Người đi làm xa",
+      "example": "Commuters pack the trains every morning.",
+      "collocation": "daily commuter · commuter train · commuter belt",
+      "synonyms": "traveller · passenger",
+      "forms": "commute (v)"
+    },
+    {
+      "word": "overcrowded",
+      "pos": "adj",
+      "ipa": "/ˌəʊvəˈkraʊdɪd/",
+      "vi": "Quá đông đúc",
+      "example": "The buses are overcrowded at peak times.",
+      "collocation": "overcrowded city · overcrowded housing",
+      "synonyms": "packed · congested · jammed",
+      "forms": "overcrowding (n)"
+    },
+    {
+      "word": "outskirts",
+      "pos": "n",
+      "ipa": "/ˈaʊtskɜːts/",
+      "vi": "Vùng ven, rìa thành phố",
+      "example": "The airport is on the outskirts of town.",
+      "collocation": "on the outskirts · the city outskirts",
+      "synonyms": "edge · fringe · periphery"
+    },
+    {
+      "word": "densely",
+      "pos": "adv",
+      "ipa": "/ˈdensli/",
+      "vi": "Dày đặc",
+      "example": "The area is densely populated.",
+      "collocation": "densely populated · densely packed",
+      "synonyms": "thickly · closely",
+      "forms": "dense (adj) · density (n)"
+    },
+    {
+      "word": "public transport",
+      "pos": "n",
+      "ipa": "/ˌpʌblɪk ˈtrænspɔːt/",
+      "vi": "Giao thông công cộng",
+      "example": "Good public transport reduces car use.",
+      "collocation": "rely on public transport · efficient public transport",
+      "synonyms": "mass transit"
+    },
+    {
+      "word": "zoning",
+      "pos": "n",
+      "ipa": "/ˈzəʊnɪŋ/",
+      "vi": "Sự phân vùng quy hoạch",
+      "example": "Zoning laws keep factories out of housing areas.",
+      "collocation": "zoning laws · residential zoning",
+      "synonyms": "planning · districting",
+      "forms": "zone (n)"
+    },
+    {
+      "word": "high-rise",
+      "pos": "n",
+      "ipa": "/ˈhaɪraɪz/",
+      "vi": "Nhà cao tầng",
+      "example": "Families were housed in high-rise blocks.",
+      "collocation": "a high-rise · high-rise flats · high-rise block",
+      "synonyms": "tower block · skyscraper"
+    },
+    {
+      "word": "hub",
+      "pos": "n",
+      "ipa": "/hʌb/",
+      "vi": "Trung tâm, đầu mối",
+      "example": "The city is a major transport hub.",
+      "collocation": "business hub · transport hub · cultural hub",
+      "synonyms": "centre · focal point · nexus"
+    },
+    {
+      "word": "regenerate",
+      "pos": "v",
+      "ipa": "/rɪˈdʒenəreɪt/",
+      "vi": "Tái thiết, hồi sinh",
+      "example": "The council plans to regenerate the docks.",
+      "collocation": "regenerate an area · regenerate the city centre",
+      "synonyms": "revive · renew · redevelop",
+      "forms": "regeneration (n)"
+    },
+    {
+      "word": "tenement",
+      "pos": "n",
+      "ipa": "/ˈtenəmənt/",
+      "vi": "Nhà tập thể cũ",
+      "example": "The family lived in a crowded tenement.",
+      "collocation": "crowded tenement · tenement block",
+      "synonyms": "apartment block · flats"
+    },
+    {
+      "word": "affluent",
+      "pos": "adj",
+      "ipa": "/ˈæfluənt/",
+      "vi": "Giàu có, sung túc",
+      "example": "They live in an affluent neighbourhood.",
+      "collocation": "affluent neighbourhood · affluent suburb · increasingly affluent",
+      "synonyms": "wealthy · prosperous · well-off",
+      "forms": "affluence (n)"
+    },
+    {
+      "word": "inhabitant",
+      "pos": "n",
+      "ipa": "/ɪnˈhæbɪtənt/",
+      "vi": "Cư dân",
+      "example": "The city has ten million inhabitants.",
+      "collocation": "local inhabitant · city inhabitant",
+      "synonyms": "resident · dweller · occupant",
+      "forms": "inhabit (v) · habitation (n)"
+    },
+    {
+      "word": "liveable",
+      "pos": "adj",
+      "ipa": "/ˈlɪvəbl/",
+      "vi": "Đáng sống, dễ sống",
+      "example": "The survey ranks the most liveable cities.",
+      "collocation": "liveable city · highly liveable",
+      "synonyms": "habitable · pleasant"
+    }
+  ]
+}

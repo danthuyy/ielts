@@ -1,0 +1,249 @@
+{
+  "id": "topic_food",
+  "title": "Chủ đề: Ẩm thực & Dinh dưỡng",
+  "description": "Từ vựng IELTS chủ đề ẩm thực, chế độ ăn và dinh dưỡng",
+  "date": "2026-08-07",
+  "tags": ["food", "health"],
+  "words": [
+    {
+      "word": "cuisine",
+      "pos": "n",
+      "ipa": "/kwɪˈziːn/",
+      "vi": "Ẩm thực, nền ẩm thực",
+      "example": "The region is famous for its cuisine.",
+      "collocation": "local cuisine · traditional cuisine · fine cuisine",
+      "synonyms": "cooking · fare"
+    },
+    {
+      "word": "nutrient",
+      "pos": "n",
+      "ipa": "/ˈnjuːtriənt/",
+      "vi": "Chất dinh dưỡng",
+      "example": "Vegetables are packed with nutrients.",
+      "collocation": "essential nutrient · rich in nutrients · absorb nutrients",
+      "synonyms": "nourishment",
+      "forms": "nutrition (n) · nutritious (adj)"
+    },
+    {
+      "word": "organic",
+      "pos": "adj",
+      "ipa": "/ɔːˈɡænɪk/",
+      "vi": "Hữu cơ",
+      "example": "Organic vegetables are grown without pesticides.",
+      "collocation": "organic food · organic farming · organic produce",
+      "synonyms": "natural · chemical-free",
+      "forms": "organically (adv)"
+    },
+    {
+      "word": "processed",
+      "pos": "adj",
+      "ipa": "/ˈprəʊsest/",
+      "vi": "Chế biến sẵn",
+      "example": "Too much processed food is unhealthy.",
+      "collocation": "processed food · heavily processed · processed meat",
+      "synonyms": "refined · manufactured",
+      "forms": "process (v)"
+    },
+    {
+      "word": "additive",
+      "pos": "n",
+      "ipa": "/ˈædɪtɪv/",
+      "vi": "Chất phụ gia",
+      "example": "The label lists several additives.",
+      "collocation": "food additive · artificial additive · free from additives",
+      "synonyms": "preservative · chemical"
+    },
+    {
+      "word": "staple",
+      "pos": "n",
+      "ipa": "/ˈsteɪpl/",
+      "vi": "Lương thực chính",
+      "example": "Rice is a staple in many countries.",
+      "collocation": "a staple food · staple diet · staple crop",
+      "synonyms": "basic · mainstay"
+    },
+    {
+      "word": "perishable",
+      "pos": "adj",
+      "ipa": "/ˈperɪʃəbl/",
+      "vi": "Dễ hỏng",
+      "example": "Perishable food must be refrigerated.",
+      "collocation": "perishable goods · highly perishable · perishable food",
+      "synonyms": "short-lived",
+      "forms": "perish (v)"
+    },
+    {
+      "word": "calorie",
+      "pos": "n",
+      "ipa": "/ˈkæləri/",
+      "vi": "Ca-lo (năng lượng)",
+      "example": "The drink is high in calories.",
+      "collocation": "count calories · high in calories · burn calories",
+      "synonyms": "energy unit",
+      "forms": "calorific (adj)"
+    },
+    {
+      "word": "delicacy",
+      "pos": "n",
+      "ipa": "/ˈdelɪkəsi/",
+      "vi": "Món đặc sản, cao lương",
+      "example": "Snails are a delicacy in France.",
+      "collocation": "a local delicacy · rare delicacy",
+      "synonyms": "speciality · treat"
+    },
+    {
+      "word": "seasoning",
+      "pos": "n",
+      "ipa": "/ˈsiːzənɪŋ/",
+      "vi": "Gia vị nêm nếm",
+      "example": "The dish needs more seasoning.",
+      "collocation": "add seasoning · rich seasoning",
+      "synonyms": "flavouring · condiment · spice",
+      "forms": "season (v)"
+    },
+    {
+      "word": "vegetarian",
+      "pos": "n",
+      "ipa": "/ˌvedʒəˈteəriən/",
+      "vi": "Người ăn chay",
+      "example": "She has been a vegetarian for ten years.",
+      "collocation": "strict vegetarian · vegetarian diet",
+      "synonyms": "non-meat eater",
+      "forms": "vegetarianism (n)"
+    },
+    {
+      "word": "craving",
+      "pos": "n",
+      "ipa": "/ˈkreɪvɪŋ/",
+      "vi": "Sự thèm",
+      "example": "She had a sudden craving for chocolate.",
+      "collocation": "a craving for · sugar craving · satisfy a craving",
+      "synonyms": "urge · longing · desire",
+      "forms": "crave (v)"
+    },
+    {
+      "word": "malnourished",
+      "pos": "adj",
+      "ipa": "/ˌmælˈnʌrɪʃt/",
+      "vi": "Suy dinh dưỡng",
+      "example": "Many children in the region are malnourished.",
+      "collocation": "severely malnourished · malnourished children",
+      "synonyms": "undernourished · underfed",
+      "forms": "malnutrition (n)"
+    },
+    {
+      "word": "appetite",
+      "pos": "n",
+      "ipa": "/ˈæpɪtaɪt/",
+      "vi": "Sự thèm ăn, khẩu vị",
+      "example": "Exercise gave him a healthy appetite.",
+      "collocation": "healthy appetite · lose your appetite · big appetite",
+      "synonyms": "hunger · desire"
+    },
+    {
+      "word": "edible",
+      "pos": "adj",
+      "ipa": "/ˈedəbl/",
+      "vi": "Ăn được",
+      "example": "Not all wild mushrooms are edible.",
+      "collocation": "edible plants · perfectly edible · barely edible",
+      "synonyms": "eatable · consumable"
+    },
+    {
+      "word": "flavour",
+      "pos": "n",
+      "ipa": "/ˈfleɪvə/",
+      "vi": "Hương vị",
+      "example": "The soup has a rich, smoky flavour.",
+      "collocation": "rich flavour · add flavour · a subtle flavour",
+      "synonyms": "taste · savour",
+      "forms": "flavoursome (adj) · flavoured (adj)"
+    },
+    {
+      "word": "diet",
+      "pos": "n",
+      "ipa": "/ˈdaɪət/",
+      "vi": "Chế độ ăn",
+      "example": "A balanced diet keeps you healthy.",
+      "collocation": "balanced diet · healthy diet · go on a diet",
+      "synonyms": "nutrition · food intake",
+      "forms": "dietary (adj)"
+    },
+    {
+      "word": "famine",
+      "pos": "n",
+      "ipa": "/ˈfæmɪn/",
+      "vi": "Nạn đói",
+      "example": "The drought led to a terrible famine.",
+      "collocation": "widespread famine · suffer famine · a severe famine",
+      "synonyms": "starvation · food shortage"
+    },
+    {
+      "word": "harvest",
+      "pos": "n",
+      "ipa": "/ˈhɑːvɪst/",
+      "vi": "Vụ thu hoạch",
+      "example": "The farmers celebrated a good harvest.",
+      "collocation": "a good harvest · bumper harvest · harvest time",
+      "synonyms": "crop · yield · reaping",
+      "forms": "harvest (v)"
+    },
+    {
+      "word": "livestock",
+      "pos": "n",
+      "ipa": "/ˈlaɪvstɒk/",
+      "vi": "Gia súc",
+      "example": "The farm raises livestock and crops.",
+      "collocation": "raise livestock · livestock farming",
+      "synonyms": "cattle · farm animals"
+    },
+    {
+      "word": "palate",
+      "pos": "n",
+      "ipa": "/ˈpælət/",
+      "vi": "Khẩu vị, vòm miệng",
+      "example": "The dish will please any palate.",
+      "collocation": "refined palate · please the palate",
+      "synonyms": "taste · sense of taste",
+      "forms": "palatable (adj)"
+    },
+    {
+      "word": "succulent",
+      "pos": "adj",
+      "ipa": "/ˈsʌkjələnt/",
+      "vi": "Mọng nước, ngon",
+      "example": "They served succulent roast lamb.",
+      "collocation": "succulent meat · succulent fruit",
+      "synonyms": "juicy · tender · luscious"
+    },
+    {
+      "word": "bland",
+      "pos": "adj",
+      "ipa": "/blænd/",
+      "vi": "Nhạt nhẽo",
+      "example": "The soup was watery and bland.",
+      "collocation": "bland food · bland taste · rather bland",
+      "synonyms": "tasteless · insipid · flavourless",
+      "forms": "blandness (n)"
+    },
+    {
+      "word": "ferment",
+      "pos": "v",
+      "ipa": "/fəˈment/",
+      "vi": "Lên men",
+      "example": "Cabbage is fermented to make kimchi.",
+      "collocation": "ferment food · naturally ferment",
+      "synonyms": "brew · culture",
+      "forms": "fermentation (n) · fermented (adj)"
+    },
+    {
+      "word": "condiment",
+      "pos": "n",
+      "ipa": "/ˈkɒndɪmənt/",
+      "vi": "Đồ gia vị (chấm kèm)",
+      "example": "Fish sauce is a common condiment.",
+      "collocation": "add condiments · a range of condiments",
+      "synonyms": "seasoning · sauce"
+    }
+  ]
+}
