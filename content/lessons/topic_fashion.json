@@ -1,0 +1,234 @@
+{
+  "id": "topic_fashion",
+  "title": "Chủ đề: Thời trang & Ngoại hình",
+  "description": "Từ vựng IELTS chủ đề thời trang, trang phục và ngoại hình",
+  "date": "2026-08-07",
+  "tags": ["culture", "media"],
+  "words": [
+    {
+      "word": "trend",
+      "pos": "n",
+      "ipa": "/trend/",
+      "vi": "Xu hướng",
+      "example": "She always follows the latest trends.",
+      "collocation": "a fashion trend · set a trend · the latest trend",
+      "synonyms": "fashion · vogue · craze",
+      "forms": "trendy (adj)"
+    },
+    {
+      "word": "garment",
+      "pos": "n",
+      "ipa": "/ˈɡɑːmənt/",
+      "vi": "Trang phục, quần áo",
+      "example": "Each garment is made by hand.",
+      "collocation": "an item of garment · a woollen garment · outer garment",
+      "synonyms": "clothing · attire · apparel"
+    },
+    {
+      "word": "tailored",
+      "pos": "adj",
+      "ipa": "/ˈteɪləd/",
+      "vi": "May đo, cắt vừa vặn",
+      "example": "He wore a smartly tailored suit.",
+      "collocation": "a tailored suit · beautifully tailored · tailored to",
+      "synonyms": "fitted · custom-made · bespoke",
+      "forms": "tailor (n)"
+    },
+    {
+      "word": "elegant",
+      "pos": "adj",
+      "ipa": "/ˈelɪɡənt/",
+      "vi": "Thanh lịch",
+      "example": "She looked elegant in a black gown.",
+      "collocation": "an elegant dress · effortlessly elegant · elegant style",
+      "synonyms": "stylish · graceful · chic",
+      "forms": "elegance (n)"
+    },
+    {
+      "word": "casual",
+      "pos": "adj",
+      "ipa": "/ˈkæʒuəl/",
+      "vi": "Thường ngày, giản dị",
+      "example": "The dress code is smart casual.",
+      "collocation": "casual clothes · casual wear · smart casual",
+      "synonyms": "informal · relaxed · everyday",
+      "forms": "casually (adv)"
+    },
+    {
+      "word": "outfit",
+      "pos": "n",
+      "ipa": "/ˈaʊtfɪt/",
+      "vi": "Bộ trang phục",
+      "example": "She wore a stunning outfit to the party.",
+      "collocation": "a stylish outfit · a new outfit · complete the outfit",
+      "synonyms": "ensemble · get-up · attire"
+    },
+    {
+      "word": "vintage",
+      "pos": "adj",
+      "ipa": "/ˈvɪntɪdʒ/",
+      "vi": "Cổ điển, đồ cổ (chất lượng)",
+      "example": "She loves wearing vintage dresses.",
+      "collocation": "vintage clothing · a vintage dress · vintage style",
+      "synonyms": "classic · retro · period"
+    },
+    {
+      "word": "wardrobe",
+      "pos": "n",
+      "ipa": "/ˈwɔːdrəʊb/",
+      "vi": "Tủ quần áo; bộ sưu tập quần áo",
+      "example": "She updated her entire wardrobe.",
+      "collocation": "a whole wardrobe · update your wardrobe · a capsule wardrobe",
+      "synonyms": "closet · clothes collection"
+    },
+    {
+      "word": "accessory",
+      "pos": "n",
+      "ipa": "/əkˈsesəri/",
+      "vi": "Phụ kiện",
+      "example": "A scarf is a versatile accessory.",
+      "collocation": "a fashion accessory · match accessories · a designer accessory",
+      "synonyms": "add-on · trimming"
+    },
+    {
+      "word": "flattering",
+      "pos": "adj",
+      "ipa": "/ˈflætərɪŋ/",
+      "vi": "Tôn dáng, làm đẹp lên",
+      "example": "The dress is very flattering.",
+      "collocation": "a flattering dress · a flattering cut · very flattering",
+      "synonyms": "becoming · complimentary",
+      "forms": "flatter (v)"
+    },
+    {
+      "word": "fabric",
+      "pos": "n",
+      "ipa": "/ˈfæbrɪk/",
+      "vi": "Vải, chất liệu",
+      "example": "The dress is made of soft fabric.",
+      "collocation": "soft fabric · a natural fabric · fine fabric",
+      "synonyms": "cloth · material · textile"
+    },
+    {
+      "word": "sophisticated",
+      "pos": "adj",
+      "ipa": "/səˈfɪstɪkeɪtɪd/",
+      "vi": "Tinh tế, sành điệu",
+      "example": "She has a sophisticated sense of style.",
+      "collocation": "a sophisticated look · sophisticated taste · effortlessly sophisticated",
+      "synonyms": "refined · elegant · cultured",
+      "forms": "sophistication (n)"
+    },
+    {
+      "word": "shabby",
+      "pos": "adj",
+      "ipa": "/ˈʃæbi/",
+      "vi": "Cũ kỹ, xuềnh xoàng",
+      "example": "He wore a shabby old coat.",
+      "collocation": "shabby clothes · a shabby coat · look shabby",
+      "synonyms": "worn · scruffy · tattered"
+    },
+    {
+      "word": "immaculate",
+      "pos": "adj",
+      "ipa": "/ɪˈmækjələt/",
+      "vi": "Chỉn chu, tươm tất",
+      "example": "His appearance was always immaculate.",
+      "collocation": "immaculate appearance · immaculately dressed",
+      "synonyms": "spotless · impeccable · flawless",
+      "forms": "immaculately (adv)"
+    },
+    {
+      "word": "attire",
+      "pos": "n",
+      "ipa": "/əˈtaɪə/",
+      "vi": "Trang phục (trang trọng)",
+      "example": "Guests wore formal attire.",
+      "collocation": "formal attire · evening attire · business attire",
+      "synonyms": "clothing · dress · garb"
+    },
+    {
+      "word": "sleek",
+      "pos": "adj",
+      "ipa": "/sliːk/",
+      "vi": "Bóng bẩy, mượt mà",
+      "example": "She had a sleek, modern haircut.",
+      "collocation": "a sleek design · sleek hair · a sleek look",
+      "synonyms": "smooth · polished · streamlined"
+    },
+    {
+      "word": "flamboyant",
+      "pos": "adj",
+      "ipa": "/flæmˈbɔɪənt/",
+      "vi": "Sặc sỡ, phô trương",
+      "example": "He is known for his flamboyant outfits.",
+      "collocation": "a flamboyant style · flamboyant clothes",
+      "synonyms": "showy · ostentatious · bold"
+    },
+    {
+      "word": "grooming",
+      "pos": "n",
+      "ipa": "/ˈɡruːmɪŋ/",
+      "vi": "Sự chăm chút ngoại hình",
+      "example": "Good grooming makes a strong impression.",
+      "collocation": "personal grooming · good grooming · grooming habits",
+      "synonyms": "personal care · neatness",
+      "forms": "groom (v)"
+    },
+    {
+      "word": "complexion",
+      "pos": "n",
+      "ipa": "/kəmˈplekʃən/",
+      "vi": "Nước da",
+      "example": "She has a clear, healthy complexion.",
+      "collocation": "a clear complexion · a fair complexion · glowing complexion",
+      "synonyms": "skin · skin tone"
+    },
+    {
+      "word": "posture",
+      "pos": "n",
+      "ipa": "/ˈpɒstʃə/",
+      "vi": "Tư thế, dáng đứng",
+      "example": "Good posture makes you look confident.",
+      "collocation": "good posture · upright posture · poor posture",
+      "synonyms": "stance · bearing · carriage"
+    },
+    {
+      "word": "striking",
+      "pos": "adj",
+      "ipa": "/ˈstraɪkɪŋ/",
+      "vi": "Nổi bật, ấn tượng",
+      "example": "She has striking green eyes.",
+      "collocation": "a striking appearance · striking features · strikingly beautiful",
+      "synonyms": "stunning · dramatic · arresting",
+      "forms": "strikingly (adv)"
+    },
+    {
+      "word": "understated",
+      "pos": "adj",
+      "ipa": "/ˌʌndəˈsteɪtɪd/",
+      "vi": "Giản dị tinh tế, không phô trương",
+      "example": "Her style is understated and elegant.",
+      "collocation": "understated elegance · an understated look",
+      "synonyms": "subtle · restrained · low-key"
+    },
+    {
+      "word": "coordinated",
+      "pos": "adj",
+      "ipa": "/kəʊˈɔːdɪneɪtɪd/",
+      "vi": "Phối hợp hài hoà",
+      "example": "Her accessories were perfectly coordinated.",
+      "collocation": "well-coordinated · a coordinated outfit",
+      "synonyms": "matching · harmonised"
+    },
+    {
+      "word": "presentable",
+      "pos": "adj",
+      "ipa": "/prɪˈzentəbl/",
+      "vi": "Tươm tất, coi được",
+      "example": "Make yourself presentable for the interview.",
+      "collocation": "look presentable · make yourself presentable",
+      "synonyms": "tidy · smart · respectable"
+    }
+  ]
+}

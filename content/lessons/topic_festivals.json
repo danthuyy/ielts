@@ -1,0 +1,245 @@
+{
+  "id": "topic_festivals",
+  "title": "Chủ đề: Lễ hội & Truyền thống",
+  "description": "Từ vựng IELTS chủ đề lễ hội, phong tục và tín ngưỡng",
+  "date": "2026-08-07",
+  "tags": ["culture", "society"],
+  "words": [
+    {
+      "word": "festivity",
+      "pos": "n",
+      "ipa": "/feˈstɪvəti/",
+      "vi": "Không khí lễ hội, sự vui hội",
+      "example": "The streets were full of festivity.",
+      "collocation": "festive festivity · a mood of festivity · festivities begin",
+      "synonyms": "celebration · merrymaking · revelry",
+      "forms": "festive (adj)"
+    },
+    {
+      "word": "commemorate",
+      "pos": "v",
+      "ipa": "/kəˈmeməreɪt/",
+      "vi": "Tưởng niệm, kỷ niệm",
+      "example": "The day commemorates those who died.",
+      "collocation": "commemorate an event · commemorate the dead",
+      "synonyms": "honour · mark · remember",
+      "forms": "commemoration (n) · commemorative (adj)"
+    },
+    {
+      "word": "procession",
+      "pos": "n",
+      "ipa": "/prəˈseʃən/",
+      "vi": "Đám rước, đoàn diễu hành",
+      "example": "A colourful procession moved through the town.",
+      "collocation": "a religious procession · a funeral procession · lead the procession",
+      "synonyms": "parade · march · cortege"
+    },
+    {
+      "word": "feast",
+      "pos": "n",
+      "ipa": "/fiːst/",
+      "vi": "Bữa tiệc, đại tiệc",
+      "example": "The village held a great feast.",
+      "collocation": "a wedding feast · a lavish feast · a feast of",
+      "synonyms": "banquet · spread · celebration"
+    },
+    {
+      "word": "costume",
+      "pos": "n",
+      "ipa": "/ˈkɒstjuːm/",
+      "vi": "Trang phục (biểu diễn/lễ hội)",
+      "example": "Dancers wore colourful costumes.",
+      "collocation": "a traditional costume · wear a costume · national costume",
+      "synonyms": "outfit · dress · attire"
+    },
+    {
+      "word": "fireworks",
+      "pos": "n",
+      "ipa": "/ˈfaɪəwɜːks/",
+      "vi": "Pháo hoa",
+      "example": "The festival ends with fireworks.",
+      "collocation": "a fireworks display · let off fireworks · spectacular fireworks",
+      "synonyms": "pyrotechnics"
+    },
+    {
+      "word": "lantern",
+      "pos": "n",
+      "ipa": "/ˈlæntən/",
+      "vi": "Đèn lồng",
+      "example": "Red lanterns lit up the street.",
+      "collocation": "a paper lantern · hang lanterns · a lantern festival",
+      "synonyms": "lamp · light"
+    },
+    {
+      "word": "reunion",
+      "pos": "n",
+      "ipa": "/riːˈjuːniən/",
+      "vi": "Cuộc đoàn tụ",
+      "example": "The holiday is a time for family reunion.",
+      "collocation": "a family reunion · a school reunion · a joyful reunion",
+      "synonyms": "gathering · get-together",
+      "forms": "reunite (v)"
+    },
+    {
+      "word": "superstition",
+      "pos": "n",
+      "ipa": "/ˌsuːpəˈstɪʃən/",
+      "vi": "Sự mê tín",
+      "example": "It is a superstition that the number is unlucky.",
+      "collocation": "an old superstition · believe in superstition · common superstition",
+      "synonyms": "folk belief · myth",
+      "forms": "superstitious (adj)"
+    },
+    {
+      "word": "offering",
+      "pos": "n",
+      "ipa": "/ˈɒfərɪŋ/",
+      "vi": "Đồ cúng, vật dâng",
+      "example": "People leave offerings at the shrine.",
+      "collocation": "make an offering · a ritual offering · food offering",
+      "synonyms": "sacrifice · gift · tribute"
+    },
+    {
+      "word": "parade",
+      "pos": "n",
+      "ipa": "/pəˈreɪd/",
+      "vi": "Cuộc diễu hành",
+      "example": "Thousands watched the New Year parade.",
+      "collocation": "a street parade · a victory parade · lead a parade",
+      "synonyms": "procession · march · display"
+    },
+    {
+      "word": "pilgrimage",
+      "pos": "n",
+      "ipa": "/ˈpɪlɡrɪmɪdʒ/",
+      "vi": "Cuộc hành hương",
+      "example": "They made a pilgrimage to the holy city.",
+      "collocation": "make a pilgrimage · an annual pilgrimage · a pilgrimage to",
+      "synonyms": "journey · religious trip",
+      "forms": "pilgrim (n)"
+    },
+    {
+      "word": "worship",
+      "pos": "v",
+      "ipa": "/ˈwɜːʃɪp/",
+      "vi": "Thờ phụng",
+      "example": "People gather to worship at the temple.",
+      "collocation": "worship a god · place of worship · worship freely",
+      "synonyms": "revere · venerate · adore",
+      "forms": "worship (n) · worshipper (n)"
+    },
+    {
+      "word": "sacred",
+      "pos": "adj",
+      "ipa": "/ˈseɪkrɪd/",
+      "vi": "Thiêng liêng",
+      "example": "The mountain is sacred to local people.",
+      "collocation": "a sacred place · sacred rituals · deeply sacred",
+      "synonyms": "holy · hallowed · revered"
+    },
+    {
+      "word": "rite",
+      "pos": "n",
+      "ipa": "/raɪt/",
+      "vi": "Nghi thức, lễ nghi",
+      "example": "The wedding follows ancient rites.",
+      "collocation": "a religious rite · a rite of passage · perform a rite",
+      "synonyms": "ceremony · ritual · custom"
+    },
+    {
+      "word": "mythology",
+      "pos": "n",
+      "ipa": "/mɪˈθɒlədʒi/",
+      "vi": "Thần thoại",
+      "example": "The festival is rooted in old mythology.",
+      "collocation": "ancient mythology · Greek mythology · rooted in mythology",
+      "synonyms": "legend · folklore · myth",
+      "forms": "mythological (adj)"
+    },
+    {
+      "word": "ancestor",
+      "pos": "n",
+      "ipa": "/ˈænsestə/",
+      "vi": "Tổ tiên",
+      "example": "They pray to their ancestors.",
+      "collocation": "honour ancestors · distant ancestor · worship of ancestors",
+      "synonyms": "forebear · forefather",
+      "forms": "ancestral (adj)"
+    },
+    {
+      "word": "blessing",
+      "pos": "n",
+      "ipa": "/ˈblesɪŋ/",
+      "vi": "Lời chúc phúc; phước lành",
+      "example": "The priest gave the couple his blessing.",
+      "collocation": "a blessing · give a blessing · count your blessings",
+      "synonyms": "benediction · grace · boon",
+      "forms": "bless (v)"
+    },
+    {
+      "word": "carnival",
+      "pos": "n",
+      "ipa": "/ˈkɑːnɪvl/",
+      "vi": "Lễ hội hoá trang",
+      "example": "The city holds a huge carnival each year.",
+      "collocation": "a street carnival · carnival atmosphere · the carnival season",
+      "synonyms": "festival · fiesta · gala"
+    },
+    {
+      "word": "lunar",
+      "pos": "adj",
+      "ipa": "/ˈluːnə/",
+      "vi": "Thuộc mặt trăng, âm lịch",
+      "example": "The festival follows the lunar calendar.",
+      "collocation": "the lunar calendar · lunar new year · a lunar month",
+      "synonyms": "moon-related"
+    },
+    {
+      "word": "decorate",
+      "pos": "v",
+      "ipa": "/ˈdekəreɪt/",
+      "vi": "Trang trí",
+      "example": "They decorate the house with flowers.",
+      "collocation": "decorate a house · lavishly decorate · decorate with",
+      "synonyms": "adorn · embellish · deck out",
+      "forms": "decoration (n) · decorative (adj)"
+    },
+    {
+      "word": "heirloom",
+      "pos": "n",
+      "ipa": "/ˈeəluːm/",
+      "vi": "Vật gia truyền",
+      "example": "The ring is a family heirloom.",
+      "collocation": "a family heirloom · a treasured heirloom",
+      "synonyms": "keepsake · legacy"
+    },
+    {
+      "word": "solemn",
+      "pos": "adj",
+      "ipa": "/ˈsɒləm/",
+      "vi": "Trang nghiêm",
+      "example": "The service was quiet and solemn.",
+      "collocation": "a solemn ceremony · a solemn occasion · solemn vows",
+      "synonyms": "serious · dignified · grave",
+      "forms": "solemnly (adv)"
+    },
+    {
+      "word": "festive",
+      "pos": "adj",
+      "ipa": "/ˈfestɪv/",
+      "vi": "Có không khí lễ hội",
+      "example": "The town had a festive atmosphere.",
+      "collocation": "a festive mood · the festive season · festive decorations",
+      "synonyms": "celebratory · merry · jolly"
+    },
+    {
+      "word": "ancestry",
+      "pos": "n",
+      "ipa": "/ˈænsestri/",
+      "vi": "Dòng dõi, tổ tông",
+      "example": "She traced her ancestry back centuries.",
+      "collocation": "trace your ancestry · mixed ancestry · proud of one’s ancestry",
+      "synonyms": "lineage · descent · heritage"
+    }
+  ]
+}
