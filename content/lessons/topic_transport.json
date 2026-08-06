@@ -1,0 +1,242 @@
+{
+  "id": "topic_transport",
+  "title": "Chủ đề: Giao thông",
+  "description": "Từ vựng IELTS chủ đề giao thông, đi lại và vận tải",
+  "date": "2026-08-07",
+  "tags": ["society", "technology"],
+  "words": [
+    {
+      "word": "motorway",
+      "pos": "n",
+      "ipa": "/ˈməʊtəweɪ/",
+      "vi": "Đường cao tốc",
+      "example": "There was a crash on the motorway.",
+      "collocation": "busy motorway · motorway network · join the motorway",
+      "synonyms": "freeway · highway · expressway"
+    },
+    {
+      "word": "junction",
+      "pos": "n",
+      "ipa": "/ˈdʒʌŋkʃən/",
+      "vi": "Nút giao, ngã tư",
+      "example": "Turn left at the next junction.",
+      "collocation": "a busy junction · motorway junction · road junction",
+      "synonyms": "intersection · crossroads"
+    },
+    {
+      "word": "cyclist",
+      "pos": "n",
+      "ipa": "/ˈsaɪklɪst/",
+      "vi": "Người đi xe đạp",
+      "example": "The city built new lanes for cyclists.",
+      "collocation": "a keen cyclist · protect cyclists · cyclist lane",
+      "synonyms": "rider · biker",
+      "forms": "cycle (v) · cycling (n)"
+    },
+    {
+      "word": "carriage",
+      "pos": "n",
+      "ipa": "/ˈkærɪdʒ/",
+      "vi": "Toa tàu; xe ngựa",
+      "example": "The front carriage was crowded.",
+      "collocation": "a train carriage · front carriage · horse-drawn carriage",
+      "synonyms": "coach · wagon · car"
+    },
+    {
+      "word": "toll",
+      "pos": "n",
+      "ipa": "/təʊl/",
+      "vi": "Phí cầu đường",
+      "example": "Drivers must pay a toll on the bridge.",
+      "collocation": "pay a toll · toll road · motorway toll",
+      "synonyms": "charge · fee · levy"
+    },
+    {
+      "word": "roundabout",
+      "pos": "n",
+      "ipa": "/ˈraʊndəbaʊt/",
+      "vi": "Vòng xuyến",
+      "example": "Take the second exit at the roundabout.",
+      "collocation": "a busy roundabout · exit the roundabout",
+      "synonyms": "traffic circle"
+    },
+    {
+      "word": "gridlock",
+      "pos": "n",
+      "ipa": "/ˈɡrɪdlɒk/",
+      "vi": "Kẹt xe cứng",
+      "example": "An accident brought the city to gridlock.",
+      "collocation": "total gridlock · traffic gridlock · cause gridlock",
+      "synonyms": "jam · standstill · congestion",
+      "forms": "gridlocked (adj)"
+    },
+    {
+      "word": "ferry",
+      "pos": "n",
+      "ipa": "/ˈferi/",
+      "vi": "Phà",
+      "example": "We took the ferry across the river.",
+      "collocation": "catch a ferry · car ferry · ferry service",
+      "synonyms": "boat · ship"
+    },
+    {
+      "word": "freight",
+      "pos": "n",
+      "ipa": "/freɪt/",
+      "vi": "Hàng hoá vận chuyển",
+      "example": "Most freight is carried by lorry.",
+      "collocation": "rail freight · freight train · move freight",
+      "synonyms": "cargo · goods · haulage"
+    },
+    {
+      "word": "haulage",
+      "pos": "n",
+      "ipa": "/ˈhɔːlɪdʒ/",
+      "vi": "Việc vận tải đường bộ",
+      "example": "The haulage firm delivers across Europe.",
+      "collocation": "road haulage · haulage company · haulage costs",
+      "synonyms": "transport · carriage · freight",
+      "forms": "haul (v)"
+    },
+    {
+      "word": "terminal",
+      "pos": "n",
+      "ipa": "/ˈtɜːmɪnl/",
+      "vi": "Nhà ga, trạm cuối",
+      "example": "The flight leaves from Terminal 2.",
+      "collocation": "bus terminal · airport terminal · ferry terminal",
+      "synonyms": "station · depot · hub"
+    },
+    {
+      "word": "transit",
+      "pos": "n",
+      "ipa": "/ˈtrænzɪt/",
+      "vi": "Sự quá cảnh, vận chuyển",
+      "example": "The goods were damaged in transit.",
+      "collocation": "in transit · public transit · mass transit",
+      "synonyms": "transport · passage · movement"
+    },
+    {
+      "word": "timetable",
+      "pos": "n",
+      "ipa": "/ˈtaɪmteɪbl/",
+      "vi": "Thời gian biểu",
+      "example": "Check the timetable for the next train.",
+      "collocation": "a train timetable · check the timetable · bus timetable",
+      "synonyms": "schedule · programme"
+    },
+    {
+      "word": "punctual",
+      "pos": "adj",
+      "ipa": "/ˈpʌŋktʃuəl/",
+      "vi": "Đúng giờ",
+      "example": "The trains here are rarely punctual.",
+      "collocation": "always punctual · a punctual service",
+      "synonyms": "on time · prompt · timely",
+      "forms": "punctuality (n) · punctually (adv)"
+    },
+    {
+      "word": "detour",
+      "pos": "n",
+      "ipa": "/ˈdiːtʊə/",
+      "vi": "Đường vòng, lối tránh",
+      "example": "Roadworks forced a long detour.",
+      "collocation": "take a detour · a long detour · make a detour",
+      "synonyms": "diversion · roundabout route"
+    },
+    {
+      "word": "vehicle",
+      "pos": "n",
+      "ipa": "/ˈviːɪkl/",
+      "vi": "Phương tiện, xe cộ",
+      "example": "Electric vehicles are becoming popular.",
+      "collocation": "a motor vehicle · electric vehicle · commercial vehicle",
+      "synonyms": "car · automobile · conveyance",
+      "forms": "vehicular (adj)"
+    },
+    {
+      "word": "pedestrianise",
+      "pos": "v",
+      "ipa": "/pəˈdestriənaɪz/",
+      "vi": "Biến thành khu đi bộ",
+      "example": "The council pedestrianised the old town.",
+      "collocation": "pedestrianise the centre · pedestrianised street",
+      "synonyms": "close to traffic",
+      "forms": "pedestrianised (adj)"
+    },
+    {
+      "word": "fuel",
+      "pos": "n",
+      "ipa": "/ˈfjuːəl/",
+      "vi": "Nhiên liệu",
+      "example": "Rising fuel prices hit commuters hard.",
+      "collocation": "fossil fuel · fuel consumption · run out of fuel",
+      "synonyms": "petrol · gas · energy",
+      "forms": "fuel (v)"
+    },
+    {
+      "word": "carpool",
+      "pos": "v",
+      "ipa": "/ˈkɑːpuːl/",
+      "vi": "Đi chung xe",
+      "example": "Colleagues carpool to cut costs.",
+      "collocation": "carpool to work · encourage carpooling",
+      "synonyms": "share a ride · ride-share",
+      "forms": "carpooling (n)"
+    },
+    {
+      "word": "expressway",
+      "pos": "n",
+      "ipa": "/ɪkˈspresweɪ/",
+      "vi": "Đường cao tốc",
+      "example": "The new expressway cut the journey in half.",
+      "collocation": "a busy expressway · elevated expressway",
+      "synonyms": "motorway · freeway · highway"
+    },
+    {
+      "word": "refuel",
+      "pos": "v",
+      "ipa": "/ˌriːˈfjuːəl/",
+      "vi": "Tiếp nhiên liệu",
+      "example": "The plane stopped to refuel.",
+      "collocation": "refuel the plane · stop to refuel",
+      "synonyms": "fill up · top up"
+    },
+    {
+      "word": "mileage",
+      "pos": "n",
+      "ipa": "/ˈmaɪlɪdʒ/",
+      "vi": "Số dặm đã đi; quãng đường",
+      "example": "The car has very low mileage.",
+      "collocation": "low mileage · high mileage · fuel mileage",
+      "synonyms": "distance · miles"
+    },
+    {
+      "word": "cargo",
+      "pos": "n",
+      "ipa": "/ˈkɑːɡəʊ/",
+      "vi": "Hàng hoá (tàu/máy bay)",
+      "example": "The ship carried a cargo of grain.",
+      "collocation": "a cargo ship · carry cargo · cargo hold",
+      "synonyms": "freight · goods · load"
+    },
+    {
+      "word": "shuttle",
+      "pos": "n",
+      "ipa": "/ˈʃʌtl/",
+      "vi": "Xe/chuyến đưa đón",
+      "example": "A free shuttle runs to the airport.",
+      "collocation": "a shuttle bus · airport shuttle · free shuttle",
+      "synonyms": "connecting service"
+    },
+    {
+      "word": "breakdown",
+      "pos": "n",
+      "ipa": "/ˈbreɪkdaʊn/",
+      "vi": "Sự hỏng hóc (xe)",
+      "example": "A breakdown on the motorway caused delays.",
+      "collocation": "a breakdown · engine breakdown · breakdown service",
+      "synonyms": "failure · malfunction"
+    }
+  ]
+}

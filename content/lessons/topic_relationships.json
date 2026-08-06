@@ -1,0 +1,255 @@
+{
+  "id": "topic_relationships",
+  "title": "Chủ đề: Quan hệ & Cảm xúc",
+  "description": "Từ vựng IELTS chủ đề tình bạn, quan hệ và cảm xúc",
+  "date": "2026-08-07",
+  "tags": ["society", "psychology"],
+  "words": [
+    {
+      "word": "acquaintance",
+      "pos": "n",
+      "ipa": "/əˈkweɪntəns/",
+      "vi": "Người quen",
+      "example": "He is just a casual acquaintance.",
+      "collocation": "a casual acquaintance · mutual acquaintance",
+      "synonyms": "contact · associate",
+      "forms": "acquainted (adj)"
+    },
+    {
+      "word": "compassion",
+      "pos": "n",
+      "ipa": "/kəmˈpæʃən/",
+      "vi": "Lòng trắc ẩn",
+      "example": "She treats patients with great compassion.",
+      "collocation": "show compassion · deep compassion · compassion for",
+      "synonyms": "sympathy · empathy · pity",
+      "forms": "compassionate (adj)"
+    },
+    {
+      "word": "empathy",
+      "pos": "n",
+      "ipa": "/ˈempəθi/",
+      "vi": "Sự đồng cảm",
+      "example": "Good teachers show empathy for their students.",
+      "collocation": "show empathy · a sense of empathy · empathy for",
+      "synonyms": "understanding · sympathy · rapport",
+      "forms": "empathetic (adj) · empathise (v)"
+    },
+    {
+      "word": "intimacy",
+      "pos": "n",
+      "ipa": "/ˈɪntɪməsi/",
+      "vi": "Sự thân mật",
+      "example": "The letters reveal a deep intimacy.",
+      "collocation": "emotional intimacy · a sense of intimacy",
+      "synonyms": "closeness · familiarity",
+      "forms": "intimate (adj)"
+    },
+    {
+      "word": "rapport",
+      "pos": "n",
+      "ipa": "/ræˈpɔː/",
+      "vi": "Sự đồng điệu, ăn ý",
+      "example": "The coach built a strong rapport with the team.",
+      "collocation": "build rapport · good rapport · establish rapport",
+      "synonyms": "connection · understanding · bond"
+    },
+    {
+      "word": "companionship",
+      "pos": "n",
+      "ipa": "/kəmˈpænjənʃɪp/",
+      "vi": "Tình bầu bạn",
+      "example": "A pet can provide real companionship.",
+      "collocation": "offer companionship · enjoy companionship",
+      "synonyms": "friendship · company · fellowship",
+      "forms": "companion (n)"
+    },
+    {
+      "word": "reconcile",
+      "pos": "v",
+      "ipa": "/ˈrekənsaɪl/",
+      "vi": "Hoà giải, làm lành",
+      "example": "The brothers finally reconciled.",
+      "collocation": "reconcile with · reconcile differences",
+      "synonyms": "make up · settle · resolve",
+      "forms": "reconciliation (n)"
+    },
+    {
+      "word": "betray",
+      "pos": "v",
+      "ipa": "/bɪˈtreɪ/",
+      "vi": "Phản bội",
+      "example": "He felt betrayed by his closest friend.",
+      "collocation": "betray a friend · betray trust · feel betrayed",
+      "synonyms": "deceive · double-cross · let down",
+      "forms": "betrayal (n)"
+    },
+    {
+      "word": "loyalty",
+      "pos": "n",
+      "ipa": "/ˈlɔɪəlti/",
+      "vi": "Lòng trung thành",
+      "example": "She valued loyalty above all else.",
+      "collocation": "fierce loyalty · loyalty to · repay loyalty",
+      "synonyms": "faithfulness · allegiance · devotion",
+      "forms": "loyal (adj) · loyally (adv)"
+    },
+    {
+      "word": "affinity",
+      "pos": "n",
+      "ipa": "/əˈfɪnəti/",
+      "vi": "Sự đồng cảm, ái lực",
+      "example": "She has a natural affinity with animals.",
+      "collocation": "a natural affinity · affinity with · strong affinity",
+      "synonyms": "rapport · kinship · attraction"
+    },
+    {
+      "word": "camaraderie",
+      "pos": "n",
+      "ipa": "/ˌkæməˈrɑːdəri/",
+      "vi": "Tình đồng chí, gắn bó",
+      "example": "There was great camaraderie among the crew.",
+      "collocation": "a sense of camaraderie · team camaraderie",
+      "synonyms": "fellowship · solidarity · togetherness"
+    },
+    {
+      "word": "considerate",
+      "pos": "adj",
+      "ipa": "/kənˈsɪdərət/",
+      "vi": "Chu đáo, biết nghĩ cho người khác",
+      "example": "He is always considerate towards guests.",
+      "collocation": "considerate towards · very considerate",
+      "synonyms": "thoughtful · kind · caring",
+      "forms": "consideration (n) · considerately (adv)"
+    },
+    {
+      "word": "supportive",
+      "pos": "adj",
+      "ipa": "/səˈpɔːtɪv/",
+      "vi": "Luôn ủng hộ, chỗ dựa",
+      "example": "She has a very supportive family.",
+      "collocation": "supportive of · a supportive family · emotionally supportive",
+      "synonyms": "encouraging · caring · helpful",
+      "forms": "support (v) · supporter (n)"
+    },
+    {
+      "word": "quarrel",
+      "pos": "n",
+      "ipa": "/ˈkwɒrəl/",
+      "vi": "Cuộc cãi vã",
+      "example": "They had a bitter quarrel over money.",
+      "collocation": "a bitter quarrel · have a quarrel · pick a quarrel",
+      "synonyms": "argument · dispute · row",
+      "forms": "quarrelsome (adj)"
+    },
+    {
+      "word": "resentment",
+      "pos": "n",
+      "ipa": "/rɪˈzentmənt/",
+      "vi": "Sự oán giận",
+      "example": "She felt deep resentment towards her boss.",
+      "collocation": "deep resentment · feel resentment · harbour resentment",
+      "synonyms": "bitterness · grudge · ill will",
+      "forms": "resent (v) · resentful (adj)"
+    },
+    {
+      "word": "trustworthy",
+      "pos": "adj",
+      "ipa": "/ˈtrʌstwɜːði/",
+      "vi": "Đáng tin cậy",
+      "example": "He is a loyal and trustworthy friend.",
+      "collocation": "a trustworthy person · highly trustworthy",
+      "synonyms": "reliable · dependable · honest"
+    },
+    {
+      "word": "sincere",
+      "pos": "adj",
+      "ipa": "/sɪnˈsɪə/",
+      "vi": "Chân thành",
+      "example": "She gave a sincere apology.",
+      "collocation": "sincere apology · a sincere person · deeply sincere",
+      "synonyms": "genuine · heartfelt · honest",
+      "forms": "sincerity (n) · sincerely (adv)"
+    },
+    {
+      "word": "tolerant",
+      "pos": "adj",
+      "ipa": "/ˈtɒlərənt/",
+      "vi": "Bao dung, khoan dung",
+      "example": "A good society is tolerant of difference.",
+      "collocation": "tolerant of · a tolerant society · remarkably tolerant",
+      "synonyms": "open-minded · accepting · lenient",
+      "forms": "tolerate (v) · tolerance (n)"
+    },
+    {
+      "word": "confide",
+      "pos": "v",
+      "ipa": "/kənˈfaɪd/",
+      "vi": "Tâm sự, thổ lộ",
+      "example": "She confided her worries to a friend.",
+      "collocation": "confide in · confide a secret",
+      "synonyms": "open up to · trust · unburden",
+      "forms": "confidant (n) · confidential (adj)"
+    },
+    {
+      "word": "kinship",
+      "pos": "n",
+      "ipa": "/ˈkɪnʃɪp/",
+      "vi": "Quan hệ họ hàng; sự gắn kết",
+      "example": "They felt an instant kinship.",
+      "collocation": "a sense of kinship · ties of kinship",
+      "synonyms": "kindred · connection · affinity",
+      "forms": "kin (n)"
+    },
+    {
+      "word": "amicable",
+      "pos": "adj",
+      "ipa": "/ˈæmɪkəbl/",
+      "vi": "Thân thiện, êm đẹp",
+      "example": "They reached an amicable agreement.",
+      "collocation": "an amicable agreement · amicable divorce · remain amicable",
+      "synonyms": "friendly · cordial · good-natured",
+      "forms": "amicably (adv)"
+    },
+    {
+      "word": "cordial",
+      "pos": "adj",
+      "ipa": "/ˈkɔːdiəl/",
+      "vi": "Nồng hậu, thân tình",
+      "example": "The two leaders had cordial relations.",
+      "collocation": "a cordial welcome · cordial relations",
+      "synonyms": "warm · friendly · genial",
+      "forms": "cordially (adv)"
+    },
+    {
+      "word": "harmonious",
+      "pos": "adj",
+      "ipa": "/hɑːˈməʊniəs/",
+      "vi": "Hoà thuận",
+      "example": "They enjoy a harmonious relationship.",
+      "collocation": "harmonious relationship · harmonious atmosphere",
+      "synonyms": "peaceful · amicable · congenial",
+      "forms": "harmony (n) · harmoniously (adv)"
+    },
+    {
+      "word": "endearing",
+      "pos": "adj",
+      "ipa": "/ɪnˈdɪərɪŋ/",
+      "vi": "Đáng yêu, dễ mến",
+      "example": "His shyness is oddly endearing.",
+      "collocation": "an endearing quality · endearing smile",
+      "synonyms": "charming · lovable · winning",
+      "forms": "endear (v)"
+    },
+    {
+      "word": "reciprocate",
+      "pos": "v",
+      "ipa": "/rɪˈsɪprəkeɪt/",
+      "vi": "Đáp lại, có qua có lại",
+      "example": "She hoped he would reciprocate her feelings.",
+      "collocation": "reciprocate feelings · reciprocate a gesture",
+      "synonyms": "return · repay · respond in kind",
+      "forms": "reciprocal (adj) · reciprocity (n)"
+    }
+  ]
+}
