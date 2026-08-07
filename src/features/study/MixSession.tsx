@@ -354,9 +354,14 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               {verdict.correct ? '✅ Chính xác!' : '❌ Chưa đúng'}
             </p>
             {verdict.segments && <AnswerDiff segments={verdict.segments} />}
-            <p className="feedback__meta">
-              <strong>{verdict.word.word}</strong> — {verdict.word.vi}
+            {/* The word and its meaning, shown large on every answer — right or
+                wrong. The listening rungs never put the word on screen, so this
+                is the one place the learner sees the spelling and, more
+                importantly, is reminded what it means. */}
+            <p className="feedback__word">
+              {verdict.word.word} <span className="feedback__ipa">{verdict.word.ipa}</span>
             </p>
+            <p className="feedback__vi">{verdict.word.vi}</p>
             {!verdict.correct && (
               <p className="feedback__retry">Từ này tụt một bậc và sẽ quay lại.</p>
             )}

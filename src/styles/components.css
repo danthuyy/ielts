@@ -667,6 +667,20 @@ kbd {
   font-size: var(--text-sm);
   color: var(--text-dim);
 }
+.feedback__word {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text);
+}
+.feedback__ipa {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--text-dim);
+}
+.feedback__vi {
+  font-size: var(--text-base);
+  color: var(--text);
+}
 
 .toast-region {
   position: fixed;
