@@ -11,7 +11,13 @@ import { pronunciationMatches } from '@/lib/pronounce';
 export function SpeakCheck({ target }: { target: string }) {
   const { supported, listening, transcript, error, start, stop } = useSpeechRecognition('en-US');
 
-  if (!supported) return null;
+  // Safari/Firefox have no speech recognition. Rather than vanish — which reads
+  // as "the feature is missing" — say why, so the learner knows to use Chrome.
+  if (!supported) {
+    return (
+      <p className="speak-check__unsupported">🎤 Luyện nói cần trình duyệt Chrome hoặc Edge.</p>
+    );
+  }
 
   const matched = transcript ? pronunciationMatches(target, transcript) : null;
 

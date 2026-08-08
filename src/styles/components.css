@@ -740,6 +740,12 @@ kbd {
   font-size: var(--text-sm);
   color: var(--text-dim);
 }
+.speak-check__unsupported {
+  margin-top: var(--sp-2);
+  font-size: var(--text-xs);
+  color: var(--text-dim);
+  text-align: center;
+}
 
 .toast-region {
   position: fixed;
