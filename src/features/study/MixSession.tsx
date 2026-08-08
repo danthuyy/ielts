@@ -317,11 +317,25 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         </p>
 
         {speakActive ? (
-          <div className="prompt">
-            <p className="prompt__main prompt__main--lg">{word.word}</p>
-            <p className="prompt__sub">
-              {word.ipa} · {word.vi}
+          <div className="prompt speak-prompt">
+            <p className="prompt__main prompt__main--lg">
+              {word.word}{' '}
+              <button
+                type="button"
+                className="speak-prompt__play"
+                onClick={() => speakSlow(word.word)}
+                aria-label="Nghe phát âm mẫu"
+              >
+                🔊
+              </button>
             </p>
+            <p className="prompt__sub">
+              {word.ipa} · {word.pos}
+            </p>
+            <p className="feedback__vi">{word.vi}</p>
+            {word.synonyms && <p className="feedback__extra">≈ {word.synonyms}</p>}
+            {word.collocation && <p className="feedback__extra">{word.collocation}</p>}
+            {word.example && <p className="feedback__eg">“{word.example}”</p>}
           </div>
         ) : speakingRung ? (
           <div style={{ textAlign: 'center' }}>

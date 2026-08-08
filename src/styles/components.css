@@ -702,6 +702,25 @@ kbd {
   font-style: italic;
   color: var(--text-dim);
 }
+.speak-prompt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  text-align: center;
+}
+.speak-prompt__play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--primary);
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
 .speak-rung {
   display: flex;
   flex-direction: column;
