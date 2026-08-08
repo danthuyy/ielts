@@ -101,6 +101,13 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
   const [clean, setClean] = useState(saved?.clean ?? 0);
   /** Set by the "Kết thúc" button to end the session early with a result. */
   const [ended, setEnded] = useState(false);
+  /**
+   * Failed pronunciation attempts on the word currently on the speaking rung.
+   * After a couple, a "skip" button appears so a shaky mic or a genuinely hard
+   * word can't strand the learner on this one rung. Reset when the word moves
+   * on (see `advance`).
+   */
+  const [speakFails, setSpeakFails] = useState(0);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const answeringRef = useRef(false);
@@ -197,14 +204,17 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
   }, [word?.id, rung, resetSpeech]);
 
   // On the speaking rung, a correct pronunciation is the answer — pass the rung.
-  // A wrong one is ignored (no demotion): the learner just says it again, which
-  // is the "nói đến khi nào đúng" the rung is for. Reacting to the async speech
-  // result is exactly what this effect is for, hence the set-state-in-effect.
+  // A wrong one is not a demotion: the learner just says it again, which is the
+  // "nói đến khi nào đúng" the rung is for — but it is counted, so that after a
+  // few misses a way past appears. Reacting to the async speech result is what
+  // this effect is for, hence the set-state-in-effect.
   useEffect(() => {
     if (!speakActive || verdict || !word || !speech.transcript) return;
     if (pronunciationMatches(word.word, speech.transcript)) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       submit(word.word, true);
+    } else {
+      setSpeakFails((count) => count + 1);
     }
   }, [speakActive, verdict, word, speech.transcript, submit]);
 
@@ -226,6 +236,7 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     setVerdict(null);
     setAnswer('');
     setPlaced([]);
+    setSpeakFails(0);
     answeringRef.current = false;
 
     const outcome = queue.answer(settled.correct);
@@ -347,7 +358,13 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               <button
                 type="button"
                 className="speak-prompt__play"
-                onClick={() => speakSlow(word.word)}
+                // Stop the mic first: otherwise the sample plays into an open
+                // mic and the engine "hears" the word, passing the rung without
+                // the learner ever speaking.
+                onClick={() => {
+                  speech.stop();
+                  speakSlow(word.word);
+                }}
                 aria-label="Nghe phát âm mẫu"
               >
                 🔊
@@ -433,6 +450,17 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
             )}
             {speech.error === 'not-allowed' && (
               <p className="speak-rung__heard">Cần cho phép micro trong trình duyệt.</p>
+            )}
+            {(speakFails >= 2 || speech.error) && (
+              // A few misses, or a mic the browser won't grant — either way, let
+              // the learner move on instead of being stuck on this one rung.
+              <button
+                type="button"
+                className="btn btn--ghost speak-rung__skip"
+                onClick={() => submit(word.word, true)}
+              >
+                Bỏ qua từ này →
+              </button>
             )}
           </div>
         )}

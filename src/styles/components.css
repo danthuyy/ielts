@@ -758,6 +758,9 @@ kbd {
   font-size: var(--text-sm);
   color: var(--warning);
 }
+.speak-rung__skip {
+  margin-top: var(--sp-3);
+}
 
 .toast-region {
   position: fixed;
