@@ -690,6 +690,44 @@ kbd {
   font-style: italic;
   color: var(--text-dim);
 }
+.speak-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-1);
+  margin-top: var(--sp-2);
+}
+.speak-check__btn {
+  min-height: 2.25rem;
+  padding: 0 var(--sp-4);
+  border-radius: var(--radius-pill, 999px);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.speak-check__btn--live {
+  background: var(--danger);
+  color: var(--primary-contrast);
+  animation: speak-pulse 1s ease-in-out infinite;
+}
+@keyframes speak-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+.speak-check__ok {
+  font-size: var(--text-sm);
+  color: var(--success);
+}
+.speak-check__no {
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+}
 
 .toast-region {
   position: fixed;

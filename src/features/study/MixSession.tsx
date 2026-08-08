@@ -5,6 +5,7 @@ import { ALL_STUDY_WORDS } from '@/content/lessons';
 import { AnswerDiff } from '@/components/AnswerDiff';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
+import { SpeakCheck } from '@/components/SpeakCheck';
 import { Sticker } from '@/components/Sticker';
 import { WordBank } from '@/components/WordBank';
 import { useKeyboard } from '@/hooks/useKeyboard';
@@ -367,6 +368,7 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               <p className="feedback__extra">{verdict.word.collocation}</p>
             )}
             {verdict.word.example && <p className="feedback__eg">“{verdict.word.example}”</p>}
+            <SpeakCheck key={verdict.word.id} target={verdict.word.word} />
             {!verdict.correct && (
               <p className="feedback__retry">Từ này tụt một bậc và sẽ quay lại.</p>
             )}
