@@ -173,21 +173,16 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     if (!outcome?.graduated) return;
     if (outcome.misses === 0) setClean((count) => count + 1);
 
-    // Học mix is an intensive "learn it now" mode. A word only comes off the top
-    // of the ladder after being answered correctly at every rung — and any rung
-    // missed drops it back and re-tests it until it is right. So graduating *is*
-    // the evidence the learner knows it, and it is marked "thuộc" here rather
-    // than waiting several spaced sessions. The ease/interval still come from
-    // SM-2 so the word is scheduled for a confirming review later.
+    // Graduating the whole ladder is one strong session, but not yet proof of
+    // long-term recall — so the word jumps to "Gần thuộc" (rep 2) rather than
+    // straight to "Thuộc". It becomes "Thuộc" only when a spaced review on a
+    // later day answers it correctly again and SM-2 promotes it (rep >= 3). The
+    // ease/interval come from SM-2, which schedules that confirming review.
     const graded = processAnswer(
       await getSrsState(outcome.item.id),
       sessionQuality(outcome.misses),
     );
-    const learned = {
-      ...graded,
-      status: 'mastered' as const,
-      repetitions: Math.max(graded.repetitions, 3),
-    };
+    const learned = { ...graded, repetitions: Math.max(graded.repetitions, 2) };
     await recordAnswer(outcome.item, learned, outcome.misses === 0);
     await recordActivity(1, outcome.misses === 0 ? 1 : 0, source);
   }, [verdict, queue, source]);
@@ -238,8 +233,8 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         emoji={finishedAll ? '🎓' : '✅'}
         title={finishedAll ? 'Đã học hết!' : 'Đã kết thúc'}
         details={[
-          { label: 'Đã thuộc', value: `${queue.graduated}/${queue.total}` },
-          { label: 'Thuộc ngay (không sai)', value: String(clean) },
+          { label: 'Học xong', value: `${queue.graduated}/${queue.total}` },
+          { label: 'Không sai lần nào', value: String(clean) },
           { label: 'Số câu sai', value: String(misses) },
         ]}
         score={{ correct: queue.graduated, total: queue.total }}

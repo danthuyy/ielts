@@ -109,7 +109,8 @@ export function StatsScreen() {
           ))}
         </div>
         <p className="levels__hint">
-          Mỗi lần ôn đúng, từ lên một cấp. Đủ 3 lần ôn (rải ra) là “Thuộc”.
+          Học mix xong một từ → “Gần thuộc”. Ôn đúng lại vào hôm khác (theo lịch Ôn tập) → lên
+          “Thuộc”.
         </p>
       </section>
 
