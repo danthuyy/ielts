@@ -67,7 +67,17 @@ const PREFERRED_VOICES = [
 
 const LANG_ORDER = ['en-GB', 'en-US', 'en-AU', 'en-IE', 'en-ZA', 'en-IN'];
 
-const SLOW_RATE = 0.6;
+export const SLOW_RATE = 0.6;
+
+/** Human labels for the accents worth offering a quick button for. */
+const ACCENT_LABELS: Record<string, { flag: string; label: string }> = {
+  'en-GB': { flag: '🇬🇧', label: 'Anh-Anh' },
+  'en-US': { flag: '🇺🇸', label: 'Anh-Mỹ' },
+  'en-AU': { flag: '🇦🇺', label: 'Anh-Úc' },
+  'en-IE': { flag: '🇮🇪', label: 'Anh-Ireland' },
+  'en-ZA': { flag: '🇿🇦', label: 'Anh-Nam Phi' },
+  'en-IN': { flag: '🇮🇳', label: 'Anh-Ấn Độ' },
+};
 
 function rank(list: readonly string[], value: string): number {
   const index = list.indexOf(value);
@@ -107,6 +117,46 @@ export function listVoices(): SpeechSynthesisVoice[] {
     });
 }
 
+/** Normalise a BCP-47 tag ("en_gb", "en-GB-x-…") to a plain accent code. */
+export function accentOf(lang: string): string {
+  const [base, region] = lang.replace('_', '-').split('-');
+  const low = (base ?? '').toLowerCase();
+  return region ? `${low}-${region.toUpperCase()}` : low;
+}
+
+export interface AccentVoice {
+  voice: SpeechSynthesisVoice;
+  code: string;
+  flag: string;
+  label: string;
+}
+
+/**
+ * One voice per distinct accent, best first — the data behind the row of quick
+ * "hear it in this accent" buttons. Deduplicated by accent so the learner gets
+ * British / American / Australian rather than five near-identical US voices.
+ */
+export function pickAccentVoices(
+  voices: readonly SpeechSynthesisVoice[],
+  limit = 3,
+): AccentVoice[] {
+  const seen = new Set<string>();
+  const out: AccentVoice[] = [];
+  for (const voice of voices) {
+    const code = accentOf(voice.lang);
+    if (seen.has(code)) continue;
+    seen.add(code);
+    const meta = ACCENT_LABELS[code] ?? { flag: '🔊', label: voice.lang };
+    out.push({ voice, code, flag: meta.flag, label: meta.label });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
+export function distinctAccentVoices(limit = 3): AccentVoice[] {
+  return pickAccentVoices(listVoices(), limit);
+}
+
 export function resolveVoice(): SpeechSynthesisVoice | null {
   const voices = listVoices();
   if (voices.length === 0) return null;
@@ -126,7 +176,8 @@ export function setVoice(name: string): void {
   setSetting('voiceName', name);
 }
 
-export function speak(text: string, rate?: number): void {
+/** Speak with an explicit voice — the quick per-accent buttons use this. */
+export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate?: number): void {
   const engine = synth();
   if (!engine || !text) return;
 
@@ -135,7 +186,6 @@ export function speak(text: string, rate?: number): void {
   if (engine.speaking || engine.pending) engine.cancel();
 
   const utterance = new SpeechSynthesisUtterance(text);
-  const voice = resolveVoice();
   if (voice) {
     utterance.voice = voice;
     utterance.lang = voice.lang;
@@ -146,6 +196,10 @@ export function speak(text: string, rate?: number): void {
   }
   utterance.rate = rate ?? getSetting('speechRate');
   engine.speak(utterance);
+}
+
+export function speak(text: string, rate?: number): void {
+  speakWith(text, resolveVoice(), rate);
 }
 
 export function speakSlow(text: string): void {
