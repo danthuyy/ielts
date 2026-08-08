@@ -47,6 +47,17 @@ export interface MasteryQueue<T> {
   asked: number;
   finished: boolean;
   answer: (correct: boolean) => AnswerOutcome<T> | null;
+  /** A serialisable copy of the queue, so a session can survive a page reload. */
+  snapshot: QueueSnapshot;
+}
+
+/** The queue state as plain JSON — what gets stored to resume a session. */
+export interface QueueSnapshot {
+  queue: string[];
+  pool: string[];
+  levels: [string, number][];
+  misses: [string, number][];
+  asked: number;
 }
 
 interface State<T> {
@@ -58,6 +69,39 @@ interface State<T> {
   levels: Map<string, number>;
   misses: Map<string, number>;
   asked: number;
+}
+
+/**
+ * Rebuild queue state from a stored snapshot, or null if it no longer fits the
+ * word set (content changed, ids renamed) — in which case the caller starts a
+ * fresh session rather than restoring something broken.
+ */
+function fromSnapshot<T>(
+  snapshot: QueueSnapshot,
+  items: readonly T[],
+  getId: (item: T) => string,
+): State<T> | null {
+  const byId = new Map<string, T>();
+  const known = new Set<string>();
+  for (const item of items) {
+    const id = getId(item);
+    byId.set(id, item);
+    known.add(id);
+  }
+
+  const levels = new Map(snapshot.levels);
+  if (levels.size !== known.size) return null;
+  for (const id of levels.keys()) if (!known.has(id)) return null;
+  for (const id of [...snapshot.queue, ...snapshot.pool]) if (!known.has(id)) return null;
+
+  return {
+    queue: [...snapshot.queue],
+    pool: [...snapshot.pool],
+    byId,
+    levels,
+    misses: new Map(snapshot.misses),
+    asked: snapshot.asked,
+  };
 }
 
 function initial<T>(
@@ -90,10 +134,19 @@ export function useMasteryQueue<T>(
   items: readonly T[],
   getId: (item: T) => string,
   startLevel: (item: T) => number,
+  restore?: QueueSnapshot | null,
 ): MasteryQueue<T> {
   // `items` is memoised by the caller and both callbacks are expected to be
-  // stable, so a new identity here means a genuinely new session.
-  const seed = useMemo(() => initial(items, getId, startLevel), [items, getId, startLevel]);
+  // stable, so a new identity here means a genuinely new session. A restore
+  // snapshot, when it still matches the word set, resumes a reloaded session
+  // instead of starting over.
+  const seed = useMemo(() => {
+    if (restore) {
+      const restored = fromSnapshot(restore, items, getId);
+      if (restored) return restored;
+    }
+    return initial(items, getId, startLevel);
+  }, [items, getId, startLevel, restore]);
   const [state, setState] = useState<State<T>>(seed);
   const [seenSeed, setSeenSeed] = useState(seed);
   if (seenSeed !== seed) {
@@ -155,6 +208,19 @@ export function useMasteryQueue<T>(
 
   const levels = [...state.levels.values()];
 
+  // Memoised on `state`, so it only changes when an answer changes the queue —
+  // the consumer can persist it in an effect without writing on every render.
+  const snapshot = useMemo<QueueSnapshot>(
+    () => ({
+      queue: state.queue,
+      pool: state.pool,
+      levels: [...state.levels],
+      misses: [...state.misses],
+      asked: state.asked,
+    }),
+    [state],
+  );
+
   return {
     current,
     levels,
@@ -163,5 +229,6 @@ export function useMasteryQueue<T>(
     asked: state.asked,
     finished: state.queue.length === 0 && items.length > 0,
     answer,
+    snapshot,
   };
 }

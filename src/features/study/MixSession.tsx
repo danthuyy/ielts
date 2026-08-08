@@ -12,6 +12,7 @@ import { useMasteryQueue } from '@/hooks/useMasteryQueue';
 import { useSettings } from '@/hooks/useSettings';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 import { buildChoiceOptions } from '@/lib/choices';
+import { clearMixResume, mixResumeKey, readMixResume, writeMixResume } from '@/lib/mixResume';
 import { pronunciationMatches } from '@/lib/pronounce';
 import { compareAnswer, type Segment } from '@/lib/diff';
 import {
@@ -57,6 +58,18 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
   const navigate = useNavigate();
   const { settings } = useSettings();
 
+  // A stored session for exactly this word set is restored on mount, so a
+  // reload continues where the learner was instead of starting over.
+  const storageKey = useMemo(
+    () =>
+      mixResumeKey(
+        source,
+        words.map((word) => word.id),
+      ),
+    [source, words],
+  );
+  const [saved] = useState(() => readMixResume(storageKey));
+
   // Frozen on mount. Answering writes progress back, which would otherwise
   // re-seed every word's starting rung mid-session.
   const [session] = useState(() => shuffle([...words]));
@@ -66,7 +79,7 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
 
   const getId = useCallback((word: StudyWord) => word.id, []);
   const startLevel = useCallback((word: StudyWord) => startLevels.get(word.id) ?? 0, [startLevels]);
-  const queue = useMasteryQueue(session, getId, startLevel);
+  const queue = useMasteryQueue(session, getId, startLevel, saved?.snapshot ?? null);
 
   const [answer, setAnswer] = useState('');
   const [placed, setPlaced] = useState<number[]>([]);
@@ -77,7 +90,7 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     given: string;
     segments: Segment[] | null;
   } | null>(null);
-  const [misses, setMisses] = useState(0);
+  const [misses, setMisses] = useState(saved?.misses ?? 0);
   /**
    * Words that climbed the whole ladder without a single miss.
    *
@@ -85,7 +98,7 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
    * word six times or more, so "questions missed" can exceed the number of
    * words and says nothing about how many were actually learned cleanly.
    */
-  const [clean, setClean] = useState(0);
+  const [clean, setClean] = useState(saved?.clean ?? 0);
   /** Set by the "Kết thúc" button to end the session early with a result. */
   const [ended, setEnded] = useState(false);
 
@@ -194,6 +207,17 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
       submit(word.word, true);
     }
   }, [speakActive, verdict, word, speech.transcript, submit]);
+
+  // Save the live session after every answer so a reload can resume it, and drop
+  // the save once the result screen is reached so a finished session never
+  // silently reopens later.
+  useEffect(() => {
+    if (queue.finished || ended) {
+      clearMixResume(storageKey);
+    } else {
+      writeMixResume(storageKey, { snapshot: queue.snapshot, misses, clean });
+    }
+  }, [queue.snapshot, queue.finished, ended, misses, clean, storageKey]);
 
   const advance = useCallback(async () => {
     const settled = verdict;
