@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { INITIAL_SRS, isDue, processAnswer, QUALITY, type SrsState } from '@/lib/srs';
+import {
+  INITIAL_SRS,
+  isDue,
+  masteryLevel,
+  MASTERY_LEVELS,
+  processAnswer,
+  QUALITY,
+  type SrsState,
+} from '@/lib/srs';
 import { todayKey } from '@/lib/utils';
 
 function state(overrides: Partial<SrsState> = {}): SrsState {
@@ -47,24 +55,52 @@ describe('processAnswer', () => {
     expect(current.easeFactor).toBeGreaterThanOrEqual(1.3);
   });
 
-  it('promotes to mastered only after 3 repetitions and a 21-day interval', () => {
-    const almost = processAnswer(
-      state({ repetitions: 2, interval: 6, easeFactor: 2.5, status: 'learning' }),
+  it('promotes to mastered after three successful reviews', () => {
+    const stillLearning = processAnswer(
+      state({ repetitions: 1, interval: 6, easeFactor: 2.5, status: 'learning' }),
       QUALITY.good,
     );
-    expect(almost.status).toBe('learning');
+    expect(stillLearning.repetitions).toBe(2);
+    expect(stillLearning.status).toBe('learning');
 
     const mastered = processAnswer(
       state({ repetitions: 2, interval: 15, easeFactor: 2.5, status: 'learning' }),
       QUALITY.good,
     );
-    expect(mastered.interval).toBeGreaterThanOrEqual(21);
+    expect(mastered.repetitions).toBe(3);
     expect(mastered.status).toBe('mastered');
   });
 
   it('raises the ease factor for an easy answer and lowers it for a hard one', () => {
     expect(processAnswer(state(), QUALITY.easy).easeFactor).toBeGreaterThan(2.5);
     expect(processAnswer(state(), QUALITY.hard).easeFactor).toBeLessThan(2.5);
+  });
+});
+
+describe('masteryLevel', () => {
+  it('climbs one step per successful review, topping out at mastered', () => {
+    expect(masteryLevel({ status: 'new', repetitions: 0 })).toBe(0);
+    expect(masteryLevel({ status: 'learning', repetitions: 0 })).toBe(1);
+    expect(masteryLevel({ status: 'learning', repetitions: 1 })).toBe(2);
+    expect(masteryLevel({ status: 'learning', repetitions: 2 })).toBe(3);
+    expect(masteryLevel({ status: 'mastered', repetitions: 3 })).toBe(4);
+  });
+
+  it('has a label for every level', () => {
+    for (let level = 0; level < MASTERY_LEVELS.length; level += 1) {
+      expect(MASTERY_LEVELS[level]).toBeTruthy();
+    }
+  });
+
+  it('tracks the status a real review sequence produces', () => {
+    let current = state();
+    const levels = [masteryLevel(current)];
+    for (let i = 0; i < 3; i += 1) {
+      current = processAnswer(current, QUALITY.good);
+      levels.push(masteryLevel(current));
+    }
+    // new(0) → rep1(2) → rep2(3) → rep3 mastered(4)
+    expect(levels).toEqual([0, 2, 3, 4]);
   });
 });
 

@@ -612,6 +612,18 @@
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.study-header__end {
+  flex: none;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-pill, 999px);
+  background: var(--surface);
+  color: var(--text-dim);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+.study-header__end:hover {
+  color: var(--text);
+}
 
 .hints {
   display: flex;

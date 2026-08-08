@@ -1,5 +1,5 @@
 import { db, type DailyActivity, type TestResult, type WordProgress } from './db';
-import { INITIAL_SRS, type SrsState } from './srs';
+import { INITIAL_SRS, MASTERY_LEVEL_COUNT, masteryLevel, type SrsState } from './srs';
 import { addDays, toDateKey, todayKey } from './utils';
 import { isLegacyKey, parseLegacyKey, wordKey } from './ids';
 import { ALL_STUDY_WORDS, getLesson, LESSONS, TOTAL_WORD_COUNT } from '@/content/lessons';
@@ -348,6 +348,23 @@ function countByStatus(records: readonly WordProgress[], total: number): StatusC
 export async function getOverallStats(): Promise<StatusCounts> {
   const records = await getAllProgress();
   return countByStatus(records, records.length || TOTAL_WORD_COUNT);
+}
+
+/**
+ * How many words sit at each mastery level (0 = new … 4 = mastered), for the
+ * graduated "cấp độ thuộc" display. Words with no record yet count as level 0.
+ */
+export async function getMasteryLevelCounts(): Promise<number[]> {
+  const records = await getAllProgress();
+  const counts = new Array<number>(MASTERY_LEVEL_COUNT).fill(0);
+  for (const record of records) {
+    const level = masteryLevel(record);
+    counts[level] = (counts[level] ?? 0) + 1;
+  }
+  // Content the learner has never opened has no record yet — fold it into level 0.
+  const untracked = TOTAL_WORD_COUNT - records.length;
+  if (untracked > 0) counts[0] = (counts[0] ?? 0) + untracked;
+  return counts;
 }
 
 export async function getLessonStats(lessonId: string): Promise<StatusCounts> {

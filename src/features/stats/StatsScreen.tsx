@@ -5,13 +5,24 @@ import { routes } from '@/app/routes';
 import { LoadingScreen } from '@/components/ScreenState';
 import {
   getActivitySince,
+  getMasteryLevelCounts,
   getOverallStats,
   getTestHistory,
   getUpcomingReviews,
   getWeakWords,
 } from '@/lib/progress';
+import { MASTERY_LEVELS } from '@/lib/srs';
 import { formatDateVi, percent } from '@/lib/utils';
 import { Heatmap } from './Heatmap';
+
+/** Cold → warm, so the bar visibly "ripens" from Mới to Thuộc. */
+const LEVEL_COLORS = [
+  'var(--text-dim)',
+  'var(--info)',
+  'var(--primary)',
+  'var(--warning)',
+  'var(--success)',
+];
 
 const HISTORY_LIMIT = 8;
 const HEATMAP_WEEKS = 26;
@@ -22,19 +33,21 @@ const WEEKDAYS = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
 
 export function StatsScreen() {
   const data = useLiveQuery(async () => {
-    const [stats, history, activity, weak, upcoming] = await Promise.all([
+    const [stats, history, activity, weak, upcoming, levels] = await Promise.all([
       getOverallStats(),
       getTestHistory(HISTORY_LIMIT),
       getActivitySince(HEATMAP_WEEKS * 7),
       getWeakWords(WEAK_LIMIT),
       getUpcomingReviews(UPCOMING_DAYS),
+      getMasteryLevelCounts(),
     ]);
-    return { stats, history, activity, weak, upcoming };
+    return { stats, history, activity, weak, upcoming, levels };
   }, []);
 
   if (!data) return <LoadingScreen />;
 
-  const { stats, history, activity, weak, upcoming } = data;
+  const { stats, history, activity, weak, upcoming, levels } = data;
+  const levelTotal = levels.reduce((sum, count) => sum + count, 0) || 1;
   const masteredPct = percent(stats.mastered, stats.total);
   const learningPct = percent(stats.learning, stats.total);
   const upcomingPeak = Math.max(1, ...upcoming.map((day) => day.count));
@@ -74,6 +87,30 @@ export function StatsScreen() {
             Mới ({stats.newCount})
           </div>
         </div>
+      </section>
+
+      <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
+        <h2 className="section__label">Cấp độ thuộc</h2>
+        <div className="levels">
+          {MASTERY_LEVELS.map((label, level) => (
+            <div className="level-row" key={label}>
+              <span className="level-row__label">{label}</span>
+              <span className="level-row__bar">
+                <span
+                  className="level-row__fill"
+                  style={{
+                    width: `${(levels[level] ?? 0) === 0 ? 0 : Math.max(3, ((levels[level] ?? 0) / levelTotal) * 100)}%`,
+                    background: LEVEL_COLORS[level],
+                  }}
+                />
+              </span>
+              <span className="level-row__count">{levels[level] ?? 0}</span>
+            </div>
+          ))}
+        </div>
+        <p className="levels__hint">
+          Mỗi lần ôn đúng, từ lên một cấp. Đủ 3 lần ôn (rải ra) là “Thuộc”.
+        </p>
       </section>
 
       <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>

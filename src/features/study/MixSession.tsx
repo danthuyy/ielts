@@ -85,6 +85,8 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
    * words and says nothing about how many were actually learned cleanly.
    */
   const [clean, setClean] = useState(0);
+  /** Set by the "Kết thúc" button to end the session early with a result. */
+  const [ended, setEnded] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const answeringRef = useRef(false);
@@ -171,11 +173,22 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     if (!outcome?.graduated) return;
     if (outcome.misses === 0) setClean((count) => count + 1);
 
-    // One grade for the whole session, decided when the word comes off the top
-    // of the ladder. Grading every question would let a single sitting either
-    // bury the word or declare it mastered.
-    const next = processAnswer(await getSrsState(outcome.item.id), sessionQuality(outcome.misses));
-    await recordAnswer(outcome.item, next, outcome.misses === 0);
+    // Học mix is an intensive "learn it now" mode. A word only comes off the top
+    // of the ladder after being answered correctly at every rung — and any rung
+    // missed drops it back and re-tests it until it is right. So graduating *is*
+    // the evidence the learner knows it, and it is marked "thuộc" here rather
+    // than waiting several spaced sessions. The ease/interval still come from
+    // SM-2 so the word is scheduled for a confirming review later.
+    const graded = processAnswer(
+      await getSrsState(outcome.item.id),
+      sessionQuality(outcome.misses),
+    );
+    const learned = {
+      ...graded,
+      status: 'mastered' as const,
+      repetitions: Math.max(graded.repetitions, 3),
+    };
+    await recordAnswer(outcome.item, learned, outcome.misses === 0);
     await recordActivity(1, outcome.misses === 0 ? 1 : 0, source);
   }, [verdict, queue, source]);
 
@@ -215,22 +228,23 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     );
   }
 
-  if (!word) {
+  if (!word || ended) {
+    // Either the queue emptied (every word graduated) or the learner pressed
+    // "Kết thúc". Graduated words are the ones marked thuộc this session.
+    const finishedAll = !word;
     return (
       <ResultScreen
-        sticker={settings.showStickers ? resultSticker(clean, queue.total) : undefined}
-        emoji="🎓"
-        title="Đã học hết!"
+        sticker={settings.showStickers ? resultSticker(queue.graduated, queue.total) : undefined}
+        emoji={finishedAll ? '🎓' : '✅'}
+        title={finishedAll ? 'Đã học hết!' : 'Đã kết thúc'}
         details={[
-          { label: 'Thuộc ngay', value: `${clean}/${queue.total}` },
-          { label: 'Số câu đã làm', value: String(queue.asked) },
+          { label: 'Đã thuộc', value: `${queue.graduated}/${queue.total}` },
+          { label: 'Thuộc ngay (không sai)', value: String(clean) },
           { label: 'Số câu sai', value: String(misses) },
         ]}
-        // Every word is learned by the time this screen appears — that is the
-        // point of the mode — so the score is how many needed no correction.
-        score={{ correct: clean, total: queue.total }}
-        message={resultLine(clean, queue.total)}
-        sound={clean * 2 >= queue.total ? 'perfect' : 'poor'}
+        score={{ correct: queue.graduated, total: queue.total }}
+        message={resultLine(queue.graduated, queue.total)}
+        sound={queue.graduated * 2 >= queue.total ? 'perfect' : 'poor'}
         continueTo={backTo}
         continueLabel="Xong"
         onRetry={onRetry}
@@ -257,6 +271,14 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         <span className="study-header__count">
           {queue.graduated}/{queue.total}
         </span>
+        <button
+          type="button"
+          className="study-header__end"
+          onClick={() => setEnded(true)}
+          aria-label="Kết thúc phiên học"
+        >
+          Kết thúc
+        </button>
       </header>
 
       <div className="study__body">
