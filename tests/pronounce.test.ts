@@ -24,6 +24,12 @@ describe('pronunciationMatches', () => {
     expect(pronunciationMatches('material wealth', 'material wealth please')).toBe(true);
   });
 
+  it('accepts one word the engine split into pieces that rejoin', () => {
+    expect(pronunciationMatches('repertoire', 'reper twar')).toBe(false); // different spelling
+    expect(pronunciationMatches('repertoire', 'reper toire')).toBe(true);
+    expect(pronunciationMatches('wellbeing', 'well being')).toBe(true);
+  });
+
   it('accepts a British/American spelling variant of the same word', () => {
     // en-US recognition spells a British headword the American way even when
     // the learner says it perfectly.

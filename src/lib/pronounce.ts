@@ -42,7 +42,11 @@ export function pronunciationMatches(target: string, heard: string): boolean {
   // Whole-word containment both ways: the padding stops "art" from matching
   // inside "start" while still accepting "the art" for target "art".
   const padded = (s: string) => ` ${s} `;
-  return padded(h).includes(padded(t)) || padded(t).includes(padded(h));
+  if (padded(h).includes(padded(t)) || padded(t).includes(padded(h))) return true;
+  // One spoken word often comes back split in two ("repertoire" → "reper
+  // twar"). If the pieces join back into the target, that is the same word.
+  const squash = (s: string) => s.replace(/\s+/g, '');
+  return squash(h) === squash(t);
 }
 
 /**
