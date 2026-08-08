@@ -309,7 +309,7 @@ export function SettingsScreen() {
 
         <div className="setting-row">
           <label className="setting-row__title" htmlFor="speak-practice">
-            <span aria-hidden="true">🎤</span> Nút luyện nói (Học mix)
+            <span aria-hidden="true">🎤</span> Bậc luyện nói (Học mix)
           </label>
           <span className="switch">
             <input

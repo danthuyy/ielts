@@ -20,6 +20,7 @@ export const RUNGS = [
   'assemble',
   'type',
   'listen',
+  'speak',
 ] as const;
 
 export type Rung = (typeof RUNGS)[number];
@@ -35,6 +36,7 @@ export const RUNG_LABEL: Record<Rung, string> = {
   assemble: 'Ghép chữ cái',
   type: 'Viết lại',
   listen: 'Nghe và viết',
+  speak: 'Nói to từ',
 };
 
 export function rungAt(level: number): Rung {
@@ -49,7 +51,7 @@ export function rungAt(level: number): Rung {
  * back is what builds a memory that survives the session. Early rungs stay
  * close so a word the learner is still finding their feet on does not vanish.
  */
-const GAPS = [2, 3, 4, 6, 8, 10];
+const GAPS = [2, 3, 4, 6, 8, 10, 12];
 
 export function gapFor(level: number): number {
   return GAPS[Math.min(Math.max(level, 0), GAPS.length - 1)] as number;

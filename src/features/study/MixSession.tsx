@@ -5,13 +5,14 @@ import { ALL_STUDY_WORDS } from '@/content/lessons';
 import { AnswerDiff } from '@/components/AnswerDiff';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
-import { SpeakCheck } from '@/components/SpeakCheck';
 import { Sticker } from '@/components/Sticker';
 import { WordBank } from '@/components/WordBank';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useMasteryQueue } from '@/hooks/useMasteryQueue';
 import { useSettings } from '@/hooks/useSettings';
+import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 import { buildChoiceOptions } from '@/lib/choices';
+import { pronunciationMatches } from '@/lib/pronounce';
 import { compareAnswer, type Segment } from '@/lib/diff';
 import {
   GRADUATED,
@@ -125,16 +126,29 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
    * question falls back to its readable sibling instead of being unanswerable.
    */
   const [audible] = useState(canSpeak);
+  const speech = useSpeechRecognition('en-US');
+  // The 7th rung asks the learner to *say* the word. It only runs where the
+  // browser can hear (Chrome/Edge) and the setting is on; otherwise it falls
+  // back to typing so nobody is trapped on a rung their browser cannot answer.
+  const speakRung = rung === 'speak';
+  const speakActive = speakRung && settings.speakPractice && speech.supported;
   const speakingRung = audible && (rung === 'listen' || rung === 'listen-choice');
-  const typingRung = rung === 'type' || rung === 'listen';
+  const typingRung = rung === 'type' || rung === 'listen' || (speakRung && !speakActive);
 
   useEffect(() => {
     if (!word || verdict) return;
     if (typingRung) inputRef.current?.focus();
-    if (!speakingRung) return;
-    const timer = setTimeout(() => speakSlow(word.word), 300);
-    return () => clearTimeout(timer);
-  }, [word, verdict, speakingRung, typingRung]);
+    if (speakingRung) {
+      const timer = setTimeout(() => speakSlow(word.word), 300);
+      return () => clearTimeout(timer);
+    }
+    // "What does this word mean?" shows the English word — read it aloud on
+    // arrival so the learner hears it up front, not only after they answer.
+    if (rung === 'choice-en' && settings.autoSpeak) {
+      const timer = setTimeout(() => speak(word.word), 300);
+      return () => clearTimeout(timer);
+    }
+  }, [word, verdict, speakingRung, typingRung, rung, settings.autoSpeak]);
 
   const submit = useCallback(
     (given: string, correct: boolean) => {
@@ -146,9 +160,11 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         word,
         correct,
         given,
-        // Only the typing rungs can produce a near miss worth marking up; a
-        // wrong multiple-choice pick is a different word, not a misspelling.
-        segments: !correct && typingRung ? compareAnswer(given, word.word) : null,
+        // Letter-by-letter feedback for every typed answer, right or wrong —
+        // green where the letter matches, red where it does not — so the learner
+        // sees exactly which letters they got. Choice picks are a whole different
+        // word, not a misspelling, so they get no letter diff.
+        segments: typingRung ? compareAnswer(given, word.word) : null,
       });
       if (!correct) setMisses((count) => count + 1);
 
@@ -159,6 +175,25 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
     },
     [word, typingRung, settings.autoSpeak, speakingRung],
   );
+
+  // Clear the last recognised phrase whenever a new speaking question appears,
+  // so an old "heard: …" line never lingers on the next word.
+  const resetSpeech = speech.reset;
+  useEffect(() => {
+    resetSpeech();
+  }, [word?.id, rung, resetSpeech]);
+
+  // On the speaking rung, a correct pronunciation is the answer — pass the rung.
+  // A wrong one is ignored (no demotion): the learner just says it again, which
+  // is the "nói đến khi nào đúng" the rung is for. Reacting to the async speech
+  // result is exactly what this effect is for, hence the set-state-in-effect.
+  useEffect(() => {
+    if (!speakActive || verdict || !word || !speech.transcript) return;
+    if (pronunciationMatches(word.word, speech.transcript)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      submit(word.word, true);
+    }
+  }, [speakActive, verdict, word, speech.transcript, submit]);
 
   const advance = useCallback(async () => {
     const settled = verdict;
@@ -281,7 +316,14 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
           Bậc {Math.min(level + 1, RUNGS.length)}/{RUNGS.length} · {RUNG_LABEL[rung]}
         </p>
 
-        {speakingRung ? (
+        {speakActive ? (
+          <div className="prompt">
+            <p className="prompt__main prompt__main--lg">{word.word}</p>
+            <p className="prompt__sub">
+              {word.ipa} · {word.vi}
+            </p>
+          </div>
+        ) : speakingRung ? (
           <div style={{ textAlign: 'center' }}>
             <button
               className="listen-btn"
@@ -335,7 +377,29 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
           />
         )}
 
-        {(rung === 'type' || rung === 'listen') && (
+        {speakActive && !verdict && (
+          <div className="speak-rung">
+            <button
+              type="button"
+              className={`speak-rung__mic${speech.listening ? ' speak-rung__mic--live' : ''}`}
+              onClick={() => (speech.listening ? speech.stop() : speech.start())}
+              aria-label={speech.listening ? 'Đang nghe, bấm để dừng' : 'Bấm rồi nói to từ này'}
+            >
+              {speech.listening ? '🔴' : '🎤'}
+            </button>
+            <p className="speak-rung__hint">
+              {speech.listening ? 'Đang nghe… nói to từ ở trên' : 'Bấm mic rồi nói to từ ở trên'}
+            </p>
+            {speech.transcript && (
+              <p className="speak-rung__heard">Nghe được: “{speech.transcript}” — nói lại nhé</p>
+            )}
+            {speech.error === 'not-allowed' && (
+              <p className="speak-rung__heard">Cần cho phép micro trong trình duyệt.</p>
+            )}
+          </div>
+        )}
+
+        {typingRung && (
           <input
             ref={inputRef}
             className={`input input--answer${verdict ? ` input--${verdict.correct ? 'correct' : 'wrong'}` : ''}`}
@@ -385,9 +449,6 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               <p className="feedback__extra">{verdict.word.collocation}</p>
             )}
             {verdict.word.example && <p className="feedback__eg">“{verdict.word.example}”</p>}
-            {settings.speakPractice && (
-              <SpeakCheck key={verdict.word.id} target={verdict.word.word} />
-            )}
             {!verdict.correct && (
               <p className="feedback__retry">Từ này tụt một bậc và sẽ quay lại.</p>
             )}
@@ -395,7 +456,7 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         )}
 
         <div className="answer-actions">
-          {(verdict || rung === 'assemble' || rung === 'type' || rung === 'listen') && (
+          {(verdict || rung === 'assemble' || typingRung) && (
             <button
               className="btn btn--primary btn--lg btn--block"
               disabled={!verdict && rung === 'assemble' && placed.length === 0}

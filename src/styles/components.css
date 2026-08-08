@@ -702,23 +702,22 @@ kbd {
   font-style: italic;
   color: var(--text-dim);
 }
-.speak-check {
+.speak-rung {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--sp-1);
-  margin-top: var(--sp-2);
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
 }
-.speak-check__btn {
-  min-height: 2.25rem;
-  padding: 0 var(--sp-4);
-  border-radius: var(--radius-pill, 999px);
+.speak-rung__mic {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
   background: var(--surface);
-  color: var(--text);
-  font-size: var(--text-sm);
-  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.5rem;
 }
-.speak-check__btn--live {
+.speak-rung__mic--live {
   background: var(--danger);
   color: var(--primary-contrast);
   animation: speak-pulse 1s ease-in-out infinite;
@@ -729,22 +728,16 @@ kbd {
     opacity: 1;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.55;
   }
 }
-.speak-check__ok {
-  font-size: var(--text-sm);
-  color: var(--success);
-}
-.speak-check__no {
+.speak-rung__hint {
   font-size: var(--text-sm);
   color: var(--text-dim);
 }
-.speak-check__unsupported {
-  margin-top: var(--sp-2);
-  font-size: var(--text-xs);
-  color: var(--text-dim);
-  text-align: center;
+.speak-rung__heard {
+  font-size: var(--text-sm);
+  color: var(--warning);
 }
 
 .toast-region {

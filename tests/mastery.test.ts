@@ -19,7 +19,7 @@ import { QUALITY } from '@/lib/srs';
 describe('the ladder', () => {
   it('runs from recognition to production', () => {
     expect(RUNGS[0]).toBe('choice-en');
-    expect(RUNGS[TOP_RUNG]).toBe('listen');
+    expect(RUNGS[TOP_RUNG]).toBe('speak');
   });
 
   it('graduates a word one step past the top rung', () => {
