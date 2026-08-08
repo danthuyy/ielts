@@ -308,6 +308,21 @@ export function SettingsScreen() {
         </div>
 
         <div className="setting-row">
+          <label className="setting-row__title" htmlFor="speak-practice">
+            <span aria-hidden="true">🎤</span> Nút luyện nói (Học mix)
+          </label>
+          <span className="switch">
+            <input
+              id="speak-practice"
+              type="checkbox"
+              checked={settings.speakPractice}
+              onChange={(event) => update('speakPractice', event.target.checked)}
+            />
+            <span className="switch__track" />
+          </span>
+        </div>
+
+        <div className="setting-row">
           <label className="setting-row__title" htmlFor="shuffle-words">
             Đảo thứ tự mỗi phiên học
           </label>

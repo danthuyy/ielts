@@ -34,6 +34,8 @@ export interface Settings {
   soundEffects: boolean;
   /** Reaction stickers during and after a session. */
   showStickers: boolean;
+  /** Show the "🎤 Luyện nói" pronunciation button in mixed practice. */
+  speakPractice: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -49,6 +51,7 @@ export const DEFAULT_SETTINGS: Settings = {
   shuffleWords: true,
   soundEffects: true,
   showStickers: true,
+  speakPractice: true,
 };
 
 type Listener = (settings: Settings) => void;
@@ -78,6 +81,7 @@ export function getSettings(): Settings {
     shuffleWords: readRaw('shuffleWords'),
     soundEffects: readRaw('soundEffects'),
     showStickers: readRaw('showStickers'),
+    speakPractice: readRaw('speakPractice'),
   };
 }
 
