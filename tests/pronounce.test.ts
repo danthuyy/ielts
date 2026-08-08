@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { normaliseSpoken, pronunciationMatches } from '@/lib/pronounce';
+import { normaliseSpoken, pronunciationMatches, pronunciationMatchesAny } from '@/lib/pronounce';
 
 describe('normaliseSpoken', () => {
   it('lowercases, strips punctuation and collapses spaces', () => {
@@ -44,5 +44,18 @@ describe('pronunciationMatches', () => {
   it('rejects empty input', () => {
     expect(pronunciationMatches('vast', '')).toBe(false);
     expect(pronunciationMatches('', 'vast')).toBe(false);
+  });
+});
+
+describe('pronunciationMatchesAny', () => {
+  it('accepts when the target is any of the engine guesses, not just the top', () => {
+    // The engine ranked a near-homophone first, but the word said is in the list.
+    expect(pronunciationMatchesAny('resonate', ['reasonate', 'resonate', 'residence'])).toBe(true);
+    expect(pronunciationMatchesAny('maximise', ['maximized', 'maximize'])).toBe(true);
+  });
+
+  it('rejects when no guess matches', () => {
+    expect(pronunciationMatchesAny('vast', ['fast', 'past', 'last'])).toBe(false);
+    expect(pronunciationMatchesAny('vast', [])).toBe(false);
   });
 });

@@ -44,3 +44,15 @@ export function pronunciationMatches(target: string, heard: string): boolean {
   const padded = (s: string) => ` ${s} `;
   return padded(h).includes(padded(t)) || padded(t).includes(padded(h));
 }
+
+/**
+ * True if the target matches any of the engine's guesses.
+ *
+ * Web Speech returns a ranked list of alternatives, and for near-homophones the
+ * word the learner actually said is often not the top one. Accepting a match
+ * anywhere in the list is what stops a clean pronunciation from being marked
+ * wrong just because the engine preferred a similar-sounding word.
+ */
+export function pronunciationMatchesAny(target: string, heard: readonly string[]): boolean {
+  return heard.some((guess) => pronunciationMatches(target, guess));
+}

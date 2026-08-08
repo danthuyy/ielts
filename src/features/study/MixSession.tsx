@@ -7,13 +7,15 @@ import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
 import { Sticker } from '@/components/Sticker';
 import { WordBank } from '@/components/WordBank';
+import { VoiceButtons } from '@/components/VoiceButtons';
+import { YouglishLink } from '@/components/YouglishLink';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useMasteryQueue } from '@/hooks/useMasteryQueue';
 import { useSettings } from '@/hooks/useSettings';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 import { buildChoiceOptions } from '@/lib/choices';
 import { clearMixResume, mixResumeKey, readMixResume, writeMixResume } from '@/lib/mixResume';
-import { pronunciationMatches } from '@/lib/pronounce';
+import { pronunciationMatchesAny } from '@/lib/pronounce';
 import { compareAnswer, type Segment } from '@/lib/diff';
 import {
   GRADUATED,
@@ -208,15 +210,16 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
   // "nói đến khi nào đúng" the rung is for — but it is counted, so that after a
   // few misses a way past appears. Reacting to the async speech result is what
   // this effect is for, hence the set-state-in-effect.
+  const heardGuesses = speech.alternatives;
   useEffect(() => {
-    if (!speakActive || verdict || !word || !speech.transcript) return;
-    if (pronunciationMatches(word.word, speech.transcript)) {
+    if (!speakActive || verdict || !word || heardGuesses.length === 0) return;
+    if (pronunciationMatchesAny(word.word, heardGuesses)) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       submit(word.word, true);
     } else {
       setSpeakFails((count) => count + 1);
     }
-  }, [speakActive, verdict, word, speech.transcript, submit]);
+  }, [speakActive, verdict, word, heardGuesses, submit]);
 
   // Save the live session after every answer so a reload can resume it, and drop
   // the save once the result screen is reached so a finished session never
@@ -353,26 +356,17 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
 
         {speakActive ? (
           <div className="prompt speak-prompt">
-            <p className="prompt__main prompt__main--lg">
-              {word.word}{' '}
-              <button
-                type="button"
-                className="speak-prompt__play"
-                // Stop the mic first: otherwise the sample plays into an open
-                // mic and the engine "hears" the word, passing the rung without
-                // the learner ever speaking.
-                onClick={() => {
-                  speech.stop();
-                  speakSlow(word.word);
-                }}
-                aria-label="Nghe phát âm mẫu"
-              >
-                🔊
-              </button>
-            </p>
+            <p className="prompt__main prompt__main--lg">{word.word}</p>
             <p className="prompt__sub">
               {word.ipa} · {word.pos}
             </p>
+            <div className="speak-prompt__actions">
+              {/* Stop the mic before any sample plays: otherwise it plays into
+                  an open mic and the engine "hears" the word, passing the rung
+                  without the learner ever speaking. */}
+              <VoiceButtons word={word.word} slow beforeSpeak={() => speech.stop()} />
+              <YouglishLink word={word.word} variant="full" />
+            </div>
             <p className="feedback__vi">{word.vi}</p>
             {word.synonyms && <p className="feedback__extra">≈ {word.synonyms}</p>}
             {word.collocation && <p className="feedback__extra">{word.collocation}</p>}
@@ -509,6 +503,10 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
             <p className="feedback__word">
               {verdict.word.word} <span className="feedback__ipa">{verdict.word.ipa}</span>
             </p>
+            <div className="feedback__actions">
+              <VoiceButtons word={verdict.word.word} />
+              <YouglishLink word={verdict.word.word} variant="full" />
+            </div>
             <p className="feedback__vi">{verdict.word.vi}</p>
             {verdict.word.synonyms && <p className="feedback__extra">≈ {verdict.word.synonyms}</p>}
             {verdict.word.collocation && (

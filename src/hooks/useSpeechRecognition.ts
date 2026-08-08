@@ -48,6 +48,15 @@ export interface SpeechRecognitionState {
   listening: boolean;
   /** The most recent recognised text, '' until a result arrives. */
   transcript: string;
+  /**
+   * Every guess the engine offered for the last utterance, best first.
+   *
+   * The top guess alone is brittle: for near-homophones the engine routinely
+   * ranks the wrong word first even for a good pronunciation, so a caller that
+   * only checks `transcript` rejects a correct answer. Checking the whole list
+   * — the correct word is usually somewhere in it — is far more forgiving.
+   */
+  alternatives: string[];
   /** Set on a recognition error, e.g. 'not-allowed' when the mic is blocked. */
   error: string | null;
   start: () => void;
@@ -62,6 +71,7 @@ export function useSpeechRecognition(lang = 'en-US'): SpeechRecognitionState {
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const [listening, setListening] = useState(false);
   const [transcript, setTranscript] = useState('');
+  const [alternatives, setAlternatives] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -71,11 +81,20 @@ export function useSpeechRecognition(lang = 'en-US'): SpeechRecognitionState {
     // One short utterance per press — the learner says a single word.
     recognition.continuous = false;
     recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
+    // Ask for several guesses, not just the top one: the engine often ranks a
+    // near-homophone first even for a clean pronunciation, and the word the
+    // learner actually said sits a place or two down the list.
+    recognition.maxAlternatives = 6;
 
     recognition.onresult = (event) => {
-      const text = event.results?.[0]?.[0]?.transcript ?? '';
-      setTranscript(text);
+      const first = event.results?.[0];
+      const guesses: string[] = [];
+      for (let i = 0; first && i < first.length; i++) {
+        const text = first[i]?.transcript;
+        if (text) guesses.push(text);
+      }
+      setTranscript(guesses[0] ?? '');
+      setAlternatives(guesses);
     };
     recognition.onerror = (event) => {
       setError(event.error ?? 'error');
@@ -98,6 +117,7 @@ export function useSpeechRecognition(lang = 'en-US'): SpeechRecognitionState {
     const recognition = recognitionRef.current;
     if (!recognition || listening) return;
     setTranscript('');
+    setAlternatives([]);
     setError(null);
     try {
       recognition.start();
@@ -117,8 +137,9 @@ export function useSpeechRecognition(lang = 'en-US'): SpeechRecognitionState {
 
   const reset = useCallback(() => {
     setTranscript('');
+    setAlternatives([]);
     setError(null);
   }, []);
 
-  return { supported, listening, transcript, error, start, stop, reset };
+  return { supported, listening, transcript, alternatives, error, start, stop, reset };
 }
