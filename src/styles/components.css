@@ -681,6 +681,15 @@ kbd {
   font-size: var(--text-base);
   color: var(--text);
 }
+.feedback__extra {
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+}
+.feedback__eg {
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--text-dim);
+}
 
 .toast-region {
   position: fixed;

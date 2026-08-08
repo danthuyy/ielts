@@ -362,6 +362,11 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               {verdict.word.word} <span className="feedback__ipa">{verdict.word.ipa}</span>
             </p>
             <p className="feedback__vi">{verdict.word.vi}</p>
+            {verdict.word.synonyms && <p className="feedback__extra">≈ {verdict.word.synonyms}</p>}
+            {verdict.word.collocation && (
+              <p className="feedback__extra">{verdict.word.collocation}</p>
+            )}
+            {verdict.word.example && <p className="feedback__eg">“{verdict.word.example}”</p>}
             {!verdict.correct && (
               <p className="feedback__retry">Từ này tụt một bậc và sẽ quay lại.</p>
             )}
