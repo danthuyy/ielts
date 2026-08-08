@@ -556,9 +556,17 @@
 }
 .setting-row__title {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--sp-3);
   color: var(--text);
+}
+.setting-row__note {
+  flex-basis: 100%;
+  font-size: var(--text-sm);
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--text-dim);
 }
 
 .range {

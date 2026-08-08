@@ -323,6 +323,24 @@ export function SettingsScreen() {
         </div>
 
         <div className="setting-row">
+          <label className="setting-row__title" htmlFor="advanced-speech">
+            <span aria-hidden="true">✨</span> Nhận giọng nâng cao (Whisper)
+            <small className="setting-row__note">
+              Chính xác hơn, chạy trên máy. Lần đầu tải ~40MB, có thể chậm trên điện thoại.
+            </small>
+          </label>
+          <span className="switch">
+            <input
+              id="advanced-speech"
+              type="checkbox"
+              checked={settings.advancedSpeech}
+              onChange={(event) => update('advancedSpeech', event.target.checked)}
+            />
+            <span className="switch__track" />
+          </span>
+        </div>
+
+        <div className="setting-row">
           <label className="setting-row__title" htmlFor="shuffle-words">
             Đảo thứ tự mỗi phiên học
           </label>

@@ -13,6 +13,7 @@ import { useKeyboard } from '@/hooks/useKeyboard';
 import { useMasteryQueue } from '@/hooks/useMasteryQueue';
 import { useSettings } from '@/hooks/useSettings';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
+import { useWhisperListen } from '@/hooks/useWhisperListen';
 import { buildChoiceOptions } from '@/lib/choices';
 import { clearMixResume, mixResumeKey, readMixResume, writeMixResume } from '@/lib/mixResume';
 import { pronunciationMatchesAny } from '@/lib/pronounce';
@@ -149,11 +150,18 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
    */
   const [audible] = useState(canSpeak);
   const speech = useSpeechRecognition('en-US');
-  // The 7th rung asks the learner to *say* the word. It only runs where the
-  // browser can hear (Chrome/Edge) and the setting is on; otherwise it falls
-  // back to typing so nobody is trapped on a rung their browser cannot answer.
+  // A second, more accurate recogniser that runs the Whisper model on-device,
+  // enabled by a setting. It records alongside the built-in engine and the rung
+  // passes if *either* hears the word — the browser engine is instant, Whisper
+  // catches the words it mangles.
+  const whisper = useWhisperListen(settings.advancedSpeech);
+  // The 7th rung asks the learner to *say* the word. It runs wherever at least
+  // one recogniser can hear (the built-in one, or Whisper) and the setting is
+  // on; otherwise it falls back to typing so nobody is trapped on a rung their
+  // browser cannot answer.
   const speakRung = rung === 'speak';
-  const speakActive = speakRung && settings.speakPractice && speech.supported;
+  const canRecognise = speech.supported || whisper.supported;
+  const speakActive = speakRung && settings.speakPractice && canRecognise;
   const speakingRung = audible && (rung === 'listen' || rung === 'listen-choice');
   const typingRung = rung === 'type' || rung === 'listen' || (speakRung && !speakActive);
 
@@ -201,16 +209,22 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
   // Clear the last recognised phrase whenever a new speaking question appears,
   // so an old "heard: …" line never lingers on the next word.
   const resetSpeech = speech.reset;
+  const resetWhisper = whisper.reset;
   useEffect(() => {
     resetSpeech();
-  }, [word?.id, rung, resetSpeech]);
+    resetWhisper();
+  }, [word?.id, rung, resetSpeech, resetWhisper]);
 
   // On the speaking rung, a correct pronunciation is the answer — pass the rung.
   // A wrong one is not a demotion: the learner just says it again, which is the
   // "nói đến khi nào đúng" the rung is for — but it is counted, so that after a
   // few misses a way past appears. Reacting to the async speech result is what
   // this effect is for, hence the set-state-in-effect.
-  const heardGuesses = speech.alternatives;
+  const heardGuesses = useMemo(() => {
+    const guesses = [...speech.alternatives];
+    if (whisper.transcript) guesses.push(whisper.transcript);
+    return guesses;
+  }, [speech.alternatives, whisper.transcript]);
   useEffect(() => {
     if (!speakActive || verdict || !word || heardGuesses.length === 0) return;
     if (pronunciationMatchesAny(word.word, heardGuesses)) {
@@ -329,6 +343,20 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
 
   const asksForMeaning = rung === 'choice-en' || rung === 'listen-choice';
 
+  // The speaking rung drives both recognisers off one mic button.
+  const micLive = speech.listening || whisper.listening;
+  const lastHeard = speech.transcript || whisper.transcript;
+  const micError = speech.error || whisper.error;
+  const toggleMic = () => {
+    if (micLive) {
+      if (speech.listening) speech.stop();
+      if (whisper.listening) whisper.stop();
+    } else {
+      if (speech.supported) speech.start();
+      if (whisper.supported) whisper.start();
+    }
+  };
+
   return (
     <div className="study">
       <header className="study-header">
@@ -430,22 +458,36 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
           <div className="speak-rung">
             <button
               type="button"
-              className={`speak-rung__mic${speech.listening ? ' speak-rung__mic--live' : ''}`}
-              onClick={() => (speech.listening ? speech.stop() : speech.start())}
-              aria-label={speech.listening ? 'Đang nghe, bấm để dừng' : 'Bấm rồi nói to từ này'}
+              className={`speak-rung__mic${micLive ? ' speak-rung__mic--live' : ''}`}
+              onClick={toggleMic}
+              aria-label={micLive ? 'Đang nghe, bấm để dừng' : 'Bấm rồi nói to từ này'}
             >
-              {speech.listening ? '🔴' : '🎤'}
+              {micLive ? '🔴' : '🎤'}
             </button>
             <p className="speak-rung__hint">
-              {speech.listening ? 'Đang nghe… nói to từ ở trên' : 'Bấm mic rồi nói to từ ở trên'}
+              {whisper.thinking
+                ? 'Đang nhận diện giọng…'
+                : micLive
+                  ? 'Đang nghe… nói to từ ở trên'
+                  : 'Bấm mic rồi nói to từ ở trên'}
             </p>
-            {speech.transcript && (
-              <p className="speak-rung__heard">Nghe được: “{speech.transcript}” — nói lại nhé</p>
+            {lastHeard && (
+              <p className="speak-rung__heard">Nghe được: “{lastHeard}” — nói lại nhé</p>
             )}
-            {speech.error === 'not-allowed' && (
+            {settings.advancedSpeech && whisper.modelStatus === 'loading' && (
+              <p className="speak-rung__heard">
+                Đang tải bộ nhận giọng nâng cao… {Math.round(whisper.progress * 100)}%
+              </p>
+            )}
+            {settings.advancedSpeech && whisper.modelStatus === 'error' && (
+              <p className="speak-rung__heard">
+                Không tải được bộ nâng cao — đang dùng nhận giọng thường.
+              </p>
+            )}
+            {micError === 'not-allowed' && (
               <p className="speak-rung__heard">Cần cho phép micro trong trình duyệt.</p>
             )}
-            {(speakFails >= 2 || speech.error) && (
+            {(speakFails >= 2 || micError) && (
               // A few misses, or a mic the browser won't grant — either way, let
               // the learner move on instead of being stuck on this one rung.
               <button

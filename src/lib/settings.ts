@@ -36,6 +36,12 @@ export interface Settings {
   showStickers: boolean;
   /** Show the "🎤 Luyện nói" pronunciation button in mixed practice. */
   speakPractice: boolean;
+  /**
+   * Also run the on-device Whisper model on the speaking rung, alongside the
+   * browser's recogniser. More accurate, but downloads a ~40MB model on first
+   * use — off by default so nobody pays that cost unasked.
+   */
+  advancedSpeech: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -52,6 +58,7 @@ export const DEFAULT_SETTINGS: Settings = {
   soundEffects: true,
   showStickers: true,
   speakPractice: true,
+  advancedSpeech: false,
 };
 
 type Listener = (settings: Settings) => void;
@@ -82,6 +89,7 @@ export function getSettings(): Settings {
     soundEffects: readRaw('soundEffects'),
     showStickers: readRaw('showStickers'),
     speakPractice: readRaw('speakPractice'),
+    advancedSpeech: readRaw('advancedSpeech'),
   };
 }
 
