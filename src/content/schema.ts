@@ -65,6 +65,13 @@ export const lessonSchema = z
     /** ISO date, YYYY-MM-DD. */
     date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'date phải có dạng YYYY-MM-DD'),
     tags: z.array(z.string().min(1)).default([]),
+    /**
+     * Who this lesson is for. Empty (the default) means it is a shared lesson
+     * everyone sees. A list of learner ids (matching a deployment's
+     * `VITE_LEARNER`) makes it private to those learners; every other
+     * deployment hides it. The admin build, which sets no learner, sees all.
+     */
+    audience: z.array(z.string().min(1)).default([]),
     words: z.array(wordSchema).min(1, 'bài học phải có ít nhất 1 từ'),
   })
   .superRefine((lesson, ctx) => {

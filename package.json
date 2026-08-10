@@ -25,7 +25,8 @@
     "test:watch": "vitest",
     "validate:content": "node scripts/validate-content.mjs",
     "lesson:new": "node scripts/new-lesson.mjs",
-    "lesson:import": "node scripts/import-lesson.mjs"
+    "lesson:import": "node scripts/import-lesson.mjs",
+    "push:all": "node scripts/push-all.mjs"
   },
   "dependencies": {
     "dexie": "^4.4.4",

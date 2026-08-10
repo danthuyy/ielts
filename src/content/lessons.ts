@@ -47,7 +47,32 @@ function parseAll(): Lesson[] {
   return parsed.sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
 }
 
-export const LESSONS: readonly Lesson[] = parseAll();
+/**
+ * Whether a lesson is shown to a given learner.
+ *
+ * A shared lesson (no audience) is visible to everyone. A private lesson is
+ * visible only to the learners in its audience — except the admin build, which
+ * passes an empty learner and sees every lesson so the whole library can be
+ * managed and previewed from one place.
+ */
+export function isVisibleTo(lesson: Pick<Lesson, 'audience'>, learner: string): boolean {
+  if (lesson.audience.length === 0) return true;
+  if (learner === '') return true;
+  return lesson.audience.includes(learner);
+}
+
+/**
+ * Which learner this build is for. Set per deployment via the `VITE_LEARNER`
+ * Actions variable; empty on the admin build.
+ */
+const LEARNER = (import.meta.env.VITE_LEARNER ?? '').trim();
+
+// Validation and de-duplication run over every file first, so a broken or
+// duplicated lesson fails the build regardless of who it is for; only then is
+// the list narrowed to what this deployment shows.
+export const LESSONS: readonly Lesson[] = parseAll().filter((lesson) =>
+  isVisibleTo(lesson, LEARNER),
+);
 
 const byId = new Map(LESSONS.map((lesson) => [lesson.id, lesson]));
 

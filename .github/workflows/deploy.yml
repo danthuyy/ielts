@@ -45,10 +45,15 @@ jobs:
       # Supabase project, so the URL and key stay as the committed defaults. An
       # empty VITE_SUPABASE_URL means "sync off" (that is how dev disables it),
       # so forwarding it unset would silently kill sync on every fork.
+      #
+      # VITE_LEARNER scopes content: a fork that sets it to its learner id shows
+      # the shared lessons plus that learner's private ones. Unset (the admin
+      # build) shows every lesson.
       - name: Build
         run: npm run build
         env:
           VITE_SYNC_ROW_ID: ${{ vars.VITE_SYNC_ROW_ID }}
+          VITE_LEARNER: ${{ vars.VITE_LEARNER }}
 
       - uses: actions/configure-pages@v6
 

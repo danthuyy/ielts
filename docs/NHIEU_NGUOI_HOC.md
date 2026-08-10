@@ -64,16 +64,17 @@ create policy "app rows: update" on public.sync_state
 > Quên bước này thì sync của người mới bị DB **từ chối lặng lẽ** (403) — app vẫn
 > chạy, học vẫn lưu trên máy, nhưng không đồng bộ lên cloud.
 
-### 3. Đặt UUID cho repo của người đó
+### 3. Đặt hai biến cho repo của người đó
 
 Trong repo của người đó trên GitHub: **Settings → Secrets and variables →
-Actions → tab _Variables_ → New repository variable**:
+Actions → tab _Variables_ → New repository variable**. Tạo **hai** biến:
 
-- Name: `VITE_SYNC_ROW_ID`
-- Value: UUID ở bước 1
+- `VITE_SYNC_ROW_ID` = UUID ở bước 1 (quyết định **tiến độ** riêng).
+- `VITE_LEARNER` = tên định danh ngắn của người đó, ví dụ `pboiboi` (quyết định
+  **bài học** riêng — xem mục "Bài học chung và riêng" bên dưới).
 
-Chỉ vậy. URL và key của Supabase là mặc định sẵn trong code (dùng chung DB), nên
-**không cần** đặt gì thêm. Workflow deploy tự đọc biến này khi build.
+URL và key Supabase là mặc định sẵn trong code (dùng chung DB), **không cần** đặt
+thêm. Workflow deploy tự đọc hai biến này khi build.
 
 ### 4. Bật GitHub Pages cho repo đó
 
@@ -82,36 +83,69 @@ branch"). Nếu để "branch", site sẽ phục vụ mã nguồn thô và ra tr
 [TRANG_THAI.md](TRANG_THAI.md), mục service worker và mục "site trắng".
 
 Xong. Push code (hoặc bấm Actions → Deploy → Run) là site của người đó lên, với
-tiến độ hoàn toàn riêng.
+tiến độ **và** bài học riêng.
+
+## Bài học chung và bài học riêng
+
+**Toàn bộ nội dung nằm ở một repo duy nhất** (repo gốc của bạn) — bạn soạn một
+chỗ, không phải rải file qua từng repo. Mỗi bài học có trường tuỳ chọn `audience`
+trong file JSON quyết định ai thấy nó:
+
+```jsonc
+{
+  "id": "topic_space",
+  "title": "Space Exploration",
+  // audience trống hoặc không có → bài CHUNG, ai cũng thấy.
+}
+```
+
+```jsonc
+{
+  "id": "pboiboi_tuan1",
+  "title": "Từ của Bo tuần 1",
+  "audience": ["pboiboi"], // bài RIÊNG: chỉ bản có VITE_LEARNER=pboiboi thấy.
+}
+```
+
+- **Không có `audience`** (mặc định) → bài chung, mọi người thấy.
+- **`"audience": ["pboiboi"]`** → chỉ repo đặt `VITE_LEARNER=pboiboi` thấy.
+- **`"audience": ["pboiboi", "minh"]`** → chung cho vài người được nêu tên.
+- **Bản admin của bạn** (`danthuyy`, không đặt `VITE_LEARNER`) → **thấy hết**, để
+  bạn quản lý và xem trước mọi bài của mọi người từ một chỗ.
+
+> Đây là "riêng" theo nghĩa **không hiện ở danh sách người khác**, không phải bí
+> mật tuyệt đối: file JSON vẫn nằm trong repo. Với bài từ vựng thì đủ. `VITE_LEARNER`
+> phải khớp đúng tên trong `audience` (phân biệt hoa thường).
+
+## Cập nhật code/nội dung cho tất cả — một lệnh
+
+Sửa xong ở repo gốc, đẩy tới **mọi** repo con bằng:
+
+```bash
+npm run push:all
+```
+
+Nó đẩy `main` tới `origin` và tới mọi remote trỏ về một repo `ielts`. Thêm người
+mới = `git remote add <tên> <url>` một lần, từ đó `push:all` tự gồm luôn. Repo nào
+push lỗi (lịch sử lệch) sẽ báo riêng, các repo còn lại vẫn chạy.
 
 ## Tạo repo cho người mới
 
-Cách nhanh nhất là dùng lại toàn bộ code repo gốc:
-
 ```bash
-# Trong thư mục repo gốc, đẩy sang repo mới (đã tạo rỗng trên GitHub):
+# Repo mới đã tạo rỗng trên GitHub:
 git remote add <tên-người> https://github.com/<tài-khoản>/ielts.git
 git push <tên-người> main
 ```
 
-Sau đó làm 4 bước trên cho repo mới. Khi bạn muốn cập nhật code cho mọi người,
-push `main` sang từng remote một lần nữa:
-
-```bash
-git push pboiboi main
-git push <người-khác> main
-```
-
-> Đây là điểm phải nhớ của mô hình "repo riêng": mỗi lần sửa code (ví dụ vá lỗi)
-> bạn phải `git push` sang từng repo. Danh sách người học ở cuối file này để khỏi
-> sót ai.
+Rồi làm 4 bước trên cho repo đó (nhớ đặt cả `VITE_LEARNER`). Từ lần sau chỉ cần
+`npm run push:all`.
 
 ## Danh sách người học
 
-| Người   | Repo             | rowId (UUID)                           |
-| ------- | ---------------- | -------------------------------------- |
-| Bạn     | `danthuyy/ielts` | `a25f73c1-0c6d-4883-bf06-95c897efddb2` |
-| pboiboi | `pboiboi/ielts`  | `9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a` |
+| Người   | Repo             | VITE_LEARNER | VITE_SYNC_ROW_ID (UUID)                |
+| ------- | ---------------- | ------------ | -------------------------------------- |
+| Bạn     | `danthuyy/ielts` | _(để trống)_ | `a25f73c1-0c6d-4883-bf06-95c897efddb2` |
+| pboiboi | `pboiboi/ielts`  | `pboiboi`    | `9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a` |
 
-Thêm người thì thêm một dòng ở đây, để bước 2 (SQL) và các lần `git push` không
-bỏ sót.
+Thêm người thì thêm một dòng ở đây, để bước 2 (SQL), việc đặt `audience`, và
+`push:all` không bỏ sót ai.

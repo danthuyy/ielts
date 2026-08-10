@@ -6,6 +6,8 @@ interface ImportMetaEnv {
   readonly VITE_SUPABASE_ANON_KEY?: string;
   readonly VITE_SUPABASE_TABLE?: string;
   readonly VITE_SYNC_ROW_ID?: string;
+  /** Which learner this build is for; scopes private lessons. Empty = admin. */
+  readonly VITE_LEARNER?: string;
 }
 
 interface ImportMeta {
