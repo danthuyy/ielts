@@ -16,8 +16,10 @@ VITE_SUPABASE_ANON_KEY=
 Cần test đồng bộ thật thì tạo một row riêng trong bảng `sync_state` và trỏ
 `VITE_SYNC_ROW_ID` vào UUID của row đó, thay vì bỏ trống URL.
 
-> **Đã cấu hình xong** (project `nwbgobapbyuavwljygec`). Tài liệu này giữ lại để
-> dựng lại từ đầu nếu cần đổi project.
+> **Đã cấu hình xong** — project `yiuqsuxhayuchgcnggoe`, nằm trong tài khoản
+> Supabase của người quản lý (chuyển từ project cũ `nwbgobapbyuavwljygec` sang).
+> Tài liệu này giữ lại để dựng lại từ đầu nếu cần đổi project. RLS nhiều người
+> học xem [NHIEU_NGUOI_HOC.md](NHIEU_NGUOI_HOC.md).
 
 Mất khoảng 5 phút, làm một lần duy nhất. Sau đó mọi máy mở app là tự đồng bộ,
 không cần đăng nhập, không cần nhập mã.

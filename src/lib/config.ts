@@ -23,9 +23,11 @@ function orDefault(value: string | undefined, fallback: string): string {
 }
 
 export const SYNC_CONFIG = {
-  url: import.meta.env.VITE_SUPABASE_URL ?? 'https://nwbgobapbyuavwljygec.supabase.co',
+  // The central project now lives in the maintainer's own Supabase account
+  // (ref yiuqsuxhayuchgcnggoe), so the whole thing is managed from one login.
+  url: import.meta.env.VITE_SUPABASE_URL ?? 'https://yiuqsuxhayuchgcnggoe.supabase.co',
   anonKey:
-    import.meta.env.VITE_SUPABASE_ANON_KEY ?? 'sb_publishable_537EfMMlWgKHjIL3kEvslA_SwS063k6',
+    import.meta.env.VITE_SUPABASE_ANON_KEY ?? 'sb_publishable_4_5iVHLXMupT32st-mBM9g_8u4Mi2e_',
   table: orDefault(import.meta.env.VITE_SUPABASE_TABLE, 'sync_state'),
   // Per-person forks override only this, via the VITE_SYNC_ROW_ID Actions
   // variable. Unset there expands to '' in CI, so an empty value must fall back
