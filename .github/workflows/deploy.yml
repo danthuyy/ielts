@@ -33,8 +33,22 @@ jobs:
 
       # `npm run build` typechecks and validates content first, so a broken
       # lesson can never reach the live site.
+      #
+      # A per-person fork gets its own progress in the ONE shared database by
+      # setting a single Actions *variable*, VITE_SYNC_ROW_ID, to its own UUID
+      # (Settings → Secrets and variables → Actions → Variables). No source
+      # edit, identical code across every fork. Unset → empty string → the app
+      # falls back to the committed default UUID, so the main deployment keeps
+      # building exactly as before.
+      #
+      # Only the row id is forwarded on purpose: every fork points at the same
+      # Supabase project, so the URL and key stay as the committed defaults. An
+      # empty VITE_SUPABASE_URL means "sync off" (that is how dev disables it),
+      # so forwarding it unset would silently kill sync on every fork.
       - name: Build
         run: npm run build
+        env:
+          VITE_SYNC_ROW_ID: ${{ vars.VITE_SYNC_ROW_ID }}
 
       - uses: actions/configure-pages@v6
 
