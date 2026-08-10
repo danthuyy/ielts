@@ -113,21 +113,22 @@ không cần sửa code**.
 }
 ```
 
-| Trường        | Bắt buộc | Ghi chú                                                                                   |
-| ------------- | -------- | ----------------------------------------------------------------------------------------- |
-| `id`          | Có       | Phải **trùng tên file**. Chỉ `a-z`, `0-9`, `_`. Không bao giờ đổi sau khi đã publish.     |
-| `title`       | Có       | Tên hiển thị.                                                                             |
-| `description` | Không    | Mặc định chuỗi rỗng.                                                                      |
-| `date`        | Có       | `YYYY-MM-DD`. Quyết định thứ tự hiển thị, mới nhất lên trước.                             |
-| `tags`        | Không    | Quyết định danh mục. Xem danh sách bên dưới. Tag lạ rơi vào nhóm "Khác".                  |
-| `words`       | Có       | Ít nhất 1 từ.                                                                             |
-| `word`        | Có       | Từ tiếng Anh. **Là khoá tiến độ.** Duy nhất trong bài.                                    |
-| `pos`         | Có       | `n`, `v`, `adj`, `adv`, `phrasal v`, `phr`, `idiom`. Ghép hai loại bằng `/`, ví dụ `v/n`. |
-| `ipa`         | Có       | Trong hai dấu `/`.                                                                        |
-| `vi`          | Có       | Nghĩa tiếng Việt.                                                                         |
-| `example`     | Không    | Bỏ trống thì giao diện ẩn hẳn ô này, không hiện hộp rỗng.                                 |
-| `collocation` | Không    | Ngăn cách bằng `·`.                                                                       |
-| `note`        | Không    | Mẹo dùng từ. Hiện ở mặt sau thẻ.                                                          |
+| Trường        | Bắt buộc | Ghi chú                                                                                          |
+| ------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| `id`          | Có       | Phải **trùng tên file**. Chỉ `a-z`, `0-9`, `_`. Không bao giờ đổi sau khi đã publish.            |
+| `title`       | Có       | Tên hiển thị.                                                                                    |
+| `description` | Không    | Mặc định chuỗi rỗng.                                                                             |
+| `date`        | Có       | `YYYY-MM-DD`. Quyết định thứ tự hiển thị, mới nhất lên trước.                                    |
+| `tags`        | Không    | Quyết định danh mục. Xem danh sách bên dưới. Tag lạ rơi vào nhóm "Khác".                         |
+| `audience`    | Không    | Mảng learner id. Trống = bài chung ai cũng thấy; có tên = bài riêng. Xem `docs/THEM_TU_VUNG.md`. |
+| `words`       | Có       | Ít nhất 1 từ.                                                                                    |
+| `word`        | Có       | Từ tiếng Anh. **Là khoá tiến độ.** Duy nhất trong bài.                                           |
+| `pos`         | Có       | `n`, `v`, `adj`, `adv`, `phrasal v`, `phr`, `idiom`. Ghép hai loại bằng `/`, ví dụ `v/n`.        |
+| `ipa`         | Có       | Trong hai dấu `/`.                                                                               |
+| `vi`          | Có       | Nghĩa tiếng Việt.                                                                                |
+| `example`     | Không    | Bỏ trống thì giao diện ẩn hẳn ô này, không hiện hộp rỗng.                                        |
+| `collocation` | Không    | Ngăn cách bằng `·`.                                                                              |
+| `note`        | Không    | Mẹo dùng từ. Hiện ở mặt sau thẻ.                                                                 |
 
 Tag đã có sẵn danh mục: `happiness`, `society`, `psychology`, `education`,
 `environment`, `technology`, `health`, `work`, `money`, `culture`, `travel`,

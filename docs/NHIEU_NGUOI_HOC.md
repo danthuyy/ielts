@@ -39,25 +39,29 @@ create policy "app rows: read" on public.sync_state
   for select to anon
   using (id = any (array[
     'a25f73c1-0c6d-4883-bf06-95c897efddb2',  -- bạn (danthuyy)
-    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a'   -- pboiboi
+    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a',  -- pboiboi
+    '27038b58-d1e2-40ef-8453-00f257437020'   -- pdondong
   ]::uuid[]));
 
 create policy "app rows: insert" on public.sync_state
   for insert to anon
   with check (id = any (array[
     'a25f73c1-0c6d-4883-bf06-95c897efddb2',
-    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a'
+    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a',
+    '27038b58-d1e2-40ef-8453-00f257437020'
   ]::uuid[]));
 
 create policy "app rows: update" on public.sync_state
   for update to anon
   using (id = any (array[
     'a25f73c1-0c6d-4883-bf06-95c897efddb2',
-    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a'
+    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a',
+    '27038b58-d1e2-40ef-8453-00f257437020'
   ]::uuid[]))
   with check (id = any (array[
     'a25f73c1-0c6d-4883-bf06-95c897efddb2',
-    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a'
+    '9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a',
+    '27038b58-d1e2-40ef-8453-00f257437020'
   ]::uuid[]));
 ```
 
@@ -142,10 +146,11 @@ Rồi làm 4 bước trên cho repo đó (nhớ đặt cả `VITE_LEARNER`). T�
 
 ## Danh sách người học
 
-| Người   | Repo             | VITE_LEARNER | VITE_SYNC_ROW_ID (UUID)                |
-| ------- | ---------------- | ------------ | -------------------------------------- |
-| Bạn     | `danthuyy/ielts` | _(để trống)_ | `a25f73c1-0c6d-4883-bf06-95c897efddb2` |
-| pboiboi | `pboiboi/ielts`  | `pboiboi`    | `9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a` |
+| Người    | Repo             | VITE_LEARNER | VITE_SYNC_ROW_ID (UUID)                |
+| -------- | ---------------- | ------------ | -------------------------------------- |
+| Bạn      | `danthuyy/ielts` | _(để trống)_ | `a25f73c1-0c6d-4883-bf06-95c897efddb2` |
+| pboiboi  | `pboiboi/ielts`  | `pboiboi`    | `9cb0b949-d5d3-4fd4-9bfe-06d107c1f89a` |
+| pdondong | `pdondong/ielts` | `pdondong`   | `27038b58-d1e2-40ef-8453-00f257437020` |
 
 Thêm người thì thêm một dòng ở đây, để bước 2 (SQL), việc đặt `audience`, và
 `push:all` không bỏ sót ai.
