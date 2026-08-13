@@ -176,6 +176,10 @@ export function setVoice(name: string): void {
   setSetting('voiceName', name);
 }
 
+// Chrome silently drops an utterance that gets garbage-collected before it
+// finishes; holding a reference until it ends keeps speech alive.
+let inFlight: SpeechSynthesisUtterance | null = null;
+
 /** Speak with an explicit voice — the quick per-accent buttons use this. */
 export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate?: number): void {
   const engine = synth();
@@ -184,22 +188,52 @@ export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate
   // Speaking over an in-flight utterance queues it; learners expect the new
   // word to replace the old one.
   if (engine.speaking || engine.pending) engine.cancel();
+  // Desktop Chrome can leave the engine paused after an earlier cancel; a paused
+  // engine accepts speak() but stays silent until it is resumed.
+  if (engine.paused) engine.resume();
 
+  // Fall back to the best available voice if the caller passed none.
+  const chosen = voice ?? resolveVoice();
   const utterance = new SpeechSynthesisUtterance(text);
-  if (voice) {
-    utterance.voice = voice;
-    utterance.lang = voice.lang;
+  if (chosen) {
+    utterance.voice = chosen;
+    utterance.lang = chosen.lang;
   } else {
     // Better to let the browser choose by language than to read English with
     // whatever Vietnamese voice happens to be first.
     utterance.lang = 'en-GB';
   }
   utterance.rate = rate ?? getSetting('speechRate');
+
+  inFlight = utterance;
+  const release = () => {
+    if (inFlight === utterance) inFlight = null;
+  };
+  utterance.addEventListener('end', release);
+  utterance.addEventListener('error', release);
+
   engine.speak(utterance);
 }
 
 export function speak(text: string, rate?: number): void {
-  speakWith(text, resolveVoice(), rate);
+  const engine = synth();
+  if (!engine || !text) return;
+
+  const voice = resolveVoice();
+  // The voice list loads asynchronously (Chrome/Safari): a tap before it lands
+  // resolves to no voice and stays silent. Retry once the list arrives. On some
+  // mobile browsers this deferred call falls outside the tap's user-activation
+  // window and is ignored — warming the list at startup (below) is what makes
+  // the common case work; this is the fallback for the very first tap.
+  if (!voice && listVoices().length === 0) {
+    engine.getVoices();
+    const off = onVoicesChanged(() => {
+      off();
+      speakWith(text, resolveVoice(), rate);
+    });
+    return;
+  }
+  speakWith(text, voice, rate);
 }
 
 export function speakSlow(text: string): void {
@@ -220,3 +254,13 @@ export function onVoicesChanged(handler: () => void): () => void {
   engine.addEventListener('voiceschanged', handler);
   return () => engine.removeEventListener('voiceschanged', handler);
 }
+
+// Kick the async voice list into loading the moment the app starts, so the
+// first tap on a 🔊 button finds voices ready instead of an empty list. The
+// listener re-reads on `voiceschanged` to keep the browser's cache warm.
+(function warmVoices() {
+  const engine = synth();
+  if (!engine) return;
+  engine.getVoices();
+  engine.addEventListener('voiceschanged', () => engine.getVoices());
+})();
