@@ -14,6 +14,22 @@ import { initProgress } from './lib/progress';
 import { startSync } from './lib/sync';
 import { initTheme } from './lib/theme';
 import { startReminders } from './lib/reminder';
+import { unlockSpeech } from './lib/tts';
+import { primeSfx } from './lib/sfx';
+
+/**
+ * Mobile browsers keep speech and Web Audio locked until the first real user
+ * interaction. Prime both once, as early as that first touch/click/key, so the
+ * child's very first 🔊 tap and the answer sounds actually play — especially on
+ * iPhone/iPad, where speech stays silent until an utterance fires in a gesture.
+ */
+function primeAudioOnce(): void {
+  unlockSpeech();
+  primeSfx();
+}
+for (const type of ['pointerdown', 'touchend', 'keydown'] as const) {
+  window.addEventListener(type, primeAudioOnce, { once: true, passive: true });
+}
 
 const container = document.getElementById('root');
 if (!container) throw new Error('Không tìm thấy #root');

@@ -90,6 +90,16 @@ export function setSfxEnabled(value: boolean): void {
   enabled = value;
 }
 
+/**
+ * Create and resume the audio context from inside the first user gesture. On
+ * mobile the context is born suspended and, if it is first touched from a timer
+ * (e.g. the end-of-answer sound), the browser may swallow the sound. Priming it
+ * on the first tap avoids that.
+ */
+export function primeSfx(): void {
+  audio();
+}
+
 export function playSfx(sound: Sfx): void {
   if (!enabled) return;
   // Respect the same preference that stops the interface animating.

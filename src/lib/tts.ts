@@ -255,6 +255,97 @@ export function onVoicesChanged(handler: () => void): () => void {
   return () => engine.removeEventListener('voiceschanged', handler);
 }
 
+/**
+ * iOS (every iPhone/iPad browser) blocks speech until an utterance is fired
+ * from inside a real user gesture — the very first one. Auto-speak in the study
+ * modes runs on a timer, outside any gesture, so on iOS it never unlocks the
+ * engine and every later tap stays silent too. Firing a silent utterance on the
+ * first touch fixes that. Idempotent and safe on desktop.
+ */
+let unlocked = false;
+export function unlockSpeech(): void {
+  const engine = synth();
+  if (!engine || unlocked) return;
+  unlocked = true;
+  engine.getVoices();
+  try {
+    const primer = new SpeechSynthesisUtterance(' ');
+    primer.volume = 0;
+    engine.speak(primer);
+  } catch {
+    // Never let priming throw during a tap handler.
+  }
+}
+
+export type SpeechOutcome = 'spoke' | 'error' | 'no-voice' | 'timeout' | 'unsupported';
+
+export interface SpeechDiagnosis {
+  supported: boolean;
+  /** Every voice the device exposes, English or not. */
+  totalVoices: number;
+  /** English voices — what this app can actually use. */
+  englishVoices: number;
+  chosenVoice: string | null;
+  /** Running as an installed PWA (iOS has extra speech bugs here). */
+  standalone: boolean;
+  outcome: SpeechOutcome;
+  detail?: string;
+}
+
+function isStandalone(): boolean {
+  if (typeof window === 'undefined') return false;
+  const mm = window.matchMedia?.('(display-mode: standalone)').matches ?? false;
+  const iosStandalone = (window.navigator as { standalone?: boolean }).standalone === true;
+  return mm || iosStandalone;
+}
+
+/**
+ * Speak a probe word and report what actually happened — the data behind the
+ * "Kiểm tra âm thanh" panel. Lets a parent read the real cause off the child's
+ * own iPad/tablet instead of us guessing: no English voice installed, engine
+ * blocked, or muted (fires but no start event).
+ */
+export function runSpeechTest(): Promise<SpeechDiagnosis> {
+  const engine = synth();
+  const base = {
+    supported: engine !== null,
+    totalVoices: engine?.getVoices().length ?? 0,
+    englishVoices: listVoices().length,
+    chosenVoice: currentVoiceName(),
+    standalone: isStandalone(),
+  };
+  return new Promise((resolve) => {
+    if (!engine) {
+      resolve({ ...base, outcome: 'unsupported' });
+      return;
+    }
+    if (listVoices().length === 0) {
+      resolve({ ...base, outcome: 'no-voice' });
+      return;
+    }
+    let settled = false;
+    const finish = (outcome: SpeechOutcome, detail?: string) => {
+      if (settled) return;
+      settled = true;
+      resolve({ ...base, outcome, detail });
+    };
+    if (engine.paused) engine.resume();
+    if (engine.speaking || engine.pending) engine.cancel();
+    const probe = new SpeechSynthesisUtterance('happiness');
+    const voice = resolveVoice();
+    if (voice) {
+      probe.voice = voice;
+      probe.lang = voice.lang;
+    } else {
+      probe.lang = 'en-GB';
+    }
+    probe.addEventListener('start', () => finish('spoke'));
+    probe.addEventListener('error', (event) => finish('error', event.error));
+    engine.speak(probe);
+    setTimeout(() => finish('timeout'), 3500);
+  });
+}
+
 // Kick the async voice list into loading the moment the app starts, so the
 // first tap on a 🔊 button finds voices ready instead of an empty list. The
 // listener re-reads on `voiceschanged` to keep the browser's cache warm.

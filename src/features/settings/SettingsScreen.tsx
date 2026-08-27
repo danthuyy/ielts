@@ -28,7 +28,7 @@ import { setTheme } from '@/lib/theme';
 import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { describeCountdown, daysUntil, minimumExamDate } from '@/lib/exam';
 import { notificationSupport, requestPermission, sendTestNotification } from '@/lib/reminder';
-import { speak } from '@/lib/tts';
+import { runSpeechTest, speak, type SpeechDiagnosis } from '@/lib/tts';
 
 const APP_VERSION = '2.0.0';
 
@@ -61,6 +61,68 @@ function formatStamp(iso: string | null): string {
   return `${pad(date.getHours())}:${pad(date.getMinutes())} ngày ${pad(date.getDate())}/${pad(
     date.getMonth() + 1,
   )}`;
+}
+
+/** Plain-language verdict a parent can act on, read off the child's own device. */
+function verdictOf(d: SpeechDiagnosis): { icon: string; text: string } {
+  switch (d.outcome) {
+    case 'spoke':
+      return {
+        icon: '✅',
+        text: 'Máy đọc được. Nếu vẫn không nghe: kiểm tra nút gạt tắt tiếng (iPhone) và tăng âm lượng khi đang phát.',
+      };
+    case 'no-voice':
+      return {
+        icon: '⚠️',
+        text: 'Máy chưa có giọng tiếng Anh. Trên Android/Samsung: Cài đặt → Quản lý chung → Văn bản thành giọng nói → chọn Google TTS và tải gói tiếng Anh, rồi khởi động lại app.',
+      };
+    case 'timeout':
+      return {
+        icon: '🔇',
+        text: 'Đã gửi lệnh đọc nhưng không có tiếng phát ra — gần như chắc do TẮT TIẾNG (nút gạt/chuông) hoặc âm lượng phương tiện bằng 0. Bật tiếng rồi bấm thử lại.',
+      };
+    case 'error':
+      return { icon: '❌', text: `Lỗi bộ đọc của máy${d.detail ? ` (${d.detail})` : ''}. Thử đóng hẳn app rồi mở lại.` };
+    case 'unsupported':
+      return {
+        icon: '❌',
+        text: 'Trình duyệt này không hỗ trợ đọc. Mở app bằng Safari (iPhone/iPad) hoặc Chrome (Android).',
+      };
+  }
+}
+
+/** A one-tap self-diagnosis so a parent can see *why* a device stays silent. */
+function SoundCheck() {
+  const [result, setResult] = useState<SpeechDiagnosis | null>(null);
+  const [running, setRunning] = useState(false);
+
+  const run = useCallback(async () => {
+    setRunning(true);
+    setResult(await runSpeechTest());
+    setRunning(false);
+  }, []);
+
+  const verdict = result ? verdictOf(result) : null;
+
+  return (
+    <div className="sync-detail" style={{ marginTop: 'var(--sp-2)' }}>
+      <button className="btn btn--ghost" onClick={run} disabled={running}>
+        {running ? 'Đang kiểm tra...' : '🩺 Kiểm tra âm thanh trên máy này'}
+      </button>
+      {result && verdict && (
+        <div style={{ marginTop: 'var(--sp-2)' }}>
+          <p style={{ margin: 0 }}>
+            {verdict.icon} {verdict.text}
+          </p>
+          <p style={{ margin: 'var(--sp-1) 0 0', opacity: 0.7 }}>
+            Giọng tiếng Anh: {result.englishVoices}/{result.totalVoices}
+            {result.chosenVoice ? ` · đang dùng: ${result.chosenVoice}` : ''}
+            {result.standalone ? ' · chạy dạng app cài đặt' : ''}
+          </p>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function SettingsScreen() {
@@ -253,6 +315,7 @@ export function SettingsScreen() {
               🔊 Nghe thử
             </button>
           </div>
+          <SoundCheck />
         </div>
 
         <div className="setting-row setting-row--stacked">
