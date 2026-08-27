@@ -69,12 +69,17 @@ function verdictOf(d: SpeechDiagnosis): { icon: string; text: string } {
     case 'spoke':
       return {
         icon: '✅',
-        text: 'Máy đọc được. Nếu vẫn không nghe: kiểm tra nút gạt tắt tiếng (iPhone) và tăng âm lượng khi đang phát.',
+        text: 'Máy đọc được bằng giọng có sẵn. Nếu vẫn không nghe: kiểm tra nút gạt tắt tiếng (iPhone) và tăng âm lượng khi đang phát.',
+      };
+    case 'remote':
+      return {
+        icon: '✅',
+        text: 'Máy không có giọng riêng, nhưng app đã đọc được bằng giọng tải từ mạng — bé không cần cài gì, chỉ cần có Internet. Bật tiếng lên là nghe được.',
       };
     case 'no-voice':
       return {
         icon: '⚠️',
-        text: 'Máy chưa có giọng tiếng Anh. Trên Android/Samsung: Cài đặt → Quản lý chung → Văn bản thành giọng nói → chọn Google TTS và tải gói tiếng Anh, rồi khởi động lại app.',
+        text: 'Máy chưa có giọng tiếng Anh và cũng chưa tải được giọng từ mạng — thường do mất kết nối Internet. Kiểm tra mạng rồi thử lại. Nếu cần dùng offline: Cài đặt máy → Quản lý chung → Văn bản thành giọng nói → cài Google TTS + tải gói tiếng Anh.',
       };
     case 'timeout':
       return {

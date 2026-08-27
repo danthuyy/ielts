@@ -215,25 +215,70 @@ export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate
   engine.speak(utterance);
 }
 
-export function speak(text: string, rate?: number): void {
-  const engine = synth();
-  if (!engine || !text) return;
+// A budget Android/Samsung tablet often ships with no English TTS voice at all,
+// and asking a child to install a voice pack is a non-starter. When the device
+// has no usable voice, pronunciation is streamed as an MP3 from Google's public
+// TTS endpoint instead. Plain <audio> playback works cross-origin without CORS;
+// it needs a network connection and covers any word or short phrase.
+let remoteAudio: HTMLAudioElement | null = null;
 
-  const voice = resolveVoice();
-  // The voice list loads asynchronously (Chrome/Safari): a tap before it lands
-  // resolves to no voice and stays silent. Retry once the list arrives. On some
-  // mobile browsers this deferred call falls outside the tap's user-activation
-  // window and is ignored — warming the list at startup (below) is what makes
-  // the common case work; this is the fallback for the very first tap.
-  if (!voice && listVoices().length === 0) {
-    engine.getVoices();
-    const off = onVoicesChanged(() => {
-      off();
-      speakWith(text, resolveVoice(), rate);
-    });
+function remoteUrl(text: string): string {
+  const q = encodeURIComponent(text.slice(0, 200));
+  return `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${q}&total=1&idx=0&textlen=${text.length}`;
+}
+
+/** True if the browser can even attempt network audio. */
+export function canPlayRemote(): boolean {
+  return typeof Audio !== 'undefined';
+}
+
+/** Stream the word from Google TTS. Resolves true once it actually plays. */
+export function speakRemote(text: string, rate?: number): Promise<boolean> {
+  if (!canPlayRemote() || !text) return Promise.resolve(false);
+  if (remoteAudio) {
+    remoteAudio.pause();
+    remoteAudio = null;
+  }
+  const audio = new Audio(remoteUrl(text));
+  const speed = rate ?? getSetting('speechRate');
+  audio.playbackRate = Math.max(0.5, Math.min(1, speed));
+  // Keep the pitch natural when slowed rather than deepening it.
+  const withPitch = audio as HTMLAudioElement & {
+    preservesPitch?: boolean;
+    mozPreservesPitch?: boolean;
+    webkitPreservesPitch?: boolean;
+  };
+  withPitch.preservesPitch = true;
+  withPitch.mozPreservesPitch = true;
+  withPitch.webkitPreservesPitch = true;
+  remoteAudio = audio;
+  return new Promise((resolve) => {
+    let settled = false;
+    const done = (ok: boolean) => {
+      if (!settled) {
+        settled = true;
+        resolve(ok);
+      }
+    };
+    audio.addEventListener('playing', () => done(true));
+    audio.addEventListener('error', () => done(false));
+    audio.play().catch(() => done(false));
+    setTimeout(() => done(false), 5000);
+  });
+}
+
+export function speak(text: string, rate?: number): void {
+  if (!text) return;
+  const engine = synth();
+  const voice = engine ? resolveVoice() : null;
+  // Prefer the device voice: instant, offline, and no dependency on Google. It
+  // is warmed at startup (below), so by tap time a capable device has it ready.
+  if (engine && (voice || listVoices().length > 0)) {
+    speakWith(text, voice, rate);
     return;
   }
-  speakWith(text, voice, rate);
+  // No usable device voice → network fallback so voice-less tablets still speak.
+  void speakRemote(text, rate);
 }
 
 export function speakSlow(text: string): void {
@@ -242,6 +287,10 @@ export function speakSlow(text: string): void {
 
 export function cancelSpeech(): void {
   synth()?.cancel();
+  if (remoteAudio) {
+    remoteAudio.pause();
+    remoteAudio = null;
+  }
 }
 
 /**
@@ -277,7 +326,13 @@ export function unlockSpeech(): void {
   }
 }
 
-export type SpeechOutcome = 'spoke' | 'error' | 'no-voice' | 'timeout' | 'unsupported';
+export type SpeechOutcome =
+  | 'spoke'
+  | 'remote'
+  | 'error'
+  | 'no-voice'
+  | 'timeout'
+  | 'unsupported';
 
 export interface SpeechDiagnosis {
   supported: boolean;
@@ -305,7 +360,7 @@ function isStandalone(): boolean {
  * own iPad/tablet instead of us guessing: no English voice installed, engine
  * blocked, or muted (fires but no start event).
  */
-export function runSpeechTest(): Promise<SpeechDiagnosis> {
+export async function runSpeechTest(): Promise<SpeechDiagnosis> {
   const engine = synth();
   const base = {
     supported: engine !== null,
@@ -314,15 +369,16 @@ export function runSpeechTest(): Promise<SpeechDiagnosis> {
     chosenVoice: currentVoiceName(),
     standalone: isStandalone(),
   };
-  return new Promise((resolve) => {
-    if (!engine) {
-      resolve({ ...base, outcome: 'unsupported' });
-      return;
-    }
-    if (listVoices().length === 0) {
-      resolve({ ...base, outcome: 'no-voice' });
-      return;
-    }
+
+  // No device voice (or no speech engine at all): fall back to network audio and
+  // report whether that works, since that is exactly what the app now does.
+  if (!engine || listVoices().length === 0) {
+    const remoteOk = await speakRemote('happiness');
+    if (remoteOk) return { ...base, outcome: 'remote' };
+    return { ...base, outcome: engine ? 'no-voice' : 'unsupported' };
+  }
+
+  return await new Promise<SpeechDiagnosis>((resolve) => {
     let settled = false;
     const finish = (outcome: SpeechOutcome, detail?: string) => {
       if (settled) return;
