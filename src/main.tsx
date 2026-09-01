@@ -14,7 +14,7 @@ import { initProgress } from './lib/progress';
 import { startSync } from './lib/sync';
 import { initTheme } from './lib/theme';
 import { startReminders } from './lib/reminder';
-import { unlockSpeech } from './lib/tts';
+import { unlockRemoteAudio, unlockSpeech } from './lib/tts';
 import { primeSfx } from './lib/sfx';
 
 /**
@@ -25,6 +25,9 @@ import { primeSfx } from './lib/sfx';
  */
 function primeAudioOnce(): void {
   unlockSpeech();
+  // Also unlock the network-audio element: on a device that falls back to it,
+  // a later play() outside a tap would otherwise be blocked and stay silent.
+  unlockRemoteAudio();
   primeSfx();
 }
 for (const type of ['pointerdown', 'touchend', 'keydown'] as const) {

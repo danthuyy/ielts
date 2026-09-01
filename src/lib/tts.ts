@@ -278,8 +278,49 @@ export function canPlayRemote(): boolean {
   return typeof Audio !== 'undefined';
 }
 
+/**
+ * One reusable <audio> element, unlocked by the first tap.
+ *
+ * Mobile browsers grant playback permission to an *element*, not to the page,
+ * and only when `play()` is called inside a user gesture. Creating a fresh
+ * `new Audio()` per word means every word needs its own gesture — and the call
+ * that follows a `.then()` has already left the gesture, so playback is blocked
+ * (NotAllowedError) and the word is silent. Priming this single element during
+ * the first touch makes every later `play()` on it allowed, gesture or not.
+ */
+let unlockedAudio: HTMLAudioElement | null = null;
+
+function audioElement(): HTMLAudioElement | null {
+  if (typeof Audio === 'undefined') return null;
+  unlockedAudio ??= new Audio();
+  return unlockedAudio;
+}
+
+/**
+ * Unlock network audio from inside the first user gesture, the same way
+ * `unlockSpeech` unlocks speech. Playing a silent data-URL counts as the
+ * element's one blessed gesture-initiated play.
+ */
+export function unlockRemoteAudio(): void {
+  const audio = audioElement();
+  if (!audio || audio.dataset.primed === '1') return;
+  audio.dataset.primed = '1';
+  const tweak = audio as HTMLAudioElement & { referrerPolicy?: string };
+  tweak.referrerPolicy = 'no-referrer';
+  audio.preload = 'auto';
+  try {
+    // 44-byte silent WAV: nothing audible, but it counts as a real play().
+    audio.src =
+      'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAgD4AAAB9AAACABAAZGF0YQAAAAA=';
+    void audio.play().catch(() => {});
+  } catch {
+    // Priming must never throw inside a tap handler.
+  }
+}
+
 function playUrl(url: string, speed: number): Promise<boolean> {
-  const audio = new Audio(url);
+  const audio = audioElement();
+  if (!audio) return Promise.resolve(false);
   const tweak = audio as HTMLAudioElement & {
     referrerPolicy?: string;
     preservesPitch?: boolean;
@@ -288,6 +329,7 @@ function playUrl(url: string, speed: number): Promise<boolean> {
   };
   // Strip the Referer so referrer-sensitive endpoints (Google) don't 404.
   tweak.referrerPolicy = 'no-referrer';
+  audio.src = url;
   audio.playbackRate = Math.max(0.5, Math.min(1, speed));
   // Keep the pitch natural when slowed rather than deepening it.
   tweak.preservesPitch = true;
@@ -297,32 +339,40 @@ function playUrl(url: string, speed: number): Promise<boolean> {
   return new Promise((resolve) => {
     let settled = false;
     const done = (ok: boolean) => {
-      if (!settled) {
-        settled = true;
-        resolve(ok);
-      }
+      if (settled) return;
+      settled = true;
+      audio.removeEventListener('playing', onPlaying);
+      audio.removeEventListener('error', onError);
+      resolve(ok);
     };
-    audio.addEventListener('playing', () => done(true));
-    audio.addEventListener('error', () => done(false));
+    // Named so they can be detached: the element is reused for every word, and
+    // leftover listeners would resolve a later word's promise.
+    const onPlaying = () => done(true);
+    const onError = () => done(false);
+    audio.addEventListener('playing', onPlaying);
+    audio.addEventListener('error', onError);
     audio.play().catch(() => done(false));
     setTimeout(() => done(false), 5000);
   });
 }
 
-/** Stream the word from a dictionary endpoint. Resolves true once it plays. */
+/**
+ * Stream the word from a dictionary endpoint. Resolves true once it plays.
+ *
+ * `play()` is issued synchronously so the call still sits inside the tap that
+ * triggered it — a mobile browser blocks playback started after an `await`.
+ * The second source is only tried if the first fails, which by then no longer
+ * needs the gesture because the shared element is already unlocked.
+ */
 export function speakRemote(text: string, rate?: number): Promise<boolean> {
   if (!canPlayRemote() || !text) return Promise.resolve(false);
-  if (remoteAudio) {
-    remoteAudio.pause();
-    remoteAudio = null;
-  }
   const speed = rate ?? getSetting('speechRate');
-  const urls = remoteUrls(text);
-  // Try each source in turn; the first that actually starts playing wins.
-  return urls.reduce<Promise<boolean>>(
-    (chain, url) => chain.then((ok) => (ok ? true : playUrl(url, speed))),
-    Promise.resolve(false),
-  );
+  const [primary, fallback] = remoteUrls(text);
+  if (!primary) return Promise.resolve(false);
+  return playUrl(primary, speed).then((ok) => {
+    if (ok || !fallback) return ok;
+    return playUrl(fallback, speed);
+  });
 }
 
 export function speak(text: string, rate?: number): void {
