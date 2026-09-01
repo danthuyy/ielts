@@ -180,10 +180,29 @@ export function setVoice(name: string): void {
 // finishes; holding a reference until it ends keeps speech alive.
 let inFlight: SpeechSynthesisUtterance | null = null;
 
+// Some Android browsers (seen on Samsung tablets) accept `speak()` and stay
+// completely silent — no `start`, no `error`, no sound — even though the OS
+// text-to-speech engine works in system settings. There is no way to detect
+// this up front, so the first utterance is probed: if it never starts, the
+// device is marked broken and every later call goes straight to network audio
+// instead of waiting on a bridge that will not speak.
+//   null  = not yet known
+//   true  = the browser's speech really plays
+//   false = accepted but silent; use the network fallback
+let deviceSpeechOk: boolean | null = null;
+
 /** Speak with an explicit voice — the quick per-accent buttons use this. */
 export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate?: number): void {
   const engine = synth();
-  if (!engine || !text) return;
+  if (!engine || !text) {
+    if (text) void speakRemote(text, rate);
+    return;
+  }
+  // Already known to be silently broken on this device — don't wait, go remote.
+  if (deviceSpeechOk === false) {
+    void speakRemote(text, rate);
+    return;
+  }
 
   // Speaking over an in-flight utterance queues it; learners expect the new
   // word to replace the old one.
@@ -206,13 +225,30 @@ export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate
   utterance.rate = rate ?? getSetting('speechRate');
 
   inFlight = utterance;
+  let started = false;
   const release = () => {
     if (inFlight === utterance) inFlight = null;
   };
+  const toRemote = () => {
+    if (started) return;
+    deviceSpeechOk = false;
+    engine.cancel();
+    void speakRemote(text, rate);
+  };
+  utterance.addEventListener('start', () => {
+    started = true;
+    deviceSpeechOk = true;
+  });
   utterance.addEventListener('end', release);
-  utterance.addEventListener('error', release);
+  utterance.addEventListener('error', () => {
+    release();
+    toRemote();
+  });
 
   engine.speak(utterance);
+  // A single word starts speaking well under a second on a working engine;
+  // silence past this window means the browser's speech bridge is dead.
+  setTimeout(toRemote, 1500);
 }
 
 // A budget Android/Samsung tablet often ships with no English TTS voice at all,
@@ -400,12 +436,15 @@ export async function runSpeechTest(): Promise<SpeechDiagnosis> {
     return { ...base, outcome: engine ? 'no-voice' : 'unsupported' };
   }
 
-  return await new Promise<SpeechDiagnosis>((resolve) => {
-    let settled = false;
-    const finish = (outcome: SpeechOutcome, detail?: string) => {
-      if (settled) return;
-      settled = true;
-      resolve({ ...base, outcome, detail });
+  // A voice exists — probe whether the browser's speech bridge actually plays
+  // it. On some Android browsers it accepts speak() and stays silent.
+  const deviceOutcome = await new Promise<'spoke' | 'timeout' | 'error'>((resolve) => {
+    let done = false;
+    const fin = (o: 'spoke' | 'timeout' | 'error') => {
+      if (!done) {
+        done = true;
+        resolve(o);
+      }
     };
     if (engine.paused) engine.resume();
     if (engine.speaking || engine.pending) engine.cancel();
@@ -417,11 +456,24 @@ export async function runSpeechTest(): Promise<SpeechDiagnosis> {
     } else {
       probe.lang = 'en-GB';
     }
-    probe.addEventListener('start', () => finish('spoke'));
-    probe.addEventListener('error', (event) => finish('error', event.error));
+    probe.addEventListener('start', () => fin('spoke'));
+    probe.addEventListener('error', () => fin('error'));
     engine.speak(probe);
-    setTimeout(() => finish('timeout'), 3500);
+    setTimeout(() => fin('timeout'), 2500);
   });
+
+  if (deviceOutcome === 'spoke') {
+    deviceSpeechOk = true;
+    return { ...base, outcome: 'spoke' };
+  }
+
+  // Accepted but silent — exactly when the app now switches to network audio.
+  // Test that path and report it, so the panel matches what the learner hears.
+  deviceSpeechOk = false;
+  engine.cancel();
+  const remoteOk = await speakRemote('happiness');
+  if (remoteOk) return { ...base, outcome: 'remote' };
+  return { ...base, outcome: deviceOutcome === 'error' ? 'error' : 'timeout' };
 }
 
 // Kick the async voice list into loading the moment the app starts, so the

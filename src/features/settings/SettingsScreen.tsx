@@ -74,7 +74,7 @@ function verdictOf(d: SpeechDiagnosis): { icon: string; text: string } {
     case 'remote':
       return {
         icon: '✅',
-        text: 'Máy không có giọng riêng, nhưng app đã đọc được bằng giọng tải từ mạng — bé không cần cài gì, chỉ cần có Internet. Bật tiếng lên là nghe được.',
+        text: 'App đọc được bằng giọng tải từ mạng (khi giọng của máy không dùng được). Chỉ cần có Internet và bật tiếng là nghe được — không phải cài gì thêm.',
       };
     case 'no-voice':
       return {
