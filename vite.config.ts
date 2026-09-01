@@ -137,6 +137,19 @@ export default defineConfig(({ command }) => ({
             urlPattern: /^https:\/\/[a-z0-9]+\.supabase\.co\/rest\/v1\//,
             handler: 'NetworkOnly',
           },
+          {
+            // Pronunciation clips. Deliberately runtime-cached rather than
+            // precached: there is one per word, so precaching them would make
+            // the first visit download the whole library before the app opened.
+            // Cache-first is safe because a clip's contents never change.
+            urlPattern: ({ url }) => url.pathname.includes('/audio/'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'word-audio',
+              expiration: { maxEntries: 1500, maxAgeSeconds: 60 * 60 * 24 * 180 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
         ],
       },
     }),

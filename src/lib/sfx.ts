@@ -100,6 +100,19 @@ export function primeSfx(): void {
   audio();
 }
 
+/**
+ * The shared audio context, for code that needs to play a decoded clip rather
+ * than a synthesised tone.
+ *
+ * Deliberately the *same* context these feedback tones use: on a device where
+ * the browser's speech and its <audio> element both fail silently, these tones
+ * still play — so this is the one output path known to work there, and reusing
+ * it is what lets pronunciation reach the learner at all.
+ */
+export function sharedAudioContext(): AudioContext | null {
+  return audio();
+}
+
 export function playSfx(sound: Sfx): void {
   if (!enabled) return;
   // Respect the same preference that stops the interface animating.

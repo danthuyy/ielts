@@ -26,6 +26,7 @@
     "validate:content": "node scripts/validate-content.mjs",
     "lesson:new": "node scripts/new-lesson.mjs",
     "lesson:import": "node scripts/import-lesson.mjs",
+    "build:audio": "node scripts/build-audio.mjs",
     "push:all": "node scripts/push-all.mjs"
   },
   "dependencies": {

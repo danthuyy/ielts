@@ -1,4 +1,5 @@
 import { getSetting, setSetting } from './settings';
+import { sharedAudioContext } from './sfx';
 
 /**
  * Text-to-speech.
@@ -191,16 +192,27 @@ let inFlight: SpeechSynthesisUtterance | null = null;
 //   false = accepted but silent; use the network fallback
 let deviceSpeechOk: boolean | null = null;
 
+/**
+ * Everything the app can try when the browser's own speech will not do it:
+ * the clip shipped with the app first, the public endpoints only if there is no
+ * clip for this word (a phrase, or a lesson added since the clips were built).
+ */
+function speakWithoutDevice(text: string, rate?: number): void {
+  void speakLocal(text, rate).then((played) => {
+    if (!played) void speakRemote(text, rate);
+  });
+}
+
 /** Speak with an explicit voice — the quick per-accent buttons use this. */
 export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate?: number): void {
   const engine = synth();
   if (!engine || !text) {
-    if (text) void speakRemote(text, rate);
+    if (text) speakWithoutDevice(text, rate);
     return;
   }
   // Already known to be silently broken on this device — don't wait, go remote.
   if (deviceSpeechOk === false) {
-    void speakRemote(text, rate);
+    speakWithoutDevice(text, rate);
     return;
   }
 
@@ -233,7 +245,7 @@ export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate
     if (started) return;
     deviceSpeechOk = false;
     engine.cancel();
-    void speakRemote(text, rate);
+    speakWithoutDevice(text, rate);
   };
   utterance.addEventListener('start', () => {
     started = true;
@@ -277,6 +289,68 @@ function remoteUrls(text: string): string[] {
     // translate.google.com host replies 404 to exactly the same request.
     `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=en&q=${q}`,
   ];
+}
+
+/**
+ * Pronunciation clips shipped with the app (see scripts/build-audio.mjs).
+ *
+ * This is the primary path on any device whose browser cannot speak. Files come
+ * from the app's own origin, so they cannot hang the way the public dictionary
+ * endpoints do on some networks, they work offline, and — because same-origin
+ * bytes can be decoded — they play through Web Audio, the same output the answer
+ * tones use. On the tablet this was written for that is the only path that works
+ * at all: its speech engine is silent through the browser and remote audio never
+ * arrives, but the tones are audible.
+ */
+function audioFileFor(word: string): string {
+  // Mirrors slugFor() in scripts/build-audio.mjs.
+  const slug = word
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+  return `${import.meta.env.BASE_URL}audio/${slug}.mp3`;
+}
+
+const decoded = new Map<string, AudioBuffer>();
+let localSource: AudioBufferSourceNode | null = null;
+/** Words with no shipped clip, so a second miss costs no request. */
+const noClip = new Set<string>();
+
+/** Play a shipped clip through Web Audio. Resolves false if there isn't one. */
+export async function speakLocal(text: string, rate?: number): Promise<boolean> {
+  const word = text.trim().toLowerCase();
+  if (!word || noClip.has(word)) return false;
+  const context = sharedAudioContext();
+  if (!context) return false;
+
+  let buffer = decoded.get(word);
+  if (!buffer) {
+    try {
+      const response = await fetch(audioFileFor(word), { cache: 'force-cache' });
+      if (!response.ok) {
+        noClip.add(word);
+        return false;
+      }
+      buffer = await context.decodeAudioData(await response.arrayBuffer());
+      decoded.set(word, buffer);
+    } catch {
+      noClip.add(word);
+      return false;
+    }
+  }
+
+  if (context.state === 'suspended') void context.resume();
+  localSource?.stop();
+  const source = context.createBufferSource();
+  source.buffer = buffer;
+  source.playbackRate.value = Math.max(0.5, Math.min(1, rate ?? getSetting('speechRate')));
+  source.connect(context.destination);
+  source.addEventListener('ended', () => {
+    if (localSource === source) localSource = null;
+  });
+  localSource = source;
+  source.start();
+  return true;
 }
 
 /** True if the browser can even attempt network audio. */
@@ -462,6 +536,16 @@ export interface RemoteProbe {
  */
 export function diagnoseRemote(text = 'happiness'): Promise<RemoteProbe[]> {
   const urls = remoteUrls(text);
+
+  // The shipped clip is the path that should work; test it first and by its own
+  // route (Web Audio), because that is how the app actually plays it.
+  const localProbe = (): Promise<RemoteProbe> =>
+    speakLocal(text)
+      .then((played) => ({
+        host: 'file trong app',
+        result: played ? 'CÓ TIẾNG ✓' : 'không có file cho từ này',
+      }))
+      .catch(() => ({ host: 'file trong app', result: 'lỗi' }));
   const label = (url: string) => new URL(url).host.replace(/^(www|ssl)\./, '');
   const MEDIA_ERROR: Record<number, string> = {
     1: 'bị huỷ',
@@ -500,7 +584,7 @@ export function diagnoseRemote(text = 'happiness'): Promise<RemoteProbe[]> {
 
   return urls.reduce<Promise<RemoteProbe[]>>(
     (chain, url) => chain.then((acc) => probe(url).then((one) => [...acc, one])),
-    Promise.resolve([]),
+    localProbe().then((one) => [one]),
   );
 }
 
@@ -514,8 +598,9 @@ export function speak(text: string, rate?: number): void {
     speakWith(text, voice, rate);
     return;
   }
-  // No usable device voice → network fallback so voice-less tablets still speak.
-  void speakRemote(text, rate);
+  // No usable device voice → shipped clip, then network, so voice-less tablets
+  // still speak.
+  speakWithoutDevice(text, rate);
 }
 
 export function speakSlow(text: string): void {
@@ -594,10 +679,14 @@ export async function prewarmRemote(
   onProgress?.(0, total);
   if (total === 0) return;
 
-  // Which source can this device actually reach? Warming an unreachable host
-  // would stall on every single word — the failure that hung the opening screen.
-  const source = await findWorkingSource(unique[0]!);
-  if (source === null) {
+  // Clips shipped with the app come first: same origin, already on the server
+  // the page came from, so they cannot hang the way a third-party host can.
+  // Only if the first word has no clip is a reachable remote source worth
+  // hunting for — warming an unreachable host stalls on every single word,
+  // which is exactly what once hung this screen.
+  const hasLocal = await fetchWithTimeout(audioFileFor(unique[0]!), 3000);
+  const source = hasLocal ? null : await findWorkingSource(unique[0]!);
+  if (!hasLocal && source === null) {
     onProgress?.(total, total);
     return;
   }
@@ -606,7 +695,7 @@ export async function prewarmRemote(
   // on demand, just without the head start. Being late must never mean stuck.
   const deadline = Date.now() + 8000;
   const warm = (word: string) => {
-    const url = remoteUrls(word)[source];
+    const url = hasLocal ? audioFileFor(word) : remoteUrls(word)[source!];
     const request = url ? fetchWithTimeout(url, 3000) : Promise.resolve(false);
     return request.then(() => {
       done += 1;
@@ -707,7 +796,7 @@ export async function runSpeechTest(): Promise<SpeechDiagnosis> {
   // No device voice (or no speech engine at all): fall back to network audio and
   // report whether that works, since that is exactly what the app now does.
   if (!engine || listVoices().length === 0) {
-    const remoteOk = await speakRemote('happiness');
+    const remoteOk = (await speakLocal('happiness')) || (await speakRemote('happiness'));
     if (remoteOk) return { ...base, outcome: 'remote' };
     return { ...base, outcome: engine ? 'no-voice' : 'unsupported' };
   }
@@ -747,7 +836,7 @@ export async function runSpeechTest(): Promise<SpeechDiagnosis> {
   // Test that path and report it, so the panel matches what the learner hears.
   deviceSpeechOk = false;
   engine.cancel();
-  const remoteOk = await speakRemote('happiness');
+  const remoteOk = (await speakLocal('happiness')) || (await speakRemote('happiness'));
   if (remoteOk) return { ...base, outcome: 'remote' };
   return { ...base, outcome: deviceOutcome === 'error' ? 'error' : 'timeout' };
 }
