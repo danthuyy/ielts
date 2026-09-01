@@ -916,3 +916,109 @@
   display: flex;
   flex-direction: column;
 }
+
+/* Lesson opening gate — idiom-of-the-moment while network audio warms up. */
+.lesson-gate {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-5);
+  background: var(--bg);
+}
+
+.lesson-gate--checking {
+  color: var(--primary);
+}
+
+.lesson-gate__card {
+  width: 100%;
+  max-width: 30rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: var(--sp-6);
+  text-align: center;
+  animation: lesson-gate-in var(--duration-normal) var(--ease-out) both;
+}
+
+@keyframes lesson-gate-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.lesson-gate__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--primary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.lesson-gate__mark {
+  display: inline-flex;
+  color: var(--primary);
+  animation: lesson-gate-pulse 1.8s var(--ease-out) infinite;
+}
+
+@keyframes lesson-gate-pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-3px);
+    opacity: 0.75;
+  }
+}
+
+.lesson-gate__idiom {
+  margin: var(--sp-4) 0 var(--sp-2);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.lesson-gate__vi {
+  margin: 0 0 var(--sp-4);
+  color: var(--text-muted);
+  font-size: var(--text-md);
+}
+
+.lesson-gate__example {
+  text-align: left;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: var(--sp-3) var(--sp-4);
+  border-left: 3px solid var(--primary);
+}
+
+.lesson-gate__example-en {
+  margin: 0 0 var(--sp-1);
+  color: var(--text);
+  font-style: italic;
+}
+
+.lesson-gate__example-vi {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: var(--text-sm);
+}
+
+.lesson-gate__foot {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  margin-top: var(--sp-5);
+}
+
+.lesson-gate__foot .progress {
+  flex: 1;
+}

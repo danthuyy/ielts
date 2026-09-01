@@ -351,6 +351,85 @@ export function cancelSpeech(): void {
   }
 }
 
+/** What the app will do for pronunciation: 'device', 'remote', or not-yet-known. */
+export function speechMode(): 'device' | 'remote' | 'unknown' {
+  if (deviceSpeechOk === true) return 'device';
+  if (deviceSpeechOk === false) return 'remote';
+  return 'unknown';
+}
+
+/**
+ * Decide, once and up front, whether the browser can actually speak here — so a
+ * study session never eats the 1.5s "is the bridge alive?" wait mid-word. Fires
+ * one silent probe: if it starts, speech works; if it stays silent, the device
+ * is marked for network audio. Cached after the first run.
+ */
+export function probeDeviceSpeech(): Promise<boolean> {
+  if (deviceSpeechOk !== null) return Promise.resolve(deviceSpeechOk);
+  const engine = synth();
+  if (!engine || listVoices().length === 0) {
+    deviceSpeechOk = false;
+    return Promise.resolve(false);
+  }
+  return new Promise((resolve) => {
+    let done = false;
+    const finish = (ok: boolean) => {
+      if (done) return;
+      done = true;
+      deviceSpeechOk = ok;
+      engine.cancel();
+      resolve(ok);
+    };
+    if (engine.paused) engine.resume();
+    const probe = new SpeechSynthesisUtterance(' ');
+    probe.volume = 0;
+    const voice = resolveVoice();
+    if (voice) {
+      probe.voice = voice;
+      probe.lang = voice.lang;
+    } else {
+      probe.lang = 'en-GB';
+    }
+    probe.addEventListener('start', () => finish(true));
+    probe.addEventListener('error', () => finish(false));
+    engine.speak(probe);
+    // A working engine starts a silent utterance well under a second.
+    setTimeout(() => finish(false), 1500);
+  });
+}
+
+/**
+ * Warm the network voice for a set of words before a session starts, so tapping
+ * 🔊 mid-study plays instantly instead of waiting on a fetch. Fetching the audio
+ * URL primes the browser's connection and HTTP cache for the later <audio>.
+ * Only worth calling when the device is on the remote path.
+ */
+export async function prewarmRemote(
+  words: string[],
+  onProgress?: (done: number, total: number) => void,
+): Promise<void> {
+  if (!canPlayRemote()) return;
+  const unique = [...new Set(words.map((w) => w.trim()).filter(Boolean))];
+  const total = unique.length;
+  let done = 0;
+  onProgress?.(0, total);
+  const warm = (word: string) => {
+    const url = remoteUrls(word)[0];
+    const request = url
+      ? fetch(url, { mode: 'no-cors', cache: 'force-cache' }).catch(() => {})
+      : Promise.resolve();
+    return request.finally(() => {
+      done += 1;
+      onProgress?.(done, total);
+    });
+  };
+  // A few at a time — enough to be quick, not so many as to hammer the network.
+  const POOL = 4;
+  for (let i = 0; i < unique.length; i += POOL) {
+    await Promise.all(unique.slice(i, i + POOL).map(warm));
+  }
+}
+
 /**
  * Chrome and Safari populate the voice list asynchronously, so the first
  * `getVoices()` usually returns nothing. Components use this to repaint.
@@ -378,6 +457,11 @@ export function unlockSpeech(): void {
   try {
     const primer = new SpeechSynthesisUtterance(' ');
     primer.volume = 0;
+    // If this silent primer actually starts, the speech bridge is alive — record
+    // it now so a study session skips the readiness probe entirely.
+    primer.addEventListener('start', () => {
+      deviceSpeechOk = true;
+    });
     engine.speak(primer);
   } catch {
     // Never let priming throw during a tap handler.
