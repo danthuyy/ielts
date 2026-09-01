@@ -285,6 +285,57 @@ export function canPlayRemote(): boolean {
 }
 
 /**
+ * Index of the source known to work on this device, once one has proved itself.
+ *
+ * This matters more than it looks. A source can fail by *hanging* — no response,
+ * no error — and on the tablet this was built for, requests to the first source
+ * do exactly that. Without memory, every single word would stall on the dead
+ * source before falling through, making the app feel broken even though the
+ * audio eventually arrives. Once a source plays, it is used first from then on.
+ */
+let workingSource: number | null = null;
+
+/** A fetch that gives up instead of hanging forever on an unreachable host. */
+function fetchWithTimeout(url: string, ms: number): Promise<boolean> {
+  if (typeof AbortController === 'undefined') return Promise.resolve(false);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
+  return fetch(url, { mode: 'no-cors', cache: 'force-cache', signal: controller.signal })
+    .then(() => true)
+    .catch(() => false)
+    .finally(() => clearTimeout(timer));
+}
+
+/**
+ * Find which audio source this device can actually reach, by racing them.
+ *
+ * Sequential probing is wrong here: the first source is the one that hangs, so
+ * trying it first and waiting costs the full timeout every time. Racing means a
+ * reachable source answers in its own time regardless of what the dead one does.
+ */
+function findWorkingSource(text: string): Promise<number | null> {
+  if (workingSource !== null) return Promise.resolve(workingSource);
+  const urls = remoteUrls(text);
+  return new Promise((resolve) => {
+    let pending = urls.length;
+    let settled = false;
+    urls.forEach((url, index) => {
+      void fetchWithTimeout(url, 3500).then((ok) => {
+        pending -= 1;
+        if (ok && !settled) {
+          settled = true;
+          workingSource = index;
+          resolve(index);
+        } else if (pending === 0 && !settled) {
+          settled = true;
+          resolve(null);
+        }
+      });
+    });
+  });
+}
+
+/**
  * One reusable <audio> element, unlocked by the first tap.
  *
  * Mobile browsers grant playback permission to an *element*, not to the page,
@@ -324,7 +375,7 @@ export function unlockRemoteAudio(): void {
   }
 }
 
-function playUrl(url: string, speed: number): Promise<boolean> {
+function playUrl(url: string, speed: number, timeoutMs = 3500): Promise<boolean> {
   const audio = audioElement();
   if (!audio) return Promise.resolve(false);
   const tweak = audio as HTMLAudioElement & {
@@ -358,7 +409,8 @@ function playUrl(url: string, speed: number): Promise<boolean> {
     audio.addEventListener('playing', onPlaying);
     audio.addEventListener('error', onError);
     audio.play().catch(() => done(false));
-    setTimeout(() => done(false), 5000);
+    // A source that neither plays nor errors is hanging; give up and move on.
+    setTimeout(() => done(false), timeoutMs);
   });
 }
 
@@ -373,13 +425,26 @@ function playUrl(url: string, speed: number): Promise<boolean> {
 export function speakRemote(text: string, rate?: number): Promise<boolean> {
   if (!canPlayRemote() || !text) return Promise.resolve(false);
   const speed = rate ?? getSetting('speechRate');
-  const [first, ...rest] = remoteUrls(text);
+  const urls = remoteUrls(text);
+  // Once a source has proved itself, go straight to it: no waiting on a source
+  // that hangs, and the play() stays inside the tap that asked for it.
+  const order =
+    workingSource === null
+      ? urls.map((url, index) => ({ url, index }))
+      : [
+          { url: urls[workingSource]!, index: workingSource },
+          ...urls.flatMap((url, index) => (index === workingSource ? [] : [{ url, index }])),
+        ];
+  const [first, ...rest] = order;
   if (!first) return Promise.resolve(false);
-  // The first attempt is synchronous — still inside the tap. Later ones only run
-  // if it failed, by which point the shared element is unlocked anyway.
+  const attempt = ({ url, index }: { url: string; index: number }) =>
+    playUrl(url, speed).then((ok) => {
+      if (ok) workingSource = index;
+      return ok;
+    });
   return rest.reduce<Promise<boolean>>(
-    (chain, url) => chain.then((ok) => (ok ? true : playUrl(url, speed))),
-    playUrl(first, speed),
+    (chain, entry) => chain.then((ok) => (ok ? true : attempt(entry))),
+    attempt(first),
   );
 }
 
@@ -527,12 +592,23 @@ export async function prewarmRemote(
   const total = unique.length;
   let done = 0;
   onProgress?.(0, total);
+  if (total === 0) return;
+
+  // Which source can this device actually reach? Warming an unreachable host
+  // would stall on every single word — the failure that hung the opening screen.
+  const source = await findWorkingSource(unique[0]!);
+  if (source === null) {
+    onProgress?.(total, total);
+    return;
+  }
+
+  // Stop warming once the session has waited long enough; the words still play
+  // on demand, just without the head start. Being late must never mean stuck.
+  const deadline = Date.now() + 8000;
   const warm = (word: string) => {
-    const url = remoteUrls(word)[0];
-    const request = url
-      ? fetch(url, { mode: 'no-cors', cache: 'force-cache' }).catch(() => {})
-      : Promise.resolve();
-    return request.finally(() => {
+    const url = remoteUrls(word)[source];
+    const request = url ? fetchWithTimeout(url, 3000) : Promise.resolve(false);
+    return request.then(() => {
       done += 1;
       onProgress?.(done, total);
     });
@@ -540,8 +616,10 @@ export async function prewarmRemote(
   // A few at a time — enough to be quick, not so many as to hammer the network.
   const POOL = 4;
   for (let i = 0; i < unique.length; i += POOL) {
+    if (Date.now() > deadline) break;
     await Promise.all(unique.slice(i, i + POOL).map(warm));
   }
+  onProgress?.(total, total);
 }
 
 /**

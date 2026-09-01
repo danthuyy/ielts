@@ -38,6 +38,13 @@ export function LessonGate({ words, children }: Props) {
     if (phase === 'ready') return;
     let cancelled = false;
 
+    // Hard stop. Every step below has its own timeout, but a learner must never
+    // be held out of a lesson by the audio warm-up under any circumstances —
+    // this screen once hung forever on a request that never came back.
+    const watchdog = window.setTimeout(() => {
+      if (!cancelled) setPhase('ready');
+    }, 9000);
+
     const warmThenReady = async (shownAt: number) => {
       await prewarmRemote(words, (done, total) => {
         if (!cancelled) setProgress({ done, total });
@@ -66,6 +73,7 @@ export function LessonGate({ words, children }: Props) {
 
     return () => {
       cancelled = true;
+      window.clearTimeout(watchdog);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key]);
