@@ -111,8 +111,15 @@ ngay dưới `tags` (importer không tự thêm — bạn tự thêm):
 
 ```bash
 npm run validate:content   # bắt lỗi bài học sai trước khi lên site
+npm run build:audio        # tải giọng đọc cho các từ MỚI (bắt buộc)
 npm run push:all           # đẩy sang MỌI repo con trong một lệnh
 ```
+
+**Đừng bỏ `build:audio`.** App phát âm bằng file tiếng nhúng sẵn trong
+`public/audio/`, vì có máy (máy tính bảng Android rẻ) vừa không đọc được bằng
+giọng máy, vừa treo mọi nguồn tiếng qua mạng. Từ nào chưa có file thì trên
+những máy đó sẽ **không có tiếng**. Lệnh này chỉ tải phần còn thiếu, file cũ
+giữ nguyên, nên chạy lại lúc nào cũng an toàn.
 
 `push:all` đẩy `main` tới `origin` và mọi repo `ielts` khác. Mỗi repo con tự
 build lại và chỉ hiện bài chung + bài của chính nó.
