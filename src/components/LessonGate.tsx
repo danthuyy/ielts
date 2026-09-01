@@ -99,6 +99,8 @@ export function LessonGate({ words, children }: Props) {
           <p className="lesson-gate__example-vi">{idiom.exampleVi}</p>
         </div>
 
+        {/* No skip control: the gate lets itself go the moment audio is ready,
+            so a button would only ever cut the wait it is already ending. */}
         <div className="lesson-gate__foot">
           <span
             className="progress progress--thin"
@@ -110,9 +112,6 @@ export function LessonGate({ words, children }: Props) {
           >
             <span className="progress__fill" style={{ width: `${Math.max(8, pct)}%` }} />
           </span>
-          <button className="btn btn--secondary" onClick={() => setPhase('ready')}>
-            Vào học →
-          </button>
         </div>
       </div>
     </div>

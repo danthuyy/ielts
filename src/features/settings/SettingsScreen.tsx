@@ -28,7 +28,13 @@ import { setTheme } from '@/lib/theme';
 import { playSfx, setSfxEnabled } from '@/lib/sfx';
 import { describeCountdown, daysUntil, minimumExamDate } from '@/lib/exam';
 import { notificationSupport, requestPermission, sendTestNotification } from '@/lib/reminder';
-import { runSpeechTest, speak, type SpeechDiagnosis } from '@/lib/tts';
+import {
+  diagnoseRemote,
+  runSpeechTest,
+  speak,
+  type RemoteProbe,
+  type SpeechDiagnosis,
+} from '@/lib/tts';
 
 const APP_VERSION = '2.0.0';
 
@@ -99,11 +105,22 @@ function verdictOf(d: SpeechDiagnosis): { icon: string; text: string } {
 /** A one-tap self-diagnosis so a parent can see *why* a device stays silent. */
 function SoundCheck() {
   const [result, setResult] = useState<SpeechDiagnosis | null>(null);
+  const [probes, setProbes] = useState<RemoteProbe[] | null>(null);
   const [running, setRunning] = useState(false);
 
   const run = useCallback(async () => {
     setRunning(true);
+    setProbes(null);
     setResult(await runSpeechTest());
+    setRunning(false);
+  }, []);
+
+  // Deliberately separate: this one names the failing source, which is the only
+  // thing that distinguishes "the network audio is blocked" from "it played and
+  // the device is muted" — impossible to tell apart from the outside.
+  const runDetail = useCallback(async () => {
+    setRunning(true);
+    setProbes(await diagnoseRemote());
     setRunning(false);
   }, []);
 
@@ -111,9 +128,15 @@ function SoundCheck() {
 
   return (
     <div className="sync-detail" style={{ marginTop: 'var(--sp-2)' }}>
-      <button className="btn btn--ghost" onClick={run} disabled={running}>
-        {running ? 'Đang kiểm tra...' : '🩺 Kiểm tra âm thanh trên máy này'}
-      </button>
+      <div style={{ display: 'flex', gap: 'var(--sp-2)', flexWrap: 'wrap' }}>
+        <button className="btn btn--ghost" onClick={run} disabled={running}>
+          {running ? 'Đang kiểm tra...' : '🩺 Kiểm tra âm thanh trên máy này'}
+        </button>
+        <button className="btn btn--ghost" onClick={runDetail} disabled={running}>
+          🔎 Kiểm từng nguồn tiếng
+        </button>
+      </div>
+
       {result && verdict && (
         <div style={{ marginTop: 'var(--sp-2)' }}>
           <p style={{ margin: 0 }}>
@@ -124,6 +147,27 @@ function SoundCheck() {
             {result.chosenVoice ? ` · đang dùng: ${result.chosenVoice}` : ''}
             {result.standalone ? ' · chạy dạng app cài đặt' : ''}
           </p>
+        </div>
+      )}
+
+      {probes && (
+        <div style={{ marginTop: 'var(--sp-3)' }}>
+          <p style={{ margin: '0 0 var(--sp-1)', fontWeight: 600 }}>
+            Kết quả từng nguồn (chụp màn hình gửi bố/mẹ):
+          </p>
+          <ul style={{ margin: 0, paddingLeft: '1.1rem' }}>
+            {probes.map((probe) => (
+              <li key={probe.host}>
+                {probe.host}: <strong>{probe.result}</strong>
+              </li>
+            ))}
+          </ul>
+          {probes.every((probe) => !probe.result.includes('✓')) && (
+            <p style={{ margin: 'var(--sp-2) 0 0', opacity: 0.75 }}>
+              Không nguồn nào phát được. Kiểm tra: tab trình duyệt có bị tắt tiếng không (nhấn giữ
+              tab → bỏ Tắt tiếng), âm lượng phương tiện, và kết nối mạng.
+            </p>
+          )}
         </div>
       )}
     </div>

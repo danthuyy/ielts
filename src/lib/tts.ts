@@ -266,10 +266,16 @@ let remoteAudio: HTMLAudioElement | null = null;
 
 function remoteUrls(text: string): string[] {
   const q = encodeURIComponent(text.slice(0, 200));
+  const word = encodeURIComponent(text.trim().toLowerCase());
   return [
     // type=1 = British, matching the app's British-IPA content.
     `https://dict.youdao.com/dictvoice?type=1&audio=${q}`,
-    `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${q}&total=1&idx=0&textlen=${text.length}`,
+    // Google's dictionary recordings — real British speakers, but single words
+    // only, so it sits behind Youdao rather than replacing it.
+    `https://ssl.gstatic.com/dictionary/static/sounds/20220808/${word}--_gb_1.mp3`,
+    // The googleapis host answers 200 to a request carrying a Referer; the
+    // translate.google.com host replies 404 to exactly the same request.
+    `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=en&q=${q}`,
   ];
 }
 
@@ -367,12 +373,70 @@ function playUrl(url: string, speed: number): Promise<boolean> {
 export function speakRemote(text: string, rate?: number): Promise<boolean> {
   if (!canPlayRemote() || !text) return Promise.resolve(false);
   const speed = rate ?? getSetting('speechRate');
-  const [primary, fallback] = remoteUrls(text);
-  if (!primary) return Promise.resolve(false);
-  return playUrl(primary, speed).then((ok) => {
-    if (ok || !fallback) return ok;
-    return playUrl(fallback, speed);
-  });
+  const [first, ...rest] = remoteUrls(text);
+  if (!first) return Promise.resolve(false);
+  // The first attempt is synchronous — still inside the tap. Later ones only run
+  // if it failed, by which point the shared element is unlocked anyway.
+  return rest.reduce<Promise<boolean>>(
+    (chain, url) => chain.then((ok) => (ok ? true : playUrl(url, speed))),
+    playUrl(first, speed),
+  );
+}
+
+/** One line per audio source: what the device actually did with it. */
+export interface RemoteProbe {
+  host: string;
+  result: string;
+}
+
+/**
+ * Try every audio source in turn and report what each one did, so a silent
+ * device can be diagnosed from the learner's own screen instead of guessed at
+ * from here. Reports the precise reason — blocked, network error, decode
+ * failure, or no response — rather than a plain "it didn't work".
+ */
+export function diagnoseRemote(text = 'happiness'): Promise<RemoteProbe[]> {
+  const urls = remoteUrls(text);
+  const label = (url: string) => new URL(url).host.replace(/^(www|ssl)\./, '');
+  const MEDIA_ERROR: Record<number, string> = {
+    1: 'bị huỷ',
+    2: 'lỗi mạng',
+    3: 'lỗi giải mã',
+    4: 'nguồn không dùng được',
+  };
+  const probe = (url: string) =>
+    new Promise<RemoteProbe>((resolve) => {
+      const audio = audioElement();
+      if (!audio) {
+        resolve({ host: label(url), result: 'trình duyệt không hỗ trợ' });
+        return;
+      }
+      let settled = false;
+      const done = (result: string) => {
+        if (settled) return;
+        settled = true;
+        audio.removeEventListener('playing', onPlay);
+        audio.removeEventListener('error', onErr);
+        resolve({ host: label(url), result });
+      };
+      const onPlay = () => done('CÓ TIẾNG ✓');
+      const onErr = () => done(MEDIA_ERROR[audio.error?.code ?? 0] ?? 'lỗi không rõ');
+      audio.addEventListener('playing', onPlay);
+      audio.addEventListener('error', onErr);
+      const tweak = audio as HTMLAudioElement & { referrerPolicy?: string };
+      tweak.referrerPolicy = 'no-referrer';
+      audio.src = url;
+      audio.play().catch((err: unknown) => {
+        const name = err instanceof Error ? err.name : String(err);
+        done(name === 'NotAllowedError' ? 'BỊ CHẶN (autoplay)' : `bị từ chối: ${name}`);
+      });
+      setTimeout(() => done('không phản hồi'), 6000);
+    });
+
+  return urls.reduce<Promise<RemoteProbe[]>>(
+    (chain, url) => chain.then((acc) => probe(url).then((one) => [...acc, one])),
+    Promise.resolve([]),
+  );
 }
 
 export function speak(text: string, rate?: number): void {
