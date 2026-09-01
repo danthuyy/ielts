@@ -46,9 +46,13 @@ export function LessonGate({ words, children }: Props) {
     }, 9000);
 
     const warmThenReady = async (shownAt: number) => {
-      await prewarmRemote(words, (done, total) => {
+      // Not awaited to completion: warming keeps running in the background after
+      // the lesson opens, so a long lesson is never held back by its last words.
+      const warming = prewarmRemote(words, (done, total) => {
         if (!cancelled) setProgress({ done, total });
       });
+      const MAX_WAIT_MS = 5000;
+      await Promise.race([warming, new Promise((done) => setTimeout(done, MAX_WAIT_MS))]);
       if (cancelled) return;
       // Leave the idiom up long enough to actually read.
       const MIN_MS = 2600;

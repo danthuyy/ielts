@@ -691,9 +691,10 @@ export async function prewarmRemote(
     return;
   }
 
-  // Stop warming once the session has waited long enough; the words still play
-  // on demand, just without the head start. Being late must never mean stuck.
-  const deadline = Date.now() + 8000;
+  // Generous, because the caller no longer waits for this to finish — it keeps
+  // running after the session has opened. The cap exists only so a dead network
+  // cannot leave requests pending forever.
+  const deadline = Date.now() + 60_000;
   const warm = (word: string) => {
     const url = hasLocal ? audioFileFor(word) : remoteUrls(word)[source!];
     const request = url ? fetchWithTimeout(url, 3000) : Promise.resolve(false);
@@ -702,8 +703,10 @@ export async function prewarmRemote(
       onProgress?.(done, total);
     });
   };
-  // A few at a time — enough to be quick, not so many as to hammer the network.
-  const POOL = 4;
+  // The shipped clips are a few KB each and come from the app's own server, so
+  // a wider batch just means the lesson is ready sooner. Remote sources get a
+  // narrower one so a third-party host is not hammered.
+  const POOL = hasLocal ? 10 : 4;
   for (let i = 0; i < unique.length; i += POOL) {
     if (Date.now() > deadline) break;
     await Promise.all(unique.slice(i, i + POOL).map(warm));
