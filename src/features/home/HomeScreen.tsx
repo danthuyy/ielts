@@ -40,20 +40,25 @@ interface Day {
   label: string;
   isToday: boolean;
   studied: number;
+  correct: number;
 }
 
 /** Seven columns ending today, so the chart never collapses on a quiet week. */
-function lastSevenDays(activity: { date: string; wordsStudied: number }[]): Day[] {
-  const byDate = new Map(activity.map((entry) => [entry.date, entry.wordsStudied]));
+function lastSevenDays(
+  activity: { date: string; wordsStudied: number; wordsCorrect: number }[],
+): Day[] {
+  const byDate = new Map(activity.map((entry) => [entry.date, entry]));
   const days: Day[] = [];
   for (let offset = 6; offset >= 0; offset -= 1) {
     const date = addDays(new Date(), -offset);
     const key = toDateKey(date);
+    const entry = byDate.get(key);
     days.push({
       key,
       label: WEEKDAYS[date.getDay()] ?? '',
       isToday: offset === 0,
-      studied: byDate.get(key) ?? 0,
+      studied: entry?.wordsStudied ?? 0,
+      correct: entry?.wordsCorrect ?? 0,
     });
   }
   return days;
@@ -96,6 +101,8 @@ export function HomeScreen() {
   const studiedToday = days[days.length - 1]?.studied ?? 0;
   const goalPercent = percent(studiedToday, settings.dailyGoal);
   const peak = Math.max(...days.map((day) => day.studied), settings.dailyGoal, 1);
+  const weekStudied = days.reduce((sum, day) => sum + day.studied, 0);
+  const weekCorrect = days.reduce((sum, day) => sum + day.correct, 0);
   const nothingDue = dueCount === 0;
   const now = new Date();
   // Same word for the whole day, chosen from the date — no storage, and stable
@@ -322,8 +329,9 @@ export function HomeScreen() {
                 <div
                   className={`chart__col${day.isToday ? ' chart__col--today' : ''}`}
                   key={day.key}
-                  title={`${day.key}: ${day.studied} từ`}
+                  title={`${day.key}: ${day.studied} từ, đúng ${day.correct}`}
                 >
+                  <div className="chart__count">{day.studied || ''}</div>
                   <div className="chart__bar">
                     <div
                       className="chart__fill"
@@ -339,6 +347,10 @@ export function HomeScreen() {
                 </div>
               ))}
             </div>
+            <p className="chart__summary">
+              Tuần này: <strong>{weekStudied}</strong> từ, đúng <strong>{weekCorrect}</strong>
+              {weekStudied > 0 ? ` (${percent(weekCorrect, weekStudied)}%)` : ''}
+            </p>
           </section>
         </div>
       </div>

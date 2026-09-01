@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 
 import type { DailyActivity } from '@/lib/db';
 import { addDays, toDateKey } from '@/lib/utils';
@@ -19,10 +19,18 @@ const MONTH_LABELS = [
   'Th12',
 ];
 
+/** What the squares count. Both come from the same daily record. */
+const METRICS = [
+  { key: 'studied', label: 'Từ đã học', noun: 'từ' },
+  { key: 'correct', label: 'Từ trả lời đúng', noun: 'từ đúng' },
+] as const;
+
+type MetricKey = (typeof METRICS)[number]['key'];
+
 /** Five buckets, scaled to the learner's own best day rather than a fixed count. */
-function levelOf(studied: number, peak: number): 0 | 1 | 2 | 3 | 4 {
-  if (studied <= 0) return 0;
-  const ratio = studied / Math.max(peak, 1);
+function levelOf(value: number, peak: number): 0 | 1 | 2 | 3 | 4 {
+  if (value <= 0) return 0;
+  const ratio = value / Math.max(peak, 1);
   if (ratio <= 0.25) return 1;
   if (ratio <= 0.5) return 2;
   if (ratio <= 0.75) return 3;
@@ -31,8 +39,26 @@ function levelOf(studied: number, peak: number): 0 | 1 | 2 | 3 | 4 {
 
 interface Cell {
   date: string;
-  studied: number;
+  value: number;
   level: number;
+}
+
+/** Days studied in an unbroken run ending today (or yesterday, still alive). */
+function streakOf(dates: ReadonlySet<string>): number {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  let cursor = dates.has(toDateKey(today)) ? today : addDays(today, -1);
+  let run = 0;
+  while (dates.has(toDateKey(cursor))) {
+    run += 1;
+    cursor = addDays(cursor, -1);
+  }
+  return run;
+}
+
+function formatDay(date: string): string {
+  const [, month, day] = date.split('-');
+  return `${day}/${month}`;
 }
 
 export interface HeatmapProps {
@@ -44,11 +70,20 @@ export interface HeatmapProps {
  * A GitHub-style contribution grid, laid out in columns of seven so each row is
  * a weekday. The window starts on a Sunday, otherwise the rows drift and the
  * weekday labels stop meaning anything.
+ *
+ * The squares can count either words seen or words answered correctly: the two
+ * together show effort against accuracy, which a single number hides — a heavy
+ * day of mostly-wrong answers looks identical to a good one otherwise.
  */
 export function Heatmap({ activity, weeks = 26 }: HeatmapProps) {
-  const columns = useMemo(() => {
-    const byDate = new Map(activity.map((entry) => [entry.date, entry.wordsStudied]));
-    const peak = Math.max(1, ...activity.map((entry) => entry.wordsStudied));
+  const [metric, setMetric] = useState<MetricKey>('studied');
+  const active = METRICS.find((entry) => entry.key === metric) ?? METRICS[0];
+
+  const { columns, total, activeDays, best, streak, studiedTotal, correctTotal } = useMemo(() => {
+    const valueOf = (entry: DailyActivity) =>
+      metric === 'correct' ? entry.wordsCorrect : entry.wordsStudied;
+    const byDate = new Map(activity.map((entry) => [entry.date, valueOf(entry)]));
+    const peak = Math.max(1, ...activity.map(valueOf));
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -60,14 +95,34 @@ export function Heatmap({ activity, weeks = 26 }: HeatmapProps) {
     for (let i = 0; i < weeks * 7; i += 1) {
       const day = addDays(start, i);
       const date = toDateKey(day);
-      const studied = day > today ? -1 : (byDate.get(date) ?? 0);
-      cells.push({ date, studied, level: studied <= 0 ? 0 : levelOf(studied, peak) });
+      const value = day > today ? -1 : (byDate.get(date) ?? 0);
+      cells.push({ date, value, level: value <= 0 ? 0 : levelOf(value, peak) });
     }
 
     const grouped: Cell[][] = [];
     for (let i = 0; i < cells.length; i += 7) grouped.push(cells.slice(i, i + 7));
-    return grouped;
-  }, [activity, weeks]);
+
+    const seen = cells.filter((cell) => cell.value > 0);
+    const bestCell = seen.reduce<Cell | null>(
+      (top, cell) => (top === null || cell.value > top.value ? cell : top),
+      null,
+    );
+    const inWindow = new Set(cells.map((cell) => cell.date));
+    const studiedDays = new Set(
+      activity.filter((entry) => entry.wordsStudied > 0).map((entry) => entry.date),
+    );
+    const windowed = activity.filter((entry) => inWindow.has(entry.date));
+
+    return {
+      columns: grouped,
+      total: seen.reduce((sum, cell) => sum + cell.value, 0),
+      activeDays: seen.length,
+      best: bestCell,
+      streak: streakOf(studiedDays),
+      studiedTotal: windowed.reduce((sum, entry) => sum + entry.wordsStudied, 0),
+      correctTotal: windowed.reduce((sum, entry) => sum + entry.wordsCorrect, 0),
+    };
+  }, [activity, weeks, metric]);
 
   // A label above the first column of each month, like GitHub's.
   const monthLabels = columns.map((column, index) => {
@@ -79,13 +134,53 @@ export function Heatmap({ activity, weeks = 26 }: HeatmapProps) {
     return month !== prevMonth ? (MONTH_LABELS[month] ?? '') : '';
   });
 
-  const total = columns.flat().reduce((sum, cell) => sum + Math.max(0, cell.studied), 0);
-  const activeDays = columns.flat().filter((cell) => cell.studied > 0).length;
+  const accuracy = studiedTotal > 0 ? Math.round((correctTotal / studiedTotal) * 100) : 0;
+  const perDay = activeDays > 0 ? Math.round(total / activeDays) : 0;
 
   return (
     <div className="heatmap">
+      <div className="heatmap__toolbar">
+        <div className="segmented segmented--sm" role="group" aria-label="Đếm theo">
+          {METRICS.map((entry) => (
+            <button
+              key={entry.key}
+              aria-pressed={metric === entry.key}
+              onClick={() => setMetric(entry.key)}
+            >
+              {entry.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="heatmap__stats">
+        <div className="heatmap__stat">
+          <span className="heatmap__stat-num">{total}</span>
+          <span className="heatmap__stat-cap">{active.noun}</span>
+        </div>
+        <div className="heatmap__stat">
+          <span className="heatmap__stat-num">{activeDays}</span>
+          <span className="heatmap__stat-cap">ngày có học</span>
+        </div>
+        <div className="heatmap__stat">
+          <span className="heatmap__stat-num">{perDay}</span>
+          <span className="heatmap__stat-cap">TB mỗi ngày</span>
+        </div>
+        <div className="heatmap__stat">
+          <span className="heatmap__stat-num">{streak}</span>
+          <span className="heatmap__stat-cap">chuỗi hiện tại</span>
+        </div>
+      </div>
+
       <p className="heatmap__summary">
-        {total} từ trong {activeDays} ngày học, {weeks} tuần gần đây
+        {weeks} tuần gần đây: <strong>{studiedTotal}</strong> từ đã học,{' '}
+        <strong>{correctTotal}</strong> đúng ({accuracy}%)
+        {best ? (
+          <>
+            {' · cao nhất '}
+            <strong>{best.value}</strong> {active.noun} ngày {formatDay(best.date)}
+          </>
+        ) : null}
       </p>
 
       <div className="heatmap__scroll">
@@ -110,7 +205,7 @@ export function Heatmap({ activity, weeks = 26 }: HeatmapProps) {
             <div
               className="heatmap__grid"
               role="img"
-              aria-label={`Hoạt động ${weeks} tuần gần đây: ${total} từ trong ${activeDays} ngày`}
+              aria-label={`Hoạt động ${weeks} tuần gần đây: ${total} ${active.noun} trong ${activeDays} ngày`}
             >
               {columns.map((column, columnIndex) => (
                 <div className="heatmap__col" key={columnIndex}>
@@ -118,9 +213,11 @@ export function Heatmap({ activity, weeks = 26 }: HeatmapProps) {
                     <span
                       key={cell.date}
                       className={`heatmap__cell heatmap__cell--l${cell.level}${
-                        cell.studied < 0 ? ' heatmap__cell--future' : ''
+                        cell.value < 0 ? ' heatmap__cell--future' : ''
                       }`}
-                      title={cell.studied < 0 ? cell.date : `${cell.date}: ${cell.studied} từ`}
+                      title={
+                        cell.value < 0 ? cell.date : `${cell.date}: ${cell.value} ${active.noun}`
+                      }
                     />
                   ))}
                 </div>

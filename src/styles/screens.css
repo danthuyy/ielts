@@ -1022,3 +1022,66 @@
 .lesson-gate__foot .progress {
   flex: 1;
 }
+
+/* Word counts above the home activity bars, and the week's totals below. */
+.chart__count {
+  font-size: var(--text-xs);
+  color: var(--text-dim);
+  line-height: 1.2;
+  min-height: 1em;
+  margin-bottom: var(--sp-1);
+}
+
+.chart__col--today .chart__count {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.chart__summary {
+  margin: var(--sp-3) 0 0;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Heatmap controls and headline figures. */
+.heatmap__toolbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--sp-3);
+}
+
+.segmented--sm button {
+  font-size: var(--text-xs);
+  padding: var(--sp-1) var(--sp-3);
+}
+
+.heatmap__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+
+.heatmap__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-1);
+  background: var(--surface);
+  border-radius: var(--radius-md);
+}
+
+.heatmap__stat-num {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.heatmap__stat-cap {
+  font-size: var(--text-xs);
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 2px;
+}
