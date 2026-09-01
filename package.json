@@ -30,7 +30,7 @@
     "push:all": "node scripts/push-all.mjs"
   },
   "dependencies": {
-    "dexie": "^4.4.4",
+    "dexie": "^4.4.5",
     "dexie-react-hooks": "^4.4.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
