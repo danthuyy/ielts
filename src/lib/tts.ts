@@ -217,14 +217,24 @@ export function speakWith(text: string, voice: SpeechSynthesisVoice | null, rate
 
 // A budget Android/Samsung tablet often ships with no English TTS voice at all,
 // and asking a child to install a voice pack is a non-starter. When the device
-// has no usable voice, pronunciation is streamed as an MP3 from Google's public
-// TTS endpoint instead. Plain <audio> playback works cross-origin without CORS;
-// it needs a network connection and covers any word or short phrase.
+// has no usable voice, pronunciation is streamed as an MP3 from a public
+// dictionary endpoint. Plain <audio> playback works cross-origin without CORS;
+// it needs a network connection.
+//
+// Source order matters. Youdao serves single words reliably from a browser even
+// when the page sends a Referer. Google's translate_tts, by contrast, returns
+// 404 to a real in-browser request that carries a Referer (it only answered our
+// server-side probes because those sent none) — so it is a last resort, forced
+// referrer-less, and mostly useful for the multi-word phrases Youdao rejects.
 let remoteAudio: HTMLAudioElement | null = null;
 
-function remoteUrl(text: string): string {
+function remoteUrls(text: string): string[] {
   const q = encodeURIComponent(text.slice(0, 200));
-  return `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${q}&total=1&idx=0&textlen=${text.length}`;
+  return [
+    // type=1 = British, matching the app's British-IPA content.
+    `https://dict.youdao.com/dictvoice?type=1&audio=${q}`,
+    `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${q}&total=1&idx=0&textlen=${text.length}`,
+  ];
 }
 
 /** True if the browser can even attempt network audio. */
@@ -232,25 +242,21 @@ export function canPlayRemote(): boolean {
   return typeof Audio !== 'undefined';
 }
 
-/** Stream the word from Google TTS. Resolves true once it actually plays. */
-export function speakRemote(text: string, rate?: number): Promise<boolean> {
-  if (!canPlayRemote() || !text) return Promise.resolve(false);
-  if (remoteAudio) {
-    remoteAudio.pause();
-    remoteAudio = null;
-  }
-  const audio = new Audio(remoteUrl(text));
-  const speed = rate ?? getSetting('speechRate');
-  audio.playbackRate = Math.max(0.5, Math.min(1, speed));
-  // Keep the pitch natural when slowed rather than deepening it.
-  const withPitch = audio as HTMLAudioElement & {
+function playUrl(url: string, speed: number): Promise<boolean> {
+  const audio = new Audio(url);
+  const tweak = audio as HTMLAudioElement & {
+    referrerPolicy?: string;
     preservesPitch?: boolean;
     mozPreservesPitch?: boolean;
     webkitPreservesPitch?: boolean;
   };
-  withPitch.preservesPitch = true;
-  withPitch.mozPreservesPitch = true;
-  withPitch.webkitPreservesPitch = true;
+  // Strip the Referer so referrer-sensitive endpoints (Google) don't 404.
+  tweak.referrerPolicy = 'no-referrer';
+  audio.playbackRate = Math.max(0.5, Math.min(1, speed));
+  // Keep the pitch natural when slowed rather than deepening it.
+  tweak.preservesPitch = true;
+  tweak.mozPreservesPitch = true;
+  tweak.webkitPreservesPitch = true;
   remoteAudio = audio;
   return new Promise((resolve) => {
     let settled = false;
@@ -265,6 +271,22 @@ export function speakRemote(text: string, rate?: number): Promise<boolean> {
     audio.play().catch(() => done(false));
     setTimeout(() => done(false), 5000);
   });
+}
+
+/** Stream the word from a dictionary endpoint. Resolves true once it plays. */
+export function speakRemote(text: string, rate?: number): Promise<boolean> {
+  if (!canPlayRemote() || !text) return Promise.resolve(false);
+  if (remoteAudio) {
+    remoteAudio.pause();
+    remoteAudio = null;
+  }
+  const speed = rate ?? getSetting('speechRate');
+  const urls = remoteUrls(text);
+  // Try each source in turn; the first that actually starts playing wins.
+  return urls.reduce<Promise<boolean>>(
+    (chain, url) => chain.then((ok) => (ok ? true : playUrl(url, speed))),
+    Promise.resolve(false),
+  );
 }
 
 export function speak(text: string, rate?: number): void {
