@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 
 import { pickIdiom } from '@/content/idioms';
 import { probeDeviceSpeech, prewarmRemote, speechMode } from '@/lib/tts';
@@ -29,7 +29,9 @@ export function LessonGate({ words, children }: Props) {
     return 'checking';
   });
   const [progress, setProgress] = useState({ done: 0, total: 0 });
-  const idiom = useRef(pickIdiom()).current;
+  // Chosen once per mount (the gate is keyed by lesson), so the card does not
+  // swap idioms underneath the reader on a re-render.
+  const [idiom] = useState(pickIdiom);
 
   const key = words.join('');
   useEffect(() => {
@@ -49,7 +51,7 @@ export function LessonGate({ words, children }: Props) {
       }, wait);
     };
 
-    (async () => {
+    void (async () => {
       if (speechMode() === 'unknown') {
         const works = await probeDeviceSpeech();
         if (cancelled) return;
