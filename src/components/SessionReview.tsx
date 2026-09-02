@@ -3,16 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { routes } from '@/app/routes';
 import { VoiceButtons } from './VoiceButtons';
-import type { StudyWord } from '@/content/schema';
-
-/** One line of the summary: a word and how the session went for it. */
-export interface ReviewRow {
-  word: StudyWord;
-  /** Times answered wrong. Omit for modes that only know right/wrong once. */
-  misses?: number;
-  /** False when the word was never answered correctly this session. */
-  learned: boolean;
-}
+import { outcomeBuckets, type ReviewRow } from '@/lib/sessionOutcome';
 
 interface Props {
   rows: readonly ReviewRow[];
@@ -36,8 +27,41 @@ export function SessionReview({ rows, preview = 6 }: Props) {
   const shown = expanded ? rows : rows.slice(0, preview);
   const hidden = rows.length - shown.length;
 
+  const buckets = outcomeBuckets(rows);
+
   return (
     <section className="review">
+      <h2 className="review__title">Kết quả {rows.length} từ</h2>
+
+      {/* One stacked bar: the question here is how the session split, and a
+          part-of-whole reads faster as one bar than as three numbers. Every
+          band carries its own count and a legend entry, so the colour is never
+          the only thing telling them apart. */}
+      <div
+        className="outcome"
+        role="img"
+        aria-label={buckets.map((bucket) => `${bucket.label}: ${bucket.count}`).join(', ')}
+      >
+        {buckets.map((bucket) => (
+          <span
+            key={bucket.key}
+            className={`outcome__seg outcome__seg--${bucket.key}`}
+            style={{ flexGrow: bucket.count }}
+          >
+            {bucket.count}
+          </span>
+        ))}
+      </div>
+
+      <ul className="outcome__legend">
+        {buckets.map((bucket) => (
+          <li key={bucket.key}>
+            <span className={`outcome__dot outcome__dot--${bucket.key}`} aria-hidden="true" />
+            {bucket.label} <strong>{bucket.count}</strong>
+          </li>
+        ))}
+      </ul>
+
       <h2 className="review__title">
         Từ đã học
         {missed.length > 0 && <span className="review__count">{missed.length} từ còn sai</span>}

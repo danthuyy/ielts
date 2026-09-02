@@ -2271,3 +2271,68 @@ a.word-row__main:hover .word-row__word {
   align-items: center;
   gap: var(--sp-1);
 }
+
+/* How a session split: one stacked bar, each band labelled with its own count
+   and repeated in the legend, so colour is never the only thing distinguishing
+   them (the green/red pair sits in the CVD floor band in dark mode). */
+.outcome {
+  display: flex;
+  gap: 2px;
+  height: 1.75rem;
+  margin-bottom: var(--sp-2);
+}
+
+.outcome__seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--bg);
+  overflow: hidden;
+}
+
+.outcome__seg--clean {
+  background: var(--success);
+}
+.outcome__seg--missed {
+  background: var(--danger);
+}
+.outcome__seg--unlearned {
+  background: var(--text-dim);
+}
+
+.outcome__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-4);
+  margin: 0 0 var(--sp-4);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.outcome__legend li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.outcome__dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.outcome__dot--clean {
+  background: var(--success);
+}
+.outcome__dot--missed {
+  background: var(--danger);
+}
+.outcome__dot--unlearned {
+  background: var(--text-dim);
+}

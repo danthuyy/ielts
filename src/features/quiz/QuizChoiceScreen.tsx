@@ -137,7 +137,10 @@ function ChoiceSession({ onRetry }: { onRetry: () => void }) {
         <SessionReview
           rows={queue.review.map((entry) => ({
             word: entry.item,
-            learned: entry.learned && !entry.missed,
+            // This queue only records whether a word was ever missed, not how
+            // many times, so a miss counts as one.
+            misses: entry.missed ? 1 : 0,
+            learned: entry.learned,
           }))}
         />
       </ResultScreen>
