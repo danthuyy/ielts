@@ -35,6 +35,40 @@ export const SYNC_CONFIG = {
   rowId: orDefault(import.meta.env.VITE_SYNC_ROW_ID, 'a25f73c1-0c6d-4883-bf06-95c897efddb2'),
 } as const;
 
+/**
+ * Other learners to show side by side, as `Tên:uuid` pairs in VITE_SYNC_PEERS.
+ *
+ * Deliberately empty by default, so nothing comparative appears unless it is
+ * switched on for a particular build. Ranking siblings can push the younger one
+ * to give up rather than try harder, so this stays off until someone decides
+ * otherwise — the code is here, the list is not.
+ *
+ * Note before enabling: the database's row policy is one shared allow-list, so
+ * a build that knows another learner's id can also write to it. Fine among
+ * siblings, not something to hand to a stranger.
+ */
+export interface Peer {
+  name: string;
+  rowId: string;
+}
+
+export const SYNC_PEERS: Peer[] = (import.meta.env.VITE_SYNC_PEERS ?? '')
+  .split(',')
+  .map((entry) => entry.trim())
+  .filter(Boolean)
+  .map((entry) => {
+    const separator = entry.indexOf(':');
+    return separator < 0
+      ? { name: entry, rowId: entry }
+      : { name: entry.slice(0, separator).trim(), rowId: entry.slice(separator + 1).trim() };
+  })
+  .filter((peer) => peer.name && peer.rowId);
+
+/** Whether this build was given anyone to compare against. */
+export function hasPeers(): boolean {
+  return SYNC_PEERS.length > 0;
+}
+
 export function isSyncConfigured(): boolean {
   return Boolean(SYNC_CONFIG.url && SYNC_CONFIG.anonKey && SYNC_CONFIG.rowId);
 }

@@ -185,15 +185,32 @@ export async function restoreProgress(record: WordProgress): Promise<void> {
 }
 
 /** Reverses a recordActivity call. Counters floor at zero. */
-export async function revertActivity(wordsStudied: number, wordsCorrect: number): Promise<void> {
+export async function revertActivity(
+  wordsStudied: number,
+  wordsCorrect: number,
+  mode?: string,
+): Promise<void> {
   const date = todayKey();
   const existing = await db.dailyActivity.get(date);
   if (!existing) return;
+
+  let byMode = existing.byMode;
+  if (mode && byMode?.[mode]) {
+    const tally = byMode[mode];
+    byMode = {
+      ...byMode,
+      [mode]: {
+        studied: Math.max(0, tally.studied - wordsStudied),
+        correct: Math.max(0, tally.correct - wordsCorrect),
+      },
+    };
+  }
 
   await db.dailyActivity.put({
     ...existing,
     wordsStudied: Math.max(0, existing.wordsStudied - wordsStudied),
     wordsCorrect: Math.max(0, existing.wordsCorrect - wordsCorrect),
+    ...(byMode ? { byMode } : {}),
   });
   emitChange();
 }
@@ -404,6 +421,11 @@ export async function recordActivity(
   activity.wordsStudied += wordsStudied;
   activity.wordsCorrect += wordsCorrect;
   if (!activity.modes.includes(mode)) activity.modes.push(mode);
+
+  const byMode = { ...(activity.byMode ?? {}) };
+  const tally = byMode[mode] ?? { studied: 0, correct: 0 };
+  byMode[mode] = { studied: tally.studied + wordsStudied, correct: tally.correct + wordsCorrect };
+  activity.byMode = byMode;
 
   await db.dailyActivity.put(activity);
   emitChange();

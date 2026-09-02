@@ -8,6 +8,8 @@ interface ImportMetaEnv {
   readonly VITE_SYNC_ROW_ID?: string;
   /** Which learner this build is for; scopes private lessons. Empty = admin. */
   readonly VITE_LEARNER?: string;
+  /** Optional "Tên:uuid" pairs, comma separated, for the side-by-side board. */
+  readonly VITE_SYNC_PEERS?: string;
 }
 
 interface ImportMeta {

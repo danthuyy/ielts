@@ -35,12 +35,27 @@ export interface TestResult {
   words: string[];
 }
 
+/** One study mode's tally within a day. */
+export interface ModeTally {
+  studied: number;
+  correct: number;
+}
+
 export interface DailyActivity {
   /** YYYY-MM-DD, local time. */
   date: string;
   wordsStudied: number;
   wordsCorrect: number;
   modes: string[];
+  /**
+   * Per-mode tallies, keyed by mode name.
+   *
+   * The day's totals alone are misleading: a flashcard turn is self-graded and
+   * nearly always "correct", while mixed practice counts a miss on every rung,
+   * so one accuracy figure mixes two different meanings. Optional because
+   * records written before this existed have no breakdown.
+   */
+  byMode?: Record<string, ModeTally>;
 }
 
 export class VocabDatabase extends Dexie {

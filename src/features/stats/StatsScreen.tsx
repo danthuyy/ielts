@@ -14,6 +14,9 @@ import {
 import { MASTERY_LEVELS } from '@/lib/srs';
 import { formatDateVi, percent } from '@/lib/utils';
 import { Heatmap } from './Heatmap';
+import { ModeBreakdown } from './ModeBreakdown';
+import { Conquest } from './Conquest';
+import { PeerBoard } from './PeerBoard';
 
 /** Cold → warm, so the bar visibly "ripens" from Mới to Thuộc. */
 const LEVEL_COLORS = [
@@ -51,6 +54,18 @@ export function StatsScreen() {
   const masteredPct = percent(stats.mastered, stats.total);
   const learningPct = percent(stats.learning, stats.total);
   const upcomingPeak = Math.max(1, ...upcoming.map((day) => day.count));
+
+  // Pace over the last fortnight of days actually studied — a fair basis for
+  // "how long until the bank is done" that a week of holidays does not flatten.
+  const lastWeek = activity.slice(-7);
+  const weekStudied = lastWeek.reduce((sum, day) => sum + day.wordsStudied, 0);
+  const weekCorrect = lastWeek.reduce((sum, day) => sum + day.wordsCorrect, 0);
+  const weekDays = lastWeek.filter((day) => day.wordsStudied > 0).length;
+  const recentDays = activity.filter((day) => day.wordsStudied > 0).slice(-14);
+  const recentPerDay =
+    recentDays.length > 0
+      ? Math.round(recentDays.reduce((sum, day) => sum + day.wordsStudied, 0) / recentDays.length)
+      : 0;
 
   return (
     <div className="page">
@@ -90,6 +105,16 @@ export function StatsScreen() {
       </section>
 
       <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
+        <h2 className="section__label">Chinh phục kho từ</h2>
+        <Conquest
+          seen={stats.mastered + stats.learning}
+          mastered={stats.mastered}
+          total={stats.total}
+          perDay={recentPerDay}
+        />
+      </section>
+
+      <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
         <h2 className="section__label">Cấp độ thuộc</h2>
         <div className="levels">
           {MASTERY_LEVELS.map((label, level) => (
@@ -117,6 +142,22 @@ export function StatsScreen() {
       <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
         <h2 className="section__label">Hoạt động</h2>
         <Heatmap activity={activity} weeks={HEATMAP_WEEKS} />
+      </section>
+
+      {/* Renders nothing unless this build was given a peer list. */}
+      <PeerBoard
+        mine={{
+          name: 'Bạn',
+          studied: weekStudied,
+          correct: weekCorrect,
+          activeDays: weekDays,
+          lastActive: null,
+        }}
+      />
+
+      <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
+        <h2 className="section__label">Tỉ lệ đúng theo chế độ</h2>
+        <ModeBreakdown activity={activity} />
       </section>
 
       <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>

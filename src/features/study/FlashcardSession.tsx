@@ -120,7 +120,7 @@ export function FlashcardSession({ words, backTo, finishedMessage, onRetry }: Pr
     if (!undoable) return;
     setUndoable(null);
     await restoreProgress(undoable.before);
-    await revertActivity(1, undoable.wasCorrect ? 1 : 0);
+    await revertActivity(1, undoable.wasCorrect ? 1 : 0, 'flashcard');
     setFlipped(true);
     gradingRef.current = false;
     setIndex(undoable.index);
