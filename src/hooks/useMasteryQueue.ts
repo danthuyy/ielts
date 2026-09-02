@@ -37,10 +37,21 @@ export interface AnswerOutcome<T> {
   misses: number;
 }
 
+/** How one word ended the session — the row behind the summary table. */
+export interface MasteryReview<T> {
+  item: T;
+  /** Rung reached, GRADUATED once learned. */
+  level: number;
+  /** Times the word was answered wrong across the session. */
+  misses: number;
+}
+
 export interface MasteryQueue<T> {
   current: MasteryItem<T> | undefined;
   /** One entry per word in the session, for the stacked progress bar. */
   levels: number[];
+  /** Every word with how it went, worst first. */
+  review: MasteryReview<T>[];
   total: number;
   graduated: number;
   /** Questions answered so far, counting every repeat. */
@@ -208,6 +219,16 @@ export function useMasteryQueue<T>(
 
   const levels = [...state.levels.values()];
 
+  // Worst first: the words that cost the most attempts are the ones worth
+  // looking at when the session ends.
+  const review = [...state.levels.entries()]
+    .map(([id, level]) => ({
+      item: state.byId.get(id) as T,
+      level,
+      misses: state.misses.get(id) ?? 0,
+    }))
+    .sort((a, b) => b.misses - a.misses || a.level - b.level);
+
   // Memoised on `state`, so it only changes when an answer changes the queue —
   // the consumer can persist it in an effect without writing on every render.
   const snapshot = useMemo<QueueSnapshot>(
@@ -224,6 +245,7 @@ export function useMasteryQueue<T>(
   return {
     current,
     levels,
+    review,
     total: items.length,
     graduated: levels.filter(isGraduated).length,
     asked: state.asked,

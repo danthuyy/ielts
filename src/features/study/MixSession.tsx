@@ -5,6 +5,7 @@ import { ALL_STUDY_WORDS } from '@/content/lessons';
 import { AnswerDiff } from '@/components/AnswerDiff';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
+import { SessionReview } from '@/components/SessionReview';
 import { Sticker } from '@/components/Sticker';
 import { WordBank } from '@/components/WordBank';
 import { VoiceButtons } from '@/components/VoiceButtons';
@@ -330,7 +331,15 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         continueTo={backTo}
         continueLabel="Xong"
         onRetry={onRetry}
-      />
+      >
+        <SessionReview
+          rows={queue.review.map((entry) => ({
+            word: entry.item,
+            misses: entry.misses,
+            learned: entry.level >= GRADUATED,
+          }))}
+        />
+      </ResultScreen>
     );
   }
 
@@ -613,14 +622,13 @@ function LadderBar({ levels }: { levels: readonly number[] }) {
     >
       {counts.map((count, level) => (
         <span
-          className={`ladder__seg${level === GRADUATED ? ' ladder__seg--done' : ''}`}
+          // Each rung gets its own colour, cold to warm, so the session reads at
+          // a glance: a bar still blue on the left is a class that has not moved
+          // yet, and green filling from the right is words being learned. One
+          // hue at varying opacity looked like a single bar that never changed.
+          className={`ladder__seg ladder__seg--r${level}`}
           key={level}
-          style={{
-            width: `${(count / total) * 100}%`,
-            // Rungs shade from cold to warm as they climb, so the block of
-            // colour visibly moves right over the session.
-            opacity: count === 0 ? 0 : 0.35 + (level / GRADUATED) * 0.65,
-          }}
+          style={{ width: `${(count / total) * 100}%` }}
         />
       ))}
     </div>

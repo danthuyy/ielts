@@ -5,6 +5,7 @@ import type { StudyWord } from '@/content/schema';
 import { StudyHeader } from '@/components/StudyHeader';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
+import { SessionReview } from '@/components/SessionReview';
 import { SessionProgress } from '@/components/SessionProgress';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useRetryQueue } from '@/hooks/useRetryQueue';
@@ -227,7 +228,14 @@ export function TypedAnswerQuiz({ variant, words, backTo, onRetry }: Props) {
         sound={queue.firstTry / Math.max(1, queue.total) >= 0.7 ? 'perfect' : 'poor'}
         continueTo={backTo}
         {...(onRetry ? { onRetry } : {})}
-      />
+      >
+        <SessionReview
+          rows={queue.review.map((entry) => ({
+            word: entry.item,
+            learned: entry.learned && !entry.missed,
+          }))}
+        />
+      </ResultScreen>
     );
   }
 

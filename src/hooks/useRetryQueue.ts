@@ -31,6 +31,8 @@ export interface RetryQueue<T> {
   finished: boolean;
   /** True when this word has already been missed in this session. */
   isRetry: boolean;
+  /** Every word that was answered wrong at least once, for the end summary. */
+  review: { item: T; missed: boolean; learned: boolean }[];
   answer: (correct: boolean) => void;
   /**
    * Records a wrong attempt without advancing, for modes that keep the learner
@@ -112,6 +114,14 @@ export function useRetryQueue<T>(
     remaining: state.queue.length,
     finished: state.queue.length === 0 && items.length > 0,
     isRetry: current !== undefined && state.missed.has(getId(current)),
+    // Missed words first: those are the ones worth another look.
+    review: items
+      .map((item) => ({
+        item,
+        missed: state.missed.has(getId(item)),
+        learned: state.learned.has(getId(item)),
+      }))
+      .sort((a, b) => Number(b.missed) - Number(a.missed)),
     answer,
     markMissed,
     reset,

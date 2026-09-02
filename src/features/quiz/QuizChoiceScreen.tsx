@@ -7,6 +7,7 @@ import { Restartable } from '@/components/Restartable';
 import { StudyHeader } from '@/components/StudyHeader';
 import { HintBar } from '@/components/HintBar';
 import { ResultScreen } from '@/components/ResultScreen';
+import { SessionReview } from '@/components/SessionReview';
 import { SessionProgress } from '@/components/SessionProgress';
 import { Sticker } from '@/components/Sticker';
 import { useKeyboard } from '@/hooks/useKeyboard';
@@ -132,7 +133,14 @@ function ChoiceSession({ onRetry }: { onRetry: () => void }) {
         sound={queue.firstTry / Math.max(1, queue.total) >= 0.7 ? 'perfect' : 'poor'}
         continueTo={backTo}
         onRetry={onRetry}
-      />
+      >
+        <SessionReview
+          rows={queue.review.map((entry) => ({
+            word: entry.item,
+            learned: entry.learned && !entry.missed,
+          }))}
+        />
+      </ResultScreen>
     );
   }
 
