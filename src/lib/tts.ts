@@ -343,7 +343,12 @@ export async function speakLocal(text: string, rate?: number): Promise<boolean> 
   localSource?.stop();
   const source = context.createBufferSource();
   source.buffer = buffer;
-  source.playbackRate.value = Math.max(0.5, Math.min(1, rate ?? getSetting('speechRate')));
+  // Played at its natural speed. The speech-rate setting is for synthesised
+  // voices; a recording of a real speaker is already paced for a learner, and
+  // Web Audio's playbackRate drops the pitch along with the speed, which turns
+  // a clear word into a slurred one. Only an explicit "slow" request slows it,
+  // and only slightly.
+  source.playbackRate.value = rate !== undefined && rate <= SLOW_RATE ? 0.85 : 1;
   source.connect(context.destination);
   source.addEventListener('ended', () => {
     if (localSource === source) localSource = null;
@@ -461,7 +466,8 @@ function playUrl(url: string, speed: number, timeoutMs = 3500): Promise<boolean>
   // Strip the Referer so referrer-sensitive endpoints (Google) don't 404.
   tweak.referrerPolicy = 'no-referrer';
   audio.src = url;
-  audio.playbackRate = Math.max(0.5, Math.min(1, speed));
+  // Natural speed, for the same reason as the shipped clips above.
+  audio.playbackRate = speed <= SLOW_RATE ? 0.85 : 1;
   // Keep the pitch natural when slowed rather than deepening it.
   tweak.preservesPitch = true;
   tweak.mozPreservesPitch = true;

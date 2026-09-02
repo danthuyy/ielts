@@ -377,7 +377,11 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
         </button>
       </header>
 
-      <div className="study__body">
+      <div className={`study__body${verdict ? ' study__body--split' : ''}`}>
+        {/* The question side, kept as one block so the split layout has exactly
+            two cells: otherwise the taller explanation stretches the rows and
+            spreads the question's own parts apart. */}
+        <div className="study__col">
         <p className="rung-label">
           Bậc {Math.min(level + 1, RUNGS.length)}/{RUNGS.length} · {RUNG_LABEL[rung]}
         </p>
@@ -518,6 +522,8 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
           />
         )}
 
+        </div>
+
         {verdict && (
           <div
             className={`feedback feedback--${verdict.correct ? 'correct' : 'wrong'}`}
@@ -561,6 +567,11 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
           </div>
         )}
 
+      </div>
+
+      {/* Below the scrolling body, not inside it: the explanation can be long,
+          and the button must stay reachable without hunting for it. */}
+      <div className="study__footer">
         <div className="answer-actions">
           {(verdict || rung === 'assemble' || typingRung) && (
             <button

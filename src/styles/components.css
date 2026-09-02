@@ -2047,3 +2047,78 @@ a.word-row__main:hover .word-row__word {
   align-items: flex-start;
   gap: var(--sp-2);
 }
+
+/* The action bar of a study screen, held below the scrolling question area.
+   Keeping it out of the scroll is what stops a long explanation — meaning,
+   synonyms, collocation, example — from pushing "Tiếp tục" off a laptop
+   screen, which turned every answer into a scroll hunt. It sits in its own
+   space rather than floating, so it never covers the meaning being read. */
+.study__footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-5) calc(var(--sp-3) + var(--safe-bottom));
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+/* Once an answer is graded, a wide screen shows the explanation beside the
+   question instead of below it. Stacked, the word, its meaning, synonyms and
+   example all fall past the bottom of a 14" laptop — the learner sees only
+   "Chưa đúng" and has to scroll for the part that actually teaches. A 16:9
+   screen has the width to spare, so the column costs nothing. */
+@media (min-width: 60rem) {
+  .study__body--split {
+    display: grid;
+    grid-template-columns: minmax(0, 26rem) minmax(0, 26rem);
+    justify-content: center;
+    /* Both columns start at the same line. Centring each one separately left
+       the question and its explanation sitting at different heights, which
+       reads as a layout mistake. */
+    align-content: start;
+    column-gap: var(--sp-6);
+  }
+
+  .study__body--split > * {
+    grid-column: 1;
+    max-width: none;
+  }
+
+  .study__body--split > .feedback {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    /* Anchored to the top, not centred: the explanation is often taller than
+       the question beside it, and centring pushes its first lines — the
+       sticker and the verdict — up out of the visible area. */
+    align-self: start;
+    margin: 0;
+  }
+}
+
+/* The question side of a study screen: its own column in the split layout, and
+   an ordinary block the rest of the time. */
+.study__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-5);
+  width: 100%;
+  max-width: 26rem;
+}
+
+.study__col > * {
+  width: 100%;
+}
+
+@media (min-width: 60rem) {
+  .study__body--split > .study__col {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: none;
+  }
+
+  .study__body--split > .feedback {
+    grid-row: 1;
+  }
+}
