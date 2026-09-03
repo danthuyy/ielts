@@ -1,0 +1,267 @@
+## 11. Thức ăn và đồ uống
+
+- **rice (n) /raɪs/**: cơm, gạo.
+  - _Ví dụ_: I eat rice every day.
+- **bread (n) /bred/**: bánh mì.
+  - _Ví dụ_: She likes bread and eggs.
+- **meat (n) /miːt/**: thịt.
+  - _Ví dụ_: My father eats a lot of meat.
+- **fish (n) /fɪʃ/**: cá.
+  - _Ví dụ_: We eat fish on Monday.
+- **egg (n) /eɡ/**: trứng.
+  - _Ví dụ_: I want two eggs, please.
+- **milk (n) /mɪlk/**: sữa.
+  - _Ví dụ_: I drink milk every morning.
+- **water (n) /ˈwɔːtə/**: nước.
+  - _Ví dụ_: Please give me some water.
+- **tea (n) /tiː/**: trà.
+  - _Ví dụ_: My grandmother drinks tea.
+- **coffee (n) /ˈkɒfi/**: cà phê.
+  - _Ví dụ_: My father likes black coffee.
+- **juice (n) /dʒuːs/**: nước ép.
+  - _Ví dụ_: I drink orange juice.
+- **fruit (n) /fruːt/**: trái cây.
+  - _Ví dụ_: Fruit is good for you.
+- **apple (n) /ˈæpl/**: quả táo.
+  - _Ví dụ_: This apple is very sweet.
+- **banana (n) /bəˈnɑːnə/**: quả chuối.
+  - _Ví dụ_: My sister eats a banana.
+- **orange (n) /ˈɒrɪndʒ/**: quả cam.
+  - _Ví dụ_: I have one orange here.
+- **vegetable (n) /ˈvedʒtəbl/**: rau củ.
+  - _Ví dụ_: My mother buys vegetables today.
+- **soup (n) /suːp/**: canh, súp.
+  - _Ví dụ_: We eat soup with rice.
+- **noodles (n) /ˈnuːdlz/**: mì, bún.
+  - _Ví dụ_: I eat noodles for breakfast.
+- **sugar (n) /ˈʃʊɡə/**: đường.
+  - _Ví dụ_: I put sugar in my tea.
+- **salt (n) /sɔːlt/**: muối.
+  - _Ví dụ_: This soup needs more salt.
+- **eat (v) /iːt/**: ăn.
+  - _Ví dụ_: We eat dinner at home.
+  - _Lưu ý_: quá khứ: ate
+- **drink (v) /drɪŋk/**: uống.
+  - _Ví dụ_: I drink water after school.
+  - _Lưu ý_: quá khứ: drank
+- **hungry (adj) /ˈhʌŋɡri/**: đói.
+  - _Ví dụ_: I am hungry now.
+- **thirsty (adj) /ˈθɜːsti/**: khát.
+  - _Ví dụ_: The boy is very thirsty.
+
+## 12. Con vật quen thuộc
+
+- **animal (n) /ˈænɪml/**: con vật, động vật.
+  - _Ví dụ_: I love small animals.
+- **dog (n) /dɒɡ/**: con chó.
+  - _Ví dụ_: My dog is very friendly.
+- **cat (n) /kæt/**: con mèo.
+  - _Ví dụ_: The cat sleeps on my bed.
+- **bird (n) /bɜːd/**: con chim.
+  - _Ví dụ_: A bird sings in the tree.
+- **chicken (n) /ˈtʃɪkɪn/**: con gà.
+  - _Ví dụ_: We have ten chickens.
+- **duck (n) /dʌk/**: con vịt.
+  - _Ví dụ_: The ducks are in the water.
+- **pig (n) /pɪɡ/**: con lợn, con heo.
+  - _Ví dụ_: My uncle has two pigs.
+- **cow (n) /kaʊ/**: con bò.
+  - _Ví dụ_: The cow eats grass.
+- **buffalo (n) /ˈbʌfələʊ/**: con trâu.
+  - _Ví dụ_: A buffalo works in the field.
+- **horse (n) /hɔːs/**: con ngựa.
+  - _Ví dụ_: The horse runs very fast.
+- **goat (n) /ɡəʊt/**: con dê.
+  - _Ví dụ_: My family has three goats.
+- **mouse (n) /maʊs/**: con chuột.
+  - _Ví dụ_: A small mouse is here.
+- **elephant (n) /ˈelɪfənt/**: con voi.
+  - _Ví dụ_: An elephant is very big.
+- **tiger (n) /ˈtaɪɡə/**: con hổ.
+  - _Ví dụ_: The tiger lives in the forest.
+- **lion (n) /ˈlaɪən/**: con sư tử.
+  - _Ví dụ_: A lion is a strong animal.
+- **monkey (n) /ˈmʌŋki/**: con khỉ.
+  - _Ví dụ_: The monkey eats a banana.
+- **snake (n) /sneɪk/**: con rắn.
+  - _Ví dụ_: I am afraid of snakes.
+- **bear (n) /beə/**: con gấu.
+  - _Ví dụ_: The bear is very big.
+- **rabbit (n) /ˈræbɪt/**: con thỏ.
+  - _Ví dụ_: My rabbit eats vegetables.
+- **frog (n) /frɒɡ/**: con ếch.
+  - _Ví dụ_: A frog jumps into the water.
+- **bee (n) /biː/**: con ong.
+  - _Ví dụ_: Bees like flowers.
+- **tail (n) /teɪl/**: cái đuôi.
+  - _Ví dụ_: My dog has a short tail.
+- **wing (n) /wɪŋ/**: cái cánh.
+  - _Ví dụ_: Birds have two wings.
+
+## 13. Thời tiết và thiên nhiên
+
+- **weather (n) /ˈweðə/**: thời tiết.
+  - _Ví dụ_: The weather is nice today.
+- **sun (n) /sʌn/**: mặt trời.
+  - _Ví dụ_: The sun is very bright.
+- **rain (n) /reɪn/**: mưa.
+  - _Ví dụ_: I like the rain.
+- **wind (n) /wɪnd/**: gió.
+  - _Ví dụ_: The wind is strong today.
+- **cloud (n) /klaʊd/**: đám mây.
+  - _Ví dụ_: I see white clouds.
+- **snow (n) /snəʊ/**: tuyết.
+  - _Ví dụ_: There is no snow here.
+- **sky (n) /skaɪ/**: bầu trời.
+  - _Ví dụ_: The sky is blue.
+- **sea (n) /siː/**: biển.
+  - _Ví dụ_: My family goes to the sea.
+- **river (n) /ˈrɪvə/**: dòng sông.
+  - _Ví dụ_: The river is near my house.
+- **mountain (n) /ˈmaʊntən/**: núi.
+  - _Ví dụ_: I see a big mountain.
+- **tree (n) /triː/**: cái cây.
+  - _Ví dụ_: There is a tree here.
+- **flower (n) /ˈflaʊə/**: bông hoa.
+  - _Ví dụ_: These flowers are very beautiful.
+- **grass (n) /ɡrɑːs/**: cỏ.
+  - _Ví dụ_: The grass is green.
+- **forest (n) /ˈfɒrɪst/**: rừng.
+  - _Ví dụ_: Many animals live in the forest.
+- **hot (adj) /hɒt/**: nóng.
+  - _Ví dụ_: It is hot in summer.
+- **cold (adj) /kəʊld/**: lạnh.
+  - _Ví dụ_: The water is very cold.
+- **warm (adj) /wɔːm/**: ấm.
+  - _Ví dụ_: My room is warm.
+- **cool (adj) /kuːl/**: mát.
+  - _Ví dụ_: The evening is cool.
+- **wet (adj) /wet/**: ướt.
+  - _Ví dụ_: My shoes are wet.
+- **dry (adj) /draɪ/**: khô.
+  - _Ví dụ_: The grass is dry now.
+- **sunny (adj) /ˈsʌni/**: có nắng.
+  - _Ví dụ_: Today is a sunny day.
+- **rainy (adj) /ˈreɪni/**: có mưa.
+  - _Ví dụ_: I stay home on rainy days.
+- **windy (adj) /ˈwɪndi/**: có gió.
+  - _Ví dụ_: It is windy today.
+- **cloudy (adj) /ˈklaʊdi/**: nhiều mây.
+  - _Ví dụ_: The sky is cloudy.
+
+## 14. Cảm xúc và tính cách
+
+- **happy (adj) /ˈhæpi/**: vui, hạnh phúc.
+  - _Ví dụ_: I am happy today.
+- **sad (adj) /sæd/**: buồn.
+  - _Ví dụ_: My friend is very sad.
+- **angry (adj) /ˈæŋɡri/**: giận dữ.
+  - _Ví dụ_: My mother is angry now.
+- **tired (adj) /ˈtaɪəd/**: mệt.
+  - _Ví dụ_: I am tired after school.
+- **afraid (adj) /əˈfreɪd/**: sợ.
+  - _Ví dụ_: She is afraid of dogs.
+- **bored (adj) /bɔːd/**: chán.
+  - _Ví dụ_: The children are bored.
+- **excited (adj) /ɪkˈsaɪtɪd/**: hào hứng.
+  - _Ví dụ_: We are excited about the trip.
+- **worried (adj) /ˈwʌrid/**: lo lắng.
+  - _Ví dụ_: My father is worried today.
+- **kind (adj) /kaɪnd/**: tốt bụng.
+  - _Ví dụ_: My teacher is very kind.
+- **funny (adj) /ˈfʌni/**: hài hước.
+  - _Ví dụ_: My brother is funny.
+- **shy (adj) /ʃaɪ/**: nhút nhát.
+  - _Ví dụ_: The new girl is shy.
+- **lazy (adj) /ˈleɪzi/**: lười biếng.
+  - _Ví dụ_: My cat is very lazy.
+- **hard-working (adj) /ˌhɑːd ˈwɜːkɪŋ/**: chăm chỉ.
+  - _Ví dụ_: She is a hard-working student.
+- **friendly (adj) /ˈfrendli/**: thân thiện.
+  - _Ví dụ_: My neighbours are friendly.
+- **quiet (adj) /ˈkwaɪət/**: ít nói, yên lặng.
+  - _Ví dụ_: My sister is a quiet girl.
+- **clever (adj) /ˈklevə/**: thông minh.
+  - _Ví dụ_: He is a clever boy.
+- **polite (adj) /pəˈlaɪt/**: lịch sự.
+  - _Ví dụ_: Vietnamese children are polite.
+- **brave (adj) /breɪv/**: dũng cảm.
+  - _Ví dụ_: My friend is very brave.
+- **feel (v) /fiːl/**: cảm thấy.
+  - _Ví dụ_: I feel good today.
+  - _Lưu ý_: quá khứ: felt
+- **laugh (v) /lɑːf/**: cười.
+  - _Ví dụ_: We laugh in class.
+- **cry (v) /kraɪ/**: khóc.
+  - _Ví dụ_: The baby cries at night.
+- **smile (v) /smaɪl/**: mỉm cười.
+  - _Ví dụ_: She smiles at me.
+- **love (v) /lʌv/**: yêu, rất thích.
+  - _Ví dụ_: I love my family.
+- **like (v) /laɪk/**: thích.
+  - _Ví dụ_: We like our new school.
+
+## 15. Động từ hằng ngày (1)
+
+- **go (v) /ɡəʊ/**: đi.
+  - _Ví dụ_: I go to school at six.
+  - _Lưu ý_: quá khứ: went
+- **come (v) /kʌm/**: đến.
+  - _Ví dụ_: My friends come to my house.
+  - _Lưu ý_: quá khứ: came
+- **sleep (v) /sliːp/**: ngủ.
+  - _Ví dụ_: I sleep at ten o'clock.
+  - _Lưu ý_: quá khứ: slept
+- **wake up (phr) /weɪk ʌp/**: thức dậy.
+  - _Ví dụ_: I wake up at five.
+  - _Lưu ý_: quá khứ: woke up
+- **get up (phr) /ɡet ʌp/**: ra khỏi giường.
+  - _Ví dụ_: She gets up very early.
+  - _Lưu ý_: quá khứ: got up
+- **run (v) /rʌn/**: chạy.
+  - _Ví dụ_: The boys run in the park.
+  - _Lưu ý_: quá khứ: ran
+- **walk (v) /wɔːk/**: đi bộ.
+  - _Ví dụ_: We walk to school.
+- **sit (v) /sɪt/**: ngồi.
+  - _Ví dụ_: I sit near the window.
+  - _Lưu ý_: quá khứ: sat
+- **stand (v) /stænd/**: đứng.
+  - _Ví dụ_: The teacher stands here.
+  - _Lưu ý_: quá khứ: stood
+- **open (v) /ˈəʊpən/**: mở.
+  - _Ví dụ_: Please open your book.
+- **close (v) /kləʊz/**: đóng.
+  - _Ví dụ_: I close the door.
+- **read (v) /riːd/**: đọc.
+  - _Ví dụ_: I read a book every night.
+  - _Lưu ý_: quá khứ: read /red/
+- **write (v) /raɪt/**: viết.
+  - _Ví dụ_: We write in our notebooks.
+  - _Lưu ý_: quá khứ: wrote
+- **listen (v) /ˈlɪsn/**: lắng nghe.
+  - _Ví dụ_: I listen to my teacher.
+- **speak (v) /spiːk/**: nói.
+  - _Ví dụ_: I speak English in class.
+  - _Lưu ý_: quá khứ: spoke
+- **look (v) /lʊk/**: nhìn.
+  - _Ví dụ_: Look at the board, please.
+- **watch (v) /wɒtʃ/**: xem.
+  - _Ví dụ_: We watch TV after dinner.
+- **play (v) /pleɪ/**: chơi.
+  - _Ví dụ_: The children play football.
+- **work (v) /wɜːk/**: làm việc.
+  - _Ví dụ_: My parents work every day.
+- **study (v) /ˈstʌdi/**: học.
+  - _Ví dụ_: I study English at home.
+- **help (v) /help/**: giúp đỡ.
+  - _Ví dụ_: I help my mother every day.
+- **buy (v) /baɪ/**: mua.
+  - _Ví dụ_: She buys bread every morning.
+  - _Lưu ý_: quá khứ: bought
+- **give (v) /ɡɪv/**: cho, đưa.
+  - _Ví dụ_: He gives me a pen.
+  - _Lưu ý_: quá khứ: gave
+- **take (v) /teɪk/**: lấy, cầm.
+  - _Ví dụ_: I take my bag to school.
+  - _Lưu ý_: quá khứ: took

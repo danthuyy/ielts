@@ -1,0 +1,255 @@
+{
+  "id": "basic_09",
+  "title": "Nền tảng 09 — Nhà cửa và đồ đạc",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "house",
+      "pos": "n",
+      "ipa": "/haʊs/",
+      "vi": "ngôi nhà",
+      "example": "Their house is very old.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "home",
+      "pos": "n",
+      "ipa": "/həʊm/",
+      "vi": "nhà, tổ ấm",
+      "example": "I stay at home today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "room",
+      "pos": "n",
+      "ipa": "/ruːm/",
+      "vi": "căn phòng",
+      "example": "This room is very small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bedroom",
+      "pos": "n",
+      "ipa": "/ˈbedruːm/",
+      "vi": "phòng ngủ",
+      "example": "My bedroom is upstairs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "kitchen",
+      "pos": "n",
+      "ipa": "/ˈkɪtʃɪn/",
+      "vi": "nhà bếp",
+      "example": "Mum cooks in the kitchen.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bathroom",
+      "pos": "n",
+      "ipa": "/ˈbɑːθruːm/",
+      "vi": "phòng tắm",
+      "example": "The bathroom is very clean.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "door",
+      "pos": "n",
+      "ipa": "/dɔː/",
+      "vi": "cửa ra vào",
+      "example": "Please close the door.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "window",
+      "pos": "n",
+      "ipa": "/ˈwɪndəʊ/",
+      "vi": "cửa sổ",
+      "example": "The window is open now.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wall",
+      "pos": "n",
+      "ipa": "/wɔːl/",
+      "vi": "bức tường",
+      "example": "The wall is white.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "floor",
+      "pos": "n",
+      "ipa": "/flɔː/",
+      "vi": "sàn nhà, tầng",
+      "example": "The cat sleeps on the floor.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "table",
+      "pos": "n",
+      "ipa": "/ˈteɪbl/",
+      "vi": "cái bàn",
+      "example": "We eat at the table.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bed",
+      "pos": "n",
+      "ipa": "/bed/",
+      "vi": "cái giường",
+      "example": "My bed is very soft.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sofa",
+      "pos": "n",
+      "ipa": "/ˈsəʊfə/",
+      "vi": "ghế sofa",
+      "example": "Dad sits on the sofa.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "lamp",
+      "pos": "n",
+      "ipa": "/læmp/",
+      "vi": "đèn bàn",
+      "example": "The lamp is on my desk.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "fridge",
+      "pos": "n",
+      "ipa": "/frɪdʒ/",
+      "vi": "tủ lạnh",
+      "example": "The milk is in the fridge.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "television",
+      "pos": "n",
+      "ipa": "/ˈtelɪvɪʒn/",
+      "vi": "tivi",
+      "example": "We watch television at night.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "garden",
+      "pos": "n",
+      "ipa": "/ˈɡɑːdn/",
+      "vi": "khu vườn",
+      "example": "Our garden has many flowers.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "kitchen sink",
+      "pos": "n",
+      "ipa": "/ˈkɪtʃɪn sɪŋk/",
+      "vi": "bồn rửa bát",
+      "example": "The plates are in the kitchen sink.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cupboard",
+      "pos": "n",
+      "ipa": "/ˈkʌbəd/",
+      "vi": "tủ đựng đồ",
+      "example": "The cups are in the cupboard.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "stairs",
+      "pos": "n",
+      "ipa": "/steəz/",
+      "vi": "cầu thang",
+      "example": "The stairs are very narrow.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "clean",
+      "pos": "adj",
+      "ipa": "/kliːn/",
+      "vi": "sạch sẽ",
+      "example": "My room is very clean.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "open",
+      "pos": "v",
+      "ipa": "/ˈəʊpən/",
+      "vi": "mở",
+      "example": "I open the window every morning.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

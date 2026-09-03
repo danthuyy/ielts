@@ -1,0 +1,46 @@
+## 7. Cơ thể người
+
+- **body (n) /ˈbɒdi/**: cơ thể.
+  - _Ví dụ_: Water is good for your body.
+- **head (n) /hed/**: đầu.
+  - _Ví dụ_: My head hurts today.
+- **hair (n) /heə/**: tóc.
+  - _Ví dụ_: She has long black hair.
+- **face (n) /feɪs/**: khuôn mặt.
+  - _Ví dụ_: He washes his face every morning.
+- **eye (n) /aɪ/**: mắt.
+  - _Ví dụ_: My eyes are brown.
+- **ear (n) /ɪə/**: tai.
+  - _Ví dụ_: We hear with our ears.
+- **nose (n) /nəʊz/**: mũi.
+  - _Ví dụ_: The baby has a small nose.
+- **mouth (n) /maʊθ/**: miệng.
+  - _Ví dụ_: Open your mouth, please.
+- **tooth (n) /tuːθ/**: cái răng.
+  - _Ví dụ_: I brush my teeth every day.
+- **neck (n) /nek/**: cổ.
+  - _Ví dụ_: My neck is very cold.
+- **shoulder (n) /ˈʃəʊldə/**: vai.
+  - _Ví dụ_: He has strong shoulders.
+- **arm (n) /ɑːm/**: cánh tay.
+  - _Ví dụ_: My arms are tired now.
+- **hand (n) /hænd/**: bàn tay.
+  - _Ví dụ_: Wash your hands before dinner.
+- **finger (n) /ˈfɪŋɡə/**: ngón tay.
+  - _Ví dụ_: We have ten fingers.
+- **leg (n) /leɡ/**: chân (cả chân).
+  - _Ví dụ_: Her legs are very long.
+- **foot (n) /fʊt/**: bàn chân.
+  - _Ví dụ_: My foot is very small.
+- **knee (n) /niː/**: đầu gối.
+  - _Ví dụ_: My knee hurts a lot.
+- **back (n) /bæk/**: lưng.
+  - _Ví dụ_: My back is very sore.
+- **stomach (n) /ˈstʌmək/**: bụng, dạ dày.
+  - _Ví dụ_: My stomach hurts after lunch.
+- **heart (n) /hɑːt/**: trái tim.
+  - _Ví dụ_: My heart beats fast.
+- **skin (n) /skɪn/**: da.
+  - _Ví dụ_: The baby has soft skin.
+- **finger nail (n) /ˈfɪŋɡə neɪl/**: móng tay.
+  - _Ví dụ_: Her finger nails are clean.

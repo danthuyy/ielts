@@ -1,0 +1,277 @@
+{
+  "id": "basic_03",
+  "title": "Nền tảng 03 — Số đếm và số thứ tự",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "one",
+      "pos": "n",
+      "ipa": "/wʌn/",
+      "vi": "số một",
+      "example": "I have one pen.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đọc là /wʌn/, giống chữ \"won\", không đọc \"o-ne\"."
+    },
+    {
+      "word": "two",
+      "pos": "n",
+      "ipa": "/tuː/",
+      "vi": "số hai",
+      "example": "I have two cats.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ w câm, chỉ đọc /tuː/."
+    },
+    {
+      "word": "three",
+      "pos": "n",
+      "ipa": "/θriː/",
+      "vi": "số ba",
+      "example": "She has three books.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /θ/, lưỡi giữa răng; khác \"tree\"."
+    },
+    {
+      "word": "four",
+      "pos": "n",
+      "ipa": "/fɔːr/",
+      "vi": "số bốn",
+      "example": "We have four chairs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "viết có u nhưng đọc /fɔː/."
+    },
+    {
+      "word": "five",
+      "pos": "n",
+      "ipa": "/faɪv/",
+      "vi": "số năm",
+      "example": "I see five birds.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ i đọc /aɪ/ như \"ai\"."
+    },
+    {
+      "word": "six",
+      "pos": "n",
+      "ipa": "/sɪks/",
+      "vi": "số sáu",
+      "example": "He has six pens.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhớ phát âm rõ /ks/ ở cuối."
+    },
+    {
+      "word": "seven",
+      "pos": "n",
+      "ipa": "/ˈsev.ən/",
+      "vi": "số bảy",
+      "example": "A week has seven days.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm đầu: SE-ven."
+    },
+    {
+      "word": "eight",
+      "pos": "n",
+      "ipa": "/eɪt/",
+      "vi": "số tám",
+      "example": "I have eight books.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ gh câm, chỉ đọc /eɪt/."
+    },
+    {
+      "word": "nine",
+      "pos": "n",
+      "ipa": "/naɪn/",
+      "vi": "số chín",
+      "example": "She has nine photos.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đọc /aɪ/ như five."
+    },
+    {
+      "word": "ten",
+      "pos": "n",
+      "ipa": "/ten/",
+      "vi": "số mười",
+      "example": "I have ten fingers.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "ngắn gọn, giống \"ten\" tiếng Việt."
+    },
+    {
+      "word": "eleven",
+      "pos": "n",
+      "ipa": "/ɪˈlev.ən/",
+      "vi": "số mười một",
+      "example": "My brother is eleven.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm giữa: e-LE-ven."
+    },
+    {
+      "word": "twelve",
+      "pos": "n",
+      "ipa": "/twelv/",
+      "vi": "số mười hai",
+      "example": "A year has twelve months.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có /v/ ở cuối, đừng bỏ."
+    },
+    {
+      "word": "fifteen",
+      "pos": "n",
+      "ipa": "/fɪfˈtiːn/",
+      "vi": "số mười lăm",
+      "example": "I have fifteen pens.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm sau: fif-TEEN; đuôi -teen đọc /tiːn/ dài."
+    },
+    {
+      "word": "twenty",
+      "pos": "n",
+      "ipa": "/ˈtwen.ti/",
+      "vi": "số hai mươi",
+      "example": "My class has twenty students.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm đầu: TWEN-ty, khác fifTEEN."
+    },
+    {
+      "word": "thirty",
+      "pos": "n",
+      "ipa": "/ˈθɜː.ti/",
+      "vi": "số ba mươi",
+      "example": "My mother is thirty.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /θ/ và có âm /ɜː/ như bird."
+    },
+    {
+      "word": "forty",
+      "pos": "n",
+      "ipa": "/ˈfɔː.ti/",
+      "vi": "số bốn mươi",
+      "example": "He has forty books.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "viết là forty, không có chữ u như four."
+    },
+    {
+      "word": "fifty",
+      "pos": "n",
+      "ipa": "/ˈfɪf.ti/",
+      "vi": "số năm mươi",
+      "example": "My father is fifty.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "five đổi thành fif- khi thêm đuôi."
+    },
+    {
+      "word": "hundred",
+      "pos": "n",
+      "ipa": "/ˈhʌn.drəd/",
+      "vi": "số một trăm",
+      "example": "I have one hundred pens.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nói \"one hundred\", không thêm s."
+    },
+    {
+      "word": "thousand",
+      "pos": "n",
+      "ipa": "/ˈθaʊ.zənd/",
+      "vi": "số một nghìn",
+      "example": "This book has one thousand words.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /θ/, có /aʊ/ như house."
+    },
+    {
+      "word": "first",
+      "pos": "adj",
+      "ipa": "/fɜːst/",
+      "vi": "thứ nhất, đầu tiên",
+      "example": "This is my first book.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "từ one đổi hẳn thành first, phải học thuộc."
+    },
+    {
+      "word": "second",
+      "pos": "adj",
+      "ipa": "/ˈsek.ənd/",
+      "vi": "thứ hai",
+      "example": "She is my second teacher.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "từ two đổi hẳn thành second."
+    },
+    {
+      "word": "third",
+      "pos": "adj",
+      "ipa": "/θɜːd/",
+      "vi": "thứ ba",
+      "example": "He sits in the third chair.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "three đổi thành third, có /θ/ và /ɜː/."
+    },
+    {
+      "word": "fourth",
+      "pos": "adj",
+      "ipa": "/fɔːθ/",
+      "vi": "thứ tư",
+      "example": "This is the fourth day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chỉ thêm -th vào four."
+    },
+    {
+      "word": "fifth",
+      "pos": "adj",
+      "ipa": "/fɪfθ/",
+      "vi": "thứ năm",
+      "example": "My room is the fifth.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "five đổi v thành f rồi thêm -th."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "id": "basic_16",
+  "title": "Nền tảng 16 — Động từ hằng ngày (2)",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "work",
+      "pos": "v",
+      "ipa": "/wɜːk/",
+      "vi": "làm việc",
+      "example": "My father works in a factory.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "cũng là danh từ: go to work (đi làm)."
+    },
+    {
+      "word": "study",
+      "pos": "v",
+      "ipa": "/ˈstʌdi/",
+      "vi": "học, học tập",
+      "example": "We study English every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "study nghiêng về học ở trường, có sách vở."
+    },
+    {
+      "word": "help",
+      "pos": "v",
+      "ipa": "/help/",
+      "vi": "giúp, giúp đỡ",
+      "example": "I help my mother at home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "help somebody (with something)."
+    },
+    {
+      "word": "buy",
+      "pos": "v",
+      "ipa": "/baɪ/",
+      "vi": "mua",
+      "example": "She buys bread every morning.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ bất quy tắc: bought."
+    },
+    {
+      "word": "sell",
+      "pos": "v",
+      "ipa": "/sel/",
+      "vi": "bán",
+      "example": "They sell fruit at the market.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa với buy; quá khứ: sold."
+    },
+    {
+      "word": "give",
+      "pos": "v",
+      "ipa": "/ɡɪv/",
+      "vi": "cho, đưa",
+      "example": "He gives me a new book.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "give somebody something = give something to somebody."
+    },
+    {
+      "word": "take",
+      "pos": "v",
+      "ipa": "/teɪk/",
+      "vi": "lấy, cầm, đi (xe)",
+      "example": "I take the bus to school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa với give; quá khứ: took."
+    },
+    {
+      "word": "make",
+      "pos": "v",
+      "ipa": "/meɪk/",
+      "vi": "làm ra, chế tạo, nấu",
+      "example": "My mother makes very good soup.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "make là tạo ra vật mới; quá khứ: made."
+    },
+    {
+      "word": "do",
+      "pos": "v",
+      "ipa": "/duː/",
+      "vi": "làm (việc gì đó)",
+      "example": "I do my homework after dinner.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "do homework, do housework; không dùng make homework."
+    },
+    {
+      "word": "want",
+      "pos": "v",
+      "ipa": "/wɒnt/",
+      "vi": "muốn",
+      "example": "I want a glass of water.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "want to + động từ: I want to go."
+    },
+    {
+      "word": "like",
+      "pos": "v",
+      "ipa": "/laɪk/",
+      "vi": "thích",
+      "example": "She likes cats and dogs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "like + V-ing: like reading."
+    },
+    {
+      "word": "love",
+      "pos": "v",
+      "ipa": "/lʌv/",
+      "vi": "yêu, rất thích",
+      "example": "I love my family very much.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "mạnh hơn like."
+    },
+    {
+      "word": "need",
+      "pos": "v",
+      "ipa": "/niːd/",
+      "vi": "cần",
+      "example": "We need more time.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "need to + động từ: I need to study."
+    },
+    {
+      "word": "have",
+      "pos": "v",
+      "ipa": "/hæv/",
+      "vi": "có",
+      "example": "They have two small dogs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "ngôi he/she/it dùng has."
+    },
+    {
+      "word": "know",
+      "pos": "v",
+      "ipa": "/nəʊ/",
+      "vi": "biết",
+      "example": "I know his name.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ k đầu câm, đọc là /nəʊ/."
+    },
+    {
+      "word": "think",
+      "pos": "v",
+      "ipa": "/θɪŋk/",
+      "vi": "nghĩ, cho rằng",
+      "example": "I think this book is easy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "think about something: nghĩ về việc gì."
+    },
+    {
+      "word": "say",
+      "pos": "v",
+      "ipa": "/seɪ/",
+      "vi": "nói (lời gì)",
+      "example": "She says hello to me.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "say something; không nói say me."
+    },
+    {
+      "word": "tell",
+      "pos": "v",
+      "ipa": "/tel/",
+      "vi": "kể, bảo (ai đó)",
+      "example": "Please tell me your name.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "tell somebody something; luôn có người nghe."
+    },
+    {
+      "word": "ask",
+      "pos": "v",
+      "ipa": "/ɑːsk/",
+      "vi": "hỏi, nhờ",
+      "example": "Students ask the teacher many questions.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "ask for help: nhờ giúp đỡ."
+    },
+    {
+      "word": "answer",
+      "pos": "v",
+      "ipa": "/ˈɑːnsə/",
+      "vi": "trả lời",
+      "example": "He answers all the questions.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ w câm; cũng là danh từ: an answer."
+    },
+    {
+      "word": "live",
+      "pos": "v",
+      "ipa": "/lɪv/",
+      "vi": "sống, ở",
+      "example": "We live in a small town.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "live in + thành phố, live at + số nhà."
+    },
+    {
+      "word": "learn",
+      "pos": "v",
+      "ipa": "/lɜːn/",
+      "vi": "học được, tiếp thu",
+      "example": "I learn new words every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "learn là học được kiến thức mới, study là ngồi học."
+    }
+  ]
+}

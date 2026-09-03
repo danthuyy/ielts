@@ -1,0 +1,255 @@
+{
+  "id": "basic_06",
+  "title": "Nền tảng 06 — Gia đình và người thân",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "family",
+      "pos": "n",
+      "ipa": "/ˈfæməli/",
+      "vi": "gia đình",
+      "example": "My family is very small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "father",
+      "pos": "n",
+      "ipa": "/ˈfɑːðə/",
+      "vi": "bố, cha",
+      "example": "My father is a teacher.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "mother",
+      "pos": "n",
+      "ipa": "/ˈmʌðə/",
+      "vi": "mẹ",
+      "example": "My mother cooks every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "parents",
+      "pos": "n",
+      "ipa": "/ˈpeərənts/",
+      "vi": "bố mẹ",
+      "example": "My parents work in a shop.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "brother",
+      "pos": "n",
+      "ipa": "/ˈbrʌðə/",
+      "vi": "anh trai, em trai",
+      "example": "My brother plays football.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sister",
+      "pos": "n",
+      "ipa": "/ˈsɪstə/",
+      "vi": "chị gái, em gái",
+      "example": "My sister is ten years old.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "son",
+      "pos": "n",
+      "ipa": "/sʌn/",
+      "vi": "con trai",
+      "example": "They have one son.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "daughter",
+      "pos": "n",
+      "ipa": "/ˈdɔːtə/",
+      "vi": "con gái",
+      "example": "Her daughter is a student.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "grandfather",
+      "pos": "n",
+      "ipa": "/ˈɡrænfɑːðə/",
+      "vi": "ông",
+      "example": "My grandfather likes tea.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "grandmother",
+      "pos": "n",
+      "ipa": "/ˈɡrænmʌðə/",
+      "vi": "bà",
+      "example": "My grandmother lives with us.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "uncle",
+      "pos": "n",
+      "ipa": "/ˈʌŋkl/",
+      "vi": "chú, bác, cậu",
+      "example": "My uncle has a big car.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "aunt",
+      "pos": "n",
+      "ipa": "/ɑːnt/",
+      "vi": "cô, dì, bác gái",
+      "example": "My aunt works in a hospital.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cousin",
+      "pos": "n",
+      "ipa": "/ˈkʌzn/",
+      "vi": "anh chị em họ",
+      "example": "My cousin lives in Hanoi.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "husband",
+      "pos": "n",
+      "ipa": "/ˈhʌzbənd/",
+      "vi": "chồng",
+      "example": "Her husband is very kind.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wife",
+      "pos": "n",
+      "ipa": "/waɪf/",
+      "vi": "vợ",
+      "example": "His wife is a nurse.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "child",
+      "pos": "n",
+      "ipa": "/tʃaɪld/",
+      "vi": "đứa trẻ, con",
+      "example": "The child is very happy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "children",
+      "pos": "n",
+      "ipa": "/ˈtʃɪldrən/",
+      "vi": "những đứa trẻ",
+      "example": "The children play in the garden.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "baby",
+      "pos": "n",
+      "ipa": "/ˈbeɪbi/",
+      "vi": "em bé",
+      "example": "The baby sleeps all day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "grandparents",
+      "pos": "n",
+      "ipa": "/ˈɡrænpeərənts/",
+      "vi": "ông bà",
+      "example": "My grandparents live in the country.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "relative",
+      "pos": "n",
+      "ipa": "/ˈrelətɪv/",
+      "vi": "người thân, họ hàng",
+      "example": "We visit our relatives every year.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "love",
+      "pos": "v",
+      "ipa": "/lʌv/",
+      "vi": "yêu, thương",
+      "example": "I love my family.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "live",
+      "pos": "v",
+      "ipa": "/lɪv/",
+      "vi": "sống, ở",
+      "example": "We live in a small house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

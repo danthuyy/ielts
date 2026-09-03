@@ -1,0 +1,50 @@
+## 13. Thời tiết và thiên nhiên
+
+- **weather (n) /ˈweðə/**: thời tiết.
+  - _Ví dụ_: The weather is nice today.
+- **sun (n) /sʌn/**: mặt trời.
+  - _Ví dụ_: The sun is very bright.
+- **rain (n) /reɪn/**: mưa.
+  - _Ví dụ_: I like the rain.
+- **wind (n) /wɪnd/**: gió.
+  - _Ví dụ_: The wind is strong today.
+- **cloud (n) /klaʊd/**: đám mây.
+  - _Ví dụ_: I see white clouds.
+- **snow (n) /snəʊ/**: tuyết.
+  - _Ví dụ_: There is no snow here.
+- **sky (n) /skaɪ/**: bầu trời.
+  - _Ví dụ_: The sky is blue.
+- **sea (n) /siː/**: biển.
+  - _Ví dụ_: My family goes to the sea.
+- **river (n) /ˈrɪvə/**: dòng sông.
+  - _Ví dụ_: The river is near my house.
+- **mountain (n) /ˈmaʊntən/**: núi.
+  - _Ví dụ_: I see a big mountain.
+- **tree (n) /triː/**: cái cây.
+  - _Ví dụ_: There is a tree here.
+- **flower (n) /ˈflaʊə/**: bông hoa.
+  - _Ví dụ_: These flowers are very beautiful.
+- **grass (n) /ɡrɑːs/**: cỏ.
+  - _Ví dụ_: The grass is green.
+- **forest (n) /ˈfɒrɪst/**: rừng.
+  - _Ví dụ_: Many animals live in the forest.
+- **hot (adj) /hɒt/**: nóng.
+  - _Ví dụ_: It is hot in summer.
+- **cold (adj) /kəʊld/**: lạnh.
+  - _Ví dụ_: The water is very cold.
+- **warm (adj) /wɔːm/**: ấm.
+  - _Ví dụ_: My room is warm.
+- **cool (adj) /kuːl/**: mát.
+  - _Ví dụ_: The evening is cool.
+- **wet (adj) /wet/**: ướt.
+  - _Ví dụ_: My shoes are wet.
+- **dry (adj) /draɪ/**: khô.
+  - _Ví dụ_: The grass is dry now.
+- **sunny (adj) /ˈsʌni/**: có nắng.
+  - _Ví dụ_: Today is a sunny day.
+- **rainy (adj) /ˈreɪni/**: có mưa.
+  - _Ví dụ_: I stay home on rainy days.
+- **windy (adj) /ˈwɪndi/**: có gió.
+  - _Ví dụ_: It is windy today.
+- **cloudy (adj) /ˈklaʊdi/**: nhiều mây.
+  - _Ví dụ_: The sky is cloudy.

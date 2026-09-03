@@ -1,0 +1,255 @@
+{
+  "id": "basic_17",
+  "title": "Nền tảng 17 — Tính từ trái nghĩa",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "big",
+      "pos": "adj",
+      "ipa": "/bɪɡ/",
+      "vi": "to, lớn",
+      "example": "My school is very big.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: small."
+    },
+    {
+      "word": "small",
+      "pos": "adj",
+      "ipa": "/smɔːl/",
+      "vi": "nhỏ, bé",
+      "example": "She has a small bag.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: big."
+    },
+    {
+      "word": "long",
+      "pos": "adj",
+      "ipa": "/lɒŋ/",
+      "vi": "dài",
+      "example": "My sister has long hair.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: short."
+    },
+    {
+      "word": "short",
+      "pos": "adj",
+      "ipa": "/ʃɔːt/",
+      "vi": "ngắn; thấp",
+      "example": "This is a short story.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: long (ngắn) và tall (thấp)."
+    },
+    {
+      "word": "tall",
+      "pos": "adj",
+      "ipa": "/tɔːl/",
+      "vi": "cao (người, cây)",
+      "example": "My brother is very tall.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: short."
+    },
+    {
+      "word": "new",
+      "pos": "adj",
+      "ipa": "/njuː/",
+      "vi": "mới",
+      "example": "I have a new phone.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: old."
+    },
+    {
+      "word": "old",
+      "pos": "adj",
+      "ipa": "/əʊld/",
+      "vi": "cũ; già",
+      "example": "This house is very old.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: new (cũ) và young (già)."
+    },
+    {
+      "word": "young",
+      "pos": "adj",
+      "ipa": "/jʌŋ/",
+      "vi": "trẻ",
+      "example": "My teacher is still young.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: old."
+    },
+    {
+      "word": "good",
+      "pos": "adj",
+      "ipa": "/ɡʊd/",
+      "vi": "tốt, hay, giỏi",
+      "example": "She is a good student.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: bad."
+    },
+    {
+      "word": "bad",
+      "pos": "adj",
+      "ipa": "/bæd/",
+      "vi": "xấu, tệ, dở",
+      "example": "The weather is bad today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: good."
+    },
+    {
+      "word": "easy",
+      "pos": "adj",
+      "ipa": "/ˈiːzi/",
+      "vi": "dễ",
+      "example": "This test is very easy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: hard."
+    },
+    {
+      "word": "hard",
+      "pos": "adj",
+      "ipa": "/hɑːd/",
+      "vi": "khó; cứng",
+      "example": "Math is hard for me.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: easy; difficult cũng nghĩa là khó."
+    },
+    {
+      "word": "fast",
+      "pos": "adj",
+      "ipa": "/fɑːst/",
+      "vi": "nhanh",
+      "example": "This train is very fast.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: slow."
+    },
+    {
+      "word": "slow",
+      "pos": "adj",
+      "ipa": "/sləʊ/",
+      "vi": "chậm",
+      "example": "My old computer is slow.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: fast."
+    },
+    {
+      "word": "cheap",
+      "pos": "adj",
+      "ipa": "/tʃiːp/",
+      "vi": "rẻ",
+      "example": "This shirt is very cheap.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: expensive."
+    },
+    {
+      "word": "expensive",
+      "pos": "adj",
+      "ipa": "/ɪkˈspensɪv/",
+      "vi": "đắt",
+      "example": "That car is too expensive.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: cheap."
+    },
+    {
+      "word": "clean",
+      "pos": "adj",
+      "ipa": "/kliːn/",
+      "vi": "sạch",
+      "example": "My room is clean today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: dirty; cũng là động từ: clean the room."
+    },
+    {
+      "word": "dirty",
+      "pos": "adj",
+      "ipa": "/ˈdɜːti/",
+      "vi": "bẩn",
+      "example": "His shoes are very dirty.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: clean."
+    },
+    {
+      "word": "early",
+      "pos": "adj",
+      "ipa": "/ˈɜːli/",
+      "vi": "sớm",
+      "example": "I take an early bus.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: late; cũng là trạng từ: get up early."
+    },
+    {
+      "word": "late",
+      "pos": "adj",
+      "ipa": "/leɪt/",
+      "vi": "muộn, trễ",
+      "example": "He is late for school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: early."
+    },
+    {
+      "word": "hot",
+      "pos": "adj",
+      "ipa": "/hɒt/",
+      "vi": "nóng",
+      "example": "The soup is very hot.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: cold."
+    },
+    {
+      "word": "cold",
+      "pos": "adj",
+      "ipa": "/kəʊld/",
+      "vi": "lạnh",
+      "example": "The water is too cold.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: hot."
+    }
+  ]
+}

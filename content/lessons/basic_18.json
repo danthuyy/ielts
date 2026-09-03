@@ -1,0 +1,233 @@
+{
+  "id": "basic_18",
+  "title": "Nền tảng 18 — Giới từ và vị trí",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "in",
+      "pos": "adv",
+      "ipa": "/ɪn/",
+      "vi": "ở trong",
+      "example": "The book is in my bag.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "in + không gian kín: in the box, in Hanoi."
+    },
+    {
+      "word": "on",
+      "pos": "adv",
+      "ipa": "/ɒn/",
+      "vi": "ở trên (bề mặt)",
+      "example": "The cat is on the table.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "on là chạm bề mặt, in là ở bên trong."
+    },
+    {
+      "word": "under",
+      "pos": "adv",
+      "ipa": "/ˈʌndə/",
+      "vi": "ở dưới",
+      "example": "My shoes are under the bed.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: on."
+    },
+    {
+      "word": "behind",
+      "pos": "adv",
+      "ipa": "/bɪˈhaɪnd/",
+      "vi": "ở phía sau",
+      "example": "The garden is behind my house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: in front of."
+    },
+    {
+      "word": "in front of",
+      "pos": "phr",
+      "ipa": "/ɪn ˈfrʌnt əv/",
+      "vi": "ở phía trước",
+      "example": "A tree is in front of the house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: behind."
+    },
+    {
+      "word": "next to",
+      "pos": "phr",
+      "ipa": "/ˈnekst tə/",
+      "vi": "bên cạnh",
+      "example": "She sits next to me.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "giống beside."
+    },
+    {
+      "word": "between",
+      "pos": "adv",
+      "ipa": "/bɪˈtwiːn/",
+      "vi": "ở giữa (hai thứ)",
+      "example": "The shop is between two houses.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "between A and B."
+    },
+    {
+      "word": "near",
+      "pos": "adv",
+      "ipa": "/nɪə/",
+      "vi": "gần",
+      "example": "My school is near my house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: far."
+    },
+    {
+      "word": "above",
+      "pos": "adv",
+      "ipa": "/əˈbʌv/",
+      "vi": "ở bên trên (không chạm)",
+      "example": "The clock is above the door.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "khác on vì không chạm vào vật."
+    },
+    {
+      "word": "below",
+      "pos": "adv",
+      "ipa": "/bɪˈləʊ/",
+      "vi": "ở bên dưới",
+      "example": "Write your name below the line.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: above."
+    },
+    {
+      "word": "inside",
+      "pos": "adv",
+      "ipa": "/ˌɪnˈsaɪd/",
+      "vi": "bên trong",
+      "example": "The children play inside today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: outside."
+    },
+    {
+      "word": "outside",
+      "pos": "adv",
+      "ipa": "/ˌaʊtˈsaɪd/",
+      "vi": "bên ngoài",
+      "example": "My dog sleeps outside the house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: inside."
+    },
+    {
+      "word": "here",
+      "pos": "adv",
+      "ipa": "/hɪə/",
+      "vi": "ở đây",
+      "example": "Please put your bag here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: there."
+    },
+    {
+      "word": "there",
+      "pos": "adv",
+      "ipa": "/ðeə/",
+      "vi": "ở đó, ở kia",
+      "example": "My friend lives over there.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "khác their (của họ) dù đọc giống."
+    },
+    {
+      "word": "left",
+      "pos": "adv",
+      "ipa": "/left/",
+      "vi": "bên trái",
+      "example": "Turn left at the school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "on the left: ở bên trái."
+    },
+    {
+      "word": "right",
+      "pos": "adv",
+      "ipa": "/raɪt/",
+      "vi": "bên phải",
+      "example": "The bank is on the right.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: left; right còn nghĩa là đúng."
+    },
+    {
+      "word": "up",
+      "pos": "adv",
+      "ipa": "/ʌp/",
+      "vi": "lên, ở trên cao",
+      "example": "The cat goes up the tree.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: down."
+    },
+    {
+      "word": "down",
+      "pos": "adv",
+      "ipa": "/daʊn/",
+      "vi": "xuống",
+      "example": "We walk down the stairs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: up; sit down: ngồi xuống."
+    },
+    {
+      "word": "into",
+      "pos": "adv",
+      "ipa": "/ˈɪntuː/",
+      "vi": "vào trong",
+      "example": "She goes into the room.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "into chỉ chuyển động, in chỉ vị trí."
+    },
+    {
+      "word": "out of",
+      "pos": "phr",
+      "ipa": "/ˈaʊt əv/",
+      "vi": "ra khỏi",
+      "example": "He comes out of the house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: into."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+## 19. Từ nối và từ chức năng
+
+- **and (adv) /ænd/**: và.
+  - _Ví dụ_: I like tea and coffee.
+  - _Lưu ý_: nối hai từ hoặc hai câu cùng ý.
+- **but (adv) /bʌt/**: nhưng.
+  - _Ví dụ_: She is small but strong.
+  - _Lưu ý_: dùng khi hai ý trái ngược nhau.
+- **or (adv) /ɔː/**: hoặc, hay.
+  - _Ví dụ_: Do you want tea or coffee?
+  - _Lưu ý_: dùng khi chọn một trong hai.
+- **so (adv) /səʊ/**: vì vậy, nên.
+  - _Ví dụ_: It is late, so I go home.
+  - _Lưu ý_: so đứng trước kết quả.
+- **because (adv) /bɪˈkɒz/**: bởi vì.
+  - _Ví dụ_: I stay home because it rains.
+  - _Lưu ý_: because đứng trước lý do; so đứng trước kết quả.
+- **if (adv) /ɪf/**: nếu.
+  - _Ví dụ_: If it rains, I stay home.
+  - _Lưu ý_: sau if dùng thì hiện tại, không dùng will.
+- **when (adv) /wen/**: khi; khi nào.
+  - _Ví dụ_: When do you go to school?
+  - _Lưu ý_: vừa là từ hỏi, vừa là từ nối.
+- **then (adv) /ðen/**: rồi, sau đó.
+  - _Ví dụ_: I eat breakfast, then I study.
+  - _Lưu ý_: dùng để kể thứ tự việc làm.
+- **also (adv) /ˈɔːlsəʊ/**: cũng.
+  - _Ví dụ_: She also speaks English.
+  - _Lưu ý_: also đứng giữa câu, too đứng cuối câu.
+- **too (adv) /tuː/**: cũng; quá.
+  - _Ví dụ_: I am tired too.
+  - _Lưu ý_: too + tính từ nghĩa là quá: too hot.
+- **very (adv) /ˈveri/**: rất.
+  - _Ví dụ_: This book is very good.
+  - _Lưu ý_: very là khen ngợi, too là chê (quá mức).
+- **really (adv) /ˈrɪəli/**: thật sự, rất.
+  - _Ví dụ_: I really like this song.
+  - _Lưu ý_: dùng trước động từ hoặc tính từ.
+- **always (adv) /ˈɔːlweɪz/**: luôn luôn.
+  - _Ví dụ_: He always gets up early.
+  - _Lưu ý_: đứng trước động từ thường, sau động từ be.
+- **usually (adv) /ˈjuːʒuəli/**: thường thường.
+  - _Ví dụ_: We usually have rice for lunch.
+  - _Lưu ý_: ít hơn always, nhiều hơn sometimes.
+- **sometimes (adv) /ˈsʌmtaɪmz/**: thỉnh thoảng.
+  - _Ví dụ_: Sometimes I walk to school.
+  - _Lưu ý_: có thể đứng đầu câu.
+- **never (adv) /ˈnevə/**: không bao giờ.
+  - _Ví dụ_: She never eats meat.
+  - _Lưu ý_: bản thân đã mang nghĩa phủ định, không thêm not.
+- **already (adv) /ɔːlˈredi/**: đã, rồi.
+  - _Ví dụ_: I already know his name.
+  - _Lưu ý_: nói việc đã xong sớm hơn mong đợi.
+- **still (adv) /stɪl/**: vẫn còn.
+  - _Ví dụ_: He is still at school.
+  - _Lưu ý_: đứng sau be, trước động từ thường.
+- **enough (adv) /ɪˈnʌf/**: đủ.
+  - _Ví dụ_: We have enough time today.
+  - _Lưu ý_: enough + danh từ, nhưng tính từ + enough: good enough.
+- **another (adj) /əˈnʌðə/**: một cái khác, thêm một.
+  - _Ví dụ_: I want another cup of tea.
+  - _Lưu ý_: another + danh từ số ít.
+- **without (adv) /wɪˈðaʊt/**: không có, thiếu.
+  - _Ví dụ_: I drink tea without sugar.
+  - _Lưu ý_: trái nghĩa: with.
+- **about (adv) /əˈbaʊt/**: về (chủ đề); khoảng.
+  - _Ví dụ_: This book is about animals.
+  - _Lưu ý_: about còn nghĩa là khoảng chừng: about ten.

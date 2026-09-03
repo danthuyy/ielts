@@ -1,0 +1,277 @@
+{
+  "id": "basic_14",
+  "title": "Nền tảng 14 — Cảm xúc và tính cách",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "happy",
+      "pos": "adj",
+      "ipa": "/ˈhæpi/",
+      "vi": "vui, hạnh phúc",
+      "example": "I am happy today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sad",
+      "pos": "adj",
+      "ipa": "/sæd/",
+      "vi": "buồn",
+      "example": "My friend is very sad.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "angry",
+      "pos": "adj",
+      "ipa": "/ˈæŋɡri/",
+      "vi": "giận dữ",
+      "example": "My mother is angry now.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tired",
+      "pos": "adj",
+      "ipa": "/ˈtaɪəd/",
+      "vi": "mệt",
+      "example": "I am tired after school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "afraid",
+      "pos": "adj",
+      "ipa": "/əˈfreɪd/",
+      "vi": "sợ",
+      "example": "She is afraid of dogs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bored",
+      "pos": "adj",
+      "ipa": "/bɔːd/",
+      "vi": "chán",
+      "example": "The children are bored.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "excited",
+      "pos": "adj",
+      "ipa": "/ɪkˈsaɪtɪd/",
+      "vi": "hào hứng",
+      "example": "We are excited about the trip.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "worried",
+      "pos": "adj",
+      "ipa": "/ˈwʌrid/",
+      "vi": "lo lắng",
+      "example": "My father is worried today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "kind",
+      "pos": "adj",
+      "ipa": "/kaɪnd/",
+      "vi": "tốt bụng",
+      "example": "My teacher is very kind.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "funny",
+      "pos": "adj",
+      "ipa": "/ˈfʌni/",
+      "vi": "hài hước",
+      "example": "My brother is funny.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "shy",
+      "pos": "adj",
+      "ipa": "/ʃaɪ/",
+      "vi": "nhút nhát",
+      "example": "The new girl is shy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "lazy",
+      "pos": "adj",
+      "ipa": "/ˈleɪzi/",
+      "vi": "lười biếng",
+      "example": "My cat is very lazy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hard-working",
+      "pos": "adj",
+      "ipa": "/ˌhɑːd ˈwɜːkɪŋ/",
+      "vi": "chăm chỉ",
+      "example": "She is a hard-working student.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "friendly",
+      "pos": "adj",
+      "ipa": "/ˈfrendli/",
+      "vi": "thân thiện",
+      "example": "My neighbours are friendly.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "quiet",
+      "pos": "adj",
+      "ipa": "/ˈkwaɪət/",
+      "vi": "ít nói, yên lặng",
+      "example": "My sister is a quiet girl.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "clever",
+      "pos": "adj",
+      "ipa": "/ˈklevə/",
+      "vi": "thông minh",
+      "example": "He is a clever boy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "polite",
+      "pos": "adj",
+      "ipa": "/pəˈlaɪt/",
+      "vi": "lịch sự",
+      "example": "Vietnamese children are polite.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "brave",
+      "pos": "adj",
+      "ipa": "/breɪv/",
+      "vi": "dũng cảm",
+      "example": "My friend is very brave.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "feel",
+      "pos": "v",
+      "ipa": "/fiːl/",
+      "vi": "cảm thấy",
+      "example": "I feel good today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: felt"
+    },
+    {
+      "word": "laugh",
+      "pos": "v",
+      "ipa": "/lɑːf/",
+      "vi": "cười",
+      "example": "We laugh in class.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cry",
+      "pos": "v",
+      "ipa": "/kraɪ/",
+      "vi": "khóc",
+      "example": "The baby cries at night.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "smile",
+      "pos": "v",
+      "ipa": "/smaɪl/",
+      "vi": "mỉm cười",
+      "example": "She smiles at me.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "love",
+      "pos": "v",
+      "ipa": "/lʌv/",
+      "vi": "yêu, rất thích",
+      "example": "I love my family.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "like",
+      "pos": "v",
+      "ipa": "/laɪk/",
+      "vi": "thích",
+      "example": "We like our new school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

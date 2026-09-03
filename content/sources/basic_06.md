@@ -1,0 +1,46 @@
+## 6. Gia đình và người thân
+
+- **family (n) /ˈfæməli/**: gia đình.
+  - _Ví dụ_: My family is very small.
+- **father (n) /ˈfɑːðə/**: bố, cha.
+  - _Ví dụ_: My father is a teacher.
+- **mother (n) /ˈmʌðə/**: mẹ.
+  - _Ví dụ_: My mother cooks every day.
+- **parents (n) /ˈpeərənts/**: bố mẹ.
+  - _Ví dụ_: My parents work in a shop.
+- **brother (n) /ˈbrʌðə/**: anh trai, em trai.
+  - _Ví dụ_: My brother plays football.
+- **sister (n) /ˈsɪstə/**: chị gái, em gái.
+  - _Ví dụ_: My sister is ten years old.
+- **son (n) /sʌn/**: con trai.
+  - _Ví dụ_: They have one son.
+- **daughter (n) /ˈdɔːtə/**: con gái.
+  - _Ví dụ_: Her daughter is a student.
+- **grandfather (n) /ˈɡrænfɑːðə/**: ông.
+  - _Ví dụ_: My grandfather likes tea.
+- **grandmother (n) /ˈɡrænmʌðə/**: bà.
+  - _Ví dụ_: My grandmother lives with us.
+- **uncle (n) /ˈʌŋkl/**: chú, bác, cậu.
+  - _Ví dụ_: My uncle has a big car.
+- **aunt (n) /ɑːnt/**: cô, dì, bác gái.
+  - _Ví dụ_: My aunt works in a hospital.
+- **cousin (n) /ˈkʌzn/**: anh chị em họ.
+  - _Ví dụ_: My cousin lives in Hanoi.
+- **husband (n) /ˈhʌzbənd/**: chồng.
+  - _Ví dụ_: Her husband is very kind.
+- **wife (n) /waɪf/**: vợ.
+  - _Ví dụ_: His wife is a nurse.
+- **child (n) /tʃaɪld/**: đứa trẻ, con.
+  - _Ví dụ_: The child is very happy.
+- **children (n) /ˈtʃɪldrən/**: những đứa trẻ.
+  - _Ví dụ_: The children play in the garden.
+- **baby (n) /ˈbeɪbi/**: em bé.
+  - _Ví dụ_: The baby sleeps all day.
+- **grandparents (n) /ˈɡrænpeərənts/**: ông bà.
+  - _Ví dụ_: My grandparents live in the country.
+- **relative (n) /ˈrelətɪv/**: người thân, họ hàng.
+  - _Ví dụ_: We visit our relatives every year.
+- **love (v) /lʌv/**: yêu, thương.
+  - _Ví dụ_: I love my family.
+- **live (v) /lɪv/**: sống, ở.
+  - _Ví dụ_: We live in a small house.

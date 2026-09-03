@@ -1,0 +1,46 @@
+## 9. Nhà cửa và đồ đạc
+
+- **house (n) /haʊs/**: ngôi nhà.
+  - _Ví dụ_: Their house is very old.
+- **home (n) /həʊm/**: nhà, tổ ấm.
+  - _Ví dụ_: I stay at home today.
+- **room (n) /ruːm/**: căn phòng.
+  - _Ví dụ_: This room is very small.
+- **bedroom (n) /ˈbedruːm/**: phòng ngủ.
+  - _Ví dụ_: My bedroom is upstairs.
+- **kitchen (n) /ˈkɪtʃɪn/**: nhà bếp.
+  - _Ví dụ_: Mum cooks in the kitchen.
+- **bathroom (n) /ˈbɑːθruːm/**: phòng tắm.
+  - _Ví dụ_: The bathroom is very clean.
+- **door (n) /dɔː/**: cửa ra vào.
+  - _Ví dụ_: Please close the door.
+- **window (n) /ˈwɪndəʊ/**: cửa sổ.
+  - _Ví dụ_: The window is open now.
+- **wall (n) /wɔːl/**: bức tường.
+  - _Ví dụ_: The wall is white.
+- **floor (n) /flɔː/**: sàn nhà, tầng.
+  - _Ví dụ_: The cat sleeps on the floor.
+- **table (n) /ˈteɪbl/**: cái bàn.
+  - _Ví dụ_: We eat at the table.
+- **bed (n) /bed/**: cái giường.
+  - _Ví dụ_: My bed is very soft.
+- **sofa (n) /ˈsəʊfə/**: ghế sofa.
+  - _Ví dụ_: Dad sits on the sofa.
+- **lamp (n) /læmp/**: đèn bàn.
+  - _Ví dụ_: The lamp is on my desk.
+- **fridge (n) /frɪdʒ/**: tủ lạnh.
+  - _Ví dụ_: The milk is in the fridge.
+- **television (n) /ˈtelɪvɪʒn/**: tivi.
+  - _Ví dụ_: We watch television at night.
+- **garden (n) /ˈɡɑːdn/**: khu vườn.
+  - _Ví dụ_: Our garden has many flowers.
+- **kitchen sink (n) /ˈkɪtʃɪn sɪŋk/**: bồn rửa bát.
+  - _Ví dụ_: The plates are in the kitchen sink.
+- **cupboard (n) /ˈkʌbəd/**: tủ đựng đồ.
+  - _Ví dụ_: The cups are in the cupboard.
+- **stairs (n) /steəz/**: cầu thang.
+  - _Ví dụ_: The stairs are very narrow.
+- **clean (adj) /kliːn/**: sạch sẽ.
+  - _Ví dụ_: My room is very clean.
+- **open (v) /ˈəʊpən/**: mở.
+  - _Ví dụ_: I open the window every morning.

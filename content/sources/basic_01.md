@@ -1,0 +1,81 @@
+## 1. Bảng chữ cái và âm cơ bản
+
+- **apple (n) /ˈæp.əl/**: quả táo.
+  - _Ví dụ_: I eat an apple.
+  - _Lưu ý_: chữ **a** đọc /æ/ như trong apple (miệng mở rộng, giữa "a" và "e").
+- **ball (n) /bɔːl/**: quả bóng.
+  - _Ví dụ_: The ball is big.
+  - _Lưu ý_: chữ **b** đọc /b/ như trong ball, giống "b" tiếng Việt.
+- **cat (n) /kæt/**: con mèo.
+  - _Ví dụ_: My cat is small.
+  - _Lưu ý_: chữ **c** đọc /k/ như trong cat (giống "c" trong "cá").
+- **dog (n) /dɒɡ/**: con chó.
+  - _Ví dụ_: The dog is here.
+  - _Lưu ý_: chữ **d** đọc /d/ như trong dog, phát âm mạnh hơn "đ" tiếng Việt.
+- **egg (n) /eɡ/**: quả trứng.
+  - _Ví dụ_: I like eggs.
+  - _Lưu ý_: chữ **e** đọc /e/ như trong egg (giống "e" tiếng Việt).
+- **fish (n) /fɪʃ/**: con cá.
+  - _Ví dụ_: The fish is in water.
+  - _Lưu ý_: chữ **f** đọc /f/ như trong fish (răng trên chạm môi dưới).
+- **girl (n) /ɡɜːl/**: bé gái, cô gái.
+  - _Ví dụ_: The girl is my friend.
+  - _Lưu ý_: chữ **g** đọc /ɡ/ như trong girl (giống "g" trong "gà").
+- **hat (n) /hæt/**: cái mũ.
+  - _Ví dụ_: My hat is new.
+  - _Lưu ý_: chữ **h** đọc /h/ như trong hat, hơi thoát nhẹ ra ngoài.
+- **ink (n) /ɪŋk/**: mực (bút).
+  - _Ví dụ_: The ink is here.
+  - _Lưu ý_: chữ **i** đọc /ɪ/ như trong ink (ngắn, không kéo dài thành "i").
+- **jam (n) /dʒæm/**: mứt.
+  - _Ví dụ_: I like jam.
+  - _Lưu ý_: chữ **j** đọc /dʒ/ như trong jam (gần giống "gi" nhưng bật hơn).
+- **key (n) /kiː/**: chìa khoá.
+  - _Ví dụ_: This is my key.
+  - _Lưu ý_: chữ **k** đọc /k/ như trong key.
+- **leg (n) /leɡ/**: cái chân.
+  - _Ví dụ_: My leg is long.
+  - _Lưu ý_: chữ **l** đọc /l/ như trong leg (đầu lưỡi chạm lợi trên).
+- **milk (n) /mɪlk/**: sữa.
+  - _Ví dụ_: I drink milk.
+  - _Lưu ý_: chữ **m** đọc /m/ như trong milk.
+- **nose (n) /nəʊz/**: cái mũi.
+  - _Ví dụ_: My nose is small.
+  - _Lưu ý_: chữ **n** đọc /n/ như trong nose.
+- **orange (n) /ˈɒr.ɪndʒ/**: quả cam.
+  - _Ví dụ_: I have an orange.
+  - _Lưu ý_: chữ **o** đọc /ɒ/ như trong orange (giống "o" ngắn trong "ong").
+- **pen (n) /pen/**: cây bút.
+  - _Ví dụ_: This pen is new.
+  - _Lưu ý_: chữ **p** đọc /p/ như trong pen, bật hơi mạnh hơn "p" tiếng Việt.
+- **rain (n) /reɪn/**: mưa.
+  - _Ví dụ_: I like the rain.
+  - _Lưu ý_: chữ **r** đọc /r/ như trong rain (cong lưỡi, không rung như "r" tiếng Việt).
+- **sun (n) /sʌn/**: mặt trời.
+  - _Ví dụ_: The sun is hot.
+  - _Lưu ý_: chữ **s** đọc /s/ như trong sun.
+- **table (n) /ˈteɪ.bəl/**: cái bàn.
+  - _Ví dụ_: My book is on the table.
+  - _Lưu ý_: chữ **t** đọc /t/ như trong table, bật hơi mạnh.
+- **umbrella (n) /ʌmˈbrel.ə/**: cái ô, cái dù.
+  - _Ví dụ_: I have an umbrella.
+  - _Lưu ý_: chữ **u** đọc /ʌ/ như trong umbrella (giống "â" tiếng Việt).
+- **van (n) /væn/**: xe tải nhỏ.
+  - _Ví dụ_: The van is old.
+  - _Lưu ý_: chữ **v** đọc /v/ như trong van (răng chạm môi, có rung).
+- **water (n) /ˈwɔː.tər/**: nước.
+  - _Ví dụ_: I drink water every day.
+  - _Lưu ý_: chữ **w** đọc /w/ như trong water (tròn môi, giống "u" lướt nhanh).
+- **yes (adv) /jes/**: vâng, có.
+  - _Ví dụ_: Yes, I like milk.
+  - _Lưu ý_: chữ **y** đọc /j/ như trong yes (giống "d" trong "da" giọng Nam).
+- **zoo (n) /zuː/**: sở thú.
+  - _Ví dụ_: I go to the zoo.
+  - _Lưu ý_: chữ **z** đọc /z/ như trong zoo (giống /s/ nhưng có rung cổ họng).
+
+- **queen (n) /kwiːn/**: nữ hoàng.
+  - _Ví dụ_: The queen has a big house.
+  - _Lưu ý_: chữ q luôn đi với u, đọc /kw/ như trong queen.
+- **box (n) /bɒks/**: cái hộp.
+  - _Ví dụ_: The book is in the box.
+  - _Lưu ý_: chữ x đọc /ks/, thường nằm cuối từ như trong box.

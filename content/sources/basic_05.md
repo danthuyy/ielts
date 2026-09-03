@@ -1,0 +1,68 @@
+## 5. Màu sắc và hình dạng
+
+- **colour (n) /ˈkʌl.ər/**: màu sắc.
+  - _Ví dụ_: I like this colour.
+  - _Lưu ý_: Anh-Anh viết "colour", Anh-Mỹ viết "color".
+- **red (adj) /red/**: màu đỏ.
+  - _Ví dụ_: My hat is red.
+  - _Lưu ý_: ngắn gọn, chữ r cong lưỡi.
+- **blue (adj) /bluː/**: màu xanh dương.
+  - _Ví dụ_: The sea is blue.
+  - _Lưu ý_: chữ e cuối câm, đọc /bluː/.
+- **green (adj) /ɡriːn/**: màu xanh lá.
+  - _Ví dụ_: The tree is green.
+  - _Lưu ý_: **ee** đọc /iː/ dài.
+- **yellow (adj) /ˈjel.əʊ/**: màu vàng.
+  - _Ví dụ_: The sun is yellow.
+  - _Lưu ý_: bắt đầu bằng /j/ như yes; đuôi -ow đọc /əʊ/.
+- **black (adj) /blæk/**: màu đen.
+  - _Ví dụ_: My cat is black.
+  - _Lưu ý_: có /æ/ như cat.
+- **white (adj) /waɪt/**: màu trắng.
+  - _Ví dụ_: The moon is white.
+  - _Lưu ý_: **wh** đọc /w/; chữ i đọc /aɪ/.
+- **brown (adj) /braʊn/**: màu nâu.
+  - _Ví dụ_: My dog is brown.
+  - _Lưu ý_: **ow** ở đây đọc /aʊ/ như house.
+- **pink (adj) /pɪŋk/**: màu hồng.
+  - _Ví dụ_: Her bag is pink.
+  - _Lưu ý_: đuôi -nk đọc /ŋk/ như think.
+- **purple (adj) /ˈpɜː.pəl/**: màu tím.
+  - _Ví dụ_: I have a purple pen.
+  - _Lưu ý_: có /ɜː/ như bird.
+- **grey (adj) /ɡreɪ/**: màu xám.
+  - _Ví dụ_: The sky is grey today.
+  - _Lưu ý_: Anh-Anh viết "grey", Anh-Mỹ viết "gray".
+- **dark (adj) /dɑːk/**: (màu) đậm, tối.
+  - _Ví dụ_: I like dark blue.
+  - _Lưu ý_: **ar** đọc /ɑː/ như car.
+- **light (adj) /laɪt/**: (màu) nhạt, sáng.
+  - _Ví dụ_: Her bag is light green.
+  - _Lưu ý_: chữ gh câm, đọc /laɪt/.
+- **shape (n) /ʃeɪp/**: hình, hình dạng.
+  - _Ví dụ_: What shape is it?
+  - _Lưu ý_: **sh** đọc /ʃ/; chữ a đọc /eɪ/ vì có e câm cuối.
+- **circle (n) /ˈsɜː.kəl/**: hình tròn.
+  - _Ví dụ_: The moon is a circle.
+  - _Lưu ý_: chữ c đầu đọc /s/ vì đứng trước i.
+- **square (n) /skweər/**: hình vuông.
+  - _Ví dụ_: This box is a square.
+  - _Lưu ý_: **qu** đọc /kw/, tròn môi.
+- **triangle (n) /ˈtraɪ.æŋ.ɡəl/**: hình tam giác.
+  - _Ví dụ_: A triangle has three lines.
+  - _Lưu ý_: "tri-" nghĩa là ba, dễ nhớ với three.
+- **rectangle (n) /ˈrek.tæŋ.ɡəl/**: hình chữ nhật.
+  - _Ví dụ_: My table is a rectangle.
+  - _Lưu ý_: nhấn âm đầu: REC-tan-gle.
+- **star (n) /stɑːr/**: ngôi sao, hình ngôi sao.
+  - _Ví dụ_: I see a star.
+  - _Lưu ý_: **ar** đọc /ɑː/ như car.
+- **heart (n) /hɑːt/**: hình trái tim, trái tim.
+  - _Ví dụ_: I draw a red heart.
+  - _Lưu ý_: **ear** ở đây đọc /ɑː/, không đọc như "hear".
+- **line (n) /laɪn/**: đường thẳng, nét.
+  - _Ví dụ_: I draw a long line.
+  - _Lưu ý_: chữ i đọc /aɪ/ vì có e câm cuối.
+- **round (adj) /raʊnd/**: tròn.
+  - _Ví dụ_: The ball is round.
+  - _Lưu ý_: **ou** đọc /aʊ/ như house.

@@ -1,0 +1,46 @@
+## 8. Lớp học và đồ dùng học tập
+
+- **school (n) /skuːl/**: trường học.
+  - _Ví dụ_: I go to school every day.
+- **class (n) /klɑːs/**: lớp, buổi học.
+  - _Ví dụ_: My class starts at seven.
+- **classroom (n) /ˈklɑːsruːm/**: phòng học.
+  - _Ví dụ_: Our classroom is very big.
+- **teacher (n) /ˈtiːtʃə/**: giáo viên.
+  - _Ví dụ_: My teacher is very nice.
+- **student (n) /ˈstjuːdnt/**: học sinh, sinh viên.
+  - _Ví dụ_: She is a good student.
+- **friend (n) /frend/**: bạn.
+  - _Ví dụ_: My friend sits next to me.
+- **desk (n) /desk/**: bàn học.
+  - _Ví dụ_: My books are on the desk.
+- **chair (n) /tʃeə/**: cái ghế.
+  - _Ví dụ_: The chair is very old.
+- **board (n) /bɔːd/**: bảng.
+  - _Ví dụ_: The teacher writes on the board.
+- **book (n) /bʊk/**: quyển sách.
+  - _Ví dụ_: I read a book at night.
+- **notebook (n) /ˈnəʊtbʊk/**: quyển vở.
+  - _Ví dụ_: My notebook is blue.
+- **pen (n) /pen/**: bút mực.
+  - _Ví dụ_: I write with a pen.
+- **pencil (n) /ˈpensl/**: bút chì.
+  - _Ví dụ_: This pencil is very short.
+- **ruler (n) /ˈruːlə/**: thước kẻ.
+  - _Ví dụ_: I need a ruler now.
+- **eraser (n) /ɪˈreɪzə/**: cục tẩy.
+  - _Ví dụ_: My eraser is very small.
+- **bag (n) /bæɡ/**: cặp, túi.
+  - _Ví dụ_: My bag is very heavy.
+- **homework (n) /ˈhəʊmwɜːk/**: bài tập về nhà.
+  - _Ví dụ_: I do my homework after school.
+- **lesson (n) /ˈlesn/**: bài học.
+  - _Ví dụ_: This lesson is very easy.
+- **test (n) /test/**: bài kiểm tra.
+  - _Ví dụ_: We have a test today.
+- **learn (v) /lɜːn/**: học.
+  - _Ví dụ_: We learn English at school.
+- **write (v) /raɪt/**: viết.
+  - _Ví dụ_: I write my name here.
+- **read (v) /riːd/**: đọc.
+  - _Ví dụ_: She reads a new book.

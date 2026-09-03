@@ -1,0 +1,255 @@
+{
+  "id": "basic_10",
+  "title": "Nền tảng 10 — Quần áo và đồ dùng cá nhân",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "clothes",
+      "pos": "n",
+      "ipa": "/kləʊðz/",
+      "vi": "quần áo",
+      "example": "My clothes are new.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "shirt",
+      "pos": "n",
+      "ipa": "/ʃɜːt/",
+      "vi": "áo sơ mi",
+      "example": "His shirt is white.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "t-shirt",
+      "pos": "n",
+      "ipa": "/ˈtiː ʃɜːt/",
+      "vi": "áo phông",
+      "example": "I wear a red T-shirt.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "trousers",
+      "pos": "n",
+      "ipa": "/ˈtraʊzəz/",
+      "vi": "quần dài",
+      "example": "These trousers are too long.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "dress",
+      "pos": "n",
+      "ipa": "/dres/",
+      "vi": "váy liền",
+      "example": "She has a blue dress.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "skirt",
+      "pos": "n",
+      "ipa": "/skɜːt/",
+      "vi": "chân váy",
+      "example": "Her skirt is very short.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "shoes",
+      "pos": "n",
+      "ipa": "/ʃuːz/",
+      "vi": "giày",
+      "example": "My shoes are black.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "socks",
+      "pos": "n",
+      "ipa": "/sɒks/",
+      "vi": "tất, vớ",
+      "example": "I wear warm socks today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hat",
+      "pos": "n",
+      "ipa": "/hæt/",
+      "vi": "mũ",
+      "example": "He wears a big hat.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "coat",
+      "pos": "n",
+      "ipa": "/kəʊt/",
+      "vi": "áo khoác dài",
+      "example": "My coat is very warm.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "jacket",
+      "pos": "n",
+      "ipa": "/ˈdʒækɪt/",
+      "vi": "áo khoác ngắn",
+      "example": "Her jacket is very nice.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "glasses",
+      "pos": "n",
+      "ipa": "/ˈɡlɑːsɪz/",
+      "vi": "kính mắt",
+      "example": "My glasses are on the table.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "watch",
+      "pos": "n",
+      "ipa": "/wɒtʃ/",
+      "vi": "đồng hồ đeo tay",
+      "example": "His watch is very old.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "phone",
+      "pos": "n",
+      "ipa": "/fəʊn/",
+      "vi": "điện thoại",
+      "example": "My phone is in my bag.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "key",
+      "pos": "n",
+      "ipa": "/kiː/",
+      "vi": "chìa khóa",
+      "example": "I have two keys.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wallet",
+      "pos": "n",
+      "ipa": "/ˈwɒlɪt/",
+      "vi": "cái ví",
+      "example": "His wallet is brown.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "umbrella",
+      "pos": "n",
+      "ipa": "/ʌmˈbrelə/",
+      "vi": "cái ô, dù",
+      "example": "I need an umbrella today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "comb",
+      "pos": "n",
+      "ipa": "/kəʊm/",
+      "vi": "cái lược",
+      "example": "The comb is very small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "soap",
+      "pos": "n",
+      "ipa": "/səʊp/",
+      "vi": "xà phòng",
+      "example": "The soap smells nice.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "towel",
+      "pos": "n",
+      "ipa": "/ˈtaʊəl/",
+      "vi": "cái khăn",
+      "example": "My towel is very wet.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wear",
+      "pos": "v",
+      "ipa": "/weə/",
+      "vi": "mặc, đội, đeo",
+      "example": "I wear a hat in summer.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "new",
+      "pos": "adj",
+      "ipa": "/njuː/",
+      "vi": "mới",
+      "example": "My shoes are new.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

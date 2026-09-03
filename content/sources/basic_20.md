@@ -1,0 +1,68 @@
+## 20. Câu giao tiếp hằng ngày
+
+- **How are you? (phr) /ˌhaʊ ə ˈjuː/**: Bạn khỏe không?
+  - _Ví dụ_: Hello Nam! How are you?
+  - _Lưu ý_: câu chào hỏi hằng ngày với người quen.
+- **I'm fine, thank you. (phr) /aɪm ˈfaɪn ˌθæŋk ˈjuː/**: Tôi khỏe, cảm ơn bạn.
+  - _Ví dụ_: I'm fine, thank you. And you?
+  - _Lưu ý_: câu trả lời cho How are you?
+- **Good morning. (phr) /ˌɡʊd ˈmɔːnɪŋ/**: Chào buổi sáng.
+  - _Ví dụ_: Good morning, teacher!
+  - _Lưu ý_: buổi chiều nói Good afternoon.
+- **Nice to meet you. (phr) /ˌnaɪs tə ˈmiːt juː/**: Rất vui được gặp bạn.
+  - _Ví dụ_: I am Lan. Nice to meet you.
+  - _Lưu ý_: chỉ dùng khi gặp lần đầu tiên.
+- **What's your name? (phr) /ˌwɒts jɔː ˈneɪm/**: Bạn tên là gì?
+  - _Ví dụ_: Hello! What's your name?
+  - _Lưu ý_: What's là dạng rút gọn của What is.
+- **My name is Nam. (phr) /maɪ ˈneɪm ɪz ˈnæm/**: Tôi tên là Nam.
+  - _Ví dụ_: My name is Nam. I am a student.
+  - _Lưu ý_: có thể nói ngắn hơn: I'm Nam.
+- **How old are you? (phr) /ˌhaʊ ˈəʊld ə juː/**: Bạn bao nhiêu tuổi?
+  - _Ví dụ_: How old are you? I am fourteen.
+  - _Lưu ý_: trả lời: I am fourteen (years old).
+- **Where are you from? (phr) /ˌweər ə juː ˈfrɒm/**: Bạn đến từ đâu?
+  - _Ví dụ_: Where are you from, Mary?
+  - _Lưu ý_: hỏi về quê hương hoặc đất nước.
+- **I'm from Vietnam. (phr) /aɪm frəm ˌvjetˈnæm/**: Tôi đến từ Việt Nam.
+  - _Ví dụ_: I'm from Vietnam. I live in Hue.
+  - _Lưu ý_: tên nước luôn viết hoa.
+- **Excuse me. (phr) /ɪkˈskjuːz miː/**: Xin lỗi cho hỏi. / Làm ơn.
+  - _Ví dụ_: Excuse me, where is the school?
+  - _Lưu ý_: dùng khi bắt chuyện hoặc xin đi qua.
+- **I'm sorry. (phr) /aɪm ˈsɒri/**: Tôi xin lỗi.
+  - _Ví dụ_: I'm sorry. I am late.
+  - _Lưu ý_: dùng khi mình làm sai, khác Excuse me.
+- **That's OK. (phr) /ˌðæts əʊˈkeɪ/**: Không sao đâu.
+  - _Ví dụ_: That's OK. Please sit down.
+  - _Lưu ý_: câu trả lời cho I'm sorry.
+- **Thank you very much. (phr) /ˌθæŋk juː ˈveri ˈmʌtʃ/**: Cảm ơn bạn rất nhiều.
+  - _Ví dụ_: Thank you very much for your help.
+  - _Lưu ý_: nói ngắn gọn: Thanks.
+- **You're welcome. (phr) /jɔː ˈwelkəm/**: Không có gì.
+  - _Ví dụ_: You're welcome. See you tomorrow.
+  - _Lưu ý_: câu trả lời cho Thank you.
+- **I don't understand. (phr) /aɪ ˌdəʊnt ˌʌndəˈstænd/**: Tôi không hiểu.
+  - _Ví dụ_: Sorry, I don't understand this word.
+  - _Lưu ý_: rất hữu ích trong lớp học.
+- **Can you help me? (phr) /kən juː ˈhelp miː/**: Bạn giúp tôi được không?
+  - _Ví dụ_: Excuse me, can you help me?
+  - _Lưu ý_: lịch sự hơn: Could you help me?
+- **Can you say that again? (phr) /kən juː ˌseɪ ðæt əˈɡen/**: Bạn nói lại được không?
+  - _Ví dụ_: Sorry, can you say that again?
+  - _Lưu ý_: dùng khi nghe chưa rõ.
+- **How do you spell it? (phr) /ˌhaʊ də juː ˈspel ɪt/**: Từ đó đánh vần thế nào?
+  - _Ví dụ_: Nice name! How do you spell it?
+  - _Lưu ý_: dùng khi muốn biết cách viết một từ.
+- **How much is it? (phr) /ˌhaʊ ˈmʌtʃ ɪz ɪt/**: Cái này bao nhiêu tiền?
+  - _Ví dụ_: I like this hat. How much is it?
+  - _Lưu ý_: dùng khi đi mua đồ.
+- **What time is it? (phr) /ˌwɒt ˈtaɪm ɪz ɪt/**: Mấy giờ rồi?
+  - _Ví dụ_: Excuse me, what time is it?
+  - _Lưu ý_: trả lời: It is seven o'clock.
+- **Good luck! (phr) /ˌɡʊd ˈlʌk/**: Chúc may mắn!
+  - _Ví dụ_: Good luck with your test!
+  - _Lưu ý_: nói trước kỳ thi hoặc việc quan trọng.
+- **See you later. (phr) /ˌsiː juː ˈleɪtə/**: Hẹn gặp lại.
+  - _Ví dụ_: Goodbye! See you later.
+  - _Lưu ý_: cũng nói See you tomorrow.

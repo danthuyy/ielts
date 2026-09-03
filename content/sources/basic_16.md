@@ -1,0 +1,68 @@
+## 16. Động từ hằng ngày (2)
+
+- **work (v) /wɜːk/**: làm việc.
+  - _Ví dụ_: My father works in a factory.
+  - _Lưu ý_: cũng là danh từ: go to work (đi làm).
+- **study (v) /ˈstʌdi/**: học, học tập.
+  - _Ví dụ_: We study English every day.
+  - _Lưu ý_: study nghiêng về học ở trường, có sách vở.
+- **help (v) /help/**: giúp, giúp đỡ.
+  - _Ví dụ_: I help my mother at home.
+  - _Lưu ý_: help somebody (with something).
+- **buy (v) /baɪ/**: mua.
+  - _Ví dụ_: She buys bread every morning.
+  - _Lưu ý_: quá khứ bất quy tắc: bought.
+- **sell (v) /sel/**: bán.
+  - _Ví dụ_: They sell fruit at the market.
+  - _Lưu ý_: trái nghĩa với buy; quá khứ: sold.
+- **give (v) /ɡɪv/**: cho, đưa.
+  - _Ví dụ_: He gives me a new book.
+  - _Lưu ý_: give somebody something = give something to somebody.
+- **take (v) /teɪk/**: lấy, cầm, đi (xe).
+  - _Ví dụ_: I take the bus to school.
+  - _Lưu ý_: trái nghĩa với give; quá khứ: took.
+- **make (v) /meɪk/**: làm ra, chế tạo, nấu.
+  - _Ví dụ_: My mother makes very good soup.
+  - _Lưu ý_: make là tạo ra vật mới; quá khứ: made.
+- **do (v) /duː/**: làm (việc gì đó).
+  - _Ví dụ_: I do my homework after dinner.
+  - _Lưu ý_: do homework, do housework; không dùng make homework.
+- **want (v) /wɒnt/**: muốn.
+  - _Ví dụ_: I want a glass of water.
+  - _Lưu ý_: want to + động từ: I want to go.
+- **like (v) /laɪk/**: thích.
+  - _Ví dụ_: She likes cats and dogs.
+  - _Lưu ý_: like + V-ing: like reading.
+- **love (v) /lʌv/**: yêu, rất thích.
+  - _Ví dụ_: I love my family very much.
+  - _Lưu ý_: mạnh hơn like.
+- **need (v) /niːd/**: cần.
+  - _Ví dụ_: We need more time.
+  - _Lưu ý_: need to + động từ: I need to study.
+- **have (v) /hæv/**: có.
+  - _Ví dụ_: They have two small dogs.
+  - _Lưu ý_: ngôi he/she/it dùng has.
+- **know (v) /nəʊ/**: biết.
+  - _Ví dụ_: I know his name.
+  - _Lưu ý_: chữ k đầu câm, đọc là /nəʊ/.
+- **think (v) /θɪŋk/**: nghĩ, cho rằng.
+  - _Ví dụ_: I think this book is easy.
+  - _Lưu ý_: think about something: nghĩ về việc gì.
+- **say (v) /seɪ/**: nói (lời gì).
+  - _Ví dụ_: She says hello to me.
+  - _Lưu ý_: say something; không nói say me.
+- **tell (v) /tel/**: kể, bảo (ai đó).
+  - _Ví dụ_: Please tell me your name.
+  - _Lưu ý_: tell somebody something; luôn có người nghe.
+- **ask (v) /ɑːsk/**: hỏi, nhờ.
+  - _Ví dụ_: Students ask the teacher many questions.
+  - _Lưu ý_: ask for help: nhờ giúp đỡ.
+- **answer (v) /ˈɑːnsə/**: trả lời.
+  - _Ví dụ_: He answers all the questions.
+  - _Lưu ý_: chữ w câm; cũng là danh từ: an answer.
+- **live (v) /lɪv/**: sống, ở.
+  - _Ví dụ_: We live in a small town.
+  - _Lưu ý_: live in + thành phố, live at + số nhà.
+- **learn (v) /lɜːn/**: học được, tiếp thu.
+  - _Ví dụ_: I learn new words every day.
+  - _Lưu ý_: learn là học được kiến thức mới, study là ngồi học.

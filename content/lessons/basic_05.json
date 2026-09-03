@@ -1,0 +1,255 @@
+{
+  "id": "basic_05",
+  "title": "Nền tảng 05 — Màu sắc và hình dạng",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "colour",
+      "pos": "n",
+      "ipa": "/ˈkʌl.ər/",
+      "vi": "màu sắc",
+      "example": "I like this colour.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "Anh-Anh viết \"colour\", Anh-Mỹ viết \"color\"."
+    },
+    {
+      "word": "red",
+      "pos": "adj",
+      "ipa": "/red/",
+      "vi": "màu đỏ",
+      "example": "My hat is red.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "ngắn gọn, chữ r cong lưỡi."
+    },
+    {
+      "word": "blue",
+      "pos": "adj",
+      "ipa": "/bluː/",
+      "vi": "màu xanh dương",
+      "example": "The sea is blue.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ e cuối câm, đọc /bluː/."
+    },
+    {
+      "word": "green",
+      "pos": "adj",
+      "ipa": "/ɡriːn/",
+      "vi": "màu xanh lá",
+      "example": "The tree is green.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ee** đọc /iː/ dài."
+    },
+    {
+      "word": "yellow",
+      "pos": "adj",
+      "ipa": "/ˈjel.əʊ/",
+      "vi": "màu vàng",
+      "example": "The sun is yellow.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /j/ như yes; đuôi -ow đọc /əʊ/."
+    },
+    {
+      "word": "black",
+      "pos": "adj",
+      "ipa": "/blæk/",
+      "vi": "màu đen",
+      "example": "My cat is black.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có /æ/ như cat."
+    },
+    {
+      "word": "white",
+      "pos": "adj",
+      "ipa": "/waɪt/",
+      "vi": "màu trắng",
+      "example": "The moon is white.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**wh** đọc /w/; chữ i đọc /aɪ/."
+    },
+    {
+      "word": "brown",
+      "pos": "adj",
+      "ipa": "/braʊn/",
+      "vi": "màu nâu",
+      "example": "My dog is brown.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ow** ở đây đọc /aʊ/ như house."
+    },
+    {
+      "word": "pink",
+      "pos": "adj",
+      "ipa": "/pɪŋk/",
+      "vi": "màu hồng",
+      "example": "Her bag is pink.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đuôi -nk đọc /ŋk/ như think."
+    },
+    {
+      "word": "purple",
+      "pos": "adj",
+      "ipa": "/ˈpɜː.pəl/",
+      "vi": "màu tím",
+      "example": "I have a purple pen.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có /ɜː/ như bird."
+    },
+    {
+      "word": "grey",
+      "pos": "adj",
+      "ipa": "/ɡreɪ/",
+      "vi": "màu xám",
+      "example": "The sky is grey today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "Anh-Anh viết \"grey\", Anh-Mỹ viết \"gray\"."
+    },
+    {
+      "word": "dark",
+      "pos": "adj",
+      "ipa": "/dɑːk/",
+      "vi": "(màu) đậm, tối",
+      "example": "I like dark blue.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ar** đọc /ɑː/ như car."
+    },
+    {
+      "word": "light",
+      "pos": "adj",
+      "ipa": "/laɪt/",
+      "vi": "(màu) nhạt, sáng",
+      "example": "Her bag is light green.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ gh câm, đọc /laɪt/."
+    },
+    {
+      "word": "shape",
+      "pos": "n",
+      "ipa": "/ʃeɪp/",
+      "vi": "hình, hình dạng",
+      "example": "What shape is it?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**sh** đọc /ʃ/; chữ a đọc /eɪ/ vì có e câm cuối."
+    },
+    {
+      "word": "circle",
+      "pos": "n",
+      "ipa": "/ˈsɜː.kəl/",
+      "vi": "hình tròn",
+      "example": "The moon is a circle.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ c đầu đọc /s/ vì đứng trước i."
+    },
+    {
+      "word": "square",
+      "pos": "n",
+      "ipa": "/skweər/",
+      "vi": "hình vuông",
+      "example": "This box is a square.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**qu** đọc /kw/, tròn môi."
+    },
+    {
+      "word": "triangle",
+      "pos": "n",
+      "ipa": "/ˈtraɪ.æŋ.ɡəl/",
+      "vi": "hình tam giác",
+      "example": "A triangle has three lines.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "\"tri-\" nghĩa là ba, dễ nhớ với three."
+    },
+    {
+      "word": "rectangle",
+      "pos": "n",
+      "ipa": "/ˈrek.tæŋ.ɡəl/",
+      "vi": "hình chữ nhật",
+      "example": "My table is a rectangle.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm đầu: REC-tan-gle."
+    },
+    {
+      "word": "star",
+      "pos": "n",
+      "ipa": "/stɑːr/",
+      "vi": "ngôi sao, hình ngôi sao",
+      "example": "I see a star.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ar** đọc /ɑː/ như car."
+    },
+    {
+      "word": "heart",
+      "pos": "n",
+      "ipa": "/hɑːt/",
+      "vi": "hình trái tim, trái tim",
+      "example": "I draw a red heart.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ear** ở đây đọc /ɑː/, không đọc như \"hear\"."
+    },
+    {
+      "word": "line",
+      "pos": "n",
+      "ipa": "/laɪn/",
+      "vi": "đường thẳng, nét",
+      "example": "I draw a long line.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ i đọc /aɪ/ vì có e câm cuối."
+    },
+    {
+      "word": "round",
+      "pos": "adj",
+      "ipa": "/raʊnd/",
+      "vi": "tròn",
+      "example": "The ball is round.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ou** đọc /aʊ/ như house."
+    }
+  ]
+}

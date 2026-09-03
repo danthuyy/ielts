@@ -1,0 +1,255 @@
+{
+  "id": "basic_08",
+  "title": "Nền tảng 08 — Lớp học và đồ dùng học tập",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "school",
+      "pos": "n",
+      "ipa": "/skuːl/",
+      "vi": "trường học",
+      "example": "I go to school every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "class",
+      "pos": "n",
+      "ipa": "/klɑːs/",
+      "vi": "lớp, buổi học",
+      "example": "My class starts at seven.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "classroom",
+      "pos": "n",
+      "ipa": "/ˈklɑːsruːm/",
+      "vi": "phòng học",
+      "example": "Our classroom is very big.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "teacher",
+      "pos": "n",
+      "ipa": "/ˈtiːtʃə/",
+      "vi": "giáo viên",
+      "example": "My teacher is very nice.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "student",
+      "pos": "n",
+      "ipa": "/ˈstjuːdnt/",
+      "vi": "học sinh, sinh viên",
+      "example": "She is a good student.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "friend",
+      "pos": "n",
+      "ipa": "/frend/",
+      "vi": "bạn",
+      "example": "My friend sits next to me.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "desk",
+      "pos": "n",
+      "ipa": "/desk/",
+      "vi": "bàn học",
+      "example": "My books are on the desk.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "chair",
+      "pos": "n",
+      "ipa": "/tʃeə/",
+      "vi": "cái ghế",
+      "example": "The chair is very old.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "board",
+      "pos": "n",
+      "ipa": "/bɔːd/",
+      "vi": "bảng",
+      "example": "The teacher writes on the board.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "book",
+      "pos": "n",
+      "ipa": "/bʊk/",
+      "vi": "quyển sách",
+      "example": "I read a book at night.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "notebook",
+      "pos": "n",
+      "ipa": "/ˈnəʊtbʊk/",
+      "vi": "quyển vở",
+      "example": "My notebook is blue.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pen",
+      "pos": "n",
+      "ipa": "/pen/",
+      "vi": "bút mực",
+      "example": "I write with a pen.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pencil",
+      "pos": "n",
+      "ipa": "/ˈpensl/",
+      "vi": "bút chì",
+      "example": "This pencil is very short.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "ruler",
+      "pos": "n",
+      "ipa": "/ˈruːlə/",
+      "vi": "thước kẻ",
+      "example": "I need a ruler now.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eraser",
+      "pos": "n",
+      "ipa": "/ɪˈreɪzə/",
+      "vi": "cục tẩy",
+      "example": "My eraser is very small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bag",
+      "pos": "n",
+      "ipa": "/bæɡ/",
+      "vi": "cặp, túi",
+      "example": "My bag is very heavy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "homework",
+      "pos": "n",
+      "ipa": "/ˈhəʊmwɜːk/",
+      "vi": "bài tập về nhà",
+      "example": "I do my homework after school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "lesson",
+      "pos": "n",
+      "ipa": "/ˈlesn/",
+      "vi": "bài học",
+      "example": "This lesson is very easy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "test",
+      "pos": "n",
+      "ipa": "/test/",
+      "vi": "bài kiểm tra",
+      "example": "We have a test today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "learn",
+      "pos": "v",
+      "ipa": "/lɜːn/",
+      "vi": "học",
+      "example": "We learn English at school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "write",
+      "pos": "v",
+      "ipa": "/raɪt/",
+      "vi": "viết",
+      "example": "I write my name here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "read",
+      "pos": "v",
+      "ipa": "/riːd/",
+      "vi": "đọc",
+      "example": "She reads a new book.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

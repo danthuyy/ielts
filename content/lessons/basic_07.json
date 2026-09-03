@@ -1,0 +1,255 @@
+{
+  "id": "basic_07",
+  "title": "Nền tảng 07 — Cơ thể người",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "body",
+      "pos": "n",
+      "ipa": "/ˈbɒdi/",
+      "vi": "cơ thể",
+      "example": "Water is good for your body.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "head",
+      "pos": "n",
+      "ipa": "/hed/",
+      "vi": "đầu",
+      "example": "My head hurts today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hair",
+      "pos": "n",
+      "ipa": "/heə/",
+      "vi": "tóc",
+      "example": "She has long black hair.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "face",
+      "pos": "n",
+      "ipa": "/feɪs/",
+      "vi": "khuôn mặt",
+      "example": "He washes his face every morning.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eye",
+      "pos": "n",
+      "ipa": "/aɪ/",
+      "vi": "mắt",
+      "example": "My eyes are brown.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "ear",
+      "pos": "n",
+      "ipa": "/ɪə/",
+      "vi": "tai",
+      "example": "We hear with our ears.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "nose",
+      "pos": "n",
+      "ipa": "/nəʊz/",
+      "vi": "mũi",
+      "example": "The baby has a small nose.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "mouth",
+      "pos": "n",
+      "ipa": "/maʊθ/",
+      "vi": "miệng",
+      "example": "Open your mouth, please.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tooth",
+      "pos": "n",
+      "ipa": "/tuːθ/",
+      "vi": "cái răng",
+      "example": "I brush my teeth every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "neck",
+      "pos": "n",
+      "ipa": "/nek/",
+      "vi": "cổ",
+      "example": "My neck is very cold.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "shoulder",
+      "pos": "n",
+      "ipa": "/ˈʃəʊldə/",
+      "vi": "vai",
+      "example": "He has strong shoulders.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "arm",
+      "pos": "n",
+      "ipa": "/ɑːm/",
+      "vi": "cánh tay",
+      "example": "My arms are tired now.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hand",
+      "pos": "n",
+      "ipa": "/hænd/",
+      "vi": "bàn tay",
+      "example": "Wash your hands before dinner.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "finger",
+      "pos": "n",
+      "ipa": "/ˈfɪŋɡə/",
+      "vi": "ngón tay",
+      "example": "We have ten fingers.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "leg",
+      "pos": "n",
+      "ipa": "/leɡ/",
+      "vi": "chân (cả chân)",
+      "example": "Her legs are very long.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "foot",
+      "pos": "n",
+      "ipa": "/fʊt/",
+      "vi": "bàn chân",
+      "example": "My foot is very small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "knee",
+      "pos": "n",
+      "ipa": "/niː/",
+      "vi": "đầu gối",
+      "example": "My knee hurts a lot.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "back",
+      "pos": "n",
+      "ipa": "/bæk/",
+      "vi": "lưng",
+      "example": "My back is very sore.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "stomach",
+      "pos": "n",
+      "ipa": "/ˈstʌmək/",
+      "vi": "bụng, dạ dày",
+      "example": "My stomach hurts after lunch.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "heart",
+      "pos": "n",
+      "ipa": "/hɑːt/",
+      "vi": "trái tim",
+      "example": "My heart beats fast.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "skin",
+      "pos": "n",
+      "ipa": "/skɪn/",
+      "vi": "da",
+      "example": "The baby has soft skin.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "finger nail",
+      "pos": "n",
+      "ipa": "/ˈfɪŋɡə neɪl/",
+      "vi": "móng tay",
+      "example": "Her finger nails are clean.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

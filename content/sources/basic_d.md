@@ -1,0 +1,338 @@
+## 16. Động từ hằng ngày (2)
+
+- **work (v) /wɜːk/**: làm việc.
+  - _Ví dụ_: My father works in a factory.
+  - _Lưu ý_: cũng là danh từ: go to work (đi làm).
+- **study (v) /ˈstʌdi/**: học, học tập.
+  - _Ví dụ_: We study English every day.
+  - _Lưu ý_: study nghiêng về học ở trường, có sách vở.
+- **help (v) /help/**: giúp, giúp đỡ.
+  - _Ví dụ_: I help my mother at home.
+  - _Lưu ý_: help somebody (with something).
+- **buy (v) /baɪ/**: mua.
+  - _Ví dụ_: She buys bread every morning.
+  - _Lưu ý_: quá khứ bất quy tắc: bought.
+- **sell (v) /sel/**: bán.
+  - _Ví dụ_: They sell fruit at the market.
+  - _Lưu ý_: trái nghĩa với buy; quá khứ: sold.
+- **give (v) /ɡɪv/**: cho, đưa.
+  - _Ví dụ_: He gives me a new book.
+  - _Lưu ý_: give somebody something = give something to somebody.
+- **take (v) /teɪk/**: lấy, cầm, đi (xe).
+  - _Ví dụ_: I take the bus to school.
+  - _Lưu ý_: trái nghĩa với give; quá khứ: took.
+- **make (v) /meɪk/**: làm ra, chế tạo, nấu.
+  - _Ví dụ_: My mother makes very good soup.
+  - _Lưu ý_: make là tạo ra vật mới; quá khứ: made.
+- **do (v) /duː/**: làm (việc gì đó).
+  - _Ví dụ_: I do my homework after dinner.
+  - _Lưu ý_: do homework, do housework; không dùng make homework.
+- **want (v) /wɒnt/**: muốn.
+  - _Ví dụ_: I want a glass of water.
+  - _Lưu ý_: want to + động từ: I want to go.
+- **like (v) /laɪk/**: thích.
+  - _Ví dụ_: She likes cats and dogs.
+  - _Lưu ý_: like + V-ing: like reading.
+- **love (v) /lʌv/**: yêu, rất thích.
+  - _Ví dụ_: I love my family very much.
+  - _Lưu ý_: mạnh hơn like.
+- **need (v) /niːd/**: cần.
+  - _Ví dụ_: We need more time.
+  - _Lưu ý_: need to + động từ: I need to study.
+- **have (v) /hæv/**: có.
+  - _Ví dụ_: They have two small dogs.
+  - _Lưu ý_: ngôi he/she/it dùng has.
+- **know (v) /nəʊ/**: biết.
+  - _Ví dụ_: I know his name.
+  - _Lưu ý_: chữ k đầu câm, đọc là /nəʊ/.
+- **think (v) /θɪŋk/**: nghĩ, cho rằng.
+  - _Ví dụ_: I think this book is easy.
+  - _Lưu ý_: think about something: nghĩ về việc gì.
+- **say (v) /seɪ/**: nói (lời gì).
+  - _Ví dụ_: She says hello to me.
+  - _Lưu ý_: say something; không nói say me.
+- **tell (v) /tel/**: kể, bảo (ai đó).
+  - _Ví dụ_: Please tell me your name.
+  - _Lưu ý_: tell somebody something; luôn có người nghe.
+- **ask (v) /ɑːsk/**: hỏi, nhờ.
+  - _Ví dụ_: Students ask the teacher many questions.
+  - _Lưu ý_: ask for help: nhờ giúp đỡ.
+- **answer (v) /ˈɑːnsə/**: trả lời.
+  - _Ví dụ_: He answers all the questions.
+  - _Lưu ý_: chữ w câm; cũng là danh từ: an answer.
+- **live (v) /lɪv/**: sống, ở.
+  - _Ví dụ_: We live in a small town.
+  - _Lưu ý_: live in + thành phố, live at + số nhà.
+- **learn (v) /lɜːn/**: học được, tiếp thu.
+  - _Ví dụ_: I learn new words every day.
+  - _Lưu ý_: learn là học được kiến thức mới, study là ngồi học.
+
+## 17. Tính từ trái nghĩa
+
+- **big (adj) /bɪɡ/**: to, lớn.
+  - _Ví dụ_: My school is very big.
+  - _Lưu ý_: trái nghĩa: small.
+- **small (adj) /smɔːl/**: nhỏ, bé.
+  - _Ví dụ_: She has a small bag.
+  - _Lưu ý_: trái nghĩa: big.
+- **long (adj) /lɒŋ/**: dài.
+  - _Ví dụ_: My sister has long hair.
+  - _Lưu ý_: trái nghĩa: short.
+- **short (adj) /ʃɔːt/**: ngắn; thấp.
+  - _Ví dụ_: This is a short story.
+  - _Lưu ý_: trái nghĩa: long (ngắn) và tall (thấp).
+- **tall (adj) /tɔːl/**: cao (người, cây).
+  - _Ví dụ_: My brother is very tall.
+  - _Lưu ý_: trái nghĩa: short.
+- **new (adj) /njuː/**: mới.
+  - _Ví dụ_: I have a new phone.
+  - _Lưu ý_: trái nghĩa: old.
+- **old (adj) /əʊld/**: cũ; già.
+  - _Ví dụ_: This house is very old.
+  - _Lưu ý_: trái nghĩa: new (cũ) và young (già).
+- **young (adj) /jʌŋ/**: trẻ.
+  - _Ví dụ_: My teacher is still young.
+  - _Lưu ý_: trái nghĩa: old.
+- **good (adj) /ɡʊd/**: tốt, hay, giỏi.
+  - _Ví dụ_: She is a good student.
+  - _Lưu ý_: trái nghĩa: bad.
+- **bad (adj) /bæd/**: xấu, tệ, dở.
+  - _Ví dụ_: The weather is bad today.
+  - _Lưu ý_: trái nghĩa: good.
+- **easy (adj) /ˈiːzi/**: dễ.
+  - _Ví dụ_: This test is very easy.
+  - _Lưu ý_: trái nghĩa: hard.
+- **hard (adj) /hɑːd/**: khó; cứng.
+  - _Ví dụ_: Math is hard for me.
+  - _Lưu ý_: trái nghĩa: easy; difficult cũng nghĩa là khó.
+- **fast (adj) /fɑːst/**: nhanh.
+  - _Ví dụ_: This train is very fast.
+  - _Lưu ý_: trái nghĩa: slow.
+- **slow (adj) /sləʊ/**: chậm.
+  - _Ví dụ_: My old computer is slow.
+  - _Lưu ý_: trái nghĩa: fast.
+- **cheap (adj) /tʃiːp/**: rẻ.
+  - _Ví dụ_: This shirt is very cheap.
+  - _Lưu ý_: trái nghĩa: expensive.
+- **expensive (adj) /ɪkˈspensɪv/**: đắt.
+  - _Ví dụ_: That car is too expensive.
+  - _Lưu ý_: trái nghĩa: cheap.
+- **clean (adj) /kliːn/**: sạch.
+  - _Ví dụ_: My room is clean today.
+  - _Lưu ý_: trái nghĩa: dirty; cũng là động từ: clean the room.
+- **dirty (adj) /ˈdɜːti/**: bẩn.
+  - _Ví dụ_: His shoes are very dirty.
+  - _Lưu ý_: trái nghĩa: clean.
+- **early (adj) /ˈɜːli/**: sớm.
+  - _Ví dụ_: I take an early bus.
+  - _Lưu ý_: trái nghĩa: late; cũng là trạng từ: get up early.
+- **late (adj) /leɪt/**: muộn, trễ.
+  - _Ví dụ_: He is late for school.
+  - _Lưu ý_: trái nghĩa: early.
+- **hot (adj) /hɒt/**: nóng.
+  - _Ví dụ_: The soup is very hot.
+  - _Lưu ý_: trái nghĩa: cold.
+- **cold (adj) /kəʊld/**: lạnh.
+  - _Ví dụ_: The water is too cold.
+  - _Lưu ý_: trái nghĩa: hot.
+
+## 18. Giới từ và vị trí
+
+- **in (adv) /ɪn/**: ở trong.
+  - _Ví dụ_: The book is in my bag.
+  - _Lưu ý_: in + không gian kín: in the box, in Hanoi.
+- **on (adv) /ɒn/**: ở trên (bề mặt).
+  - _Ví dụ_: The cat is on the table.
+  - _Lưu ý_: on là chạm bề mặt, in là ở bên trong.
+- **under (adv) /ˈʌndə/**: ở dưới.
+  - _Ví dụ_: My shoes are under the bed.
+  - _Lưu ý_: trái nghĩa: on.
+- **behind (adv) /bɪˈhaɪnd/**: ở phía sau.
+  - _Ví dụ_: The garden is behind my house.
+  - _Lưu ý_: trái nghĩa: in front of.
+- **in front of (phr) /ɪn ˈfrʌnt əv/**: ở phía trước.
+  - _Ví dụ_: A tree is in front of the house.
+  - _Lưu ý_: trái nghĩa: behind.
+- **next to (phr) /ˈnekst tə/**: bên cạnh.
+  - _Ví dụ_: She sits next to me.
+  - _Lưu ý_: giống beside.
+- **between (adv) /bɪˈtwiːn/**: ở giữa (hai thứ).
+  - _Ví dụ_: The shop is between two houses.
+  - _Lưu ý_: between A and B.
+- **near (adv) /nɪə/**: gần.
+  - _Ví dụ_: My school is near my house.
+  - _Lưu ý_: trái nghĩa: far.
+- **above (adv) /əˈbʌv/**: ở bên trên (không chạm).
+  - _Ví dụ_: The clock is above the door.
+  - _Lưu ý_: khác on vì không chạm vào vật.
+- **below (adv) /bɪˈləʊ/**: ở bên dưới.
+  - _Ví dụ_: Write your name below the line.
+  - _Lưu ý_: trái nghĩa: above.
+- **inside (adv) /ˌɪnˈsaɪd/**: bên trong.
+  - _Ví dụ_: The children play inside today.
+  - _Lưu ý_: trái nghĩa: outside.
+- **outside (adv) /ˌaʊtˈsaɪd/**: bên ngoài.
+  - _Ví dụ_: My dog sleeps outside the house.
+  - _Lưu ý_: trái nghĩa: inside.
+- **here (adv) /hɪə/**: ở đây.
+  - _Ví dụ_: Please put your bag here.
+  - _Lưu ý_: trái nghĩa: there.
+- **there (adv) /ðeə/**: ở đó, ở kia.
+  - _Ví dụ_: My friend lives over there.
+  - _Lưu ý_: khác their (của họ) dù đọc giống.
+- **left (adv) /left/**: bên trái.
+  - _Ví dụ_: Turn left at the school.
+  - _Lưu ý_: on the left: ở bên trái.
+- **right (adv) /raɪt/**: bên phải.
+  - _Ví dụ_: The bank is on the right.
+  - _Lưu ý_: trái nghĩa: left; right còn nghĩa là đúng.
+- **up (adv) /ʌp/**: lên, ở trên cao.
+  - _Ví dụ_: The cat goes up the tree.
+  - _Lưu ý_: trái nghĩa: down.
+- **down (adv) /daʊn/**: xuống.
+  - _Ví dụ_: We walk down the stairs.
+  - _Lưu ý_: trái nghĩa: up; sit down: ngồi xuống.
+- **into (adv) /ˈɪntuː/**: vào trong.
+  - _Ví dụ_: She goes into the room.
+  - _Lưu ý_: into chỉ chuyển động, in chỉ vị trí.
+- **out of (phr) /ˈaʊt əv/**: ra khỏi.
+  - _Ví dụ_: He comes out of the house.
+  - _Lưu ý_: trái nghĩa: into.
+
+## 19. Từ nối và từ chức năng
+
+- **and (adv) /ænd/**: và.
+  - _Ví dụ_: I like tea and coffee.
+  - _Lưu ý_: nối hai từ hoặc hai câu cùng ý.
+- **but (adv) /bʌt/**: nhưng.
+  - _Ví dụ_: She is small but strong.
+  - _Lưu ý_: dùng khi hai ý trái ngược nhau.
+- **or (adv) /ɔː/**: hoặc, hay.
+  - _Ví dụ_: Do you want tea or coffee?
+  - _Lưu ý_: dùng khi chọn một trong hai.
+- **so (adv) /səʊ/**: vì vậy, nên.
+  - _Ví dụ_: It is late, so I go home.
+  - _Lưu ý_: so đứng trước kết quả.
+- **because (adv) /bɪˈkɒz/**: bởi vì.
+  - _Ví dụ_: I stay home because it rains.
+  - _Lưu ý_: because đứng trước lý do; so đứng trước kết quả.
+- **if (adv) /ɪf/**: nếu.
+  - _Ví dụ_: If it rains, I stay home.
+  - _Lưu ý_: sau if dùng thì hiện tại, không dùng will.
+- **when (adv) /wen/**: khi; khi nào.
+  - _Ví dụ_: When do you go to school?
+  - _Lưu ý_: vừa là từ hỏi, vừa là từ nối.
+- **then (adv) /ðen/**: rồi, sau đó.
+  - _Ví dụ_: I eat breakfast, then I study.
+  - _Lưu ý_: dùng để kể thứ tự việc làm.
+- **also (adv) /ˈɔːlsəʊ/**: cũng.
+  - _Ví dụ_: She also speaks English.
+  - _Lưu ý_: also đứng giữa câu, too đứng cuối câu.
+- **too (adv) /tuː/**: cũng; quá.
+  - _Ví dụ_: I am tired too.
+  - _Lưu ý_: too + tính từ nghĩa là quá: too hot.
+- **very (adv) /ˈveri/**: rất.
+  - _Ví dụ_: This book is very good.
+  - _Lưu ý_: very là khen ngợi, too là chê (quá mức).
+- **really (adv) /ˈrɪəli/**: thật sự, rất.
+  - _Ví dụ_: I really like this song.
+  - _Lưu ý_: dùng trước động từ hoặc tính từ.
+- **always (adv) /ˈɔːlweɪz/**: luôn luôn.
+  - _Ví dụ_: He always gets up early.
+  - _Lưu ý_: đứng trước động từ thường, sau động từ be.
+- **usually (adv) /ˈjuːʒuəli/**: thường thường.
+  - _Ví dụ_: We usually have rice for lunch.
+  - _Lưu ý_: ít hơn always, nhiều hơn sometimes.
+- **sometimes (adv) /ˈsʌmtaɪmz/**: thỉnh thoảng.
+  - _Ví dụ_: Sometimes I walk to school.
+  - _Lưu ý_: có thể đứng đầu câu.
+- **never (adv) /ˈnevə/**: không bao giờ.
+  - _Ví dụ_: She never eats meat.
+  - _Lưu ý_: bản thân đã mang nghĩa phủ định, không thêm not.
+- **already (adv) /ɔːlˈredi/**: đã, rồi.
+  - _Ví dụ_: I already know his name.
+  - _Lưu ý_: nói việc đã xong sớm hơn mong đợi.
+- **still (adv) /stɪl/**: vẫn còn.
+  - _Ví dụ_: He is still at school.
+  - _Lưu ý_: đứng sau be, trước động từ thường.
+- **enough (adv) /ɪˈnʌf/**: đủ.
+  - _Ví dụ_: We have enough time today.
+  - _Lưu ý_: enough + danh từ, nhưng tính từ + enough: good enough.
+- **another (adj) /əˈnʌðə/**: một cái khác, thêm một.
+  - _Ví dụ_: I want another cup of tea.
+  - _Lưu ý_: another + danh từ số ít.
+- **without (adv) /wɪˈðaʊt/**: không có, thiếu.
+  - _Ví dụ_: I drink tea without sugar.
+  - _Lưu ý_: trái nghĩa: with.
+- **about (adv) /əˈbaʊt/**: về (chủ đề); khoảng.
+  - _Ví dụ_: This book is about animals.
+  - _Lưu ý_: about còn nghĩa là khoảng chừng: about ten.
+
+## 20. Câu giao tiếp hằng ngày
+
+- **How are you? (phr) /ˌhaʊ ə ˈjuː/**: Bạn khỏe không?
+  - _Ví dụ_: Hello Nam! How are you?
+  - _Lưu ý_: câu chào hỏi hằng ngày với người quen.
+- **I'm fine, thank you. (phr) /aɪm ˈfaɪn ˌθæŋk ˈjuː/**: Tôi khỏe, cảm ơn bạn.
+  - _Ví dụ_: I'm fine, thank you. And you?
+  - _Lưu ý_: câu trả lời cho How are you?
+- **Good morning. (phr) /ˌɡʊd ˈmɔːnɪŋ/**: Chào buổi sáng.
+  - _Ví dụ_: Good morning, teacher!
+  - _Lưu ý_: buổi chiều nói Good afternoon.
+- **Nice to meet you. (phr) /ˌnaɪs tə ˈmiːt juː/**: Rất vui được gặp bạn.
+  - _Ví dụ_: I am Lan. Nice to meet you.
+  - _Lưu ý_: chỉ dùng khi gặp lần đầu tiên.
+- **What's your name? (phr) /ˌwɒts jɔː ˈneɪm/**: Bạn tên là gì?
+  - _Ví dụ_: Hello! What's your name?
+  - _Lưu ý_: What's là dạng rút gọn của What is.
+- **My name is Nam. (phr) /maɪ ˈneɪm ɪz ˈnæm/**: Tôi tên là Nam.
+  - _Ví dụ_: My name is Nam. I am a student.
+  - _Lưu ý_: có thể nói ngắn hơn: I'm Nam.
+- **How old are you? (phr) /ˌhaʊ ˈəʊld ə juː/**: Bạn bao nhiêu tuổi?
+  - _Ví dụ_: How old are you? I am fourteen.
+  - _Lưu ý_: trả lời: I am fourteen (years old).
+- **Where are you from? (phr) /ˌweər ə juː ˈfrɒm/**: Bạn đến từ đâu?
+  - _Ví dụ_: Where are you from, Mary?
+  - _Lưu ý_: hỏi về quê hương hoặc đất nước.
+- **I'm from Vietnam. (phr) /aɪm frəm ˌvjetˈnæm/**: Tôi đến từ Việt Nam.
+  - _Ví dụ_: I'm from Vietnam. I live in Hue.
+  - _Lưu ý_: tên nước luôn viết hoa.
+- **Excuse me. (phr) /ɪkˈskjuːz miː/**: Xin lỗi cho hỏi. / Làm ơn.
+  - _Ví dụ_: Excuse me, where is the school?
+  - _Lưu ý_: dùng khi bắt chuyện hoặc xin đi qua.
+- **I'm sorry. (phr) /aɪm ˈsɒri/**: Tôi xin lỗi.
+  - _Ví dụ_: I'm sorry. I am late.
+  - _Lưu ý_: dùng khi mình làm sai, khác Excuse me.
+- **That's OK. (phr) /ˌðæts əʊˈkeɪ/**: Không sao đâu.
+  - _Ví dụ_: That's OK. Please sit down.
+  - _Lưu ý_: câu trả lời cho I'm sorry.
+- **Thank you very much. (phr) /ˌθæŋk juː ˈveri ˈmʌtʃ/**: Cảm ơn bạn rất nhiều.
+  - _Ví dụ_: Thank you very much for your help.
+  - _Lưu ý_: nói ngắn gọn: Thanks.
+- **You're welcome. (phr) /jɔː ˈwelkəm/**: Không có gì.
+  - _Ví dụ_: You're welcome. See you tomorrow.
+  - _Lưu ý_: câu trả lời cho Thank you.
+- **I don't understand. (phr) /aɪ ˌdəʊnt ˌʌndəˈstænd/**: Tôi không hiểu.
+  - _Ví dụ_: Sorry, I don't understand this word.
+  - _Lưu ý_: rất hữu ích trong lớp học.
+- **Can you help me? (phr) /kən juː ˈhelp miː/**: Bạn giúp tôi được không?
+  - _Ví dụ_: Excuse me, can you help me?
+  - _Lưu ý_: lịch sự hơn: Could you help me?
+- **Can you say that again? (phr) /kən juː ˌseɪ ðæt əˈɡen/**: Bạn nói lại được không?
+  - _Ví dụ_: Sorry, can you say that again?
+  - _Lưu ý_: dùng khi nghe chưa rõ.
+- **How do you spell it? (phr) /ˌhaʊ də juː ˈspel ɪt/**: Từ đó đánh vần thế nào?
+  - _Ví dụ_: Nice name! How do you spell it?
+  - _Lưu ý_: dùng khi muốn biết cách viết một từ.
+- **How much is it? (phr) /ˌhaʊ ˈmʌtʃ ɪz ɪt/**: Cái này bao nhiêu tiền?
+  - _Ví dụ_: I like this hat. How much is it?
+  - _Lưu ý_: dùng khi đi mua đồ.
+- **What time is it? (phr) /ˌwɒt ˈtaɪm ɪz ɪt/**: Mấy giờ rồi?
+  - _Ví dụ_: Excuse me, what time is it?
+  - _Lưu ý_: trả lời: It is seven o'clock.
+- **Good luck! (phr) /ˌɡʊd ˈlʌk/**: Chúc may mắn!
+  - _Ví dụ_: Good luck with your test!
+  - _Lưu ý_: nói trước kỳ thi hoặc việc quan trọng.
+- **See you later. (phr) /ˌsiː juː ˈleɪtə/**: Hẹn gặp lại.
+  - _Ví dụ_: Goodbye! See you later.
+  - _Lưu ý_: cũng nói See you tomorrow.

@@ -1,0 +1,62 @@
+## 18. Giới từ và vị trí
+
+- **in (adv) /ɪn/**: ở trong.
+  - _Ví dụ_: The book is in my bag.
+  - _Lưu ý_: in + không gian kín: in the box, in Hanoi.
+- **on (adv) /ɒn/**: ở trên (bề mặt).
+  - _Ví dụ_: The cat is on the table.
+  - _Lưu ý_: on là chạm bề mặt, in là ở bên trong.
+- **under (adv) /ˈʌndə/**: ở dưới.
+  - _Ví dụ_: My shoes are under the bed.
+  - _Lưu ý_: trái nghĩa: on.
+- **behind (adv) /bɪˈhaɪnd/**: ở phía sau.
+  - _Ví dụ_: The garden is behind my house.
+  - _Lưu ý_: trái nghĩa: in front of.
+- **in front of (phr) /ɪn ˈfrʌnt əv/**: ở phía trước.
+  - _Ví dụ_: A tree is in front of the house.
+  - _Lưu ý_: trái nghĩa: behind.
+- **next to (phr) /ˈnekst tə/**: bên cạnh.
+  - _Ví dụ_: She sits next to me.
+  - _Lưu ý_: giống beside.
+- **between (adv) /bɪˈtwiːn/**: ở giữa (hai thứ).
+  - _Ví dụ_: The shop is between two houses.
+  - _Lưu ý_: between A and B.
+- **near (adv) /nɪə/**: gần.
+  - _Ví dụ_: My school is near my house.
+  - _Lưu ý_: trái nghĩa: far.
+- **above (adv) /əˈbʌv/**: ở bên trên (không chạm).
+  - _Ví dụ_: The clock is above the door.
+  - _Lưu ý_: khác on vì không chạm vào vật.
+- **below (adv) /bɪˈləʊ/**: ở bên dưới.
+  - _Ví dụ_: Write your name below the line.
+  - _Lưu ý_: trái nghĩa: above.
+- **inside (adv) /ˌɪnˈsaɪd/**: bên trong.
+  - _Ví dụ_: The children play inside today.
+  - _Lưu ý_: trái nghĩa: outside.
+- **outside (adv) /ˌaʊtˈsaɪd/**: bên ngoài.
+  - _Ví dụ_: My dog sleeps outside the house.
+  - _Lưu ý_: trái nghĩa: inside.
+- **here (adv) /hɪə/**: ở đây.
+  - _Ví dụ_: Please put your bag here.
+  - _Lưu ý_: trái nghĩa: there.
+- **there (adv) /ðeə/**: ở đó, ở kia.
+  - _Ví dụ_: My friend lives over there.
+  - _Lưu ý_: khác their (của họ) dù đọc giống.
+- **left (adv) /left/**: bên trái.
+  - _Ví dụ_: Turn left at the school.
+  - _Lưu ý_: on the left: ở bên trái.
+- **right (adv) /raɪt/**: bên phải.
+  - _Ví dụ_: The bank is on the right.
+  - _Lưu ý_: trái nghĩa: left; right còn nghĩa là đúng.
+- **up (adv) /ʌp/**: lên, ở trên cao.
+  - _Ví dụ_: The cat goes up the tree.
+  - _Lưu ý_: trái nghĩa: down.
+- **down (adv) /daʊn/**: xuống.
+  - _Ví dụ_: We walk down the stairs.
+  - _Lưu ý_: trái nghĩa: up; sit down: ngồi xuống.
+- **into (adv) /ˈɪntuː/**: vào trong.
+  - _Ví dụ_: She goes into the room.
+  - _Lưu ý_: into chỉ chuyển động, in chỉ vị trí.
+- **out of (phr) /ˈaʊt əv/**: ra khỏi.
+  - _Ví dụ_: He comes out of the house.
+  - _Lưu ý_: trái nghĩa: into.

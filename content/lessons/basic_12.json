@@ -1,0 +1,266 @@
+{
+  "id": "basic_12",
+  "title": "Nền tảng 12 — Con vật quen thuộc",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "animal",
+      "pos": "n",
+      "ipa": "/ˈænɪml/",
+      "vi": "con vật, động vật",
+      "example": "I love small animals.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "dog",
+      "pos": "n",
+      "ipa": "/dɒɡ/",
+      "vi": "con chó",
+      "example": "My dog is very friendly.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cat",
+      "pos": "n",
+      "ipa": "/kæt/",
+      "vi": "con mèo",
+      "example": "The cat sleeps on my bed.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bird",
+      "pos": "n",
+      "ipa": "/bɜːd/",
+      "vi": "con chim",
+      "example": "A bird sings in the tree.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "chicken",
+      "pos": "n",
+      "ipa": "/ˈtʃɪkɪn/",
+      "vi": "con gà",
+      "example": "We have ten chickens.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "duck",
+      "pos": "n",
+      "ipa": "/dʌk/",
+      "vi": "con vịt",
+      "example": "The ducks are in the water.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pig",
+      "pos": "n",
+      "ipa": "/pɪɡ/",
+      "vi": "con lợn, con heo",
+      "example": "My uncle has two pigs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cow",
+      "pos": "n",
+      "ipa": "/kaʊ/",
+      "vi": "con bò",
+      "example": "The cow eats grass.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "buffalo",
+      "pos": "n",
+      "ipa": "/ˈbʌfələʊ/",
+      "vi": "con trâu",
+      "example": "A buffalo works in the field.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "horse",
+      "pos": "n",
+      "ipa": "/hɔːs/",
+      "vi": "con ngựa",
+      "example": "The horse runs very fast.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "goat",
+      "pos": "n",
+      "ipa": "/ɡəʊt/",
+      "vi": "con dê",
+      "example": "My family has three goats.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "mouse",
+      "pos": "n",
+      "ipa": "/maʊs/",
+      "vi": "con chuột",
+      "example": "A small mouse is here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "elephant",
+      "pos": "n",
+      "ipa": "/ˈelɪfənt/",
+      "vi": "con voi",
+      "example": "An elephant is very big.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tiger",
+      "pos": "n",
+      "ipa": "/ˈtaɪɡə/",
+      "vi": "con hổ",
+      "example": "The tiger lives in the forest.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "lion",
+      "pos": "n",
+      "ipa": "/ˈlaɪən/",
+      "vi": "con sư tử",
+      "example": "A lion is a strong animal.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "monkey",
+      "pos": "n",
+      "ipa": "/ˈmʌŋki/",
+      "vi": "con khỉ",
+      "example": "The monkey eats a banana.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "snake",
+      "pos": "n",
+      "ipa": "/sneɪk/",
+      "vi": "con rắn",
+      "example": "I am afraid of snakes.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bear",
+      "pos": "n",
+      "ipa": "/beə/",
+      "vi": "con gấu",
+      "example": "The bear is very big.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rabbit",
+      "pos": "n",
+      "ipa": "/ˈræbɪt/",
+      "vi": "con thỏ",
+      "example": "My rabbit eats vegetables.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "frog",
+      "pos": "n",
+      "ipa": "/frɒɡ/",
+      "vi": "con ếch",
+      "example": "A frog jumps into the water.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bee",
+      "pos": "n",
+      "ipa": "/biː/",
+      "vi": "con ong",
+      "example": "Bees like flowers.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tail",
+      "pos": "n",
+      "ipa": "/teɪl/",
+      "vi": "cái đuôi",
+      "example": "My dog has a short tail.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wing",
+      "pos": "n",
+      "ipa": "/wɪŋ/",
+      "vi": "cái cánh",
+      "example": "Birds have two wings.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

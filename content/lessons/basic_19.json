@@ -1,0 +1,255 @@
+{
+  "id": "basic_19",
+  "title": "Nền tảng 19 — Từ nối và từ chức năng",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "and",
+      "pos": "adv",
+      "ipa": "/ænd/",
+      "vi": "và",
+      "example": "I like tea and coffee.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nối hai từ hoặc hai câu cùng ý."
+    },
+    {
+      "word": "but",
+      "pos": "adv",
+      "ipa": "/bʌt/",
+      "vi": "nhưng",
+      "example": "She is small but strong.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi hai ý trái ngược nhau."
+    },
+    {
+      "word": "or",
+      "pos": "adv",
+      "ipa": "/ɔː/",
+      "vi": "hoặc, hay",
+      "example": "Do you want tea or coffee?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi chọn một trong hai."
+    },
+    {
+      "word": "so",
+      "pos": "adv",
+      "ipa": "/səʊ/",
+      "vi": "vì vậy, nên",
+      "example": "It is late, so I go home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "so đứng trước kết quả."
+    },
+    {
+      "word": "because",
+      "pos": "adv",
+      "ipa": "/bɪˈkɒz/",
+      "vi": "bởi vì",
+      "example": "I stay home because it rains.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "because đứng trước lý do; so đứng trước kết quả."
+    },
+    {
+      "word": "if",
+      "pos": "adv",
+      "ipa": "/ɪf/",
+      "vi": "nếu",
+      "example": "If it rains, I stay home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "sau if dùng thì hiện tại, không dùng will."
+    },
+    {
+      "word": "when",
+      "pos": "adv",
+      "ipa": "/wen/",
+      "vi": "khi; khi nào",
+      "example": "When do you go to school?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "vừa là từ hỏi, vừa là từ nối."
+    },
+    {
+      "word": "then",
+      "pos": "adv",
+      "ipa": "/ðen/",
+      "vi": "rồi, sau đó",
+      "example": "I eat breakfast, then I study.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng để kể thứ tự việc làm."
+    },
+    {
+      "word": "also",
+      "pos": "adv",
+      "ipa": "/ˈɔːlsəʊ/",
+      "vi": "cũng",
+      "example": "She also speaks English.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "also đứng giữa câu, too đứng cuối câu."
+    },
+    {
+      "word": "too",
+      "pos": "adv",
+      "ipa": "/tuː/",
+      "vi": "cũng; quá",
+      "example": "I am tired too.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "too + tính từ nghĩa là quá: too hot."
+    },
+    {
+      "word": "very",
+      "pos": "adv",
+      "ipa": "/ˈveri/",
+      "vi": "rất",
+      "example": "This book is very good.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "very là khen ngợi, too là chê (quá mức)."
+    },
+    {
+      "word": "really",
+      "pos": "adv",
+      "ipa": "/ˈrɪəli/",
+      "vi": "thật sự, rất",
+      "example": "I really like this song.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng trước động từ hoặc tính từ."
+    },
+    {
+      "word": "always",
+      "pos": "adv",
+      "ipa": "/ˈɔːlweɪz/",
+      "vi": "luôn luôn",
+      "example": "He always gets up early.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đứng trước động từ thường, sau động từ be."
+    },
+    {
+      "word": "usually",
+      "pos": "adv",
+      "ipa": "/ˈjuːʒuəli/",
+      "vi": "thường thường",
+      "example": "We usually have rice for lunch.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "ít hơn always, nhiều hơn sometimes."
+    },
+    {
+      "word": "sometimes",
+      "pos": "adv",
+      "ipa": "/ˈsʌmtaɪmz/",
+      "vi": "thỉnh thoảng",
+      "example": "Sometimes I walk to school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có thể đứng đầu câu."
+    },
+    {
+      "word": "never",
+      "pos": "adv",
+      "ipa": "/ˈnevə/",
+      "vi": "không bao giờ",
+      "example": "She never eats meat.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bản thân đã mang nghĩa phủ định, không thêm not."
+    },
+    {
+      "word": "already",
+      "pos": "adv",
+      "ipa": "/ɔːlˈredi/",
+      "vi": "đã, rồi",
+      "example": "I already know his name.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nói việc đã xong sớm hơn mong đợi."
+    },
+    {
+      "word": "still",
+      "pos": "adv",
+      "ipa": "/stɪl/",
+      "vi": "vẫn còn",
+      "example": "He is still at school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đứng sau be, trước động từ thường."
+    },
+    {
+      "word": "enough",
+      "pos": "adv",
+      "ipa": "/ɪˈnʌf/",
+      "vi": "đủ",
+      "example": "We have enough time today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "enough + danh từ, nhưng tính từ + enough: good enough."
+    },
+    {
+      "word": "another",
+      "pos": "adj",
+      "ipa": "/əˈnʌðə/",
+      "vi": "một cái khác, thêm một",
+      "example": "I want another cup of tea.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "another + danh từ số ít."
+    },
+    {
+      "word": "without",
+      "pos": "adv",
+      "ipa": "/wɪˈðaʊt/",
+      "vi": "không có, thiếu",
+      "example": "I drink tea without sugar.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trái nghĩa: with."
+    },
+    {
+      "word": "about",
+      "pos": "adv",
+      "ipa": "/əˈbaʊt/",
+      "vi": "về (chủ đề); khoảng",
+      "example": "This book is about animals.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "about còn nghĩa là khoảng chừng: about ten."
+    }
+  ]
+}

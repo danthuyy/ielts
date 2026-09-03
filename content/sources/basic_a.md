@@ -1,0 +1,375 @@
+## 1. Bảng chữ cái và âm cơ bản
+
+- **apple (n) /ˈæp.əl/**: quả táo.
+  - _Ví dụ_: I eat an apple.
+  - _Lưu ý_: chữ **a** đọc /æ/ như trong apple (miệng mở rộng, giữa "a" và "e").
+- **ball (n) /bɔːl/**: quả bóng.
+  - _Ví dụ_: The ball is big.
+  - _Lưu ý_: chữ **b** đọc /b/ như trong ball, giống "b" tiếng Việt.
+- **cat (n) /kæt/**: con mèo.
+  - _Ví dụ_: My cat is small.
+  - _Lưu ý_: chữ **c** đọc /k/ như trong cat (giống "c" trong "cá").
+- **dog (n) /dɒɡ/**: con chó.
+  - _Ví dụ_: The dog is here.
+  - _Lưu ý_: chữ **d** đọc /d/ như trong dog, phát âm mạnh hơn "đ" tiếng Việt.
+- **egg (n) /eɡ/**: quả trứng.
+  - _Ví dụ_: I like eggs.
+  - _Lưu ý_: chữ **e** đọc /e/ như trong egg (giống "e" tiếng Việt).
+- **fish (n) /fɪʃ/**: con cá.
+  - _Ví dụ_: The fish is in water.
+  - _Lưu ý_: chữ **f** đọc /f/ như trong fish (răng trên chạm môi dưới).
+- **girl (n) /ɡɜːl/**: bé gái, cô gái.
+  - _Ví dụ_: The girl is my friend.
+  - _Lưu ý_: chữ **g** đọc /ɡ/ như trong girl (giống "g" trong "gà").
+- **hat (n) /hæt/**: cái mũ.
+  - _Ví dụ_: My hat is new.
+  - _Lưu ý_: chữ **h** đọc /h/ như trong hat, hơi thoát nhẹ ra ngoài.
+- **ink (n) /ɪŋk/**: mực (bút).
+  - _Ví dụ_: The ink is here.
+  - _Lưu ý_: chữ **i** đọc /ɪ/ như trong ink (ngắn, không kéo dài thành "i").
+- **jam (n) /dʒæm/**: mứt.
+  - _Ví dụ_: I like jam.
+  - _Lưu ý_: chữ **j** đọc /dʒ/ như trong jam (gần giống "gi" nhưng bật hơn).
+- **key (n) /kiː/**: chìa khoá.
+  - _Ví dụ_: This is my key.
+  - _Lưu ý_: chữ **k** đọc /k/ như trong key.
+- **leg (n) /leɡ/**: cái chân.
+  - _Ví dụ_: My leg is long.
+  - _Lưu ý_: chữ **l** đọc /l/ như trong leg (đầu lưỡi chạm lợi trên).
+- **milk (n) /mɪlk/**: sữa.
+  - _Ví dụ_: I drink milk.
+  - _Lưu ý_: chữ **m** đọc /m/ như trong milk.
+- **nose (n) /nəʊz/**: cái mũi.
+  - _Ví dụ_: My nose is small.
+  - _Lưu ý_: chữ **n** đọc /n/ như trong nose.
+- **orange (n) /ˈɒr.ɪndʒ/**: quả cam.
+  - _Ví dụ_: I have an orange.
+  - _Lưu ý_: chữ **o** đọc /ɒ/ như trong orange (giống "o" ngắn trong "ong").
+- **pen (n) /pen/**: cây bút.
+  - _Ví dụ_: This pen is new.
+  - _Lưu ý_: chữ **p** đọc /p/ như trong pen, bật hơi mạnh hơn "p" tiếng Việt.
+- **rain (n) /reɪn/**: mưa.
+  - _Ví dụ_: I like the rain.
+  - _Lưu ý_: chữ **r** đọc /r/ như trong rain (cong lưỡi, không rung như "r" tiếng Việt).
+- **sun (n) /sʌn/**: mặt trời.
+  - _Ví dụ_: The sun is hot.
+  - _Lưu ý_: chữ **s** đọc /s/ như trong sun.
+- **table (n) /ˈteɪ.bəl/**: cái bàn.
+  - _Ví dụ_: My book is on the table.
+  - _Lưu ý_: chữ **t** đọc /t/ như trong table, bật hơi mạnh.
+- **umbrella (n) /ʌmˈbrel.ə/**: cái ô, cái dù.
+  - _Ví dụ_: I have an umbrella.
+  - _Lưu ý_: chữ **u** đọc /ʌ/ như trong umbrella (giống "â" tiếng Việt).
+- **van (n) /væn/**: xe tải nhỏ.
+  - _Ví dụ_: The van is old.
+  - _Lưu ý_: chữ **v** đọc /v/ như trong van (răng chạm môi, có rung).
+- **water (n) /ˈwɔː.tər/**: nước.
+  - _Ví dụ_: I drink water every day.
+  - _Lưu ý_: chữ **w** đọc /w/ như trong water (tròn môi, giống "u" lướt nhanh).
+- **yes (adv) /jes/**: vâng, có.
+  - _Ví dụ_: Yes, I like milk.
+  - _Lưu ý_: chữ **y** đọc /j/ như trong yes (giống "d" trong "da" giọng Nam).
+- **zoo (n) /zuː/**: sở thú.
+  - _Ví dụ_: I go to the zoo.
+  - _Lưu ý_: chữ **z** đọc /z/ như trong zoo (giống /s/ nhưng có rung cổ họng).
+
+- **queen (n) /kwiːn/**: nữ hoàng.
+  - _Ví dụ_: The queen has a big house.
+  - _Lưu ý_: chữ q luôn đi với u, đọc /kw/ như trong queen.
+- **box (n) /bɒks/**: cái hộp.
+  - _Ví dụ_: The book is in the box.
+  - _Lưu ý_: chữ x đọc /ks/, thường nằm cuối từ như trong box.
+
+## 2. Ghép âm thường gặp (sh, ch, th, ph, wh, ee, oo, ea...)
+
+- **ship (n) /ʃɪp/**: tàu thuỷ.
+  - _Ví dụ_: The ship is big.
+  - _Lưu ý_: **sh** đọc /ʃ/ như tiếng "suỵt" khi bảo im lặng.
+- **shop (n) /ʃɒp/**: cửa hàng.
+  - _Ví dụ_: The shop is open.
+  - _Lưu ý_: **sh** đọc /ʃ/, môi hơi chu ra.
+- **chair (n) /tʃeər/**: cái ghế.
+  - _Ví dụ_: I sit on the chair.
+  - _Lưu ý_: **ch** đọc /tʃ/ như "ch" tiếng Việt nhưng bật hơi mạnh hơn.
+- **cheese (n) /tʃiːz/**: phô mai.
+  - _Ví dụ_: I like cheese.
+  - _Lưu ý_: **ch** đọc /tʃ/; **ee** đọc /iː/ kéo dài.
+- **think (v) /θɪŋk/**: nghĩ, suy nghĩ.
+  - _Ví dụ_: I think it is good.
+  - _Lưu ý_: **th** đọc /θ/ — đặt lưỡi giữa hai hàm răng, thổi hơi ra, không rung.
+- **thin (adj) /θɪn/**: gầy, mỏng.
+  - _Ví dụ_: This book is thin.
+  - _Lưu ý_: **th** đọc /θ/ giống think, không đọc thành "thin" kiểu tiếng Việt.
+- **mother (n) /ˈmʌð.ər/**: mẹ.
+  - _Ví dụ_: My mother is a teacher.
+  - _Lưu ý_: **th** ở đây đọc /ð/ — lưỡi giữa răng nhưng có rung cổ họng.
+- **father (n) /ˈfɑː.ðər/**: bố, cha.
+  - _Ví dụ_: My father drives a van.
+  - _Lưu ý_: **th** đọc /ð/ giống mother.
+- **phone (n) /fəʊn/**: điện thoại.
+  - _Ví dụ_: This is my phone.
+  - _Lưu ý_: **ph** luôn đọc /f/, không đọc /p/.
+- **photo (n) /ˈfəʊ.təʊ/**: bức ảnh.
+  - _Ví dụ_: I like this photo.
+  - _Lưu ý_: **ph** đọc /f/ như phone.
+- **when (adv) /wen/**: khi nào.
+  - _Ví dụ_: When do you eat?
+  - _Lưu ý_: **wh** thường đọc /w/, chữ h câm.
+- **wheel (n) /wiːl/**: bánh xe.
+  - _Ví dụ_: The wheel is round.
+  - _Lưu ý_: **wh** đọc /w/; **ee** đọc /iː/.
+- **tree (n) /triː/**: cái cây.
+  - _Ví dụ_: The tree is very tall.
+  - _Lưu ý_: **ee** đọc /iː/ — âm "i" kéo dài.
+- **sheep (n) /ʃiːp/**: con cừu.
+  - _Ví dụ_: The sheep eats grass.
+  - _Lưu ý_: **sh** + **ee**; sheep /iː/ dài, khác ship /ɪ/ ngắn.
+- **book (n) /bʊk/**: quyển sách.
+  - _Ví dụ_: This book is good.
+  - _Lưu ý_: **oo** ở đây đọc /ʊ/ ngắn, gần giống "u" nhưng ngắn gọn.
+- **moon (n) /muːn/**: mặt trăng.
+  - _Ví dụ_: The moon is white.
+  - _Lưu ý_: **oo** ở đây đọc /uː/ dài, khác với book.
+- **sea (n) /siː/**: biển.
+  - _Ví dụ_: The sea is blue.
+  - _Lưu ý_: **ea** đọc /iː/ dài.
+- **teacher (n) /ˈtiː.tʃər/**: giáo viên.
+  - _Ví dụ_: My teacher is kind.
+  - _Lưu ý_: **ea** đọc /iː/; **ch** đọc /tʃ/.
+- **bread (n) /bred/**: bánh mì.
+  - _Ví dụ_: I eat bread and jam.
+  - _Lưu ý_: **ea** ở đây đọc /e/ ngắn, không phải /iː/.
+- **train (n) /treɪn/**: tàu hoả.
+  - _Ví dụ_: The train is very long.
+  - _Lưu ý_: **ai** đọc /eɪ/ như "ây".
+- **boat (n) /bəʊt/**: chiếc thuyền.
+  - _Ví dụ_: The boat is small.
+  - _Lưu ý_: **oa** đọc /əʊ/ như "âu".
+- **house (n) /haʊs/**: ngôi nhà.
+  - _Ví dụ_: My house is new.
+  - _Lưu ý_: **ou** đọc /aʊ/ như "ao".
+- **car (n) /kɑːr/**: ô tô.
+  - _Ví dụ_: My father has a car.
+  - _Lưu ý_: **ar** đọc /ɑː/ — âm "a" mở và dài.
+- **bird (n) /bɜːd/**: con chim.
+  - _Ví dụ_: The bird is in the tree.
+  - _Lưu ý_: **ir** đọc /ɜː/ như "ơ" kéo dài.
+
+## 3. Số đếm và số thứ tự
+
+- **one (n) /wʌn/**: số một.
+  - _Ví dụ_: I have one pen.
+  - _Lưu ý_: đọc là /wʌn/, giống chữ "won", không đọc "o-ne".
+- **two (n) /tuː/**: số hai.
+  - _Ví dụ_: I have two cats.
+  - _Lưu ý_: chữ w câm, chỉ đọc /tuː/.
+- **three (n) /θriː/**: số ba.
+  - _Ví dụ_: She has three books.
+  - _Lưu ý_: bắt đầu bằng /θ/, lưỡi giữa răng; khác "tree".
+- **four (n) /fɔːr/**: số bốn.
+  - _Ví dụ_: We have four chairs.
+  - _Lưu ý_: viết có u nhưng đọc /fɔː/.
+- **five (n) /faɪv/**: số năm.
+  - _Ví dụ_: I see five birds.
+  - _Lưu ý_: chữ i đọc /aɪ/ như "ai".
+- **six (n) /sɪks/**: số sáu.
+  - _Ví dụ_: He has six pens.
+  - _Lưu ý_: nhớ phát âm rõ /ks/ ở cuối.
+- **seven (n) /ˈsev.ən/**: số bảy.
+  - _Ví dụ_: A week has seven days.
+  - _Lưu ý_: nhấn âm đầu: SE-ven.
+- **eight (n) /eɪt/**: số tám.
+  - _Ví dụ_: I have eight books.
+  - _Lưu ý_: chữ gh câm, chỉ đọc /eɪt/.
+- **nine (n) /naɪn/**: số chín.
+  - _Ví dụ_: She has nine photos.
+  - _Lưu ý_: đọc /aɪ/ như five.
+- **ten (n) /ten/**: số mười.
+  - _Ví dụ_: I have ten fingers.
+  - _Lưu ý_: ngắn gọn, giống "ten" tiếng Việt.
+- **eleven (n) /ɪˈlev.ən/**: số mười một.
+  - _Ví dụ_: My brother is eleven.
+  - _Lưu ý_: nhấn âm giữa: e-LE-ven.
+- **twelve (n) /twelv/**: số mười hai.
+  - _Ví dụ_: A year has twelve months.
+  - _Lưu ý_: có /v/ ở cuối, đừng bỏ.
+- **fifteen (n) /fɪfˈtiːn/**: số mười lăm.
+  - _Ví dụ_: I have fifteen pens.
+  - _Lưu ý_: nhấn âm sau: fif-TEEN; đuôi -teen đọc /tiːn/ dài.
+- **twenty (n) /ˈtwen.ti/**: số hai mươi.
+  - _Ví dụ_: My class has twenty students.
+  - _Lưu ý_: nhấn âm đầu: TWEN-ty, khác fifTEEN.
+- **thirty (n) /ˈθɜː.ti/**: số ba mươi.
+  - _Ví dụ_: My mother is thirty.
+  - _Lưu ý_: bắt đầu bằng /θ/ và có âm /ɜː/ như bird.
+- **forty (n) /ˈfɔː.ti/**: số bốn mươi.
+  - _Ví dụ_: He has forty books.
+  - _Lưu ý_: viết là forty, không có chữ u như four.
+- **fifty (n) /ˈfɪf.ti/**: số năm mươi.
+  - _Ví dụ_: My father is fifty.
+  - _Lưu ý_: five đổi thành fif- khi thêm đuôi.
+- **hundred (n) /ˈhʌn.drəd/**: số một trăm.
+  - _Ví dụ_: I have one hundred pens.
+  - _Lưu ý_: nói "one hundred", không thêm s.
+- **thousand (n) /ˈθaʊ.zənd/**: số một nghìn.
+  - _Ví dụ_: This book has one thousand words.
+  - _Lưu ý_: bắt đầu bằng /θ/, có /aʊ/ như house.
+- **first (adj) /fɜːst/**: thứ nhất, đầu tiên.
+  - _Ví dụ_: This is my first book.
+  - _Lưu ý_: từ one đổi hẳn thành first, phải học thuộc.
+- **second (adj) /ˈsek.ənd/**: thứ hai.
+  - _Ví dụ_: She is my second teacher.
+  - _Lưu ý_: từ two đổi hẳn thành second.
+- **third (adj) /θɜːd/**: thứ ba.
+  - _Ví dụ_: He sits in the third chair.
+  - _Lưu ý_: three đổi thành third, có /θ/ và /ɜː/.
+- **fourth (adj) /fɔːθ/**: thứ tư.
+  - _Ví dụ_: This is the fourth day.
+  - _Lưu ý_: chỉ thêm -th vào four.
+- **fifth (adj) /fɪfθ/**: thứ năm.
+  - _Ví dụ_: My room is the fifth.
+  - _Lưu ý_: five đổi v thành f rồi thêm -th.
+
+## 4. Thứ, tháng và mùa
+
+- **Monday (n) /ˈmʌn.deɪ/**: thứ Hai.
+  - _Ví dụ_: I go to school on Monday.
+  - _Lưu ý_: tên thứ luôn viết hoa chữ đầu.
+- **Tuesday (n) /ˈtʃuːz.deɪ/**: thứ Ba.
+  - _Ví dụ_: We have English on Tuesday.
+  - _Lưu ý_: đọc gần giống "chiu-zday", không đọc "tu-ết-day".
+- **Wednesday (n) /ˈwenz.deɪ/**: thứ Tư.
+  - _Ví dụ_: My mother works on Wednesday.
+  - _Lưu ý_: chữ d ở giữa câm, đọc là "WENZ-day".
+- **Thursday (n) /ˈθɜːz.deɪ/**: thứ Năm.
+  - _Ví dụ_: I play football on Thursday.
+  - _Lưu ý_: bắt đầu bằng /θ/ như think.
+- **Friday (n) /ˈfraɪ.deɪ/**: thứ Sáu.
+  - _Ví dụ_: We go home on Friday.
+  - _Lưu ý_: đọc /aɪ/ như five.
+- **Saturday (n) /ˈsæt.ə.deɪ/**: thứ Bảy.
+  - _Ví dụ_: I stay home on Saturday.
+  - _Lưu ý_: nhấn âm đầu: SA-tur-day.
+- **Sunday (n) /ˈsʌn.deɪ/**: Chủ nhật.
+  - _Ví dụ_: I see my father on Sunday.
+  - _Lưu ý_: gồm "sun" (mặt trời) + "day" (ngày), dễ nhớ.
+- **January (n) /ˈdʒæn.ju.ər.i/**: tháng Một.
+  - _Ví dụ_: January is very cold.
+  - _Lưu ý_: tên tháng cũng luôn viết hoa; bắt đầu bằng /dʒ/ như jam.
+- **February (n) /ˈfeb.ru.ər.i/**: tháng Hai.
+  - _Ví dụ_: February is a short month.
+  - _Lưu ý_: nhớ chữ r đầu tiên trong "Feb-ru-ary".
+- **March (n) /mɑːtʃ/**: tháng Ba.
+  - _Ví dụ_: My birthday is in March.
+  - _Lưu ý_: có **ar** /ɑː/ và **ch** /tʃ/.
+- **May (n) /meɪ/**: tháng Năm.
+  - _Ví dụ_: It is hot in May.
+  - _Lưu ý_: tên tháng ngắn nhất, đọc /meɪ/ như "mây".
+- **July (n) /dʒuˈlaɪ/**: tháng Bảy.
+  - _Ví dụ_: We have a holiday in July.
+  - _Lưu ý_: nhấn âm sau: ju-LY.
+- **October (n) /ɒkˈtəʊ.bər/**: tháng Mười.
+  - _Ví dụ_: October is not hot.
+  - _Lưu ý_: nhấn âm giữa: oc-TO-ber.
+- **December (n) /dɪˈsem.bər/**: tháng Mười hai.
+  - _Ví dụ_: December is the last month.
+  - _Lưu ý_: nhấn âm giữa: de-CEM-ber.
+- **spring (n) /sprɪŋ/**: mùa xuân.
+  - _Ví dụ_: Flowers grow in spring.
+  - _Lưu ý_: có ba phụ âm đầu /spr/, đọc liền nhau.
+- **summer (n) /ˈsʌm.ər/**: mùa hè.
+  - _Ví dụ_: Summer is very hot.
+  - _Lưu ý_: âm đầu /ʌ/ như sun.
+- **autumn (n) /ˈɔː.təm/**: mùa thu.
+  - _Ví dụ_: I like autumn.
+  - _Lưu ý_: chữ n cuối câm, đọc là "O-tum".
+- **winter (n) /ˈwɪn.tər/**: mùa đông.
+  - _Ví dụ_: Winter is cold here.
+  - _Lưu ý_: bắt đầu bằng /w/, tròn môi.
+- **week (n) /wiːk/**: tuần.
+  - _Ví dụ_: A week has seven days.
+  - _Lưu ý_: **ee** đọc /iː/ dài.
+- **month (n) /mʌnθ/**: tháng.
+  - _Ví dụ_: A month has four weeks.
+  - _Lưu ý_: kết thúc bằng /θ/, lưỡi giữa răng.
+- **year (n) /jɪər/**: năm.
+  - _Ví dụ_: A year has twelve months.
+  - _Lưu ý_: bắt đầu bằng /j/ như yes.
+- **today (adv) /təˈdeɪ/**: hôm nay.
+  - _Ví dụ_: Today is Monday.
+  - _Lưu ý_: nhấn âm sau: to-DAY.
+- **tomorrow (adv) /təˈmɒr.əʊ/**: ngày mai.
+  - _Ví dụ_: Tomorrow is Tuesday.
+  - _Lưu ý_: nhớ hai chữ r ở giữa; nhấn âm giữa.
+- **yesterday (adv) /ˈjes.tə.deɪ/**: hôm qua.
+  - _Ví dụ_: Yesterday was Sunday.
+  - _Lưu ý_: gồm "yes" + "ter" + "day", nhấn âm đầu.
+
+## 5. Màu sắc và hình dạng
+
+- **colour (n) /ˈkʌl.ər/**: màu sắc.
+  - _Ví dụ_: I like this colour.
+  - _Lưu ý_: Anh-Anh viết "colour", Anh-Mỹ viết "color".
+- **red (adj) /red/**: màu đỏ.
+  - _Ví dụ_: My hat is red.
+  - _Lưu ý_: ngắn gọn, chữ r cong lưỡi.
+- **blue (adj) /bluː/**: màu xanh dương.
+  - _Ví dụ_: The sea is blue.
+  - _Lưu ý_: chữ e cuối câm, đọc /bluː/.
+- **green (adj) /ɡriːn/**: màu xanh lá.
+  - _Ví dụ_: The tree is green.
+  - _Lưu ý_: **ee** đọc /iː/ dài.
+- **yellow (adj) /ˈjel.əʊ/**: màu vàng.
+  - _Ví dụ_: The sun is yellow.
+  - _Lưu ý_: bắt đầu bằng /j/ như yes; đuôi -ow đọc /əʊ/.
+- **black (adj) /blæk/**: màu đen.
+  - _Ví dụ_: My cat is black.
+  - _Lưu ý_: có /æ/ như cat.
+- **white (adj) /waɪt/**: màu trắng.
+  - _Ví dụ_: The moon is white.
+  - _Lưu ý_: **wh** đọc /w/; chữ i đọc /aɪ/.
+- **brown (adj) /braʊn/**: màu nâu.
+  - _Ví dụ_: My dog is brown.
+  - _Lưu ý_: **ow** ở đây đọc /aʊ/ như house.
+- **pink (adj) /pɪŋk/**: màu hồng.
+  - _Ví dụ_: Her bag is pink.
+  - _Lưu ý_: đuôi -nk đọc /ŋk/ như think.
+- **purple (adj) /ˈpɜː.pəl/**: màu tím.
+  - _Ví dụ_: I have a purple pen.
+  - _Lưu ý_: có /ɜː/ như bird.
+- **grey (adj) /ɡreɪ/**: màu xám.
+  - _Ví dụ_: The sky is grey today.
+  - _Lưu ý_: Anh-Anh viết "grey", Anh-Mỹ viết "gray".
+- **dark (adj) /dɑːk/**: (màu) đậm, tối.
+  - _Ví dụ_: I like dark blue.
+  - _Lưu ý_: **ar** đọc /ɑː/ như car.
+- **light (adj) /laɪt/**: (màu) nhạt, sáng.
+  - _Ví dụ_: Her bag is light green.
+  - _Lưu ý_: chữ gh câm, đọc /laɪt/.
+- **shape (n) /ʃeɪp/**: hình, hình dạng.
+  - _Ví dụ_: What shape is it?
+  - _Lưu ý_: **sh** đọc /ʃ/; chữ a đọc /eɪ/ vì có e câm cuối.
+- **circle (n) /ˈsɜː.kəl/**: hình tròn.
+  - _Ví dụ_: The moon is a circle.
+  - _Lưu ý_: chữ c đầu đọc /s/ vì đứng trước i.
+- **square (n) /skweər/**: hình vuông.
+  - _Ví dụ_: This box is a square.
+  - _Lưu ý_: **qu** đọc /kw/, tròn môi.
+- **triangle (n) /ˈtraɪ.æŋ.ɡəl/**: hình tam giác.
+  - _Ví dụ_: A triangle has three lines.
+  - _Lưu ý_: "tri-" nghĩa là ba, dễ nhớ với three.
+- **rectangle (n) /ˈrek.tæŋ.ɡəl/**: hình chữ nhật.
+  - _Ví dụ_: My table is a rectangle.
+  - _Lưu ý_: nhấn âm đầu: REC-tan-gle.
+- **star (n) /stɑːr/**: ngôi sao, hình ngôi sao.
+  - _Ví dụ_: I see a star.
+  - _Lưu ý_: **ar** đọc /ɑː/ như car.
+- **heart (n) /hɑːt/**: hình trái tim, trái tim.
+  - _Ví dụ_: I draw a red heart.
+  - _Lưu ý_: **ear** ở đây đọc /ɑː/, không đọc như "hear".
+- **line (n) /laɪn/**: đường thẳng, nét.
+  - _Ví dụ_: I draw a long line.
+  - _Lưu ý_: chữ i đọc /aɪ/ vì có e câm cuối.
+- **round (adj) /raʊnd/**: tròn.
+  - _Ví dụ_: The ball is round.
+  - _Lưu ý_: **ou** đọc /aʊ/ như house.

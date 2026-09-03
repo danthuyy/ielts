@@ -1,0 +1,48 @@
+## 12. Con vật quen thuộc
+
+- **animal (n) /ˈænɪml/**: con vật, động vật.
+  - _Ví dụ_: I love small animals.
+- **dog (n) /dɒɡ/**: con chó.
+  - _Ví dụ_: My dog is very friendly.
+- **cat (n) /kæt/**: con mèo.
+  - _Ví dụ_: The cat sleeps on my bed.
+- **bird (n) /bɜːd/**: con chim.
+  - _Ví dụ_: A bird sings in the tree.
+- **chicken (n) /ˈtʃɪkɪn/**: con gà.
+  - _Ví dụ_: We have ten chickens.
+- **duck (n) /dʌk/**: con vịt.
+  - _Ví dụ_: The ducks are in the water.
+- **pig (n) /pɪɡ/**: con lợn, con heo.
+  - _Ví dụ_: My uncle has two pigs.
+- **cow (n) /kaʊ/**: con bò.
+  - _Ví dụ_: The cow eats grass.
+- **buffalo (n) /ˈbʌfələʊ/**: con trâu.
+  - _Ví dụ_: A buffalo works in the field.
+- **horse (n) /hɔːs/**: con ngựa.
+  - _Ví dụ_: The horse runs very fast.
+- **goat (n) /ɡəʊt/**: con dê.
+  - _Ví dụ_: My family has three goats.
+- **mouse (n) /maʊs/**: con chuột.
+  - _Ví dụ_: A small mouse is here.
+- **elephant (n) /ˈelɪfənt/**: con voi.
+  - _Ví dụ_: An elephant is very big.
+- **tiger (n) /ˈtaɪɡə/**: con hổ.
+  - _Ví dụ_: The tiger lives in the forest.
+- **lion (n) /ˈlaɪən/**: con sư tử.
+  - _Ví dụ_: A lion is a strong animal.
+- **monkey (n) /ˈmʌŋki/**: con khỉ.
+  - _Ví dụ_: The monkey eats a banana.
+- **snake (n) /sneɪk/**: con rắn.
+  - _Ví dụ_: I am afraid of snakes.
+- **bear (n) /beə/**: con gấu.
+  - _Ví dụ_: The bear is very big.
+- **rabbit (n) /ˈræbɪt/**: con thỏ.
+  - _Ví dụ_: My rabbit eats vegetables.
+- **frog (n) /frɒɡ/**: con ếch.
+  - _Ví dụ_: A frog jumps into the water.
+- **bee (n) /biː/**: con ong.
+  - _Ví dụ_: Bees like flowers.
+- **tail (n) /teɪl/**: cái đuôi.
+  - _Ví dụ_: My dog has a short tail.
+- **wing (n) /wɪŋ/**: cái cánh.
+  - _Ví dụ_: Birds have two wings.

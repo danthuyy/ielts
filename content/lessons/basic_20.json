@@ -1,0 +1,255 @@
+{
+  "id": "basic_20",
+  "title": "Nền tảng 20 — Câu giao tiếp hằng ngày",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "How are you?",
+      "pos": "phr",
+      "ipa": "/ˌhaʊ ə ˈjuː/",
+      "vi": "Bạn khỏe không?",
+      "example": "Hello Nam! How are you?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "câu chào hỏi hằng ngày với người quen."
+    },
+    {
+      "word": "I'm fine, thank you.",
+      "pos": "phr",
+      "ipa": "/aɪm ˈfaɪn ˌθæŋk ˈjuː/",
+      "vi": "Tôi khỏe, cảm ơn bạn",
+      "example": "I'm fine, thank you. And you?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "câu trả lời cho How are you?"
+    },
+    {
+      "word": "Good morning.",
+      "pos": "phr",
+      "ipa": "/ˌɡʊd ˈmɔːnɪŋ/",
+      "vi": "Chào buổi sáng",
+      "example": "Good morning, teacher!",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "buổi chiều nói Good afternoon."
+    },
+    {
+      "word": "Nice to meet you.",
+      "pos": "phr",
+      "ipa": "/ˌnaɪs tə ˈmiːt juː/",
+      "vi": "Rất vui được gặp bạn",
+      "example": "I am Lan. Nice to meet you.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chỉ dùng khi gặp lần đầu tiên."
+    },
+    {
+      "word": "What's your name?",
+      "pos": "phr",
+      "ipa": "/ˌwɒts jɔː ˈneɪm/",
+      "vi": "Bạn tên là gì?",
+      "example": "Hello! What's your name?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "What's là dạng rút gọn của What is."
+    },
+    {
+      "word": "My name is Nam.",
+      "pos": "phr",
+      "ipa": "/maɪ ˈneɪm ɪz ˈnæm/",
+      "vi": "Tôi tên là Nam",
+      "example": "My name is Nam. I am a student.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có thể nói ngắn hơn: I'm Nam."
+    },
+    {
+      "word": "How old are you?",
+      "pos": "phr",
+      "ipa": "/ˌhaʊ ˈəʊld ə juː/",
+      "vi": "Bạn bao nhiêu tuổi?",
+      "example": "How old are you? I am fourteen.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trả lời: I am fourteen (years old)."
+    },
+    {
+      "word": "Where are you from?",
+      "pos": "phr",
+      "ipa": "/ˌweər ə juː ˈfrɒm/",
+      "vi": "Bạn đến từ đâu?",
+      "example": "Where are you from, Mary?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "hỏi về quê hương hoặc đất nước."
+    },
+    {
+      "word": "I'm from Vietnam.",
+      "pos": "phr",
+      "ipa": "/aɪm frəm ˌvjetˈnæm/",
+      "vi": "Tôi đến từ Việt Nam",
+      "example": "I'm from Vietnam. I live in Hue.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "tên nước luôn viết hoa."
+    },
+    {
+      "word": "Excuse me.",
+      "pos": "phr",
+      "ipa": "/ɪkˈskjuːz miː/",
+      "vi": "Xin lỗi cho hỏi. / Làm ơn",
+      "example": "Excuse me, where is the school?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi bắt chuyện hoặc xin đi qua."
+    },
+    {
+      "word": "I'm sorry.",
+      "pos": "phr",
+      "ipa": "/aɪm ˈsɒri/",
+      "vi": "Tôi xin lỗi",
+      "example": "I'm sorry. I am late.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi mình làm sai, khác Excuse me."
+    },
+    {
+      "word": "That's OK.",
+      "pos": "phr",
+      "ipa": "/ˌðæts əʊˈkeɪ/",
+      "vi": "Không sao đâu",
+      "example": "That's OK. Please sit down.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "câu trả lời cho I'm sorry."
+    },
+    {
+      "word": "Thank you very much.",
+      "pos": "phr",
+      "ipa": "/ˌθæŋk juː ˈveri ˈmʌtʃ/",
+      "vi": "Cảm ơn bạn rất nhiều",
+      "example": "Thank you very much for your help.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nói ngắn gọn: Thanks."
+    },
+    {
+      "word": "You're welcome.",
+      "pos": "phr",
+      "ipa": "/jɔː ˈwelkəm/",
+      "vi": "Không có gì",
+      "example": "You're welcome. See you tomorrow.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "câu trả lời cho Thank you."
+    },
+    {
+      "word": "I don't understand.",
+      "pos": "phr",
+      "ipa": "/aɪ ˌdəʊnt ˌʌndəˈstænd/",
+      "vi": "Tôi không hiểu",
+      "example": "Sorry, I don't understand this word.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "rất hữu ích trong lớp học."
+    },
+    {
+      "word": "Can you help me?",
+      "pos": "phr",
+      "ipa": "/kən juː ˈhelp miː/",
+      "vi": "Bạn giúp tôi được không?",
+      "example": "Excuse me, can you help me?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "lịch sự hơn: Could you help me?"
+    },
+    {
+      "word": "Can you say that again?",
+      "pos": "phr",
+      "ipa": "/kən juː ˌseɪ ðæt əˈɡen/",
+      "vi": "Bạn nói lại được không?",
+      "example": "Sorry, can you say that again?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi nghe chưa rõ."
+    },
+    {
+      "word": "How do you spell it?",
+      "pos": "phr",
+      "ipa": "/ˌhaʊ də juː ˈspel ɪt/",
+      "vi": "Từ đó đánh vần thế nào?",
+      "example": "Nice name! How do you spell it?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi muốn biết cách viết một từ."
+    },
+    {
+      "word": "How much is it?",
+      "pos": "phr",
+      "ipa": "/ˌhaʊ ˈmʌtʃ ɪz ɪt/",
+      "vi": "Cái này bao nhiêu tiền?",
+      "example": "I like this hat. How much is it?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "dùng khi đi mua đồ."
+    },
+    {
+      "word": "What time is it?",
+      "pos": "phr",
+      "ipa": "/ˌwɒt ˈtaɪm ɪz ɪt/",
+      "vi": "Mấy giờ rồi?",
+      "example": "Excuse me, what time is it?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "trả lời: It is seven o'clock."
+    },
+    {
+      "word": "Good luck!",
+      "pos": "phr",
+      "ipa": "/ˌɡʊd ˈlʌk/",
+      "vi": "Chúc may mắn!",
+      "example": "Good luck with your test!",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nói trước kỳ thi hoặc việc quan trọng."
+    },
+    {
+      "word": "See you later.",
+      "pos": "phr",
+      "ipa": "/ˌsiː juː ˈleɪtə/",
+      "vi": "Hẹn gặp lại",
+      "example": "Goodbye! See you later.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "cũng nói See you tomorrow."
+    }
+  ]
+}

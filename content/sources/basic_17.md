@@ -1,0 +1,68 @@
+## 17. Tính từ trái nghĩa
+
+- **big (adj) /bɪɡ/**: to, lớn.
+  - _Ví dụ_: My school is very big.
+  - _Lưu ý_: trái nghĩa: small.
+- **small (adj) /smɔːl/**: nhỏ, bé.
+  - _Ví dụ_: She has a small bag.
+  - _Lưu ý_: trái nghĩa: big.
+- **long (adj) /lɒŋ/**: dài.
+  - _Ví dụ_: My sister has long hair.
+  - _Lưu ý_: trái nghĩa: short.
+- **short (adj) /ʃɔːt/**: ngắn; thấp.
+  - _Ví dụ_: This is a short story.
+  - _Lưu ý_: trái nghĩa: long (ngắn) và tall (thấp).
+- **tall (adj) /tɔːl/**: cao (người, cây).
+  - _Ví dụ_: My brother is very tall.
+  - _Lưu ý_: trái nghĩa: short.
+- **new (adj) /njuː/**: mới.
+  - _Ví dụ_: I have a new phone.
+  - _Lưu ý_: trái nghĩa: old.
+- **old (adj) /əʊld/**: cũ; già.
+  - _Ví dụ_: This house is very old.
+  - _Lưu ý_: trái nghĩa: new (cũ) và young (già).
+- **young (adj) /jʌŋ/**: trẻ.
+  - _Ví dụ_: My teacher is still young.
+  - _Lưu ý_: trái nghĩa: old.
+- **good (adj) /ɡʊd/**: tốt, hay, giỏi.
+  - _Ví dụ_: She is a good student.
+  - _Lưu ý_: trái nghĩa: bad.
+- **bad (adj) /bæd/**: xấu, tệ, dở.
+  - _Ví dụ_: The weather is bad today.
+  - _Lưu ý_: trái nghĩa: good.
+- **easy (adj) /ˈiːzi/**: dễ.
+  - _Ví dụ_: This test is very easy.
+  - _Lưu ý_: trái nghĩa: hard.
+- **hard (adj) /hɑːd/**: khó; cứng.
+  - _Ví dụ_: Math is hard for me.
+  - _Lưu ý_: trái nghĩa: easy; difficult cũng nghĩa là khó.
+- **fast (adj) /fɑːst/**: nhanh.
+  - _Ví dụ_: This train is very fast.
+  - _Lưu ý_: trái nghĩa: slow.
+- **slow (adj) /sləʊ/**: chậm.
+  - _Ví dụ_: My old computer is slow.
+  - _Lưu ý_: trái nghĩa: fast.
+- **cheap (adj) /tʃiːp/**: rẻ.
+  - _Ví dụ_: This shirt is very cheap.
+  - _Lưu ý_: trái nghĩa: expensive.
+- **expensive (adj) /ɪkˈspensɪv/**: đắt.
+  - _Ví dụ_: That car is too expensive.
+  - _Lưu ý_: trái nghĩa: cheap.
+- **clean (adj) /kliːn/**: sạch.
+  - _Ví dụ_: My room is clean today.
+  - _Lưu ý_: trái nghĩa: dirty; cũng là động từ: clean the room.
+- **dirty (adj) /ˈdɜːti/**: bẩn.
+  - _Ví dụ_: His shoes are very dirty.
+  - _Lưu ý_: trái nghĩa: clean.
+- **early (adj) /ˈɜːli/**: sớm.
+  - _Ví dụ_: I take an early bus.
+  - _Lưu ý_: trái nghĩa: late; cũng là trạng từ: get up early.
+- **late (adj) /leɪt/**: muộn, trễ.
+  - _Ví dụ_: He is late for school.
+  - _Lưu ý_: trái nghĩa: early.
+- **hot (adj) /hɒt/**: nóng.
+  - _Ví dụ_: The soup is very hot.
+  - _Lưu ý_: trái nghĩa: cold.
+- **cold (adj) /kəʊld/**: lạnh.
+  - _Ví dụ_: The water is too cold.
+  - _Lưu ý_: trái nghĩa: hot.

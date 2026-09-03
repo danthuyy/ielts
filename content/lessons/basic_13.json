@@ -1,0 +1,277 @@
+{
+  "id": "basic_13",
+  "title": "Nền tảng 13 — Thời tiết và thiên nhiên",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "weather",
+      "pos": "n",
+      "ipa": "/ˈweðə/",
+      "vi": "thời tiết",
+      "example": "The weather is nice today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sun",
+      "pos": "n",
+      "ipa": "/sʌn/",
+      "vi": "mặt trời",
+      "example": "The sun is very bright.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rain",
+      "pos": "n",
+      "ipa": "/reɪn/",
+      "vi": "mưa",
+      "example": "I like the rain.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wind",
+      "pos": "n",
+      "ipa": "/wɪnd/",
+      "vi": "gió",
+      "example": "The wind is strong today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cloud",
+      "pos": "n",
+      "ipa": "/klaʊd/",
+      "vi": "đám mây",
+      "example": "I see white clouds.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "snow",
+      "pos": "n",
+      "ipa": "/snəʊ/",
+      "vi": "tuyết",
+      "example": "There is no snow here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sky",
+      "pos": "n",
+      "ipa": "/skaɪ/",
+      "vi": "bầu trời",
+      "example": "The sky is blue.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sea",
+      "pos": "n",
+      "ipa": "/siː/",
+      "vi": "biển",
+      "example": "My family goes to the sea.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "river",
+      "pos": "n",
+      "ipa": "/ˈrɪvə/",
+      "vi": "dòng sông",
+      "example": "The river is near my house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "mountain",
+      "pos": "n",
+      "ipa": "/ˈmaʊntən/",
+      "vi": "núi",
+      "example": "I see a big mountain.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tree",
+      "pos": "n",
+      "ipa": "/triː/",
+      "vi": "cái cây",
+      "example": "There is a tree here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "flower",
+      "pos": "n",
+      "ipa": "/ˈflaʊə/",
+      "vi": "bông hoa",
+      "example": "These flowers are very beautiful.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "grass",
+      "pos": "n",
+      "ipa": "/ɡrɑːs/",
+      "vi": "cỏ",
+      "example": "The grass is green.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "forest",
+      "pos": "n",
+      "ipa": "/ˈfɒrɪst/",
+      "vi": "rừng",
+      "example": "Many animals live in the forest.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hot",
+      "pos": "adj",
+      "ipa": "/hɒt/",
+      "vi": "nóng",
+      "example": "It is hot in summer.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cold",
+      "pos": "adj",
+      "ipa": "/kəʊld/",
+      "vi": "lạnh",
+      "example": "The water is very cold.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "warm",
+      "pos": "adj",
+      "ipa": "/wɔːm/",
+      "vi": "ấm",
+      "example": "My room is warm.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cool",
+      "pos": "adj",
+      "ipa": "/kuːl/",
+      "vi": "mát",
+      "example": "The evening is cool.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wet",
+      "pos": "adj",
+      "ipa": "/wet/",
+      "vi": "ướt",
+      "example": "My shoes are wet.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "dry",
+      "pos": "adj",
+      "ipa": "/draɪ/",
+      "vi": "khô",
+      "example": "The grass is dry now.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sunny",
+      "pos": "adj",
+      "ipa": "/ˈsʌni/",
+      "vi": "có nắng",
+      "example": "Today is a sunny day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rainy",
+      "pos": "adj",
+      "ipa": "/ˈreɪni/",
+      "vi": "có mưa",
+      "example": "I stay home on rainy days.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "windy",
+      "pos": "adj",
+      "ipa": "/ˈwɪndi/",
+      "vi": "có gió",
+      "example": "It is windy today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cloudy",
+      "pos": "adj",
+      "ipa": "/ˈklaʊdi/",
+      "vi": "nhiều mây",
+      "example": "The sky is cloudy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "id": "basic_01",
+  "title": "Nền tảng 01 — Bảng chữ cái và âm cơ bản",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "apple",
+      "pos": "n",
+      "ipa": "/ˈæp.əl/",
+      "vi": "quả táo",
+      "example": "I eat an apple.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **a** đọc /æ/ như trong apple (miệng mở rộng, giữa \"a\" và \"e\")."
+    },
+    {
+      "word": "ball",
+      "pos": "n",
+      "ipa": "/bɔːl/",
+      "vi": "quả bóng",
+      "example": "The ball is big.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **b** đọc /b/ như trong ball, giống \"b\" tiếng Việt."
+    },
+    {
+      "word": "cat",
+      "pos": "n",
+      "ipa": "/kæt/",
+      "vi": "con mèo",
+      "example": "My cat is small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **c** đọc /k/ như trong cat (giống \"c\" trong \"cá\")."
+    },
+    {
+      "word": "dog",
+      "pos": "n",
+      "ipa": "/dɒɡ/",
+      "vi": "con chó",
+      "example": "The dog is here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **d** đọc /d/ như trong dog, phát âm mạnh hơn \"đ\" tiếng Việt."
+    },
+    {
+      "word": "egg",
+      "pos": "n",
+      "ipa": "/eɡ/",
+      "vi": "quả trứng",
+      "example": "I like eggs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **e** đọc /e/ như trong egg (giống \"e\" tiếng Việt)."
+    },
+    {
+      "word": "fish",
+      "pos": "n",
+      "ipa": "/fɪʃ/",
+      "vi": "con cá",
+      "example": "The fish is in water.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **f** đọc /f/ như trong fish (răng trên chạm môi dưới)."
+    },
+    {
+      "word": "girl",
+      "pos": "n",
+      "ipa": "/ɡɜːl/",
+      "vi": "bé gái, cô gái",
+      "example": "The girl is my friend.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **g** đọc /ɡ/ như trong girl (giống \"g\" trong \"gà\")."
+    },
+    {
+      "word": "hat",
+      "pos": "n",
+      "ipa": "/hæt/",
+      "vi": "cái mũ",
+      "example": "My hat is new.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **h** đọc /h/ như trong hat, hơi thoát nhẹ ra ngoài."
+    },
+    {
+      "word": "ink",
+      "pos": "n",
+      "ipa": "/ɪŋk/",
+      "vi": "mực (bút)",
+      "example": "The ink is here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **i** đọc /ɪ/ như trong ink (ngắn, không kéo dài thành \"i\")."
+    },
+    {
+      "word": "jam",
+      "pos": "n",
+      "ipa": "/dʒæm/",
+      "vi": "mứt",
+      "example": "I like jam.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **j** đọc /dʒ/ như trong jam (gần giống \"gi\" nhưng bật hơn)."
+    },
+    {
+      "word": "key",
+      "pos": "n",
+      "ipa": "/kiː/",
+      "vi": "chìa khoá",
+      "example": "This is my key.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **k** đọc /k/ như trong key."
+    },
+    {
+      "word": "leg",
+      "pos": "n",
+      "ipa": "/leɡ/",
+      "vi": "cái chân",
+      "example": "My leg is long.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **l** đọc /l/ như trong leg (đầu lưỡi chạm lợi trên)."
+    },
+    {
+      "word": "milk",
+      "pos": "n",
+      "ipa": "/mɪlk/",
+      "vi": "sữa",
+      "example": "I drink milk.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **m** đọc /m/ như trong milk."
+    },
+    {
+      "word": "nose",
+      "pos": "n",
+      "ipa": "/nəʊz/",
+      "vi": "cái mũi",
+      "example": "My nose is small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **n** đọc /n/ như trong nose."
+    },
+    {
+      "word": "orange",
+      "pos": "n",
+      "ipa": "/ˈɒr.ɪndʒ/",
+      "vi": "quả cam",
+      "example": "I have an orange.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **o** đọc /ɒ/ như trong orange (giống \"o\" ngắn trong \"ong\")."
+    },
+    {
+      "word": "pen",
+      "pos": "n",
+      "ipa": "/pen/",
+      "vi": "cây bút",
+      "example": "This pen is new.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **p** đọc /p/ như trong pen, bật hơi mạnh hơn \"p\" tiếng Việt."
+    },
+    {
+      "word": "rain",
+      "pos": "n",
+      "ipa": "/reɪn/",
+      "vi": "mưa",
+      "example": "I like the rain.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **r** đọc /r/ như trong rain (cong lưỡi, không rung như \"r\" tiếng Việt)."
+    },
+    {
+      "word": "sun",
+      "pos": "n",
+      "ipa": "/sʌn/",
+      "vi": "mặt trời",
+      "example": "The sun is hot.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **s** đọc /s/ như trong sun."
+    },
+    {
+      "word": "table",
+      "pos": "n",
+      "ipa": "/ˈteɪ.bəl/",
+      "vi": "cái bàn",
+      "example": "My book is on the table.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **t** đọc /t/ như trong table, bật hơi mạnh."
+    },
+    {
+      "word": "umbrella",
+      "pos": "n",
+      "ipa": "/ʌmˈbrel.ə/",
+      "vi": "cái ô, cái dù",
+      "example": "I have an umbrella.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **u** đọc /ʌ/ như trong umbrella (giống \"â\" tiếng Việt)."
+    },
+    {
+      "word": "van",
+      "pos": "n",
+      "ipa": "/væn/",
+      "vi": "xe tải nhỏ",
+      "example": "The van is old.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **v** đọc /v/ như trong van (răng chạm môi, có rung)."
+    },
+    {
+      "word": "water",
+      "pos": "n",
+      "ipa": "/ˈwɔː.tər/",
+      "vi": "nước",
+      "example": "I drink water every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **w** đọc /w/ như trong water (tròn môi, giống \"u\" lướt nhanh)."
+    },
+    {
+      "word": "yes",
+      "pos": "adv",
+      "ipa": "/jes/",
+      "vi": "vâng, có",
+      "example": "Yes, I like milk.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **y** đọc /j/ như trong yes (giống \"d\" trong \"da\" giọng Nam)."
+    },
+    {
+      "word": "zoo",
+      "pos": "n",
+      "ipa": "/zuː/",
+      "vi": "sở thú",
+      "example": "I go to the zoo.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ **z** đọc /z/ như trong zoo (giống /s/ nhưng có rung cổ họng)."
+    },
+    {
+      "word": "queen",
+      "pos": "n",
+      "ipa": "/kwiːn/",
+      "vi": "nữ hoàng",
+      "example": "The queen has a big house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ q luôn đi với u, đọc /kw/ như trong queen."
+    },
+    {
+      "word": "box",
+      "pos": "n",
+      "ipa": "/bɒks/",
+      "vi": "cái hộp",
+      "example": "The book is in the box.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ x đọc /ks/, thường nằm cuối từ như trong box."
+    }
+  ]
+}

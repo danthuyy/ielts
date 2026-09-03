@@ -1,0 +1,277 @@
+{
+  "id": "basic_04",
+  "title": "Nền tảng 04 — Thứ, tháng và mùa",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "monday",
+      "pos": "n",
+      "ipa": "/ˈmʌn.deɪ/",
+      "vi": "thứ Hai",
+      "example": "I go to school on Monday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "tên thứ luôn viết hoa chữ đầu."
+    },
+    {
+      "word": "tuesday",
+      "pos": "n",
+      "ipa": "/ˈtʃuːz.deɪ/",
+      "vi": "thứ Ba",
+      "example": "We have English on Tuesday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đọc gần giống \"chiu-zday\", không đọc \"tu-ết-day\"."
+    },
+    {
+      "word": "wednesday",
+      "pos": "n",
+      "ipa": "/ˈwenz.deɪ/",
+      "vi": "thứ Tư",
+      "example": "My mother works on Wednesday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ d ở giữa câm, đọc là \"WENZ-day\"."
+    },
+    {
+      "word": "thursday",
+      "pos": "n",
+      "ipa": "/ˈθɜːz.deɪ/",
+      "vi": "thứ Năm",
+      "example": "I play football on Thursday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /θ/ như think."
+    },
+    {
+      "word": "friday",
+      "pos": "n",
+      "ipa": "/ˈfraɪ.deɪ/",
+      "vi": "thứ Sáu",
+      "example": "We go home on Friday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "đọc /aɪ/ như five."
+    },
+    {
+      "word": "saturday",
+      "pos": "n",
+      "ipa": "/ˈsæt.ə.deɪ/",
+      "vi": "thứ Bảy",
+      "example": "I stay home on Saturday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm đầu: SA-tur-day."
+    },
+    {
+      "word": "sunday",
+      "pos": "n",
+      "ipa": "/ˈsʌn.deɪ/",
+      "vi": "Chủ nhật",
+      "example": "I see my father on Sunday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "gồm \"sun\" (mặt trời) + \"day\" (ngày), dễ nhớ."
+    },
+    {
+      "word": "january",
+      "pos": "n",
+      "ipa": "/ˈdʒæn.ju.ər.i/",
+      "vi": "tháng Một",
+      "example": "January is very cold.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "tên tháng cũng luôn viết hoa; bắt đầu bằng /dʒ/ như jam."
+    },
+    {
+      "word": "february",
+      "pos": "n",
+      "ipa": "/ˈfeb.ru.ər.i/",
+      "vi": "tháng Hai",
+      "example": "February is a short month.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhớ chữ r đầu tiên trong \"Feb-ru-ary\"."
+    },
+    {
+      "word": "march",
+      "pos": "n",
+      "ipa": "/mɑːtʃ/",
+      "vi": "tháng Ba",
+      "example": "My birthday is in March.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có **ar** /ɑː/ và **ch** /tʃ/."
+    },
+    {
+      "word": "may",
+      "pos": "n",
+      "ipa": "/meɪ/",
+      "vi": "tháng Năm",
+      "example": "It is hot in May.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "tên tháng ngắn nhất, đọc /meɪ/ như \"mây\"."
+    },
+    {
+      "word": "july",
+      "pos": "n",
+      "ipa": "/dʒuˈlaɪ/",
+      "vi": "tháng Bảy",
+      "example": "We have a holiday in July.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm sau: ju-LY."
+    },
+    {
+      "word": "october",
+      "pos": "n",
+      "ipa": "/ɒkˈtəʊ.bər/",
+      "vi": "tháng Mười",
+      "example": "October is not hot.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm giữa: oc-TO-ber."
+    },
+    {
+      "word": "december",
+      "pos": "n",
+      "ipa": "/dɪˈsem.bər/",
+      "vi": "tháng Mười hai",
+      "example": "December is the last month.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm giữa: de-CEM-ber."
+    },
+    {
+      "word": "spring",
+      "pos": "n",
+      "ipa": "/sprɪŋ/",
+      "vi": "mùa xuân",
+      "example": "Flowers grow in spring.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "có ba phụ âm đầu /spr/, đọc liền nhau."
+    },
+    {
+      "word": "summer",
+      "pos": "n",
+      "ipa": "/ˈsʌm.ər/",
+      "vi": "mùa hè",
+      "example": "Summer is very hot.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "âm đầu /ʌ/ như sun."
+    },
+    {
+      "word": "autumn",
+      "pos": "n",
+      "ipa": "/ˈɔː.təm/",
+      "vi": "mùa thu",
+      "example": "I like autumn.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "chữ n cuối câm, đọc là \"O-tum\"."
+    },
+    {
+      "word": "winter",
+      "pos": "n",
+      "ipa": "/ˈwɪn.tər/",
+      "vi": "mùa đông",
+      "example": "Winter is cold here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /w/, tròn môi."
+    },
+    {
+      "word": "week",
+      "pos": "n",
+      "ipa": "/wiːk/",
+      "vi": "tuần",
+      "example": "A week has seven days.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ee** đọc /iː/ dài."
+    },
+    {
+      "word": "month",
+      "pos": "n",
+      "ipa": "/mʌnθ/",
+      "vi": "tháng",
+      "example": "A month has four weeks.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "kết thúc bằng /θ/, lưỡi giữa răng."
+    },
+    {
+      "word": "year",
+      "pos": "n",
+      "ipa": "/jɪər/",
+      "vi": "năm",
+      "example": "A year has twelve months.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "bắt đầu bằng /j/ như yes."
+    },
+    {
+      "word": "today",
+      "pos": "adv",
+      "ipa": "/təˈdeɪ/",
+      "vi": "hôm nay",
+      "example": "Today is Monday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhấn âm sau: to-DAY."
+    },
+    {
+      "word": "tomorrow",
+      "pos": "adv",
+      "ipa": "/təˈmɒr.əʊ/",
+      "vi": "ngày mai",
+      "example": "Tomorrow is Tuesday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "nhớ hai chữ r ở giữa; nhấn âm giữa."
+    },
+    {
+      "word": "yesterday",
+      "pos": "adv",
+      "ipa": "/ˈjes.tə.deɪ/",
+      "vi": "hôm qua",
+      "example": "Yesterday was Sunday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "gồm \"yes\" + \"ter\" + \"day\", nhấn âm đầu."
+    }
+  ]
+}

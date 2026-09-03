@@ -1,0 +1,277 @@
+{
+  "id": "basic_02",
+  "title": "Nền tảng 02 — Ghép âm thường gặp (sh, ch, th, ph, wh, ee, oo, ea...)",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "ship",
+      "pos": "n",
+      "ipa": "/ʃɪp/",
+      "vi": "tàu thuỷ",
+      "example": "The ship is big.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**sh** đọc /ʃ/ như tiếng \"suỵt\" khi bảo im lặng."
+    },
+    {
+      "word": "shop",
+      "pos": "n",
+      "ipa": "/ʃɒp/",
+      "vi": "cửa hàng",
+      "example": "The shop is open.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**sh** đọc /ʃ/, môi hơi chu ra."
+    },
+    {
+      "word": "chair",
+      "pos": "n",
+      "ipa": "/tʃeər/",
+      "vi": "cái ghế",
+      "example": "I sit on the chair.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ch** đọc /tʃ/ như \"ch\" tiếng Việt nhưng bật hơi mạnh hơn."
+    },
+    {
+      "word": "cheese",
+      "pos": "n",
+      "ipa": "/tʃiːz/",
+      "vi": "phô mai",
+      "example": "I like cheese.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ch** đọc /tʃ/; **ee** đọc /iː/ kéo dài."
+    },
+    {
+      "word": "think",
+      "pos": "v",
+      "ipa": "/θɪŋk/",
+      "vi": "nghĩ, suy nghĩ",
+      "example": "I think it is good.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**th** đọc /θ/ — đặt lưỡi giữa hai hàm răng, thổi hơi ra, không rung."
+    },
+    {
+      "word": "thin",
+      "pos": "adj",
+      "ipa": "/θɪn/",
+      "vi": "gầy, mỏng",
+      "example": "This book is thin.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**th** đọc /θ/ giống think, không đọc thành \"thin\" kiểu tiếng Việt."
+    },
+    {
+      "word": "mother",
+      "pos": "n",
+      "ipa": "/ˈmʌð.ər/",
+      "vi": "mẹ",
+      "example": "My mother is a teacher.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**th** ở đây đọc /ð/ — lưỡi giữa răng nhưng có rung cổ họng."
+    },
+    {
+      "word": "father",
+      "pos": "n",
+      "ipa": "/ˈfɑː.ðər/",
+      "vi": "bố, cha",
+      "example": "My father drives a van.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**th** đọc /ð/ giống mother."
+    },
+    {
+      "word": "phone",
+      "pos": "n",
+      "ipa": "/fəʊn/",
+      "vi": "điện thoại",
+      "example": "This is my phone.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ph** luôn đọc /f/, không đọc /p/."
+    },
+    {
+      "word": "photo",
+      "pos": "n",
+      "ipa": "/ˈfəʊ.təʊ/",
+      "vi": "bức ảnh",
+      "example": "I like this photo.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ph** đọc /f/ như phone."
+    },
+    {
+      "word": "when",
+      "pos": "adv",
+      "ipa": "/wen/",
+      "vi": "khi nào",
+      "example": "When do you eat?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**wh** thường đọc /w/, chữ h câm."
+    },
+    {
+      "word": "wheel",
+      "pos": "n",
+      "ipa": "/wiːl/",
+      "vi": "bánh xe",
+      "example": "The wheel is round.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**wh** đọc /w/; **ee** đọc /iː/."
+    },
+    {
+      "word": "tree",
+      "pos": "n",
+      "ipa": "/triː/",
+      "vi": "cái cây",
+      "example": "The tree is very tall.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ee** đọc /iː/ — âm \"i\" kéo dài."
+    },
+    {
+      "word": "sheep",
+      "pos": "n",
+      "ipa": "/ʃiːp/",
+      "vi": "con cừu",
+      "example": "The sheep eats grass.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**sh** + **ee**; sheep /iː/ dài, khác ship /ɪ/ ngắn."
+    },
+    {
+      "word": "book",
+      "pos": "n",
+      "ipa": "/bʊk/",
+      "vi": "quyển sách",
+      "example": "This book is good.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**oo** ở đây đọc /ʊ/ ngắn, gần giống \"u\" nhưng ngắn gọn."
+    },
+    {
+      "word": "moon",
+      "pos": "n",
+      "ipa": "/muːn/",
+      "vi": "mặt trăng",
+      "example": "The moon is white.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**oo** ở đây đọc /uː/ dài, khác với book."
+    },
+    {
+      "word": "sea",
+      "pos": "n",
+      "ipa": "/siː/",
+      "vi": "biển",
+      "example": "The sea is blue.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ea** đọc /iː/ dài."
+    },
+    {
+      "word": "teacher",
+      "pos": "n",
+      "ipa": "/ˈtiː.tʃər/",
+      "vi": "giáo viên",
+      "example": "My teacher is kind.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ea** đọc /iː/; **ch** đọc /tʃ/."
+    },
+    {
+      "word": "bread",
+      "pos": "n",
+      "ipa": "/bred/",
+      "vi": "bánh mì",
+      "example": "I eat bread and jam.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ea** ở đây đọc /e/ ngắn, không phải /iː/."
+    },
+    {
+      "word": "train",
+      "pos": "n",
+      "ipa": "/treɪn/",
+      "vi": "tàu hoả",
+      "example": "The train is very long.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ai** đọc /eɪ/ như \"ây\"."
+    },
+    {
+      "word": "boat",
+      "pos": "n",
+      "ipa": "/bəʊt/",
+      "vi": "chiếc thuyền",
+      "example": "The boat is small.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**oa** đọc /əʊ/ như \"âu\"."
+    },
+    {
+      "word": "house",
+      "pos": "n",
+      "ipa": "/haʊs/",
+      "vi": "ngôi nhà",
+      "example": "My house is new.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ou** đọc /aʊ/ như \"ao\"."
+    },
+    {
+      "word": "car",
+      "pos": "n",
+      "ipa": "/kɑːr/",
+      "vi": "ô tô",
+      "example": "My father has a car.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ar** đọc /ɑː/ — âm \"a\" mở và dài."
+    },
+    {
+      "word": "bird",
+      "pos": "n",
+      "ipa": "/bɜːd/",
+      "vi": "con chim",
+      "example": "The bird is in the tree.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "**ir** đọc /ɜː/ như \"ơ\" kéo dài."
+    }
+  ]
+}

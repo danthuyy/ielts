@@ -101,6 +101,10 @@ export function normaliseHeadword(raw) {
   );
   if (looksDeliberate) return word;
 
+  // A whole sentence keeps its capital: entries like "How are you?" are taught
+  // as the sentence itself, and "how are you?" is simply wrong on screen.
+  if (/\s/.test(word.trim()) && /[.?!]$/.test(word.trim())) return word;
+
   // A capital only on the first word is just bullet-list styling.
   return word.charAt(0).toLowerCase() + word.slice(1);
 }

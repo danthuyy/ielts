@@ -1,0 +1,74 @@
+## 3. Số đếm và số thứ tự
+
+- **one (n) /wʌn/**: số một.
+  - _Ví dụ_: I have one pen.
+  - _Lưu ý_: đọc là /wʌn/, giống chữ "won", không đọc "o-ne".
+- **two (n) /tuː/**: số hai.
+  - _Ví dụ_: I have two cats.
+  - _Lưu ý_: chữ w câm, chỉ đọc /tuː/.
+- **three (n) /θriː/**: số ba.
+  - _Ví dụ_: She has three books.
+  - _Lưu ý_: bắt đầu bằng /θ/, lưỡi giữa răng; khác "tree".
+- **four (n) /fɔːr/**: số bốn.
+  - _Ví dụ_: We have four chairs.
+  - _Lưu ý_: viết có u nhưng đọc /fɔː/.
+- **five (n) /faɪv/**: số năm.
+  - _Ví dụ_: I see five birds.
+  - _Lưu ý_: chữ i đọc /aɪ/ như "ai".
+- **six (n) /sɪks/**: số sáu.
+  - _Ví dụ_: He has six pens.
+  - _Lưu ý_: nhớ phát âm rõ /ks/ ở cuối.
+- **seven (n) /ˈsev.ən/**: số bảy.
+  - _Ví dụ_: A week has seven days.
+  - _Lưu ý_: nhấn âm đầu: SE-ven.
+- **eight (n) /eɪt/**: số tám.
+  - _Ví dụ_: I have eight books.
+  - _Lưu ý_: chữ gh câm, chỉ đọc /eɪt/.
+- **nine (n) /naɪn/**: số chín.
+  - _Ví dụ_: She has nine photos.
+  - _Lưu ý_: đọc /aɪ/ như five.
+- **ten (n) /ten/**: số mười.
+  - _Ví dụ_: I have ten fingers.
+  - _Lưu ý_: ngắn gọn, giống "ten" tiếng Việt.
+- **eleven (n) /ɪˈlev.ən/**: số mười một.
+  - _Ví dụ_: My brother is eleven.
+  - _Lưu ý_: nhấn âm giữa: e-LE-ven.
+- **twelve (n) /twelv/**: số mười hai.
+  - _Ví dụ_: A year has twelve months.
+  - _Lưu ý_: có /v/ ở cuối, đừng bỏ.
+- **fifteen (n) /fɪfˈtiːn/**: số mười lăm.
+  - _Ví dụ_: I have fifteen pens.
+  - _Lưu ý_: nhấn âm sau: fif-TEEN; đuôi -teen đọc /tiːn/ dài.
+- **twenty (n) /ˈtwen.ti/**: số hai mươi.
+  - _Ví dụ_: My class has twenty students.
+  - _Lưu ý_: nhấn âm đầu: TWEN-ty, khác fifTEEN.
+- **thirty (n) /ˈθɜː.ti/**: số ba mươi.
+  - _Ví dụ_: My mother is thirty.
+  - _Lưu ý_: bắt đầu bằng /θ/ và có âm /ɜː/ như bird.
+- **forty (n) /ˈfɔː.ti/**: số bốn mươi.
+  - _Ví dụ_: He has forty books.
+  - _Lưu ý_: viết là forty, không có chữ u như four.
+- **fifty (n) /ˈfɪf.ti/**: số năm mươi.
+  - _Ví dụ_: My father is fifty.
+  - _Lưu ý_: five đổi thành fif- khi thêm đuôi.
+- **hundred (n) /ˈhʌn.drəd/**: số một trăm.
+  - _Ví dụ_: I have one hundred pens.
+  - _Lưu ý_: nói "one hundred", không thêm s.
+- **thousand (n) /ˈθaʊ.zənd/**: số một nghìn.
+  - _Ví dụ_: This book has one thousand words.
+  - _Lưu ý_: bắt đầu bằng /θ/, có /aʊ/ như house.
+- **first (adj) /fɜːst/**: thứ nhất, đầu tiên.
+  - _Ví dụ_: This is my first book.
+  - _Lưu ý_: từ one đổi hẳn thành first, phải học thuộc.
+- **second (adj) /ˈsek.ənd/**: thứ hai.
+  - _Ví dụ_: She is my second teacher.
+  - _Lưu ý_: từ two đổi hẳn thành second.
+- **third (adj) /θɜːd/**: thứ ba.
+  - _Ví dụ_: He sits in the third chair.
+  - _Lưu ý_: three đổi thành third, có /θ/ và /ɜː/.
+- **fourth (adj) /fɔːθ/**: thứ tư.
+  - _Ví dụ_: This is the fourth day.
+  - _Lưu ý_: chỉ thêm -th vào four.
+- **fifth (adj) /fɪfθ/**: thứ năm.
+  - _Ví dụ_: My room is the fifth.
+  - _Lưu ý_: five đổi v thành f rồi thêm -th.

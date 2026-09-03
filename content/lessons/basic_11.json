@@ -1,0 +1,266 @@
+{
+  "id": "basic_11",
+  "title": "Nền tảng 11 — Thức ăn và đồ uống",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "rice",
+      "pos": "n",
+      "ipa": "/raɪs/",
+      "vi": "cơm, gạo",
+      "example": "I eat rice every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bread",
+      "pos": "n",
+      "ipa": "/bred/",
+      "vi": "bánh mì",
+      "example": "She likes bread and eggs.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "meat",
+      "pos": "n",
+      "ipa": "/miːt/",
+      "vi": "thịt",
+      "example": "My father eats a lot of meat.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "fish",
+      "pos": "n",
+      "ipa": "/fɪʃ/",
+      "vi": "cá",
+      "example": "We eat fish on Monday.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "egg",
+      "pos": "n",
+      "ipa": "/eɡ/",
+      "vi": "trứng",
+      "example": "I want two eggs, please.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "milk",
+      "pos": "n",
+      "ipa": "/mɪlk/",
+      "vi": "sữa",
+      "example": "I drink milk every morning.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "water",
+      "pos": "n",
+      "ipa": "/ˈwɔːtə/",
+      "vi": "nước",
+      "example": "Please give me some water.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tea",
+      "pos": "n",
+      "ipa": "/tiː/",
+      "vi": "trà",
+      "example": "My grandmother drinks tea.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "coffee",
+      "pos": "n",
+      "ipa": "/ˈkɒfi/",
+      "vi": "cà phê",
+      "example": "My father likes black coffee.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "juice",
+      "pos": "n",
+      "ipa": "/dʒuːs/",
+      "vi": "nước ép",
+      "example": "I drink orange juice.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "fruit",
+      "pos": "n",
+      "ipa": "/fruːt/",
+      "vi": "trái cây",
+      "example": "Fruit is good for you.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "apple",
+      "pos": "n",
+      "ipa": "/ˈæpl/",
+      "vi": "quả táo",
+      "example": "This apple is very sweet.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "banana",
+      "pos": "n",
+      "ipa": "/bəˈnɑːnə/",
+      "vi": "quả chuối",
+      "example": "My sister eats a banana.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "orange",
+      "pos": "n",
+      "ipa": "/ˈɒrɪndʒ/",
+      "vi": "quả cam",
+      "example": "I have one orange here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "vegetable",
+      "pos": "n",
+      "ipa": "/ˈvedʒtəbl/",
+      "vi": "rau củ",
+      "example": "My mother buys vegetables today.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "soup",
+      "pos": "n",
+      "ipa": "/suːp/",
+      "vi": "canh, súp",
+      "example": "We eat soup with rice.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "noodles",
+      "pos": "n",
+      "ipa": "/ˈnuːdlz/",
+      "vi": "mì, bún",
+      "example": "I eat noodles for breakfast.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sugar",
+      "pos": "n",
+      "ipa": "/ˈʃʊɡə/",
+      "vi": "đường",
+      "example": "I put sugar in my tea.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "salt",
+      "pos": "n",
+      "ipa": "/sɔːlt/",
+      "vi": "muối",
+      "example": "This soup needs more salt.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eat",
+      "pos": "v",
+      "ipa": "/iːt/",
+      "vi": "ăn",
+      "example": "We eat dinner at home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: ate"
+    },
+    {
+      "word": "drink",
+      "pos": "v",
+      "ipa": "/drɪŋk/",
+      "vi": "uống",
+      "example": "I drink water after school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: drank"
+    },
+    {
+      "word": "hungry",
+      "pos": "adj",
+      "ipa": "/ˈhʌŋɡri/",
+      "vi": "đói",
+      "example": "I am hungry now.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "thirsty",
+      "pos": "adj",
+      "ipa": "/ˈθɜːsti/",
+      "vi": "khát",
+      "example": "The boy is very thirsty.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

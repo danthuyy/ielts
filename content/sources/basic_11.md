@@ -1,0 +1,50 @@
+## 11. Thức ăn và đồ uống
+
+- **rice (n) /raɪs/**: cơm, gạo.
+  - _Ví dụ_: I eat rice every day.
+- **bread (n) /bred/**: bánh mì.
+  - _Ví dụ_: She likes bread and eggs.
+- **meat (n) /miːt/**: thịt.
+  - _Ví dụ_: My father eats a lot of meat.
+- **fish (n) /fɪʃ/**: cá.
+  - _Ví dụ_: We eat fish on Monday.
+- **egg (n) /eɡ/**: trứng.
+  - _Ví dụ_: I want two eggs, please.
+- **milk (n) /mɪlk/**: sữa.
+  - _Ví dụ_: I drink milk every morning.
+- **water (n) /ˈwɔːtə/**: nước.
+  - _Ví dụ_: Please give me some water.
+- **tea (n) /tiː/**: trà.
+  - _Ví dụ_: My grandmother drinks tea.
+- **coffee (n) /ˈkɒfi/**: cà phê.
+  - _Ví dụ_: My father likes black coffee.
+- **juice (n) /dʒuːs/**: nước ép.
+  - _Ví dụ_: I drink orange juice.
+- **fruit (n) /fruːt/**: trái cây.
+  - _Ví dụ_: Fruit is good for you.
+- **apple (n) /ˈæpl/**: quả táo.
+  - _Ví dụ_: This apple is very sweet.
+- **banana (n) /bəˈnɑːnə/**: quả chuối.
+  - _Ví dụ_: My sister eats a banana.
+- **orange (n) /ˈɒrɪndʒ/**: quả cam.
+  - _Ví dụ_: I have one orange here.
+- **vegetable (n) /ˈvedʒtəbl/**: rau củ.
+  - _Ví dụ_: My mother buys vegetables today.
+- **soup (n) /suːp/**: canh, súp.
+  - _Ví dụ_: We eat soup with rice.
+- **noodles (n) /ˈnuːdlz/**: mì, bún.
+  - _Ví dụ_: I eat noodles for breakfast.
+- **sugar (n) /ˈʃʊɡə/**: đường.
+  - _Ví dụ_: I put sugar in my tea.
+- **salt (n) /sɔːlt/**: muối.
+  - _Ví dụ_: This soup needs more salt.
+- **eat (v) /iːt/**: ăn.
+  - _Ví dụ_: We eat dinner at home.
+  - _Lưu ý_: quá khứ: ate
+- **drink (v) /drɪŋk/**: uống.
+  - _Ví dụ_: I drink water after school.
+  - _Lưu ý_: quá khứ: drank
+- **hungry (adj) /ˈhʌŋɡri/**: đói.
+  - _Ví dụ_: I am hungry now.
+- **thirsty (adj) /ˈθɜːsti/**: khát.
+  - _Ví dụ_: The boy is very thirsty.

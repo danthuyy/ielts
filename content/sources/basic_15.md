@@ -1,0 +1,64 @@
+## 15. Động từ hằng ngày (1)
+
+- **go (v) /ɡəʊ/**: đi.
+  - _Ví dụ_: I go to school at six.
+  - _Lưu ý_: quá khứ: went
+- **come (v) /kʌm/**: đến.
+  - _Ví dụ_: My friends come to my house.
+  - _Lưu ý_: quá khứ: came
+- **sleep (v) /sliːp/**: ngủ.
+  - _Ví dụ_: I sleep at ten o'clock.
+  - _Lưu ý_: quá khứ: slept
+- **wake up (phr) /weɪk ʌp/**: thức dậy.
+  - _Ví dụ_: I wake up at five.
+  - _Lưu ý_: quá khứ: woke up
+- **get up (phr) /ɡet ʌp/**: ra khỏi giường.
+  - _Ví dụ_: She gets up very early.
+  - _Lưu ý_: quá khứ: got up
+- **run (v) /rʌn/**: chạy.
+  - _Ví dụ_: The boys run in the park.
+  - _Lưu ý_: quá khứ: ran
+- **walk (v) /wɔːk/**: đi bộ.
+  - _Ví dụ_: We walk to school.
+- **sit (v) /sɪt/**: ngồi.
+  - _Ví dụ_: I sit near the window.
+  - _Lưu ý_: quá khứ: sat
+- **stand (v) /stænd/**: đứng.
+  - _Ví dụ_: The teacher stands here.
+  - _Lưu ý_: quá khứ: stood
+- **open (v) /ˈəʊpən/**: mở.
+  - _Ví dụ_: Please open your book.
+- **close (v) /kləʊz/**: đóng.
+  - _Ví dụ_: I close the door.
+- **read (v) /riːd/**: đọc.
+  - _Ví dụ_: I read a book every night.
+  - _Lưu ý_: quá khứ: read /red/
+- **write (v) /raɪt/**: viết.
+  - _Ví dụ_: We write in our notebooks.
+  - _Lưu ý_: quá khứ: wrote
+- **listen (v) /ˈlɪsn/**: lắng nghe.
+  - _Ví dụ_: I listen to my teacher.
+- **speak (v) /spiːk/**: nói.
+  - _Ví dụ_: I speak English in class.
+  - _Lưu ý_: quá khứ: spoke
+- **look (v) /lʊk/**: nhìn.
+  - _Ví dụ_: Look at the board, please.
+- **watch (v) /wɒtʃ/**: xem.
+  - _Ví dụ_: We watch TV after dinner.
+- **play (v) /pleɪ/**: chơi.
+  - _Ví dụ_: The children play football.
+- **work (v) /wɜːk/**: làm việc.
+  - _Ví dụ_: My parents work every day.
+- **study (v) /ˈstʌdi/**: học.
+  - _Ví dụ_: I study English at home.
+- **help (v) /help/**: giúp đỡ.
+  - _Ví dụ_: I help my mother every day.
+- **buy (v) /baɪ/**: mua.
+  - _Ví dụ_: She buys bread every morning.
+  - _Lưu ý_: quá khứ: bought
+- **give (v) /ɡɪv/**: cho, đưa.
+  - _Ví dụ_: He gives me a pen.
+  - _Lưu ý_: quá khứ: gave
+- **take (v) /teɪk/**: lấy, cầm.
+  - _Ví dụ_: I take my bag to school.
+  - _Lưu ý_: quá khứ: took

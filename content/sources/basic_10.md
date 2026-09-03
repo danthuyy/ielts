@@ -1,0 +1,46 @@
+## 10. Quần áo và đồ dùng cá nhân
+
+- **clothes (n) /kləʊðz/**: quần áo.
+  - _Ví dụ_: My clothes are new.
+- **shirt (n) /ʃɜːt/**: áo sơ mi.
+  - _Ví dụ_: His shirt is white.
+- **T-shirt (n) /ˈtiː ʃɜːt/**: áo phông.
+  - _Ví dụ_: I wear a red T-shirt.
+- **trousers (n) /ˈtraʊzəz/**: quần dài.
+  - _Ví dụ_: These trousers are too long.
+- **dress (n) /dres/**: váy liền.
+  - _Ví dụ_: She has a blue dress.
+- **skirt (n) /skɜːt/**: chân váy.
+  - _Ví dụ_: Her skirt is very short.
+- **shoes (n) /ʃuːz/**: giày.
+  - _Ví dụ_: My shoes are black.
+- **socks (n) /sɒks/**: tất, vớ.
+  - _Ví dụ_: I wear warm socks today.
+- **hat (n) /hæt/**: mũ.
+  - _Ví dụ_: He wears a big hat.
+- **coat (n) /kəʊt/**: áo khoác dài.
+  - _Ví dụ_: My coat is very warm.
+- **jacket (n) /ˈdʒækɪt/**: áo khoác ngắn.
+  - _Ví dụ_: Her jacket is very nice.
+- **glasses (n) /ˈɡlɑːsɪz/**: kính mắt.
+  - _Ví dụ_: My glasses are on the table.
+- **watch (n) /wɒtʃ/**: đồng hồ đeo tay.
+  - _Ví dụ_: His watch is very old.
+- **phone (n) /fəʊn/**: điện thoại.
+  - _Ví dụ_: My phone is in my bag.
+- **key (n) /kiː/**: chìa khóa.
+  - _Ví dụ_: I have two keys.
+- **wallet (n) /ˈwɒlɪt/**: cái ví.
+  - _Ví dụ_: His wallet is brown.
+- **umbrella (n) /ʌmˈbrelə/**: cái ô, dù.
+  - _Ví dụ_: I need an umbrella today.
+- **comb (n) /kəʊm/**: cái lược.
+  - _Ví dụ_: The comb is very small.
+- **soap (n) /səʊp/**: xà phòng.
+  - _Ví dụ_: The soap smells nice.
+- **towel (n) /ˈtaʊəl/**: cái khăn.
+  - _Ví dụ_: My towel is very wet.
+- **wear (v) /weə/**: mặc, đội, đeo.
+  - _Ví dụ_: I wear a hat in summer.
+- **new (adj) /njuː/**: mới.
+  - _Ví dụ_: My shoes are new.

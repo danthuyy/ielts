@@ -1,0 +1,277 @@
+{
+  "id": "basic_15",
+  "title": "Nền tảng 15 — Động từ hằng ngày (1)",
+  "date": "2026-09-03",
+  "tags": [
+    "basics",
+    "school"
+  ],
+  "audience": [],
+  "description": "",
+  "words": [
+    {
+      "word": "go",
+      "pos": "v",
+      "ipa": "/ɡəʊ/",
+      "vi": "đi",
+      "example": "I go to school at six.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: went"
+    },
+    {
+      "word": "come",
+      "pos": "v",
+      "ipa": "/kʌm/",
+      "vi": "đến",
+      "example": "My friends come to my house.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: came"
+    },
+    {
+      "word": "sleep",
+      "pos": "v",
+      "ipa": "/sliːp/",
+      "vi": "ngủ",
+      "example": "I sleep at ten o'clock.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: slept"
+    },
+    {
+      "word": "wake up",
+      "pos": "phr",
+      "ipa": "/weɪk ʌp/",
+      "vi": "thức dậy",
+      "example": "I wake up at five.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: woke up"
+    },
+    {
+      "word": "get up",
+      "pos": "phr",
+      "ipa": "/ɡet ʌp/",
+      "vi": "ra khỏi giường",
+      "example": "She gets up very early.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: got up"
+    },
+    {
+      "word": "run",
+      "pos": "v",
+      "ipa": "/rʌn/",
+      "vi": "chạy",
+      "example": "The boys run in the park.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: ran"
+    },
+    {
+      "word": "walk",
+      "pos": "v",
+      "ipa": "/wɔːk/",
+      "vi": "đi bộ",
+      "example": "We walk to school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sit",
+      "pos": "v",
+      "ipa": "/sɪt/",
+      "vi": "ngồi",
+      "example": "I sit near the window.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: sat"
+    },
+    {
+      "word": "stand",
+      "pos": "v",
+      "ipa": "/stænd/",
+      "vi": "đứng",
+      "example": "The teacher stands here.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: stood"
+    },
+    {
+      "word": "open",
+      "pos": "v",
+      "ipa": "/ˈəʊpən/",
+      "vi": "mở",
+      "example": "Please open your book.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "close",
+      "pos": "v",
+      "ipa": "/kləʊz/",
+      "vi": "đóng",
+      "example": "I close the door.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "read",
+      "pos": "v",
+      "ipa": "/riːd/",
+      "vi": "đọc",
+      "example": "I read a book every night.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: read /red/"
+    },
+    {
+      "word": "write",
+      "pos": "v",
+      "ipa": "/raɪt/",
+      "vi": "viết",
+      "example": "We write in our notebooks.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: wrote"
+    },
+    {
+      "word": "listen",
+      "pos": "v",
+      "ipa": "/ˈlɪsn/",
+      "vi": "lắng nghe",
+      "example": "I listen to my teacher.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "speak",
+      "pos": "v",
+      "ipa": "/spiːk/",
+      "vi": "nói",
+      "example": "I speak English in class.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: spoke"
+    },
+    {
+      "word": "look",
+      "pos": "v",
+      "ipa": "/lʊk/",
+      "vi": "nhìn",
+      "example": "Look at the board, please.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "watch",
+      "pos": "v",
+      "ipa": "/wɒtʃ/",
+      "vi": "xem",
+      "example": "We watch TV after dinner.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "play",
+      "pos": "v",
+      "ipa": "/pleɪ/",
+      "vi": "chơi",
+      "example": "The children play football.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "work",
+      "pos": "v",
+      "ipa": "/wɜːk/",
+      "vi": "làm việc",
+      "example": "My parents work every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "study",
+      "pos": "v",
+      "ipa": "/ˈstʌdi/",
+      "vi": "học",
+      "example": "I study English at home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "help",
+      "pos": "v",
+      "ipa": "/help/",
+      "vi": "giúp đỡ",
+      "example": "I help my mother every day.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "buy",
+      "pos": "v",
+      "ipa": "/baɪ/",
+      "vi": "mua",
+      "example": "She buys bread every morning.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: bought"
+    },
+    {
+      "word": "give",
+      "pos": "v",
+      "ipa": "/ɡɪv/",
+      "vi": "cho, đưa",
+      "example": "He gives me a pen.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: gave"
+    },
+    {
+      "word": "take",
+      "pos": "v",
+      "ipa": "/teɪk/",
+      "vi": "lấy, cầm",
+      "example": "I take my bag to school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": "quá khứ: took"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+## 6. Gia đình và người thân
+
+- **family (n) /ˈfæməli/**: gia đình.
+  - _Ví dụ_: My family is very small.
+- **father (n) /ˈfɑːðə/**: bố, cha.
+  - _Ví dụ_: My father is a teacher.
+- **mother (n) /ˈmʌðə/**: mẹ.
+  - _Ví dụ_: My mother cooks every day.
+- **parents (n) /ˈpeərənts/**: bố mẹ.
+  - _Ví dụ_: My parents work in a shop.
+- **brother (n) /ˈbrʌðə/**: anh trai, em trai.
+  - _Ví dụ_: My brother plays football.
+- **sister (n) /ˈsɪstə/**: chị gái, em gái.
+  - _Ví dụ_: My sister is ten years old.
+- **son (n) /sʌn/**: con trai.
+  - _Ví dụ_: They have one son.
+- **daughter (n) /ˈdɔːtə/**: con gái.
+  - _Ví dụ_: Her daughter is a student.
+- **grandfather (n) /ˈɡrænfɑːðə/**: ông.
+  - _Ví dụ_: My grandfather likes tea.
+- **grandmother (n) /ˈɡrænmʌðə/**: bà.
+  - _Ví dụ_: My grandmother lives with us.
+- **uncle (n) /ˈʌŋkl/**: chú, bác, cậu.
+  - _Ví dụ_: My uncle has a big car.
+- **aunt (n) /ɑːnt/**: cô, dì, bác gái.
+  - _Ví dụ_: My aunt works in a hospital.
+- **cousin (n) /ˈkʌzn/**: anh chị em họ.
+  - _Ví dụ_: My cousin lives in Hanoi.
+- **husband (n) /ˈhʌzbənd/**: chồng.
+  - _Ví dụ_: Her husband is very kind.
+- **wife (n) /waɪf/**: vợ.
+  - _Ví dụ_: His wife is a nurse.
+- **child (n) /tʃaɪld/**: đứa trẻ, con.
+  - _Ví dụ_: The child is very happy.
+- **children (n) /ˈtʃɪldrən/**: những đứa trẻ.
+  - _Ví dụ_: The children play in the garden.
+- **baby (n) /ˈbeɪbi/**: em bé.
+  - _Ví dụ_: The baby sleeps all day.
+- **grandparents (n) /ˈɡrænpeərənts/**: ông bà.
+  - _Ví dụ_: My grandparents live in the country.
+- **relative (n) /ˈrelətɪv/**: người thân, họ hàng.
+  - _Ví dụ_: We visit our relatives every year.
+- **love (v) /lʌv/**: yêu, thương.
+  - _Ví dụ_: I love my family.
+- **live (v) /lɪv/**: sống, ở.
+  - _Ví dụ_: We live in a small house.
+
+## 7. Cơ thể người
+
+- **body (n) /ˈbɒdi/**: cơ thể.
+  - _Ví dụ_: Water is good for your body.
+- **head (n) /hed/**: đầu.
+  - _Ví dụ_: My head hurts today.
+- **hair (n) /heə/**: tóc.
+  - _Ví dụ_: She has long black hair.
+- **face (n) /feɪs/**: khuôn mặt.
+  - _Ví dụ_: He washes his face every morning.
+- **eye (n) /aɪ/**: mắt.
+  - _Ví dụ_: My eyes are brown.
+- **ear (n) /ɪə/**: tai.
+  - _Ví dụ_: We hear with our ears.
+- **nose (n) /nəʊz/**: mũi.
+  - _Ví dụ_: The baby has a small nose.
+- **mouth (n) /maʊθ/**: miệng.
+  - _Ví dụ_: Open your mouth, please.
+- **tooth (n) /tuːθ/**: cái răng.
+  - _Ví dụ_: I brush my teeth every day.
+- **neck (n) /nek/**: cổ.
+  - _Ví dụ_: My neck is very cold.
+- **shoulder (n) /ˈʃəʊldə/**: vai.
+  - _Ví dụ_: He has strong shoulders.
+- **arm (n) /ɑːm/**: cánh tay.
+  - _Ví dụ_: My arms are tired now.
+- **hand (n) /hænd/**: bàn tay.
+  - _Ví dụ_: Wash your hands before dinner.
+- **finger (n) /ˈfɪŋɡə/**: ngón tay.
+  - _Ví dụ_: We have ten fingers.
+- **leg (n) /leɡ/**: chân (cả chân).
+  - _Ví dụ_: Her legs are very long.
+- **foot (n) /fʊt/**: bàn chân.
+  - _Ví dụ_: My foot is very small.
+- **knee (n) /niː/**: đầu gối.
+  - _Ví dụ_: My knee hurts a lot.
+- **back (n) /bæk/**: lưng.
+  - _Ví dụ_: My back is very sore.
+- **stomach (n) /ˈstʌmək/**: bụng, dạ dày.
+  - _Ví dụ_: My stomach hurts after lunch.
+- **heart (n) /hɑːt/**: trái tim.
+  - _Ví dụ_: My heart beats fast.
+- **skin (n) /skɪn/**: da.
+  - _Ví dụ_: The baby has soft skin.
+- **finger nail (n) /ˈfɪŋɡə neɪl/**: móng tay.
+  - _Ví dụ_: Her finger nails are clean.
+
+## 8. Lớp học và đồ dùng học tập
+
+- **school (n) /skuːl/**: trường học.
+  - _Ví dụ_: I go to school every day.
+- **class (n) /klɑːs/**: lớp, buổi học.
+  - _Ví dụ_: My class starts at seven.
+- **classroom (n) /ˈklɑːsruːm/**: phòng học.
+  - _Ví dụ_: Our classroom is very big.
+- **teacher (n) /ˈtiːtʃə/**: giáo viên.
+  - _Ví dụ_: My teacher is very nice.
+- **student (n) /ˈstjuːdnt/**: học sinh, sinh viên.
+  - _Ví dụ_: She is a good student.
+- **friend (n) /frend/**: bạn.
+  - _Ví dụ_: My friend sits next to me.
+- **desk (n) /desk/**: bàn học.
+  - _Ví dụ_: My books are on the desk.
+- **chair (n) /tʃeə/**: cái ghế.
+  - _Ví dụ_: The chair is very old.
+- **board (n) /bɔːd/**: bảng.
+  - _Ví dụ_: The teacher writes on the board.
+- **book (n) /bʊk/**: quyển sách.
+  - _Ví dụ_: I read a book at night.
+- **notebook (n) /ˈnəʊtbʊk/**: quyển vở.
+  - _Ví dụ_: My notebook is blue.
+- **pen (n) /pen/**: bút mực.
+  - _Ví dụ_: I write with a pen.
+- **pencil (n) /ˈpensl/**: bút chì.
+  - _Ví dụ_: This pencil is very short.
+- **ruler (n) /ˈruːlə/**: thước kẻ.
+  - _Ví dụ_: I need a ruler now.
+- **eraser (n) /ɪˈreɪzə/**: cục tẩy.
+  - _Ví dụ_: My eraser is very small.
+- **bag (n) /bæɡ/**: cặp, túi.
+  - _Ví dụ_: My bag is very heavy.
+- **homework (n) /ˈhəʊmwɜːk/**: bài tập về nhà.
+  - _Ví dụ_: I do my homework after school.
+- **lesson (n) /ˈlesn/**: bài học.
+  - _Ví dụ_: This lesson is very easy.
+- **test (n) /test/**: bài kiểm tra.
+  - _Ví dụ_: We have a test today.
+- **learn (v) /lɜːn/**: học.
+  - _Ví dụ_: We learn English at school.
+- **write (v) /raɪt/**: viết.
+  - _Ví dụ_: I write my name here.
+- **read (v) /riːd/**: đọc.
+  - _Ví dụ_: She reads a new book.
+
+## 9. Nhà cửa và đồ đạc
+
+- **house (n) /haʊs/**: ngôi nhà.
+  - _Ví dụ_: Their house is very old.
+- **home (n) /həʊm/**: nhà, tổ ấm.
+  - _Ví dụ_: I stay at home today.
+- **room (n) /ruːm/**: căn phòng.
+  - _Ví dụ_: This room is very small.
+- **bedroom (n) /ˈbedruːm/**: phòng ngủ.
+  - _Ví dụ_: My bedroom is upstairs.
+- **kitchen (n) /ˈkɪtʃɪn/**: nhà bếp.
+  - _Ví dụ_: Mum cooks in the kitchen.
+- **bathroom (n) /ˈbɑːθruːm/**: phòng tắm.
+  - _Ví dụ_: The bathroom is very clean.
+- **door (n) /dɔː/**: cửa ra vào.
+  - _Ví dụ_: Please close the door.
+- **window (n) /ˈwɪndəʊ/**: cửa sổ.
+  - _Ví dụ_: The window is open now.
+- **wall (n) /wɔːl/**: bức tường.
+  - _Ví dụ_: The wall is white.
+- **floor (n) /flɔː/**: sàn nhà, tầng.
+  - _Ví dụ_: The cat sleeps on the floor.
+- **table (n) /ˈteɪbl/**: cái bàn.
+  - _Ví dụ_: We eat at the table.
+- **bed (n) /bed/**: cái giường.
+  - _Ví dụ_: My bed is very soft.
+- **sofa (n) /ˈsəʊfə/**: ghế sofa.
+  - _Ví dụ_: Dad sits on the sofa.
+- **lamp (n) /læmp/**: đèn bàn.
+  - _Ví dụ_: The lamp is on my desk.
+- **fridge (n) /frɪdʒ/**: tủ lạnh.
+  - _Ví dụ_: The milk is in the fridge.
+- **television (n) /ˈtelɪvɪʒn/**: tivi.
+  - _Ví dụ_: We watch television at night.
+- **garden (n) /ˈɡɑːdn/**: khu vườn.
+  - _Ví dụ_: Our garden has many flowers.
+- **kitchen sink (n) /ˈkɪtʃɪn sɪŋk/**: bồn rửa bát.
+  - _Ví dụ_: The plates are in the kitchen sink.
+- **cupboard (n) /ˈkʌbəd/**: tủ đựng đồ.
+  - _Ví dụ_: The cups are in the cupboard.
+- **stairs (n) /steəz/**: cầu thang.
+  - _Ví dụ_: The stairs are very narrow.
+- **clean (adj) /kliːn/**: sạch sẽ.
+  - _Ví dụ_: My room is very clean.
+- **open (v) /ˈəʊpən/**: mở.
+  - _Ví dụ_: I open the window every morning.
+
+## 10. Quần áo và đồ dùng cá nhân
+
+- **clothes (n) /kləʊðz/**: quần áo.
+  - _Ví dụ_: My clothes are new.
+- **shirt (n) /ʃɜːt/**: áo sơ mi.
+  - _Ví dụ_: His shirt is white.
+- **T-shirt (n) /ˈtiː ʃɜːt/**: áo phông.
+  - _Ví dụ_: I wear a red T-shirt.
+- **trousers (n) /ˈtraʊzəz/**: quần dài.
+  - _Ví dụ_: These trousers are too long.
+- **dress (n) /dres/**: váy liền.
+  - _Ví dụ_: She has a blue dress.
+- **skirt (n) /skɜːt/**: chân váy.
+  - _Ví dụ_: Her skirt is very short.
+- **shoes (n) /ʃuːz/**: giày.
+  - _Ví dụ_: My shoes are black.
+- **socks (n) /sɒks/**: tất, vớ.
+  - _Ví dụ_: I wear warm socks today.
+- **hat (n) /hæt/**: mũ.
+  - _Ví dụ_: He wears a big hat.
+- **coat (n) /kəʊt/**: áo khoác dài.
+  - _Ví dụ_: My coat is very warm.
+- **jacket (n) /ˈdʒækɪt/**: áo khoác ngắn.
+  - _Ví dụ_: Her jacket is very nice.
+- **glasses (n) /ˈɡlɑːsɪz/**: kính mắt.
+  - _Ví dụ_: My glasses are on the table.
+- **watch (n) /wɒtʃ/**: đồng hồ đeo tay.
+  - _Ví dụ_: His watch is very old.
+- **phone (n) /fəʊn/**: điện thoại.
+  - _Ví dụ_: My phone is in my bag.
+- **key (n) /kiː/**: chìa khóa.
+  - _Ví dụ_: I have two keys.
+- **wallet (n) /ˈwɒlɪt/**: cái ví.
+  - _Ví dụ_: His wallet is brown.
+- **umbrella (n) /ʌmˈbrelə/**: cái ô, dù.
+  - _Ví dụ_: I need an umbrella today.
+- **comb (n) /kəʊm/**: cái lược.
+  - _Ví dụ_: The comb is very small.
+- **soap (n) /səʊp/**: xà phòng.
+  - _Ví dụ_: The soap smells nice.
+- **towel (n) /ˈtaʊəl/**: cái khăn.
+  - _Ví dụ_: My towel is very wet.
+- **wear (v) /weə/**: mặc, đội, đeo.
+  - _Ví dụ_: I wear a hat in summer.
+- **new (adj) /njuː/**: mới.
+  - _Ví dụ_: My shoes are new.

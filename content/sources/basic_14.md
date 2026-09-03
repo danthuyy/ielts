@@ -1,0 +1,51 @@
+## 14. Cảm xúc và tính cách
+
+- **happy (adj) /ˈhæpi/**: vui, hạnh phúc.
+  - _Ví dụ_: I am happy today.
+- **sad (adj) /sæd/**: buồn.
+  - _Ví dụ_: My friend is very sad.
+- **angry (adj) /ˈæŋɡri/**: giận dữ.
+  - _Ví dụ_: My mother is angry now.
+- **tired (adj) /ˈtaɪəd/**: mệt.
+  - _Ví dụ_: I am tired after school.
+- **afraid (adj) /əˈfreɪd/**: sợ.
+  - _Ví dụ_: She is afraid of dogs.
+- **bored (adj) /bɔːd/**: chán.
+  - _Ví dụ_: The children are bored.
+- **excited (adj) /ɪkˈsaɪtɪd/**: hào hứng.
+  - _Ví dụ_: We are excited about the trip.
+- **worried (adj) /ˈwʌrid/**: lo lắng.
+  - _Ví dụ_: My father is worried today.
+- **kind (adj) /kaɪnd/**: tốt bụng.
+  - _Ví dụ_: My teacher is very kind.
+- **funny (adj) /ˈfʌni/**: hài hước.
+  - _Ví dụ_: My brother is funny.
+- **shy (adj) /ʃaɪ/**: nhút nhát.
+  - _Ví dụ_: The new girl is shy.
+- **lazy (adj) /ˈleɪzi/**: lười biếng.
+  - _Ví dụ_: My cat is very lazy.
+- **hard-working (adj) /ˌhɑːd ˈwɜːkɪŋ/**: chăm chỉ.
+  - _Ví dụ_: She is a hard-working student.
+- **friendly (adj) /ˈfrendli/**: thân thiện.
+  - _Ví dụ_: My neighbours are friendly.
+- **quiet (adj) /ˈkwaɪət/**: ít nói, yên lặng.
+  - _Ví dụ_: My sister is a quiet girl.
+- **clever (adj) /ˈklevə/**: thông minh.
+  - _Ví dụ_: He is a clever boy.
+- **polite (adj) /pəˈlaɪt/**: lịch sự.
+  - _Ví dụ_: Vietnamese children are polite.
+- **brave (adj) /breɪv/**: dũng cảm.
+  - _Ví dụ_: My friend is very brave.
+- **feel (v) /fiːl/**: cảm thấy.
+  - _Ví dụ_: I feel good today.
+  - _Lưu ý_: quá khứ: felt
+- **laugh (v) /lɑːf/**: cười.
+  - _Ví dụ_: We laugh in class.
+- **cry (v) /kraɪ/**: khóc.
+  - _Ví dụ_: The baby cries at night.
+- **smile (v) /smaɪl/**: mỉm cười.
+  - _Ví dụ_: She smiles at me.
+- **love (v) /lʌv/**: yêu, rất thích.
+  - _Ví dụ_: I love my family.
+- **like (v) /laɪk/**: thích.
+  - _Ví dụ_: We like our new school.

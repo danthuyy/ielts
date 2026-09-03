@@ -1,0 +1,74 @@
+## 2. Ghép âm thường gặp (sh, ch, th, ph, wh, ee, oo, ea...)
+
+- **ship (n) /ʃɪp/**: tàu thuỷ.
+  - _Ví dụ_: The ship is big.
+  - _Lưu ý_: **sh** đọc /ʃ/ như tiếng "suỵt" khi bảo im lặng.
+- **shop (n) /ʃɒp/**: cửa hàng.
+  - _Ví dụ_: The shop is open.
+  - _Lưu ý_: **sh** đọc /ʃ/, môi hơi chu ra.
+- **chair (n) /tʃeər/**: cái ghế.
+  - _Ví dụ_: I sit on the chair.
+  - _Lưu ý_: **ch** đọc /tʃ/ như "ch" tiếng Việt nhưng bật hơi mạnh hơn.
+- **cheese (n) /tʃiːz/**: phô mai.
+  - _Ví dụ_: I like cheese.
+  - _Lưu ý_: **ch** đọc /tʃ/; **ee** đọc /iː/ kéo dài.
+- **think (v) /θɪŋk/**: nghĩ, suy nghĩ.
+  - _Ví dụ_: I think it is good.
+  - _Lưu ý_: **th** đọc /θ/ — đặt lưỡi giữa hai hàm răng, thổi hơi ra, không rung.
+- **thin (adj) /θɪn/**: gầy, mỏng.
+  - _Ví dụ_: This book is thin.
+  - _Lưu ý_: **th** đọc /θ/ giống think, không đọc thành "thin" kiểu tiếng Việt.
+- **mother (n) /ˈmʌð.ər/**: mẹ.
+  - _Ví dụ_: My mother is a teacher.
+  - _Lưu ý_: **th** ở đây đọc /ð/ — lưỡi giữa răng nhưng có rung cổ họng.
+- **father (n) /ˈfɑː.ðər/**: bố, cha.
+  - _Ví dụ_: My father drives a van.
+  - _Lưu ý_: **th** đọc /ð/ giống mother.
+- **phone (n) /fəʊn/**: điện thoại.
+  - _Ví dụ_: This is my phone.
+  - _Lưu ý_: **ph** luôn đọc /f/, không đọc /p/.
+- **photo (n) /ˈfəʊ.təʊ/**: bức ảnh.
+  - _Ví dụ_: I like this photo.
+  - _Lưu ý_: **ph** đọc /f/ như phone.
+- **when (adv) /wen/**: khi nào.
+  - _Ví dụ_: When do you eat?
+  - _Lưu ý_: **wh** thường đọc /w/, chữ h câm.
+- **wheel (n) /wiːl/**: bánh xe.
+  - _Ví dụ_: The wheel is round.
+  - _Lưu ý_: **wh** đọc /w/; **ee** đọc /iː/.
+- **tree (n) /triː/**: cái cây.
+  - _Ví dụ_: The tree is very tall.
+  - _Lưu ý_: **ee** đọc /iː/ — âm "i" kéo dài.
+- **sheep (n) /ʃiːp/**: con cừu.
+  - _Ví dụ_: The sheep eats grass.
+  - _Lưu ý_: **sh** + **ee**; sheep /iː/ dài, khác ship /ɪ/ ngắn.
+- **book (n) /bʊk/**: quyển sách.
+  - _Ví dụ_: This book is good.
+  - _Lưu ý_: **oo** ở đây đọc /ʊ/ ngắn, gần giống "u" nhưng ngắn gọn.
+- **moon (n) /muːn/**: mặt trăng.
+  - _Ví dụ_: The moon is white.
+  - _Lưu ý_: **oo** ở đây đọc /uː/ dài, khác với book.
+- **sea (n) /siː/**: biển.
+  - _Ví dụ_: The sea is blue.
+  - _Lưu ý_: **ea** đọc /iː/ dài.
+- **teacher (n) /ˈtiː.tʃər/**: giáo viên.
+  - _Ví dụ_: My teacher is kind.
+  - _Lưu ý_: **ea** đọc /iː/; **ch** đọc /tʃ/.
+- **bread (n) /bred/**: bánh mì.
+  - _Ví dụ_: I eat bread and jam.
+  - _Lưu ý_: **ea** ở đây đọc /e/ ngắn, không phải /iː/.
+- **train (n) /treɪn/**: tàu hoả.
+  - _Ví dụ_: The train is very long.
+  - _Lưu ý_: **ai** đọc /eɪ/ như "ây".
+- **boat (n) /bəʊt/**: chiếc thuyền.
+  - _Ví dụ_: The boat is small.
+  - _Lưu ý_: **oa** đọc /əʊ/ như "âu".
+- **house (n) /haʊs/**: ngôi nhà.
+  - _Ví dụ_: My house is new.
+  - _Lưu ý_: **ou** đọc /aʊ/ như "ao".
+- **car (n) /kɑːr/**: ô tô.
+  - _Ví dụ_: My father has a car.
+  - _Lưu ý_: **ar** đọc /ɑː/ — âm "a" mở và dài.
+- **bird (n) /bɜːd/**: con chim.
+  - _Ví dụ_: The bird is in the tree.
+  - _Lưu ý_: **ir** đọc /ɜː/ như "ơ" kéo dài.

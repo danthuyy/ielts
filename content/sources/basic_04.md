@@ -1,0 +1,74 @@
+## 4. Thứ, tháng và mùa
+
+- **Monday (n) /ˈmʌn.deɪ/**: thứ Hai.
+  - _Ví dụ_: I go to school on Monday.
+  - _Lưu ý_: tên thứ luôn viết hoa chữ đầu.
+- **Tuesday (n) /ˈtʃuːz.deɪ/**: thứ Ba.
+  - _Ví dụ_: We have English on Tuesday.
+  - _Lưu ý_: đọc gần giống "chiu-zday", không đọc "tu-ết-day".
+- **Wednesday (n) /ˈwenz.deɪ/**: thứ Tư.
+  - _Ví dụ_: My mother works on Wednesday.
+  - _Lưu ý_: chữ d ở giữa câm, đọc là "WENZ-day".
+- **Thursday (n) /ˈθɜːz.deɪ/**: thứ Năm.
+  - _Ví dụ_: I play football on Thursday.
+  - _Lưu ý_: bắt đầu bằng /θ/ như think.
+- **Friday (n) /ˈfraɪ.deɪ/**: thứ Sáu.
+  - _Ví dụ_: We go home on Friday.
+  - _Lưu ý_: đọc /aɪ/ như five.
+- **Saturday (n) /ˈsæt.ə.deɪ/**: thứ Bảy.
+  - _Ví dụ_: I stay home on Saturday.
+  - _Lưu ý_: nhấn âm đầu: SA-tur-day.
+- **Sunday (n) /ˈsʌn.deɪ/**: Chủ nhật.
+  - _Ví dụ_: I see my father on Sunday.
+  - _Lưu ý_: gồm "sun" (mặt trời) + "day" (ngày), dễ nhớ.
+- **January (n) /ˈdʒæn.ju.ər.i/**: tháng Một.
+  - _Ví dụ_: January is very cold.
+  - _Lưu ý_: tên tháng cũng luôn viết hoa; bắt đầu bằng /dʒ/ như jam.
+- **February (n) /ˈfeb.ru.ər.i/**: tháng Hai.
+  - _Ví dụ_: February is a short month.
+  - _Lưu ý_: nhớ chữ r đầu tiên trong "Feb-ru-ary".
+- **March (n) /mɑːtʃ/**: tháng Ba.
+  - _Ví dụ_: My birthday is in March.
+  - _Lưu ý_: có **ar** /ɑː/ và **ch** /tʃ/.
+- **May (n) /meɪ/**: tháng Năm.
+  - _Ví dụ_: It is hot in May.
+  - _Lưu ý_: tên tháng ngắn nhất, đọc /meɪ/ như "mây".
+- **July (n) /dʒuˈlaɪ/**: tháng Bảy.
+  - _Ví dụ_: We have a holiday in July.
+  - _Lưu ý_: nhấn âm sau: ju-LY.
+- **October (n) /ɒkˈtəʊ.bər/**: tháng Mười.
+  - _Ví dụ_: October is not hot.
+  - _Lưu ý_: nhấn âm giữa: oc-TO-ber.
+- **December (n) /dɪˈsem.bər/**: tháng Mười hai.
+  - _Ví dụ_: December is the last month.
+  - _Lưu ý_: nhấn âm giữa: de-CEM-ber.
+- **spring (n) /sprɪŋ/**: mùa xuân.
+  - _Ví dụ_: Flowers grow in spring.
+  - _Lưu ý_: có ba phụ âm đầu /spr/, đọc liền nhau.
+- **summer (n) /ˈsʌm.ər/**: mùa hè.
+  - _Ví dụ_: Summer is very hot.
+  - _Lưu ý_: âm đầu /ʌ/ như sun.
+- **autumn (n) /ˈɔː.təm/**: mùa thu.
+  - _Ví dụ_: I like autumn.
+  - _Lưu ý_: chữ n cuối câm, đọc là "O-tum".
+- **winter (n) /ˈwɪn.tər/**: mùa đông.
+  - _Ví dụ_: Winter is cold here.
+  - _Lưu ý_: bắt đầu bằng /w/, tròn môi.
+- **week (n) /wiːk/**: tuần.
+  - _Ví dụ_: A week has seven days.
+  - _Lưu ý_: **ee** đọc /iː/ dài.
+- **month (n) /mʌnθ/**: tháng.
+  - _Ví dụ_: A month has four weeks.
+  - _Lưu ý_: kết thúc bằng /θ/, lưỡi giữa răng.
+- **year (n) /jɪər/**: năm.
+  - _Ví dụ_: A year has twelve months.
+  - _Lưu ý_: bắt đầu bằng /j/ như yes.
+- **today (adv) /təˈdeɪ/**: hôm nay.
+  - _Ví dụ_: Today is Monday.
+  - _Lưu ý_: nhấn âm sau: to-DAY.
+- **tomorrow (adv) /təˈmɒr.əʊ/**: ngày mai.
+  - _Ví dụ_: Tomorrow is Tuesday.
+  - _Lưu ý_: nhớ hai chữ r ở giữa; nhấn âm giữa.
+- **yesterday (adv) /ˈjes.tə.deɪ/**: hôm qua.
+  - _Ví dụ_: Yesterday was Sunday.
+  - _Lưu ý_: gồm "yes" + "ter" + "day", nhấn âm đầu.
