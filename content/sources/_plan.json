@@ -1,0 +1,178 @@
+[
+ {
+  "slug": "en8_u01",
+  "num": 1,
+  "name": "Leisure Time",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u01.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u02",
+  "num": 2,
+  "name": "Life in the Countryside",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u02.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u03",
+  "num": 3,
+  "name": "Teenagers",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u03.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u04",
+  "num": 4,
+  "name": "Ethnic Groups of Viet Nam",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u04.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u05",
+  "num": 5,
+  "name": "Our Customs and Traditions",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u05.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u06",
+  "num": 6,
+  "name": "Lifestyles",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u06.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u07",
+  "num": 7,
+  "name": "Environmental Protection",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u07.md",
+  "words": 20
+ },
+ {
+  "slug": "en8_u08",
+  "num": 8,
+  "name": "Shopping",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u08.md",
+  "words": 21
+ },
+ {
+  "slug": "en8_u09",
+  "num": 9,
+  "name": "Natural Disasters",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u09.md",
+  "words": 21
+ },
+ {
+  "slug": "en8_u10",
+  "num": 10,
+  "name": "Communication in the Future",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u10.md",
+  "words": 21
+ },
+ {
+  "slug": "en8_u11",
+  "num": 11,
+  "name": "Science and Technology",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u11.md",
+  "words": 21
+ },
+ {
+  "slug": "en8_u12",
+  "num": 12,
+  "name": "Life on Other Planets",
+  "grade": "English 8",
+  "file": "content\\sources\\en8_u12.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u01",
+  "num": 1,
+  "name": "Family Life",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u01.md",
+  "words": 20
+ },
+ {
+  "slug": "en10_u02",
+  "num": 2,
+  "name": "Humans and the Environment",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u02.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u03",
+  "num": 3,
+  "name": "Music",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u03.md",
+  "words": 21
+ },
+ {
+  "slug": "en10_u04",
+  "num": 4,
+  "name": "For a Better Community",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u04.md",
+  "words": 21
+ },
+ {
+  "slug": "en10_u05",
+  "num": 5,
+  "name": "Inventions",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u05.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u06",
+  "num": 6,
+  "name": "Gender Equality",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u06.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u07",
+  "num": 7,
+  "name": "Viet Nam and International Organisations",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u07.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u08",
+  "num": 8,
+  "name": "New Ways to Learn",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u08.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u09",
+  "num": 9,
+  "name": "Protecting the Environment",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u09.md",
+  "words": 22
+ },
+ {
+  "slug": "en10_u10",
+  "num": 10,
+  "name": "Ecotourism",
+  "grade": "English 10",
+  "file": "content\\sources\\en10_u10.md",
+  "words": 22
+ }
+]

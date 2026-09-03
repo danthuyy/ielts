@@ -1,0 +1,246 @@
+{
+  "id": "en8_u10",
+  "title": "English 8 — Unit 10: Communication in the Future",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "communicate",
+      "pos": "v",
+      "ipa": "/kəˈmjuːnɪkeɪt/",
+      "vi": "giao tiếp, liên lạc",
+      "example": "I communicate with my cousin in Japan every weekend.",
+      "collocation": "communicate with someone.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "communication",
+      "pos": "n",
+      "ipa": "/kəˌmjuːnɪˈkeɪʃn/",
+      "vi": "sự giao tiếp, truyền thông",
+      "example": "Email is still an important means of communication.",
+      "collocation": "a means of communication.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "face-to-face",
+      "pos": "adj",
+      "ipa": "/ˌfeɪs tə ˈfeɪs/",
+      "vi": "trực tiếp, mặt đối mặt",
+      "example": "A face-to-face conversation feels warmer than a text.",
+      "collocation": "a face-to-face conversation.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "video call",
+      "pos": "n",
+      "ipa": "/ˈvɪdiəʊ kɔːl/",
+      "vi": "cuộc gọi video",
+      "example": "We make a video call to our grandparents every Sunday.",
+      "collocation": "make a video call.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "instant messaging",
+      "pos": "phr",
+      "ipa": "/ˌɪnstənt ˈmesɪdʒɪŋ/",
+      "vi": "nhắn tin tức thời",
+      "example": "Instant messaging lets us send photos in a second.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "social media",
+      "pos": "phr",
+      "ipa": "/ˌsəʊʃl ˈmiːdiə/",
+      "vi": "mạng xã hội",
+      "example": "Many students use social media to share their school news.",
+      "collocation": "use social media.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "device",
+      "pos": "n",
+      "ipa": "/dɪˈvaɪs/",
+      "vi": "thiết bị",
+      "example": "This smart device can read your messages aloud.",
+      "collocation": "a smart device.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hologram",
+      "pos": "n",
+      "ipa": "/ˈhɒləɡræm/",
+      "vi": "ảnh nổi ba chiều",
+      "example": "In the future, we may talk to a hologram of our friend.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "virtual reality",
+      "pos": "phr",
+      "ipa": "/ˌvɜːtʃuəl riˈæləti/",
+      "vi": "thực tế ảo",
+      "example": "With virtual reality, we can visit a museum without leaving home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "telepathy",
+      "pos": "n",
+      "ipa": "/təˈlepəθi/",
+      "vi": "thần giao cách cảm",
+      "example": "Some people believe we will use telepathy to talk in the future.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wearable",
+      "pos": "adj",
+      "ipa": "/ˈweərəbl/",
+      "vi": "có thể đeo trên người",
+      "example": "Wearable technology can check your heart while you run.",
+      "collocation": "wearable technology.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "smart watch",
+      "pos": "n",
+      "ipa": "/ˈsmɑːt wɒtʃ/",
+      "vi": "đồng hồ thông minh",
+      "example": "My brother answers calls on his smart watch.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "translate",
+      "pos": "v",
+      "ipa": "/trænzˈleɪt/",
+      "vi": "dịch",
+      "example": "This app can translate English into Vietnamese at once.",
+      "collocation": "translate into Vietnamese.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "voice recognition",
+      "pos": "phr",
+      "ipa": "/ˈvɔɪs ˌrekəɡnɪʃn/",
+      "vi": "nhận diện giọng nói",
+      "example": "Voice recognition helps people write messages without typing.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "keep in touch",
+      "pos": "phr",
+      "ipa": "/ˌkiːp ɪn ˈtʌtʃ/",
+      "vi": "giữ liên lạc",
+      "example": "We keep in touch with our old teacher by email.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "network",
+      "pos": "n",
+      "ipa": "/ˈnetwɜːk/",
+      "vi": "mạng lưới",
+      "example": "The mobile network is very weak in the mountains.",
+      "collocation": "a mobile network.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wireless",
+      "pos": "adj",
+      "ipa": "/ˈwaɪələs/",
+      "vi": "không dây",
+      "example": "The library has a free wireless connection.",
+      "collocation": "a wireless connection.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "emoji",
+      "pos": "n",
+      "ipa": "/ɪˈməʊdʒi/",
+      "vi": "biểu tượng cảm xúc",
+      "example": "She ended her message with a smiling emoji.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "connect",
+      "pos": "v",
+      "ipa": "/kəˈnekt/",
+      "vi": "kết nối",
+      "example": "You can connect to the internet from any classroom.",
+      "collocation": "connect to the internet.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "app",
+      "pos": "n",
+      "ipa": "/æp/",
+      "vi": "ứng dụng",
+      "example": "I downloaded a new app to learn English words.",
+      "collocation": "download an app.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "text",
+      "pos": "v",
+      "ipa": "/tekst/",
+      "vi": "nhắn tin",
+      "example": "Text me when you get home, please.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

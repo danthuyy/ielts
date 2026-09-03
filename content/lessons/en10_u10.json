@@ -1,0 +1,257 @@
+{
+  "id": "en10_u10",
+  "title": "English 10 — Unit 10: Ecotourism",
+  "date": "2026-09-02",
+  "tags": [
+    "english10",
+    "school"
+  ],
+  "audience": [
+    "pboiboi"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "ecotourism",
+      "pos": "n",
+      "ipa": "/ˈiːkəʊtʊərɪzəm/",
+      "vi": "du lịch sinh thái",
+      "example": "Ecotourism helps people enjoy nature without damaging it.",
+      "collocation": "develop ecotourism, an ecotourism site.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tourist",
+      "pos": "n",
+      "ipa": "/ˈtʊərɪst/",
+      "vi": "khách du lịch",
+      "example": "Sa Pa attracts thousands of foreign tourists each year.",
+      "collocation": "attract tourists, foreign tourists.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "destination",
+      "pos": "n",
+      "ipa": "/ˌdestɪˈneɪʃn/",
+      "vi": "điểm đến",
+      "example": "Phong Nha has become a popular destination for young travellers.",
+      "collocation": "a popular destination, a holiday destination.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "attraction",
+      "pos": "n",
+      "ipa": "/əˈtrækʃn/",
+      "vi": "điểm hấp dẫn, thắng cảnh",
+      "example": "Ha Long Bay is the most famous tourist attraction in the north.",
+      "collocation": "a tourist attraction, a natural attraction.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "accommodation",
+      "pos": "n",
+      "ipa": "/əˌkɒməˈdeɪʃn/",
+      "vi": "chỗ ở",
+      "example": "We booked accommodation at a small homestay in the village.",
+      "collocation": "book accommodation, cheap accommodation.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "local",
+      "pos": "adj",
+      "ipa": "/ˈləʊkl/",
+      "vi": "thuộc địa phương",
+      "example": "Eating local food is one of the best parts of the trip.",
+      "collocation": "local people, local food.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "guide",
+      "pos": "n",
+      "ipa": "/ɡaɪd/",
+      "vi": "hướng dẫn viên",
+      "example": "Our guide told us the story of the cave.",
+      "collocation": "a tour guide, hire a guide.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "explore",
+      "pos": "v",
+      "ipa": "/ɪkˈsplɔː/",
+      "vi": "khám phá",
+      "example": "We spent two days exploring the mangrove forest by boat.",
+      "collocation": "explore a cave, explore the countryside.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "landscape",
+      "pos": "n",
+      "ipa": "/ˈlændskeɪp/",
+      "vi": "phong cảnh",
+      "example": "The landscape around the lake is breathtaking at sunrise.",
+      "collocation": "a beautiful landscape, a mountain landscape.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wildlife",
+      "pos": "n",
+      "ipa": "/ˈwaɪldlaɪf/",
+      "vi": "động vật hoang dã",
+      "example": "Cuc Phuong National Park is famous for its rich wildlife.",
+      "collocation": "wildlife conservation, watch wildlife.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "preserve",
+      "pos": "v",
+      "ipa": "/prɪˈzɜːv/",
+      "vi": "bảo tồn, gìn giữ",
+      "example": "Ecotourism can help local people preserve their traditions.",
+      "collocation": "preserve nature, preserve traditions.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "biodiversity",
+      "pos": "n",
+      "ipa": "/ˌbaɪəʊdaɪˈvɜːsəti/",
+      "vi": "đa dạng sinh học",
+      "example": "The park is well known for its rich biodiversity.",
+      "collocation": "rich biodiversity, protect biodiversity.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "impact",
+      "pos": "n",
+      "ipa": "/ˈɪmpækt/",
+      "vi": "tác động, ảnh hưởng",
+      "example": "Mass tourism has a negative impact on small islands.",
+      "collocation": "a negative impact, have an impact on.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "heritage",
+      "pos": "n",
+      "ipa": "/ˈherɪtɪdʒ/",
+      "vi": "di sản",
+      "example": "Hoi An Ancient Town is a World Heritage Site.",
+      "collocation": "a World Heritage Site, cultural heritage.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cultural",
+      "pos": "adj",
+      "ipa": "/ˈkʌltʃərəl/",
+      "vi": "thuộc văn hoá",
+      "example": "Staying with a local family was a wonderful cultural experience.",
+      "collocation": "cultural values, a cultural experience.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "souvenir",
+      "pos": "n",
+      "ipa": "/ˌsuːvəˈnɪə/",
+      "vi": "quà lưu niệm",
+      "example": "I bought a handmade scarf as a souvenir from the trip.",
+      "collocation": "buy a souvenir, a souvenir shop.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "trek",
+      "pos": "v",
+      "ipa": "/trek/",
+      "vi": "đi bộ đường dài (leo núi, băng rừng)",
+      "example": "We trekked through the jungle for three hours to reach the waterfall.",
+      "collocation": "trek through the jungle, go trekking.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "national park",
+      "pos": "phr",
+      "ipa": "/ˌnæʃnəl ˈpɑːk/",
+      "vi": "vườn quốc gia",
+      "example": "Our class visited Cat Tien National Park last summer.",
+      "collocation": "visit a national park.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "experience",
+      "pos": "n",
+      "ipa": "/ɪkˈspɪəriəns/",
+      "vi": "trải nghiệm",
+      "example": "Camping in the forest was an unforgettable experience.",
+      "collocation": "an unforgettable experience, gain experience.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eco-friendly",
+      "pos": "adj",
+      "ipa": "/ˌiːkəʊ ˈfrendli/",
+      "vi": "thân thiện với môi trường",
+      "example": "The resort uses eco-friendly bamboo straws instead of plastic ones.",
+      "collocation": "eco-friendly products, an eco-friendly hotel.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "unspoilt",
+      "pos": "adj",
+      "ipa": "/ˌʌnˈspɔɪlt/",
+      "vi": "hoang sơ, chưa bị tàn phá",
+      "example": "They spent a week on a quiet, unspoilt beach in Phu Quoc.",
+      "collocation": "an unspoilt beach, unspoilt scenery.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "income",
+      "pos": "n",
+      "ipa": "/ˈɪnkʌm/",
+      "vi": "thu nhập",
+      "example": "Ecotourism provides a steady income for many villagers.",
+      "collocation": "a source of income, earn an income.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

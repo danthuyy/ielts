@@ -1,0 +1,235 @@
+{
+  "id": "en10_u01",
+  "title": "English 10 — Unit 1: Family Life",
+  "date": "2026-09-02",
+  "tags": [
+    "english10",
+    "school"
+  ],
+  "audience": [
+    "pboiboi"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "household chores",
+      "pos": "n",
+      "ipa": "/ˌhaʊshəʊld ˈtʃɔːz/",
+      "vi": "việc nhà",
+      "example": "My brother and I share the household chores every weekend.",
+      "collocation": "do the household chores.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "laundry",
+      "pos": "n",
+      "ipa": "/ˈlɔːndri/",
+      "vi": "việc giặt giũ; quần áo cần giặt",
+      "example": "My father does the laundry twice a week.",
+      "collocation": "do the laundry.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "washing-up",
+      "pos": "n",
+      "ipa": "/ˌwɒʃɪŋ ˈʌp/",
+      "vi": "việc rửa bát đĩa",
+      "example": "I always do the washing-up after dinner.",
+      "collocation": "do the washing-up.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "breadwinner",
+      "pos": "n",
+      "ipa": "/ˈbredwɪnə/",
+      "vi": "trụ cột kinh tế của gia đình",
+      "example": "My mother is the main breadwinner in our family.",
+      "collocation": "the main breadwinner.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "homemaker",
+      "pos": "n",
+      "ipa": "/ˈhəʊmmeɪkə/",
+      "vi": "người nội trợ, người lo việc nhà",
+      "example": "Being a homemaker is hard work that is often forgotten.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "responsibility",
+      "pos": "n",
+      "ipa": "/rɪˌspɒnsəˈbɪləti/",
+      "vi": "trách nhiệm",
+      "example": "Children should take responsibility for their own rooms.",
+      "collocation": "take responsibility for.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "grocery",
+      "pos": "n",
+      "ipa": "/ˈɡrəʊsəri/",
+      "vi": "thực phẩm, hàng tạp hoá",
+      "example": "My parents do the grocery shopping on Sunday morning.",
+      "collocation": "do the grocery shopping.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rubbish",
+      "pos": "n",
+      "ipa": "/ˈrʌbɪʃ/",
+      "vi": "rác",
+      "example": "It is my job to take out the rubbish every evening.",
+      "collocation": "take out the rubbish.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "heavy lifting",
+      "pos": "n",
+      "ipa": "/ˌhevi ˈlɪftɪŋ/",
+      "vi": "việc nặng, việc phải khiêng vác",
+      "example": "My dad does the heavy lifting when we move furniture.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "iron",
+      "pos": "v",
+      "ipa": "/ˈaɪən/",
+      "vi": "là, ủi (quần áo)",
+      "example": "My sister irons her uniform before school.",
+      "collocation": "iron the clothes.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "mop",
+      "pos": "v",
+      "ipa": "/mɒp/",
+      "vi": "lau (nhà) bằng cây lau",
+      "example": "I mop the floor twice a week.",
+      "collocation": "mop the floor.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "vacuum",
+      "pos": "v",
+      "ipa": "/ˈvækjuːm/",
+      "vi": "hút bụi",
+      "example": "She vacuums the living room every Saturday.",
+      "collocation": "vacuum the carpet.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tidy up",
+      "pos": "phr",
+      "ipa": "/ˌtaɪdi ˈʌp/",
+      "vi": "dọn dẹp cho gọn gàng",
+      "example": "Please tidy up your desk before you go to bed.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "split",
+      "pos": "v",
+      "ipa": "/splɪt/",
+      "vi": "chia (công việc, chi phí)",
+      "example": "My parents split the housework equally.",
+      "collocation": "split the housework.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "routine",
+      "pos": "n",
+      "ipa": "/ruːˈtiːn/",
+      "vi": "thói quen, nếp sinh hoạt hằng ngày",
+      "example": "Helping my mum cook is part of my daily routine.",
+      "collocation": "daily routine.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "bond",
+      "pos": "n",
+      "ipa": "/bɒnd/",
+      "vi": "sự gắn bó, mối gắn kết",
+      "example": "Eating together creates a strong bond between family members.",
+      "collocation": "a strong family bond.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "strengthen",
+      "pos": "v",
+      "ipa": "/ˈstreŋθn/",
+      "vi": "làm cho bền chặt hơn",
+      "example": "Sharing chores strengthens the relationship between parents and children.",
+      "collocation": "strengthen relationships.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "benefit",
+      "pos": "n",
+      "ipa": "/ˈbenɪfɪt/",
+      "vi": "lợi ích",
+      "example": "Doing chores has many benefits for teenagers.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "contribute",
+      "pos": "v",
+      "ipa": "/kənˈtrɪbjuːt/",
+      "vi": "đóng góp",
+      "example": "Every member should contribute to the family in some way.",
+      "collocation": "contribute to the family.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "financial",
+      "pos": "adj",
+      "ipa": "/faɪˈnænʃl/",
+      "vi": "thuộc về tài chính, tiền bạc",
+      "example": "My uncle gives financial support to his old parents.",
+      "collocation": "financial support.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

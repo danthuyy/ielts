@@ -1,0 +1,235 @@
+{
+  "id": "en8_u02",
+  "title": "English 8 — Unit 2: Life in the Countryside",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "countryside",
+      "pos": "n",
+      "ipa": "/ˈkʌntrisaɪd/",
+      "vi": "vùng nông thôn, miền quê",
+      "example": "My grandparents live in the countryside near a river.",
+      "collocation": "live in the countryside.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "buffalo",
+      "pos": "n",
+      "ipa": "/ˈbʌfələʊ/",
+      "vi": "con trâu",
+      "example": "The boy rides a buffalo home every afternoon.",
+      "collocation": "ride a buffalo, herd buffaloes.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "harvest",
+      "pos": "v",
+      "ipa": "/ˈhɑːvɪst/",
+      "vi": "thu hoạch",
+      "example": "Farmers harvest the rice in early October.",
+      "collocation": "harvest the rice.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "paddy field",
+      "pos": "n",
+      "ipa": "/ˈpædi fiːld/",
+      "vi": "cánh đồng lúa",
+      "example": "The green paddy fields look beautiful in the morning.",
+      "collocation": "work in the paddy field.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "crop",
+      "pos": "n",
+      "ipa": "/krɒp/",
+      "vi": "vụ mùa, cây trồng",
+      "example": "My uncle grows crops such as maize and beans.",
+      "collocation": "grow crops.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cattle",
+      "pos": "n",
+      "ipa": "/ˈkætl/",
+      "vi": "gia súc (trâu, bò)",
+      "example": "The children help their parents herd the cattle.",
+      "collocation": "herd the cattle.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "orchard",
+      "pos": "n",
+      "ipa": "/ˈɔːtʃəd/",
+      "vi": "vườn cây ăn quả",
+      "example": "We picked oranges in my grandfather's orchard.",
+      "collocation": "a fruit orchard.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "peaceful",
+      "pos": "adj",
+      "ipa": "/ˈpiːsfl/",
+      "vi": "yên bình, thanh bình",
+      "example": "Life in this peaceful village is slow and quiet.",
+      "collocation": "a peaceful village.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "inconvenient",
+      "pos": "adj",
+      "ipa": "/ˌɪnkənˈviːniənt/",
+      "vi": "bất tiện",
+      "example": "Travelling to school is inconvenient without a bus.",
+      "collocation": "an inconvenient journey.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "vast",
+      "pos": "adj",
+      "ipa": "/vɑːst/",
+      "vi": "rộng lớn, bao la",
+      "example": "From the hill, we can see a vast green field.",
+      "collocation": "a vast field.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "nomad",
+      "pos": "n",
+      "ipa": "/ˈnəʊmæd/",
+      "vi": "người du mục",
+      "example": "A nomad moves from place to place to find grass for animals.",
+      "collocation": "a nomad family.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "herd",
+      "pos": "v",
+      "ipa": "/hɜːd/",
+      "vi": "chăn (gia súc), lùa",
+      "example": "He herds the sheep to the mountain every morning.",
+      "collocation": "herd sheep.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "harvest time",
+      "pos": "n",
+      "ipa": "/ˈhɑːvɪst taɪm/",
+      "vi": "mùa gặt, mùa thu hoạch",
+      "example": "The whole village is busy at harvest time.",
+      "collocation": "at harvest time.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "collect",
+      "pos": "v",
+      "ipa": "/kəˈlekt/",
+      "vi": "thu gom, nhặt",
+      "example": "The girls collect eggs from the hen house every day.",
+      "collocation": "collect water, collect eggs.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "dry",
+      "pos": "v",
+      "ipa": "/draɪ/",
+      "vi": "phơi khô, làm khô",
+      "example": "The farmers dry the rice in the sun after harvesting.",
+      "collocation": "dry the rice.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pick",
+      "pos": "v",
+      "ipa": "/pɪk/",
+      "vi": "hái, nhặt",
+      "example": "We picked some fresh fruit in the garden.",
+      "collocation": "pick fruit, pick flowers.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "kite",
+      "pos": "n",
+      "ipa": "/kaɪt/",
+      "vi": "cái diều",
+      "example": "The village children fly kites on windy afternoons.",
+      "collocation": "fly a kite.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "fresh",
+      "pos": "adj",
+      "ipa": "/freʃ/",
+      "vi": "trong lành, tươi",
+      "example": "I love the fresh air in the countryside.",
+      "collocation": "fresh air, fresh vegetables.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "generous",
+      "pos": "adj",
+      "ipa": "/ˈdʒenərəs/",
+      "vi": "hào phóng, rộng lượng",
+      "example": "The villagers are generous and always help each other.",
+      "collocation": "generous people.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "slow",
+      "pos": "adj",
+      "ipa": "/sləʊ/",
+      "vi": "chậm rãi",
+      "example": "I like the slow pace of life in my grandmother's village.",
+      "collocation": "a slow pace of life.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

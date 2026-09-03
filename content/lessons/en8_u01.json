@@ -1,0 +1,235 @@
+{
+  "id": "en8_u01",
+  "title": "English 8 — Unit 1: Leisure Time",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "leisure",
+      "pos": "n",
+      "ipa": "/ˈleʒə/",
+      "vi": "thời gian rảnh, sự giải trí",
+      "example": "In my leisure time, I often read comic books.",
+      "collocation": "leisure time, leisure activities.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "hang out",
+      "pos": "phr",
+      "ipa": "/ˌhæŋ ˈaʊt/",
+      "vi": "đi chơi, la cà (với bạn bè)",
+      "example": "We usually hang out at the park after school.",
+      "collocation": "hang out with friends.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "socialise",
+      "pos": "v",
+      "ipa": "/ˈsəʊʃəlaɪz/",
+      "vi": "giao lưu, kết bạn",
+      "example": "My sister likes to socialise with people from other countries.",
+      "collocation": "socialise with classmates.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "craft",
+      "pos": "n",
+      "ipa": "/krɑːft/",
+      "vi": "nghề thủ công, đồ thủ công",
+      "example": "She makes beautiful crafts from old paper.",
+      "collocation": "make crafts, craft kit.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "origami",
+      "pos": "n",
+      "ipa": "/ˌɒrɪˈɡɑːmi/",
+      "vi": "nghệ thuật gấp giấy Nhật Bản",
+      "example": "My brother can do origami and make a paper crane.",
+      "collocation": "do origami.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "knit",
+      "pos": "v",
+      "ipa": "/nɪt/",
+      "vi": "đan (len)",
+      "example": "My grandmother taught me how to knit a warm scarf.",
+      "collocation": "knit a scarf.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "DIY",
+      "pos": "n",
+      "ipa": "/ˌdiː aɪ ˈwaɪ/",
+      "vi": "tự làm đồ (do it yourself)",
+      "example": "I found a fun DIY project to decorate my bedroom.",
+      "collocation": "a DIY project.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pastime",
+      "pos": "n",
+      "ipa": "/ˈpɑːstaɪm/",
+      "vi": "thú tiêu khiển",
+      "example": "Playing badminton is my favourite pastime.",
+      "collocation": "a favourite pastime.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "relaxing",
+      "pos": "adj",
+      "ipa": "/rɪˈlæksɪŋ/",
+      "vi": "thư giãn, làm cho thoải mái",
+      "example": "Listening to soft music is very relaxing after a long day.",
+      "collocation": "a relaxing activity.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "addicted",
+      "pos": "adj",
+      "ipa": "/əˈdɪktɪd/",
+      "vi": "nghiện, mê mẩn",
+      "example": "Some students are addicted to online games.",
+      "collocation": "be addicted to games.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "community",
+      "pos": "n",
+      "ipa": "/kəˈmjuːnəti/",
+      "vi": "cộng đồng",
+      "example": "My class joins community activities every summer.",
+      "collocation": "community activities.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "volunteer",
+      "pos": "v",
+      "ipa": "/ˌvɒlənˈtɪə/",
+      "vi": "làm tình nguyện",
+      "example": "We volunteer at an old people's centre on Sundays.",
+      "collocation": "volunteer at a centre.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "board game",
+      "pos": "n",
+      "ipa": "/ˈbɔːd ɡeɪm/",
+      "vi": "trò chơi trên bàn cờ",
+      "example": "My family plays board games together on rainy evenings.",
+      "collocation": "play board games.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "puzzle",
+      "pos": "n",
+      "ipa": "/ˈpʌzl/",
+      "vi": "trò chơi ghép hình, câu đố",
+      "example": "It took me two hours to do this puzzle.",
+      "collocation": "do a puzzle, solve a puzzle.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "netizen",
+      "pos": "n",
+      "ipa": "/ˈnetɪzn/",
+      "vi": "cư dân mạng",
+      "example": "Many young netizens share their videos every day.",
+      "collocation": "young netizens.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "satisfied",
+      "pos": "adj",
+      "ipa": "/ˈsætɪsfaɪd/",
+      "vi": "hài lòng, thoả mãn",
+      "example": "I am satisfied with my new hobby.",
+      "collocation": "be satisfied with something.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "spend",
+      "pos": "v",
+      "ipa": "/spend/",
+      "vi": "dành (thời gian), tiêu (tiền)",
+      "example": "He spends two hours a day playing the guitar.",
+      "collocation": "spend time doing something.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "enjoy",
+      "pos": "v",
+      "ipa": "/ɪnˈdʒɔɪ/",
+      "vi": "thích, tận hưởng",
+      "example": "I enjoy watching cooking shows at the weekend.",
+      "collocation": "enjoy doing something.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "avoid",
+      "pos": "v",
+      "ipa": "/əˈvɔɪd/",
+      "vi": "tránh, né",
+      "example": "You should avoid using your phone before bedtime.",
+      "collocation": "avoid doing something.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "stress",
+      "pos": "n",
+      "ipa": "/stres/",
+      "vi": "sự căng thẳng",
+      "example": "Doing exercise helps me reduce stress after exams.",
+      "collocation": "reduce stress.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "id": "en10_u09",
+  "title": "English 10 — Unit 9: Protecting the Environment",
+  "date": "2026-09-02",
+  "tags": [
+    "english10",
+    "school"
+  ],
+  "audience": [
+    "pboiboi"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "environment",
+      "pos": "n",
+      "ipa": "/ɪnˈvaɪrənmənt/",
+      "vi": "môi trường",
+      "example": "We should all do something to protect the environment.",
+      "collocation": "protect the environment, harm the environment.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pollution",
+      "pos": "n",
+      "ipa": "/pəˈluːʃn/",
+      "vi": "sự ô nhiễm",
+      "example": "Air pollution in big cities is getting worse every year.",
+      "collocation": "air pollution, water pollution.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pollutant",
+      "pos": "n",
+      "ipa": "/pəˈluːtənt/",
+      "vi": "chất gây ô nhiễm",
+      "example": "Factories release pollutants into the river.",
+      "collocation": "release pollutants, harmful pollutants.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "deforestation",
+      "pos": "n",
+      "ipa": "/ˌdiːˌfɒrɪˈsteɪʃn/",
+      "vi": "nạn phá rừng",
+      "example": "Deforestation destroys the homes of many wild animals.",
+      "collocation": "cause deforestation, stop deforestation.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "contaminate",
+      "pos": "v",
+      "ipa": "/kənˈtæmɪneɪt/",
+      "vi": "làm nhiễm bẩn, làm ô nhiễm",
+      "example": "Chemicals from the factory have contaminated the water supply.",
+      "collocation": "contaminate water, contaminate the soil.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "greenhouse gas",
+      "pos": "phr",
+      "ipa": "/ˈɡriːnhaʊs ɡæs/",
+      "vi": "khí nhà kính",
+      "example": "Cars and factories produce a lot of greenhouse gases.",
+      "collocation": "greenhouse gas emissions.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "climate change",
+      "pos": "phr",
+      "ipa": "/ˈklaɪmət tʃeɪndʒ/",
+      "vi": "biến đổi khí hậu",
+      "example": "Climate change is causing longer and hotter summers.",
+      "collocation": "fight climate change, the effects of climate change.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "emission",
+      "pos": "n",
+      "ipa": "/ɪˈmɪʃn/",
+      "vi": "khí thải, sự phát thải",
+      "example": "The government wants to cut carbon emissions by half.",
+      "collocation": "carbon emissions, cut emissions.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "waste",
+      "pos": "n",
+      "ipa": "/weɪst/",
+      "vi": "chất thải, rác thải",
+      "example": "The factory dumped its waste into the sea.",
+      "collocation": "industrial waste, dump waste.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "recycle",
+      "pos": "v",
+      "ipa": "/ˌriːˈsaɪkl/",
+      "vi": "tái chế",
+      "example": "Our school recycles paper and plastic bottles every week.",
+      "collocation": "recycle paper, recycle plastic bottles.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "reduce",
+      "pos": "v",
+      "ipa": "/rɪˈdjuːs/",
+      "vi": "giảm bớt",
+      "example": "Using public transport can reduce air pollution.",
+      "collocation": "reduce waste, reduce pollution.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "destroy",
+      "pos": "v",
+      "ipa": "/dɪˈstrɔɪ/",
+      "vi": "phá huỷ",
+      "example": "Forest fires destroy thousands of hectares every year.",
+      "collocation": "destroy forests, destroy habitats.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "endangered",
+      "pos": "adj",
+      "ipa": "/ɪnˈdeɪndʒəd/",
+      "vi": "có nguy cơ tuyệt chủng",
+      "example": "The Sao la is an endangered animal found in Viet Nam.",
+      "collocation": "an endangered species, endangered animals.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "species",
+      "pos": "n",
+      "ipa": "/ˈspiːʃiːz/",
+      "vi": "loài",
+      "example": "Hundreds of species disappear from the earth every year.",
+      "collocation": "a rare species, protect species.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "habitat",
+      "pos": "n",
+      "ipa": "/ˈhæbɪtæt/",
+      "vi": "môi trường sống (của sinh vật)",
+      "example": "Many birds have lost their natural habitat because of farming.",
+      "collocation": "a natural habitat, lose their habitat.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "ecosystem",
+      "pos": "n",
+      "ipa": "/ˈiːkəʊsɪstəm/",
+      "vi": "hệ sinh thái",
+      "example": "Plastic waste is damaging the ocean ecosystem.",
+      "collocation": "a fragile ecosystem, damage an ecosystem.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "awareness",
+      "pos": "n",
+      "ipa": "/əˈweənəs/",
+      "vi": "nhận thức, sự hiểu biết",
+      "example": "The club organises talks to raise awareness of recycling.",
+      "collocation": "raise awareness of something.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "protect",
+      "pos": "v",
+      "ipa": "/prəˈtekt/",
+      "vi": "bảo vệ",
+      "example": "Laws have been passed to protect wild animals from hunters.",
+      "collocation": "protect wild animals, protect nature.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "natural resources",
+      "pos": "phr",
+      "ipa": "/ˌnætʃrəl rɪˈzɔːsɪz/",
+      "vi": "tài nguyên thiên nhiên",
+      "example": "We must use our natural resources wisely.",
+      "collocation": "use natural resources, save natural resources.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "harmful",
+      "pos": "adj",
+      "ipa": "/ˈhɑːmfl/",
+      "vi": "có hại",
+      "example": "Burning rubbish releases gases that are harmful to health.",
+      "collocation": "harmful to health, harmful chemicals.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "litter",
+      "pos": "n",
+      "ipa": "/ˈlɪtə/",
+      "vi": "rác vứt bừa bãi",
+      "example": "Please do not drop litter in the park.",
+      "collocation": "drop litter, pick up litter.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "soil",
+      "pos": "n",
+      "ipa": "/sɔɪl/",
+      "vi": "đất trồng",
+      "example": "Chemical fertilisers can damage the soil over time.",
+      "collocation": "soil pollution, rich soil.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

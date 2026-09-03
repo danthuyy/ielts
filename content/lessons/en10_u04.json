@@ -1,0 +1,246 @@
+{
+  "id": "en10_u04",
+  "title": "English 10 — Unit 4: For a Better Community",
+  "date": "2026-09-02",
+  "tags": [
+    "english10",
+    "school"
+  ],
+  "audience": [
+    "pboiboi"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "community",
+      "pos": "n",
+      "ipa": "/kəˈmjuːnəti/",
+      "vi": "cộng đồng",
+      "example": "The club does many useful things for the local community.",
+      "collocation": "the local community.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "volunteer",
+      "pos": "n",
+      "ipa": "/ˌvɒlənˈtɪə/",
+      "vi": "tình nguyện viên",
+      "example": "She works as a volunteer at the children's hospital.",
+      "collocation": "work as a volunteer.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "voluntary",
+      "pos": "adj",
+      "ipa": "/ˈvɒləntri/",
+      "vi": "tự nguyện, thiện nguyện",
+      "example": "Many students do voluntary work in the summer.",
+      "collocation": "voluntary work.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "charity",
+      "pos": "n",
+      "ipa": "/ˈtʃærəti/",
+      "vi": "tổ chức từ thiện; hoạt động từ thiện",
+      "example": "The money went to a charity for poor children.",
+      "collocation": "a charity organisation.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "donate",
+      "pos": "v",
+      "ipa": "/dəʊˈneɪt/",
+      "vi": "quyên góp, tặng",
+      "example": "Our class donated books to a rural school.",
+      "collocation": "donate books to.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "fundraising",
+      "pos": "n",
+      "ipa": "/ˈfʌndreɪzɪŋ/",
+      "vi": "việc gây quỹ",
+      "example": "The school held a fundraising event for flood victims.",
+      "collocation": "a fundraising event.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "raise funds",
+      "pos": "phr",
+      "ipa": "/ˌreɪz ˈfʌndz/",
+      "vi": "gây quỹ",
+      "example": "We sold handmade cards to raise funds for the orphanage.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "support",
+      "pos": "v",
+      "ipa": "/səˈpɔːt/",
+      "vi": "hỗ trợ, giúp đỡ",
+      "example": "Local people supported the clean-up project.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "disadvantaged",
+      "pos": "adj",
+      "ipa": "/ˌdɪsədˈvɑːntɪdʒd/",
+      "vi": "thiệt thòi, kém may mắn",
+      "example": "The programme offers free classes to disadvantaged children.",
+      "collocation": "disadvantaged children.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "orphanage",
+      "pos": "n",
+      "ipa": "/ˈɔːfənɪdʒ/",
+      "vi": "trại trẻ mồ côi",
+      "example": "We visit the orphanage every Sunday afternoon.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "the homeless",
+      "pos": "n",
+      "ipa": "/ðə ˈhəʊmləs/",
+      "vi": "những người vô gia cư",
+      "example": "They give warm meals to the homeless in winter.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "shelter",
+      "pos": "n",
+      "ipa": "/ˈʃeltə/",
+      "vi": "nơi trú ẩn, chỗ ở tạm",
+      "example": "The charity built a shelter for people after the storm.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "remote",
+      "pos": "adj",
+      "ipa": "/rɪˈməʊt/",
+      "vi": "xa xôi, hẻo lánh",
+      "example": "The teachers travel to a remote area every month.",
+      "collocation": "a remote area.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rural",
+      "pos": "adj",
+      "ipa": "/ˈrʊərəl/",
+      "vi": "thuộc nông thôn",
+      "example": "Many children in rural areas need school supplies.",
+      "collocation": "rural areas.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "organise",
+      "pos": "v",
+      "ipa": "/ˈɔːɡənaɪz/",
+      "vi": "tổ chức",
+      "example": "Our club organises a blood donation day every year.",
+      "collocation": "organise an activity.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "campaign",
+      "pos": "n",
+      "ipa": "/kæmˈpeɪn/",
+      "vi": "chiến dịch",
+      "example": "They launched a campaign to plant trees in the city.",
+      "collocation": "launch a campaign.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "participate",
+      "pos": "v",
+      "ipa": "/pɑːˈtɪsɪpeɪt/",
+      "vi": "tham gia",
+      "example": "More than 200 students participated in the event.",
+      "collocation": "participate in.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "non-profit",
+      "pos": "adj",
+      "ipa": "/ˌnɒn ˈprɒfɪt/",
+      "vi": "phi lợi nhuận",
+      "example": "She works for a non-profit organisation in Hue.",
+      "collocation": "a non-profit organisation.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "generous",
+      "pos": "adj",
+      "ipa": "/ˈdʒenərəs/",
+      "vi": "hào phóng, rộng lượng",
+      "example": "The villagers were very generous with their time and food.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "meaningful",
+      "pos": "adj",
+      "ipa": "/ˈmiːnɪŋfl/",
+      "vi": "có ý nghĩa",
+      "example": "Volunteering is a meaningful way to spend the summer.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tutor",
+      "pos": "v",
+      "ipa": "/ˈtjuːtə/",
+      "vi": "dạy kèm",
+      "example": "He tutors poor children in maths after school.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

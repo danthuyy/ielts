@@ -1,0 +1,246 @@
+{
+  "id": "en8_u11",
+  "title": "English 8 — Unit 11: Science and Technology",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "science",
+      "pos": "n",
+      "ipa": "/ˈsaɪəns/",
+      "vi": "khoa học",
+      "example": "Modern science has changed the way we live.",
+      "collocation": "modern science.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "scientist",
+      "pos": "n",
+      "ipa": "/ˈsaɪəntɪst/",
+      "vi": "nhà khoa học",
+      "example": "The scientist spent ten years studying rice plants.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "technology",
+      "pos": "n",
+      "ipa": "/tekˈnɒlədʒi/",
+      "vi": "công nghệ",
+      "example": "Modern technology helps farmers grow better crops.",
+      "collocation": "modern technology.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "invention",
+      "pos": "n",
+      "ipa": "/ɪnˈvenʃn/",
+      "vi": "phát minh",
+      "example": "The light bulb is one of the most useful inventions ever.",
+      "collocation": "a useful invention.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "invent",
+      "pos": "v",
+      "ipa": "/ɪnˈvent/",
+      "vi": "phát minh ra",
+      "example": "My classmate invented a machine that waters plants.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "discovery",
+      "pos": "n",
+      "ipa": "/dɪˈskʌvəri/",
+      "vi": "khám phá",
+      "example": "The team made an important discovery about sea water.",
+      "collocation": "make a discovery.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "experiment",
+      "pos": "n",
+      "ipa": "/ɪkˈsperɪmənt/",
+      "vi": "thí nghiệm",
+      "example": "We did a simple experiment with salt and water in class.",
+      "collocation": "do an experiment.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "laboratory",
+      "pos": "n",
+      "ipa": "/ləˈbɒrətri/",
+      "vi": "phòng thí nghiệm",
+      "example": "Students must wear glasses in the laboratory.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "robot",
+      "pos": "n",
+      "ipa": "/ˈrəʊbɒt/",
+      "vi": "người máy",
+      "example": "This robot can clean the floor by itself.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "artificial intelligence",
+      "pos": "phr",
+      "ipa": "/ˌɑːtɪfɪʃl ɪnˈtelɪdʒəns/",
+      "vi": "trí tuệ nhân tạo",
+      "example": "Artificial intelligence can now check homework for teachers.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "develop",
+      "pos": "v",
+      "ipa": "/dɪˈveləp/",
+      "vi": "phát triển",
+      "example": "The company is developing a cheaper solar panel.",
+      "collocation": "develop a new product.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "research",
+      "pos": "n",
+      "ipa": "/rɪˈsɜːtʃ/",
+      "vi": "nghiên cứu",
+      "example": "They are doing research on clean energy.",
+      "collocation": "do research on something.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "innovation",
+      "pos": "n",
+      "ipa": "/ˌɪnəˈveɪʃn/",
+      "vi": "sự đổi mới, cải tiến",
+      "example": "This small innovation saves the factory a lot of water.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "advance",
+      "pos": "n",
+      "ipa": "/ədˈvɑːns/",
+      "vi": "bước tiến, tiến bộ",
+      "example": "Advances in medicine have saved millions of lives.",
+      "collocation": "advances in medicine.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "automatic",
+      "pos": "adj",
+      "ipa": "/ˌɔːtəˈmætɪk/",
+      "vi": "tự động",
+      "example": "The automatic door opens when you come near it.",
+      "collocation": "an automatic door.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "engineer",
+      "pos": "n",
+      "ipa": "/ˌendʒɪˈnɪə(r)/",
+      "vi": "kỹ sư",
+      "example": "My uncle is an engineer at a car factory.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "solve",
+      "pos": "v",
+      "ipa": "/sɒlv/",
+      "vi": "giải quyết",
+      "example": "Science can help us solve the problem of dirty water.",
+      "collocation": "solve a problem.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "improve",
+      "pos": "v",
+      "ipa": "/ɪmˈpruːv/",
+      "vi": "cải thiện",
+      "example": "New machines have improved life in the countryside.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "digital",
+      "pos": "adj",
+      "ipa": "/ˈdɪdʒɪtl/",
+      "vi": "kỹ thuật số",
+      "example": "We took photos of the experiment with a digital camera.",
+      "collocation": "a digital camera.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "breakthrough",
+      "pos": "n",
+      "ipa": "/ˈbreɪkθruː/",
+      "vi": "bước đột phá",
+      "example": "The new medicine was a real breakthrough for doctors.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "benefit",
+      "pos": "n",
+      "ipa": "/ˈbenɪfɪt/",
+      "vi": "lợi ích",
+      "example": "We talked about the benefits of technology in class.",
+      "collocation": "the benefits of technology.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

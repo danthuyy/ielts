@@ -1,0 +1,246 @@
+{
+  "id": "en8_u09",
+  "title": "English 8 — Unit 9: Natural Disasters",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "disaster",
+      "pos": "n",
+      "ipa": "/dɪˈzɑːstə(r)/",
+      "vi": "thảm hoạ",
+      "example": "A natural disaster can destroy a whole village in minutes.",
+      "collocation": "a natural disaster.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "earthquake",
+      "pos": "n",
+      "ipa": "/ˈɜːθkweɪk/",
+      "vi": "trận động đất",
+      "example": "A strong earthquake shook the city last night.",
+      "collocation": "a strong earthquake.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "flood",
+      "pos": "n",
+      "ipa": "/flʌd/",
+      "vi": "trận lũ lụt",
+      "example": "The flood covered all the rice fields in our village.",
+      "collocation": "a serious flood.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "drought",
+      "pos": "n",
+      "ipa": "/draʊt/",
+      "vi": "hạn hán",
+      "example": "The long drought killed most of the crops.",
+      "collocation": "a long drought.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "tsunami",
+      "pos": "n",
+      "ipa": "/tsuːˈnɑːmi/",
+      "vi": "sóng thần",
+      "example": "The tsunami hit the coast an hour after the earthquake.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "volcano",
+      "pos": "n",
+      "ipa": "/vɒlˈkeɪnəʊ/",
+      "vi": "núi lửa",
+      "example": "There is an active volcano on that island.",
+      "collocation": "an active volcano.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eruption",
+      "pos": "n",
+      "ipa": "/ɪˈrʌpʃn/",
+      "vi": "sự phun trào",
+      "example": "The eruption covered the fields with grey ash.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "landslide",
+      "pos": "n",
+      "ipa": "/ˈlændslaɪd/",
+      "vi": "sạt lở đất",
+      "example": "Heavy rain caused a landslide on the mountain road.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "storm",
+      "pos": "n",
+      "ipa": "/stɔːm/",
+      "vi": "cơn bão",
+      "example": "The storm broke many windows in our street.",
+      "collocation": "a heavy storm.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "typhoon",
+      "pos": "n",
+      "ipa": "/taɪˈfuːn/",
+      "vi": "bão nhiệt đới",
+      "example": "The typhoon is moving towards the central provinces.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wildfire",
+      "pos": "n",
+      "ipa": "/ˈwaɪldfaɪə(r)/",
+      "vi": "cháy rừng",
+      "example": "A wildfire burnt hundreds of trees in the forest.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "victim",
+      "pos": "n",
+      "ipa": "/ˈvɪktɪm/",
+      "vi": "nạn nhân",
+      "example": "Our school collected clothes to help the flood victims.",
+      "collocation": "help the victims.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "survivor",
+      "pos": "n",
+      "ipa": "/səˈvaɪvə(r)/",
+      "vi": "người sống sót",
+      "example": "The survivors were taken to a safe place.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "evacuate",
+      "pos": "v",
+      "ipa": "/ɪˈvækjueɪt/",
+      "vi": "sơ tán",
+      "example": "The police evacuated the village before the storm arrived.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rescue",
+      "pos": "v",
+      "ipa": "/ˈreskjuː/",
+      "vi": "cứu hộ, giải cứu",
+      "example": "Soldiers rescued ten people from the flooded houses.",
+      "collocation": "rescue people.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "shelter",
+      "pos": "n",
+      "ipa": "/ˈʃeltə(r)/",
+      "vi": "nơi trú ẩn",
+      "example": "The families took shelter in the school hall.",
+      "collocation": "take shelter.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "collapse",
+      "pos": "v",
+      "ipa": "/kəˈlæps/",
+      "vi": "sụp đổ",
+      "example": "The old bridge collapsed during the earthquake.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "destroy",
+      "pos": "v",
+      "ipa": "/dɪˈstrɔɪ/",
+      "vi": "phá huỷ",
+      "example": "The storm destroyed hundreds of homes.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "warning",
+      "pos": "n",
+      "ipa": "/ˈwɔːnɪŋ/",
+      "vi": "lời cảnh báo",
+      "example": "People left the beach after the early warning on TV.",
+      "collocation": "an early warning.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "emergency",
+      "pos": "n",
+      "ipa": "/ɪˈmɜːdʒənsi/",
+      "vi": "tình huống khẩn cấp",
+      "example": "In an emergency, call this number immediately.",
+      "collocation": "in an emergency.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "first-aid kit",
+      "pos": "phr",
+      "ipa": "/ˌfɜːst ˈeɪd kɪt/",
+      "vi": "bộ dụng cụ sơ cứu",
+      "example": "Every family should keep a first-aid kit at home.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

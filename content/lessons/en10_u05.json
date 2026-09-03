@@ -1,0 +1,257 @@
+{
+  "id": "en10_u05",
+  "title": "English 10 — Unit 5: Inventions",
+  "date": "2026-09-02",
+  "tags": [
+    "english10",
+    "school"
+  ],
+  "audience": [
+    "pboiboi"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "invention",
+      "pos": "n",
+      "ipa": "/ɪnˈvenʃn/",
+      "vi": "phát minh",
+      "example": "The light bulb is one of the greatest inventions in history.",
+      "collocation": "a great invention.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "invent",
+      "pos": "v",
+      "ipa": "/ɪnˈvent/",
+      "vi": "phát minh ra",
+      "example": "Who invented the telephone?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "inventor",
+      "pos": "n",
+      "ipa": "/ɪnˈventə/",
+      "vi": "nhà phát minh",
+      "example": "The young inventor won a national science prize.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "device",
+      "pos": "n",
+      "ipa": "/dɪˈvaɪs/",
+      "vi": "thiết bị",
+      "example": "This electronic device can measure your heart rate.",
+      "collocation": "an electronic device.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "gadget",
+      "pos": "n",
+      "ipa": "/ˈɡædʒɪt/",
+      "vi": "đồ dùng công nghệ nhỏ gọn",
+      "example": "This kitchen gadget helps you peel fruit quickly.",
+      "collocation": "a useful gadget.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "technology",
+      "pos": "n",
+      "ipa": "/tekˈnɒlədʒi/",
+      "vi": "công nghệ",
+      "example": "Modern technology has changed the way we learn.",
+      "collocation": "modern technology.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "develop",
+      "pos": "v",
+      "ipa": "/dɪˈveləp/",
+      "vi": "phát triển, nghiên cứu chế tạo",
+      "example": "Scientists are developing a cheaper solar panel.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "design",
+      "pos": "v",
+      "ipa": "/dɪˈzaɪn/",
+      "vi": "thiết kế",
+      "example": "She designed a robot that can clean the floor.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "portable",
+      "pos": "adj",
+      "ipa": "/ˈpɔːtəbl/",
+      "vi": "xách tay, dễ mang theo",
+      "example": "I always carry a portable charger in my bag.",
+      "collocation": "a portable charger.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "wireless",
+      "pos": "adj",
+      "ipa": "/ˈwaɪələs/",
+      "vi": "không dây",
+      "example": "These wireless headphones last for ten hours.",
+      "collocation": "wireless headphones.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "convenient",
+      "pos": "adj",
+      "ipa": "/kənˈviːniənt/",
+      "vi": "tiện lợi",
+      "example": "Online payment is convenient for busy people.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "handy",
+      "pos": "adj",
+      "ipa": "/ˈhændi/",
+      "vi": "tiện dụng, hữu ích",
+      "example": "This small torch is very handy when the power goes out.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "function",
+      "pos": "n",
+      "ipa": "/ˈfʌŋkʃn/",
+      "vi": "chức năng",
+      "example": "This watch has a function that counts your steps.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "feature",
+      "pos": "n",
+      "ipa": "/ˈfiːtʃə/",
+      "vi": "tính năng, đặc điểm nổi bật",
+      "example": "My favourite feature of the app is offline reading.",
+      "collocation": "a useful feature.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "application",
+      "pos": "n",
+      "ipa": "/ˌæplɪˈkeɪʃn/",
+      "vi": "ứng dụng",
+      "example": "I use a mobile application to learn new words every day.",
+      "collocation": "a mobile application.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "software",
+      "pos": "n",
+      "ipa": "/ˈsɒftweə/",
+      "vi": "phần mềm",
+      "example": "The school bought new software for the computer room.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "drone",
+      "pos": "n",
+      "ipa": "/drəʊn/",
+      "vi": "máy bay không người lái",
+      "example": "Farmers use drones to spray their rice fields.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "robot",
+      "pos": "n",
+      "ipa": "/ˈrəʊbɒt/",
+      "vi": "rô-bốt",
+      "example": "A robot can do dangerous work instead of people.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "artificial intelligence",
+      "pos": "n",
+      "ipa": "/ˌɑːtɪfɪʃl ɪnˈtelɪdʒəns/",
+      "vi": "trí tuệ nhân tạo",
+      "example": "Artificial intelligence can translate texts in seconds.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "improve",
+      "pos": "v",
+      "ipa": "/ɪmˈpruːv/",
+      "vi": "cải thiện, làm tốt hơn",
+      "example": "New inventions improve our daily lives.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "patent",
+      "pos": "n",
+      "ipa": "/ˈpætnt/",
+      "vi": "bằng sáng chế",
+      "example": "He got a patent for his new water filter.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "breakthrough",
+      "pos": "n",
+      "ipa": "/ˈbreɪkθruː/",
+      "vi": "bước đột phá",
+      "example": "The new battery is a real breakthrough in green energy.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

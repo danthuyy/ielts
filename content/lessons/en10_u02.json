@@ -1,0 +1,257 @@
+{
+  "id": "en10_u02",
+  "title": "English 10 — Unit 2: Humans and the Environment",
+  "date": "2026-09-02",
+  "tags": [
+    "english10",
+    "school"
+  ],
+  "audience": [
+    "pboiboi"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "environment",
+      "pos": "n",
+      "ipa": "/ɪnˈvaɪrənmənt/",
+      "vi": "môi trường",
+      "example": "We must protect the environment for future generations.",
+      "collocation": "protect the environment.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pollution",
+      "pos": "n",
+      "ipa": "/pəˈluːʃn/",
+      "vi": "sự ô nhiễm",
+      "example": "Air pollution in big cities is getting worse.",
+      "collocation": "air pollution.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "deforestation",
+      "pos": "n",
+      "ipa": "/ˌdiːˌfɒrɪˈsteɪʃn/",
+      "vi": "nạn phá rừng",
+      "example": "Deforestation destroys the homes of many wild animals.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "greenhouse gas",
+      "pos": "n",
+      "ipa": "/ˈɡriːnhaʊs ɡæs/",
+      "vi": "khí nhà kính",
+      "example": "Cars and factories produce a lot of greenhouse gases.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "climate change",
+      "pos": "n",
+      "ipa": "/ˈklaɪmət tʃeɪndʒ/",
+      "vi": "biến đổi khí hậu",
+      "example": "Climate change causes stronger storms and longer droughts.",
+      "collocation": "fight climate change.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "carbon footprint",
+      "pos": "n",
+      "ipa": "/ˈkɑːbən ˈfʊtprɪnt/",
+      "vi": "dấu chân các-bon (lượng khí thải gây ra)",
+      "example": "Cycling to school helps reduce your carbon footprint.",
+      "collocation": "reduce your carbon footprint.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "emission",
+      "pos": "n",
+      "ipa": "/ɪˈmɪʃn/",
+      "vi": "khí thải, sự thải ra",
+      "example": "The government wants to cut emissions from factories.",
+      "collocation": "cut emissions.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "recycle",
+      "pos": "v",
+      "ipa": "/ˌriːˈsaɪkl/",
+      "vi": "tái chế",
+      "example": "Our school recycles paper and plastic bottles.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "reuse",
+      "pos": "v",
+      "ipa": "/ˌriːˈjuːz/",
+      "vi": "tái sử dụng",
+      "example": "You can reuse this bag many times.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "reduce",
+      "pos": "v",
+      "ipa": "/rɪˈdjuːs/",
+      "vi": "giảm, làm giảm bớt",
+      "example": "We should reduce the amount of water we use.",
+      "collocation": "reduce waste.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "waste",
+      "pos": "n",
+      "ipa": "/weɪst/",
+      "vi": "rác thải, chất thải",
+      "example": "Plastic waste is harming sea animals.",
+      "collocation": "plastic waste.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "packaging",
+      "pos": "n",
+      "ipa": "/ˈpækɪdʒɪŋ/",
+      "vi": "bao bì đóng gói",
+      "example": "Try to buy products with less packaging.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "sustainable",
+      "pos": "adj",
+      "ipa": "/səˈsteɪnəbl/",
+      "vi": "bền vững",
+      "example": "A sustainable lifestyle uses fewer resources.",
+      "collocation": "a sustainable lifestyle.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eco-friendly",
+      "pos": "adj",
+      "ipa": "/ˌiːkəʊ ˈfrendli/",
+      "vi": "thân thiện với môi trường",
+      "example": "This shop only sells eco-friendly products.",
+      "collocation": "eco-friendly products.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "energy",
+      "pos": "n",
+      "ipa": "/ˈenədʒi/",
+      "vi": "năng lượng",
+      "example": "Turn off the lights to save energy.",
+      "collocation": "save energy.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "conserve",
+      "pos": "v",
+      "ipa": "/kənˈsɜːv/",
+      "vi": "bảo tồn, tiết kiệm",
+      "example": "We should conserve water during the dry season.",
+      "collocation": "conserve water.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "endangered",
+      "pos": "adj",
+      "ipa": "/ɪnˈdeɪndʒəd/",
+      "vi": "có nguy cơ tuyệt chủng",
+      "example": "The Javan rhino is an endangered animal in Viet Nam.",
+      "collocation": "an endangered species.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "species",
+      "pos": "n",
+      "ipa": "/ˈspiːʃiːz/",
+      "vi": "loài (sinh vật)",
+      "example": "Thousands of species disappear every year.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "habitat",
+      "pos": "n",
+      "ipa": "/ˈhæbɪtæt/",
+      "vi": "môi trường sống của động thực vật",
+      "example": "Forest fires destroy the natural habitat of many birds.",
+      "collocation": "natural habitat.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "natural resources",
+      "pos": "n",
+      "ipa": "/ˌnætʃrəl rɪˈzɔːsɪz/",
+      "vi": "tài nguyên thiên nhiên",
+      "example": "Our country is rich in natural resources.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "litter",
+      "pos": "v",
+      "ipa": "/ˈlɪtə/",
+      "vi": "xả rác bừa bãi",
+      "example": "Please do not litter in the park.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "awareness",
+      "pos": "n",
+      "ipa": "/əˈweənəs/",
+      "vi": "nhận thức, sự hiểu biết",
+      "example": "The club raises awareness of environmental problems.",
+      "collocation": "raise awareness of.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

@@ -14,6 +14,7 @@ import {
 import { MASTERY_LEVELS } from '@/lib/srs';
 import { formatDateVi, percent } from '@/lib/utils';
 import { Heatmap } from './Heatmap';
+import { TrendChart, type TrendPoint } from './TrendChart';
 import { ModeBreakdown } from './ModeBreakdown';
 import { Conquest } from './Conquest';
 import { PeerBoard } from './PeerBoard';
@@ -28,6 +29,9 @@ const LEVEL_COLORS = [
 ];
 
 const HISTORY_LIMIT = 8;
+/** Enough points for a trend to have a shape, few enough to stay readable. */
+const TREND_TESTS = 20;
+const TREND_DAYS = 56;
 const HEATMAP_WEEKS = 26;
 const WEAK_LIMIT = 8;
 const UPCOMING_DAYS = 14;
@@ -38,7 +42,7 @@ export function StatsScreen() {
   const data = useLiveQuery(async () => {
     const [stats, history, activity, weak, upcoming, levels] = await Promise.all([
       getOverallStats(),
-      getTestHistory(HISTORY_LIMIT),
+      getTestHistory(Math.max(HISTORY_LIMIT, TREND_TESTS)),
       getActivitySince(HEATMAP_WEEKS * 7),
       getWeakWords(WEAK_LIMIT),
       getUpcomingReviews(UPCOMING_DAYS),
@@ -54,6 +58,30 @@ export function StatsScreen() {
   const masteredPct = percent(stats.mastered, stats.total);
   const learningPct = percent(stats.learning, stats.total);
   const upcomingPeak = Math.max(1, ...upcoming.map((day) => day.count));
+
+  // Oldest first: a trend reads left to right. getTestHistory returns newest
+  // first, which would draw the learner's progress backwards.
+  const testTrend: TrendPoint[] = [...history]
+    .reverse()
+    .slice(-TREND_TESTS)
+    .map((entry) => ({ label: formatDateVi(entry.date), value: Math.round(entry.score) }));
+  const testAverage =
+    testTrend.length > 0
+      ? Math.round(testTrend.reduce((sum, point) => sum + point.value, 0) / testTrend.length)
+      : 0;
+
+  // Smoothed over a week: a single day of five hard words swings raw accuracy
+  // by 40 points and buries the trend the chart exists to show.
+  const trendDays = [...activity]
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(-TREND_DAYS)
+    .filter((day) => day.wordsStudied > 0);
+  const accuracyTrend: TrendPoint[] = trendDays.map((day, index) => {
+    const window = trendDays.slice(Math.max(0, index - 6), index + 1);
+    const studied = window.reduce((sum, entry) => sum + entry.wordsStudied, 0);
+    const correct = window.reduce((sum, entry) => sum + entry.wordsCorrect, 0);
+    return { label: day.date.slice(5).replace('-', '/'), value: percent(correct, studied) };
+  });
 
   // Pace over the last fortnight of days actually studied — a fair basis for
   // "how long until the bank is done" that a week of holidays does not flatten.
@@ -142,6 +170,30 @@ export function StatsScreen() {
       <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
         <h2 className="section__label">Hoạt động</h2>
         <Heatmap activity={activity} weeks={HEATMAP_WEEKS} />
+      </section>
+
+      <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
+        <h2 className="section__label">Tỉ lệ đúng theo thời gian</h2>
+        <TrendChart
+          points={accuracyTrend}
+          title="Tỉ lệ trả lời đúng, trung bình trượt 7 ngày"
+          {...(accuracyTrend.length > 1
+            ? { baseline: { value: 50, label: 'đường đứt: mốc 50%' } }
+            : {})}
+          empty="Học vài ngày nữa là có đường xu hướng ở đây."
+        />
+      </section>
+
+      <section className="card" style={{ marginBottom: 'var(--sp-5)' }}>
+        <h2 className="section__label">Điểm bài kiểm tra</h2>
+        <TrendChart
+          points={testTrend}
+          title="Điểm các bài kiểm tra gần đây"
+          {...(testTrend.length > 1
+            ? { baseline: { value: testAverage, label: `đường đứt: trung bình ${testAverage}%` } }
+            : {})}
+          empty="Chưa có bài kiểm tra nào. Làm thử một bài để xem tiến bộ."
+        />
       </section>
 
       {/* Renders nothing unless this build was given a peer list. */}

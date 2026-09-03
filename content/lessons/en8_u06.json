@@ -1,0 +1,235 @@
+{
+  "id": "en8_u06",
+  "title": "English 8 — Unit 6: Lifestyles",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "lifestyle",
+      "pos": "n",
+      "ipa": "/ˈlaɪfstaɪl/",
+      "vi": "lối sống, phong cách sống",
+      "example": "A healthy lifestyle includes exercise and good food.",
+      "collocation": "a healthy lifestyle.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "urban",
+      "pos": "adj",
+      "ipa": "/ˈɜːbən/",
+      "vi": "thuộc thành thị",
+      "example": "Urban life is busy but full of opportunities.",
+      "collocation": "urban life, urban areas.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "rural",
+      "pos": "adj",
+      "ipa": "/ˈrʊərəl/",
+      "vi": "thuộc nông thôn",
+      "example": "People in rural areas often know all their neighbours.",
+      "collocation": "rural areas.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "convenient",
+      "pos": "adj",
+      "ipa": "/kənˈviːniənt/",
+      "vi": "tiện lợi",
+      "example": "Living near the station is very convenient for me.",
+      "collocation": "convenient transport.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "facility",
+      "pos": "n",
+      "ipa": "/fəˈsɪləti/",
+      "vi": "cơ sở vật chất, tiện ích",
+      "example": "The new school has modern facilities for students.",
+      "collocation": "modern facilities.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "eco-friendly",
+      "pos": "adj",
+      "ipa": "/ˌiːkəʊ ˈfrendli/",
+      "vi": "thân thiện với môi trường",
+      "example": "We use eco-friendly bags instead of plastic ones.",
+      "collocation": "an eco-friendly product.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "recycle",
+      "pos": "v",
+      "ipa": "/ˌriːˈsaɪkl/",
+      "vi": "tái chế",
+      "example": "Our class recycles paper and plastic bottles every week.",
+      "collocation": "recycle paper and bottles.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "reduce",
+      "pos": "v",
+      "ipa": "/rɪˈdjuːs/",
+      "vi": "giảm bớt",
+      "example": "We should reduce waste at home and at school.",
+      "collocation": "reduce waste.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "waste",
+      "pos": "n",
+      "ipa": "/weɪst/",
+      "vi": "rác thải, sự lãng phí",
+      "example": "Plastic waste is a big problem in many cities.",
+      "collocation": "plastic waste.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "energy",
+      "pos": "n",
+      "ipa": "/ˈenədʒi/",
+      "vi": "năng lượng",
+      "example": "Turn off the lights to save energy.",
+      "collocation": "save energy.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "habit",
+      "pos": "n",
+      "ipa": "/ˈhæbɪt/",
+      "vi": "thói quen",
+      "example": "Going to bed early is a good habit.",
+      "collocation": "a good habit, a bad habit.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "routine",
+      "pos": "n",
+      "ipa": "/ruːˈtiːn/",
+      "vi": "thói quen hằng ngày, lịch sinh hoạt",
+      "example": "My daily routine starts with a short morning run.",
+      "collocation": "a daily routine.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "balanced",
+      "pos": "adj",
+      "ipa": "/ˈbælənst/",
+      "vi": "cân bằng, cân đối",
+      "example": "A balanced diet keeps you strong and healthy.",
+      "collocation": "a balanced diet.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "modern",
+      "pos": "adj",
+      "ipa": "/ˈmɒdn/",
+      "vi": "hiện đại",
+      "example": "Modern technology changes the way we study.",
+      "collocation": "a modern city.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "technology",
+      "pos": "n",
+      "ipa": "/tekˈnɒlədʒi/",
+      "vi": "công nghệ",
+      "example": "Students use technology to learn English at home.",
+      "collocation": "use technology.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "pollution",
+      "pos": "n",
+      "ipa": "/pəˈluːʃn/",
+      "vi": "sự ô nhiễm",
+      "example": "Air pollution in big cities is getting worse.",
+      "collocation": "air pollution.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "traffic jam",
+      "pos": "n",
+      "ipa": "/ˈtræfɪk dʒæm/",
+      "vi": "tắc đường, kẹt xe",
+      "example": "I was stuck in a traffic jam for thirty minutes.",
+      "collocation": "be stuck in a traffic jam.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "crowded",
+      "pos": "adj",
+      "ipa": "/ˈkraʊdɪd/",
+      "vi": "đông đúc",
+      "example": "The streets are crowded during rush hour.",
+      "collocation": "a crowded street.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cut down on",
+      "pos": "phr",
+      "ipa": "/ˌkʌt ˈdaʊn ɒn/",
+      "vi": "cắt giảm",
+      "example": "You should cut down on fast food and sugary drinks.",
+      "collocation": "cut down on fast food.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "cost of living",
+      "pos": "n",
+      "ipa": "/ˌkɒst əv ˈlɪvɪŋ/",
+      "vi": "chi phí sinh hoạt",
+      "example": "The cost of living in big cities is quite high.",
+      "collocation": "a high cost of living.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "id": "en8_u12",
+  "title": "English 8 — Unit 12: Life on Other Planets",
+  "date": "2026-09-02",
+  "tags": [
+    "english8",
+    "school"
+  ],
+  "audience": [
+    "pdondong"
+  ],
+  "description": "",
+  "words": [
+    {
+      "word": "planet",
+      "pos": "n",
+      "ipa": "/ˈplænɪt/",
+      "vi": "hành tinh",
+      "example": "Scientists have found a distant planet with water.",
+      "collocation": "a distant planet.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "alien",
+      "pos": "n",
+      "ipa": "/ˈeɪliən/",
+      "vi": "người ngoài hành tinh",
+      "example": "In the film, a friendly alien lands in a small town.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "UFO",
+      "pos": "n",
+      "ipa": "/ˌjuː ef ˈəʊ/",
+      "vi": "vật thể bay không xác định",
+      "example": "He said he saw a UFO above the field last night.",
+      "collocation": "see a UFO.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "spacecraft",
+      "pos": "n",
+      "ipa": "/ˈspeɪskrɑːft/",
+      "vi": "tàu vũ trụ",
+      "example": "The spacecraft sent back photos of the red desert.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "astronaut",
+      "pos": "n",
+      "ipa": "/ˈæstrənɔːt/",
+      "vi": "phi hành gia",
+      "example": "The astronaut stayed on the space station for six months.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "galaxy",
+      "pos": "n",
+      "ipa": "/ˈɡæləksi/",
+      "vi": "thiên hà",
+      "example": "Our galaxy contains billions of stars.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "universe",
+      "pos": "n",
+      "ipa": "/ˈjuːnɪvɜːs/",
+      "vi": "vũ trụ",
+      "example": "The universe is much bigger than we can imagine.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "solar system",
+      "pos": "phr",
+      "ipa": "/ˈsəʊlə ˌsɪstəm/",
+      "vi": "hệ mặt trời",
+      "example": "There are eight planets in our solar system.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "mars",
+      "pos": "n",
+      "ipa": "/mɑːz/",
+      "vi": "sao Hoả",
+      "example": "Some people hope to travel to Mars in the future.",
+      "collocation": "travel to Mars.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "orbit",
+      "pos": "v",
+      "ipa": "/ˈɔːbɪt/",
+      "vi": "quay quanh quỹ đạo",
+      "example": "The Moon orbits the Earth once a month.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "gravity",
+      "pos": "n",
+      "ipa": "/ˈɡrævəti/",
+      "vi": "trọng lực",
+      "example": "Because of low gravity, you can jump very high on the Moon.",
+      "collocation": "low gravity.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "telescope",
+      "pos": "n",
+      "ipa": "/ˈtelɪskəʊp/",
+      "vi": "kính viễn vọng",
+      "example": "We looked at Saturn through a telescope.",
+      "collocation": "look through a telescope.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "extraterrestrial",
+      "pos": "adj",
+      "ipa": "/ˌekstrətəˈrestriəl/",
+      "vi": "ngoài Trái Đất",
+      "example": "Many scientists are still looking for extraterrestrial life.",
+      "collocation": "extraterrestrial life.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "life form",
+      "pos": "phr",
+      "ipa": "/ˈlaɪf fɔːm/",
+      "vi": "dạng sống, sinh vật",
+      "example": "A simple life form may live under the ice.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "exist",
+      "pos": "v",
+      "ipa": "/ɪɡˈzɪst/",
+      "vi": "tồn tại",
+      "example": "Do you believe that aliens really exist?",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "creature",
+      "pos": "n",
+      "ipa": "/ˈkriːtʃə(r)/",
+      "vi": "sinh vật",
+      "example": "The boy drew a strange creature with three eyes.",
+      "collocation": "a strange creature.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "explore",
+      "pos": "v",
+      "ipa": "/ɪkˈsplɔː(r)/",
+      "vi": "khám phá, thám hiểm",
+      "example": "Humans have explored only a tiny part of space.",
+      "collocation": "explore space.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "launch",
+      "pos": "v",
+      "ipa": "/lɔːntʃ/",
+      "vi": "phóng (tàu vũ trụ)",
+      "example": "They will launch a new rocket next month.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "land",
+      "pos": "v",
+      "ipa": "/lænd/",
+      "vi": "hạ cánh, đáp xuống",
+      "example": "The first men landed on the Moon in 1969.",
+      "collocation": "land on the Moon.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "atmosphere",
+      "pos": "n",
+      "ipa": "/ˈætməsfɪə(r)/",
+      "vi": "bầu khí quyển",
+      "example": "The atmosphere of Mars is very thin and cold.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "surface",
+      "pos": "n",
+      "ipa": "/ˈsɜːfɪs/",
+      "vi": "bề mặt",
+      "example": "The surface of the planet is covered with red dust.",
+      "collocation": "the surface of the planet.",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    },
+    {
+      "word": "oxygen",
+      "pos": "n",
+      "ipa": "/ˈɒksɪdʒən/",
+      "vi": "khí ô-xy",
+      "example": "Without oxygen, humans cannot live on other planets.",
+      "collocation": "",
+      "synonyms": "",
+      "forms": "",
+      "note": ""
+    }
+  ]
+}
