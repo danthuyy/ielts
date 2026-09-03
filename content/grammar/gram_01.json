@@ -1,0 +1,67 @@
+{
+  "id": "gram_01",
+  "title": "Động từ TO BE (am / is / are)",
+  "order": 1,
+  "summary": "Học cách dùng am, is, are để nói ai đó là gì hoặc như thế nào.",
+  "points": [
+    {
+      "rule": "I + am",
+      "vi": "Chỉ riêng \"I\" (tôi) mới đi với \"am\". Không bao giờ dùng is hay are với I.",
+      "examples": [
+        { "en": "I am a student.", "vi": "Tôi là học sinh." },
+        { "en": "I am happy today.", "vi": "Hôm nay tôi vui." },
+        { "en": "I am ten years old.", "vi": "Tôi mười tuổi." }
+      ]
+    },
+    {
+      "rule": "He / She / It + is",
+      "vi": "Khi nói về một người hoặc một vật thì dùng \"is\". Tên riêng như Nam, Lan cũng dùng is.",
+      "examples": [
+        { "en": "He is my brother.", "vi": "Anh ấy là anh trai tôi." },
+        { "en": "She is a teacher.", "vi": "Cô ấy là giáo viên." },
+        { "en": "The cat is black.", "vi": "Con mèo màu đen." }
+      ]
+    },
+    {
+      "rule": "You / We / They + are",
+      "vi": "Khi nói về nhiều người, hoặc nói với \"bạn\", thì dùng \"are\".",
+      "examples": [
+        { "en": "You are my friend.", "vi": "Bạn là bạn của tôi." },
+        { "en": "We are in class.", "vi": "Chúng tôi ở trong lớp." },
+        { "en": "They are my parents.", "vi": "Họ là bố mẹ tôi." }
+      ]
+    },
+    {
+      "rule": "Câu phủ định: am / is / are + not",
+      "vi": "Muốn nói \"không\" thì thêm \"not\" ngay sau am, is, are.",
+      "examples": [
+        { "en": "I am not tired.", "vi": "Tôi không mệt." },
+        { "en": "He is not at home.", "vi": "Anh ấy không ở nhà." },
+        { "en": "They are not hungry.", "vi": "Họ không đói." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Am / Is / Are + chủ ngữ ?",
+      "vi": "Muốn hỏi thì đưa am, is, are lên trước. Không cần thêm từ nào khác.",
+      "examples": [
+        { "en": "Are you a student?", "vi": "Bạn là học sinh phải không?" },
+        { "en": "Is she your sister?", "vi": "Cô ấy là chị bạn phải không?" },
+        { "en": "Is the dog big?", "vi": "Con chó có to không?" }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "She ___ my sister.", "a": "is", "choices": ["am", "is", "are"], "vi": "Cô ấy là chị tôi." },
+    { "q": "I ___ a student.", "a": "am", "choices": ["am", "is", "are"], "vi": "Tôi là học sinh." },
+    { "q": "They ___ my friends.", "a": "are", "choices": ["am", "is", "are"], "vi": "Họ là bạn tôi." },
+    { "q": "The cat ___ small.", "a": "is", "choices": ["am", "is", "are"], "vi": "Con mèo nhỏ." },
+    { "q": "You ___ very kind.", "a": "are", "choices": ["am", "is", "are"], "vi": "Bạn rất tốt bụng." },
+    { "q": "We ___ in the room.", "a": "are", "choices": ["am", "is", "are"], "vi": "Chúng tôi ở trong phòng." },
+    { "q": "My father ___ a doctor.", "a": "is", "choices": ["am", "is", "are"], "vi": "Bố tôi là bác sĩ." },
+    { "q": "The apples ___ red.", "a": "are", "choices": ["am", "is", "are"], "vi": "Những quả táo màu đỏ." },
+    { "q": "It ___ a big dog.", "a": "is", "choices": ["am", "is", "are"], "vi": "Đó là một con chó to." },
+    { "q": "I ___ not hungry now.", "a": "am", "choices": ["am", "is", "are"], "vi": "Bây giờ tôi không đói." },
+    { "q": "___ you my teacher?", "a": "Are", "choices": ["Am", "Is", "Are"], "vi": "Cô là giáo viên của em phải không?" },
+    { "q": "Nam and Lan ___ happy.", "a": "are", "choices": ["am", "is", "are"], "vi": "Nam và Lan vui vẻ." }
+  ]
+}

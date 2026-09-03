@@ -1,0 +1,127 @@
+{
+  "id": "gram_07",
+  "title": "Hiện tại đơn — phủ định và câu hỏi",
+  "order": 7,
+  "summary": "Học cách nói KHÔNG và cách đặt câu hỏi ở thì hiện tại đơn bằng do và does.",
+  "points": [
+    {
+      "rule": "I / You / We / They + don't + động từ",
+      "vi": "Muốn nói không làm gì, ta thêm don't trước động từ. Don't là viết tắt của do not.",
+      "examples": [
+        { "en": "I don't like fish.", "vi": "Tôi không thích cá." },
+        { "en": "We don't play games.", "vi": "Chúng tôi không chơi trò chơi." },
+        { "en": "They don't live here.", "vi": "Họ không sống ở đây." }
+      ]
+    },
+    {
+      "rule": "He / She / It + doesn't + động từ nguyên mẫu",
+      "vi": "Với he, she, it ta dùng doesn't. Lúc này động từ phía sau bỏ -s đi.",
+      "examples": [
+        { "en": "She doesn't like milk.", "vi": "Cô ấy không thích sữa." },
+        { "en": "He doesn't work here.", "vi": "Anh ấy không làm việc ở đây." },
+        { "en": "My dog doesn't eat rice.", "vi": "Con chó của tôi không ăn cơm." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Do + I / you / we / they + động từ?",
+      "vi": "Đưa Do lên đầu câu là thành câu hỏi. Động từ giữ nguyên.",
+      "examples": [
+        { "en": "Do you like tea?", "vi": "Bạn có thích trà không?" },
+        { "en": "Do they play football?", "vi": "Họ có chơi bóng đá không?" },
+        { "en": "Do we have class today?", "vi": "Hôm nay chúng ta có lớp không?" }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Does + he / she / it + động từ nguyên mẫu?",
+      "vi": "Dùng Does cho he, she, it. Nhớ bỏ -s ở động từ vì Does đã mang -s rồi.",
+      "examples": [
+        { "en": "Does she like cats?", "vi": "Cô ấy có thích mèo không?" },
+        { "en": "Does he go to school?", "vi": "Cậu ấy có đi học không?" },
+        { "en": "Does your mum cook?", "vi": "Mẹ bạn có nấu ăn không?" }
+      ]
+    },
+    {
+      "rule": "Trả lời ngắn: Yes, I do. / No, he doesn't.",
+      "vi": "Trả lời ngắn dùng lại do hoặc does, không lặp lại động từ.",
+      "examples": [
+        { "en": "Yes, I do.", "vi": "Có, tôi có." },
+        { "en": "No, she doesn't.", "vi": "Không, cô ấy không." },
+        { "en": "No, they don't.", "vi": "Không, họ không." }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "q": "She ___ like milk.",
+      "a": "doesn't",
+      "choices": ["don't", "doesn't", "not"],
+      "vi": "Cô ấy không thích sữa."
+    },
+    {
+      "q": "I ___ eat fish.",
+      "a": "don't",
+      "choices": ["don't", "doesn't", "am not"],
+      "vi": "Tôi không ăn cá."
+    },
+    {
+      "q": "___ you like tea?",
+      "a": "Do",
+      "choices": ["Do", "Does", "Are"],
+      "vi": "Bạn có thích trà không?"
+    },
+    {
+      "q": "___ he play football?",
+      "a": "Does",
+      "choices": ["Do", "Does", "Is"],
+      "vi": "Cậu ấy có chơi bóng đá không?"
+    },
+    {
+      "q": "He doesn't ___ here.",
+      "a": "work",
+      "choices": ["work", "works", "working"],
+      "vi": "Anh ấy không làm việc ở đây."
+    },
+    {
+      "q": "They ___ live in Hue.",
+      "a": "don't",
+      "choices": ["doesn't", "don't", "isn't"],
+      "vi": "Họ không sống ở Huế."
+    },
+    {
+      "q": "Does she ___ English?",
+      "a": "study",
+      "choices": ["study", "studies", "studying"],
+      "vi": "Cô ấy có học tiếng Anh không?"
+    },
+    {
+      "q": "Do they ___ a car?",
+      "a": "have",
+      "choices": ["have", "has", "having"],
+      "vi": "Họ có xe hơi không?"
+    },
+    {
+      "q": "My dad ___ drink coffee.",
+      "a": "doesn't",
+      "choices": ["don't", "doesn't", "no"],
+      "vi": "Bố tôi không uống cà phê."
+    },
+    {
+      "q": "___ your mum cook rice?",
+      "a": "Does",
+      "choices": ["Do", "Does", "Is"],
+      "vi": "Mẹ bạn có nấu cơm không?"
+    },
+    {
+      "q": "Yes, I ___.",
+      "a": "do",
+      "choices": ["do", "does", "am"],
+      "vi": "Có, tôi có."
+    },
+    {
+      "q": "No, he ___.",
+      "a": "doesn't",
+      "choices": ["don't", "doesn't", "isn't"],
+      "vi": "Không, cậu ấy không."
+    }
+  ]
+}

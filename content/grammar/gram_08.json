@@ -1,0 +1,127 @@
+{
+  "id": "gram_08",
+  "title": "Thì hiện tại tiếp diễn",
+  "order": 8,
+  "summary": "Học cách nói về việc đang xảy ra ngay lúc này bằng am, is, are cộng động từ thêm -ing.",
+  "points": [
+    {
+      "rule": "am / is / are + động từ thêm -ing",
+      "vi": "I dùng am. He, she, it dùng is. You, we, they dùng are. Sau đó động từ thêm -ing.",
+      "examples": [
+        { "en": "I am eating rice.", "vi": "Tôi đang ăn cơm." },
+        { "en": "She is reading a book.", "vi": "Cô ấy đang đọc sách." },
+        { "en": "They are playing football.", "vi": "Họ đang chơi bóng đá." }
+      ]
+    },
+    {
+      "rule": "Dùng khi việc đang xảy ra lúc này",
+      "vi": "Thì này nói về việc đang diễn ra ngay bây giờ. Hay đi với now, at the moment, Look!",
+      "examples": [
+        { "en": "Look! He is running.", "vi": "Nhìn kìa! Anh ấy đang chạy." },
+        { "en": "I am doing my homework now.", "vi": "Bây giờ tôi đang làm bài tập." },
+        { "en": "We are watching TV.", "vi": "Chúng tôi đang xem tivi." }
+      ]
+    },
+    {
+      "rule": "Phủ định: thêm not sau am / is / are",
+      "vi": "Chỉ cần đặt not vào giữa. Có thể viết tắt: is not thành isn't, are not thành aren't.",
+      "examples": [
+        { "en": "I am not sleeping.", "vi": "Tôi không đang ngủ." },
+        { "en": "She is not eating.", "vi": "Cô ấy không đang ăn." },
+        { "en": "They are not playing.", "vi": "Họ không đang chơi." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: đưa am / is / are ra trước",
+      "vi": "Đảo am, is, are lên đầu câu là thành câu hỏi. Không dùng do hay does ở thì này.",
+      "examples": [
+        { "en": "Are you studying?", "vi": "Bạn đang học à?" },
+        { "en": "Is she cooking now?", "vi": "Cô ấy đang nấu ăn à?" },
+        { "en": "What is he doing?", "vi": "Anh ấy đang làm gì?" }
+      ]
+    },
+    {
+      "rule": "Cách thêm -ing đặc biệt",
+      "vi": "Động từ tận cùng bằng e thì bỏ e: write thành writing. Một số từ ngắn gấp đôi phụ âm: run thành running.",
+      "examples": [
+        { "en": "He is writing a letter.", "vi": "Anh ấy đang viết một lá thư." },
+        { "en": "She is running fast.", "vi": "Cô ấy đang chạy nhanh." },
+        { "en": "I am sitting here.", "vi": "Tôi đang ngồi đây." }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "q": "She ___ reading a book.",
+      "a": "is",
+      "choices": ["is", "are", "am"],
+      "vi": "Cô ấy đang đọc sách."
+    },
+    {
+      "q": "I ___ watching TV now.",
+      "a": "am",
+      "choices": ["is", "am", "are"],
+      "vi": "Bây giờ tôi đang xem tivi."
+    },
+    {
+      "q": "They ___ playing football.",
+      "a": "are",
+      "choices": ["is", "are", "am"],
+      "vi": "Họ đang chơi bóng đá."
+    },
+    {
+      "q": "He is ___ his homework.",
+      "a": "doing",
+      "choices": ["do", "does", "doing"],
+      "vi": "Cậu ấy đang làm bài tập."
+    },
+    {
+      "q": "We are ___ rice now.",
+      "a": "eating",
+      "choices": ["eat", "eating", "eats"],
+      "vi": "Bây giờ chúng tôi đang ăn cơm."
+    },
+    {
+      "q": "Look! The dog ___ running.",
+      "a": "is",
+      "choices": ["is", "are", "do"],
+      "vi": "Nhìn kìa! Con chó đang chạy."
+    },
+    {
+      "q": "My mum is ___ dinner.",
+      "a": "cooking",
+      "choices": ["cook", "cooking", "cooks"],
+      "vi": "Mẹ tôi đang nấu bữa tối."
+    },
+    {
+      "q": "___ you listening to me?",
+      "a": "Are",
+      "choices": ["Are", "Is", "Do"],
+      "vi": "Bạn có đang nghe tôi không?"
+    },
+    {
+      "q": "She is not ___ now.",
+      "a": "sleeping",
+      "choices": ["sleep", "sleeps", "sleeping"],
+      "vi": "Bây giờ cô ấy không đang ngủ."
+    },
+    {
+      "q": "He is ___ a letter.",
+      "a": "writing",
+      "choices": ["writeing", "writing", "writting"],
+      "vi": "Anh ấy đang viết một lá thư."
+    },
+    {
+      "q": "The boys ___ swimming.",
+      "a": "are",
+      "choices": ["is", "are", "am"],
+      "vi": "Các cậu bé đang bơi."
+    },
+    {
+      "q": "I am ___ on the chair.",
+      "a": "sitting",
+      "choices": ["siting", "sitting", "sit"],
+      "vi": "Tôi đang ngồi trên ghế."
+    }
+  ]
+}

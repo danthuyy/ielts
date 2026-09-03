@@ -1,0 +1,67 @@
+{
+  "id": "gram_14",
+  "title": "Giới từ in / on / at",
+  "order": 14,
+  "summary": "Học mẹo chọn in, on, at khi nói về thời gian và nơi chốn.",
+  "points": [
+    {
+      "rule": "Thời gian: in + tháng, năm, mùa, buổi",
+      "vi": "Dùng \"in\" với khoảng thời gian dài: tháng, năm, mùa, và các buổi in the morning, in the afternoon, in the evening.",
+      "examples": [
+        { "en": "I was born in May.", "vi": "Tôi sinh vào tháng Năm." },
+        { "en": "We meet in the morning.", "vi": "Chúng tôi gặp nhau vào buổi sáng." },
+        { "en": "She came in 2020.", "vi": "Cô ấy đến vào năm 2020." }
+      ]
+    },
+    {
+      "rule": "Thời gian: on + thứ và ngày",
+      "vi": "Dùng \"on\" với thứ trong tuần và ngày cụ thể. Nhớ: on Monday, on my birthday.",
+      "examples": [
+        { "en": "I study on Monday.", "vi": "Tôi học vào thứ Hai." },
+        { "en": "We meet on Sunday.", "vi": "Chúng tôi gặp nhau vào Chủ nhật." },
+        { "en": "He came on May 5.", "vi": "Anh ấy đến vào ngày 5 tháng Năm." }
+      ]
+    },
+    {
+      "rule": "Thời gian: at + giờ và at night",
+      "vi": "Dùng \"at\" với giờ cụ thể. Riêng ban đêm là at night, không phải in night.",
+      "examples": [
+        { "en": "I get up at six.", "vi": "Tôi thức dậy lúc sáu giờ." },
+        { "en": "We eat at noon.", "vi": "Chúng tôi ăn vào buổi trưa." },
+        { "en": "She reads at night.", "vi": "Cô ấy đọc sách vào ban đêm." }
+      ]
+    },
+    {
+      "rule": "Nơi chốn: in nơi rộng, on bề mặt, at điểm cụ thể",
+      "vi": "\"in\" dùng cho nơi có ranh giới bao quanh như phòng, thành phố. \"on\" dùng cho bề mặt như bàn, tường. \"at\" dùng cho một điểm như at school, at home.",
+      "examples": [
+        { "en": "The book is in my bag.", "vi": "Quyển sách ở trong cặp tôi." },
+        { "en": "The pen is on the table.", "vi": "Cây bút ở trên bàn." },
+        { "en": "I am at school now.", "vi": "Bây giờ tôi ở trường." }
+      ]
+    },
+    {
+      "rule": "Cụm hay dùng cần nhớ",
+      "vi": "Học thuộc cả cụm: at home, at school, in Vietnam, on the bus, in the car.",
+      "examples": [
+        { "en": "My mother is at home.", "vi": "Mẹ tôi ở nhà." },
+        { "en": "They live in Hanoi.", "vi": "Họ sống ở Hà Nội." },
+        { "en": "I am on the bus.", "vi": "Tôi đang ở trên xe buýt." }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "I was born ___ May.", "a": "in", "choices": ["in", "on", "at"], "vi": "Tôi sinh vào tháng Năm." },
+    { "q": "We meet ___ Monday.", "a": "on", "choices": ["on", "in", "at"], "vi": "Chúng tôi gặp nhau vào thứ Hai." },
+    { "q": "I get up ___ six o'clock.", "a": "at", "choices": ["at", "in", "on"], "vi": "Tôi thức dậy lúc sáu giờ." },
+    { "q": "She reads books ___ night.", "a": "at", "choices": ["at", "in", "on"], "vi": "Cô ấy đọc sách vào ban đêm." },
+    { "q": "I study ___ the morning.", "a": "in", "choices": ["in", "on", "at"], "vi": "Tôi học vào buổi sáng." },
+    { "q": "My book is ___ the table.", "a": "on", "choices": ["on", "in", "at"], "vi": "Quyển sách của tôi ở trên bàn." },
+    { "q": "The pen is ___ my bag.", "a": "in", "choices": ["in", "on", "at"], "vi": "Cây bút ở trong cặp tôi." },
+    { "q": "My mother is ___ home.", "a": "at", "choices": ["at", "in", "on"], "vi": "Mẹ tôi ở nhà." },
+    { "q": "We live ___ Vietnam.", "a": "in", "choices": ["in", "at", "on"], "vi": "Chúng tôi sống ở Việt Nam." },
+    { "q": "He was born ___ 2010.", "a": "in", "choices": ["in", "on", "at"], "vi": "Anh ấy sinh năm 2010." },
+    { "q": "I am ___ school now.", "a": "at", "choices": ["at", "in", "on"], "vi": "Bây giờ tôi ở trường." },
+    { "q": "The cat sleeps ___ the bed.", "a": "on", "choices": ["on", "in", "at"], "vi": "Con mèo ngủ trên giường." }
+  ]
+}

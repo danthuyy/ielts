@@ -1,0 +1,67 @@
+{
+  "id": "gram_13",
+  "title": "Câu hỏi Wh- và trật tự từ",
+  "order": 13,
+  "summary": "Học các từ hỏi what, where, when, who, why, how và cách sắp xếp từ trong câu hỏi.",
+  "points": [
+    {
+      "rule": "Các từ hỏi thường gặp",
+      "vi": "What là cái gì, Where là ở đâu, When là khi nào, Who là ai, Why là tại sao, How là như thế nào.",
+      "examples": [
+        { "en": "What is your name?", "vi": "Tên bạn là gì?" },
+        { "en": "Where is my bag?", "vi": "Cặp của tôi ở đâu?" },
+        { "en": "Who is that boy?", "vi": "Cậu bé kia là ai?" }
+      ]
+    },
+    {
+      "rule": "Wh- + am / is / are + chủ ngữ ?",
+      "vi": "Khi câu có động từ to be thì đặt is, are ngay sau từ hỏi. Đừng thêm do hay does.",
+      "examples": [
+        { "en": "Where are you now?", "vi": "Bây giờ bạn ở đâu?" },
+        { "en": "What is this?", "vi": "Đây là cái gì?" },
+        { "en": "Why are you sad?", "vi": "Sao bạn buồn vậy?" }
+      ]
+    },
+    {
+      "rule": "Wh- + do / does + chủ ngữ + động từ ?",
+      "vi": "Khi câu có động từ thường thì cần do hoặc does. Sau do và does, động từ giữ nguyên mẫu.",
+      "examples": [
+        { "en": "Where do you live?", "vi": "Bạn sống ở đâu?" },
+        { "en": "What does she want?", "vi": "Cô ấy muốn gì?" },
+        { "en": "When do they come?", "vi": "Khi nào họ đến?" }
+      ]
+    },
+    {
+      "rule": "Trật tự từ trong câu kể: chủ ngữ + động từ + tân ngữ",
+      "vi": "Câu tiếng Anh luôn theo thứ tự ai làm gì. Tính từ đứng trước danh từ, khác tiếng Việt.",
+      "examples": [
+        { "en": "I like green tea.", "vi": "Tôi thích trà xanh." },
+        { "en": "She reads a book.", "vi": "Cô ấy đọc một quyển sách." },
+        { "en": "He has a big house.", "vi": "Anh ấy có một ngôi nhà to." }
+      ]
+    },
+    {
+      "rule": "How old, How many, How much",
+      "vi": "How old hỏi tuổi, How many hỏi số lượng đếm được, How much hỏi giá tiền hoặc lượng không đếm được.",
+      "examples": [
+        { "en": "How old are you?", "vi": "Bạn bao nhiêu tuổi?" },
+        { "en": "How many books do you have?", "vi": "Bạn có bao nhiêu quyển sách?" },
+        { "en": "How much is this?", "vi": "Cái này bao nhiêu tiền?" }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "___ is your name?", "a": "What", "choices": ["What", "Where", "Who"], "vi": "Tên bạn là gì?" },
+    { "q": "___ do you live?", "a": "Where", "choices": ["Where", "What", "When"], "vi": "Bạn sống ở đâu?" },
+    { "q": "___ is that girl?", "a": "Who", "choices": ["Who", "What", "How"], "vi": "Cô gái kia là ai?" },
+    { "q": "___ are you sad?", "a": "Why", "choices": ["Why", "Who", "What"], "vi": "Sao bạn buồn vậy?" },
+    { "q": "What ___ she want?", "a": "does", "choices": ["does", "do", "is"], "vi": "Cô ấy muốn gì?" },
+    { "q": "Where ___ you go?", "a": "do", "choices": ["do", "does", "are"], "vi": "Bạn đi đâu?" },
+    { "q": "How ___ are you?", "a": "old", "choices": ["old", "many", "much"], "vi": "Bạn bao nhiêu tuổi?" },
+    { "q": "How ___ books do you have?", "a": "many", "choices": ["many", "much", "old"], "vi": "Bạn có bao nhiêu quyển sách?" },
+    { "q": "How ___ is this hat?", "a": "much", "choices": ["much", "many", "old"], "vi": "Cái mũ này bao nhiêu tiền?" },
+    { "q": "Where ___ my bag?", "a": "is", "choices": ["is", "does", "do"], "vi": "Cặp của tôi ở đâu?" },
+    { "q": "What time ___ you eat?", "a": "do", "choices": ["do", "does", "are"], "vi": "Mấy giờ bạn ăn?" },
+    { "q": "I like ___ .", "a": "green tea", "choices": ["green tea", "tea green", "tea is green"], "vi": "Tôi thích trà xanh." }
+  ]
+}

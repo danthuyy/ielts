@@ -1,0 +1,67 @@
+{
+  "id": "gram_12",
+  "title": "Can, must, should",
+  "order": 12,
+  "summary": "Học cách nói có thể làm, phải làm và nên làm bằng can, must, should.",
+  "points": [
+    {
+      "rule": "can + động từ nguyên thể",
+      "vi": "\"Can\" nghĩa là có thể, biết làm. Sau can luôn là động từ nguyên mẫu, không thêm s và không thêm to.",
+      "examples": [
+        { "en": "I can swim.", "vi": "Tôi biết bơi." },
+        { "en": "She can speak English.", "vi": "Cô ấy nói được tiếng Anh." },
+        { "en": "He can run fast.", "vi": "Anh ấy chạy nhanh được." }
+      ]
+    },
+    {
+      "rule": "must + động từ nguyên thể",
+      "vi": "\"Must\" nghĩa là phải, bắt buộc. Cũng đi với động từ nguyên mẫu, không dùng to.",
+      "examples": [
+        { "en": "You must study hard.", "vi": "Bạn phải học chăm chỉ." },
+        { "en": "We must go now.", "vi": "Chúng ta phải đi ngay." },
+        { "en": "He must wear a hat.", "vi": "Anh ấy phải đội mũ." }
+      ]
+    },
+    {
+      "rule": "should + động từ nguyên thể",
+      "vi": "\"Should\" nghĩa là nên, dùng để khuyên. Nhẹ hơn must rất nhiều.",
+      "examples": [
+        { "en": "You should sleep early.", "vi": "Bạn nên ngủ sớm." },
+        { "en": "She should eat fruit.", "vi": "Cô ấy nên ăn trái cây." },
+        { "en": "We should help him.", "vi": "Chúng ta nên giúp anh ấy." }
+      ]
+    },
+    {
+      "rule": "Phủ định: cannot / can't, mustn't, shouldn't",
+      "vi": "Thêm \"not\" ngay sau can, must, should. Viết tắt là can't, mustn't, shouldn't.",
+      "examples": [
+        { "en": "I cannot swim.", "vi": "Tôi không biết bơi." },
+        { "en": "You mustn't run here.", "vi": "Bạn không được chạy ở đây." },
+        { "en": "He shouldn't eat candy.", "vi": "Anh ấy không nên ăn kẹo." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Can / Should + chủ ngữ + động từ ?",
+      "vi": "Đưa can hoặc should lên trước chủ ngữ để hỏi. Không cần dùng do hay does.",
+      "examples": [
+        { "en": "Can you help me?", "vi": "Bạn giúp tôi được không?" },
+        { "en": "Can she cook rice?", "vi": "Cô ấy nấu cơm được không?" },
+        { "en": "Should I call him?", "vi": "Tôi có nên gọi anh ấy không?" }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "I ___ swim very well.", "a": "can", "choices": ["can", "cans", "can to"], "vi": "Tôi bơi rất giỏi." },
+    { "q": "She can ___ English.", "a": "speak", "choices": ["speak", "speaks", "to speak"], "vi": "Cô ấy nói được tiếng Anh." },
+    { "q": "You ___ study hard now.", "a": "must", "choices": ["must", "musts", "must to"], "vi": "Bây giờ bạn phải học chăm." },
+    { "q": "We should ___ early.", "a": "sleep", "choices": ["sleep", "sleeps", "sleeping"], "vi": "Chúng ta nên ngủ sớm." },
+    { "q": "He ___ not run here.", "a": "must", "choices": ["must", "musts", "is must"], "vi": "Anh ấy không được chạy ở đây." },
+    { "q": "___ you help me, please?", "a": "Can", "choices": ["Can", "Do", "Are"], "vi": "Bạn giúp tôi được không?" },
+    { "q": "My mother ___ drive a car.", "a": "can", "choices": ["can", "cans", "can to"], "vi": "Mẹ tôi biết lái xe." },
+    { "q": "You ___ eat more fruit.", "a": "should", "choices": ["should", "shoulds", "should to"], "vi": "Bạn nên ăn nhiều trái cây hơn." },
+    { "q": "I ___ swim. I am scared.", "a": "cannot", "choices": ["cannot", "not can", "do not can"], "vi": "Tôi không biết bơi. Tôi sợ." },
+    { "q": "___ I open the window?", "a": "Should", "choices": ["Should", "Do", "Am"], "vi": "Tôi có nên mở cửa sổ không?" },
+    { "q": "Students must ___ to school.", "a": "go", "choices": ["go", "goes", "going"], "vi": "Học sinh phải đi học." },
+    { "q": "He ___ eat too much candy.", "a": "shouldn't", "choices": ["shouldn't", "don't should", "not should"], "vi": "Anh ấy không nên ăn quá nhiều kẹo." }
+  ]
+}

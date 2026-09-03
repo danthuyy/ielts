@@ -1,0 +1,127 @@
+{
+  "id": "gram_06",
+  "title": "Thì hiện tại đơn — câu khẳng định",
+  "order": 6,
+  "summary": "Học cách nói về thói quen hằng ngày và sự thật, và nhớ thêm -s khi chủ ngữ là he, she, it.",
+  "points": [
+    {
+      "rule": "I / You / We / They + động từ giữ nguyên",
+      "vi": "Với các chủ ngữ này, động từ không đổi. Cứ viết y như trong từ điển.",
+      "examples": [
+        { "en": "I like tea.", "vi": "Tôi thích trà." },
+        { "en": "We play games.", "vi": "Chúng tôi chơi trò chơi." },
+        { "en": "They work here.", "vi": "Họ làm việc ở đây." }
+      ]
+    },
+    {
+      "rule": "He / She / It + động từ thêm -s",
+      "vi": "Khi chủ ngữ là một người hoặc một vật (số ít), động từ phải thêm -s. Đây là lỗi hay quên nhất.",
+      "examples": [
+        { "en": "She plays football.", "vi": "Cô ấy chơi bóng đá." },
+        { "en": "He works in a shop.", "vi": "Anh ấy làm việc trong một cửa hàng." },
+        { "en": "My dog runs fast.", "vi": "Con chó của tôi chạy nhanh." }
+      ]
+    },
+    {
+      "rule": "Động từ tận cùng -o, -sh, -ch, -ss thì thêm -es",
+      "vi": "Các động từ này thêm -es cho dễ đọc. Ví dụ: go thành goes, watch thành watches.",
+      "examples": [
+        { "en": "He goes to school.", "vi": "Cậu ấy đi học." },
+        { "en": "She watches TV.", "vi": "Cô ấy xem tivi." },
+        { "en": "My dad washes the car.", "vi": "Bố tôi rửa xe." }
+      ]
+    },
+    {
+      "rule": "Phụ âm + y thì đổi y thành -ies",
+      "vi": "Study thành studies, fly thành flies. Nếu trước y là nguyên âm thì chỉ thêm -s: play thành plays.",
+      "examples": [
+        { "en": "She studies English.", "vi": "Cô ấy học tiếng Anh." },
+        { "en": "The bird flies high.", "vi": "Con chim bay cao." },
+        { "en": "My baby cries a lot.", "vi": "Em bé của tôi khóc nhiều." }
+      ]
+    },
+    {
+      "rule": "Dùng cho thói quen và sự thật",
+      "vi": "Nói về việc lặp đi lặp lại mỗi ngày, hoặc điều luôn luôn đúng.",
+      "examples": [
+        { "en": "I get up at six.", "vi": "Tôi thức dậy lúc sáu giờ." },
+        { "en": "We eat rice every day.", "vi": "Chúng tôi ăn cơm mỗi ngày." },
+        { "en": "Water is cold.", "vi": "Nước thì lạnh." }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "q": "He ___ to school every day.",
+      "a": "goes",
+      "choices": ["go", "goes", "going"],
+      "vi": "Cậu ấy đi học mỗi ngày."
+    },
+    {
+      "q": "I ___ English at home.",
+      "a": "study",
+      "choices": ["study", "studies", "studying"],
+      "vi": "Tôi học tiếng Anh ở nhà."
+    },
+    {
+      "q": "She ___ TV every night.",
+      "a": "watches",
+      "choices": ["watch", "watchs", "watches"],
+      "vi": "Cô ấy xem tivi mỗi tối."
+    },
+    {
+      "q": "My mum ___ rice every day.",
+      "a": "cooks",
+      "choices": ["cook", "cooks", "cooking"],
+      "vi": "Mẹ tôi nấu cơm mỗi ngày."
+    },
+    {
+      "q": "They ___ football on Sunday.",
+      "a": "play",
+      "choices": ["plays", "play", "playing"],
+      "vi": "Họ chơi bóng đá vào Chủ nhật."
+    },
+    {
+      "q": "Nam ___ his homework at night.",
+      "a": "does",
+      "choices": ["do", "does", "doing"],
+      "vi": "Nam làm bài tập vào buổi tối."
+    },
+    {
+      "q": "We ___ in Ha Noi.",
+      "a": "live",
+      "choices": ["live", "lives", "living"],
+      "vi": "Chúng tôi sống ở Hà Nội."
+    },
+    {
+      "q": "My dad ___ a new car.",
+      "a": "has",
+      "choices": ["have", "has", "haves"],
+      "vi": "Bố tôi có một chiếc xe mới."
+    },
+    {
+      "q": "The cat ___ fish.",
+      "a": "eats",
+      "choices": ["eat", "eats", "eating"],
+      "vi": "Con mèo ăn cá."
+    },
+    {
+      "q": "You ___ very fast.",
+      "a": "run",
+      "choices": ["run", "runs", "running"],
+      "vi": "Bạn chạy rất nhanh."
+    },
+    {
+      "q": "She ___ to music every day.",
+      "a": "listens",
+      "choices": ["listen", "listens", "listening"],
+      "vi": "Cô ấy nghe nhạc mỗi ngày."
+    },
+    {
+      "q": "My sister ___ English at school.",
+      "a": "studies",
+      "choices": ["studys", "studies", "study"],
+      "vi": "Chị tôi học tiếng Anh ở trường."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "gram_11",
+  "title": "Tương lai: will và be going to",
+  "order": 11,
+  "summary": "Học cách nói về việc sắp xảy ra bằng will và be going to.",
+  "points": [
+    {
+      "rule": "will + động từ nguyên thể",
+      "vi": "Dùng \"will\" khi quyết định ngay lúc nói hoặc đoán về tương lai. Sau will luôn là động từ nguyên mẫu, không thêm s hay ed.",
+      "examples": [
+        { "en": "I will call you tonight.", "vi": "Tối nay tôi sẽ gọi bạn." },
+        { "en": "She will come tomorrow.", "vi": "Ngày mai cô ấy sẽ đến." },
+        { "en": "It will rain later.", "vi": "Lát nữa trời sẽ mưa." }
+      ]
+    },
+    {
+      "rule": "will not = won't",
+      "vi": "Muốn nói \"sẽ không\" thì dùng will not, viết tắt là won't. Sau đó vẫn là động từ nguyên mẫu.",
+      "examples": [
+        { "en": "I will not go there.", "vi": "Tôi sẽ không đi đến đó." },
+        { "en": "He won't be late.", "vi": "Anh ấy sẽ không trễ." },
+        { "en": "They won't come today.", "vi": "Hôm nay họ sẽ không đến." }
+      ]
+    },
+    {
+      "rule": "am / is / are going to + động từ",
+      "vi": "Dùng \"be going to\" khi đã có kế hoạch từ trước. Nhớ chọn đúng am, is hay are theo chủ ngữ.",
+      "examples": [
+        { "en": "I am going to study tonight.", "vi": "Tối nay tôi sẽ học bài." },
+        { "en": "She is going to buy a book.", "vi": "Cô ấy sẽ mua một quyển sách." },
+        { "en": "We are going to play football.", "vi": "Chúng tôi sẽ chơi bóng đá." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Will + chủ ngữ + động từ ?",
+      "vi": "Muốn hỏi thì đưa will lên trước chủ ngữ. Với be going to thì đưa am, is, are lên trước.",
+      "examples": [
+        { "en": "Will you help me?", "vi": "Bạn sẽ giúp tôi chứ?" },
+        { "en": "Will she come home?", "vi": "Cô ấy sẽ về nhà chứ?" },
+        { "en": "Are you going to eat?", "vi": "Bạn sắp ăn phải không?" }
+      ]
+    },
+    {
+      "rule": "Từ chỉ thời gian tương lai",
+      "vi": "Các từ tomorrow, next week, tonight, later cho biết câu nói về tương lai. Thấy chúng thì thường dùng will.",
+      "examples": [
+        { "en": "I will see you tomorrow.", "vi": "Ngày mai tôi sẽ gặp bạn." },
+        { "en": "We will travel next week.", "vi": "Tuần sau chúng tôi sẽ đi du lịch." },
+        { "en": "He will finish it later.", "vi": "Lát nữa anh ấy sẽ làm xong." }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "I ___ help you tomorrow.", "a": "will", "choices": ["will", "am", "do"], "vi": "Ngày mai tôi sẽ giúp bạn." },
+    { "q": "She will ___ home soon.", "a": "come", "choices": ["come", "comes", "came"], "vi": "Cô ấy sẽ về nhà sớm." },
+    { "q": "We ___ go to school.", "a": "will", "choices": ["will", "are", "will to"], "vi": "Chúng tôi sẽ đi học." },
+    { "q": "I am ___ to buy a bike.", "a": "going", "choices": ["going", "go", "goes"], "vi": "Tôi sẽ mua một chiếc xe đạp." },
+    { "q": "He ___ going to study.", "a": "is", "choices": ["is", "are", "am"], "vi": "Anh ấy sẽ học bài." },
+    { "q": "They ___ going to eat.", "a": "are", "choices": ["are", "is", "am"], "vi": "Họ sắp ăn." },
+    { "q": "It ___ rain tonight.", "a": "will", "choices": ["will", "wills", "is"], "vi": "Tối nay trời sẽ mưa." },
+    { "q": "I ___ not go there.", "a": "will", "choices": ["will", "am", "do"], "vi": "Tôi sẽ không đến đó." },
+    { "q": "___ you call me later?", "a": "Will", "choices": ["Will", "Are", "Do"], "vi": "Lát nữa bạn sẽ gọi tôi chứ?" },
+    { "q": "Lan will ___ a new hat.", "a": "buy", "choices": ["buy", "buys", "buying"], "vi": "Lan sẽ mua một chiếc mũ mới." },
+    { "q": "We ___ meet next week.", "a": "will", "choices": ["will", "are", "go"], "vi": "Tuần sau chúng ta sẽ gặp nhau." },
+    { "q": "I ___ going to sleep now.", "a": "am", "choices": ["am", "is", "are"], "vi": "Bây giờ tôi sắp đi ngủ." }
+  ]
+}

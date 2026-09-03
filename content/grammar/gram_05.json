@@ -1,0 +1,58 @@
+{
+  "id": "gram_05",
+  "title": "There is / There are",
+  "order": 5,
+  "summary": "Học cách nói \"có cái gì đó ở đâu đó\" bằng There is và There are.",
+  "points": [
+    {
+      "rule": "There is + một vật",
+      "vi": "Dùng \"There is\" khi chỉ có một vật. Nghĩa là \"có một...\".",
+      "examples": [
+        { "en": "There is a cat here.", "vi": "Có một con mèo ở đây." },
+        { "en": "There is a book on the table.", "vi": "Có một quyển sách trên bàn." },
+        { "en": "There is a dog outside.", "vi": "Có một con chó ở ngoài." }
+      ]
+    },
+    {
+      "rule": "There are + nhiều vật",
+      "vi": "Dùng \"There are\" khi có từ hai vật trở lên. Nhớ thêm s vào tên vật.",
+      "examples": [
+        { "en": "There are two cats here.", "vi": "Có hai con mèo ở đây." },
+        { "en": "There are many books.", "vi": "Có nhiều sách." },
+        { "en": "There are five girls.", "vi": "Có năm bạn nữ." }
+      ]
+    },
+    {
+      "rule": "Phủ định: There is not / There are not",
+      "vi": "Thêm \"not\" để nói \"không có\". Có thể viết tắt là isn't và aren't.",
+      "examples": [
+        { "en": "There is not any milk.", "vi": "Không có sữa nào cả." },
+        { "en": "There are not any chairs.", "vi": "Không có cái ghế nào." },
+        { "en": "There is no dog here.", "vi": "Ở đây không có con chó nào." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Is there ... ? / Are there ... ?",
+      "vi": "Muốn hỏi thì đảo \"is\" hoặc \"are\" lên trước \"there\".",
+      "examples": [
+        { "en": "Is there a school here?", "vi": "Ở đây có trường học không?" },
+        { "en": "Are there any apples?", "vi": "Có quả táo nào không?" },
+        { "en": "Is there a pen in the bag?", "vi": "Có cái bút trong cặp không?" }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "There ___ a cat here.", "a": "is", "choices": ["is", "are", "am"], "vi": "Có một con mèo ở đây." },
+    { "q": "There ___ two dogs.", "a": "are", "choices": ["is", "are", "am"], "vi": "Có hai con chó." },
+    { "q": "There ___ many books.", "a": "are", "choices": ["is", "are", "have"], "vi": "Có nhiều sách." },
+    { "q": "There ___ a big tree.", "a": "is", "choices": ["is", "are", "have"], "vi": "Có một cái cây to." },
+    { "q": "There ___ five girls.", "a": "are", "choices": ["is", "are", "am"], "vi": "Có năm bạn nữ." },
+    { "q": "___ there a school here?", "a": "Is", "choices": ["Is", "Are", "Am"], "vi": "Ở đây có trường học không?" },
+    { "q": "___ there any apples?", "a": "Are", "choices": ["Is", "Are", "Am"], "vi": "Có quả táo nào không?" },
+    { "q": "There ___ some milk.", "a": "is", "choices": ["is", "are", "have"], "vi": "Có một ít sữa." },
+    { "q": "There ___ not any chairs.", "a": "are", "choices": ["is", "are", "am"], "vi": "Không có cái ghế nào." },
+    { "q": "There ___ a pen here.", "a": "is", "choices": ["is", "are", "am"], "vi": "Có một cái bút ở đây." },
+    { "q": "There ___ three eggs.", "a": "are", "choices": ["is", "are", "has"], "vi": "Có ba quả trứng." },
+    { "q": "There ___ one boy here.", "a": "is", "choices": ["is", "are", "am"], "vi": "Có một bạn nam ở đây." }
+  ]
+}

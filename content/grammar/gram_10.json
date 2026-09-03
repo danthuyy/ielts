@@ -1,0 +1,127 @@
+{
+  "id": "gram_10",
+  "title": "Quá khứ đơn với động từ thường",
+  "order": 10,
+  "summary": "Học cách kể lại việc đã làm: thêm -ed cho động từ thường và học thuộc các động từ bất quy tắc hay gặp.",
+  "points": [
+    {
+      "rule": "Động từ + -ed cho tất cả các ngôi",
+      "vi": "Ở quá khứ, mọi chủ ngữ dùng chung một dạng động từ. Không cần thêm -s như hiện tại.",
+      "examples": [
+        { "en": "I worked yesterday.", "vi": "Hôm qua tôi đã làm việc." },
+        { "en": "She played football.", "vi": "Cô ấy đã chơi bóng đá." },
+        { "en": "We watched TV.", "vi": "Chúng tôi đã xem tivi." }
+      ]
+    },
+    {
+      "rule": "Cách thêm -ed đặc biệt",
+      "vi": "Tận cùng là e thì chỉ thêm -d: like thành liked. Phụ âm cộng y thì đổi thành -ied: study thành studied.",
+      "examples": [
+        { "en": "He liked the film.", "vi": "Anh ấy đã thích bộ phim." },
+        { "en": "She studied English.", "vi": "Cô ấy đã học tiếng Anh." },
+        { "en": "They lived here.", "vi": "Họ đã sống ở đây." }
+      ]
+    },
+    {
+      "rule": "Động từ bất quy tắc phải học thuộc",
+      "vi": "Một số động từ không thêm -ed mà đổi hẳn: go thành went, eat thành ate, see thành saw, have thành had, do thành did.",
+      "examples": [
+        { "en": "I went to school.", "vi": "Tôi đã đi học." },
+        { "en": "She ate rice.", "vi": "Cô ấy đã ăn cơm." },
+        { "en": "We saw a big dog.", "vi": "Chúng tôi đã thấy một con chó to." }
+      ]
+    },
+    {
+      "rule": "Phủ định: didn't + động từ nguyên mẫu",
+      "vi": "Sau didn't, động từ trở về dạng gốc. Không viết didn't went hay didn't ate.",
+      "examples": [
+        { "en": "I didn't go to school.", "vi": "Tôi đã không đi học." },
+        { "en": "She didn't eat rice.", "vi": "Cô ấy đã không ăn cơm." },
+        { "en": "He didn't play football.", "vi": "Cậu ấy đã không chơi bóng đá." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Did + chủ ngữ + động từ nguyên mẫu?",
+      "vi": "Did đã mang nghĩa quá khứ rồi, nên động từ sau nó giữ nguyên dạng gốc.",
+      "examples": [
+        { "en": "Did you go home?", "vi": "Bạn đã về nhà chưa?" },
+        { "en": "Did she eat lunch?", "vi": "Cô ấy đã ăn trưa chưa?" },
+        { "en": "Did they play games?", "vi": "Họ đã chơi trò chơi à?" }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "q": "I ___ to school yesterday.",
+      "a": "went",
+      "choices": ["go", "went", "goed"],
+      "vi": "Hôm qua tôi đã đi học."
+    },
+    {
+      "q": "She ___ football last week.",
+      "a": "played",
+      "choices": ["play", "played", "playd"],
+      "vi": "Tuần trước cô ấy đã chơi bóng đá."
+    },
+    {
+      "q": "We ___ TV last night.",
+      "a": "watched",
+      "choices": ["watch", "watched", "watchs"],
+      "vi": "Tối qua chúng tôi đã xem tivi."
+    },
+    {
+      "q": "He ___ rice for lunch.",
+      "a": "ate",
+      "choices": ["eat", "ate", "eated"],
+      "vi": "Anh ấy đã ăn cơm bữa trưa."
+    },
+    {
+      "q": "They ___ a big dog.",
+      "a": "saw",
+      "choices": ["see", "saw", "seed"],
+      "vi": "Họ đã thấy một con chó to."
+    },
+    {
+      "q": "I ___ not go home.",
+      "a": "did",
+      "choices": ["do", "did", "was"],
+      "vi": "Tôi đã không về nhà."
+    },
+    {
+      "q": "She ___ her homework.",
+      "a": "did",
+      "choices": ["do", "did", "done"],
+      "vi": "Cô ấy đã làm bài tập."
+    },
+    {
+      "q": "My mum ___ a new car.",
+      "a": "had",
+      "choices": ["have", "had", "haved"],
+      "vi": "Mẹ tôi đã có một chiếc xe mới."
+    },
+    {
+      "q": "I didn't ___ to school.",
+      "a": "go",
+      "choices": ["went", "go", "going"],
+      "vi": "Tôi đã không đi học."
+    },
+    {
+      "q": "___ you eat breakfast?",
+      "a": "Did",
+      "choices": ["Did", "Do", "Was"],
+      "vi": "Bạn đã ăn sáng chưa?"
+    },
+    {
+      "q": "She ___ English last year.",
+      "a": "studied",
+      "choices": ["study", "studied", "studyed"],
+      "vi": "Năm ngoái cô ấy đã học tiếng Anh."
+    },
+    {
+      "q": "He ___ the film very much.",
+      "a": "liked",
+      "choices": ["like", "liked", "likeed"],
+      "vi": "Anh ấy đã rất thích bộ phim."
+    }
+  ]
+}

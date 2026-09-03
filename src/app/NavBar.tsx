@@ -6,6 +6,7 @@ const TABS = [
   { to: '/', icon: '🏠', label: 'Trang chủ', end: true },
   { to: '/lessons', icon: '📚', label: 'Bài học', end: false },
   { to: '/review', icon: '🔄', label: 'Ôn tập', end: false },
+  { to: '/grammar', icon: '📐', label: 'Ngữ pháp', end: false },
   { to: '/stats', icon: '📊', label: 'Thống kê', end: false },
   { to: '/settings', icon: '⚙️', label: 'Cài đặt', end: false },
 ] as const;

@@ -19,6 +19,8 @@ import { ReviewScreen } from '@/features/review/ReviewScreen';
 import { WeakWordsScreen } from '@/features/review/WeakWordsScreen';
 import { NewWordsScreen } from '@/features/review/NewWordsScreen';
 import { StatsScreen } from '@/features/stats/StatsScreen';
+import { GrammarListScreen } from '@/features/grammar/GrammarListScreen';
+import { GrammarLessonScreen } from '@/features/grammar/GrammarLessonScreen';
 import { BookmarksScreen } from '@/features/bookmarks/BookmarksScreen';
 import { SettingsScreen } from '@/features/settings/SettingsScreen';
 import { WordDetailScreen } from '@/features/word/WordDetailScreen';
@@ -40,6 +42,7 @@ export const router = createHashRouter([
       { path: 'lessons', element: <LessonListScreen /> },
       { path: 'lessons/:lessonId', element: <LessonDetailScreen /> },
       { path: 'stats', element: <StatsScreen /> },
+      { path: 'grammar', element: <GrammarListScreen /> },
       { path: 'bookmarks', element: <BookmarksScreen /> },
       { path: 'word/:wordId', element: <WordDetailScreen /> },
       { path: 'settings', element: <SettingsScreen /> },
@@ -55,6 +58,7 @@ export const router = createHashRouter([
       { path: 'review', element: <ReviewScreen /> },
       { path: 'weak', element: <WeakWordsScreen /> },
       { path: 'new', element: <NewWordsScreen /> },
+      { path: 'grammar/:grammarId', element: <GrammarLessonScreen /> },
       { path: 'study/mix/:lessonId', element: <MixSessionScreen /> },
       { path: 'study/period/:granularity/:periodKey', element: <MixPeriodScreen /> },
       { path: 'study/flashcard/:lessonId', element: <FlashcardScreen /> },
@@ -78,6 +82,8 @@ export const routes = {
   weak: () => '/weak',
   newWords: () => '/new',
   stats: () => '/stats',
+  grammar: () => '/grammar',
+  grammarLesson: (grammarId: string) => `/grammar/${encodeURIComponent(grammarId)}`,
   bookmarks: () => '/bookmarks',
   word: (wordId: string) => `/word/${encodeURIComponent(wordId)}`,
   settings: () => '/settings',

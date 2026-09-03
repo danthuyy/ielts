@@ -1,0 +1,67 @@
+{
+  "id": "gram_15",
+  "title": "So sánh hơn và so sánh nhất",
+  "order": 15,
+  "summary": "Học cách so sánh hai thứ và nói thứ nhất trong nhóm bằng -er, -est, more, most.",
+  "points": [
+    {
+      "rule": "Tính từ ngắn: thêm -er + than",
+      "vi": "Tính từ ngắn một vần thì thêm -er và dùng \"than\". Đừng dùng more với tính từ ngắn.",
+      "examples": [
+        { "en": "He is taller than me.", "vi": "Anh ấy cao hơn tôi." },
+        { "en": "My bag is smaller than yours.", "vi": "Cặp tôi nhỏ hơn cặp bạn." },
+        { "en": "Today is colder than Monday.", "vi": "Hôm nay lạnh hơn thứ Hai." }
+      ]
+    },
+    {
+      "rule": "Tính từ ngắn: the + -est",
+      "vi": "Muốn nói nhất thì thêm -est và luôn có \"the\" ở trước.",
+      "examples": [
+        { "en": "He is the tallest boy.", "vi": "Cậu ấy là cậu bé cao nhất." },
+        { "en": "This is the biggest cake.", "vi": "Đây là cái bánh to nhất." },
+        { "en": "She is the youngest here.", "vi": "Cô ấy trẻ nhất ở đây." }
+      ]
+    },
+    {
+      "rule": "Tính từ dài: more ... than, the most ...",
+      "vi": "Tính từ dài từ hai vần trở lên thì dùng more để so sánh hơn và the most để so sánh nhất. Không thêm -er hay -est.",
+      "examples": [
+        { "en": "This book is more useful.", "vi": "Quyển sách này hữu ích hơn." },
+        { "en": "She is more careful than me.", "vi": "Cô ấy cẩn thận hơn tôi." },
+        { "en": "He is the most famous singer.", "vi": "Anh ấy là ca sĩ nổi tiếng nhất." }
+      ]
+    },
+    {
+      "rule": "Bất quy tắc: good - better - best, bad - worse - worst",
+      "vi": "Hai từ này không theo quy tắc nào, phải học thuộc. Không bao giờ nói gooder hay more good.",
+      "examples": [
+        { "en": "My bike is better than his.", "vi": "Xe đạp của tôi tốt hơn xe của anh ấy." },
+        { "en": "She is the best student.", "vi": "Cô ấy là học sinh giỏi nhất." },
+        { "en": "Today is worse than yesterday.", "vi": "Hôm nay tệ hơn hôm qua." }
+      ]
+    },
+    {
+      "rule": "Luôn dùng than khi so sánh hơn",
+      "vi": "So sánh hơn phải có \"than\" giữa hai thứ. Người Việt hay quên từ này.",
+      "examples": [
+        { "en": "Nam is stronger than Lan.", "vi": "Nam khỏe hơn Lan." },
+        { "en": "Cats are cuter than dogs.", "vi": "Mèo dễ thương hơn chó." },
+        { "en": "This car is faster than that.", "vi": "Chiếc xe này nhanh hơn chiếc kia." }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "He is ___ than me.", "a": "taller", "choices": ["taller", "more tall", "tallest"], "vi": "Anh ấy cao hơn tôi." },
+    { "q": "My bag is ___ than yours.", "a": "smaller", "choices": ["smaller", "more small", "smallest"], "vi": "Cặp tôi nhỏ hơn cặp bạn." },
+    { "q": "This is the ___ cake here.", "a": "biggest", "choices": ["biggest", "bigger", "most big"], "vi": "Đây là cái bánh to nhất ở đây." },
+    { "q": "She is ___ careful than me.", "a": "more", "choices": ["more", "most", "much"], "vi": "Cô ấy cẩn thận hơn tôi." },
+    { "q": "He is the ___ famous singer.", "a": "most", "choices": ["most", "more", "much"], "vi": "Anh ấy là ca sĩ nổi tiếng nhất." },
+    { "q": "My bike is ___ than his.", "a": "better", "choices": ["better", "gooder", "more good"], "vi": "Xe đạp tôi tốt hơn xe anh ấy." },
+    { "q": "Lan is the ___ student.", "a": "best", "choices": ["best", "goodest", "most good"], "vi": "Lan là học sinh giỏi nhất." },
+    { "q": "Today is ___ than yesterday.", "a": "worse", "choices": ["worse", "badder", "more bad"], "vi": "Hôm nay tệ hơn hôm qua." },
+    { "q": "This is the ___ day ever.", "a": "worst", "choices": ["worst", "baddest", "most bad"], "vi": "Đây là ngày tệ nhất." },
+    { "q": "Nam is stronger ___ Lan.", "a": "than", "choices": ["than", "then", "that"], "vi": "Nam khỏe hơn Lan." },
+    { "q": "Ha Noi is ___ than Hue.", "a": "bigger", "choices": ["bigger", "more big", "biggest"], "vi": "Hà Nội lớn hơn Huế." },
+    { "q": "This book is more ___ .", "a": "useful", "choices": ["useful", "usefuler", "usefulest"], "vi": "Quyển sách này hữu ích hơn." }
+  ]
+}

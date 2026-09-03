@@ -1,0 +1,58 @@
+{
+  "id": "gram_02",
+  "title": "Danh từ số ít và số nhiều",
+  "order": 2,
+  "summary": "Học cách thêm s hoặc es khi có nhiều hơn một vật, và vài từ đổi khác hẳn.",
+  "points": [
+    {
+      "rule": "Một vật thì để nguyên, nhiều vật thì thêm -s",
+      "vi": "Tiếng Việt không đổi từ khi có nhiều vật, nhưng tiếng Anh phải thêm \"s\".",
+      "examples": [
+        { "en": "I have one book.", "vi": "Tôi có một quyển sách." },
+        { "en": "I have two books.", "vi": "Tôi có hai quyển sách." },
+        { "en": "The dogs are here.", "vi": "Mấy con chó ở đây." }
+      ]
+    },
+    {
+      "rule": "Thêm -es sau s, x, ch, sh, o",
+      "vi": "Những từ tận cùng bằng s, x, ch, sh, o thì thêm \"es\" cho dễ đọc.",
+      "examples": [
+        { "en": "I eat two boxes.", "vi": "Tôi ăn hai hộp." },
+        { "en": "We have three watches.", "vi": "Chúng tôi có ba cái đồng hồ." },
+        { "en": "She likes red tomatoes.", "vi": "Cô ấy thích cà chua đỏ." }
+      ]
+    },
+    {
+      "rule": "Từ tận cùng phụ âm + y đổi thành -ies",
+      "vi": "Bỏ chữ \"y\" rồi thêm \"ies\". Ví dụ baby thành babies.",
+      "examples": [
+        { "en": "I see two babies.", "vi": "Tôi thấy hai em bé." },
+        { "en": "We have five cities.", "vi": "Chúng tôi có năm thành phố." },
+        { "en": "She buys many candies.", "vi": "Cô ấy mua nhiều kẹo." }
+      ]
+    },
+    {
+      "rule": "Vài từ đổi khác hẳn, phải học thuộc",
+      "vi": "Một số từ không thêm s mà đổi hẳn: man thành men, child thành children.",
+      "examples": [
+        { "en": "Two men are here.", "vi": "Hai người đàn ông ở đây." },
+        { "en": "The children are happy.", "vi": "Bọn trẻ vui vẻ." },
+        { "en": "I have two feet.", "vi": "Tôi có hai bàn chân." }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "I have two ___.", "a": "books", "choices": ["book", "books", "bookes"], "vi": "Tôi có hai quyển sách." },
+    { "q": "She has one ___.", "a": "cat", "choices": ["cat", "cats", "cates"], "vi": "Cô ấy có một con mèo." },
+    { "q": "We see three ___.", "a": "boxes", "choices": ["box", "boxs", "boxes"], "vi": "Chúng tôi thấy ba cái hộp." },
+    { "q": "My mother buys ___.", "a": "tomatoes", "choices": ["tomato", "tomatos", "tomatoes"], "vi": "Mẹ tôi mua cà chua." },
+    { "q": "There are two ___.", "a": "babies", "choices": ["baby", "babys", "babies"], "vi": "Có hai em bé." },
+    { "q": "I like red ___.", "a": "apples", "choices": ["apple", "apples", "applees"], "vi": "Tôi thích táo đỏ." },
+    { "q": "Two ___ are in the car.", "a": "men", "choices": ["man", "mans", "men"], "vi": "Hai người đàn ông ở trong xe." },
+    { "q": "The ___ play at school.", "a": "children", "choices": ["child", "childs", "children"], "vi": "Bọn trẻ chơi ở trường." },
+    { "q": "He has four ___.", "a": "watches", "choices": ["watch", "watchs", "watches"], "vi": "Anh ấy có bốn cái đồng hồ." },
+    { "q": "I wash my two ___.", "a": "feet", "choices": ["foot", "foots", "feet"], "vi": "Tôi rửa hai bàn chân." },
+    { "q": "We have many ___.", "a": "friends", "choices": ["friend", "friends", "friendes"], "vi": "Chúng tôi có nhiều bạn." },
+    { "q": "She eats one ___.", "a": "egg", "choices": ["egg", "eggs", "egges"], "vi": "Cô ấy ăn một quả trứng." }
+  ]
+}

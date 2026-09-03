@@ -1,0 +1,127 @@
+{
+  "id": "gram_09",
+  "title": "Quá khứ đơn với TO BE (was / were)",
+  "order": 9,
+  "summary": "Học cách nói về trạng thái trong quá khứ: khi nào dùng was, khi nào dùng were.",
+  "points": [
+    {
+      "rule": "I / He / She / It + was",
+      "vi": "Với một người hoặc một vật số ít, ta dùng was. Was là dạng quá khứ của am và is.",
+      "examples": [
+        { "en": "I was at home.", "vi": "Tôi đã ở nhà." },
+        { "en": "She was happy.", "vi": "Cô ấy đã vui." },
+        { "en": "It was cold.", "vi": "Trời đã lạnh." }
+      ]
+    },
+    {
+      "rule": "You / We / They + were",
+      "vi": "Với số nhiều và với you, ta dùng were. Were là dạng quá khứ của are.",
+      "examples": [
+        { "en": "You were late.", "vi": "Bạn đã đến muộn." },
+        { "en": "We were at school.", "vi": "Chúng tôi đã ở trường." },
+        { "en": "They were tired.", "vi": "Họ đã mệt." }
+      ]
+    },
+    {
+      "rule": "Phủ định: wasn't / weren't",
+      "vi": "Thêm not sau was hoặc were. Viết tắt là wasn't và weren't.",
+      "examples": [
+        { "en": "I wasn't tired.", "vi": "Tôi đã không mệt." },
+        { "en": "He wasn't at home.", "vi": "Anh ấy đã không ở nhà." },
+        { "en": "They weren't happy.", "vi": "Họ đã không vui." }
+      ]
+    },
+    {
+      "rule": "Câu hỏi: Was / Were đứng đầu câu",
+      "vi": "Đưa was hoặc were lên trước chủ ngữ. Không dùng did với to be.",
+      "examples": [
+        { "en": "Was she at school?", "vi": "Cô ấy đã ở trường à?" },
+        { "en": "Were you happy?", "vi": "Bạn đã vui không?" },
+        { "en": "Were they here?", "vi": "Họ đã ở đây à?" }
+      ]
+    },
+    {
+      "rule": "Dấu hiệu: yesterday, last night, last year",
+      "vi": "Thấy các từ chỉ thời gian đã qua thì dùng was hoặc were.",
+      "examples": [
+        { "en": "I was busy yesterday.", "vi": "Hôm qua tôi đã bận." },
+        { "en": "We were there last week.", "vi": "Tuần trước chúng tôi đã ở đó." },
+        { "en": "She was sick last night.", "vi": "Tối qua cô ấy đã bị ốm." }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "q": "I ___ at home yesterday.",
+      "a": "was",
+      "choices": ["was", "were", "am"],
+      "vi": "Hôm qua tôi đã ở nhà."
+    },
+    {
+      "q": "They ___ very happy.",
+      "a": "were",
+      "choices": ["was", "were", "is"],
+      "vi": "Họ đã rất vui."
+    },
+    {
+      "q": "She ___ sick last night.",
+      "a": "was",
+      "choices": ["were", "was", "is"],
+      "vi": "Tối qua cô ấy đã bị ốm."
+    },
+    {
+      "q": "We ___ at school yesterday.",
+      "a": "were",
+      "choices": ["was", "were", "are"],
+      "vi": "Hôm qua chúng tôi đã ở trường."
+    },
+    {
+      "q": "It ___ cold last week.",
+      "a": "was",
+      "choices": ["was", "were", "did"],
+      "vi": "Tuần trước trời đã lạnh."
+    },
+    {
+      "q": "You ___ late this morning.",
+      "a": "were",
+      "choices": ["was", "were", "is"],
+      "vi": "Sáng nay bạn đã đến muộn."
+    },
+    {
+      "q": "He ___ not at home.",
+      "a": "was",
+      "choices": ["was", "were", "did"],
+      "vi": "Anh ấy đã không ở nhà."
+    },
+    {
+      "q": "The books ___ on the table.",
+      "a": "were",
+      "choices": ["was", "were", "is"],
+      "vi": "Những quyển sách đã ở trên bàn."
+    },
+    {
+      "q": "___ you happy yesterday?",
+      "a": "Were",
+      "choices": ["Was", "Were", "Did"],
+      "vi": "Hôm qua bạn có vui không?"
+    },
+    {
+      "q": "___ she your teacher?",
+      "a": "Was",
+      "choices": ["Was", "Were", "Did"],
+      "vi": "Cô ấy đã là cô giáo của bạn à?"
+    },
+    {
+      "q": "My parents ___ tired.",
+      "a": "were",
+      "choices": ["was", "were", "is"],
+      "vi": "Bố mẹ tôi đã mệt."
+    },
+    {
+      "q": "The film ___ very good.",
+      "a": "was",
+      "choices": ["was", "were", "are"],
+      "vi": "Bộ phim đã rất hay."
+    }
+  ]
+}

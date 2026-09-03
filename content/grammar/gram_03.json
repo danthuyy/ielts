@@ -1,0 +1,58 @@
+{
+  "id": "gram_03",
+  "title": "Mạo từ a / an / the",
+  "order": 3,
+  "summary": "Học khi nào dùng a, khi nào dùng an, và khi nào dùng the.",
+  "points": [
+    {
+      "rule": "a + từ bắt đầu bằng phụ âm",
+      "vi": "Dùng \"a\" khi nói về một vật bất kỳ, chưa nói đến trước đó.",
+      "examples": [
+        { "en": "I have a book.", "vi": "Tôi có một quyển sách." },
+        { "en": "She is a teacher.", "vi": "Cô ấy là giáo viên." },
+        { "en": "He sees a dog.", "vi": "Anh ấy thấy một con chó." }
+      ]
+    },
+    {
+      "rule": "an + từ bắt đầu bằng a, e, i, o, u",
+      "vi": "Nếu từ sau bắt đầu bằng nguyên âm thì dùng \"an\" cho dễ đọc.",
+      "examples": [
+        { "en": "I eat an apple.", "vi": "Tôi ăn một quả táo." },
+        { "en": "She has an egg.", "vi": "Cô ấy có một quả trứng." },
+        { "en": "He is an old man.", "vi": "Ông ấy là một người già." }
+      ]
+    },
+    {
+      "rule": "the + vật mà cả hai người đều biết",
+      "vi": "Dùng \"the\" khi nói về vật đã nhắc rồi, hoặc ai cũng biết là vật nào.",
+      "examples": [
+        { "en": "The dog is very big.", "vi": "Con chó đó rất to." },
+        { "en": "Open the door, please.", "vi": "Làm ơn mở cửa ra." },
+        { "en": "The sun is hot.", "vi": "Mặt trời thì nóng." }
+      ]
+    },
+    {
+      "rule": "Không dùng a / an với danh từ số nhiều",
+      "vi": "\"a\" và \"an\" chỉ đi với một vật. Nhiều vật thì bỏ đi hoặc dùng the.",
+      "examples": [
+        { "en": "I like apples.", "vi": "Tôi thích táo." },
+        { "en": "Cats are very cute.", "vi": "Mèo rất dễ thương." },
+        { "en": "The books are new.", "vi": "Mấy quyển sách thì mới." }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "I have ___ book.", "a": "a", "choices": ["a", "an", "the"], "vi": "Tôi có một quyển sách." },
+    { "q": "She eats ___ apple.", "a": "an", "choices": ["a", "an", "the"], "vi": "Cô ấy ăn một quả táo." },
+    { "q": "He is ___ teacher.", "a": "a", "choices": ["a", "an", "the"], "vi": "Anh ấy là giáo viên." },
+    { "q": "I see ___ egg here.", "a": "an", "choices": ["a", "an", "the"], "vi": "Tôi thấy một quả trứng ở đây." },
+    { "q": "___ sun is very hot.", "a": "The", "choices": ["A", "An", "The"], "vi": "Mặt trời rất nóng." },
+    { "q": "Please open ___ door.", "a": "the", "choices": ["a", "an", "the"], "vi": "Làm ơn mở cửa ra." },
+    { "q": "We have ___ cat.", "a": "a", "choices": ["a", "an", "the"], "vi": "Chúng tôi có một con mèo." },
+    { "q": "She is ___ old woman.", "a": "an", "choices": ["a", "an", "the"], "vi": "Bà ấy là một người già." },
+    { "q": "I want ___ orange.", "a": "an", "choices": ["a", "an", "the"], "vi": "Tôi muốn một quả cam." },
+    { "q": "He has ___ red car.", "a": "a", "choices": ["a", "an", "the"], "vi": "Anh ấy có một chiếc xe đỏ." },
+    { "q": "___ boy is my brother.", "a": "The", "choices": ["A", "An", "The"], "vi": "Cậu bé đó là em trai tôi." },
+    { "q": "My father is ___ doctor.", "a": "a", "choices": ["a", "an", "the"], "vi": "Bố tôi là bác sĩ." }
+  ]
+}

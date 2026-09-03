@@ -1,0 +1,58 @@
+{
+  "id": "gram_04",
+  "title": "Đại từ nhân xưng và sở hữu",
+  "order": 4,
+  "summary": "Học cách nói tôi, bạn, anh ấy... và cách nói của tôi, của bạn, của anh ấy.",
+  "points": [
+    {
+      "rule": "I, you, he, she, it, we, they đứng đầu câu",
+      "vi": "Đây là những từ thay cho tên người hay tên vật, đặt ở đầu câu để làm người thực hiện.",
+      "examples": [
+        { "en": "I like milk.", "vi": "Tôi thích sữa." },
+        { "en": "She plays with me.", "vi": "Cô ấy chơi với tôi." },
+        { "en": "They live in Hue.", "vi": "Họ sống ở Huế." }
+      ]
+    },
+    {
+      "rule": "me, you, him, her, it, us, them đứng sau động từ",
+      "vi": "Khi ai đó làm gì với mình thì dùng dạng này. Ví dụ: He helps me.",
+      "examples": [
+        { "en": "He helps me.", "vi": "Anh ấy giúp tôi." },
+        { "en": "I love them.", "vi": "Tôi yêu quý họ." },
+        { "en": "We see her.", "vi": "Chúng tôi thấy cô ấy." }
+      ]
+    },
+    {
+      "rule": "my, your, his, her, its, our, their + danh từ",
+      "vi": "Muốn nói \"của ai\" thì đặt từ này trước tên đồ vật. Ví dụ: my book (sách của tôi).",
+      "examples": [
+        { "en": "This is my book.", "vi": "Đây là sách của tôi." },
+        { "en": "Her cat is white.", "vi": "Con mèo của cô ấy màu trắng." },
+        { "en": "Our school is big.", "vi": "Trường của chúng tôi thì to." }
+      ]
+    },
+    {
+      "rule": "his / her khác nhau theo chủ, không theo đồ vật",
+      "vi": "Đồ của con trai dùng \"his\", đồ của con gái dùng \"her\", dù đồ vật là gì cũng vậy.",
+      "examples": [
+        { "en": "Nam loves his mother.", "vi": "Nam yêu mẹ của cậu ấy." },
+        { "en": "Lan loves her father.", "vi": "Lan yêu bố của cô ấy." },
+        { "en": "His bag is new.", "vi": "Cặp của cậu ấy thì mới." }
+      ]
+    }
+  ],
+  "drills": [
+    { "q": "This is ___ book.", "a": "my", "choices": ["I", "me", "my"], "vi": "Đây là sách của tôi." },
+    { "q": "___ is my brother.", "a": "He", "choices": ["He", "Him", "His"], "vi": "Anh ấy là anh trai tôi." },
+    { "q": "My mother helps ___.", "a": "me", "choices": ["I", "me", "my"], "vi": "Mẹ tôi giúp tôi." },
+    { "q": "Lan loves ___ father.", "a": "her", "choices": ["his", "her", "she"], "vi": "Lan yêu bố của cô ấy." },
+    { "q": "Nam plays with ___ dog.", "a": "his", "choices": ["he", "him", "his"], "vi": "Nam chơi với con chó của cậu ấy." },
+    { "q": "___ are my friends.", "a": "They", "choices": ["They", "Them", "Their"], "vi": "Họ là bạn của tôi." },
+    { "q": "I like ___ very much.", "a": "them", "choices": ["they", "them", "their"], "vi": "Tôi rất quý họ." },
+    { "q": "___ school is very big.", "a": "Our", "choices": ["We", "Us", "Our"], "vi": "Trường của chúng tôi rất to." },
+    { "q": "The teacher sees ___.", "a": "us", "choices": ["we", "us", "our"], "vi": "Cô giáo thấy chúng tôi." },
+    { "q": "Is this ___ bag, Lan?", "a": "your", "choices": ["you", "your", "yours"], "vi": "Đây là cặp của bạn phải không, Lan?" },
+    { "q": "___ cat is black.", "a": "Her", "choices": ["She", "Her", "Hers"], "vi": "Con mèo của cô ấy màu đen." },
+    { "q": "We call ___ every day.", "a": "him", "choices": ["he", "him", "his"], "vi": "Chúng tôi gọi anh ấy mỗi ngày." }
+  ]
+}

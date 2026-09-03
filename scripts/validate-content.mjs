@@ -14,9 +14,11 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 import { lessonSchema } from '../src/content/schema.ts';
+import { grammarSchema } from '../src/content/grammarSchema.ts';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LESSONS_DIR = path.join(ROOT, 'content', 'lessons');
+const GRAMMAR_DIR = path.join(ROOT, 'content', 'grammar');
 
 function formatIssues(issues) {
   return issues
@@ -87,6 +89,74 @@ async function main() {
   }
 
   console.log(`\n${files.length} bài học · ${wordCount} từ — tất cả hợp lệ.`);
+
+  await checkGrammar();
+}
+
+/**
+ * The grammar files go through the same gate. They are a separate content type
+ * with their own schema, and a broken drill — a missing blank, an answer that is
+ * not among the choices — would otherwise only surface mid-exercise.
+ */
+async function checkGrammar() {
+  let files;
+  try {
+    files = (await readdir(GRAMMAR_DIR)).filter((name) => name.endsWith('.json')).sort();
+  } catch {
+    return; // No grammar directory is fine; the app renders an empty track.
+  }
+  if (files.length === 0) return;
+
+  const errors = [];
+  const seenOrder = new Map();
+  let drillCount = 0;
+
+  for (const file of files) {
+    const relative = `content/grammar/${file}`;
+    let raw;
+    try {
+      raw = JSON.parse(await readFile(path.join(GRAMMAR_DIR, file), 'utf8'));
+    } catch (err) {
+      errors.push(`${relative}
+    JSON không hợp lệ: ${err.message}`);
+      continue;
+    }
+
+    const result = grammarSchema.safeParse(raw);
+    if (!result.success) {
+      errors.push(`${relative}
+${formatIssues(result.error.issues)}`);
+      continue;
+    }
+
+    const lesson = result.data;
+    if (lesson.id !== file.replace('.json', '')) {
+      errors.push(`${relative}
+    id "${lesson.id}" phải trùng tên file`);
+      continue;
+    }
+    const clash = seenOrder.get(lesson.order);
+    if (clash) {
+      errors.push(`${relative}
+    order ${lesson.order} đã được dùng ở ${clash}`);
+      continue;
+    }
+    seenOrder.set(lesson.order, relative);
+
+    drillCount += lesson.drills.length;
+    console.log(`  ok   ${relative.padEnd(46)}${String(lesson.drills.length).padStart(3)} câu`);
+  }
+
+  if (errors.length > 0) {
+    console.error(`
+${errors.length} bài ngữ pháp không hợp lệ:
+`);
+    for (const error of errors) console.error(`  ${error}
+`);
+    process.exit(1);
+  }
+
+  console.log(`${files.length} bài ngữ pháp · ${drillCount} câu bài tập — tất cả hợp lệ.`);
 }
 
 main().catch((err) => {
