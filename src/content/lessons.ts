@@ -74,6 +74,18 @@ export const LESSONS: readonly Lesson[] = parseAll().filter((lesson) =>
   isVisibleTo(lesson, LEARNER),
 );
 
+/**
+ * The lessons this build's learner is actually studying.
+ *
+ * Same as LESSONS on a learner build, where everything visible is theirs. On the
+ * admin build it drops the lessons aimed at someone else: those are visible so
+ * they can be previewed, but they are not what the admin studies, and letting
+ * one lead the quick-study button pointed an IELTS learner at a beginner
+ * alphabet lesson.
+ */
+export const OWN_LESSONS: readonly Lesson[] =
+  LEARNER === '' ? LESSONS.filter((lesson) => lesson.audience.length === 0) : LESSONS;
+
 const byId = new Map(LESSONS.map((lesson) => [lesson.id, lesson]));
 
 export function getLesson(lessonId: string | undefined): Lesson | undefined {

@@ -66,7 +66,9 @@ for (const file of readdirSync('content/lessons')) {
   if (!/^basic_\d+\.json$/.test(file)) continue;
   const path = join('content', 'lessons', file);
   const data = JSON.parse(readFileSync(path, 'utf8'));
-  const { id, title, date, tags, words, ...rest } = data;
+  // `audience` must be pulled out too: left in `rest`, the spread below puts the
+  // importer's empty default back over the value being set.
+  const { id, title, date, tags, audience: _ignored, words, ...rest } = data;
   writeFileSync(
     path,
     `${JSON.stringify({ id, title, date, tags, audience: AUDIENCE, ...rest, words }, null, 2)}\n`,
