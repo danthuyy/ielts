@@ -33,10 +33,10 @@ function parseAll(): GrammarLesson[] {
 
 const LEARNER = (import.meta.env.VITE_LEARNER ?? '').trim();
 
+// Same rule as the word lessons: a build with no learner set is somebody's own
+// study app, not an admin console, so another learner's material stays out.
 function isVisibleTo(lesson: GrammarLesson, learner: string): boolean {
-  if (lesson.audience.length === 0) return true;
-  if (learner === '') return true;
-  return lesson.audience.includes(learner);
+  return lesson.audience.length === 0 || lesson.audience.includes(learner);
 }
 
 export const GRAMMAR: readonly GrammarLesson[] = parseAll().filter((lesson) =>

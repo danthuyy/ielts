@@ -19,7 +19,7 @@ duy nhất** quyết định ai thấy: `audience`.
 | **không có** `audience` (hoặc `"audience": []`) | **BÀI CHUNG** — mọi người           |
 | `"audience": ["pboiboi"]`                       | **BÀI RIÊNG** — chỉ Bo (pboiboi)    |
 | `"audience": ["pboiboi", "pdondong"]`           | Chỉ Bo và pdondong                  |
-| _(bản admin của bạn — `danthuyy`)_              | **Thấy hết**, mọi bài của mọi người |
+| _(bản `danthuyy` — không đặt `VITE_LEARNER`)_    | Chỉ **bài chung**, như mọi người khác |
 
 `audience` khớp với biến `VITE_LEARNER` của từng repo con (xem
 [NHIEU_NGUOI_HOC.md](NHIEU_NGUOI_HOC.md)). Tên phải **viết y hệt**, phân biệt hoa
@@ -145,11 +145,14 @@ kế khoá theo nội dung chứ không theo vị trí.
 
 Giả sử bạn có 3 file:
 
-| File               | `audience`     | danthuyy (bạn) thấy | pboiboi thấy | pdondong thấy |
-| ------------------ | -------------- | :-----------------: | :----------: | :-----------: |
-| `topic_money.json` | _(không có)_   |         ✅          |      ✅      |      ✅       |
-| `bo_tuan1.json`    | `["pboiboi"]`  |         ✅          |      ✅      |      ❌       |
-| `don_tuan1.json`   | `["pdondong"]` |         ✅          |      ❌      |      ✅       |
+| File               | `audience`     | danthuyy thấy | pboiboi thấy | pdondong thấy |
+| ------------------ | -------------- | :-----------: | :----------: | :-----------: |
+| `topic_money.json` | _(không có)_   |      ✅       |      ✅      |      ✅       |
+| `bo_tuan1.json`    | `["pboiboi"]`  |      ❌       |      ✅      |      ❌       |
+| `don_tuan1.json`   | `["pdondong"]` |      ❌       |      ❌      |      ✅       |
+
+Bản `danthuyy` **không** phải bảng quản trị — nó là app học của Thùy. Muốn xem
+trước bài của một bé thì mở thẳng site của bé đó.
 
 Từ vựng của bài riêng cũng **không lọt** vào làm đáp án nhiễu ở quiz của người
 khác — mỗi bé chỉ gặp từ trong bài mình thấy.

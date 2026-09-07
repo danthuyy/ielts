@@ -23,9 +23,12 @@ describe('isVisibleTo', () => {
     expect(isVisibleTo(forTwo, 'khac')).toBe(false);
   });
 
-  it('shows every lesson to the admin build, which has no learner', () => {
+  it("keeps another learner's lessons out of a build with no learner set", () => {
+    // That build is somebody's own study app, not an admin console: a beginner
+    // lesson aimed at a child would otherwise reach an IELTS learner's word of
+    // the day, quiz distractors and word count, not just their lesson list.
     expect(isVisibleTo(shared, '')).toBe(true);
-    expect(isVisibleTo(forPboiboi, '')).toBe(true);
-    expect(isVisibleTo(forTwo, '')).toBe(true);
+    expect(isVisibleTo(forPboiboi, '')).toBe(false);
+    expect(isVisibleTo(forTwo, '')).toBe(false);
   });
 });

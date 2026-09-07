@@ -114,8 +114,10 @@ trong file JSON quyết định ai thấy nó:
 - **Không có `audience`** (mặc định) → bài chung, mọi người thấy.
 - **`"audience": ["pboiboi"]`** → chỉ repo đặt `VITE_LEARNER=pboiboi` thấy.
 - **`"audience": ["pboiboi", "minh"]`** → chung cho vài người được nêu tên.
-- **Bản admin của bạn** (`danthuyy`, không đặt `VITE_LEARNER`) → **thấy hết**, để
-  bạn quản lý và xem trước mọi bài của mọi người từ một chỗ.
+- **Bản `danthuyy`** (không đặt `VITE_LEARNER`) → chỉ thấy **bài chung**. Nó là
+  app học của Thùy, không phải bảng quản trị: bài của bé khác lọt vào đó sẽ kéo
+  theo cả từ vựng hôm nay, đáp án nhiễu và tổng số từ. Xem trước bài của một bé
+  thì mở site của bé đó.
 
 > Đây là "riêng" theo nghĩa **không hiện ở danh sách người khác**, không phải bí
 > mật tuyệt đối: file JSON vẫn nằm trong repo. Với bài từ vựng thì đủ. `VITE_LEARNER`

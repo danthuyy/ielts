@@ -50,15 +50,17 @@ function parseAll(): Lesson[] {
 /**
  * Whether a lesson is shown to a given learner.
  *
- * A shared lesson (no audience) is visible to everyone. A private lesson is
- * visible only to the learners in its audience — except the admin build, which
- * passes an empty learner and sees every lesson so the whole library can be
- * managed and previewed from one place.
+ * A shared lesson (no audience) is visible to everyone; a lesson with an
+ * audience only to the learners it names.
+ *
+ * The build with no learner set used to see everything, on the idea that it was
+ * an admin console. It is not — it is somebody's own study app, and letting
+ * another learner's lessons in there did more than clutter the list: they fed
+ * the word of the day, the quiz distractors and the total word count. Previewing
+ * another learner's content is done by opening that learner's own site.
  */
 export function isVisibleTo(lesson: Pick<Lesson, 'audience'>, learner: string): boolean {
-  if (lesson.audience.length === 0) return true;
-  if (learner === '') return true;
-  return lesson.audience.includes(learner);
+  return lesson.audience.length === 0 || lesson.audience.includes(learner);
 }
 
 /**
@@ -73,18 +75,6 @@ const LEARNER = (import.meta.env.VITE_LEARNER ?? '').trim();
 export const LESSONS: readonly Lesson[] = parseAll().filter((lesson) =>
   isVisibleTo(lesson, LEARNER),
 );
-
-/**
- * The lessons this build's learner is actually studying.
- *
- * Same as LESSONS on a learner build, where everything visible is theirs. On the
- * admin build it drops the lessons aimed at someone else: those are visible so
- * they can be previewed, but they are not what the admin studies, and letting
- * one lead the quick-study button pointed an IELTS learner at a beginner
- * alphabet lesson.
- */
-export const OWN_LESSONS: readonly Lesson[] =
-  LEARNER === '' ? LESSONS.filter((lesson) => lesson.audience.length === 0) : LESSONS;
 
 const byId = new Map(LESSONS.map((lesson) => [lesson.id, lesson]));
 

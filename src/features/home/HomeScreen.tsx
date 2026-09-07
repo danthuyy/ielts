@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 
-import { ALL_STUDY_WORDS, LESSONS, OWN_LESSONS } from '@/content/lessons';
+import { ALL_STUDY_WORDS, LESSONS } from '@/content/lessons';
 import { categoryOf } from '@/content/categories';
 import { pickWordOfDay } from '@/lib/wordOfDay';
 import { routes, STUDY_MODES } from '@/app/routes';
@@ -218,8 +218,8 @@ export function HomeScreen() {
 
           <section className="section">
             <h2 className="section__label">Luyện nhanh</h2>
-            {OWN_LESSONS[0] && (
-              <Link className="mode-hero" to={routes.study('mix', OWN_LESSONS[0].id)}>
+            {LESSONS[0] && (
+              <Link className="mode-hero" to={routes.study('mix', LESSONS[0].id)}>
                 <span className="mode-hero__icon" aria-hidden="true">
                   🎯
                 </span>
@@ -251,8 +251,8 @@ export function HomeScreen() {
                     className="mode-tile"
                     key={mode.mode}
                     to={
-                      OWN_LESSONS[0]
-                        ? routes.study(mode.mode, OWN_LESSONS[0].id)
+                      LESSONS[0]
+                        ? routes.study(mode.mode, LESSONS[0].id)
                         : routes.lessons()
                     }
                   >
