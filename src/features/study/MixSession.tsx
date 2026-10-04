@@ -13,6 +13,7 @@ import { YouglishLink } from '@/components/YouglishLink';
 import { useKeyboard } from '@/hooks/useKeyboard';
 import { useMasteryQueue } from '@/hooks/useMasteryQueue';
 import { useSettings } from '@/hooks/useSettings';
+import { TypedText } from '@/components/TypedText';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 import { useWhisperListen } from '@/hooks/useWhisperListen';
 import { buildChoiceOptions } from '@/lib/choices';
@@ -235,6 +236,16 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
       setSpeakFails((count) => count + 1);
     }
   }, [speakActive, verdict, word, heardGuesses, submit]);
+
+  // A press that ended with nothing heard (silent room, dead microphone) is a
+  // miss like any other, so the skip button arrives instead of an endless wait.
+  const silentEnds = speech.silentEnds;
+  useEffect(() => {
+    if (silentEnds > 0 && speakActive && !verdict) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setSpeakFails((count) => count + 1);
+    }
+  }, [silentEnds, speakActive, verdict]);
 
   // Save the live session after every answer so a reload can resume it, and drop
   // the save once the result screen is reached so a finished session never
@@ -477,6 +488,13 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               >
                 {micLive ? '🔴' : '🎤'}
               </button>
+              {micLive && (
+                <div className="speak-rung__wave" aria-hidden="true">
+                  {Array.from({ length: 9 }, (_, i) => (
+                    <span key={i} style={{ animationDelay: `${(i % 5) * 0.11}s` }} />
+                  ))}
+                </div>
+              )}
               <p className="speak-rung__hint">
                 {whisper.thinking
                   ? 'Đang nhận diện giọng…'
@@ -484,8 +502,18 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
                     ? 'Đang nghe… nói to từ ở trên'
                     : 'Bấm mic rồi nói to từ ở trên'}
               </p>
-              {lastHeard && (
-                <p className="speak-rung__heard">Nghe được: “{lastHeard}” — nói lại nhé</p>
+              {speech.interim && (
+                <p className="speak-rung__live">
+                  “<TypedText text={speech.interim} />”
+                </p>
+              )}
+              {!micLive && lastHeard && (
+                <p className="speak-rung__heard">
+                  Nghe được: “<TypedText text={lastHeard} />” — nói lại nhé
+                </p>
+              )}
+              {!micLive && !lastHeard && silentEnds > 0 && !micError && (
+                <p className="speak-rung__heard">Không nghe thấy gì — thử nói to hơn nhé.</p>
               )}
               {settings.advancedSpeech && whisper.modelStatus === 'loading' && (
                 <p className="speak-rung__heard">
@@ -499,6 +527,9 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
               )}
               {micError === 'not-allowed' && (
                 <p className="speak-rung__heard">Cần cho phép micro trong trình duyệt.</p>
+              )}
+              {micError === 'audio-capture' && (
+                <p className="speak-rung__heard">Máy không nhận được micro.</p>
               )}
               {(speakFails >= 2 || micError) && (
                 // A few misses, or a mic the browser won't grant — either way, let

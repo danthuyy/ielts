@@ -790,6 +790,41 @@ kbd {
   font-size: var(--text-sm);
   color: var(--warning);
 }
+.speak-rung__live {
+  min-height: 1.5em;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text);
+}
+.speak-rung__wave {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 2rem;
+}
+.speak-rung__wave span {
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--danger);
+  transform: scaleY(0.2);
+  animation: speak-wave 0.7s ease-in-out infinite;
+}
+@keyframes speak-wave {
+  0%,
+  100% {
+    transform: scaleY(0.2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .speak-rung__wave span {
+    animation: none;
+    transform: scaleY(0.6);
+  }
+}
 .speak-rung__skip {
   margin-top: var(--sp-3);
 }
