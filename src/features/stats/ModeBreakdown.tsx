@@ -46,7 +46,9 @@ export function ModeBreakdown({ activity }: { activity: readonly DailyActivity[]
         totals.set(mode, row);
       }
     }
-    return [...totals.values()].filter((row) => row.studied > 0).sort((a, b) => b.studied - a.studied);
+    return [...totals.values()]
+      .filter((row) => row.studied > 0)
+      .sort((a, b) => b.studied - a.studied);
   }, [activity]);
 
   // Older records predate the per-mode breakdown, so there is nothing to show

@@ -1,7 +1,4 @@
-import {
-  grammarSchema,
-  type GrammarLesson,
-} from './grammarSchema';
+import { grammarSchema, type GrammarLesson } from './grammarSchema';
 
 export type { GrammarLesson, GrammarDrill, GrammarPoint } from './grammarSchema';
 

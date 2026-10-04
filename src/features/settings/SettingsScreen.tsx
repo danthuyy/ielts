@@ -93,7 +93,10 @@ function verdictOf(d: SpeechDiagnosis): { icon: string; text: string } {
         text: 'Đã gửi lệnh đọc nhưng không có tiếng phát ra — gần như chắc do TẮT TIẾNG (nút gạt/chuông) hoặc âm lượng phương tiện bằng 0. Bật tiếng rồi bấm thử lại.',
       };
     case 'error':
-      return { icon: '❌', text: `Lỗi bộ đọc của máy${d.detail ? ` (${d.detail})` : ''}. Thử đóng hẳn app rồi mở lại.` };
+      return {
+        icon: '❌',
+        text: `Lỗi bộ đọc của máy${d.detail ? ` (${d.detail})` : ''}. Thử đóng hẳn app rồi mở lại.`,
+      };
     case 'unsupported':
       return {
         icon: '❌',

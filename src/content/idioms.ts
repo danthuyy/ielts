@@ -133,7 +133,7 @@ export const IDIOMS: Idiom[] = [
   {
     en: 'Beat around the bush',
     vi: 'Nói vòng vo, không vào thẳng vấn đề.',
-    example: "Stop beating around the bush and tell me.",
+    example: 'Stop beating around the bush and tell me.',
     exampleVi: 'Đừng vòng vo nữa, nói thẳng đi.',
   },
   {

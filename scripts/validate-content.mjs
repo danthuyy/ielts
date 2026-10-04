@@ -151,7 +151,8 @@ ${formatIssues(result.error.issues)}`);
     console.error(`
 ${errors.length} bài ngữ pháp không hợp lệ:
 `);
-    for (const error of errors) console.error(`  ${error}
+    for (const error of errors)
+      console.error(`  ${error}
 `);
     process.exit(1);
   }

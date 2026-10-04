@@ -768,13 +768,7 @@ export function unlockSpeech(): void {
   }
 }
 
-export type SpeechOutcome =
-  | 'spoke'
-  | 'remote'
-  | 'error'
-  | 'no-voice'
-  | 'timeout'
-  | 'unsupported';
+export type SpeechOutcome = 'spoke' | 'remote' | 'error' | 'no-voice' | 'timeout' | 'unsupported';
 
 export interface SpeechDiagnosis {
   supported: boolean;

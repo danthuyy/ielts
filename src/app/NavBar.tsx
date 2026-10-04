@@ -23,20 +23,22 @@ export function NavBar() {
       <div className="nav__brand">
         IELTS <span>Vocab</span>
       </div>
-      {[...TABS.slice(0, 3), ...(GRAMMAR.length > 0 ? [GRAMMAR_TAB] : []), ...TABS.slice(3)].map((tab) => (
-        <NavLink key={tab.to} to={tab.to} end={tab.end} className="nav__item">
-          <span className="nav__icon" aria-hidden="true">
-            {tab.icon}
+      {[...TABS.slice(0, 3), ...(GRAMMAR.length > 0 ? [GRAMMAR_TAB] : []), ...TABS.slice(3)].map(
+        (tab) => (
+          <NavLink key={tab.to} to={tab.to} end={tab.end} className="nav__item">
+            <span className="nav__icon" aria-hidden="true">
+              {tab.icon}
+              {tab.to === '/review' && dueCount > 0 && (
+                <span className="nav__badge">{dueCount > 99 ? '99+' : dueCount}</span>
+              )}
+            </span>
+            <span className="nav__label">{tab.label}</span>
             {tab.to === '/review' && dueCount > 0 && (
-              <span className="nav__badge">{dueCount > 99 ? '99+' : dueCount}</span>
+              <span className="sr-only">{dueCount} từ cần ôn</span>
             )}
-          </span>
-          <span className="nav__label">{tab.label}</span>
-          {tab.to === '/review' && dueCount > 0 && (
-            <span className="sr-only">{dueCount} từ cần ôn</span>
-          )}
-        </NavLink>
-      ))}
+          </NavLink>
+        ),
+      )}
     </nav>
   );
 }

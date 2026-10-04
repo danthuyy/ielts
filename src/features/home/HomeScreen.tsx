@@ -250,11 +250,7 @@ export function HomeScreen() {
                   <Link
                     className="mode-tile"
                     key={mode.mode}
-                    to={
-                      LESSONS[0]
-                        ? routes.study(mode.mode, LESSONS[0].id)
-                        : routes.lessons()
-                    }
+                    to={LESSONS[0] ? routes.study(mode.mode, LESSONS[0].id) : routes.lessons()}
                   >
                     <span className="mode-tile__icon" aria-hidden="true">
                       {mode.icon}

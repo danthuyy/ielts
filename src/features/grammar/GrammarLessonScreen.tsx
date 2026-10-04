@@ -262,7 +262,10 @@ function GrammarSession() {
       <div className="study__footer">
         <div className="answer-actions">
           {phase === 'learn' ? (
-            <button className="btn btn--primary btn--lg btn--block" onClick={() => setPhase('drill')}>
+            <button
+              className="btn btn--primary btn--lg btn--block"
+              onClick={() => setPhase('drill')}
+            >
               Làm bài tập →
             </button>
           ) : (

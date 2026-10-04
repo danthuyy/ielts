@@ -391,146 +391,145 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
             two cells: otherwise the taller explanation stretches the rows and
             spreads the question's own parts apart. */}
         <div className="study__col">
-        <p className="rung-label">
-          Bậc {Math.min(level + 1, RUNGS.length)}/{RUNGS.length} · {RUNG_LABEL[rung]}
-        </p>
+          <p className="rung-label">
+            Bậc {Math.min(level + 1, RUNGS.length)}/{RUNGS.length} · {RUNG_LABEL[rung]}
+          </p>
 
-        {speakActive ? (
-          <div className="prompt speak-prompt">
-            <p className="prompt__main prompt__main--lg">{word.word}</p>
-            <p className="prompt__sub">
-              {word.ipa} · {word.pos}
-            </p>
-            <div className="speak-prompt__actions">
-              {/* Stop the mic before any sample plays: otherwise it plays into
+          {speakActive ? (
+            <div className="prompt speak-prompt">
+              <p className="prompt__main prompt__main--lg">{word.word}</p>
+              <p className="prompt__sub">
+                {word.ipa} · {word.pos}
+              </p>
+              <div className="speak-prompt__actions">
+                {/* Stop the mic before any sample plays: otherwise it plays into
                   an open mic and the engine "hears" the word, passing the rung
                   without the learner ever speaking. */}
-              <VoiceButtons word={word.word} slow beforeSpeak={() => speech.stop()} />
-              <YouglishLink word={word.word} variant="full" />
+                <VoiceButtons word={word.word} slow beforeSpeak={() => speech.stop()} />
+                <YouglishLink word={word.word} variant="full" />
+              </div>
+              <p className="feedback__vi">{word.vi}</p>
+              {word.synonyms && <p className="feedback__extra">≈ {word.synonyms}</p>}
+              {word.collocation && <p className="feedback__extra">{word.collocation}</p>}
+              {word.example && <p className="feedback__eg">“{word.example}”</p>}
             </div>
-            <p className="feedback__vi">{word.vi}</p>
-            {word.synonyms && <p className="feedback__extra">≈ {word.synonyms}</p>}
-            {word.collocation && <p className="feedback__extra">{word.collocation}</p>}
-            {word.example && <p className="feedback__eg">“{word.example}”</p>}
-          </div>
-        ) : speakingRung ? (
-          <div style={{ textAlign: 'center' }}>
-            <button
-              className="listen-btn"
-              onClick={() => speakSlow(word.word)}
-              aria-label="Nghe lại"
-            >
-              🔊
-            </button>
-            <p className="prompt__sub" style={{ marginTop: 'var(--sp-3)' }}>
-              Nhấn để nghe lại
-            </p>
-          </div>
-        ) : rung === 'choice-en' || rung === 'listen-choice' ? (
-          // Reached for 'listen-choice' only when there is no voice to play, in
-          // which case reading the word is the nearest honest substitute.
-          <div className="prompt">
-            <p className="prompt__main prompt__main--lg">{word.word}</p>
-            <p className="prompt__sub">{word.ipa}</p>
-          </div>
-        ) : (
-          <div className="prompt">
-            <p className="prompt__main">{word.vi}</p>
-            <p className="prompt__sub">{word.pos}</p>
-          </div>
-        )}
-
-        {options.length > 0 && (
-          <div className="choice-list" role="group" aria-label="Các đáp án">
-            {options.map((option, position) => (
+          ) : speakingRung ? (
+            <div style={{ textAlign: 'center' }}>
               <button
-                className={optionClass(option)}
-                key={option.id}
-                disabled={verdict !== null}
-                onClick={() => submit(option.word, option.word === word.word)}
+                className="listen-btn"
+                onClick={() => speakSlow(word.word)}
+                aria-label="Nghe lại"
               >
-                <span className="choice__key" aria-hidden="true">
-                  {String.fromCharCode(65 + position)}.
-                </span>
-                <span>{asksForMeaning ? option.vi : option.word}</span>
+                🔊
               </button>
-            ))}
-          </div>
-        )}
-
-        {rung === 'assemble' && (
-          <WordBank
-            tiles={tiles}
-            placed={placed}
-            onChange={setPlaced}
-            disabled={verdict !== null}
-          />
-        )}
-
-        {speakActive && !verdict && (
-          <div className="speak-rung">
-            <button
-              type="button"
-              className={`speak-rung__mic${micLive ? ' speak-rung__mic--live' : ''}`}
-              onClick={toggleMic}
-              aria-label={micLive ? 'Đang nghe, bấm để dừng' : 'Bấm rồi nói to từ này'}
-            >
-              {micLive ? '🔴' : '🎤'}
-            </button>
-            <p className="speak-rung__hint">
-              {whisper.thinking
-                ? 'Đang nhận diện giọng…'
-                : micLive
-                  ? 'Đang nghe… nói to từ ở trên'
-                  : 'Bấm mic rồi nói to từ ở trên'}
-            </p>
-            {lastHeard && (
-              <p className="speak-rung__heard">Nghe được: “{lastHeard}” — nói lại nhé</p>
-            )}
-            {settings.advancedSpeech && whisper.modelStatus === 'loading' && (
-              <p className="speak-rung__heard">
-                Đang tải bộ nhận giọng nâng cao… {Math.round(whisper.progress * 100)}%
+              <p className="prompt__sub" style={{ marginTop: 'var(--sp-3)' }}>
+                Nhấn để nghe lại
               </p>
-            )}
-            {settings.advancedSpeech && whisper.modelStatus === 'error' && (
-              <p className="speak-rung__heard">
-                Không tải được bộ nâng cao — đang dùng nhận giọng thường.
-              </p>
-            )}
-            {micError === 'not-allowed' && (
-              <p className="speak-rung__heard">Cần cho phép micro trong trình duyệt.</p>
-            )}
-            {(speakFails >= 2 || micError) && (
-              // A few misses, or a mic the browser won't grant — either way, let
-              // the learner move on instead of being stuck on this one rung.
+            </div>
+          ) : rung === 'choice-en' || rung === 'listen-choice' ? (
+            // Reached for 'listen-choice' only when there is no voice to play, in
+            // which case reading the word is the nearest honest substitute.
+            <div className="prompt">
+              <p className="prompt__main prompt__main--lg">{word.word}</p>
+              <p className="prompt__sub">{word.ipa}</p>
+            </div>
+          ) : (
+            <div className="prompt">
+              <p className="prompt__main">{word.vi}</p>
+              <p className="prompt__sub">{word.pos}</p>
+            </div>
+          )}
+
+          {options.length > 0 && (
+            <div className="choice-list" role="group" aria-label="Các đáp án">
+              {options.map((option, position) => (
+                <button
+                  className={optionClass(option)}
+                  key={option.id}
+                  disabled={verdict !== null}
+                  onClick={() => submit(option.word, option.word === word.word)}
+                >
+                  <span className="choice__key" aria-hidden="true">
+                    {String.fromCharCode(65 + position)}.
+                  </span>
+                  <span>{asksForMeaning ? option.vi : option.word}</span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {rung === 'assemble' && (
+            <WordBank
+              tiles={tiles}
+              placed={placed}
+              onChange={setPlaced}
+              disabled={verdict !== null}
+            />
+          )}
+
+          {speakActive && !verdict && (
+            <div className="speak-rung">
               <button
                 type="button"
-                className="btn btn--ghost speak-rung__skip"
-                onClick={() => submit(word.word, true)}
+                className={`speak-rung__mic${micLive ? ' speak-rung__mic--live' : ''}`}
+                onClick={toggleMic}
+                aria-label={micLive ? 'Đang nghe, bấm để dừng' : 'Bấm rồi nói to từ này'}
               >
-                Bỏ qua từ này →
+                {micLive ? '🔴' : '🎤'}
               </button>
-            )}
-          </div>
-        )}
+              <p className="speak-rung__hint">
+                {whisper.thinking
+                  ? 'Đang nhận diện giọng…'
+                  : micLive
+                    ? 'Đang nghe… nói to từ ở trên'
+                    : 'Bấm mic rồi nói to từ ở trên'}
+              </p>
+              {lastHeard && (
+                <p className="speak-rung__heard">Nghe được: “{lastHeard}” — nói lại nhé</p>
+              )}
+              {settings.advancedSpeech && whisper.modelStatus === 'loading' && (
+                <p className="speak-rung__heard">
+                  Đang tải bộ nhận giọng nâng cao… {Math.round(whisper.progress * 100)}%
+                </p>
+              )}
+              {settings.advancedSpeech && whisper.modelStatus === 'error' && (
+                <p className="speak-rung__heard">
+                  Không tải được bộ nâng cao — đang dùng nhận giọng thường.
+                </p>
+              )}
+              {micError === 'not-allowed' && (
+                <p className="speak-rung__heard">Cần cho phép micro trong trình duyệt.</p>
+              )}
+              {(speakFails >= 2 || micError) && (
+                // A few misses, or a mic the browser won't grant — either way, let
+                // the learner move on instead of being stuck on this one rung.
+                <button
+                  type="button"
+                  className="btn btn--ghost speak-rung__skip"
+                  onClick={() => submit(word.word, true)}
+                >
+                  Bỏ qua từ này →
+                </button>
+              )}
+            </div>
+          )}
 
-        {typingRung && (
-          <input
-            ref={inputRef}
-            className={`input input--answer${verdict ? ` input--${verdict.correct ? 'correct' : 'wrong'}` : ''}`}
-            type="text"
-            autoComplete="off"
-            autoCapitalize="off"
-            autoCorrect="off"
-            spellCheck={false}
-            disabled={verdict !== null}
-            value={answer}
-            onChange={(event) => setAnswer(event.target.value)}
-            placeholder={rung === 'listen' ? 'Gõ từ bạn nghe được...' : 'Gõ từ tiếng Anh...'}
-            aria-label="Câu trả lời của bạn"
-          />
-        )}
-
+          {typingRung && (
+            <input
+              ref={inputRef}
+              className={`input input--answer${verdict ? ` input--${verdict.correct ? 'correct' : 'wrong'}` : ''}`}
+              type="text"
+              autoComplete="off"
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
+              disabled={verdict !== null}
+              value={answer}
+              onChange={(event) => setAnswer(event.target.value)}
+              placeholder={rung === 'listen' ? 'Gõ từ bạn nghe được...' : 'Gõ từ tiếng Anh...'}
+              aria-label="Câu trả lời của bạn"
+            />
+          )}
         </div>
 
         {verdict && (
@@ -575,7 +574,6 @@ export function MixSession({ words, statuses, backTo, onRetry, source = 'mix' }:
             )}
           </div>
         )}
-
       </div>
 
       {/* Below the scrolling body, not inside it: the explanation can be long,
