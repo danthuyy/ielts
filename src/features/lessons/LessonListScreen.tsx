@@ -4,6 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 
 import { ALL_STUDY_WORDS, getLesson, LESSONS } from '@/content/lessons';
 import { groupByCategory } from '@/content/categories';
+import { groupByCollection } from '@/content/collections';
 import { routes } from '@/app/routes';
 import { getAllProgress } from '@/lib/progress';
 import { percent } from '@/lib/utils';
@@ -25,6 +26,9 @@ function matches(lesson: Lesson, categoryLabel: string, query: string): boolean 
 export function LessonListScreen() {
   const [activeCategory, setActiveCategory] = useState<string>(ALL);
   const [query, setQuery] = useState('');
+  // Shelves start shut: the library is long, and the point of grouping it is
+  // that you open the one you want instead of scrolling past the rest.
+  const [open, setOpen] = useState<ReadonlySet<string>>(new Set());
 
   const masteredByLesson = useLiveQuery(async () => {
     const records = await getAllProgress();
@@ -38,20 +42,43 @@ export function LessonListScreen() {
     return counts;
   }, []);
 
-  const allGroups = useMemo(() => groupByCategory(LESSONS), []);
+  const searching = query.trim().length > 0;
 
-  const visibleGroups = useMemo(() => {
+  const shelves = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return allGroups
-      .filter((group) => activeCategory === ALL || group.key === activeCategory)
-      .map((group) => ({
-        ...group,
-        lessons: group.lessons.filter((lesson) => matches(lesson, group.label, needle)),
-      }))
-      .filter((group) => group.lessons.length > 0);
-  }, [allGroups, activeCategory, query]);
+    return groupByCollection(LESSONS)
+      .map((shelf) => {
+        const groups = groupByCategory(shelf.lessons)
+          .filter((group) => activeCategory === ALL || group.key === activeCategory)
+          .map((group) => ({
+            ...group,
+            lessons: group.lessons.filter((lesson) => matches(lesson, group.label, needle)),
+          }))
+          .filter((group) => group.lessons.length > 0);
+        return { ...shelf, groups };
+      })
+      .filter((shelf) => shelf.groups.length > 0);
+  }, [activeCategory, query]);
 
-  const shownCount = visibleGroups.reduce((sum, group) => sum + group.lessons.length, 0);
+  const topicGroups = useMemo(
+    () =>
+      groupByCategory(
+        groupByCollection(LESSONS).find((shelf) => shelf.key === 'topics')?.lessons ?? [],
+      ),
+    [],
+  );
+
+  const shownCount = shelves.reduce(
+    (sum, shelf) => sum + shelf.groups.reduce((n, group) => n + group.lessons.length, 0),
+    0,
+  );
+
+  const toggle = (key: string) =>
+    setOpen((prev) => {
+      const next = new Set(prev);
+      if (!next.delete(key)) next.add(key);
+      return next;
+    });
 
   // Searching the word list too: with more than a handful of lessons, "which
   // lesson was 'undermine' in?" is the question people actually have, and
@@ -74,7 +101,7 @@ export function LessonListScreen() {
       <header className="page-head">
         <h1>Thư viện bài học</h1>
         <span className="page-head__meta">
-          {shownCount} bài · {visibleGroups.length} chủ đề
+          {shownCount} bài · {shelves.length} mục
         </span>
       </header>
 
@@ -90,33 +117,6 @@ export function LessonListScreen() {
           placeholder="Tìm bài học, chủ đề hoặc từ vựng..."
           aria-label="Tìm bài học hoặc từ vựng"
         />
-      </div>
-
-      <div
-        className="chip-row"
-        style={{ marginBottom: 'var(--sp-6)' }}
-        role="group"
-        aria-label="Lọc theo chủ đề"
-      >
-        <button
-          className="chip"
-          aria-pressed={activeCategory === ALL}
-          onClick={() => setActiveCategory(ALL)}
-        >
-          <span aria-hidden="true">📚</span> Tất cả{' '}
-          <span className="chip__count">{LESSONS.length}</span>
-        </button>
-        {allGroups.map((group) => (
-          <button
-            className="chip"
-            key={group.key}
-            aria-pressed={activeCategory === group.key}
-            onClick={() => setActiveCategory(group.key)}
-          >
-            <span aria-hidden="true">{group.icon}</span> {group.label}{' '}
-            <span className="chip__count">{group.lessons.length}</span>
-          </button>
-        ))}
       </div>
 
       {wordHits.length > 0 && (
@@ -155,39 +155,115 @@ export function LessonListScreen() {
         </section>
       )}
 
-      {visibleGroups.length === 0 ? (
+      {shelves.length === 0 ? (
         wordHits.length > 0 ? null : (
           <p className="empty">Không tìm thấy bài học hay từ nào khớp với “{query}”.</p>
         )
       ) : (
-        visibleGroups.map((group) => (
-          <section className="section" key={group.key} style={{ marginBottom: 'var(--sp-6)' }}>
-            <h2 className="section__label">
-              <span aria-hidden="true">{group.icon}</span> {group.label}
-            </h2>
-            <div className="tile-grid">
-              {group.lessons.map((lesson) => {
-                const counts = masteredByLesson?.get(lesson.id) ?? { mastered: 0, learning: 0 };
-                const total = lesson.words.length;
-                return (
-                  <Link className="tile" to={routes.lesson(lesson.id)} key={lesson.id}>
-                    <span className="tile__name">{lesson.title}</span>
-                    {lesson.description && <span className="tile__meta">{lesson.description}</span>}
-                    <span className="tile__meta">
-                      {total} từ · thuộc {counts.mastered} · đang học {counts.learning}
+        <div className="shelves">
+          {shelves.map((shelf) => {
+            const isOpen = searching || open.has(shelf.key);
+            const lessons = shelf.groups.flatMap((group) => group.lessons);
+            const words = lessons.reduce((n, lesson) => n + lesson.words.length, 0);
+            const mastered = lessons.reduce(
+              (n, lesson) => n + (masteredByLesson?.get(lesson.id)?.mastered ?? 0),
+              0,
+            );
+            const panelId = `shelf-${shelf.key}`;
+            return (
+              <section className="shelf" key={shelf.key}>
+                <button
+                  type="button"
+                  className="shelf__head"
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
+                  onClick={() => toggle(shelf.key)}
+                >
+                  <span className="shelf__icon" aria-hidden="true">
+                    {shelf.icon}
+                  </span>
+                  <span className="shelf__main">
+                    <strong className="shelf__title">{shelf.label}</strong>
+                    <span className="shelf__meta">
+                      {lessons.length} bài · {words} từ · thuộc {mastered}
                     </span>
                     <span className="progress progress--thin">
                       <span
                         className="progress__fill"
-                        style={{ width: `${percent(counts.mastered, total)}%` }}
+                        style={{ width: `${percent(mastered, words)}%` }}
                       />
                     </span>
-                  </Link>
-                );
-              })}
-            </div>
-          </section>
-        ))
+                  </span>
+                  <span className="shelf__chevron" aria-hidden="true">
+                    {isOpen ? '▾' : '▸'}
+                  </span>
+                </button>
+
+                {isOpen && (
+                  <div className="shelf__body" id={panelId}>
+                    {shelf.key === 'topics' && !searching && topicGroups.length > 1 && (
+                      <div className="chip-row" role="group" aria-label="Lọc theo chủ đề">
+                        <button
+                          className="chip"
+                          aria-pressed={activeCategory === ALL}
+                          onClick={() => setActiveCategory(ALL)}
+                        >
+                          Tất cả
+                        </button>
+                        {topicGroups.map((group) => (
+                          <button
+                            className="chip"
+                            key={group.key}
+                            aria-pressed={activeCategory === group.key}
+                            onClick={() => setActiveCategory(group.key)}
+                          >
+                            <span aria-hidden="true">{group.icon}</span> {group.label}{' '}
+                            <span className="chip__count">{group.lessons.length}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    {shelf.groups.map((group) => (
+                      <div className="shelf__group" key={group.key}>
+                        {shelf.key === 'topics' && (
+                          <h3 className="section__label">
+                            <span aria-hidden="true">{group.icon}</span> {group.label}
+                          </h3>
+                        )}
+                        <div className="tile-grid">
+                          {group.lessons.map((lesson) => {
+                            const counts = masteredByLesson?.get(lesson.id) ?? {
+                              mastered: 0,
+                              learning: 0,
+                            };
+                            const total = lesson.words.length;
+                            return (
+                              <Link className="tile" to={routes.lesson(lesson.id)} key={lesson.id}>
+                                <span className="tile__name">{lesson.title}</span>
+                                {lesson.description && (
+                                  <span className="tile__meta">{lesson.description}</span>
+                                )}
+                                <span className="tile__meta">
+                                  {total} từ · thuộc {counts.mastered} · đang học {counts.learning}
+                                </span>
+                                <span className="progress progress--thin">
+                                  <span
+                                    className="progress__fill"
+                                    style={{ width: `${percent(counts.mastered, total)}%` }}
+                                  />
+                                </span>
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            );
+          })}
+        </div>
       )}
     </div>
   );

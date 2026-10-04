@@ -2437,3 +2437,59 @@ a.word-row__main:hover .word-row__word {
   text-align: center;
   min-height: 1.2em;
 }
+
+.shelves {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.shelf {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow: hidden;
+}
+.shelf__head {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  width: 100%;
+  padding: var(--sp-4);
+  text-align: left;
+  background: none;
+  color: inherit;
+}
+.shelf__head:hover,
+.shelf__head:focus-visible {
+  background: var(--primary-soft);
+}
+.shelf__icon {
+  font-size: 1.75rem;
+}
+.shelf__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  flex: 1;
+  min-width: 0;
+}
+.shelf__title {
+  font-size: var(--text-lg);
+}
+.shelf__meta {
+  font-size: var(--text-sm);
+  color: var(--text-dim);
+}
+.shelf__chevron {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+.shelf__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  padding: 0 var(--sp-4) var(--sp-4);
+}
+.shelf__group .section__label {
+  margin-bottom: var(--sp-2);
+}
