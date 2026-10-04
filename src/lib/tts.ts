@@ -596,17 +596,27 @@ export function diagnoseRemote(text = 'happiness'): Promise<RemoteProbe[]> {
 
 export function speak(text: string, rate?: number): void {
   if (!text) return;
+  // The shipped clip comes first for any word that has one. The browser's own
+  // voices are the unreliable part: the preferred "Google UK English" voice is
+  // fetched over the network and can report `start` while producing no sound,
+  // and a desktop voice list differs from machine to machine. A recording plays
+  // the same British voice everywhere, instantly, and offline.
+  void speakLocal(text, rate).then((played) => {
+    if (!played) speakWithDevice(text, rate);
+  });
+}
+
+function speakWithDevice(text: string, rate?: number): void {
   const engine = synth();
   const voice = engine ? resolveVoice() : null;
-  // Prefer the device voice: instant, offline, and no dependency on Google. It
-  // is warmed at startup (below), so by tap time a capable device has it ready.
+  // Phrases and words added after the clips were built: the device voice is
+  // instant, offline, and warmed at startup (below).
   if (engine && (voice || listVoices().length > 0)) {
     speakWith(text, voice, rate);
     return;
   }
-  // No usable device voice → shipped clip, then network, so voice-less tablets
-  // still speak.
-  speakWithoutDevice(text, rate);
+  // No usable device voice → network audio, so voice-less tablets still speak.
+  void speakRemote(text, rate);
 }
 
 export function speakSlow(text: string): void {
